@@ -48,10 +48,10 @@ Known limitations:
 
 User actions required:
 - U1 恢復主站 Supabase（最高優先）
-- U2 安裝 Node.js LTS
+- U2 Done（Node v24.18.0 / npm 11.16.0）
 - U3 建立 GitHub repo zi-geng
 - 其餘見 USER_ACTIONS_REQUIRED.md
 
 Next action:
-- 等待 U2（Node UAC）完成後進入 Phase 1：Vite＋React＋TS＋HashRouter＋PWA 骨架
+- Phase 1：Vite＋React＋TS＋HashRouter＋PWA 骨架
 - 並行請使用者處理 U1（主站 Supabase DNS NXDOMAIN）
