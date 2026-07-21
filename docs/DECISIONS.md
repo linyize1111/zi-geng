@@ -58,7 +58,13 @@
 
 ---
 
-## 2026-07-22 — Lint 採用 oxlint（Vite 官方 scaffold），非 ESLint
+## 2026-07-22 — 標準每日詞彙改為 7；允許刷新
+
+- **發現**：使用者回饋每日 3 詞偏少，並需要刷新。
+- **採用**：`daily_vocab_count` 預設 7（light≤3、deep≥10）；`zg_replace_daily_slot`：詞彙每天最多 5 次，名言／技巧 2，題目／小說 1（題目／小說依產品規格）。
+- **未採用**：完全自由無限刷新（破壞「當日固定」與複習節奏）。
+- **影響**：需在 Supabase Run `APPLY_VOCAB_REFRESH_IN_SQL_EDITOR.sql`；既有今日計畫需按「換一批」才會變成 7 詞。
+
 
 - **發現**：`create-vite` React-TS 模板預設 oxlint；已安裝於專案。
 - **採用**：`npm run lint` = oxlint；另以 Prettier 做 format:check。
