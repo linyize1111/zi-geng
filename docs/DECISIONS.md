@@ -65,6 +65,9 @@
 - **未採用**：完全自由無限刷新（破壞「當日固定」與複習節奏）。
 - **影響**：需在 Supabase Run `APPLY_VOCAB_REFRESH_IN_SQL_EDITOR.sql`；既有今日計畫需按「換一批」才會變成 7 詞。
 
+---
+
+## 2026-07-22 — Lint 採用 oxlint（Vite 官方 scaffold），非 ESLint
 
 - **發現**：`create-vite` React-TS 模板預設 oxlint；已安裝於專案。
 - **採用**：`npm run lint` = oxlint；另以 Prettier 做 format:check。
