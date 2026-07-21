@@ -59,16 +59,13 @@
 
 ## U4. 啟用 GitHub Pages（Actions）
 
-**狀態**：Open（等 Phase 1 workflow 就緒後）
+**狀態**：Partial — Pages `build_type=workflow` 已啟用（`https://linyize1111.github.io/zi-geng/`）。**Secrets 仍需你貼上**（在 Supabase 恢復後）：
 
-**步驟**：
-
-1. Repo → Settings → Pages。
-2. Build and deployment → Source：**GitHub Actions**。
-3. Settings → Secrets and variables → Actions → New repository secret：
+1. Repo → Settings → Secrets and variables → Actions → New repository secret：
    - `VITE_SUPABASE_URL`
-   - `VITE_SUPABASE_ANON_KEY`（anon only，絕不可放 service_role）
+   - `VITE_SUPABASE_ANON_KEY`（anon only）
    - `VITE_MAIN_SITE_URL` = `https://linyize1111.github.io/`
+2. 推送後到 Actions 查看 workflow 是否成功部署。
 
 ---
 
