@@ -1,29 +1,22 @@
-﻿Current phase: Phase 2
-Current milestone: Auth + zg_members migrations（本機完成；遠端 DB 待 U1）
+﻿Current phase: Phase 3
+Current milestone: 內容表／每日計畫 migration（待使用者 Run SQL）
 Status: in_progress
 
 Completed:
-- Phase 0–1
-- GitHub repo https://github.com/linyize1111/zi-geng 已建立並 push
-- Phase 2：supabase-js client（storageKey=zi-geng-auth）、logout 隔離、AuthProvider、RequireMember/Owner
-- migration 202607220001_zg_members_profiles_settings.sql
-- auth storage unit tests
+- Phase 0–2 本機與遠端骨架
+- Owner 白名單已由使用者寫入
+- 主站 auth.js 保護 zi-geng-auth（commit 1c991dc，已 push Pages）
+- Phase 3 SQL：內容表、每日計畫、進度／收藏、get_or_create_daily_plan、dev seed
 
 Tests actually run:
-- npm run ci（8 tests passed, build ok）
+- anon RPC is_zg_member/owner = false
+- anon zg_members 回 []（RLS）
+- 稍早 npm run ci（Phase 2）
 
-Known limitations / blockers:
-- U1 主站 Supabase DNS NXDOMAIN → 無法套用 migration／真 Google 登入
-- U4 GitHub Pages source + Secrets 尚未設
-- 內容表／每日計畫尚未做（Phase 3）
-- 主站 auth.js 白名單尚未改（同 origin OAuth 前必須）
-
-User actions required:
-- U1 恢復／重建主站 Supabase（最高優先）
-- U4 Pages Actions + Secrets
-- U5 Redirect URL /zi-geng/
-- U6 套用 migration 後寫入 Owner email（U7）
+User actions required now:
+- U5 Redirect URLs
+- U9 貼上並 Run APPLY_PHASE3_IN_SQL_EDITOR.sql（已在剪貼簿）
+- U4 GitHub Secrets（部署用）
 
 Next action:
-- 使用者完成 U1 後：套用 migration、接真登入
-- 同時可繼續 Phase 3 內容表 SQL 與 UI（mock）
+- 使用者完成 U9 後：接 Today 頁真實 daily plan、關 mock 做登入煙測

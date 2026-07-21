@@ -1,44 +1,18 @@
 # 需要使用者手動完成的事項
 
-> 只列 Cursor／自動化**無法**安全完成、且會阻礙實作的項目。  
-> 每項為可照做的步驟。完成後請在此將狀態改為 Done。
+> 只列 Cursor／自動化**無法**安全完成、且會阻礙實作的項目。
 
 ---
 
-## U1. 確認／恢復主站 Supabase 專案（阻斷 Phase 2＋發布）
+## U1. 恢復主站 Supabase
 
-**狀態**：Done — 專案已 Resume；DNS／articles REST 已驗證（2026-07-22）。
-
----
-
-## U6. 套用字耕 `zg_*` migrations（現在可做）
-
-**狀態**：Open — **請花約 1 分鐘手動 Run**（Dashboard SQL Editor 在 iframe 內，自動化無法貼上）
-
-**步驟**：
-
-1. 開啟（你已登入的話會直接進編輯器）：  
-   https://supabase.com/dashboard/project/ypyiqysgfwgxcmmsylob/sql/new
-2. 用編輯器打開本機檔並全選複製：  
-   `LYZ-workspace/zi-geng/supabase/APPLY_PHASE2_IN_SQL_EDITOR.sql`  
-   （或 GitHub：`supabase/migrations/202607220001_zg_members_profiles_settings.sql`）
-3. 貼進 SQL Editor → 按 **Run**
-4. 結果應看到 `zg_members`／`zg_profiles`／`zg_user_settings` 欄位有表名，且 `is_zg_member_anon` / `is_zg_owner_anon` 為 `false`
-5. 再執行（把信箱換成你的 Google 登入信箱）：
-
-```sql
-insert into public.zg_members (email, role, enabled, note) values
-  ('你的Google信箱@gmail.com', 'owner', true, '字耕主人')
-on conflict (email) do update set role = 'owner', enabled = true;
-```
-
-6. 完成後回訊息「migration 好了」，我會驗證並繼續。
+**狀態**：Done
 
 ---
 
-## U2. 安裝本機 Node.js LTS（阻斷 Phase 1 build／test）
+## U2. 安裝 Node.js LTS
 
-**狀態**：Done — Node.js LTS `v24.18.0`／npm `11.16.0`（2026-07-22 經 winget 安裝並驗證）。
+**狀態**：Done — v24.18.0 / npm 11.16.0
 
 ---
 
@@ -46,76 +20,61 @@ on conflict (email) do update set role = 'owner', enabled = true;
 
 **狀態**：Done — https://github.com/linyize1111/zi-geng
 
-**步驟**：
+---
 
-1. <https://github.com/new>
-2. Owner：`linyize1111`；Repository name：`zi-geng`
-3. Public 或 Private 皆可（Pages 對 private 需 GitHub Pro／適當方案；個人網站情境建議 Public）。
-4. **不要**勾選「Add README」（本機已有內容後再 push）。
-5. 建立後把 URL 告知 Cursor，或自行：
-   ```bash
-   cd zi-geng
-   git remote add origin https://github.com/linyize1111/zi-geng.git
-   git push -u origin main
-   ```
+## U4. GitHub Pages Secrets
+
+**狀態**：Partial — Pages workflow 已啟用。請在 repo Settings → Secrets 新增：
+
+- `VITE_SUPABASE_URL` = `https://ypyiqysgfwgxcmmsylob.supabase.co`
+- `VITE_SUPABASE_ANON_KEY` =（主站 anon key，與 `supabase-config.js` 相同）
+- `VITE_MAIN_SITE_URL` = `https://linyize1111.github.io/`
 
 ---
 
-## U4. 啟用 GitHub Pages（Actions）
+## U5. Supabase Auth Redirect URL（現在請做）
 
-**狀態**：Partial — Pages `build_type=workflow` 已啟用（`https://linyize1111.github.io/zi-geng/`）。**Secrets 仍需你貼上**（在 Supabase 恢復後）：
+**狀態**：Open
 
-1. Repo → Settings → Secrets and variables → Actions → New repository secret：
-   - `VITE_SUPABASE_URL`
-   - `VITE_SUPABASE_ANON_KEY`（anon only）
-   - `VITE_MAIN_SITE_URL` = `https://linyize1111.github.io/`
-2. 推送後到 Actions 查看 workflow 是否成功部署。
-
----
-
-## U5. Supabase Auth 新增字耕 Redirect URL
-
-**狀態**：Open（等專案恢復後）
-
-**步驟**：
-
-1. Supabase → Authentication → URL Configuration。
-2. Redirect URLs 新增：`https://linyize1111.github.io/zi-geng/`
-3. 本機開發可再加：`http://localhost:5173/`（或實際 Vite port）對應路徑。
+1. 開啟 https://supabase.com/dashboard/project/ypyiqysgfwgxcmmsylob/auth/url-configuration  
+2. Redirect URLs 新增：
+   - `https://linyize1111.github.io/zi-geng/`
+   - `http://localhost:5173/`（本機 Vite；若 port 不同再改）
+3. Save
 
 ---
 
-## U7. 寫入 Owner／Member Email
+## U6. Phase 2 `zg_*` 成員／設定表
 
-**狀態**：Open（可併入上方 U6 步驟 5）
-
-**步驟**：
-
-1. SQL Editor 執行（替換信箱，勿把信箱貼進公開 issue）：
-   ```sql
-   insert into public.zg_members (email, role, enabled, note) values
-     ('你的Google信箱', 'owner', true, '字耕主人')
-   on conflict (email) do update set role = excluded.role, enabled = true;
-   ```
-2. 朋友：
-   ```sql
-   insert into public.zg_members (email, role, enabled) values
-     ('朋友信箱', 'member', true)
-   on conflict (email) do nothing;
-   ```
+**狀態**：Done
 
 ---
 
-## U8. 後續（非 Phase 0 阻斷）
+## U7. Owner Email
 
-- 匯入正式詞彙／名言（名言須人工查證）
-- Edge Function secrets（Phase 8）
-- 手機「加入主畫面」與 `.ics` 行事曆匯入
-- 主站 redirect／Google Cloud origins 若重建專案需重設
+**狀態**：Done（使用者已確認成功）
 
 ---
 
-## 不需要使用者決定的事項（Cursor 已定）
+## U9. Phase 3 內容表＋每日計畫＋開發 seed（現在請做）
 
-- 獨立 `zi-geng` repo、HashRouter、npm、共用主站 Supabase（待恢復）、`zg_` 前綴  
-- 見 `DECISIONS.md`／`adr/0001-...`
+**狀態**：Open — 剪貼簿已放入完整 SQL
+
+1. SQL Editor → New query → **清空**  
+2. **Ctrl+V**（內容來自 `supabase/APPLY_PHASE3_IN_SQL_EDITOR.sql`）  
+3. Run  
+4. 結果應看到 vocab/quotes/craft/prompts/novel_tasks 計數（開發 seed 約各 ≥1）
+
+---
+
+## U8. 後續
+
+- 正式名言人工查證後匯入  
+- Edge Function secrets（Phase 8）  
+- 手機加入主畫面／`.ics`
+
+---
+
+## 已由 Cursor 完成、無需你操作
+
+- 主站 `auth.js` 已保護 `zi-geng-auth`（已 push 至 `linyize1111.github.io`）
