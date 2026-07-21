@@ -7,28 +7,32 @@
 
 ## U1. 確認／恢復主站 Supabase 專案（阻斷 Phase 2＋發布）
 
-**狀態**：Open — **最高優先**
+**狀態**：Done — 專案已 Resume；DNS／articles REST 已驗證（2026-07-22）。
 
-**為何**：本機與 Google DNS 皆無法解析 `*.supabase.co` 上主站 project ref（NXDOMAIN）。線上 config 仍指向該專案；動態 CMS／Google 登入可能已壞。
+---
+
+## U6. 套用字耕 `zg_*` migrations（現在可做）
+
+**狀態**：Open — **請花約 1 分鐘手動 Run**（Dashboard SQL Editor 在 iframe 內，自動化無法貼上）
 
 **步驟**：
 
-1. 開啟 <https://supabase.com/dashboard> 並登入。
-2. 尋找主站 CMS 專案（名稱可能類似 `linyize-main-site`；**不要**選 ACG 專案）。
-3. 若專案仍在：
-   - Project Settings → API：確認 Project URL 與 anon key。
-   - 若 URL／ref 已變：告訴 Cursor 新 URL（或自行更新主站 `assets/js/supabase-config.js` 後再通知）。
-4. 若專案已刪除：
-   - New project → 靠近台灣的 region → 保存 DB 密碼。
-   - 依主站 `docs/SUPABASE_SETUP.md` 依序執行：
-     - `supabase/migrations/0001_init.sql`（白名單改為你的 Google 信箱）
-     - `0002_storage.sql`
-     - 可選 `0003_seed_articles.sql`、analytics migration
-   - 啟用 Google Auth；Redirect 含 `https://linyize1111.github.io/admin.html` 與 `/`
-   - 更新主站 `supabase-config.js` 的 URL／anon key 並 push `main`
-5. 驗證：開啟 `https://linyize1111.github.io/admin.html` 能以管理員 Google 登入。
+1. 開啟（你已登入的話會直接進編輯器）：  
+   https://supabase.com/dashboard/project/ypyiqysgfwgxcmmsylob/sql/new
+2. 用編輯器打開本機檔並全選複製：  
+   `LYZ-workspace/zi-geng/supabase/APPLY_PHASE2_IN_SQL_EDITOR.sql`  
+   （或 GitHub：`supabase/migrations/202607220001_zg_members_profiles_settings.sql`）
+3. 貼進 SQL Editor → 按 **Run**
+4. 結果應看到 `zg_members`／`zg_profiles`／`zg_user_settings` 欄位有表名，且 `is_zg_member_anon` / `is_zg_owner_anon` 為 `false`
+5. 再執行（把信箱換成你的 Google 登入信箱）：
 
-**完成後 Cursor 可**：對該專案套用 `zg_*` migrations、接字耕登入與發布。
+```sql
+insert into public.zg_members (email, role, enabled, note) values
+  ('你的Google信箱@gmail.com', 'owner', true, '字耕主人')
+on conflict (email) do update set role = 'owner', enabled = true;
+```
+
+6. 完成後回訊息「migration 好了」，我會驗證並繼續。
 
 ---
 
