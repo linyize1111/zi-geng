@@ -7,7 +7,9 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { useQueryClient } from "@tanstack/react-query";
 import type { AuthState, AuthUser, Membership } from "@/features/auth/types";
+import { clearUserDrafts } from "@/features/writing/draft-store";
 import { env } from "@/lib/env";
 import { getDataAdapter } from "@/lib/offline/mock-adapter";
 import { clearZiGengAuthStorage } from "@/lib/supabase/clear-auth-storage";
@@ -55,6 +57,7 @@ function toAuthUser(user: {
 }
 
 export function AuthProvider({ children }: { children: ReactNode }) {
+  const queryClient = useQueryClient();
   const [state, setState] = useState<AuthState>(loadingState);
 
   const applySession = useCallback(async () => {
@@ -135,18 +138,27 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [applySession]);
 
   const signOut = useCallback(async () => {
+    const userId = state.user?.id;
     if (!env.useMockAdapter) {
       const client = getSupabaseClient();
       if (client) await client.auth.signOut({ scope: "local" });
     }
+    if (userId) {
+      try {
+        await clearUserDrafts(userId);
+      } catch {
+        // Best-effort: logout must continue even if IndexedDB cleanup fails.
+      }
+    }
     clearZiGengAuthStorage();
+    queryClient.clear();
     setState({
       status: "anonymous",
       user: null,
       membership: null,
       usingMock: env.useMockAdapter,
     });
-  }, []);
+  }, [state.user?.id, queryClient]);
 
   const value = useMemo<AuthContextValue>(
     () => ({

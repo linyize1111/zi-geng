@@ -9,6 +9,7 @@ const TodayPage = lazy(() => import("@/pages/TodayPage"));
 const LearnPage = lazy(() => import("@/pages/LearnPage"));
 const LearnSectionPage = lazy(() => import("@/pages/LearnSectionPage"));
 const WritePage = lazy(() => import("@/pages/WritePage"));
+const WriteEditorPage = lazy(() => import("@/pages/WriteEditorPage"));
 const NovelsPage = lazy(() => import("@/pages/NovelsPage"));
 const JapanesePage = lazy(() => import("@/pages/JapanesePage"));
 const ReviewPage = lazy(() => import("@/pages/ReviewPage"));
@@ -136,7 +137,7 @@ export function AppRouter() {
           path={routes.writeNew}
           element={
             <L>
-              <WritePage />
+              <WriteEditorPage />
             </L>
           }
         />
@@ -144,7 +145,7 @@ export function AppRouter() {
           path={routes.writeDetail}
           element={
             <L>
-              <WritePage />
+              <WriteEditorPage />
             </L>
           }
         />

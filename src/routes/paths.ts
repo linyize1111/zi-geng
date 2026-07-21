@@ -30,3 +30,7 @@ export const routes = {
 } as const;
 
 export type AppRoute = (typeof routes)[keyof typeof routes];
+
+export function writeDetailPath(id: string): string {
+  return `/write/${id}`;
+}

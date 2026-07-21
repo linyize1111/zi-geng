@@ -1,14 +1,19 @@
+import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { PageLoading, PageState } from "@/components/common/PageState";
 import { Button } from "@/components/common/Button";
 import { useAuth } from "@/features/auth/AuthProvider";
 import { createMockDailyPlanBundle, fetchOrCreateDailyPlan } from "@/features/daily-plan/api";
+import { createDraft } from "@/features/writing/draft-store";
 import { env } from "@/lib/env";
-import { routes } from "@/routes/paths";
+import { routes, writeDetailPath } from "@/routes/paths";
 
 export default function TodayPage() {
   const auth = useAuth();
+  const navigate = useNavigate();
+  const [startingWrite, setStartingWrite] = useState(false);
+  const [startWriteError, setStartWriteError] = useState<string | null>(null);
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone || "Asia/Taipei";
 
   const query = useQuery({
@@ -119,10 +124,32 @@ export default function TodayPage() {
           <p className="text-xs tracking-widest text-[var(--color-ink-muted)]">寫作題目</p>
           <h2 className="mt-2 text-xl">{data.prompt.title}</h2>
           <p className="mt-2 text-sm leading-relaxed whitespace-pre-wrap">{data.prompt.body}</p>
-          <div className="mt-4">
-            <Button type="button" disabled>
-              開始寫作（Phase 4）
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            <Button
+              type="button"
+              disabled={startingWrite || !auth.user}
+              onClick={() => {
+                if (!auth.user || !data.prompt) return;
+                setStartWriteError(null);
+                setStartingWrite(true);
+                void createDraft({
+                  userId: auth.user.id,
+                  title: data.prompt.title,
+                  promptId: data.prompt.id,
+                  promptTitle: data.prompt.title,
+                })
+                  .then((draft) => navigate(writeDetailPath(draft.id)))
+                  .catch((err: unknown) => {
+                    setStartWriteError(err instanceof Error ? err.message : "無法建立草稿");
+                  })
+                  .finally(() => setStartingWrite(false));
+              }}
+            >
+              {startingWrite ? "建立中…" : "開始寫作"}
             </Button>
+            {startWriteError ? (
+              <span className="text-sm text-[var(--color-danger)]">{startWriteError}</span>
+            ) : null}
           </div>
         </section>
       ) : null}
