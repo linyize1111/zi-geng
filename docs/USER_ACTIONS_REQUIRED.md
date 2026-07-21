@@ -4,19 +4,14 @@
 
 ---
 
-## 現在請再跑一次（精簡 SQL）
+## 目前：你暫時不用做別的
 
-遠端檢查：`zg_replace_daily_slot` **尚未建立**（先前完整檔可能中途失敗）。
+刷新 RPC（`zg_replace_daily_slot`）已由你套用。
 
-1. https://supabase.com/dashboard/project/ypyiqysgfwgxcmmsylob/sql/new  
-2. 清空 → **Ctrl+V**（已放精簡檔 `APPLY_REPLACE_RPC_ONLY.sql`）→ Run  
-3. 結果應出現一列：`zg_replace_daily_slot | p_slot text, p_timezone text`  
-4. 跟我說「好了」
-
-跑完後到「今日」按「換一批」即可變成 7 詞並啟用刷新。
+可選煙測：登入 →「今日」→ 按「換一批」，應變成約 7 個詞。
 
 ---
 
 ## 已結案
 
-U1–U7 / U9 / Secrets 等皆 Done。
+U1–U9、Secrets、Replace RPC 皆 Done。
