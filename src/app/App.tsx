@@ -1,5 +1,6 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HashRouter } from "react-router-dom";
+import { AuthProvider } from "@/features/auth/AuthProvider";
 import { ThemeProvider } from "@/features/settings/ThemeProvider";
 import { AppRouter } from "@/routes/AppRouter";
 import { assertMockPolicy } from "@/lib/env";
@@ -21,7 +22,9 @@ export default function App() {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
         <HashRouter>
-          <AppRouter />
+          <AuthProvider>
+            <AppRouter />
+          </AuthProvider>
         </HashRouter>
       </ThemeProvider>
     </QueryClientProvider>

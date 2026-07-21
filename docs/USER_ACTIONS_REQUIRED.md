@@ -40,7 +40,7 @@
 
 ## U3. 建立 GitHub Repository `zi-geng`
 
-**狀態**：Open（本機 repo 已 init，遠端尚未建立）
+**狀態**：Done — https://github.com/linyize1111/zi-geng
 
 **步驟**：
 

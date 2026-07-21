@@ -2,6 +2,7 @@ import { lazy, Suspense, type ReactNode } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { AppShell } from "@/components/layout/AppShell";
 import { PageLoading } from "@/components/common/PageState";
+import { RequireMember, RequireOwner } from "@/features/auth/RequireAuth";
 import { routes } from "@/routes/paths";
 
 const TodayPage = lazy(() => import("@/pages/TodayPage"));
@@ -51,7 +52,13 @@ export function AppRouter() {
         }
       />
 
-      <Route element={<AppShell />}>
+      <Route
+        element={
+          <RequireMember>
+            <AppShell />
+          </RequireMember>
+        }
+      >
         <Route index element={<Navigate to={routes.today} replace />} />
         <Route
           path={routes.today}
@@ -248,9 +255,11 @@ export function AppRouter() {
         <Route
           path={routes.ownerContent}
           element={
-            <L>
-              <OwnerContentPage />
-            </L>
+            <RequireOwner>
+              <L>
+                <OwnerContentPage />
+              </L>
+            </RequireOwner>
           }
         />
         <Route

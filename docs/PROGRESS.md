@@ -1,36 +1,29 @@
-﻿Current phase: Phase 1
-Current milestone: PWA 骨架
-Status: completed
+﻿Current phase: Phase 2
+Current milestone: Auth + zg_members migrations（本機完成；遠端 DB 待 U1）
+Status: in_progress
 
 Completed:
-- Phase 0 全部
-- Vite + React + TS strict + Tailwind 4 + HashRouter
-- 全路由殼層、手機底欄、桌面側欄、主題、PWA prompt、mock adapter
-- GitHub Actions CI + Pages workflow
-- format/lint/typecheck/test/build 全過
-
-Files changed:
-- 見本 commit（應用程式骨架）
-
-Migrations:
-- none yet
+- Phase 0–1
+- GitHub repo https://github.com/linyize1111/zi-geng 已建立並 push
+- Phase 2：supabase-js client（storageKey=zi-geng-auth）、logout 隔離、AuthProvider、RequireMember/Owner
+- migration 202607220001_zg_members_profiles_settings.sql
+- auth storage unit tests
 
 Tests actually run:
-- npm run ci（format, oxlint, tsc, vitest 6 passed, vite build + PWA）
+- npm run ci（8 tests passed, build ok）
 
-Manual checks:
-- 未跑 Playwright e2e（需先 preview；列為下一小步可選）
-
-Known limitations:
-- 業務功能仍為 placeholder
-- 主站 Supabase DNS 仍失效（U1）
-- 遠端 repo 可能尚未建立（U3）
-- shadcn CLI 未跑；以輕量 Button／CVA 代替
+Known limitations / blockers:
+- U1 主站 Supabase DNS NXDOMAIN → 無法套用 migration／真 Google 登入
+- U4 GitHub Pages source + Secrets 尚未設
+- 內容表／每日計畫尚未做（Phase 3）
+- 主站 auth.js 白名單尚未改（同 origin OAuth 前必須）
 
 User actions required:
-- U1 恢復主站 Supabase
-- U3 建立／連接 GitHub repo zi-geng（若尚未）
-- U4 Pages + Secrets（遠端就緒後）
+- U1 恢復／重建主站 Supabase（最高優先）
+- U4 Pages Actions + Secrets
+- U5 Redirect URL /zi-geng/
+- U6 套用 migration 後寫入 Owner email（U7）
 
 Next action:
-- Phase 2：Supabase client、zg_ migrations、白名單 auth UI（mock 可先測）
+- 使用者完成 U1 後：套用 migration、接真登入
+- 同時可繼續 Phase 3 內容表 SQL 與 UI（mock）
