@@ -85,20 +85,9 @@ on conflict (email) do update set role = 'owner', enabled = true;
 
 ---
 
-## U6. 套用字耕 `zg_*` migrations
-
-**狀態**：Open（等 Phase 2 migration 寫好且 U1 完成）
-
-**步驟**：
-
-1. SQL Editor → 依 `zi-geng/supabase/migrations/` 檔名順序執行（或 CLI `db push`）。
-2. 驗證：`select public.is_zg_member();` 未登入應為 false。
-
----
-
 ## U7. 寫入 Owner／Member Email
 
-**狀態**：Open
+**狀態**：Open（可併入上方 U6 步驟 5）
 
 **步驟**：
 
