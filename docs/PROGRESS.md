@@ -1,22 +1,21 @@
 ﻿Current phase: Phase 3
-Current milestone: 內容表／每日計畫 migration（待使用者 Run SQL）
+Current milestone: 學習列表真實資料；部署 Secrets 已自動寫入
 Status: in_progress
 
 Completed:
-- Phase 0–2 本機與遠端骨架
-- Owner 白名單已由使用者寫入
-- 主站 auth.js 保護 zi-geng-auth（commit 1c991dc，已 push Pages）
-- Phase 3 SQL：內容表、每日計畫、進度／收藏、get_or_create_daily_plan、dev seed
+- Phase 0–2 骨架、Owner、主站 auth 保護
+- Phase 3 SQL（使用者已 Run）
+- Today 頁接 zg_get_or_create_daily_plan
+- 詞彙／名言／技巧列表＋詳情接真實 API
+- GitHub Secrets 已用 gh 寫入（U4 Done）
+- 本機 VITE_USE_MOCK_ADAPTER=false
 
 Tests actually run:
-- anon RPC is_zg_member/owner = false
-- anon zg_members 回 []（RLS）
-- 稍早 npm run ci（Phase 2）
+- npm run ci
+- anon REST 表存在（[] 為 RLS 正常）
 
 User actions required now:
-- U5 Redirect URLs
-- U9 貼上並 Run APPLY_PHASE3_IN_SQL_EDITOR.sql（已在剪貼簿）
-- U4 GitHub Secrets（部署用）
+- 無強制項。可選：之後用 Google 登入煙測一次（M1）
 
 Next action:
-- 使用者完成 U9 後：接 Today 頁真實 daily plan、關 mock 做登入煙測
+- push 後等 Pages 部署；繼續 Phase 4 寫作／離線草稿骨架
