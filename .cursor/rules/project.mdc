@@ -1,0 +1,17 @@
+---
+description: 字耕 PWA 專案規則
+globs:
+alwaysApply: true
+---
+
+# 字耕專案規則
+
+- 先讀 `docs/PROGRESS.md`，只實作當前 Phase／里程碑。
+- 產品需求以 workspace 根目錄兩份規格為準；技術以實際 repo／DB／部署為準。
+- 新表一律 `zg_` 前綴；勿改主站既有 migrations／articles 語意。
+- Auth storageKey 必須是 `zi-geng-auth`；禁止預設 `sb-*-auth-token`。
+- 禁止 `any` 逃避型別、禁止關閉 strict、禁止把祕密放進 `VITE_*`。
+- 業務邏輯放 `src/features/*`，不要堆在巨型 `App.tsx`。
+- 主站 `../linyize1111.github.io` 預設只讀；修改前確認是最小可回復 diff，並更新 DECISIONS。
+- 宣稱測試通過前必須實際執行對應指令。
+- 名言不得虛構查證狀態；AI 功能必須 opt-in。

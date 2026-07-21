@@ -1,0 +1,32 @@
+# Dependencies & build
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env
+.env.local
+.env.*.local
+
+# Logs & caches
+logs/
+*.log
+npm-debug.log*
+.pnpm-debug.log*
+.turbo/
+.cache/
+coverage/
+playwright-report/
+test-results/
+.vitest/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Secrets & dumps
+*.pem
+service-role*
+*_SERVICE_ROLE*
