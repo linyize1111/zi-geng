@@ -10,19 +10,33 @@
 
 | 項目 | 計畫書預期 | 實際發現 |
 |------|------------|----------|
-| Cursor 初始工作區 | `LYZ-workspace` | 原先開啟的是 `acg-portal`（桌面「推薦系統」） |
-| 主站 repo | 工作區內 `linyize1111.github.io/` | 原本不在工作區；已 clone 至 `LYZ-workspace/linyize1111.github.io/`（只讀稽核） |
-| PWA repo | `zi-geng/` | GitHub 上尚不存在；本機已建立空 repo |
-| 規格文件位置 | workspace 根 | 已複製至 `LYZ-workspace/` |
+| Cursor 初始工作區 | `LYZ-workspace` | 原先開啟的是桌面「推薦系統」（git remote = `acg-portal`） |
+| 本機兩站開發位置 | 並列兩個資料夾 | **同一工作站、同一「推薦系統」目錄內**（見下） |
+| 主站 repo | `linyize1111.github.io/` | 本機權威工作複本：`推薦系統/temp-pages/`（獨立 git，remote = `linyize1111.github.io`；被 acg-portal 的 `.gitignore` 排除） |
+| ACG 原始碼 | 另 repo | `推薦系統/frontend/` → 部署進 `temp-pages/acg-portal/` |
+| PWA repo | `zi-geng/` | GitHub 上尚不存在；本機已建於 `LYZ-workspace/zi-geng/` |
+| 規格文件 | workspace 根 | 先出現在「推薦系統」根目錄，後複製至 `LYZ-workspace/` |
 
-目前工作區：
+本機既有雙站佈局（使用者確認；文件 `docs/TWO-PROJECTS-AUTH-GUIDE.md` 亦記載）：
+
+```text
+桌面/推薦系統/                    # git: acg-portal（忽略 temp-pages/）
+├─ frontend/                      # ACG 開發源
+├─ docs/TWO-PROJECTS-AUTH-GUIDE.md
+├─ temp-pages/                    # git: linyize1111.github.io  ← 主站權威本機複本
+│  ├─ admin.html, assets/, …      # 主站 CMS
+│  └─ acg-portal/                 # ACG 部署產物（子路徑）
+└─ …（後端、bot、supabase migrations for ACG）
+```
+
+Phase 0 期間另建的工作區（方便字耕與規格並列；**主站修改應以 `temp-pages` 為準，避免雙複本漂移**）：
 
 ```text
 LYZ-workspace/
 ├─ 01_字耕PWA_完整產品與技術計畫書.md
 ├─ 02_字耕PWA_Cursor總控Prompt.md
-├─ linyize1111.github.io/   # 主站（只讀稽核；Phase 0 未改功能）
-└─ zi-geng/                 # 新 PWA（本 repo）
+├─ linyize1111.github.io/   # shallow clone（與 temp-pages 同 commit；僅供對照）
+└─ zi-geng/                 # 新 PWA
 ```
 
 ---

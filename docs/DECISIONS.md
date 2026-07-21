@@ -6,12 +6,15 @@
 
 ## 2026-07-21 — 工作區從 acg-portal 遷至 LYZ-workspace
 
-- **發現**：規格被放在 `acg-portal`（推薦系統）repo；主站與 `zi-geng` 皆不在該 repo。
-- **採用**：於桌面建立 `LYZ-workspace/`，含規格、主站 clone、`zi-geng/`；Cursor agent root 切換至此。
-- **未採用**：在 acg-portal 內建 PWA（會污染無關產品）。
-- **影響**：acg-portal 僅留下未追蹤的規格副本；字耕工作不依賴它。
-- **回復**：刪除 `LYZ-workspace` 即可；主站 clone 為 shallow、未改功能。
-- **證據**：`git remote` 顯示 acg-portal；`gh repo list` 有主站、無 zi-geng。
+- **發現（初判有誤，已更正）**：規格出現在「推薦系統」時，誤以為主站不在本機。實際上兩站都在此工作站開發：
+  - ACG：`推薦系統/frontend/`（remote `acg-portal`）
+  - 主站：`推薦系統/temp-pages/`（獨立 git，remote `linyize1111.github.io`；被 acg `.gitignore`）
+  - 對照文件：`推薦系統/docs/TWO-PROJECTS-AUTH-GUIDE.md`
+- **採用**：另建 `LYZ-workspace/` 放規格與 `zi-geng/`；主站**權威本機複本仍以 `temp-pages` 為準**。`LYZ-workspace/linyize1111.github.io` 僅為同 commit 的對照 clone，避免與 `temp-pages` 雙寫。
+- **未採用**：在 acg-portal tracked 樹內建 PWA；把字耕塞進 `temp-pages/`。
+- **影響**：後續主站最小變更應改 `推薦系統/temp-pages` 再 push Pages；字耕在 `LYZ-workspace/zi-geng`。
+- **回復**：刪除 `LYZ-workspace` 不影響既有兩站；勿刪 `temp-pages`。
+- **證據**：`temp-pages` 有 `.git` → `linyize1111.github.io`；與 LYZ clone 同為 `6c2f857`；`TWO-PROJECTS-AUTH-GUIDE.md` 原始碼位置表。
 
 ---
 

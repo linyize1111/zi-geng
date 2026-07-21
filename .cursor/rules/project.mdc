@@ -12,6 +12,6 @@ alwaysApply: true
 - Auth storageKey 必須是 `zi-geng-auth`；禁止預設 `sb-*-auth-token`。
 - 禁止 `any` 逃避型別、禁止關閉 strict、禁止把祕密放進 `VITE_*`。
 - 業務邏輯放 `src/features/*`，不要堆在巨型 `App.tsx`。
-- 主站 `../linyize1111.github.io` 預設只讀；修改前確認是最小可回復 diff，並更新 DECISIONS。
+- 主站權威本機路徑是 `../../推薦系統/temp-pages`（或桌面「推薦系統/temp-pages」），不是任意另 clone；修改前確認是最小可回復 diff，並更新 DECISIONS。`LYZ-workspace/linyize1111.github.io` 僅對照用。
 - 宣稱測試通過前必須實際執行對應指令。
 - 名言不得虛構查證狀態；AI 功能必須 opt-in。
