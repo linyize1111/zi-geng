@@ -53,4 +53,5 @@ User actions required:
 - 其餘見 USER_ACTIONS_REQUIRED.md
 
 Next action:
-- Phase 1：安裝 Node 後初始化 Vite＋React＋TS＋HashRouter＋PWA 骨架（若使用者未裝 Node，先嘗試 winget 或暫停並記錄）
+- 等待 U2（Node UAC）完成後進入 Phase 1：Vite＋React＋TS＋HashRouter＋PWA 骨架
+- 並行請使用者處理 U1（主站 Supabase DNS NXDOMAIN）

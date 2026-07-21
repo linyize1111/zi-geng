@@ -34,16 +34,15 @@
 
 ## U2. 安裝本機 Node.js LTS（阻斷 Phase 1 build／test）
 
-**狀態**：Open
+**狀態**：In progress — Cursor 已執行 `winget install OpenJS.NodeJS.LTS`，目前停在 **管理員 UAC 提示**。請在螢幕上按「是」完成安裝；若已關閉提示，請自行重跑下列步驟。
 
 **步驟**：
 
-1. 以系統管理員或目前使用者開啟 PowerShell。
-2. 執行：`winget install OpenJS.NodeJS.LTS --accept-package-agreements --accept-source-agreements`
-3. 關閉並重開終端機。
+1. 若 UAC 仍開啟：按「是」完成安裝。
+2. 若需重跑：在 PowerShell 執行  
+   `winget install --id OpenJS.NodeJS.LTS -e --accept-package-agreements --accept-source-agreements`
+3. 關閉並重開終端機（或重開 Cursor）。
 4. 確認：`node -v`、`npm -v` 有版本號。
-
-（若你希望 Cursor 代為執行 winget，可在下一則訊息授權。）
 
 ---
 
