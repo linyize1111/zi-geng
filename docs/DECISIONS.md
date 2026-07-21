@@ -58,6 +58,15 @@
 
 ---
 
+## 2026-07-22 — Lint 採用 oxlint（Vite 官方 scaffold），非 ESLint
+
+- **發現**：`create-vite` React-TS 模板預設 oxlint；已安裝於專案。
+- **採用**：`npm run lint` = oxlint；另以 Prettier 做 format:check。
+- **未採用**：再裝一層 ESLint（重複、增加維護成本）。
+- **證據**：scaffold `.oxlintrc.json`；CI 跑 oxlint。
+
+---
+
 ## 2026-07-21 — Phase 0 不修改主站；auth 白名單列為後續最小變更
 
 - **發現**：主站 `clearConflictingAuthStorage` 會刪除 `*-code-verifier`，未保護 `zi-geng-auth`。

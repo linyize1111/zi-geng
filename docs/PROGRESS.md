@@ -1,57 +1,36 @@
-Current phase: Phase 0
-Current milestone: 稽核與保護原站（文件與決策）
+﻿Current phase: Phase 1
+Current milestone: PWA 骨架
 Status: completed
 
 Completed:
-- 完整閱讀兩份規格
-- 發現初始工作區為 acg-portal，已建立 LYZ-workspace 並切換 agent root
-- clone 主站 repo（只讀稽核，未改功能）
-- 寫入 current-site-audit.md
-- 建立 implementation-plan / PROGRESS / USER_ACTIONS_REQUIRED / DECISIONS / ADR-0001
-- 建立 AGENTS.md 與 .cursor/rules/project.mdc
-- 確認 articles schema、is_admin、RLS、storageKey=lyz-main-auth
-- 確認 zi-geng-auth 會被主站 code-verifier 清理邏輯誤刪（需未來最小變更）
-- 確認主站 Supabase DNS NXDOMAIN（阻斷遠端 introspection）
-- 確認本機無 Node（阻斷 Phase 1 toolchain）
+- Phase 0 全部
+- Vite + React + TS strict + Tailwind 4 + HashRouter
+- 全路由殼層、手機底欄、桌面側欄、主題、PWA prompt、mock adapter
+- GitHub Actions CI + Pages workflow
+- format/lint/typecheck/test/build 全過
 
 Files changed:
-- docs/current-site-audit.md
-- docs/implementation-plan.md
-- docs/PROGRESS.md
-- docs/USER_ACTIONS_REQUIRED.md
-- docs/DECISIONS.md
-- docs/adr/0001-deployment-and-database-boundary.md
-- AGENTS.md
-- .cursor/rules/project.mdc
-- README.md
-- .gitignore
+- 見本 commit（應用程式骨架）
 
 Migrations:
-- none
+- none yet
 
 Tests actually run:
-- git status / remote / log（主站與工作區）
-- gh repo list；gh api pages
-- HTTP 200：主站 index、literature；zi-geng 路徑 404
-- nslookup／curl：主站 Supabase host NXDOMAIN
-- 靜態閱讀 migrations 與 auth／cms JS
-- 未執行 npm／supabase CLI（工具未安裝／DNS 失敗）
+- npm run ci（format, oxlint, tsc, vitest 6 passed, vite build + PWA）
 
 Manual checks:
-- 線上 supabase-config.js 仍指向失效專案 ref
-- literature 靜態 note-item 仍存在
+- 未跑 Playwright e2e（需先 preview；列為下一小步可選）
 
 Known limitations:
-- 無法 live 驗證 DB schema 與 RLS（Supabase DNS 失敗）
-- 無 Node，尚未 scaffold Vite app
-- GitHub 上尚無 zi-geng remote
+- 業務功能仍為 placeholder
+- 主站 Supabase DNS 仍失效（U1）
+- 遠端 repo 可能尚未建立（U3）
+- shadcn CLI 未跑；以輕量 Button／CVA 代替
 
 User actions required:
-- U1 恢復主站 Supabase（最高優先）
-- U2 Done（Node v24.18.0 / npm 11.16.0）
-- U3 建立 GitHub repo zi-geng
-- 其餘見 USER_ACTIONS_REQUIRED.md
+- U1 恢復主站 Supabase
+- U3 建立／連接 GitHub repo zi-geng（若尚未）
+- U4 Pages + Secrets（遠端就緒後）
 
 Next action:
-- Phase 1：Vite＋React＋TS＋HashRouter＋PWA 骨架
-- 並行請使用者處理 U1（主站 Supabase DNS NXDOMAIN）
+- Phase 2：Supabase client、zg_ migrations、白名單 auth UI（mock 可先測）
