@@ -34,3 +34,7 @@ export type AppRoute = (typeof routes)[keyof typeof routes];
 export function writeDetailPath(id: string): string {
   return `/write/${id}`;
 }
+
+export function novelDetailPath(id: string): string {
+  return `/novels/${id}`;
+}

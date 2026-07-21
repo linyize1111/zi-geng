@@ -1,7 +1,15 @@
-import { useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Link, useNavigate, useParams } from "react-router-dom";
+import { Button } from "@/components/common/Button";
 import { PageLoading, PageState } from "@/components/common/PageState";
 import { useAuth } from "@/features/auth/AuthProvider";
+import {
+  addFavorite,
+  isFavorited,
+  listFavorites,
+  removeFavorite,
+  type FavoriteContentType,
+} from "@/features/favorites/api";
 import {
   getCraft,
   getQuote,
@@ -29,6 +37,12 @@ function listPath(kind: keyof typeof titles) {
   return routes.learnCraft;
 }
 
+function favoriteType(kind: keyof typeof titles): FavoriteContentType {
+  if (kind === "vocabulary") return "vocabulary";
+  if (kind === "quotes") return "quote";
+  return "craft";
+}
+
 function isVocab(item: VocabListItem | QuoteListItem | CraftListItem): item is VocabListItem {
   return "term" in item;
 }
@@ -39,6 +53,51 @@ function isQuote(item: VocabListItem | QuoteListItem | CraftListItem): item is Q
 
 function isCraft(item: VocabListItem | QuoteListItem | CraftListItem): item is CraftListItem {
   return "one_liner" in item && "name" in item;
+}
+
+function FavoriteToggle({ kind, contentId }: { kind: keyof typeof titles; contentId: string }) {
+  const auth = useAuth();
+  const queryClient = useQueryClient();
+  const useMock = env.useMockAdapter || auth.usingMock;
+  const type = favoriteType(kind);
+
+  const favQuery = useQuery({
+    queryKey: ["favorite-one", auth.user?.id, type, contentId],
+    enabled: Boolean(auth.user) && !useMock,
+    queryFn: () => isFavorited(auth.user!.id, type, contentId),
+  });
+
+  const toggle = useMutation({
+    mutationFn: async () => {
+      if (!auth.user) throw new Error("未登入");
+      if (favQuery.data) {
+        const all = await listFavorites(auth.user.id);
+        const hit = all.find((f) => f.content_type === type && f.content_id === contentId);
+        if (hit) await removeFavorite(hit.id);
+      } else {
+        await addFavorite(auth.user.id, type, contentId);
+      }
+    },
+    onSuccess: async () => {
+      await queryClient.invalidateQueries({
+        queryKey: ["favorite-one", auth.user?.id, type, contentId],
+      });
+      await queryClient.invalidateQueries({ queryKey: ["favorites", auth.user?.id] });
+    },
+  });
+
+  if (useMock || !auth.user) return null;
+
+  return (
+    <Button
+      type="button"
+      variant="outline"
+      disabled={favQuery.isLoading || toggle.isPending}
+      onClick={() => toggle.mutate()}
+    >
+      {favQuery.data ? "取消收藏" : "加入收藏"}
+    </Button>
+  );
 }
 
 export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }) {
@@ -110,12 +169,15 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
 
     return (
       <div className="space-y-4">
-        <Link
-          to={listPath(kind)}
-          className="text-sm text-[var(--color-ink-muted)] underline-offset-4 hover:underline"
-        >
-          ← {titles[kind]}
-        </Link>
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <Link
+            to={listPath(kind)}
+            className="text-sm text-[var(--color-ink-muted)] underline-offset-4 hover:underline"
+          >
+            ← {titles[kind]}
+          </Link>
+          <FavoriteToggle kind={kind} contentId={id} />
+        </div>
         {isVocab(item) ? (
           <article className="space-y-3">
             <h1 className="font-[family-name:var(--font-sans)] text-3xl">{item.term}</h1>
