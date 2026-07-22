@@ -5,7 +5,7 @@
 -- 1) 下架測試名言
 -- ---------------------------------------------------------------------
 update public.zg_quotes
-set status = 'archived',
+set status = 'inactive',
     updated_at = now()
 where status = 'active'
   and (
