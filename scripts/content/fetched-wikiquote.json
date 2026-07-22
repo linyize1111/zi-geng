@@ -1,52 +1,11 @@
 {
   "version": 1,
   "count": 4,
-  "fetched_at": "2026-07-22T16:28:06.281Z",
+  "fetched_at": "2026-07-22T16:46:25.374Z",
   "sources": [
     "zh.wikiquote"
   ],
   "cards": [
-    {
-      "status": "active",
-      "display_quote": "自然（英语：Nature），或称自然界、大自然，是指不断运行演化的宇宙万物，包括生物界和非生物界两个相辅相成的体系。",
-      "original_quote": null,
-      "original_language": "zh",
-      "author_name": "自然",
-      "author_bio": "",
-      "work_title": "維基語錄 · 自然",
-      "section_title": "自然",
-      "publication_year": null,
-      "translator_name": null,
-      "bibliography_url": "https://zh.wikiquote.org/wiki/%E8%87%AA%E7%84%B6",
-      "verification_status": "verified_secondary",
-      "copyright_status": "cc-by-sa",
-      "difficulty": 2,
-      "themes": [
-        "自然"
-      ],
-      "short_analysis": "主題「自然」。來源為中文維基語錄社群編輯，屬次級查證；若出處可疑請 Owner 下架。",
-      "deep_analysis": "機器擷取條目前言中的引文句；建議人工核對作者與作品後再對外分享。",
-      "context": "主題頁：自然",
-      "rhetorical_analysis": "",
-      "counterpoint": "社群語錄可能誤植作者或斷章取義，寫作引用前請另查原典。",
-      "writing_insight": "可練習：把這句改寫成場面，不直接引用原文。",
-      "reflection_questions": [
-        "這句在「自然」主題下還有哪些反例？"
-      ],
-      "imitation_exercise": "用自己的語氣寫一句同主題、但完全不同意象的句子。",
-      "tags": [
-        "wikiquote",
-        "multi-source",
-        "自然"
-      ],
-      "source": {
-        "kind": "zh.wikiquote",
-        "page": "自然",
-        "url": "https://zh.wikiquote.org/wiki/%E8%87%AA%E7%84%B6",
-        "license": "CC BY-SA",
-        "fetched_at": "2026-07-22T16:27:02.668Z"
-      }
-    },
     {
       "status": "active",
       "display_quote": "死亡是相对于生命体存在（存活）的生命现象，意指维持一个生物存活的所有生物学功能的永久终止。能够导致死亡的现象一般有：衰老、被捕食、营养不良、疾病、窒息、自杀、他杀以及意外事故还有枪毙（死刑），或者受伤。绝大部分已知的生物都会不可避免的经历死亡（灯塔水母除外）生物的躯体在死亡后不久开始腐烂。",
@@ -85,7 +44,48 @@
         "page": "死亡",
         "url": "https://zh.wikiquote.org/wiki/%E6%AD%BB%E4%BA%A1",
         "license": "CC BY-SA",
-        "fetched_at": "2026-07-22T16:27:03.006Z"
+        "fetched_at": "2026-07-22T16:46:01.275Z"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "記憶是人類心智活動的一種，屬於心理學或腦部科學的範疇。記憶代表著一個人對過去活動、感受、經驗的印象累積。",
+      "original_quote": null,
+      "original_language": "zh",
+      "author_name": "記憶",
+      "author_bio": "",
+      "work_title": "維基語錄 · 記憶",
+      "section_title": "記憶",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": "https://zh.wikiquote.org/wiki/%E8%A8%98%E6%86%B6",
+      "verification_status": "verified_secondary",
+      "copyright_status": "cc-by-sa",
+      "difficulty": 2,
+      "themes": [
+        "記憶"
+      ],
+      "short_analysis": "主題「記憶」。來源為中文維基語錄社群編輯，屬次級查證；若出處可疑請 Owner 下架。",
+      "deep_analysis": "機器擷取條目前言中的引文句；建議人工核對作者與作品後再對外分享。",
+      "context": "主題頁：記憶",
+      "rhetorical_analysis": "",
+      "counterpoint": "社群語錄可能誤植作者或斷章取義，寫作引用前請另查原典。",
+      "writing_insight": "可練習：把這句改寫成場面，不直接引用原文。",
+      "reflection_questions": [
+        "這句在「記憶」主題下還有哪些反例？"
+      ],
+      "imitation_exercise": "用自己的語氣寫一句同主題、但完全不同意象的句子。",
+      "tags": [
+        "wikiquote",
+        "multi-source",
+        "記憶"
+      ],
+      "source": {
+        "kind": "zh.wikiquote",
+        "page": "記憶",
+        "url": "https://zh.wikiquote.org/wiki/%E8%A8%98%E6%86%B6",
+        "license": "CC BY-SA",
+        "fetched_at": "2026-07-22T16:46:01.607Z"
       }
     },
     {
@@ -126,7 +126,7 @@
         "page": "沉默",
         "url": "https://zh.wikiquote.org/wiki/%E6%B2%89%E9%BB%98",
         "license": "CC BY-SA",
-        "fetched_at": "2026-07-22T16:28:05.220Z"
+        "fetched_at": "2026-07-22T16:46:01.888Z"
       }
     },
     {
@@ -167,7 +167,7 @@
         "page": "旅行",
         "url": "https://zh.wikiquote.org/wiki/%E6%97%85%E8%A1%8C",
         "license": "CC BY-SA",
-        "fetched_at": "2026-07-22T16:28:05.569Z"
+        "fetched_at": "2026-07-22T16:46:02.146Z"
       }
     }
   ]
