@@ -54,8 +54,10 @@ export type WritingPrompt = {
   id: string;
   title: string;
   body: string;
+  category: string | null;
   suggested_words: number | null;
   suggested_minutes: number | null;
+  tags?: string[] | null;
 };
 
 export type NovelTask = {
@@ -64,6 +66,8 @@ export type NovelTask = {
   body: string;
   minutes_min: number;
   minutes_max: number;
+  tags?: string[] | null;
+  difficulty?: number | null;
 };
 
 export type DailyPlanBundle = {

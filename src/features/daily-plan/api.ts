@@ -68,7 +68,7 @@ async function hydratePlan(daily: DailyPlan): Promise<DailyPlanBundle> {
     daily.writing_prompt_id
       ? client
           .from("zg_writing_prompts")
-          .select("id, title, body, suggested_words, suggested_minutes")
+          .select("id, title, body, category, suggested_words, suggested_minutes, tags")
           .eq("id", daily.writing_prompt_id)
           .maybeSingle()
           .then((r) => {
@@ -79,7 +79,7 @@ async function hydratePlan(daily: DailyPlan): Promise<DailyPlanBundle> {
     daily.novel_task_template_id
       ? client
           .from("zg_novel_task_templates")
-          .select("id, title, body, minutes_min, minutes_max")
+          .select("id, title, body, minutes_min, minutes_max, tags, difficulty")
           .eq("id", daily.novel_task_template_id)
           .maybeSingle()
           .then((r) => {
@@ -369,6 +369,7 @@ export function createMockDailyPlanBundle(): DailyPlanBundle {
         id: "mock-prompt",
         title: "無人的教室",
         body: "描寫放學後的教室，不要直接寫「安靜」。",
+        category: "場景描寫",
         suggested_words: 150,
         suggested_minutes: 15,
       },
@@ -378,6 +379,7 @@ export function createMockDailyPlanBundle(): DailyPlanBundle {
         body: "為主角各寫一句想要與需要，兩者必須不同。",
         minutes_min: 5,
         minutes_max: 15,
+        tags: ["階段:角色", "角色", "動機"],
       },
     };
   }
@@ -431,6 +433,7 @@ export function replaceMockDailySlot(slot: DailySlot): DailyPlanBundle {
         id: "mock-prompt-2",
         title: "晚歸的鑰匙",
         body: "寫一個人回家開門的三十秒。",
+        category: "動作描寫",
         suggested_words: 120,
         suggested_minutes: 12,
       },

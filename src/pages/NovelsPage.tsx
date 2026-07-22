@@ -72,7 +72,7 @@ export default function NovelsPage() {
         <div>
           <h1 className="font-[family-name:var(--font-sans)] text-3xl tracking-wide">小說</h1>
           <p className="mt-1 text-sm text-[var(--color-ink-muted)]">
-            本機專案骨架（人物／章節稍後）。共 {rows.length} 本
+            創作計畫系統（構思→修訂）；大綱保留區等你稍後貼上。共 {rows.length} 本
           </p>
         </div>
         <Button
@@ -87,7 +87,7 @@ export default function NovelsPage() {
       {rows.length === 0 ? (
         <PageState
           title="尚無小說專案"
-          description="建立一本，先寫下前提與筆記。"
+          description="建立一本，先寫 logline／主題；大綱可之後再貼進保留區。"
           actionLabel="新建專案"
           onAction={() => createMutation.mutate()}
         />

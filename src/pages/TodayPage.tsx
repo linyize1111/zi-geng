@@ -324,7 +324,17 @@ export default function TodayPage() {
             </div>
           </div>
           <h2 className="mt-2 text-xl">{data.prompt.title}</h2>
+          {data.prompt.category ? (
+            <p className="mt-1 text-xs text-[var(--color-ink-muted)]">{data.prompt.category}</p>
+          ) : null}
           <p className="mt-2 text-sm leading-relaxed whitespace-pre-wrap">{data.prompt.body}</p>
+          {(data.prompt.suggested_words || data.prompt.suggested_minutes) && (
+            <p className="mt-2 text-xs text-[var(--color-ink-muted)]">
+              {data.prompt.suggested_words ? `約 ${data.prompt.suggested_words} 字` : null}
+              {data.prompt.suggested_words && data.prompt.suggested_minutes ? " · " : null}
+              {data.prompt.suggested_minutes ? `約 ${data.prompt.suggested_minutes} 分鐘` : null}
+            </p>
+          )}
           <div className="mt-4 flex flex-wrap items-center gap-3">
             <Button
               type="button"
@@ -356,9 +366,16 @@ export default function TodayPage() {
             />
           </div>
           <h2 className="mt-2 text-xl">{data.novelTask.title}</h2>
+          {data.novelTask.tags?.length ? (
+            <p className="mt-1 text-xs text-[var(--color-ink-muted)]">
+              {data.novelTask.tags
+                .filter((t) => t.startsWith("階段:") || t === "待大綱" || t === "保留")
+                .join(" · ") || data.novelTask.tags.slice(0, 3).join(" · ")}
+            </p>
+          ) : null}
           <p className="mt-2 text-sm leading-relaxed whitespace-pre-wrap">{data.novelTask.body}</p>
           <p className="mt-2 text-xs text-[var(--color-ink-muted)]">
-            約 {data.novelTask.minutes_min}–{data.novelTask.minutes_max} 分鐘
+            約 {data.novelTask.minutes_min}–{data.novelTask.minutes_max} 分鐘 · 完成後可記在「小說」專案的創作計畫
           </p>
         </section>
       ) : null}
