@@ -1,32 +1,31 @@
-# 需要使用者手動完成的事項
+# 自動化內容（只需設一次密鑰）
 
----
+詞庫／名言的爬取與匯入由 GitHub Actions「Content sync」負責，**不要再手動貼大包 SQL**。
 
-## 立刻：把 500 成語灌進資料庫（你現在只看到 3 個詞就是這個原因）
+## 唯一需要你做的一次設定
 
-龐大詞庫在網站 JSON 裡，**還沒寫進 Supabase**。請 Run：
+在 https://github.com/linyize1111/zi-geng/settings/secrets/actions 新增：
 
-**Raw（全選複製）：**  
-https://raw.githubusercontent.com/linyize1111/zi-geng/main/supabase/APPLY_BULK_VOCAB_AND_QUOTES.sql  
+| Secret | 哪裡拿 |
+|--------|--------|
+| `SUPABASE_SERVICE_ROLE_KEY` | Supabase → Project Settings → API → `service_role`（secret） |
 
-**SQL Editor：**  
-https://supabase.com/dashboard/project/ypyiqysgfwgxcmmsylob/sql/new  
+可選：
 
-跑完應看到 `vocab_active` 約 500+、`quotes_active` 約 20+。  
-然後硬重新整理字耕 → 側欄「詞彙」應有幾百筆 →「今日」換一批才會真的換新詞。
+| Secret | 用途 |
+|--------|------|
+| `SUPABASE_ACCESS_TOKEN` | [Account tokens](https://supabase.com/dashboard/account/tokens) — 用來自動套用 RPC SQL |
+| `SUPABASE_URL` | 可省略，會用既有 `VITE_SUPABASE_URL` |
 
-也可 Owner 登入 → 內容管理 →「匯入教育部成語」＋「匯入多主題名言」（較慢）。
+設好後到 Actions → **Content sync** → **Run workflow**，或等週一排程／推送 `scripts/content/**` 自動跑。
 
----
+跑完「今日」會顯示詞庫數百筆；側欄「詞彙」可見完整列表。
 
-## （建議）無限刷新 RPC
+## 流程（全自動）
 
-https://raw.githubusercontent.com/linyize1111/zi-geng/main/supabase/APPLY_REFRESH_UNLIMITED_ONLY.sql  
+1. 下載教育部成語／重建種子  
+2. **service role 寫入 Supabase**（成語 + 多主題名言）  
+3. 盡力爬維基詞典／語錄並追加匯入  
+4. 種子有變則 commit 並部署 Pages  
 
-（前端已有後備換卡；這份是把資料庫函式一併修好。）
-
----
-
-## 週更 secret（可之後）
-
-`SUPABASE_SERVICE_ROLE_KEY` 設一次即可全自動週更。
+前端「換一批」已不依賴舊的每日上限 RPC。

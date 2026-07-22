@@ -130,9 +130,9 @@ export default function OwnerContentPage() {
       </section>
 
       <section className="rounded-lg border border-dashed border-[var(--color-line)] p-5 text-sm text-[var(--color-ink-muted)]">
-        週更會抓教育部成語＋維基詞典／語錄（合法 API／開放授權），再寫入 Supabase。需設{" "}
-        <code className="text-xs">SUPABASE_SERVICE_ROLE_KEY</code>
-        。不會去爬商業字典。名人語錄標為次級查證，可疑請下架。
+        內容由 GitHub Actions「Content sync」全自動爬取並寫入資料庫（週更＋推送觸發）。請在 repo
+        Secrets 設一次 <code className="text-xs">SUPABASE_SERVICE_ROLE_KEY</code>
+        ，之後不必再手動貼 SQL。下方按鈕僅供緊急補灌。
       </section>
     </div>
   );
