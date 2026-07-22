@@ -8,7 +8,6 @@ import {
   fetchOrCreateDailyPlan,
   replaceDailySlot,
   replaceMockDailySlot,
-  replacementRemaining,
   type DailySlot,
 } from "@/features/daily-plan/api";
 import { createDraft } from "@/features/writing/draft-store";
@@ -18,25 +17,17 @@ import { routes, writeDetailPath } from "@/routes/paths";
 function RefreshButton({
   slot,
   label,
-  remaining,
   busy,
   onRefresh,
 }: {
   slot: DailySlot;
   label: string;
-  remaining: number;
   busy: boolean;
   onRefresh: (slot: DailySlot) => void;
 }) {
   return (
-    <Button
-      type="button"
-      variant="outline"
-      disabled={busy || remaining <= 0}
-      onClick={() => onRefresh(slot)}
-      title={remaining <= 0 ? "今日此項刷新次數已用完" : `尚可刷新 ${remaining} 次`}
-    >
-      {remaining <= 0 ? `${label}已用完` : `${label}（剩 ${remaining}）`}
+    <Button type="button" variant="outline" disabled={busy} onClick={() => onRefresh(slot)}>
+      {label}
     </Button>
   );
 }
@@ -98,7 +89,7 @@ export default function TodayPage() {
 
   const data = query.data;
   if (!data) {
-    return <PageState title="尚無今日內容" description="請確認已匯入 seed，或稍後再試。" />;
+    return <PageState title="尚無今日內容" description="請稍後再試，或到內容管理匯入詞庫。" />;
   }
 
   const refreshError =
@@ -121,8 +112,7 @@ export default function TodayPage() {
           {data.plan.local_date}（{data.plan.timezone}）{useMock ? " · Mock" : ""}
         </p>
         <p className="text-sm text-[var(--color-ink-muted)]">
-          今日詞彙 {data.vocabulary.length} 個。「換一批」是從詞庫重抽，不是上網即抓；詞庫請先用
-          Owner「匯入內建文學詞庫」補足（之後可週更）。
+          今日詞彙 {data.vocabulary.length} 個。可隨時「換一批」重抽；詞庫不足時請到內容管理匯入。
         </p>
         {refreshError ? <p className="text-sm text-[var(--color-danger)]">{refreshError}</p> : null}
       </header>
@@ -134,7 +124,6 @@ export default function TodayPage() {
             <RefreshButton
               slot="quote"
               label="換一則"
-              remaining={replacementRemaining(data.plan, "quote")}
               busy={refreshMutation.isPending}
               onRefresh={onRefresh}
             />
@@ -151,7 +140,7 @@ export default function TodayPage() {
           ) : null}
         </section>
       ) : (
-        <PageState title="今日尚無名言" description="請確認已有 verified 且 active 的名言資料。" />
+        <PageState title="今日尚無名言" description="庫中尚無可抽的寫作箴言；稍後再試或換一批其他區塊。" />
       )}
 
       <section className="space-y-3">
@@ -161,7 +150,6 @@ export default function TodayPage() {
             <RefreshButton
               slot="vocabulary"
               label="換一批"
-              remaining={replacementRemaining(data.plan, "vocabulary")}
               busy={refreshMutation.isPending}
               onRefresh={onRefresh}
             />
@@ -186,7 +174,7 @@ export default function TodayPage() {
             ))}
           </ul>
         ) : (
-          <PageState title="今日尚無詞彙" description="請先執行開發 seed 或匯入詞彙。" />
+          <PageState title="今日尚無詞彙" description="請到「內容管理」匯入文學詞庫後再試。" />
         )}
       </section>
 
@@ -197,7 +185,6 @@ export default function TodayPage() {
             <RefreshButton
               slot="craft"
               label="換一個"
-              remaining={replacementRemaining(data.plan, "craft")}
               busy={refreshMutation.isPending}
               onRefresh={onRefresh}
             />
@@ -215,7 +202,6 @@ export default function TodayPage() {
             <RefreshButton
               slot="prompt"
               label="換一題"
-              remaining={replacementRemaining(data.plan, "prompt")}
               busy={refreshMutation.isPending}
               onRefresh={onRefresh}
             />
@@ -248,7 +234,6 @@ export default function TodayPage() {
             <RefreshButton
               slot="novel"
               label="換一個"
-              remaining={replacementRemaining(data.plan, "novel")}
               busy={refreshMutation.isPending}
               onRefresh={onRefresh}
             />

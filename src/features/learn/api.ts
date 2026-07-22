@@ -57,9 +57,11 @@ export async function listQuotes(): Promise<QuoteListItem[]> {
     .from("zg_quotes")
     .select("id, display_quote, author_name, work_title, short_analysis, verification_status")
     .eq("status", "active")
+    .neq("copyright_status", "internal_test")
+    .neq("author_name", "開發測試內容")
     .order("created_at", { ascending: false });
   if (error) throw error;
-  return (data ?? []) as QuoteListItem[];
+  return ((data ?? []) as QuoteListItem[]).filter((q) => !q.display_quote.includes("開發測試"));
 }
 
 export async function getQuote(id: string): Promise<QuoteListItem | null> {

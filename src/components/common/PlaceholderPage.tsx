@@ -14,10 +14,7 @@ export function PlaceholderPage({ title, description }: PlaceholderPageProps) {
           <p className="mt-2 text-sm text-[var(--color-ink-muted)]">{description}</p>
         ) : null}
       </header>
-      <PageState
-        title="此頁骨架已就緒"
-        description="功能將於後續 Phase 實作。目前可驗證導覽、主題與 PWA 殼層。"
-      />
+      <PageState title="即將推出" description="這一區還在打磨，先用今日、詞彙與寫作就好。" />
     </div>
   );
 }

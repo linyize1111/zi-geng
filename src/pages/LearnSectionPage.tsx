@@ -234,13 +234,20 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
           {titles[kind]}
         </h1>
         <p className="text-sm text-[var(--color-ink-muted)]">
-          {rows.length ? `共 ${rows.length} 筆` : "尚無資料（請確認已匯入 seed）"}
-          {useMock ? " · Mock" : ""}
+          {rows.length ? `共 ${rows.length} 筆` : "尚無資料"}
+          {useMock ? " · 離線示範" : ""}
         </p>
       </header>
 
       {rows.length === 0 ? (
-        <PageState title="列表為空" description="登入後仍為空，通常是 seed 尚未寫入。" />
+        <PageState
+          title="列表為空"
+          description={
+            kind === "vocabulary"
+              ? "請到「內容管理」匯入文學詞庫。"
+              : "內容尚在補齊，稍後再來看。"
+          }
+        />
       ) : (
         <ul className="space-y-3">
           {rows.map((row) => {

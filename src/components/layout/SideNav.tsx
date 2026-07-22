@@ -10,8 +10,6 @@ const primary = [
   { to: routes.learnCraft, label: "寫作技巧" },
   { to: routes.write, label: "寫作" },
   { to: routes.novels, label: "小說" },
-  { to: routes.japanese, label: "日文" },
-  { to: routes.review, label: "回顧" },
   { to: routes.favorites, label: "收藏" },
   { to: routes.settings, label: "設定" },
   { to: routes.ownerContent, label: "內容管理" },

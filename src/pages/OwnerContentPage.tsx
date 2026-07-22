@@ -57,8 +57,8 @@ export default function OwnerContentPage() {
       <section className="space-y-4 rounded-lg border border-[var(--color-line)] p-5">
         <h2 className="text-lg">文學詞庫一鍵匯入</h2>
         <p className="text-sm text-[var(--color-ink-muted)]">
-          約 300+
-          筆書面語／成語／寫作向詞彙（可重跑，已存在的詞會跳過）。匯入後請到「今日」按「換一批」。
+          約 500+
+          筆教育部《成語典》詞卡（可重跑，已存在的詞會跳過）。首次灌庫後，「今日／換一批」才有足夠內容。之後由週更自動補庫，不必每週重按。
         </p>
         <Button type="button" disabled={busy} onClick={() => void importBundled()}>
           {busy ? progress || "匯入中…" : "匯入內建文學詞庫"}
@@ -75,8 +75,10 @@ export default function OwnerContentPage() {
       </section>
 
       <section className="rounded-lg border border-dashed border-[var(--color-line)] p-5 text-sm text-[var(--color-ink-muted)]">
-        週更：GitHub Actions「Content sync」會從中文維基詞典補詞（需設定
-        SUPABASE_SERVICE_ROLE_KEY）。名言仍須人工查證後再匯入，不會自動冒充名人。
+        週更全自動：每週一 UTC 16:00（台北週二 00:00）跑「Content sync」——下載教育部成語、重建種子、service
+        role 寫入 Supabase，並在種子有變時自動 commit／部署。僅需在 GitHub Secrets
+        設一次 <code className="text-xs">SUPABASE_SERVICE_ROLE_KEY</code>
+        （URL 可沿用 <code className="text-xs">VITE_SUPABASE_URL</code>）。名言仍須人工查證，不會自動冒充名人。
       </section>
     </div>
   );

@@ -130,20 +130,11 @@ export default function SettingsPage() {
 
       <ul className="space-y-2 text-sm">
         <li>
-          <Link className="underline-offset-4 hover:underline" to={routes.japanese}>
-            日文
-          </Link>
-        </li>
-        <li>
-          <Link className="underline-offset-4 hover:underline" to={routes.review}>
-            回顧
-          </Link>
-        </li>
-        <li>
           <Link className="underline-offset-4 hover:underline" to={routes.favorites}>
             收藏
           </Link>
         </li>
+        <li className="text-[var(--color-ink-muted)]">日文、回顧：即將推出</li>
         {auth.membership?.isOwner ? (
           <li>
             <Link className="underline-offset-4 hover:underline" to={routes.ownerContent}>

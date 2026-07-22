@@ -11,22 +11,17 @@ import type {
 
 export type DailySlot = "vocabulary" | "quote" | "craft" | "prompt" | "novel";
 
-export const DAILY_REPLACE_LIMITS: Record<DailySlot, number> = {
-  vocabulary: 5,
-  quote: 2,
-  craft: 2,
-  prompt: 1,
-  novel: 1,
-};
-
 export function replacementUsed(plan: DailyPlan, slot: DailySlot): number {
   const raw = plan.replacements?.[slot];
   const n = typeof raw === "number" ? raw : Number(raw);
   return Number.isFinite(n) ? n : 0;
 }
 
-export function replacementRemaining(plan: DailyPlan, slot: DailySlot): number {
-  return Math.max(0, DAILY_REPLACE_LIMITS[slot] - replacementUsed(plan, slot));
+function isUsableQuote(quote: QuoteCard | null): quote is QuoteCard {
+  if (!quote) return false;
+  if (quote.author_name === "開發測試內容") return false;
+  if (quote.display_quote.includes("開發測試")) return false;
+  return true;
 }
 
 async function hydratePlan(daily: DailyPlan): Promise<DailyPlanBundle> {
@@ -92,7 +87,14 @@ async function hydratePlan(daily: DailyPlan): Promise<DailyPlanBundle> {
       : Promise.resolve(null),
   ]);
 
-  return { plan: daily, quote, vocabulary, craft, prompt, novelTask };
+  return {
+    plan: daily,
+    quote: isUsableQuote(quote) ? quote : null,
+    vocabulary,
+    craft,
+    prompt,
+    novelTask,
+  };
 }
 
 export async function fetchOrCreateDailyPlan(timezone = "Asia/Taipei"): Promise<DailyPlanBundle> {
@@ -202,10 +204,10 @@ export function createMockDailyPlanBundle(): DailyPlanBundle {
       },
       quote: {
         id: "mock-quote",
-        display_quote: "【開發測試】把句子寫短，把意思寫深。",
-        author_name: "開發測試內容",
-        work_title: "字耕 Mock",
-        short_analysis: "Mock 模式：未連線真實資料庫。",
+        display_quote: "把句子寫短，把意思寫深。",
+        author_name: "字耕",
+        work_title: "寫作箴言",
+        short_analysis: "離線示範：長度不是密度。",
         verification_status: "verified_secondary",
       },
       vocabulary: [...MOCK_VOCAB],
@@ -237,9 +239,6 @@ export function createMockDailyPlanBundle(): DailyPlanBundle {
 export function replaceMockDailySlot(slot: DailySlot): DailyPlanBundle {
   const current = createMockDailyPlanBundle();
   const used = replacementUsed(current.plan, slot);
-  if (used >= DAILY_REPLACE_LIMITS[slot]) {
-    throw new Error(`今日「${slot}」刷新次數已用完`);
-  }
   const nextReps = { ...current.plan.replacements, [slot]: used + 1 };
   if (slot === "vocabulary") {
     const rotated = [...MOCK_VOCAB.slice(2), ...MOCK_VOCAB.slice(0, 2)];
@@ -258,10 +257,10 @@ export function replaceMockDailySlot(slot: DailySlot): DailyPlanBundle {
       plan: { ...current.plan, quote_id: "mock-quote-2", replacements: nextReps },
       quote: {
         id: "mock-quote-2",
-        display_quote: "【開發測試】細節比形容詞更靠近真實。",
-        author_name: "開發測試內容",
-        work_title: "字耕 Mock B",
-        short_analysis: "Mock 刷新後的名言。",
+        display_quote: "細節比形容詞更靠近真實。",
+        author_name: "字耕",
+        work_title: "寫作箴言",
+        short_analysis: "可觀察細節往往比空泛形容更有說服力。",
         verification_status: "verified_secondary",
       },
     };

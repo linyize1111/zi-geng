@@ -67,6 +67,24 @@
 
 ---
 
+## 2026-07-22 — 週更改為全自動（必匯入＋自動 commit）
+
+- **發現**：使用者要求週更全自動；舊 workflow 缺 `SERVICE_ROLE` 時靜默跳過匯入，且種子不回寫 repo。
+- **採用**：Content sync 缺 secret 即失敗；用 `VITE_SUPABASE_URL` 當 URL fallback；匯入成功後若種子有變則 bot commit/push（觸發 Pages）。
+- **未採用**：繼續「artifact only」半自動；把 service_role 寫進前端。
+- **證據**：repo secrets 僅有 `VITE_*`，尚無 `SUPABASE_SERVICE_ROLE_KEY`。
+
+---
+
+## 2026-07-22 — 刷新不限次數；下架開發測試名言
+
+- **發現**：使用者不要刷新次數限制；畫面上仍出現「開發測試內容」。
+- **採用**：`zg_replace_daily_slot` 移除每日上限；archive `internal_test`／開發測試名言；改以「字耕／寫作箴言」原創提示；側欄暫時隱藏日文／回顧。
+- **未採用**：繼續限制次數；把測試種子當正式內容。
+- **影響**：需在 Supabase Run `APPLY_UNLIMITED_REFRESH_AND_PURGE_TEST.sql`。
+
+---
+
 ## 2026-07-22 — Lint 採用 oxlint（Vite 官方 scaffold），非 ESLint
 
 - **發現**：使用者回饋每日 3 詞偏少，並需要刷新。

@@ -123,7 +123,7 @@ export default function NovelsPage() {
       )}
 
       <p className="text-sm text-[var(--color-ink-muted)]">
-        也可從「今日」小說任務起步；更完整的章節工具見後續 Phase。{" "}
+        也可從「今日」小說任務起步。{" "}
         <Link to={routes.today} className="underline-offset-4 hover:underline">
           回今日
         </Link>

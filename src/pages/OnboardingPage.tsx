@@ -1,10 +1,7 @@
-import { PlaceholderPage } from "@/components/common/PlaceholderPage";
+import { Navigate } from "react-router-dom";
+import { routes } from "@/routes/paths";
 
+/** 初次設定已併入「設定」；保留路由以免舊連結失效。 */
 export default function OnboardingPage() {
-  return (
-    <PlaceholderPage
-      title="初次設定"
-      description="名稱、時區、每日模式與題材偏好將於 Phase 2 完成。"
-    />
-  );
+  return <Navigate to={routes.settings} replace />;
 }

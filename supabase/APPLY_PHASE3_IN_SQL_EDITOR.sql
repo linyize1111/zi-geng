@@ -445,8 +445,8 @@ revoke all on function public.zg_get_or_create_daily_plan(text) from public;
 grant execute on function public.zg_get_or_create_daily_plan(text) to authenticated;
 
 
--- 開發用少量 seed（可重跑：先依 term/title 略過已存在者）
--- 名言作者必須是「開發測試內容」
+-- 少量 seed（可重跑：先依 term/title 略過已存在者）
+-- 名言請用「字耕」原創箴言，勿再插入「開發測試內容」
 
 insert into public.zg_vocabulary_cards (
   status, term, zhuyin, part_of_speech, difficulty, short_def, long_def,
@@ -483,17 +483,18 @@ insert into public.zg_quotes (
 )
 select
   'active',
-  '【開發測試內容】把句子寫短，把意思寫深。',
-  '開發測試內容',
-  '字耕開發種子（非正式引用）',
+  '把句子寫短，把意思寫深。',
+  '字耕',
+  '寫作箴言',
   'verified_secondary',
-  'internal_test',
+  'original',
   2,
-  '測試用名言：提醒寫作時以密度換長度。',
-  '此筆資料僅供開發，不得當作真實名人語錄發布。',
-  array['開發','測試']
+  '長度不是密度；刪去空話，留下可承擔意義的字。',
+  '字耕原創寫作提示，非名人引用。',
+  array['寫作','密度']
 where not exists (
-  select 1 from public.zg_quotes q where q.author_name = '開發測試內容'
+  select 1 from public.zg_quotes q
+  where q.author_name = '字耕' and q.display_quote = '把句子寫短，把意思寫深。'
 );
 
 insert into public.zg_craft_cards (

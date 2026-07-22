@@ -488,30 +488,30 @@ insert into public.zg_quotes (
 )
 select * from (values
   ('active'::text,
-   '【開發測試內容】把句子寫短，把意思寫深。',
-   '開發測試內容', '字耕開發種子（非正式引用）',
-   'verified_secondary', 'internal_test', 2,
-   '測試用名言：提醒寫作時以密度換長度。',
-   '此筆資料僅供開發，不得當作真實名人語錄發布。',
-   array['開發','測試']::text[]),
+   '把句子寫短，把意思寫深。',
+   '字耕', '寫作箴言',
+   'verified_secondary', 'original', 2,
+   '長度不是密度；刪去空話，留下可承擔意義的字。',
+   '字耕原創寫作提示，非名人引用。',
+   array['寫作','密度']::text[]),
   ('active',
-   '【開發測試內容】細節比形容詞更靠近真實。',
-   '開發測試內容', '字耕開發種子 B',
-   'verified_secondary', 'internal_test', 2,
-   '用可觀察細節取代空泛情緒詞。',
-   '開發用。',
-   array['開發','細節']::text[]),
+   '細節比形容詞更靠近真實。',
+   '字耕', '寫作箴言',
+   'verified_secondary', 'original', 2,
+   '可觀察的物件、聲音、動作，往往比空泛情緒詞更有說服力。',
+   '字耕原創寫作提示，非名人引用。',
+   array['寫作','細節']::text[]),
   ('active',
-   '【開發測試內容】先寫清楚，再寫漂亮。',
-   '開發測試內容', '字耕開發種子 C',
-   'verified_secondary', 'internal_test', 1,
-   '清楚是文采的地基。',
-   '開發用。',
-   array['開發','清楚']::text[])
+   '先寫清楚，再寫漂亮。',
+   '字耕', '寫作箴言',
+   'verified_secondary', 'original', 1,
+   '文采建立在可讀之上。',
+   '字耕原創寫作提示，非名人引用。',
+   array['寫作','清楚']::text[])
 ) as q(status, display_quote, author_name, work_title, verification_status,
        copyright_status, difficulty, short_analysis, deep_analysis, tags)
 where not exists (
-  select 1 from public.zg_quotes x where x.display_quote = q.display_quote
+  select 1 from public.zg_quotes x where x.display_quote = q.display_quote and x.author_name = '字耕'
 );
 
 insert into public.zg_craft_cards (

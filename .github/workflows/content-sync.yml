@@ -2,33 +2,93 @@ name: Content sync
 
 on:
   schedule:
+    # Monday 16:00 UTC = Tuesday 00:00 Asia/Taipei
     - cron: "0 16 * * 1"
   workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: content-sync
+  cancel-in-progress: false
 
 jobs:
   sync-vocab:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: npm
+
       - run: npm ci
+
+      - name: Require Supabase secrets
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL || secrets.VITE_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "::error::Missing secrets. Set SUPABASE_SERVICE_ROLE_KEY (required). SUPABASE_URL optional (falls back to VITE_SUPABASE_URL)."
+            exit 1
+          fi
+
       - name: Download MOE idioms + rebuild seed
         run: |
           npm run content:download-idioms
           SEED_LIMIT=800 npm run content:generate
+
       - name: Import seed into Supabase
         env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL || secrets.VITE_SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node scripts/content/import-vocab.mjs scripts/content/seed-literary-vocab.json
+
+      - name: Commit seed if changed
+        id: seed
         run: |
-          if [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
-            echo "SUPABASE_SERVICE_ROLE_KEY missing — seed file updated in artifact only"
-            exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            scripts/content/seed-literary-vocab.json \
+            scripts/content/literary-terms.txt \
+            public/content/seed-literary-vocab.json
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Seed unchanged — no commit"
+          else
+            git commit -m "chore(content): weekly vocab seed refresh"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
-          node scripts/content/import-vocab.mjs scripts/content/seed-literary-vocab.json
+
+      # GITHUB_TOKEN push does not re-trigger pages.yml — deploy here when seed changed
+      - name: Build site (seed updated)
+        if: steps.seed.outputs.changed == 'true'
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+          VITE_MAIN_SITE_URL: ${{ secrets.VITE_MAIN_SITE_URL }}
+          VITE_APP_BASE_PATH: /zi-geng/
+          VITE_USE_MOCK_ADAPTER: "false"
+        run: npm run build
+
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.seed.outputs.changed == 'true'
+        with:
+          path: dist
+
+      - id: deployment
+        if: steps.seed.outputs.changed == 'true'
+        uses: actions/deploy-pages@v4
+
       - uses: actions/upload-artifact@v4
         with:
           name: seed-literary-vocab
