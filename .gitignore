@@ -31,6 +31,12 @@ Thumbs.db
 service-role*
 *_SERVICE_ROLE*
 
+# Large source dumps (regenerate seed from convert script)
+scripts/content/dict_idioms.json
+scripts/content/fetched-wiktionary.json
+scripts/content/build-raw.mjs
+scripts/content/_build-literary-raw.mjs
+
 # from Vite scaffold
 
 # Logs

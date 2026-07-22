@@ -121,8 +121,8 @@ export default function TodayPage() {
           {data.plan.local_date}（{data.plan.timezone}）{useMock ? " · Mock" : ""}
         </p>
         <p className="text-sm text-[var(--color-ink-muted)]">
-          今日詞彙 {data.vocabulary.length} 個；各區塊可依剩餘次數刷新（詞彙最多 5 次，題目／小說 1
-          次）。
+          今日詞彙 {data.vocabulary.length} 個。「換一批」是從詞庫重抽，不是上網即抓；詞庫請先用
+          Owner「匯入內建文學詞庫」補足（之後可週更）。
         </p>
         {refreshError ? <p className="text-sm text-[var(--color-danger)]">{refreshError}</p> : null}
       </header>

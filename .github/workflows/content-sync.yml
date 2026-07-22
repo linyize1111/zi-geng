@@ -1,0 +1,37 @@
+name: Content sync
+
+on:
+  schedule:
+    - cron: "0 16 * * 1"
+  workflow_dispatch:
+
+jobs:
+  sync-vocab:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Download MOE idioms + rebuild seed
+        run: |
+          npm run content:download-idioms
+          SEED_LIMIT=800 npm run content:generate
+      - name: Import seed into Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          if [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "SUPABASE_SERVICE_ROLE_KEY missing — seed file updated in artifact only"
+            exit 0
+          fi
+          node scripts/content/import-vocab.mjs scripts/content/seed-literary-vocab.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: seed-literary-vocab
+          path: |
+            scripts/content/seed-literary-vocab.json
+            public/content/seed-literary-vocab.json

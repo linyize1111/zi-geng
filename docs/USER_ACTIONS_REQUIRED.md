@@ -1,17 +1,18 @@
 # 需要使用者手動完成的事項
 
-> 原則：Cursor 能做的都自動做。
-
 ---
 
-## 目前：你暫時不用做別的
+## 現在請做（讓詞庫真正進資料庫）
 
-刷新 RPC（`zg_replace_daily_slot`）已由你套用。
+1. 開啟字耕並用 **Owner** 帳號登入  
+2. 到 **更多 → 內容管理**  
+3. 按 **「匯入內建文學詞庫」**（約 500 筆成語，可重跑）  
+4. 回「今日」按 **「換一批」**
 
-可選煙測：登入 →「今日」→ 按「換一批」，應變成約 7 個詞。
+（可選）若要週自動匯入：在 GitHub Secrets 加 `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`。
 
 ---
 
 ## 已結案
 
-U1–U9、Secrets、Replace RPC 皆 Done。
+Phase 2/3 SQL、Replace RPC、Pages Secrets 等皆 Done。

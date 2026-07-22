@@ -1,15 +1,16 @@
-﻿Current phase: Phase 3–4
-Current milestone: 每日 7 詞 + 刷新；寫作本機草稿
+﻿Current phase: Content ingestion
+Current milestone: 500 教育部成語種子 + Owner 一鍵匯入 + 週更 workflow
 Status: in_progress
 
 Completed:
-- Phase 0–3 骨架與 Today／學習真實資料
-- Phase 4：Dexie 草稿、寫作編輯、autosave
-- 預設詞彙 7；zg_replace_daily_slot；設定頁可調份量
-- 擴充 seed（20+ 詞彙）
+- 今日刷新／7 詞
+- 寫作／小說本機骨架、收藏
+- 教育部《成語典》→ 500 詞卡種子（public/content + scripts）
+- Owner 匯入 UI、content-sync.yml
 
 User actions required now:
-- Run APPLY_VOCAB_REFRESH_IN_SQL_EDITOR.sql（剪貼簿已備）
+- Owner 登入後按「匯入內建文學詞庫」
+- （可選）SERVICE_ROLE secret 做週更
 
-Next action:
-- 使用者 Run SQL 後驗證刷新；接收藏／小說骨架
+Next:
+- 使用者匯入後驗證換一批；再擴寫作題／技巧種子
