@@ -1,8 +1,8 @@
 {
   "version": 2,
   "mode": "update",
-  "count": 26,
-  "fetched_at": "2026-07-22T17:56:06.053Z",
+  "count": 22,
+  "fetched_at": "2026-07-22T21:57:15.656Z",
   "sources": [
     "zh.wikiquote",
     "zh.wikisource"
@@ -10,135 +10,12 @@
   "cards": [
     {
       "status": "active",
-      "display_quote": "孤独是一种情绪和状态。",
-      "original_quote": "孤独是一种情绪和状态。",
-      "original_language": "zh",
-      "author_name": "孤獨",
-      "author_bio": "",
-      "work_title": "維基語錄 · 孤獨",
-      "section_title": "孤獨",
-      "publication_year": null,
-      "translator_name": null,
-      "bibliography_url": "https://zh.wikiquote.org/wiki/%E5%AD%A4%E7%8D%A8",
-      "verification_status": "verified_secondary",
-      "copyright_status": "cc-by-sa",
-      "difficulty": 3,
-      "themes": [
-        "孤獨"
-      ],
-      "short_analysis": "多來源擷取（zh.wikiquote）。次級查證；可疑請下架。",
-      "deep_analysis": "機器擷取；寫作引用前請核對原典。",
-      "context": "維基語錄 · 孤獨",
-      "rhetorical_analysis": "",
-      "counterpoint": "社群／列表來源可能誤植，勿盲目當金句。",
-      "writing_insight": "化用場面，避免空喊原句。",
-      "reflection_questions": [
-        "若改寫成現代場景，哪個意象必須保留？"
-      ],
-      "imitation_exercise": "用自己的物象重寫核心關係，不抄原句。",
-      "tags": [
-        "multi-source",
-        "zh.wikiquote",
-        "孤獨"
-      ],
-      "source": {
-        "kind": "zh.wikiquote",
-        "page": "維基語錄 · 孤獨",
-        "url": "https://zh.wikiquote.org/wiki/%E5%AD%A4%E7%8D%A8",
-        "license": "CC BY-SA",
-        "fetched_at": "2026-07-22T17:54:15.303Z"
-      }
-    },
-    {
-      "status": "active",
-      "display_quote": "自然（英语：Nature），或称自然界、大自然，是指不断运行演化的宇宙万物，包括生物界和非生物界两个相辅相成的体系。",
-      "original_quote": "自然（英语：Nature），或称自然界、大自然，是指不断运行演化的宇宙万物，包括生物界和非生物界两个相辅相成的体系。",
-      "original_language": "zh",
-      "author_name": "自然",
-      "author_bio": "",
-      "work_title": "維基語錄 · 自然",
-      "section_title": "自然",
-      "publication_year": null,
-      "translator_name": null,
-      "bibliography_url": "https://zh.wikiquote.org/wiki/%E8%87%AA%E7%84%B6",
-      "verification_status": "verified_secondary",
-      "copyright_status": "cc-by-sa",
-      "difficulty": 3,
-      "themes": [
-        "自然"
-      ],
-      "short_analysis": "多來源擷取（zh.wikiquote）。次級查證；可疑請下架。",
-      "deep_analysis": "機器擷取；寫作引用前請核對原典。",
-      "context": "維基語錄 · 自然",
-      "rhetorical_analysis": "",
-      "counterpoint": "社群／列表來源可能誤植，勿盲目當金句。",
-      "writing_insight": "化用場面，避免空喊原句。",
-      "reflection_questions": [
-        "若改寫成現代場景，哪個意象必須保留？"
-      ],
-      "imitation_exercise": "用自己的物象重寫核心關係，不抄原句。",
-      "tags": [
-        "multi-source",
-        "zh.wikiquote",
-        "自然"
-      ],
-      "source": {
-        "kind": "zh.wikiquote",
-        "page": "維基語錄 · 自然",
-        "url": "https://zh.wikiquote.org/wiki/%E8%87%AA%E7%84%B6",
-        "license": "CC BY-SA",
-        "fetched_at": "2026-07-22T17:55:08.461Z"
-      }
-    },
-    {
-      "status": "active",
-      "display_quote": "死亡是相对于生命体存在（存活）的生命现象，意指维持一个生物存活的所有生物学功能的永久终止。能够导致死亡的现象一般有：衰老、被捕食、营养不良、疾病、窒息、自杀、他杀以及意外事故还有枪毙（死刑），或者受伤。绝大部分已知的生物都会不可避免的经历死亡（灯塔水母除外）生物的躯体在死亡后不久开始腐烂。",
-      "original_quote": "死亡是相对于生命体存在（存活）的生命现象，意指维持一个生物存活的所有生物学功能的永久终止。能够导致死亡的现象一般有：衰老、被捕食、营养不良、疾病、窒息、自杀、他杀以及意外事故还有枪毙（死刑），或者受伤。绝大部分已知的生物都会不可避免的经历死亡（灯塔水母除外）生物的躯体在死亡后不久开始腐烂。",
-      "original_language": "zh",
-      "author_name": "死亡",
-      "author_bio": "",
-      "work_title": "維基語錄 · 死亡",
-      "section_title": "死亡",
-      "publication_year": null,
-      "translator_name": null,
-      "bibliography_url": "https://zh.wikiquote.org/wiki/%E6%AD%BB%E4%BA%A1",
-      "verification_status": "verified_secondary",
-      "copyright_status": "cc-by-sa",
-      "difficulty": 3,
-      "themes": [
-        "死亡"
-      ],
-      "short_analysis": "多來源擷取（zh.wikiquote）。次級查證；可疑請下架。",
-      "deep_analysis": "機器擷取；寫作引用前請核對原典。",
-      "context": "維基語錄 · 死亡",
-      "rhetorical_analysis": "",
-      "counterpoint": "社群／列表來源可能誤植，勿盲目當金句。",
-      "writing_insight": "化用場面，避免空喊原句。",
-      "reflection_questions": [
-        "若改寫成現代場景，哪個意象必須保留？"
-      ],
-      "imitation_exercise": "用自己的物象重寫核心關係，不抄原句。",
-      "tags": [
-        "multi-source",
-        "zh.wikiquote",
-        "死亡"
-      ],
-      "source": {
-        "kind": "zh.wikiquote",
-        "page": "維基語錄 · 死亡",
-        "url": "https://zh.wikiquote.org/wiki/%E6%AD%BB%E4%BA%A1",
-        "license": "CC BY-SA",
-        "fetched_at": "2026-07-22T17:55:08.932Z"
-      }
-    },
-    {
-      "status": "active",
       "display_quote": "孔子（前551年9月28日—前479年4月11日），名丘，字仲尼，鲁国 (今山东曲阜)人。春秋末期的思想家和教育家，儒家学派的创始人。",
       "original_quote": "孔子（前551年9月28日—前479年4月11日），名丘，字仲尼，鲁国 (今山东曲阜)人。春秋末期的思想家和教育家，儒家学派的创始人。",
       "original_language": "zh",
       "author_name": "孔子",
       "author_bio": "",
-      "work_title": "維基語錄 · 孔子",
+      "work_title": "孔子",
       "section_title": "孔子",
       "publication_year": null,
       "translator_name": null,
@@ -151,7 +28,7 @@
       ],
       "short_analysis": "多來源擷取（zh.wikiquote）。次級查證；可疑請下架。",
       "deep_analysis": "機器擷取；寫作引用前請核對原典。",
-      "context": "維基語錄 · 孔子",
+      "context": "孔子",
       "rhetorical_analysis": "",
       "counterpoint": "社群／列表來源可能誤植，勿盲目當金句。",
       "writing_insight": "化用場面，避免空喊原句。",
@@ -166,10 +43,10 @@
       ],
       "source": {
         "kind": "zh.wikiquote",
-        "page": "維基語錄 · 孔子",
+        "page": "孔子",
         "url": "https://zh.wikiquote.org/wiki/%E5%AD%94%E5%AD%90",
         "license": "CC BY-SA",
-        "fetched_at": "2026-07-22T17:55:09.713Z"
+        "fetched_at": "2026-07-22T21:56:02.231Z"
       }
     },
     {
@@ -179,7 +56,7 @@
       "original_language": "zh",
       "author_name": "孟子",
       "author_bio": "",
-      "work_title": "維基語錄 · 孟子",
+      "work_title": "孟子",
       "section_title": "孟子",
       "publication_year": null,
       "translator_name": null,
@@ -192,7 +69,7 @@
       ],
       "short_analysis": "多來源擷取（zh.wikiquote）。次級查證；可疑請下架。",
       "deep_analysis": "機器擷取；寫作引用前請核對原典。",
-      "context": "維基語錄 · 孟子",
+      "context": "孟子",
       "rhetorical_analysis": "",
       "counterpoint": "社群／列表來源可能誤植，勿盲目當金句。",
       "writing_insight": "化用場面，避免空喊原句。",
@@ -207,10 +84,10 @@
       ],
       "source": {
         "kind": "zh.wikiquote",
-        "page": "維基語錄 · 孟子",
+        "page": "孟子",
         "url": "https://zh.wikiquote.org/wiki/%E5%AD%9F%E5%AD%90",
         "license": "CC BY-SA",
-        "fetched_at": "2026-07-22T17:55:09.967Z"
+        "fetched_at": "2026-07-22T21:56:02.482Z"
       }
     },
     {
@@ -220,7 +97,7 @@
       "original_language": "zh",
       "author_name": "莊子",
       "author_bio": "",
-      "work_title": "維基語錄 · 莊子",
+      "work_title": "莊子",
       "section_title": "莊子",
       "publication_year": null,
       "translator_name": null,
@@ -233,7 +110,7 @@
       ],
       "short_analysis": "多來源擷取（zh.wikiquote）。次級查證；可疑請下架。",
       "deep_analysis": "機器擷取；寫作引用前請核對原典。",
-      "context": "維基語錄 · 莊子",
+      "context": "莊子",
       "rhetorical_analysis": "",
       "counterpoint": "社群／列表來源可能誤植，勿盲目當金句。",
       "writing_insight": "化用場面，避免空喊原句。",
@@ -248,51 +125,10 @@
       ],
       "source": {
         "kind": "zh.wikiquote",
-        "page": "維基語錄 · 莊子",
+        "page": "莊子",
         "url": "https://zh.wikiquote.org/wiki/%E8%8E%8A%E5%AD%90",
         "license": "CC BY-SA",
-        "fetched_at": "2026-07-22T17:55:10.250Z"
-      }
-    },
-    {
-      "status": "active",
-      "display_quote": "《荀子》共三十二篇，基本上是荀子所作，也有部分可能是由他的弟子記錄而成。荀子的散文長於論辯，剖析事理非常透闢，謹嚴綿密，有很強的邏輯性；語言亦豐富多彩，善用比喻，多排偶句，是很成熟的哲理散文了。",
-      "original_quote": "《荀子》共三十二篇，基本上是荀子所作，也有部分可能是由他的弟子記錄而成。荀子的散文長於論辯，剖析事理非常透闢，謹嚴綿密，有很強的邏輯性；語言亦豐富多彩，善用比喻，多排偶句，是很成熟的哲理散文了。",
-      "original_language": "zh",
-      "author_name": "荀子",
-      "author_bio": "",
-      "work_title": "維基語錄 · 荀子",
-      "section_title": "荀子",
-      "publication_year": null,
-      "translator_name": null,
-      "bibliography_url": "https://zh.wikiquote.org/wiki/%E8%8D%80%E5%AD%90",
-      "verification_status": "verified_secondary",
-      "copyright_status": "cc-by-sa",
-      "difficulty": 3,
-      "themes": [
-        "荀子"
-      ],
-      "short_analysis": "多來源擷取（zh.wikiquote）。次級查證；可疑請下架。",
-      "deep_analysis": "機器擷取；寫作引用前請核對原典。",
-      "context": "維基語錄 · 荀子",
-      "rhetorical_analysis": "",
-      "counterpoint": "社群／列表來源可能誤植，勿盲目當金句。",
-      "writing_insight": "化用場面，避免空喊原句。",
-      "reflection_questions": [
-        "若改寫成現代場景，哪個意象必須保留？"
-      ],
-      "imitation_exercise": "用自己的物象重寫核心關係，不抄原句。",
-      "tags": [
-        "multi-source",
-        "zh.wikiquote",
-        "荀子"
-      ],
-      "source": {
-        "kind": "zh.wikiquote",
-        "page": "維基語錄 · 荀子",
-        "url": "https://zh.wikiquote.org/wiki/%E8%8D%80%E5%AD%90",
-        "license": "CC BY-SA",
-        "fetched_at": "2026-07-22T17:55:10.794Z"
+        "fetched_at": "2026-07-22T21:56:02.720Z"
       }
     },
     {
@@ -302,7 +138,7 @@
       "original_language": "zh",
       "author_name": "韓非子",
       "author_bio": "",
-      "work_title": "維基語錄 · 韓非子",
+      "work_title": "韓非子",
       "section_title": "韓非子",
       "publication_year": null,
       "translator_name": null,
@@ -315,7 +151,7 @@
       ],
       "short_analysis": "多來源擷取（zh.wikiquote）。次級查證；可疑請下架。",
       "deep_analysis": "機器擷取；寫作引用前請核對原典。",
-      "context": "維基語錄 · 韓非子",
+      "context": "韓非子",
       "rhetorical_analysis": "",
       "counterpoint": "社群／列表來源可能誤植，勿盲目當金句。",
       "writing_insight": "化用場面，避免空喊原句。",
@@ -330,10 +166,10 @@
       ],
       "source": {
         "kind": "zh.wikiquote",
-        "page": "維基語錄 · 韓非子",
+        "page": "韓非子",
         "url": "https://zh.wikiquote.org/wiki/%E9%9F%93%E9%9D%9E%E5%AD%90",
         "license": "CC BY-SA",
-        "fetched_at": "2026-07-22T17:55:11.050Z"
+        "fetched_at": "2026-07-22T21:56:03.477Z"
       }
     },
     {
@@ -343,7 +179,7 @@
       "original_language": "zh",
       "author_name": "屈原",
       "author_bio": "",
-      "work_title": "維基語錄 · 屈原",
+      "work_title": "屈原",
       "section_title": "屈原",
       "publication_year": null,
       "translator_name": null,
@@ -356,7 +192,7 @@
       ],
       "short_analysis": "多來源擷取（zh.wikiquote）。次級查證；可疑請下架。",
       "deep_analysis": "機器擷取；寫作引用前請核對原典。",
-      "context": "維基語錄 · 屈原",
+      "context": "屈原",
       "rhetorical_analysis": "",
       "counterpoint": "社群／列表來源可能誤植，勿盲目當金句。",
       "writing_insight": "化用場面，避免空喊原句。",
@@ -371,10 +207,10 @@
       ],
       "source": {
         "kind": "zh.wikiquote",
-        "page": "維基語錄 · 屈原",
+        "page": "屈原",
         "url": "https://zh.wikiquote.org/wiki/%E5%B1%88%E5%8E%9F",
         "license": "CC BY-SA",
-        "fetched_at": "2026-07-22T17:56:03.892Z"
+        "fetched_at": "2026-07-22T21:56:03.745Z"
       }
     },
     {
@@ -384,7 +220,7 @@
       "original_language": "zh",
       "author_name": "司馬遷",
       "author_bio": "",
-      "work_title": "維基語錄 · 司馬遷",
+      "work_title": "司馬遷",
       "section_title": "司馬遷",
       "publication_year": null,
       "translator_name": null,
@@ -397,7 +233,7 @@
       ],
       "short_analysis": "多來源擷取（zh.wikiquote）。次級查證；可疑請下架。",
       "deep_analysis": "機器擷取；寫作引用前請核對原典。",
-      "context": "維基語錄 · 司馬遷",
+      "context": "司馬遷",
       "rhetorical_analysis": "",
       "counterpoint": "社群／列表來源可能誤植，勿盲目當金句。",
       "writing_insight": "化用場面，避免空喊原句。",
@@ -412,10 +248,10 @@
       ],
       "source": {
         "kind": "zh.wikiquote",
-        "page": "維基語錄 · 司馬遷",
+        "page": "司馬遷",
         "url": "https://zh.wikiquote.org/wiki/%E5%8F%B8%E9%A6%AC%E9%81%B7",
         "license": "CC BY-SA",
-        "fetched_at": "2026-07-22T17:56:04.442Z"
+        "fetched_at": "2026-07-22T21:56:03.986Z"
       }
     },
     {
@@ -458,7 +294,7 @@
         "page": "維基文庫 · 詩經/關雎",
         "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93%2F%E9%97%9C%E9%9B%8E",
         "license": "PD/CC",
-        "fetched_at": "2026-07-22T17:56:04.886Z"
+        "fetched_at": "2026-07-22T21:57:14.546Z"
       }
     },
     {
@@ -501,7 +337,7 @@
         "page": "維基文庫 · 詩經/關雎",
         "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93%2F%E9%97%9C%E9%9B%8E",
         "license": "PD/CC",
-        "fetched_at": "2026-07-22T17:56:04.886Z"
+        "fetched_at": "2026-07-22T21:57:14.546Z"
       }
     },
     {
@@ -544,7 +380,7 @@
         "page": "維基文庫 · 詩經/關雎",
         "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93%2F%E9%97%9C%E9%9B%8E",
         "license": "PD/CC",
-        "fetched_at": "2026-07-22T17:56:04.886Z"
+        "fetched_at": "2026-07-22T21:57:14.546Z"
       }
     },
     {
@@ -587,7 +423,7 @@
         "page": "維基文庫 · 詩經/關雎",
         "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93%2F%E9%97%9C%E9%9B%8E",
         "license": "PD/CC",
-        "fetched_at": "2026-07-22T17:56:04.886Z"
+        "fetched_at": "2026-07-22T21:57:14.546Z"
       }
     },
     {
@@ -630,7 +466,7 @@
         "page": "維基文庫 · 詩經/蒹葭",
         "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93%2F%E8%92%B9%E8%91%AD",
         "license": "PD/CC",
-        "fetched_at": "2026-07-22T17:56:05.151Z"
+        "fetched_at": "2026-07-22T21:57:14.818Z"
       }
     },
     {
@@ -673,7 +509,7 @@
         "page": "維基文庫 · 詩經/蒹葭",
         "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93%2F%E8%92%B9%E8%91%AD",
         "license": "PD/CC",
-        "fetched_at": "2026-07-22T17:56:05.151Z"
+        "fetched_at": "2026-07-22T21:57:14.818Z"
       }
     },
     {
@@ -716,7 +552,7 @@
         "page": "維基文庫 · 詩經/蒹葭",
         "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93%2F%E8%92%B9%E8%91%AD",
         "license": "PD/CC",
-        "fetched_at": "2026-07-22T17:56:05.151Z"
+        "fetched_at": "2026-07-22T21:57:14.818Z"
       }
     },
     {
@@ -759,7 +595,7 @@
         "page": "維基文庫 · 詩經/蒹葭",
         "url": "https://zh.wikisource.org/wiki/%E8%A9%A9%E7%B6%93%2F%E8%92%B9%E8%91%AD",
         "license": "PD/CC",
-        "fetched_at": "2026-07-22T17:56:05.151Z"
+        "fetched_at": "2026-07-22T21:57:14.818Z"
       }
     },
     {
@@ -802,7 +638,7 @@
         "page": "維基文庫 · 孟子/梁惠王上",
         "url": "https://zh.wikisource.org/wiki/%E5%AD%9F%E5%AD%90%2F%E6%A2%81%E6%83%A0%E7%8E%8B%E4%B8%8A",
         "license": "PD/CC",
-        "fetched_at": "2026-07-22T17:56:05.531Z"
+        "fetched_at": "2026-07-22T21:57:15.176Z"
       }
     },
     {
@@ -845,7 +681,7 @@
         "page": "維基文庫 · 孟子/梁惠王上",
         "url": "https://zh.wikisource.org/wiki/%E5%AD%9F%E5%AD%90%2F%E6%A2%81%E6%83%A0%E7%8E%8B%E4%B8%8A",
         "license": "PD/CC",
-        "fetched_at": "2026-07-22T17:56:05.531Z"
+        "fetched_at": "2026-07-22T21:57:15.176Z"
       }
     },
     {
@@ -888,7 +724,7 @@
         "page": "維基文庫 · 孟子/梁惠王上",
         "url": "https://zh.wikisource.org/wiki/%E5%AD%9F%E5%AD%90%2F%E6%A2%81%E6%83%A0%E7%8E%8B%E4%B8%8A",
         "license": "PD/CC",
-        "fetched_at": "2026-07-22T17:56:05.531Z"
+        "fetched_at": "2026-07-22T21:57:15.176Z"
       }
     },
     {
@@ -931,7 +767,7 @@
         "page": "維基文庫 · 孟子/梁惠王上",
         "url": "https://zh.wikisource.org/wiki/%E5%AD%9F%E5%AD%90%2F%E6%A2%81%E6%83%A0%E7%8E%8B%E4%B8%8A",
         "license": "PD/CC",
-        "fetched_at": "2026-07-22T17:56:05.531Z"
+        "fetched_at": "2026-07-22T21:57:15.176Z"
       }
     },
     {
@@ -974,7 +810,7 @@
         "page": "維基文庫 · 莊子/逍遙遊",
         "url": "https://zh.wikisource.org/wiki/%E8%8E%8A%E5%AD%90%2F%E9%80%8D%E9%81%99%E9%81%8A",
         "license": "PD/CC",
-        "fetched_at": "2026-07-22T17:56:05.832Z"
+        "fetched_at": "2026-07-22T21:57:15.436Z"
       }
     },
     {
@@ -1017,7 +853,7 @@
         "page": "維基文庫 · 莊子/逍遙遊",
         "url": "https://zh.wikisource.org/wiki/%E8%8E%8A%E5%AD%90%2F%E9%80%8D%E9%81%99%E9%81%8A",
         "license": "PD/CC",
-        "fetched_at": "2026-07-22T17:56:05.832Z"
+        "fetched_at": "2026-07-22T21:57:15.436Z"
       }
     },
     {
@@ -1060,7 +896,7 @@
         "page": "維基文庫 · 莊子/逍遙遊",
         "url": "https://zh.wikisource.org/wiki/%E8%8E%8A%E5%AD%90%2F%E9%80%8D%E9%81%99%E9%81%8A",
         "license": "PD/CC",
-        "fetched_at": "2026-07-22T17:56:05.832Z"
+        "fetched_at": "2026-07-22T21:57:15.436Z"
       }
     },
     {
@@ -1103,7 +939,7 @@
         "page": "維基文庫 · 莊子/逍遙遊",
         "url": "https://zh.wikisource.org/wiki/%E8%8E%8A%E5%AD%90%2F%E9%80%8D%E9%81%99%E9%81%8A",
         "license": "PD/CC",
-        "fetched_at": "2026-07-22T17:56:05.832Z"
+        "fetched_at": "2026-07-22T21:57:15.436Z"
       }
     }
   ]
