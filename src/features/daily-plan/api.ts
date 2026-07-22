@@ -32,7 +32,9 @@ async function hydratePlan(daily: DailyPlan): Promise<DailyPlanBundle> {
     daily.quote_id
       ? client
           .from("zg_quotes")
-          .select("id, display_quote, author_name, work_title, short_analysis, verification_status")
+          .select(
+            "id, display_quote, author_name, work_title, section_title, original_quote, author_bio, publication_year, translator_name, bibliography_url, short_analysis, deep_analysis, context, writing_insight, counterpoint, themes, verification_status, copyright_status",
+          )
           .eq("id", daily.quote_id)
           .maybeSingle()
           .then((r) => {

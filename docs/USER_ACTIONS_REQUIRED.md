@@ -2,30 +2,31 @@
 
 ---
 
-## 現在請做
+## 1. 立刻：拿掉刷新上限（必做）
 
-### 1. 清掉「開發測試」＋取消刷新上限（必做）
+前次完整 SQL 可能因 `archived` 失敗而沒裝上。請只跑這份：
 
-在 Supabase → SQL Editor 貼上並 Run：
+**Raw：** https://raw.githubusercontent.com/linyize1111/zi-geng/main/supabase/APPLY_REFRESH_UNLIMITED_ONLY.sql  
 
-`zi-geng/supabase/APPLY_UNLIMITED_REFRESH_AND_PURGE_TEST.sql`
+**SQL Editor：** https://supabase.com/dashboard/project/ypyiqysgfwgxcmmsylob/sql/new  
 
-會：下架測試名言、寫入「字耕」寫作箴言、擴充技巧／題目、**取消換一批次數上限**。跑完重整「今日」。
-
-### 2. 首次灌詞庫（若還沒）
-
-1. Owner 登入 → **更多 → 內容管理 →「匯入內建文學詞庫」**  
-2. 回「今日」按「換一批」
-
-### 3. 週更全自動（一次性）
-
-| Secret | 說明 |
-|--------|------|
-| `SUPABASE_SERVICE_ROLE_KEY` | **必填**（Project Settings → API → service_role） |
-| `SUPABASE_URL` | 可省略；未設則用 `VITE_SUPABASE_URL` |
+跑完最後一列應顯示 `still_has_limit = false`。然後硬重新整理字耕。
 
 ---
 
-## 已結案
+## 2. 匯入多來源內容（Owner）
 
-Phase 2/3 SQL、Replace RPC、Pages Secrets（`VITE_*`）等皆 Done。
+1. 登入 → 內容管理  
+2. 「匯入教育部成語」  
+3. 「匯入多來源詞彙」「匯入多主題名言」（需網站已部署含這些 JSON）
+
+或等週更（需 `SUPABASE_SERVICE_ROLE_KEY`）。
+
+---
+
+## 3. 週更 secret（一次性）
+
+| Secret | 說明 |
+|--------|------|
+| `SUPABASE_SERVICE_ROLE_KEY` | 必填 |
+| `SUPABASE_URL` | 可省略，沿用 `VITE_SUPABASE_URL` |

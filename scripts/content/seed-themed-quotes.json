@@ -1,0 +1,1074 @@
+{
+  "version": 1,
+  "count": 27,
+  "sources": [
+    "classical-public-domain",
+    "zi-geng-original"
+  ],
+  "cards": [
+    {
+      "status": "active",
+      "display_quote": "學而時習之，不亦說乎？",
+      "original_quote": "學而時習之，不亦說乎？",
+      "original_language": "zh-classical",
+      "author_name": "孔子",
+      "author_bio": "",
+      "work_title": "論語·學而",
+      "section_title": "學習",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "學習",
+        "教育"
+      ],
+      "short_analysis": "把學習與複習連在一起，快樂來自反覆確認自己真的懂了。",
+      "deep_analysis": "「時習」強調節奏：不是一次背完，而是依時溫習。寫作也可同理——草稿要留時間回看。",
+      "context": "儒家入門語，談學習態度。",
+      "rhetorical_analysis": "",
+      "counterpoint": "若只重複而不思考，時習會變成空轉。",
+      "writing_insight": "把「複習」寫成場面：燈下重讀舊稿、刪掉昨夜自以為巧妙的句子。",
+      "reflection_questions": [
+        "你最近哪一次複習，真的改變了理解？"
+      ],
+      "imitation_exercise": "用現代場景寫一句「學而時習」的對應。",
+      "tags": [
+        "古典",
+        "公有領域",
+        "學習",
+        "教育"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "知之者不如好之者，好之者不如樂之者。",
+      "original_quote": "知之者不如好之者，好之者不如樂之者。",
+      "original_language": "zh-classical",
+      "author_name": "孔子",
+      "author_bio": "",
+      "work_title": "論語·雍也",
+      "section_title": "學習",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "學習",
+        "動機"
+      ],
+      "short_analysis": "程度由「知道」上升到「喜歡」再到「樂在其中」。",
+      "deep_analysis": "三層動機對寫作者極有用：為交稿而寫、為喜歡而寫、為寫本身而寫，產出與語氣都不同。",
+      "context": "論求學境界。",
+      "rhetorical_analysis": "",
+      "counterpoint": "「樂之」也可能變成自我耽溺，需要外在標準校正。",
+      "writing_insight": "檢查角色動機落在哪一層，對話自然會變。",
+      "reflection_questions": [
+        "你寫作時比較常停在哪一層？"
+      ],
+      "imitation_exercise": "寫三句獨白，分別對應知／好／樂。",
+      "tags": [
+        "古典",
+        "公有領域",
+        "學習",
+        "動機"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "路漫漫其修遠兮，吾將上下而求索。",
+      "original_quote": "路漫漫其修遠兮，吾將上下而求索。",
+      "original_language": "zh-classical",
+      "author_name": "屈原",
+      "author_bio": "",
+      "work_title": "離騷",
+      "section_title": "堅持",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "堅持",
+        "孤獨",
+        "理想"
+      ],
+      "short_analysis": "路途漫長，仍要上下求索——把堅持寫成空間動作。",
+      "deep_analysis": "「上下」不是抽象努力，而是可感的攀爬與俯就。長篇小說的中段最需要這種意象。",
+      "context": "楚辭抒情傳統。",
+      "rhetorical_analysis": "",
+      "counterpoint": "求索也可能迷失；可對照「知其不可而為之」。",
+      "writing_insight": "用路程意象取代「我很努力」的宣告。",
+      "reflection_questions": [
+        "你故事裡的「路」具體是什麼？"
+      ],
+      "imitation_exercise": "寫一段主角在長路上求索，但不出現「努力」二字。",
+      "tags": [
+        "古典",
+        "公有領域",
+        "堅持",
+        "孤獨",
+        "理想"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "人生天地之間，若白駒之過隙，忽然而已。",
+      "original_quote": "人生天地之間，若白駒之過隙，忽然而已。",
+      "original_language": "zh-classical",
+      "author_name": "莊子",
+      "author_bio": "",
+      "work_title": "莊子·知北遊",
+      "section_title": "時間",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "時間",
+        "自然",
+        "死亡"
+      ],
+      "short_analysis": "時間像白馬掠過縫隙，強調短暫與倏忽。",
+      "deep_analysis": "莊子用動物與縫隙把抽象時間變成視覺。短篇收束常用這種「忽然」。",
+      "context": "道家時間觀。",
+      "rhetorical_analysis": "",
+      "counterpoint": "強調倏忽也可能取消責任與計畫的重量。",
+      "writing_insight": "找一個具體快速動作，承載時間流逝。",
+      "reflection_questions": [
+        "你作品裡哪一場戲最需要「忽然」？"
+      ],
+      "imitation_exercise": "不用「時光飛逝」，改寫一個白駒過隙式比喻。",
+      "tags": [
+        "古典",
+        "公有領域",
+        "時間",
+        "自然",
+        "死亡"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "窮則獨善其身，達則兼善天下。",
+      "original_quote": "窮則獨善其身，達則兼善天下。",
+      "original_language": "zh-classical",
+      "author_name": "孟子",
+      "author_bio": "",
+      "work_title": "孟子·盡心上",
+      "section_title": "政治",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "政治",
+        "道德",
+        "自我"
+      ],
+      "short_analysis": "處境不同，責任尺度不同。",
+      "deep_analysis": "角色倫理可以隨權力變化：無權時守身，有權時擴張善意——也可寫其虛偽版本。",
+      "context": "儒家出處進退。",
+      "rhetorical_analysis": "",
+      "counterpoint": "誰定義「窮／達」？常被權力挪用。",
+      "writing_insight": "給對手一個「達」時的合理自辯。",
+      "reflection_questions": [
+        "你故事中的權力如何改寫道德語言？"
+      ],
+      "imitation_exercise": "寫同一人在窮與達兩種處境的不同選擇。",
+      "tags": [
+        "古典",
+        "公有領域",
+        "政治",
+        "道德",
+        "自我"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "不積跬步，無以至千里；不積小流，無以成江海。",
+      "original_quote": "不積跬步，無以至千里；不積小流，無以成江海。",
+      "original_language": "zh-classical",
+      "author_name": "荀子",
+      "author_bio": "",
+      "work_title": "荀子·勸學",
+      "section_title": "學習",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "學習",
+        "堅持"
+      ],
+      "short_analysis": "大成來自微小累積。",
+      "deep_analysis": "適合寫長篇進度與日常練習：不是爆肝一夜，而是跬步。",
+      "context": "勸學名句。",
+      "rhetorical_analysis": "",
+      "counterpoint": "只積累方向錯誤，會走得更遠地錯。",
+      "writing_insight": "用「小流」細節寫出角色的長期改變。",
+      "reflection_questions": [
+        "你現在的跬步是什麼？"
+      ],
+      "imitation_exercise": "寫一週的跬步清單，再寫成一段敘事。",
+      "tags": [
+        "古典",
+        "公有領域",
+        "學習",
+        "堅持"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "桃李不言，下自成蹊。",
+      "original_quote": "桃李不言，下自成蹊。",
+      "original_language": "zh-classical",
+      "author_name": "司馬遷",
+      "author_bio": "",
+      "work_title": "史記·李將軍列傳",
+      "section_title": "品格",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "品格",
+        "沉默"
+      ],
+      "short_analysis": "不必自誇，實質會吸引路徑。",
+      "deep_analysis": "用結果（蹊徑）證明品格，而不是自我介紹。寫人物時極好用。",
+      "context": "贊李廣。",
+      "rhetorical_analysis": "",
+      "counterpoint": "沉默也可能被時代淹沒，需要見證者。",
+      "writing_insight": "刪掉角色自誇，改寫別人如何走近他。",
+      "reflection_questions": [
+        "你主角最有說服力的「不言」是什麼？"
+      ],
+      "imitation_exercise": "寫一個「不言」卻被眾人靠近的場面。",
+      "tags": [
+        "古典",
+        "公有領域",
+        "品格",
+        "沉默"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "夕陽無限好，只是近黃昏。",
+      "original_quote": "夕陽無限好，只是近黃昏。",
+      "original_language": "zh-classical",
+      "author_name": "李商隱",
+      "author_bio": "",
+      "work_title": "登樂遊原",
+      "section_title": "時間",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "時間",
+        "美",
+        "遺憾"
+      ],
+      "short_analysis": "美與將逝並置，產生張力。",
+      "deep_analysis": "上句讚美，下句轉折；對比製造餘味。短詩與短篇結尾常用。",
+      "context": "晚唐七絕。",
+      "rhetorical_analysis": "",
+      "counterpoint": "過度感傷會變成套語。",
+      "writing_insight": "先給極美，再輕輕揭示代價或時限。",
+      "reflection_questions": [
+        "你最近看見的「近黃昏」是什麼？"
+      ],
+      "imitation_exercise": "寫一個「極好／將逝」的現代場景。",
+      "tags": [
+        "古典",
+        "公有領域",
+        "時間",
+        "美",
+        "遺憾"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "山重水複疑無路，柳暗花明又一村。",
+      "original_quote": "山重水複疑無路，柳暗花明又一村。",
+      "original_language": "zh-classical",
+      "author_name": "陸遊",
+      "author_bio": "",
+      "work_title": "遊山西村",
+      "section_title": "希望",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "希望",
+        "旅行",
+        "轉折"
+      ],
+      "short_analysis": "絕境後忽見開朗——情節轉折的經典句式。",
+      "deep_analysis": "先把路堵死（疑無路），再給意外出口。讀者需要前面的「重／複」才吃到「又一村」。",
+      "context": "南宋紀遊詩。",
+      "rhetorical_analysis": "",
+      "counterpoint": "若每次都柳暗花明，張力會疲乏。",
+      "writing_insight": "轉折前務必寫足困局，不要突然開掛。",
+      "reflection_questions": [
+        "你小說中段的「無路」夠不夠真？"
+      ],
+      "imitation_exercise": "寫一段山重水複，再寫一個不落俗套的出口。",
+      "tags": [
+        "古典",
+        "公有領域",
+        "希望",
+        "旅行",
+        "轉折"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "紙上得來終覺淺，絕知此事要躬行。",
+      "original_quote": "紙上得來終覺淺，絕知此事要躬行。",
+      "original_language": "zh-classical",
+      "author_name": "陸遊",
+      "author_bio": "",
+      "work_title": "冬夜讀書示子聿",
+      "section_title": "學習",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "學習",
+        "實踐"
+      ],
+      "short_analysis": "書本知識淺，真懂靠親身去做。",
+      "deep_analysis": "對寫作者：只讀寫作書不夠，要寫；只讀人生書不夠，要經驗與觀察。",
+      "context": "教子讀書。",
+      "rhetorical_analysis": "",
+      "counterpoint": "躬行而無反思，也可能重複錯誤。",
+      "writing_insight": "讓角色「躬行」一次，再回頭改他的理論口吻。",
+      "reflection_questions": [
+        "你哪句寫作教條還沒躬行過？"
+      ],
+      "imitation_exercise": "寫角色把書上句子用到現實後碰壁。",
+      "tags": [
+        "古典",
+        "公有領域",
+        "學習",
+        "實踐"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "寄蜉蝣於天地，渺滄海之一粟。",
+      "original_quote": "寄蜉蝣於天地，渺滄海之一粟。",
+      "original_language": "zh-classical",
+      "author_name": "蘇軾",
+      "author_bio": "",
+      "work_title": "赤壁賦",
+      "section_title": "自然",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "自然",
+        "自我",
+        "時間"
+      ],
+      "short_analysis": "以蜉蝣、滄海對照人的渺小。",
+      "deep_analysis": "賦體善用對偶與尺度對比。寫風景時可借尺度變化產生哲學感。",
+      "context": "前後赤壁賦之一。",
+      "rhetorical_analysis": "",
+      "counterpoint": "過度渺小化可能取消行動意義。",
+      "writing_insight": "先寫極大，再寫極小，讓情緒自己出現。",
+      "reflection_questions": [
+        "你的敘事聲音站在蜉蝣還是滄海？"
+      ],
+      "imitation_exercise": "用一組大小對比寫夜景，不出現「渺小」。",
+      "tags": [
+        "古典",
+        "公有領域",
+        "自然",
+        "自我",
+        "時間"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "人生如逆旅，我亦是行人。",
+      "original_quote": "人生如逆旅，我亦是行人。",
+      "original_language": "zh-classical",
+      "author_name": "蘇軾",
+      "author_bio": "",
+      "work_title": "臨江仙·送錢穆父",
+      "section_title": "旅行",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "旅行",
+        "友情",
+        "時間"
+      ],
+      "short_analysis": "人生是旅舍，自己也是過客。",
+      "deep_analysis": "把存在寫成短暫投宿，送別詩因此不黏膩。",
+      "context": "送別。",
+      "rhetorical_analysis": "",
+      "counterpoint": "過客意識也可能變成不負責任。",
+      "writing_insight": "寫離別時，讓雙方都承認自己是行人。",
+      "reflection_questions": [
+        "故事裡誰把人生當家，誰當逆旅？"
+      ],
+      "imitation_exercise": "寫車站送别，核心意象是逆旅。",
+      "tags": [
+        "古典",
+        "公有領域",
+        "旅行",
+        "友情",
+        "時間"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "把句子寫短，把意思寫深。",
+      "original_quote": null,
+      "original_language": "zh",
+      "author_name": "字耕",
+      "author_bio": "字耕寫作課原創提示。",
+      "work_title": "寫作箴言",
+      "section_title": "密度",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "original",
+      "difficulty": 2,
+      "themes": [
+        "寫作",
+        "密度"
+      ],
+      "short_analysis": "寫作主題「密度」的實用提示。",
+      "deep_analysis": "字耕原創，非名人語錄。",
+      "context": "寫作練習用。",
+      "rhetorical_analysis": "",
+      "counterpoint": "任何技法都有適用邊界。",
+      "writing_insight": "把句子寫短，把意思寫深。",
+      "reflection_questions": [
+        "如何把「密度」練成一篇三百字練習？"
+      ],
+      "imitation_exercise": "用「密度」寫一段 120 字練習。",
+      "tags": [
+        "字耕",
+        "寫作箴言",
+        "密度"
+      ],
+      "source": {
+        "kind": "zi-geng-original"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "細節比形容詞更靠近真實。",
+      "original_quote": null,
+      "original_language": "zh",
+      "author_name": "字耕",
+      "author_bio": "字耕寫作課原創提示。",
+      "work_title": "寫作箴言",
+      "section_title": "細節",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "original",
+      "difficulty": 2,
+      "themes": [
+        "寫作",
+        "細節"
+      ],
+      "short_analysis": "寫作主題「細節」的實用提示。",
+      "deep_analysis": "字耕原創，非名人語錄。",
+      "context": "寫作練習用。",
+      "rhetorical_analysis": "",
+      "counterpoint": "任何技法都有適用邊界。",
+      "writing_insight": "細節比形容詞更靠近真實。",
+      "reflection_questions": [
+        "如何把「細節」練成一篇三百字練習？"
+      ],
+      "imitation_exercise": "用「細節」寫一段 120 字練習。",
+      "tags": [
+        "字耕",
+        "寫作箴言",
+        "細節"
+      ],
+      "source": {
+        "kind": "zi-geng-original"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "先寫清楚，再寫漂亮。",
+      "original_quote": null,
+      "original_language": "zh",
+      "author_name": "字耕",
+      "author_bio": "字耕寫作課原創提示。",
+      "work_title": "寫作箴言",
+      "section_title": "清楚",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "original",
+      "difficulty": 2,
+      "themes": [
+        "寫作",
+        "清楚"
+      ],
+      "short_analysis": "寫作主題「清楚」的實用提示。",
+      "deep_analysis": "字耕原創，非名人語錄。",
+      "context": "寫作練習用。",
+      "rhetorical_analysis": "",
+      "counterpoint": "任何技法都有適用邊界。",
+      "writing_insight": "先寫清楚，再寫漂亮。",
+      "reflection_questions": [
+        "如何把「清楚」練成一篇三百字練習？"
+      ],
+      "imitation_exercise": "用「清楚」寫一段 120 字練習。",
+      "tags": [
+        "字耕",
+        "寫作箴言",
+        "清楚"
+      ],
+      "source": {
+        "kind": "zi-geng-original"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "信任讀者，少把潛台詞講破。",
+      "original_quote": null,
+      "original_language": "zh",
+      "author_name": "字耕",
+      "author_bio": "字耕寫作課原創提示。",
+      "work_title": "寫作箴言",
+      "section_title": "潛台詞",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "original",
+      "difficulty": 2,
+      "themes": [
+        "寫作",
+        "潛台詞"
+      ],
+      "short_analysis": "寫作主題「潛台詞」的實用提示。",
+      "deep_analysis": "字耕原創，非名人語錄。",
+      "context": "寫作練習用。",
+      "rhetorical_analysis": "",
+      "counterpoint": "任何技法都有適用邊界。",
+      "writing_insight": "信任讀者，少把潛台詞講破。",
+      "reflection_questions": [
+        "如何把「潛台詞」練成一篇三百字練習？"
+      ],
+      "imitation_exercise": "用「潛台詞」寫一段 120 字練習。",
+      "tags": [
+        "字耕",
+        "寫作箴言",
+        "潛台詞"
+      ],
+      "source": {
+        "kind": "zi-geng-original"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "場面比說明更有力量。",
+      "original_quote": null,
+      "original_language": "zh",
+      "author_name": "字耕",
+      "author_bio": "字耕寫作課原創提示。",
+      "work_title": "寫作箴言",
+      "section_title": "場面",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "original",
+      "difficulty": 2,
+      "themes": [
+        "寫作",
+        "場面"
+      ],
+      "short_analysis": "寫作主題「場面」的實用提示。",
+      "deep_analysis": "字耕原創，非名人語錄。",
+      "context": "寫作練習用。",
+      "rhetorical_analysis": "",
+      "counterpoint": "任何技法都有適用邊界。",
+      "writing_insight": "場面比說明更有力量。",
+      "reflection_questions": [
+        "如何把「場面」練成一篇三百字練習？"
+      ],
+      "imitation_exercise": "用「場面」寫一段 120 字練習。",
+      "tags": [
+        "字耕",
+        "寫作箴言",
+        "場面"
+      ],
+      "source": {
+        "kind": "zi-geng-original"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "一個好結尾，常是最後一個未說出口的字。",
+      "original_quote": null,
+      "original_language": "zh",
+      "author_name": "字耕",
+      "author_bio": "字耕寫作課原創提示。",
+      "work_title": "寫作箴言",
+      "section_title": "結尾",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "original",
+      "difficulty": 2,
+      "themes": [
+        "寫作",
+        "結尾"
+      ],
+      "short_analysis": "寫作主題「結尾」的實用提示。",
+      "deep_analysis": "字耕原創，非名人語錄。",
+      "context": "寫作練習用。",
+      "rhetorical_analysis": "",
+      "counterpoint": "任何技法都有適用邊界。",
+      "writing_insight": "一個好結尾，常是最後一個未說出口的字。",
+      "reflection_questions": [
+        "如何把「結尾」練成一篇三百字練習？"
+      ],
+      "imitation_exercise": "用「結尾」寫一段 120 字練習。",
+      "tags": [
+        "字耕",
+        "寫作箴言",
+        "結尾"
+      ],
+      "source": {
+        "kind": "zi-geng-original"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "對白要推進關係，不要只寒暄。",
+      "original_quote": null,
+      "original_language": "zh",
+      "author_name": "字耕",
+      "author_bio": "字耕寫作課原創提示。",
+      "work_title": "寫作箴言",
+      "section_title": "對話",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "original",
+      "difficulty": 2,
+      "themes": [
+        "寫作",
+        "對話"
+      ],
+      "short_analysis": "寫作主題「對話」的實用提示。",
+      "deep_analysis": "字耕原創，非名人語錄。",
+      "context": "寫作練習用。",
+      "rhetorical_analysis": "",
+      "counterpoint": "任何技法都有適用邊界。",
+      "writing_insight": "對白要推進關係，不要只寒暄。",
+      "reflection_questions": [
+        "如何把「對話」練成一篇三百字練習？"
+      ],
+      "imitation_exercise": "用「對話」寫一段 120 字練習。",
+      "tags": [
+        "字耕",
+        "寫作箴言",
+        "對話"
+      ],
+      "source": {
+        "kind": "zi-geng-original"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "緊張處寫慢，過渡處寫快。",
+      "original_quote": null,
+      "original_language": "zh",
+      "author_name": "字耕",
+      "author_bio": "字耕寫作課原創提示。",
+      "work_title": "寫作箴言",
+      "section_title": "節奏",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "original",
+      "difficulty": 2,
+      "themes": [
+        "寫作",
+        "節奏"
+      ],
+      "short_analysis": "寫作主題「節奏」的實用提示。",
+      "deep_analysis": "字耕原創，非名人語錄。",
+      "context": "寫作練習用。",
+      "rhetorical_analysis": "",
+      "counterpoint": "任何技法都有適用邊界。",
+      "writing_insight": "緊張處寫慢，過渡處寫快。",
+      "reflection_questions": [
+        "如何把「節奏」練成一篇三百字練習？"
+      ],
+      "imitation_exercise": "用「節奏」寫一段 120 字練習。",
+      "tags": [
+        "字耕",
+        "寫作箴言",
+        "節奏"
+      ],
+      "source": {
+        "kind": "zi-geng-original"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "先給感官錨點，再開敘事。",
+      "original_quote": null,
+      "original_language": "zh",
+      "author_name": "字耕",
+      "author_bio": "字耕寫作課原創提示。",
+      "work_title": "寫作箴言",
+      "section_title": "場景",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "original",
+      "difficulty": 2,
+      "themes": [
+        "寫作",
+        "場景"
+      ],
+      "short_analysis": "寫作主題「場景」的實用提示。",
+      "deep_analysis": "字耕原創，非名人語錄。",
+      "context": "寫作練習用。",
+      "rhetorical_analysis": "",
+      "counterpoint": "任何技法都有適用邊界。",
+      "writing_insight": "先給感官錨點，再開敘事。",
+      "reflection_questions": [
+        "如何把「場景」練成一篇三百字練習？"
+      ],
+      "imitation_exercise": "用「場景」寫一段 120 字練習。",
+      "tags": [
+        "字耕",
+        "寫作箴言",
+        "場景"
+      ],
+      "source": {
+        "kind": "zi-geng-original"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "刪掉解釋句，留下行為。",
+      "original_quote": null,
+      "original_language": "zh",
+      "author_name": "字耕",
+      "author_bio": "字耕寫作課原創提示。",
+      "work_title": "寫作箴言",
+      "section_title": "節制",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "original",
+      "difficulty": 2,
+      "themes": [
+        "寫作",
+        "節制"
+      ],
+      "short_analysis": "寫作主題「節制」的實用提示。",
+      "deep_analysis": "字耕原創，非名人語錄。",
+      "context": "寫作練習用。",
+      "rhetorical_analysis": "",
+      "counterpoint": "任何技法都有適用邊界。",
+      "writing_insight": "刪掉解釋句，留下行為。",
+      "reflection_questions": [
+        "如何把「節制」練成一篇三百字練習？"
+      ],
+      "imitation_exercise": "用「節制」寫一段 120 字練習。",
+      "tags": [
+        "字耕",
+        "寫作箴言",
+        "節制"
+      ],
+      "source": {
+        "kind": "zi-geng-original"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "反差比直接說明更有畫面。",
+      "original_quote": null,
+      "original_language": "zh",
+      "author_name": "字耕",
+      "author_bio": "字耕寫作課原創提示。",
+      "work_title": "寫作箴言",
+      "section_title": "張力",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "original",
+      "difficulty": 2,
+      "themes": [
+        "寫作",
+        "張力"
+      ],
+      "short_analysis": "寫作主題「張力」的實用提示。",
+      "deep_analysis": "字耕原創，非名人語錄。",
+      "context": "寫作練習用。",
+      "rhetorical_analysis": "",
+      "counterpoint": "任何技法都有適用邊界。",
+      "writing_insight": "反差比直接說明更有畫面。",
+      "reflection_questions": [
+        "如何把「張力」練成一篇三百字練習？"
+      ],
+      "imitation_exercise": "用「張力」寫一段 120 字練習。",
+      "tags": [
+        "字耕",
+        "寫作箴言",
+        "張力"
+      ],
+      "source": {
+        "kind": "zi-geng-original"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "讓對手擁有合理的理由。",
+      "original_quote": null,
+      "original_language": "zh",
+      "author_name": "字耕",
+      "author_bio": "字耕寫作課原創提示。",
+      "work_title": "寫作箴言",
+      "section_title": "衝突",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "original",
+      "difficulty": 2,
+      "themes": [
+        "寫作",
+        "衝突"
+      ],
+      "short_analysis": "寫作主題「衝突」的實用提示。",
+      "deep_analysis": "字耕原創，非名人語錄。",
+      "context": "寫作練習用。",
+      "rhetorical_analysis": "",
+      "counterpoint": "任何技法都有適用邊界。",
+      "writing_insight": "讓對手擁有合理的理由。",
+      "reflection_questions": [
+        "如何把「衝突」練成一篇三百字練習？"
+      ],
+      "imitation_exercise": "用「衝突」寫一段 120 字練習。",
+      "tags": [
+        "字耕",
+        "寫作箴言",
+        "衝突"
+      ],
+      "source": {
+        "kind": "zi-geng-original"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "秘密要有保管者與代價。",
+      "original_quote": null,
+      "original_language": "zh",
+      "author_name": "字耕",
+      "author_bio": "字耕寫作課原創提示。",
+      "work_title": "寫作箴言",
+      "section_title": "情節",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "original",
+      "difficulty": 2,
+      "themes": [
+        "寫作",
+        "情節"
+      ],
+      "short_analysis": "寫作主題「情節」的實用提示。",
+      "deep_analysis": "字耕原創，非名人語錄。",
+      "context": "寫作練習用。",
+      "rhetorical_analysis": "",
+      "counterpoint": "任何技法都有適用邊界。",
+      "writing_insight": "秘密要有保管者與代價。",
+      "reflection_questions": [
+        "如何把「情節」練成一篇三百字練習？"
+      ],
+      "imitation_exercise": "用「情節」寫一段 120 字練習。",
+      "tags": [
+        "字耕",
+        "寫作箴言",
+        "情節"
+      ],
+      "source": {
+        "kind": "zi-geng-original"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "成功必須付出不可挽回的代價。",
+      "original_quote": null,
+      "original_language": "zh",
+      "author_name": "字耕",
+      "author_bio": "字耕寫作課原創提示。",
+      "work_title": "寫作箴言",
+      "section_title": "結局",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "original",
+      "difficulty": 2,
+      "themes": [
+        "寫作",
+        "結局"
+      ],
+      "short_analysis": "寫作主題「結局」的實用提示。",
+      "deep_analysis": "字耕原創，非名人語錄。",
+      "context": "寫作練習用。",
+      "rhetorical_analysis": "",
+      "counterpoint": "任何技法都有適用邊界。",
+      "writing_insight": "成功必須付出不可挽回的代價。",
+      "reflection_questions": [
+        "如何把「結局」練成一篇三百字練習？"
+      ],
+      "imitation_exercise": "用「結局」寫一段 120 字練習。",
+      "tags": [
+        "字耕",
+        "寫作箴言",
+        "結局"
+      ],
+      "source": {
+        "kind": "zi-geng-original"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "少寫情緒名，多寫身體。",
+      "original_quote": null,
+      "original_language": "zh",
+      "author_name": "字耕",
+      "author_bio": "字耕寫作課原創提示。",
+      "work_title": "寫作箴言",
+      "section_title": "情緒",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "original",
+      "difficulty": 2,
+      "themes": [
+        "寫作",
+        "情緒"
+      ],
+      "short_analysis": "寫作主題「情緒」的實用提示。",
+      "deep_analysis": "字耕原創，非名人語錄。",
+      "context": "寫作練習用。",
+      "rhetorical_analysis": "",
+      "counterpoint": "任何技法都有適用邊界。",
+      "writing_insight": "少寫情緒名，多寫身體。",
+      "reflection_questions": [
+        "如何把「情緒」練成一篇三百字練習？"
+      ],
+      "imitation_exercise": "用「情緒」寫一段 120 字練習。",
+      "tags": [
+        "字耕",
+        "寫作箴言",
+        "情緒"
+      ],
+      "source": {
+        "kind": "zi-geng-original"
+      }
+    }
+  ]
+}

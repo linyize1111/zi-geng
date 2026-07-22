@@ -10,6 +10,7 @@ import {
   replaceMockDailySlot,
   type DailySlot,
 } from "@/features/daily-plan/api";
+import { FavoriteToggle } from "@/features/favorites/FavoriteToggle";
 import { createDraft } from "@/features/writing/draft-store";
 import { env } from "@/lib/env";
 import { routes, writeDetailPath } from "@/routes/paths";
@@ -30,6 +31,17 @@ function RefreshButton({
       {label}
     </Button>
   );
+}
+
+function refreshErrorMessage(err: unknown): string {
+  const raw = err instanceof Error ? err.message : String(err ?? "");
+  if (/replacement limit/i.test(raw)) {
+    return "資料庫仍有舊的刷新上限。請在 Supabase 執行 APPLY_REFRESH_UNLIMITED_ONLY.sql 後再試。";
+  }
+  if (/no alternative content/i.test(raw)) {
+    return "可抽內容太少，換不到新的。請到內容管理匯入詞庫／名言後再換。";
+  }
+  return raw || "刷新失敗";
 }
 
 export default function TodayPage() {
@@ -92,12 +104,7 @@ export default function TodayPage() {
     return <PageState title="尚無今日內容" description="請稍後再試，或到內容管理匯入詞庫。" />;
   }
 
-  const refreshError =
-    refreshMutation.error instanceof Error
-      ? refreshMutation.error.message
-      : refreshMutation.isError
-        ? "刷新失敗"
-        : null;
+  const refreshError = refreshMutation.isError ? refreshErrorMessage(refreshMutation.error) : null;
 
   const onRefresh = (slot: DailySlot) => {
     refreshMutation.mutate(slot);
@@ -109,10 +116,10 @@ export default function TodayPage() {
         <h1 className="font-[family-name:var(--font-sans)] text-3xl tracking-wide">今日</h1>
         <p className="text-sm text-[var(--color-ink-muted)]">
           {auth.user ? `${auth.user.name} · ` : ""}
-          {data.plan.local_date}（{data.plan.timezone}）{useMock ? " · Mock" : ""}
+          {data.plan.local_date}（{data.plan.timezone}）{useMock ? " · 離線示範" : ""}
         </p>
         <p className="text-sm text-[var(--color-ink-muted)]">
-          今日詞彙 {data.vocabulary.length} 個。可隨時「換一批」重抽；詞庫不足時請到內容管理匯入。
+          依你的時間隨意換卡；想留著複習就按「收藏」。完整庫存在詞彙／名言頁，不限今日這幾張。
         </p>
         {refreshError ? <p className="text-sm text-[var(--color-danger)]">{refreshError}</p> : null}
       </header>
@@ -121,31 +128,77 @@ export default function TodayPage() {
         <section className="rounded-lg border border-[var(--color-line)] bg-[var(--color-paper-2)] p-5">
           <div className="flex flex-wrap items-start justify-between gap-3">
             <p className="text-xs tracking-widest text-[var(--color-ink-muted)]">名言</p>
-            <RefreshButton
-              slot="quote"
-              label="換一則"
-              busy={refreshMutation.isPending}
-              onRefresh={onRefresh}
-            />
+            <div className="flex flex-wrap gap-2">
+              <FavoriteToggle type="quote" contentId={data.quote.id} compact />
+              <RefreshButton
+                slot="quote"
+                label="換一則"
+                busy={refreshMutation.isPending}
+                onRefresh={onRefresh}
+              />
+            </div>
           </div>
           <blockquote className="mt-3 font-[family-name:var(--font-sans)] text-xl leading-relaxed">
             {data.quote.display_quote}
           </blockquote>
+          {data.quote.original_quote ? (
+            <p className="mt-2 text-sm text-[var(--color-ink-muted)]">
+              原文：{data.quote.original_quote}
+            </p>
+          ) : null}
           <p className="mt-3 text-sm text-[var(--color-ink-muted)]">
             {data.quote.author_name}
             {data.quote.work_title ? ` · ${data.quote.work_title}` : ""}
+            {data.quote.section_title ? ` · ${data.quote.section_title}` : ""}
+            {data.quote.publication_year ? ` · ${data.quote.publication_year}` : ""}
           </p>
+          {data.quote.translator_name ? (
+            <p className="text-xs text-[var(--color-ink-muted)]">
+              譯：{data.quote.translator_name}
+            </p>
+          ) : null}
+          {data.quote.author_bio ? (
+            <p className="mt-2 text-sm leading-relaxed">{data.quote.author_bio}</p>
+          ) : null}
           {data.quote.short_analysis ? (
             <p className="mt-3 text-sm leading-relaxed">{data.quote.short_analysis}</p>
           ) : null}
+          {data.quote.writing_insight ? (
+            <p className="mt-2 text-sm leading-relaxed text-[var(--color-ink-muted)]">
+              寫作啟發：{data.quote.writing_insight}
+            </p>
+          ) : null}
+          {data.quote.bibliography_url ? (
+            <a
+              href={data.quote.bibliography_url}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-2 inline-block text-xs underline-offset-4 hover:underline"
+            >
+              來源連結
+            </a>
+          ) : null}
+          <div className="mt-3">
+            <Link
+              to={`${routes.learnQuotes}/${data.quote.id}`}
+              className="text-sm underline-offset-4 hover:underline"
+            >
+              看完整解析
+            </Link>
+          </div>
         </section>
       ) : (
-        <PageState title="今日尚無名言" description="庫中尚無可抽的寫作箴言；稍後再試或換一批其他區塊。" />
+        <PageState
+          title="今日尚無名言"
+          description="庫中尚無可抽的名言；請到內容管理匯入多來源名言。"
+        />
       )}
 
       <section className="space-y-3">
         <div className="flex flex-wrap items-end justify-between gap-3">
-          <h2 className="font-[family-name:var(--font-sans)] text-xl">詞彙</h2>
+          <h2 className="font-[family-name:var(--font-sans)] text-xl">
+            詞彙（{data.vocabulary.length}）
+          </h2>
           <div className="flex flex-wrap items-center gap-3">
             <RefreshButton
               slot="vocabulary"
@@ -165,11 +218,22 @@ export default function TodayPage() {
           <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {data.vocabulary.map((v) => (
               <li key={v.id} className="rounded-lg border border-[var(--color-line)] p-4">
-                <p className="text-lg">{v.term}</p>
-                {v.zhuyin ? (
-                  <p className="text-xs text-[var(--color-ink-muted)]">{v.zhuyin}</p>
-                ) : null}
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <p className="text-lg">{v.term}</p>
+                    {v.zhuyin ? (
+                      <p className="text-xs text-[var(--color-ink-muted)]">{v.zhuyin}</p>
+                    ) : null}
+                  </div>
+                  <FavoriteToggle type="vocabulary" contentId={v.id} compact />
+                </div>
                 <p className="mt-2 text-sm text-[var(--color-ink-muted)]">{v.short_def}</p>
+                <Link
+                  to={`${routes.learnVocabulary}/${v.id}`}
+                  className="mt-2 inline-block text-xs underline-offset-4 hover:underline"
+                >
+                  詳情
+                </Link>
               </li>
             ))}
           </ul>
@@ -182,12 +246,15 @@ export default function TodayPage() {
         <section className="rounded-lg border border-[var(--color-line)] p-5">
           <div className="flex flex-wrap items-start justify-between gap-3">
             <p className="text-xs tracking-widest text-[var(--color-ink-muted)]">寫作技巧</p>
-            <RefreshButton
-              slot="craft"
-              label="換一個"
-              busy={refreshMutation.isPending}
-              onRefresh={onRefresh}
-            />
+            <div className="flex flex-wrap gap-2">
+              <FavoriteToggle type="craft" contentId={data.craft.id} compact />
+              <RefreshButton
+                slot="craft"
+                label="換一個"
+                busy={refreshMutation.isPending}
+                onRefresh={onRefresh}
+              />
+            </div>
           </div>
           <h2 className="mt-2 text-xl">{data.craft.name}</h2>
           <p className="mt-2 text-sm">{data.craft.one_liner}</p>
@@ -199,12 +266,15 @@ export default function TodayPage() {
         <section className="rounded-lg border border-[var(--color-line)] p-5">
           <div className="flex flex-wrap items-start justify-between gap-3">
             <p className="text-xs tracking-widest text-[var(--color-ink-muted)]">寫作題目</p>
-            <RefreshButton
-              slot="prompt"
-              label="換一題"
-              busy={refreshMutation.isPending}
-              onRefresh={onRefresh}
-            />
+            <div className="flex flex-wrap gap-2">
+              <FavoriteToggle type="prompt" contentId={data.prompt.id} compact />
+              <RefreshButton
+                slot="prompt"
+                label="換一題"
+                busy={refreshMutation.isPending}
+                onRefresh={onRefresh}
+              />
+            </div>
           </div>
           <h2 className="mt-2 text-xl">{data.prompt.title}</h2>
           <p className="mt-2 text-sm leading-relaxed whitespace-pre-wrap">{data.prompt.body}</p>

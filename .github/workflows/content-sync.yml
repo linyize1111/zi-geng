@@ -40,16 +40,26 @@ jobs:
             exit 1
           fi
 
-      - name: Download MOE idioms + rebuild seed
+      - name: Download MOE idioms + multi-source crawl
         run: |
           npm run content:download-idioms
           SEED_LIMIT=800 npm run content:generate
+          npm run content:quotes
+          npm run content:crawl -- --vocab=80 --quotes=40
 
-      - name: Import seed into Supabase
+      - name: Import vocab + quotes into Supabase
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL || secrets.VITE_SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-        run: node scripts/content/import-vocab.mjs scripts/content/seed-literary-vocab.json
+        run: |
+          node scripts/content/import-vocab.mjs scripts/content/seed-literary-vocab.json
+          if [ -f scripts/content/fetched-wiktionary.json ]; then
+            node scripts/content/import-vocab.mjs scripts/content/fetched-wiktionary.json || true
+          fi
+          node scripts/content/import-quotes.mjs scripts/content/seed-themed-quotes.json
+          if [ -f scripts/content/fetched-wikiquote.json ]; then
+            node scripts/content/import-quotes.mjs scripts/content/fetched-wikiquote.json || true
+          fi
 
       - name: Commit seed if changed
         id: seed
@@ -59,12 +69,19 @@ jobs:
           git add \
             scripts/content/seed-literary-vocab.json \
             scripts/content/literary-terms.txt \
-            public/content/seed-literary-vocab.json
+            scripts/content/seed-themed-quotes.json \
+            scripts/content/fetched-wiktionary.json \
+            scripts/content/fetched-wikiquote.json \
+            scripts/content/seed-multi-source-vocab.json \
+            public/content/seed-literary-vocab.json \
+            public/content/seed-themed-quotes.json \
+            public/content/seed-multi-source-vocab.json \
+            public/content/seed-wikiquote.json || true
           if git diff --staged --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "Seed unchanged — no commit"
           else
-            git commit -m "chore(content): weekly vocab seed refresh"
+            git commit -m "chore(content): weekly multi-source refresh"
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi

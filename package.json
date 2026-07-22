@@ -17,7 +17,10 @@
     "ci": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run build",
     "content:generate": "node scripts/content/convert-moe-idioms.mjs",
     "content:fetch": "node scripts/content/fetch-wiktionary.mjs",
+    "content:crawl": "node scripts/content/crawl-multi-source.mjs",
+    "content:quotes": "node scripts/content/build-themed-quotes.mjs",
     "content:import": "node scripts/content/import-vocab.mjs",
+    "content:import-quotes": "node scripts/content/import-quotes.mjs",
     "content:sync": "npm run content:fetch && npm run content:import -- scripts/content/fetched-wiktionary.json",
     "content:download-idioms": "node scripts/content/download-moe-idioms.mjs"
   },

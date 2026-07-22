@@ -1,15 +1,8 @@
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { Button } from "@/components/common/Button";
 import { PageLoading, PageState } from "@/components/common/PageState";
 import { useAuth } from "@/features/auth/AuthProvider";
-import {
-  addFavorite,
-  isFavorited,
-  listFavorites,
-  removeFavorite,
-  type FavoriteContentType,
-} from "@/features/favorites/api";
+import { FavoriteToggle } from "@/features/favorites/FavoriteToggle";
 import {
   getCraft,
   getQuote,
@@ -37,66 +30,118 @@ function listPath(kind: keyof typeof titles) {
   return routes.learnCraft;
 }
 
-function favoriteType(kind: keyof typeof titles): FavoriteContentType {
-  if (kind === "vocabulary") return "vocabulary";
-  if (kind === "quotes") return "quote";
-  return "craft";
+function favoriteType(kind: keyof typeof titles) {
+  if (kind === "vocabulary") return "vocabulary" as const;
+  if (kind === "quotes") return "quote" as const;
+  return "craft" as const;
 }
 
-function isVocab(item: VocabListItem | QuoteListItem | CraftListItem): item is VocabListItem {
+function isVocab(item: object): item is VocabListItem {
   return "term" in item;
 }
 
-function isQuote(item: VocabListItem | QuoteListItem | CraftListItem): item is QuoteListItem {
+function isQuote(item: object): item is QuoteListItem {
   return "display_quote" in item;
 }
 
-function isCraft(item: VocabListItem | QuoteListItem | CraftListItem): item is CraftListItem {
+function isCraft(item: object): item is CraftListItem {
   return "one_liner" in item && "name" in item;
 }
 
-function FavoriteToggle({ kind, contentId }: { kind: keyof typeof titles; contentId: string }) {
-  const auth = useAuth();
-  const queryClient = useQueryClient();
-  const useMock = env.useMockAdapter || auth.usingMock;
-  const type = favoriteType(kind);
-
-  const favQuery = useQuery({
-    queryKey: ["favorite-one", auth.user?.id, type, contentId],
-    enabled: Boolean(auth.user) && !useMock,
-    queryFn: () => isFavorited(auth.user!.id, type, contentId),
-  });
-
-  const toggle = useMutation({
-    mutationFn: async () => {
-      if (!auth.user) throw new Error("未登入");
-      if (favQuery.data) {
-        const all = await listFavorites(auth.user.id);
-        const hit = all.find((f) => f.content_type === type && f.content_id === contentId);
-        if (hit) await removeFavorite(hit.id);
-      } else {
-        await addFavorite(auth.user.id, type, contentId);
-      }
-    },
-    onSuccess: async () => {
-      await queryClient.invalidateQueries({
-        queryKey: ["favorite-one", auth.user?.id, type, contentId],
-      });
-      await queryClient.invalidateQueries({ queryKey: ["favorites", auth.user?.id] });
-    },
-  });
-
-  if (useMock || !auth.user) return null;
-
+function QuoteDetail({ item }: { item: QuoteListItem | Record<string, unknown> }) {
+  const q = item as QuoteListItem;
+  const questions = Array.isArray(q.reflection_questions)
+    ? (q.reflection_questions as unknown[]).map(String)
+    : [];
   return (
-    <Button
-      type="button"
-      variant="outline"
-      disabled={favQuery.isLoading || toggle.isPending}
-      onClick={() => toggle.mutate()}
-    >
-      {favQuery.data ? "取消收藏" : "加入收藏"}
-    </Button>
+    <article className="space-y-4">
+      <blockquote className="font-[family-name:var(--font-sans)] text-2xl leading-relaxed">
+        {q.display_quote}
+      </blockquote>
+      {q.original_quote ? (
+        <p className="text-sm text-[var(--color-ink-muted)]">原文：{q.original_quote}</p>
+      ) : null}
+      <p className="text-sm text-[var(--color-ink-muted)]">
+        {q.author_name}
+        {q.work_title ? ` · ${q.work_title}` : ""}
+        {q.section_title ? ` · ${q.section_title}` : ""}
+        {q.publication_year ? ` · ${q.publication_year}` : ""}
+      </p>
+      {q.translator_name ? (
+        <p className="text-xs text-[var(--color-ink-muted)]">譯者：{q.translator_name}</p>
+      ) : null}
+      {q.author_bio ? <p className="leading-relaxed">{q.author_bio}</p> : null}
+      {q.themes?.length ? (
+        <p className="text-xs text-[var(--color-ink-muted)]">主題：{q.themes.join("、")}</p>
+      ) : null}
+      {q.context ? (
+        <section>
+          <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">脈絡</h2>
+          <p className="mt-1 leading-relaxed">{q.context}</p>
+        </section>
+      ) : null}
+      {q.short_analysis ? (
+        <section>
+          <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">簡析</h2>
+          <p className="mt-1 leading-relaxed">{q.short_analysis}</p>
+        </section>
+      ) : null}
+      {q.deep_analysis ? (
+        <section>
+          <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">深析</h2>
+          <p className="mt-1 leading-relaxed whitespace-pre-wrap">{q.deep_analysis}</p>
+        </section>
+      ) : null}
+      {q.rhetorical_analysis ? (
+        <section>
+          <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">修辭</h2>
+          <p className="mt-1 leading-relaxed">{q.rhetorical_analysis}</p>
+        </section>
+      ) : null}
+      {q.writing_insight ? (
+        <section>
+          <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">寫作啟發</h2>
+          <p className="mt-1 leading-relaxed">{q.writing_insight}</p>
+        </section>
+      ) : null}
+      {q.counterpoint ? (
+        <section>
+          <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">限制／可反駁</h2>
+          <p className="mt-1 leading-relaxed">{q.counterpoint}</p>
+        </section>
+      ) : null}
+      {questions.length ? (
+        <section>
+          <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">延伸問題</h2>
+          <ul className="mt-1 list-disc space-y-1 pl-5 text-sm">
+            {questions.map((question) => (
+              <li key={question}>{question}</li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+      {q.imitation_exercise ? (
+        <section>
+          <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">仿寫</h2>
+          <p className="mt-1 leading-relaxed">{q.imitation_exercise}</p>
+        </section>
+      ) : null}
+      <p className="text-xs text-[var(--color-ink-muted)]">
+        查證：{q.verification_status}
+        {q.copyright_status ? ` · 授權：${q.copyright_status}` : ""}
+        {q.difficulty != null ? ` · 難度 ${q.difficulty}` : ""}
+      </p>
+      {q.bibliography_url ? (
+        <a
+          href={q.bibliography_url}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-block text-sm underline-offset-4 hover:underline"
+        >
+          來源／書目連結
+        </a>
+      ) : null}
+    </article>
   );
 }
 
@@ -176,7 +221,7 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
           >
             ← {titles[kind]}
           </Link>
-          <FavoriteToggle kind={kind} contentId={id} />
+          <FavoriteToggle type={favoriteType(kind)} contentId={id} />
         </div>
         {isVocab(item) ? (
           <article className="space-y-3">
@@ -190,18 +235,7 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
             ) : null}
           </article>
         ) : null}
-        {isQuote(item) ? (
-          <article className="space-y-3">
-            <blockquote className="font-[family-name:var(--font-sans)] text-2xl leading-relaxed">
-              {item.display_quote}
-            </blockquote>
-            <p className="text-sm text-[var(--color-ink-muted)]">
-              {item.author_name}
-              {item.work_title ? ` · ${item.work_title}` : ""}
-            </p>
-            {item.short_analysis ? <p className="leading-relaxed">{item.short_analysis}</p> : null}
-          </article>
-        ) : null}
+        {isQuote(item) ? <QuoteDetail item={item} /> : null}
         {isCraft(item) ? (
           <article className="space-y-3">
             <h1 className="font-[family-name:var(--font-sans)] text-3xl">{item.name}</h1>
@@ -243,9 +277,7 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
         <PageState
           title="列表為空"
           description={
-            kind === "vocabulary"
-              ? "請到「內容管理」匯入文學詞庫。"
-              : "內容尚在補齊，稍後再來看。"
+            kind === "vocabulary" ? "請到「內容管理」匯入文學詞庫。" : "內容尚在補齊，稍後再來看。"
           }
         />
       ) : (
@@ -273,11 +305,15 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
                     className="block rounded-lg border border-[var(--color-line)] p-4 hover:bg-[var(--color-paper-2)]"
                   >
                     <p className="line-clamp-2 text-lg leading-relaxed">{row.display_quote}</p>
-                    <p className="mt-2 text-sm text-[var(--color-ink-muted)]">{row.author_name}</p>
+                    <p className="mt-2 text-sm text-[var(--color-ink-muted)]">
+                      {row.author_name}
+                      {row.themes?.length ? ` · ${row.themes.slice(0, 2).join("、")}` : ""}
+                    </p>
                   </Link>
                 </li>
               );
             }
+            if (!isCraft(row)) return null;
             return (
               <li key={row.id}>
                 <Link

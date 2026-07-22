@@ -18,8 +18,20 @@ export type QuoteCard = {
   display_quote: string;
   author_name: string;
   work_title: string;
+  section_title?: string | null;
+  original_quote?: string | null;
+  author_bio?: string;
+  publication_year?: number | null;
+  translator_name?: string | null;
+  bibliography_url?: string | null;
   short_analysis: string;
+  deep_analysis?: string;
+  context?: string;
+  writing_insight?: string;
+  counterpoint?: string;
+  themes?: string[];
   verification_status: string;
+  copyright_status?: string;
 };
 
 export type VocabCard = {
