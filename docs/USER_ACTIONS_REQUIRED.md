@@ -1,31 +1,33 @@
 # 自動化內容（只需設一次密鑰）
 
-詞庫／名言的爬取與匯入由 GitHub Actions「Content sync」負責，**不要再手動貼大包 SQL**。
+## 金鑰在哪（Supabase 改版後）
 
-## 唯一需要你做的一次設定
+直接開這個頁（先登入 Supabase）：  
+https://supabase.com/dashboard/project/ypyiqysgfwgxcmmsylob/settings/api-keys
 
-在 https://github.com/linyize1111/zi-geng/settings/secrets/actions 新增：
+你會看到兩種，**任選一種**即可：
 
-| Secret | 哪裡拿 |
-|--------|--------|
-| `SUPABASE_SERVICE_ROLE_KEY` | Supabase → Project Settings → API → `service_role`（secret） |
+### 方式 A（新版，較好找）
 
-可選：
+1. 分頁 **Publishable and secret API keys**（或「API Keys」）  
+2. 找 **Secret key**（`sb_secret_...` 開頭）  
+3. 若還沒有：按 **Create new secret key** → 建立後複製  
+4. 貼到 GitHub Secret，名稱用：`SUPABASE_SECRET_KEY`
 
-| Secret | 用途 |
-|--------|------|
-| `SUPABASE_ACCESS_TOKEN` | [Account tokens](https://supabase.com/dashboard/account/tokens) — 用來自動套用 RPC SQL |
-| `SUPABASE_URL` | 可省略，會用既有 `VITE_SUPABASE_URL` |
+### 方式 B（舊版名稱 service_role）
 
-設好後到 Actions → **Content sync** → **Run workflow**，或等週一排程／推送 `scripts/content/**` 自動跑。
+1. 同一頁找分頁 **Legacy anon, service_role API keys**  
+2. 找到 **`service_role`**（會標 secret）  
+3. 按 **Reveal** 顯示（一長串 `eyJ...`）  
+4. 貼到 GitHub Secret，名稱用：`SUPABASE_SERVICE_ROLE_KEY`
 
-跑完「今日」會顯示詞庫數百筆；側欄「詞彙」可見完整列表。
+### 貼到哪裡
 
-## 流程（全自動）
+https://github.com/linyize1111/zi-geng/settings/secrets/actions  
+→ New repository secret → 名稱如上 → 貼上金鑰 → Add  
 
-1. 下載教育部成語／重建種子  
-2. **service role 寫入 Supabase**（成語 + 多主題名言）  
-3. 盡力爬維基詞典／語錄並追加匯入  
-4. 種子有變則 commit 並部署 Pages  
+設好跟我說一聲，我會立刻跑「Content sync」自動灌庫。
 
-前端「換一批」已不依賴舊的每日上限 RPC。
+---
+
+不要找「anon / publishable」——那是給前端用的，灌庫不夠權限。

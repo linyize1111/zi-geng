@@ -40,10 +40,10 @@ jobs:
       - name: Require Supabase secrets
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL || secrets.VITE_SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || secrets.SUPABASE_SECRET_KEY }}
         run: |
           if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
-            echo "::error::Missing SUPABASE_SERVICE_ROLE_KEY. Owner: set it once in repo Secrets (Project Settings → API → service_role). Then re-run this workflow."
+            echo "::error::Missing secret. Set SUPABASE_SERVICE_ROLE_KEY (Legacy API → service_role) OR SUPABASE_SECRET_KEY (API Keys → secret / sb_secret_…)."
             exit 1
           fi
 
@@ -51,7 +51,8 @@ jobs:
       - name: Import bundled vocab + quotes
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL || secrets.VITE_SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || secrets.SUPABASE_SECRET_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
         run: |
           node scripts/content/import-vocab.mjs scripts/content/seed-literary-vocab.json
           node scripts/content/import-quotes.mjs scripts/content/seed-themed-quotes.json
@@ -68,7 +69,8 @@ jobs:
         continue-on-error: true
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL || secrets.VITE_SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || secrets.SUPABASE_SECRET_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
         run: |
           if [ -f scripts/content/fetched-wiktionary.json ]; then
             node scripts/content/import-vocab.mjs scripts/content/fetched-wiktionary.json

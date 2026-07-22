@@ -12,10 +12,15 @@ const __dir = dirname(fileURLToPath(import.meta.url));
 const jsonPath = process.argv[2] || join(__dir, "seed-literary-vocab.json");
 
 const url = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL || "";
-const key = process.env.SUPABASE_SERVICE_ROLE_KEY || "";
+const key =
+  process.env.SUPABASE_SERVICE_ROLE_KEY ||
+  process.env.SUPABASE_SECRET_KEY ||
+  "";
 
 if (!url.startsWith("http") || key.length < 20) {
-  console.error("Need SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY");
+  console.error(
+    "Need SUPABASE_URL (or VITE_SUPABASE_URL) and SUPABASE_SERVICE_ROLE_KEY (or new sb_secret_… as SUPABASE_SECRET_KEY)",
+  );
   process.exit(1);
 }
 
