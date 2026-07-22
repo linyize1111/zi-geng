@@ -111,19 +111,148 @@ export async function fetchOrCreateDailyPlan(timezone = "Asia/Taipei"): Promise<
   return hydratePlan(plan as DailyPlan);
 }
 
+function shufflePick<T>(items: T[], n: number): T[] {
+  const copy = [...items];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const a = copy[i]!;
+    copy[i] = copy[j]!;
+    copy[j] = a;
+  }
+  return copy.slice(0, n);
+}
+
+/**
+ * Client-side unlimited replace (updates own zg_daily_plans).
+ * Does not depend on zg_replace_daily_slot daily caps — those stay broken until SQL is applied.
+ */
+async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promise<DailyPlanBundle> {
+  const client = getSupabaseClient();
+  if (!client) throw new Error("尚未設定 Supabase");
+
+  const bundle = await fetchOrCreateDailyPlan(timezone);
+  const plan = bundle.plan;
+  const used = replacementUsed(plan, slot);
+  const nextReps = { ...plan.replacements, [slot]: used + 1 };
+
+  const { data: settings } = await client
+    .from("zg_user_settings")
+    .select("daily_mode, daily_vocab_count")
+    .eq("user_id", plan.user_id)
+    .maybeSingle();
+
+  let vocabN = settings?.daily_vocab_count ?? 7;
+  const mode = settings?.daily_mode ?? "standard";
+  if (mode === "light") vocabN = Math.min(vocabN, 3);
+  if (mode === "deep") vocabN = Math.max(vocabN, 10);
+
+  const patch: Record<string, unknown> = {
+    replacements: nextReps,
+    updated_at: new Date().toISOString(),
+  };
+
+  if (slot === "vocabulary") {
+    const { data, error } = await client
+      .from("zg_vocabulary_cards")
+      .select("id")
+      .eq("status", "active");
+    if (error) throw error;
+    const ids = (data ?? []).map((r) => r.id as string);
+    if (!ids.length) throw new Error("詞庫是空的，請先匯入詞彙");
+    const avoid = new Set(plan.vocabulary_ids ?? []);
+    let pool = ids.filter((id) => !avoid.has(id));
+    if (pool.length < vocabN) pool = ids;
+    patch.vocabulary_ids = shufflePick(pool, Math.min(vocabN, pool.length));
+  } else if (slot === "quote") {
+    const { data, error } = await client
+      .from("zg_quotes")
+      .select("id, author_name, display_quote, copyright_status, verification_status")
+      .eq("status", "active")
+      .in("verification_status", ["verified_primary", "verified_secondary"]);
+    if (error) throw error;
+    const ids = (data ?? [])
+      .filter(
+        (q) =>
+          q.copyright_status !== "internal_test" &&
+          q.author_name !== "開發測試內容" &&
+          !String(q.display_quote).includes("開發測試") &&
+          q.id !== plan.quote_id,
+      )
+      .map((q) => q.id as string);
+    const fallback = (data ?? [])
+      .filter(
+        (q) =>
+          q.copyright_status !== "internal_test" &&
+          q.author_name !== "開發測試內容" &&
+          !String(q.display_quote).includes("開發測試"),
+      )
+      .map((q) => q.id as string);
+    const pick = shufflePick(ids.length ? ids : fallback, 1)[0];
+    if (!pick) throw new Error("尚無名言可換，請先匯入多主題名言");
+    patch.quote_id = pick;
+  } else if (slot === "craft") {
+    const { data, error } = await client.from("zg_craft_cards").select("id").eq("status", "active");
+    if (error) throw error;
+    const ids = (data ?? []).map((r) => r.id as string).filter((id) => id !== plan.craft_id);
+    const pool = ids.length ? ids : (data ?? []).map((r) => r.id as string);
+    const pick = shufflePick(pool, 1)[0];
+    if (!pick) throw new Error("尚無寫作技巧可換");
+    patch.craft_id = pick;
+  } else if (slot === "prompt") {
+    const { data, error } = await client
+      .from("zg_writing_prompts")
+      .select("id")
+      .eq("status", "active");
+    if (error) throw error;
+    const ids = (data ?? [])
+      .map((r) => r.id as string)
+      .filter((id) => id !== plan.writing_prompt_id);
+    const pool = ids.length ? ids : (data ?? []).map((r) => r.id as string);
+    const pick = shufflePick(pool, 1)[0];
+    if (!pick) throw new Error("尚無寫作題目可換");
+    patch.writing_prompt_id = pick;
+  } else {
+    const { data, error } = await client
+      .from("zg_novel_task_templates")
+      .select("id")
+      .eq("status", "active");
+    if (error) throw error;
+    const ids = (data ?? [])
+      .map((r) => r.id as string)
+      .filter((id) => id !== plan.novel_task_template_id);
+    const pool = ids.length ? ids : (data ?? []).map((r) => r.id as string);
+    const pick = shufflePick(pool, 1)[0];
+    if (!pick) throw new Error("尚無小說任務可換");
+    patch.novel_task_template_id = pick;
+  }
+
+  const { data: updated, error: upErr } = await client
+    .from("zg_daily_plans")
+    .update(patch)
+    .eq("id", plan.id)
+    .select("*")
+    .single();
+  if (upErr) throw upErr;
+  return hydratePlan(updated as DailyPlan);
+}
+
 export async function replaceDailySlot(
   slot: DailySlot,
   timezone = "Asia/Taipei",
 ): Promise<DailyPlanBundle> {
-  const client = getSupabaseClient();
-  if (!client) throw new Error("尚未設定 Supabase");
-
-  const { data: plan, error } = await client
-    .rpc("zg_replace_daily_slot", { p_slot: slot, p_timezone: timezone })
-    .single();
-
-  if (error) throw error;
-  return hydratePlan(plan as DailyPlan);
+  // Prefer client-side replace so refresh works even if DB RPC still has daily caps
+  // (Pages deploy / SQL apply may lag). Fall back to RPC only if client path fails hard.
+  try {
+    return await replaceDailySlotClient(slot, timezone);
+  } catch (clientErr) {
+    const client = getSupabaseClient();
+    if (!client) throw clientErr;
+    const { data: plan, error } = await client
+      .rpc("zg_replace_daily_slot", { p_slot: slot, p_timezone: timezone })
+      .single();
+    if (error) throw clientErr;
+    return hydratePlan(plan as DailyPlan);
+  }
 }
 
 const MOCK_VOCAB: VocabCard[] = [

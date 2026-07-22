@@ -325,7 +325,11 @@ const mergedVocab = {
 
 writeFileSync(join(__dir, "fetched-wiktionary.json"), JSON.stringify(vocabOut, null, 2), "utf8");
 writeFileSync(join(__dir, "fetched-wikiquote.json"), JSON.stringify(quoteOut, null, 2), "utf8");
-writeFileSync(join(__dir, "seed-multi-source-vocab.json"), JSON.stringify(mergedVocab, null, 2), "utf8");
+writeFileSync(
+  join(__dir, "seed-multi-source-vocab.json"),
+  JSON.stringify(mergedVocab, null, 2),
+  "utf8",
+);
 
 const pub = join(__dir, "../../public/content");
 mkdirSync(pub, { recursive: true });

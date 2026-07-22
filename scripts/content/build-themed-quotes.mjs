@@ -14,8 +14,7 @@ const classical = [
     work_title: "論語·學而",
     themes: ["學習", "教育"],
     short_analysis: "把學習與複習連在一起，快樂來自反覆確認自己真的懂了。",
-    deep_analysis:
-      "「時習」強調節奏：不是一次背完，而是依時溫習。寫作也可同理——草稿要留時間回看。",
+    deep_analysis: "「時習」強調節奏：不是一次背完，而是依時溫習。寫作也可同理——草稿要留時間回看。",
     writing_insight: "把「複習」寫成場面：燈下重讀舊稿、刪掉昨夜自以為巧妙的句子。",
     context: "儒家入門語，談學習態度。",
     counterpoint: "若只重複而不思考，時習會變成空轉。",
@@ -68,8 +67,7 @@ const classical = [
     work_title: "孟子·盡心上",
     themes: ["政治", "道德", "自我"],
     short_analysis: "處境不同，責任尺度不同。",
-    deep_analysis:
-      "角色倫理可以隨權力變化：無權時守身，有權時擴張善意——也可寫其虛偽版本。",
+    deep_analysis: "角色倫理可以隨權力變化：無權時守身，有權時擴張善意——也可寫其虛偽版本。",
     writing_insight: "給對手一個「達」時的合理自辯。",
     context: "儒家出處進退。",
     counterpoint: "誰定義「窮／達」？常被權力挪用。",

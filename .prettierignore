@@ -5,6 +5,6 @@ playwright-report
 test-results
 package-lock.json
 docs/**/*.md
-scripts/content/seed-literary-vocab.json
-public/content/seed-literary-vocab.json
+scripts/content/**/*.json
+public/content/**/*.json
 scripts/content/dict_idioms.json
