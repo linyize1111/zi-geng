@@ -45,7 +45,9 @@ async function hydratePlan(daily: DailyPlan): Promise<DailyPlanBundle> {
     daily.vocabulary_ids?.length
       ? client
           .from("zg_vocabulary_cards")
-          .select("id, term, zhuyin, short_def, difficulty, category")
+          .select(
+            "id, term, zhuyin, short_def, long_def, usage_context, part_of_speech, difficulty, category, tags, daily_example, literary_example",
+          )
           .in("id", daily.vocabulary_ids)
           .then((r) => {
             if (r.error) throw r.error;
@@ -57,7 +59,9 @@ async function hydratePlan(daily: DailyPlan): Promise<DailyPlanBundle> {
     daily.craft_id
       ? client
           .from("zg_craft_cards")
-          .select("id, name, one_liner, purpose")
+          .select(
+            "id, name, one_liner, purpose, bad_example, good_example, breakdown, exercise, tags",
+          )
           .eq("id", daily.craft_id)
           .maybeSingle()
           .then((r) => {
@@ -160,34 +164,75 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
     const rows = data ?? [];
     if (!rows.length) throw new Error("詞庫是空的，請先匯入詞彙");
     const avoid = new Set(plan.vocabulary_ids ?? []);
-    const isIdiom = (r: { category?: string | null; tags?: string[] | null }) => {
+    type Row = { id: string; category?: string | null; tags?: string[] | null };
+    const isIdiom = (r: Row) => {
       const tags = r.tags ?? [];
       return (
-        r.category === "成語" ||
-        tags.includes("成語") ||
-        tags.includes("教育部成語典")
+        r.category === "成語" || tags.includes("成語") || tags.includes("教育部成語典")
       );
     };
-    // Prefer 單字／詞彙／文言 (~75%) over junior-level 成語 flood
-    const literary = rows.filter((r) => !isIdiom(r)).map((r) => r.id as string);
-    const idioms = rows.filter((r) => isIdiom(r)).map((r) => r.id as string);
-    const freeLit = literary.filter((id) => !avoid.has(id));
-    const freeIdi = idioms.filter((id) => !avoid.has(id));
-    const nLit = Math.min(
-      freeLit.length || literary.length,
-      Math.max(1, Math.ceil(vocabN * 0.75)),
-    );
-    const litPool = freeLit.length >= nLit ? freeLit : literary;
-    const pickedLit = shufflePick(litPool, Math.min(nLit, litPool.length));
-    const need = vocabN - pickedLit.length;
-    const idiPool = (freeIdi.length ? freeIdi : idioms).filter((id) => !pickedLit.includes(id));
-    const pickedIdi = need > 0 ? shufflePick(idiPool, Math.min(need, idiPool.length)) : [];
-    let picked = [...pickedLit, ...pickedIdi];
-    if (picked.length < vocabN) {
-      const rest = rows.map((r) => r.id as string).filter((id) => !picked.includes(id));
-      picked = [...picked, ...shufflePick(rest, vocabN - picked.length)];
+    const isThemed = (r: Row) => {
+      const tags = r.tags ?? [];
+      return (
+        tags.includes("主題詞庫") ||
+        tags.includes("寫作者詞庫") ||
+        String(r.category ?? "").includes("情緒") ||
+        String(r.category ?? "").includes("動詞") ||
+        String(r.category ?? "").includes("感官")
+      );
+    };
+    const themed = rows.filter((r) => isThemed(r as Row) && !isIdiom(r as Row));
+    const literary = rows.filter((r) => !isIdiom(r as Row) && !isThemed(r as Row));
+    const idioms = rows.filter((r) => isIdiom(r as Row));
+
+    const pickFrom = (pool: typeof rows, n: number, used: Set<string>) => {
+      const free = pool.map((r) => r.id as string).filter((id) => !used.has(id) && !avoid.has(id));
+      const base = free.length >= n ? free : pool.map((r) => r.id as string).filter((id) => !used.has(id));
+      return shufflePick(base, Math.min(n, base.length));
+    };
+
+    // Mix: ~45% themed writer banks, ~40% other literary, ~15% idioms; diversify categories
+    const nTheme = Math.min(themed.length, Math.max(1, Math.round(vocabN * 0.45)));
+    const nIdiom = Math.min(idioms.length, Math.max(0, Math.round(vocabN * 0.15)));
+    const nLit = Math.max(0, vocabN - nTheme - nIdiom);
+
+    const used = new Set<string>();
+    const pickedTheme = pickFrom(themed, nTheme, used);
+    pickedTheme.forEach((id) => used.add(id));
+    const pickedLit = pickFrom(literary.length ? literary : rows, nLit, used);
+    pickedLit.forEach((id) => used.add(id));
+    const pickedIdi = pickFrom(idioms, nIdiom, used);
+    pickedIdi.forEach((id) => used.add(id));
+
+    let picked = [...pickedTheme, ...pickedLit, ...pickedIdi];
+
+    // Category diversity: if too many share same category prefix, reshuffle extras from unused
+    const catKey = (id: string) => {
+      const row = rows.find((r) => r.id === id);
+      return String(row?.category ?? "其他").split("・")[0] ?? "其他";
+    };
+    const counts = new Map<string, number>();
+    for (const id of picked) counts.set(catKey(id), (counts.get(catKey(id)) ?? 0) + 1);
+    const overloaded = [...counts.entries()].filter(([, n]) => n >= 3).map(([k]) => k);
+    if (overloaded.length && picked.length >= 3) {
+      const rest = rows
+        .map((r) => r.id as string)
+        .filter((id) => !used.has(id) && !overloaded.includes(catKey(id)));
+      if (rest.length) {
+        const swapOut = picked.filter((id) => overloaded.includes(catKey(id))).slice(1);
+        const swapIn = shufflePick(rest, Math.min(swapOut.length, rest.length));
+        picked = picked.filter((id) => !swapOut.slice(0, swapIn.length).includes(id));
+        picked = [...picked, ...swapIn];
+      }
     }
-    patch.vocabulary_ids = picked;
+
+    if (picked.length < vocabN) {
+      const more = rows
+        .map((r) => r.id as string)
+        .filter((id) => !picked.includes(id));
+      picked = [...picked, ...shufflePick(more, vocabN - picked.length)];
+    }
+    patch.vocabulary_ids = shufflePick(picked, Math.min(vocabN, picked.length));
   } else if (slot === "quote") {
     const { data, error } = await client
       .from("zg_quotes")

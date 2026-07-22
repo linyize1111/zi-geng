@@ -1,3 +1,4 @@
+import { useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { PageLoading, PageState } from "@/components/common/PageState";
@@ -150,6 +151,7 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
   const navigate = useNavigate();
   const auth = useAuth();
   const useMock = env.useMockAdapter || auth.usingMock;
+  const [catFilter, setCatFilter] = useState<string>("全部");
 
   const listQuery = useQuery({
     queryKey: ["learn-list", kind, auth.user?.id, useMock],
@@ -183,6 +185,27 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
       return getCraft(id);
     },
   });
+
+  const rows = listQuery.data ?? [];
+  const vocabCats = useMemo(() => {
+    if (kind !== "vocabulary") return [] as string[];
+    const set = new Set<string>();
+    for (const row of rows) {
+      if (isVocab(row) && row.category) {
+        set.add(row.category.split("・")[0] ?? row.category);
+      }
+    }
+    return ["全部", ...[...set].sort()];
+  }, [kind, rows]);
+
+  const visibleRows = useMemo(() => {
+    if (kind !== "vocabulary" || catFilter === "全部") return rows;
+    return rows.filter(
+      (row) =>
+        isVocab(row) &&
+        (row.category?.startsWith(catFilter) || row.category?.split("・")[0] === catFilter),
+    );
+  }, [rows, kind, catFilter]);
 
   if (auth.status === "loading" || listQuery.isLoading || detailQuery.isLoading) {
     return <PageLoading label={`載入${titles[kind]}…`} />;
@@ -224,14 +247,39 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
           <FavoriteToggle type={favoriteType(kind)} contentId={id} />
         </div>
         {isVocab(item) ? (
-          <article className="space-y-3">
+          <article className="space-y-4">
             <h1 className="font-[family-name:var(--font-sans)] text-3xl">{item.term}</h1>
             {item.zhuyin ? (
               <p className="text-sm text-[var(--color-ink-muted)]">{item.zhuyin}</p>
             ) : null}
+            {item.category || item.part_of_speech ? (
+              <p className="text-xs text-[var(--color-ink-muted)]">
+                {[item.category, item.part_of_speech, item.difficulty ? `難度 ${item.difficulty}` : null]
+                  .filter(Boolean)
+                  .join(" · ")}
+              </p>
+            ) : null}
             <p className="leading-relaxed">{item.short_def}</p>
-            {item.category ? (
-              <p className="text-xs text-[var(--color-ink-muted)]">{item.category}</p>
+            {item.long_def && item.long_def !== item.short_def ? (
+              <p className="text-sm leading-relaxed text-[var(--color-ink-muted)]">{item.long_def}</p>
+            ) : null}
+            {item.usage_context ? (
+              <p className="text-sm">
+                <span className="text-xs tracking-widest text-[var(--color-ink-muted)]">用法　</span>
+                {item.usage_context}
+              </p>
+            ) : null}
+            {item.daily_example ? (
+              <p className="text-sm">
+                <span className="text-xs tracking-widest text-[var(--color-ink-muted)]">日常例　</span>
+                {item.daily_example}
+              </p>
+            ) : null}
+            {item.literary_example ? (
+              <p className="text-sm">
+                <span className="text-xs tracking-widest text-[var(--color-ink-muted)]">書面例　</span>
+                {item.literary_example}
+              </p>
             ) : null}
           </article>
         ) : null}
@@ -241,6 +289,30 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
             <h1 className="font-[family-name:var(--font-sans)] text-3xl">{item.name}</h1>
             <p className="leading-relaxed">{item.one_liner}</p>
             <p className="text-sm text-[var(--color-ink-muted)]">{item.purpose}</p>
+            {item.bad_example ? (
+              <p className="text-sm">
+                <span className="text-xs text-[var(--color-ink-muted)]">弱例　</span>
+                {item.bad_example}
+              </p>
+            ) : null}
+            {item.good_example ? (
+              <p className="text-sm">
+                <span className="text-xs text-[var(--color-ink-muted)]">強例　</span>
+                {item.good_example}
+              </p>
+            ) : null}
+            {item.breakdown ? (
+              <p className="text-sm">
+                <span className="text-xs text-[var(--color-ink-muted)]">拆解　</span>
+                {item.breakdown}
+              </p>
+            ) : null}
+            {item.exercise ? (
+              <p className="text-sm">
+                <span className="text-xs text-[var(--color-ink-muted)]">練習　</span>
+                {item.exercise}
+              </p>
+            ) : null}
           </article>
         ) : null}
       </div>
@@ -259,8 +331,6 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
     );
   }
 
-  const rows = listQuery.data ?? [];
-
   return (
     <div className="space-y-5">
       <header className="space-y-1">
@@ -268,12 +338,31 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
           {titles[kind]}
         </h1>
         <p className="text-sm text-[var(--color-ink-muted)]">
-          {rows.length ? `共 ${rows.length} 筆` : "尚無資料"}
+          {visibleRows.length ? `共 ${visibleRows.length} 筆` : "尚無資料"}
           {useMock ? " · 離線示範" : ""}
         </p>
       </header>
 
-      {rows.length === 0 ? (
+      {kind === "vocabulary" && vocabCats.length > 1 ? (
+        <div className="flex flex-wrap gap-2">
+          {vocabCats.map((c) => (
+            <button
+              key={c}
+              type="button"
+              className={`rounded-md border px-2.5 py-1 text-xs ${
+                catFilter === c
+                  ? "border-[var(--color-ink)] bg-[var(--color-ink)] text-[var(--color-paper)]"
+                  : "border-[var(--color-line)] text-[var(--color-ink-muted)]"
+              }`}
+              onClick={() => setCatFilter(c)}
+            >
+              {c}
+            </button>
+          ))}
+        </div>
+      ) : null}
+
+      {visibleRows.length === 0 ? (
         <PageState
           title="列表為空"
           description={
@@ -282,7 +371,7 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
         />
       ) : (
         <ul className="space-y-3">
-          {rows.map((row) => {
+          {visibleRows.map((row) => {
             const href = `${listPath(kind)}/${row.id}`;
             if (isVocab(row)) {
               return (
@@ -291,7 +380,15 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
                     to={href}
                     className="block rounded-lg border border-[var(--color-line)] p-4 hover:bg-[var(--color-paper-2)]"
                   >
-                    <p className="text-lg">{row.term}</p>
+                    <div className="flex flex-wrap items-baseline justify-between gap-2">
+                      <p className="text-lg">{row.term}</p>
+                      {row.category ? (
+                        <p className="text-[10px] text-[var(--color-ink-muted)]">{row.category}</p>
+                      ) : null}
+                    </div>
+                    {row.zhuyin ? (
+                      <p className="mt-0.5 text-xs text-[var(--color-ink-muted)]">{row.zhuyin}</p>
+                    ) : null}
                     <p className="mt-1 text-sm text-[var(--color-ink-muted)]">{row.short_def}</p>
                   </Link>
                 </li>

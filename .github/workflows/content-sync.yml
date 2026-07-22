@@ -58,6 +58,10 @@ jobs:
           node scripts/content/import-quotes.mjs scripts/content/seed-themed-quotes.json
           node scripts/content/import-prompts.mjs scripts/content/seed-writing-prompts.json
           node scripts/content/import-novel-tasks.mjs scripts/content/seed-novel-plan-tasks.json
+          node scripts/content/import-craft.mjs scripts/content/seed-craft-cards.json
+          if [ -f scripts/content/seed-themed-vocab.json ]; then
+            node scripts/content/import-vocab.mjs scripts/content/seed-themed-vocab.json
+          fi
 
       - name: Archive self-authored maxims (字耕箴言)
         continue-on-error: true
@@ -112,6 +116,8 @@ jobs:
             scripts/content/seed-themed-quotes.json \
             scripts/content/seed-writing-prompts.json \
             scripts/content/seed-novel-plan-tasks.json \
+            scripts/content/seed-themed-vocab.json \
+            scripts/content/seed-craft-cards.json \
             scripts/content/fetched-wiktionary.json \
             scripts/content/fetched-wikiquote.json \
             scripts/content/seed-multi-source-vocab.json \
@@ -120,6 +126,8 @@ jobs:
             public/content/seed-themed-quotes.json \
             public/content/seed-writing-prompts.json \
             public/content/seed-novel-plan-tasks.json \
+            public/content/seed-themed-vocab.json \
+            public/content/seed-craft-cards.json \
             public/content/seed-multi-source-vocab.json \
             public/content/seed-wikiquote.json || true
           if git diff --staged --quiet; then

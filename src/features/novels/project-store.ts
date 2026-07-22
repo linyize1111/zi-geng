@@ -100,3 +100,43 @@ export async function softDeleteNovel(userId: string, id: string): Promise<void>
     updatedAt: nowIso(),
   });
 }
+
+export async function exportNovelsJson(userId: string): Promise<string> {
+  const rows = await listNovels(userId);
+  return JSON.stringify(
+    {
+      version: 1,
+      exportedAt: nowIso(),
+      projects: rows,
+    },
+    null,
+    2,
+  );
+}
+
+export async function importNovelsJson(userId: string, raw: string): Promise<number> {
+  const parsed = JSON.parse(raw) as { projects?: NovelProject[] };
+  const projects = parsed.projects ?? [];
+  if (!Array.isArray(projects)) throw new Error("備份格式不正確");
+  let n = 0;
+  for (const p of projects) {
+    if (!p || typeof p !== "object" || !p.title) continue;
+    const id = typeof p.id === "string" && p.id ? p.id : crypto.randomUUID();
+    const row: NovelProject = normalizeProject({
+      ...p,
+      id,
+      userId,
+      deletedAt: null,
+      syncStatus: "local-only",
+      updatedAt: nowIso(),
+      createdAt: p.createdAt || nowIso(),
+      plan: p.plan,
+      premise: p.premise ?? "",
+      notes: p.notes ?? "",
+      title: p.title,
+    } as NovelProject);
+    await getZiGengDb().novelProjects.put(row);
+    n += 1;
+  }
+  return n;
+}

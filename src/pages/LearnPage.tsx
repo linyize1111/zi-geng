@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { routes } from "@/routes/paths";
 
 const sections = [
-  { to: routes.learnVocabulary, label: "詞彙", desc: "文學與辨析" },
-  { to: routes.learnQuotes, label: "名言", desc: "查證後的解析" },
-  { to: routes.learnCraft, label: "寫作技巧", desc: "修辭與節奏" },
+  { to: routes.learnVocabulary, label: "詞彙", desc: "情緒・動詞・感官・文學辨析" },
+  { to: routes.learnQuotes, label: "名言", desc: "經典與查證解析" },
+  { to: routes.learnCraft, label: "寫作技巧", desc: "強弱例與練習" },
 ] as const;
 
 export default function LearnPage() {

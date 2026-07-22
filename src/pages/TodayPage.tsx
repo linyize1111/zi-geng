@@ -274,7 +274,18 @@ export default function TodayPage() {
                   </div>
                   <FavoriteToggle type="vocabulary" contentId={v.id} compact />
                 </div>
+                {v.category ? (
+                  <p className="mt-1 text-[10px] tracking-wide text-[var(--color-ink-muted)]">
+                    {v.category}
+                    {v.part_of_speech ? ` · ${v.part_of_speech}` : ""}
+                  </p>
+                ) : null}
                 <p className="mt-2 text-sm text-[var(--color-ink-muted)]">{v.short_def}</p>
+                {v.daily_example ? (
+                  <p className="mt-2 text-xs leading-relaxed text-[var(--color-ink)]">
+                    例：{v.daily_example}
+                  </p>
+                ) : null}
                 <Link
                   to={`${routes.learnVocabulary}/${v.id}`}
                   className="mt-2 inline-block text-xs underline-offset-4 hover:underline"
@@ -306,6 +317,28 @@ export default function TodayPage() {
           <h2 className="mt-2 text-xl">{data.craft.name}</h2>
           <p className="mt-2 text-sm">{data.craft.one_liner}</p>
           <p className="mt-2 text-sm text-[var(--color-ink-muted)]">{data.craft.purpose}</p>
+          {data.craft.bad_example || data.craft.good_example ? (
+            <div className="mt-3 space-y-2 text-sm">
+              {data.craft.bad_example ? (
+                <p>
+                  <span className="text-xs text-[var(--color-ink-muted)]">弱例　</span>
+                  {data.craft.bad_example}
+                </p>
+              ) : null}
+              {data.craft.good_example ? (
+                <p>
+                  <span className="text-xs text-[var(--color-ink-muted)]">強例　</span>
+                  {data.craft.good_example}
+                </p>
+              ) : null}
+            </div>
+          ) : null}
+          {data.craft.exercise ? (
+            <p className="mt-3 text-sm">
+              <span className="text-xs text-[var(--color-ink-muted)]">練習　</span>
+              {data.craft.exercise}
+            </p>
+          ) : null}
         </section>
       ) : null}
 

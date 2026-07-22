@@ -5,8 +5,14 @@ export type VocabListItem = {
   term: string;
   zhuyin: string | null;
   short_def: string;
+  long_def?: string | null;
+  usage_context?: string | null;
+  part_of_speech?: string | null;
   difficulty: number;
   category: string | null;
+  tags?: string[] | null;
+  daily_example?: string | null;
+  literary_example?: string | null;
 };
 
 export type QuoteListItem = {
@@ -39,6 +45,12 @@ export type QuoteListItem = {
 const QUOTE_SELECT =
   "id, display_quote, author_name, work_title, section_title, original_quote, original_language, author_bio, publication_year, translator_name, bibliography_url, short_analysis, deep_analysis, context, rhetorical_analysis, counterpoint, writing_insight, reflection_questions, imitation_exercise, themes, tags, verification_status, copyright_status, difficulty";
 
+const VOCAB_SELECT =
+  "id, term, zhuyin, short_def, long_def, usage_context, part_of_speech, difficulty, category, tags, daily_example, literary_example";
+
+const CRAFT_SELECT =
+  "id, name, one_liner, purpose, bad_example, good_example, breakdown, exercise, difficulty, tags";
+
 export async function listQuotes(): Promise<QuoteListItem[]> {
   const client = getSupabaseClient();
   if (!client) throw new Error("尚未設定 Supabase");
@@ -70,7 +82,12 @@ export type CraftListItem = {
   name: string;
   one_liner: string;
   purpose: string;
+  bad_example?: string | null;
+  good_example?: string | null;
+  breakdown?: string | null;
+  exercise?: string | null;
   difficulty?: number;
+  tags?: string[] | null;
 };
 
 export async function listVocabulary(): Promise<VocabListItem[]> {
@@ -78,7 +95,7 @@ export async function listVocabulary(): Promise<VocabListItem[]> {
   if (!client) throw new Error("尚未設定 Supabase");
   const { data, error } = await client
     .from("zg_vocabulary_cards")
-    .select("id, term, zhuyin, short_def, difficulty, category")
+    .select(VOCAB_SELECT)
     .eq("status", "active")
     .order("term");
   if (error) throw error;
@@ -90,7 +107,7 @@ export async function getVocabulary(id: string): Promise<VocabListItem | null> {
   if (!client) throw new Error("尚未設定 Supabase");
   const { data, error } = await client
     .from("zg_vocabulary_cards")
-    .select("id, term, zhuyin, short_def, difficulty, category")
+    .select(VOCAB_SELECT)
     .eq("id", id)
     .maybeSingle();
   if (error) throw error;
@@ -102,7 +119,7 @@ export async function listCraft(): Promise<CraftListItem[]> {
   if (!client) throw new Error("尚未設定 Supabase");
   const { data, error } = await client
     .from("zg_craft_cards")
-    .select("id, name, one_liner, purpose, difficulty")
+    .select(CRAFT_SELECT)
     .eq("status", "active")
     .order("name");
   if (error) throw error;
@@ -114,7 +131,7 @@ export async function getCraft(id: string): Promise<CraftListItem | null> {
   if (!client) throw new Error("尚未設定 Supabase");
   const { data, error } = await client
     .from("zg_craft_cards")
-    .select("id, name, one_liner, purpose, difficulty")
+    .select(CRAFT_SELECT)
     .eq("id", id)
     .maybeSingle();
   if (error) throw error;

@@ -1,5 +1,5 @@
 /**
- * Merge writer lexicon + MOE revised literary + harder idioms → seed-literary-vocab.json
+ * Merge writer + themed + MOE revised literary + capped idioms → seed-literary-vocab.json
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -15,27 +15,30 @@ function load(name) {
 }
 
 const writer = load("seed-writer-vocab.json");
+const themed = load("seed-themed-vocab.json");
 const revised = load("seed-moe-revised.json");
 const idiomsAll = load("seed-idioms-raw.json");
 
-// Prefer harder / less childish idioms if full idiom seed exists
 let idioms = idiomsAll;
 if (!idioms.length && existsSync(join(__dir, "seed-literary-vocab.json"))) {
   const prev = JSON.parse(readFileSync(join(__dir, "seed-literary-vocab.json"), "utf8"));
   idioms = (prev.cards ?? []).filter((c) => c.category === "成語" || c.source?.kind === "moe-idioms");
 }
 
-const IDIOM_LIMIT = Number(process.env.IDIOM_KEEP || 250);
-// Keep a capped idiom slice; writer+revised first
+const IDIOM_LIMIT = Number(process.env.IDIOM_KEEP || 200);
 idioms = idioms.slice(0, IDIOM_LIMIT).map((c) => ({
   ...c,
   difficulty: Math.max(3, c.difficulty ?? 3),
   tags: Array.from(new Set([...(c.tags ?? []), "成語", "輔助"])),
 }));
 
+const REVISED_KEEP = Number(process.env.REVISED_KEEP || 1000);
+const revisedSlice = revised.slice(0, REVISED_KEEP);
+
 const seen = new Set();
 const cards = [];
-for (const c of [...writer, ...revised, ...idioms]) {
+// Priority: curated themed + writer first, then MOE, then idioms
+for (const c of [...themed, ...writer, ...revisedSlice, ...idioms]) {
   const term = String(c.term ?? "").trim();
   if (!term || seen.has(term)) continue;
   seen.add(term);
@@ -43,9 +46,14 @@ for (const c of [...writer, ...revised, ...idioms]) {
 }
 
 const payload = {
-  version: 2,
+  version: 3,
   count: cards.length,
-  mix: { writer: writer.length, revised: revised.length, idioms: idioms.length },
+  mix: {
+    themed: themed.length,
+    writer: writer.length,
+    revised: revisedSlice.length,
+    idioms: idioms.length,
+  },
   cards,
 };
 writeFileSync(join(__dir, "seed-literary-vocab.json"), JSON.stringify(payload, null, 2), "utf8");

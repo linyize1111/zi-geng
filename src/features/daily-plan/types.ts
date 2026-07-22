@@ -39,8 +39,14 @@ export type VocabCard = {
   term: string;
   zhuyin: string | null;
   short_def: string;
+  long_def?: string | null;
+  usage_context?: string | null;
+  part_of_speech?: string | null;
   difficulty: number;
   category: string | null;
+  tags?: string[] | null;
+  daily_example?: string | null;
+  literary_example?: string | null;
 };
 
 export type CraftCard = {
@@ -48,6 +54,11 @@ export type CraftCard = {
   name: string;
   one_liner: string;
   purpose: string;
+  bad_example?: string | null;
+  good_example?: string | null;
+  breakdown?: string | null;
+  exercise?: string | null;
+  tags?: string[] | null;
 };
 
 export type WritingPrompt = {

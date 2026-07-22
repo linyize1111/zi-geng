@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/common/Button";
 import { PageLoading, PageState } from "@/components/common/PageState";
 import { useAuth } from "@/features/auth/AuthProvider";
-import { createNovel, listNovels, softDeleteNovel } from "@/features/novels/project-store";
+import { createNovel, exportNovelsJson, importNovelsJson, listNovels, softDeleteNovel } from "@/features/novels/project-store";
 import { novelDetailPath, routes } from "@/routes/paths";
 
 function formatWhen(iso: string): string {
@@ -75,13 +75,59 @@ export default function NovelsPage() {
             創作計畫系統（構思→修訂）；大綱保留區等你稍後貼上。共 {rows.length} 本
           </p>
         </div>
-        <Button
-          type="button"
-          disabled={createMutation.isPending}
-          onClick={() => createMutation.mutate()}
-        >
-          {createMutation.isPending ? "建立中…" : "新建專案"}
-        </Button>
+        <div className="flex flex-wrap gap-2">
+          <Button
+            type="button"
+            variant="outline"
+            disabled={!userId || rows.length === 0}
+            onClick={() => {
+              void (async () => {
+                const json = await exportNovelsJson(userId!);
+                const blob = new Blob([json], { type: "application/json" });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = `zi-geng-novels-${new Date().toISOString().slice(0, 10)}.json`;
+                a.click();
+                URL.revokeObjectURL(url);
+              })();
+            }}
+          >
+            匯出備份
+          </Button>
+          <label className="relative inline-flex cursor-pointer">
+            <span className="inline-flex items-center justify-center rounded-md border border-[var(--color-line)] px-3 py-2 text-sm">
+              匯入備份
+            </span>
+            <input
+              type="file"
+              accept="application/json,.json"
+              className="absolute inset-0 cursor-pointer opacity-0"
+              disabled={!userId}
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                e.target.value = "";
+                if (!file || !userId) return;
+                void file.text().then(async (text) => {
+                  try {
+                    const n = await importNovelsJson(userId, text);
+                    void queryClient.invalidateQueries({ queryKey: ["novel-projects", userId] });
+                    window.alert(`已匯入 ${n} 本專案`);
+                  } catch (err) {
+                    window.alert(err instanceof Error ? err.message : "匯入失敗");
+                  }
+                });
+              }}
+            />
+          </label>
+          <Button
+            type="button"
+            disabled={createMutation.isPending}
+            onClick={() => createMutation.mutate()}
+          >
+            {createMutation.isPending ? "建立中…" : "新建專案"}
+          </Button>
+        </div>
       </header>
 
       {rows.length === 0 ? (
