@@ -90,6 +90,50 @@ export async function softDeleteDraft(userId: string, id: string): Promise<void>
   });
 }
 
+export async function listDeletedDrafts(userId: string): Promise<WritingDraft[]> {
+  const rows = await getZiGengDb()
+    .drafts.where("userId")
+    .equals(userId)
+    .filter((d) => d.deletedAt != null)
+    .toArray();
+  return rows.sort((a, b) => (b.deletedAt ?? "").localeCompare(a.deletedAt ?? ""));
+}
+
+export async function restoreDraft(userId: string, id: string): Promise<WritingDraft | undefined> {
+  const draft = await getZiGengDb().drafts.get(id);
+  if (!draft || draft.userId !== userId || !draft.deletedAt) return undefined;
+  const next: WritingDraft = {
+    ...draft,
+    deletedAt: null,
+    updatedAt: nowIso(),
+    syncStatus: "local-only",
+  };
+  await getZiGengDb().drafts.put(next);
+  return next;
+}
+
+export async function purgeDraft(userId: string, id: string): Promise<void> {
+  const draft = await getZiGengDb().drafts.get(id);
+  if (!draft || draft.userId !== userId) return;
+  await getZiGengDb().drafts.delete(id);
+}
+
+export function draftToMarkdown(draft: WritingDraft): string {
+  const header = [`# ${draft.title}`, ""];
+  if (draft.promptTitle) header.push(`> 題目：${draft.promptTitle}`, "");
+  return `${header.join("\n")}${draft.contentMd}\n`;
+}
+
+export function downloadDraftMarkdown(draft: WritingDraft): void {
+  const blob = new Blob([draftToMarkdown(draft)], { type: "text/markdown;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `${draft.title.replace(/[\\/:*?"<>|]+/g, "_") || "draft"}.md`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
 /** Remove all private drafts for a user (logout cleanup). */
 export async function clearUserDrafts(userId: string): Promise<number> {
   return getZiGengDb().drafts.where("userId").equals(userId).delete();

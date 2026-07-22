@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { PageLoading, PageState } from "@/components/common/PageState";
 import { useAuth } from "@/features/auth/AuthProvider";
+import { OwnerRemoveCardButton } from "@/features/content/OwnerRemoveCardButton";
 import { FavoriteToggle } from "@/features/favorites/FavoriteToggle";
 import {
   getCraft,
@@ -16,8 +17,16 @@ import {
   type VocabListItem,
 } from "@/features/learn/api";
 import { createMockDailyPlanBundle } from "@/features/daily-plan/api";
+import { VOCAB_FILTER_ORDER, vocabTopCategory } from "@/features/learn/vocab-categories";
+import { VocabStudyPanel } from "@/features/learn/VocabStudyPanel";
 import { env } from "@/lib/env";
 import { routes } from "@/routes/paths";
+
+function vocabSubCategory(category: string | null | undefined): string {
+  if (!category) return "通用";
+  const parts = category.split("・");
+  return parts[1]?.trim() || "通用";
+}
 
 const titles = {
   vocabulary: "詞彙",
@@ -32,6 +41,12 @@ function listPath(kind: keyof typeof titles) {
 }
 
 function favoriteType(kind: keyof typeof titles) {
+  if (kind === "vocabulary") return "vocabulary" as const;
+  if (kind === "quotes") return "quote" as const;
+  return "craft" as const;
+}
+
+function removeKind(kind: keyof typeof titles) {
   if (kind === "vocabulary") return "vocabulary" as const;
   if (kind === "quotes") return "quote" as const;
   return "craft" as const;
@@ -152,6 +167,8 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
   const auth = useAuth();
   const useMock = env.useMockAdapter || auth.usingMock;
   const [catFilter, setCatFilter] = useState<string>("全部");
+  const [subFilter, setSubFilter] = useState<string>("全部");
+  const [vocabMode, setVocabMode] = useState<"browse" | "random" | "themes">("browse");
 
   const listQuery = useQuery({
     queryKey: ["learn-list", kind, auth.user?.id, useMock],
@@ -188,24 +205,49 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
 
   const rows = listQuery.data ?? [];
   const vocabCats = useMemo(() => {
-    if (kind !== "vocabulary") return [] as string[];
-    const set = new Set<string>();
+    if (kind !== "vocabulary") return [] as { name: string; count: number }[];
+    const counts = new Map<string, number>();
     for (const row of rows) {
-      if (isVocab(row) && row.category) {
-        set.add(row.category.split("・")[0] ?? row.category);
-      }
+      if (!isVocab(row)) continue;
+      const top = vocabTopCategory(row.category);
+      counts.set(top, (counts.get(top) ?? 0) + 1);
     }
-    return ["全部", ...[...set].sort()];
+    const ordered = VOCAB_FILTER_ORDER.filter((name) => (counts.get(name) ?? 0) > 0).map(
+      (name) => ({
+        name,
+        count: counts.get(name)!,
+      }),
+    );
+    const rest = [...counts.entries()]
+      .filter(([name]) => !VOCAB_FILTER_ORDER.includes(name as (typeof VOCAB_FILTER_ORDER)[number]))
+      .sort((a, b) => b[1] - a[1])
+      .map(([name, count]) => ({ name, count }));
+    return [...ordered, ...rest];
   }, [kind, rows]);
 
+  const vocabSubs = useMemo(() => {
+    if (kind !== "vocabulary" || catFilter === "全部")
+      return [] as { name: string; count: number }[];
+    const counts = new Map<string, number>();
+    for (const row of rows) {
+      if (!isVocab(row) || vocabTopCategory(row.category) !== catFilter) continue;
+      const sub = vocabSubCategory(row.category);
+      counts.set(sub, (counts.get(sub) ?? 0) + 1);
+    }
+    return [...counts.entries()]
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "zh-Hant"))
+      .map(([name, count]) => ({ name, count }));
+  }, [kind, rows, catFilter]);
+
   const visibleRows = useMemo(() => {
-    if (kind !== "vocabulary" || catFilter === "全部") return rows;
-    return rows.filter(
-      (row) =>
-        isVocab(row) &&
-        (row.category?.startsWith(catFilter) || row.category?.split("・")[0] === catFilter),
-    );
-  }, [rows, kind, catFilter]);
+    if (kind !== "vocabulary") return rows;
+    return rows.filter((row) => {
+      if (!isVocab(row)) return false;
+      if (catFilter !== "全部" && vocabTopCategory(row.category) !== catFilter) return false;
+      if (subFilter !== "全部" && vocabSubCategory(row.category) !== subFilter) return false;
+      return true;
+    });
+  }, [rows, kind, catFilter, subFilter]);
 
   if (auth.status === "loading" || listQuery.isLoading || detailQuery.isLoading) {
     return <PageLoading label={`載入${titles[kind]}…`} />;
@@ -244,7 +286,15 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
           >
             ← {titles[kind]}
           </Link>
-          <FavoriteToggle type={favoriteType(kind)} contentId={id} />
+          <div className="flex flex-wrap items-center gap-2">
+            <FavoriteToggle type={favoriteType(kind)} contentId={id} />
+            <OwnerRemoveCardButton
+              kind={removeKind(kind)}
+              contentId={id}
+              label="從庫中下架"
+              onRemoved={() => navigate(listPath(kind))}
+            />
+          </div>
         </div>
         {isVocab(item) ? (
           <article className="space-y-4">
@@ -254,30 +304,42 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
             ) : null}
             {item.category || item.part_of_speech ? (
               <p className="text-xs text-[var(--color-ink-muted)]">
-                {[item.category, item.part_of_speech, item.difficulty ? `難度 ${item.difficulty}` : null]
+                {[
+                  item.category,
+                  item.part_of_speech,
+                  item.difficulty ? `難度 ${item.difficulty}` : null,
+                ]
                   .filter(Boolean)
                   .join(" · ")}
               </p>
             ) : null}
             <p className="leading-relaxed">{item.short_def}</p>
             {item.long_def && item.long_def !== item.short_def ? (
-              <p className="text-sm leading-relaxed text-[var(--color-ink-muted)]">{item.long_def}</p>
+              <p className="text-sm leading-relaxed text-[var(--color-ink-muted)]">
+                {item.long_def}
+              </p>
             ) : null}
             {item.usage_context ? (
               <p className="text-sm">
-                <span className="text-xs tracking-widest text-[var(--color-ink-muted)]">用法　</span>
+                <span className="text-xs tracking-widest text-[var(--color-ink-muted)]">
+                  用法　
+                </span>
                 {item.usage_context}
               </p>
             ) : null}
             {item.daily_example ? (
               <p className="text-sm">
-                <span className="text-xs tracking-widest text-[var(--color-ink-muted)]">日常例　</span>
+                <span className="text-xs tracking-widest text-[var(--color-ink-muted)]">
+                  日常例　
+                </span>
                 {item.daily_example}
               </p>
             ) : null}
             {item.literary_example ? (
               <p className="text-sm">
-                <span className="text-xs tracking-widest text-[var(--color-ink-muted)]">書面例　</span>
+                <span className="text-xs tracking-widest text-[var(--color-ink-muted)]">
+                  書面例　
+                </span>
                 {item.literary_example}
               </p>
             ) : null}
@@ -343,26 +405,86 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
         </p>
       </header>
 
-      {kind === "vocabulary" && vocabCats.length > 1 ? (
-        <div className="flex flex-wrap gap-2">
-          {vocabCats.map((c) => (
+      {kind === "vocabulary" ? (
+        <VocabStudyPanel
+          pool={visibleRows.filter(isVocab)}
+          mode={vocabMode}
+          onModeChange={setVocabMode}
+        />
+      ) : null}
+
+      {kind === "vocabulary" && vocabCats.length > 0 && vocabMode !== "themes" ? (
+        <div className="space-y-3">
+          <p className="text-xs text-[var(--color-ink-muted)]">
+            大類（括號為筆數）。點進情緒／人物描寫可再篩「面貌」「怒怨」等小類。
+          </p>
+          <div className="flex flex-wrap gap-2">
             <button
-              key={c}
               type="button"
               className={`rounded-md border px-2.5 py-1 text-xs ${
-                catFilter === c
+                catFilter === "全部"
                   ? "border-[var(--color-ink)] bg-[var(--color-ink)] text-[var(--color-paper)]"
                   : "border-[var(--color-line)] text-[var(--color-ink-muted)]"
               }`}
-              onClick={() => setCatFilter(c)}
+              onClick={() => {
+                setCatFilter("全部");
+                setSubFilter("全部");
+              }}
             >
-              {c}
+              全部（{rows.length}）
             </button>
-          ))}
+            {vocabCats.map((c) => (
+              <button
+                key={c.name}
+                type="button"
+                className={`rounded-md border px-2.5 py-1 text-xs ${
+                  catFilter === c.name
+                    ? "border-[var(--color-ink)] bg-[var(--color-ink)] text-[var(--color-paper)]"
+                    : "border-[var(--color-line)] text-[var(--color-ink-muted)]"
+                }`}
+                onClick={() => {
+                  setCatFilter(c.name);
+                  setSubFilter("全部");
+                }}
+              >
+                {c.name}（{c.count}）
+              </button>
+            ))}
+          </div>
+          {vocabSubs.length > 1 ? (
+            <div className="flex flex-wrap gap-2 border-t border-[var(--color-line)] pt-3">
+              <button
+                type="button"
+                className={`rounded-md border px-2.5 py-1 text-xs ${
+                  subFilter === "全部"
+                    ? "border-[var(--color-accent)] bg-[var(--color-accent-soft)] text-[var(--color-ink)]"
+                    : "border-[var(--color-line)] text-[var(--color-ink-muted)]"
+                }`}
+                onClick={() => setSubFilter("全部")}
+              >
+                小類・全部
+              </button>
+              {vocabSubs.map((s) => (
+                <button
+                  key={s.name}
+                  type="button"
+                  className={`rounded-md border px-2.5 py-1 text-xs ${
+                    subFilter === s.name
+                      ? "border-[var(--color-accent)] bg-[var(--color-accent-soft)] text-[var(--color-ink)]"
+                      : "border-[var(--color-line)] text-[var(--color-ink-muted)]"
+                  }`}
+                  onClick={() => setSubFilter(s.name)}
+                >
+                  {s.name}（{s.count}）
+                </button>
+              ))}
+            </div>
+          ) : null}
         </div>
       ) : null}
 
-      {visibleRows.length === 0 ? (
+      {vocabMode === "browse" || kind !== "vocabulary" ? (
+        visibleRows.length === 0 ? (
         <PageState
           title="列表為空"
           description={
@@ -375,11 +497,11 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
             const href = `${listPath(kind)}/${row.id}`;
             if (isVocab(row)) {
               return (
-                <li key={row.id}>
-                  <Link
-                    to={href}
-                    className="block rounded-lg border border-[var(--color-line)] p-4 hover:bg-[var(--color-paper-2)]"
-                  >
+                <li
+                  key={row.id}
+                  className="flex items-stretch gap-2 rounded-lg border border-[var(--color-line)]"
+                >
+                  <Link to={href} className="min-w-0 flex-1 p-4 hover:bg-[var(--color-paper-2)]">
                     <div className="flex flex-wrap items-baseline justify-between gap-2">
                       <p className="text-lg">{row.term}</p>
                       {row.category ? (
@@ -391,40 +513,65 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
                     ) : null}
                     <p className="mt-1 text-sm text-[var(--color-ink-muted)]">{row.short_def}</p>
                   </Link>
+                  <div className="flex items-start p-2">
+                    <OwnerRemoveCardButton
+                      kind="vocabulary"
+                      contentId={row.id}
+                      compact
+                      onRemoved={() => void listQuery.refetch()}
+                    />
+                  </div>
                 </li>
               );
             }
             if (isQuote(row)) {
               return (
-                <li key={row.id}>
-                  <Link
-                    to={href}
-                    className="block rounded-lg border border-[var(--color-line)] p-4 hover:bg-[var(--color-paper-2)]"
-                  >
+                <li
+                  key={row.id}
+                  className="flex items-stretch gap-2 rounded-lg border border-[var(--color-line)]"
+                >
+                  <Link to={href} className="min-w-0 flex-1 p-4 hover:bg-[var(--color-paper-2)]">
                     <p className="line-clamp-2 text-lg leading-relaxed">{row.display_quote}</p>
                     <p className="mt-2 text-sm text-[var(--color-ink-muted)]">
                       {row.author_name}
                       {row.themes?.length ? ` · ${row.themes.slice(0, 2).join("、")}` : ""}
                     </p>
                   </Link>
+                  <div className="flex items-start p-2">
+                    <OwnerRemoveCardButton
+                      kind="quote"
+                      contentId={row.id}
+                      compact
+                      onRemoved={() => void listQuery.refetch()}
+                    />
+                  </div>
                 </li>
               );
             }
             if (!isCraft(row)) return null;
             return (
-              <li key={row.id}>
-                <Link
-                  to={href}
-                  className="block rounded-lg border border-[var(--color-line)] p-4 hover:bg-[var(--color-paper-2)]"
-                >
+              <li
+                key={row.id}
+                className="flex items-stretch gap-2 rounded-lg border border-[var(--color-line)]"
+              >
+                <Link to={href} className="min-w-0 flex-1 p-4 hover:bg-[var(--color-paper-2)]">
                   <p className="text-lg">{row.name}</p>
                   <p className="mt-1 text-sm text-[var(--color-ink-muted)]">{row.one_liner}</p>
                 </Link>
+                <div className="flex items-start p-2">
+                  <OwnerRemoveCardButton
+                    kind="craft"
+                    contentId={row.id}
+                    compact
+                    onRemoved={() => void listQuery.refetch()}
+                  />
+                </div>
               </li>
             );
           })}
         </ul>
-      )}
+      )
+      ) : null}
     </div>
   );
 }

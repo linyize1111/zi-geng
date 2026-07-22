@@ -57,6 +57,13 @@ const WIKT_CATEGORIES = [
   "Category:漢語四字詞語",
   "Category:汉语典故",
   "Category:文言文",
+  "Category:漢語 情緒",
+  "Category:漢語 恐懼",
+  "Category:漢語 快樂",
+  "Category:漢語 愛",
+  "Category:漢語 憤怒",
+  "Category:漢語 悲傷",
+  "Category:汉语拟声词",
 ];
 
 const WIKQ_THEME_PAGES = [
@@ -175,7 +182,7 @@ async function extractText(base, title, { introOnly = true } = {}) {
   return extract || null;
 }
 
-function parseQuoteBlocks(text, pageTitle) {
+function parseQuoteBlocks(text, pageTitle, { requireAuthor = false } = {}) {
   const lines = text
     .split(/\n+/)
     .map((l) => l.trim())
@@ -183,23 +190,29 @@ function parseQuoteBlocks(text, pageTitle) {
   const out = [];
   for (const line of lines) {
     let quote = "";
-    let author = pageTitle;
+    let author = "";
     const m1 = line.match(/^[「『"“](.+?)[」』"”]\s*[—–\-——]+\s*(.+)$/u);
     const m2 = line.match(/^(.+?)\s*[—–\-——]\s*(.{1,40})$/u);
     if (m1) {
       quote = m1[1].trim();
-      author = m1[2].replace(/[（(].*$/, "").trim() || pageTitle;
+      author = m1[2].replace(/[（(].*$/, "").trim();
     } else if (m2 && m2[1].length >= 8 && m2[2].length <= 40) {
       quote = m2[1].replace(/^[「『"“]|[」』"”]$/gu, "").trim();
       author = m2[2].trim();
     } else if (
+      !requireAuthor &&
       line.length >= 10 &&
       line.length <= 160 &&
       !/^(分類|參見|外部|延伸|參考)/.test(line) &&
       /[\u4e00-\u9fff]/.test(line)
     ) {
+      // Author pages: bare lines may be quotes by that author.
       quote = line.replace(/^[「『"“]|[」』"”]$/gu, "").trim();
+      author = pageTitle;
     }
+    // Never treat the theme/topic page title as the speaker.
+    if (!author || author === pageTitle && requireAuthor) continue;
+    if (requireAuthor && (!author || author === pageTitle)) continue;
     if (quote.length >= 8 && quote.length <= 200) out.push({ quote, author });
   }
   return out;
@@ -351,17 +364,20 @@ async function crawlWikipediaListVocab() {
 }
 
 async function crawlWikiquote() {
-  const pages = IS_BULK
-    ? [...WIKQ_THEME_PAGES, ...WIKQ_AUTHOR_PAGES]
-    : [...WIKQ_THEME_PAGES.slice(0, 12), ...WIKQ_AUTHOR_PAGES.slice(0, 8)];
+  const themePages = IS_BULK ? WIKQ_THEME_PAGES : WIKQ_THEME_PAGES.slice(0, 12);
+  const authorPages = IS_BULK ? WIKQ_AUTHOR_PAGES : WIKQ_AUTHOR_PAGES.slice(0, 8);
   const cards = [];
   const seen = new Set();
-  for (const page of pages) {
+
+  // Theme pages: only keep lines that explicitly name an author (never use topic as author).
+  for (const page of themePages) {
     if (cards.length >= QUOTE_LIMIT) break;
     try {
       const extract = await extractText(WIKQ, page);
       if (!extract) continue;
-      const blocks = parseQuoteBlocks(extract, page);
+      const blocks = parseQuoteBlocks(extract, page, { requireAuthor: true }).filter(
+        (b) => b.author && b.author !== page && b.author.length <= 40,
+      );
       for (const b of blocks) {
         if (cards.length >= QUOTE_LIMIT) break;
         const key = `${b.author}::${b.quote}`;
@@ -371,14 +387,47 @@ async function crawlWikiquote() {
           quoteCard({
             quote: b.quote,
             author: b.author,
-            page: `維基語錄 · ${page}`,
+            page: b.author,
             sourceKind: "zh.wikiquote",
             url: `https://zh.wikiquote.org/wiki/${encodeURIComponent(page)}`,
             themes: [page],
           }),
         );
       }
-      console.log(`wikq ${page}: +${blocks.length}`);
+      console.log(`wikq theme ${page}: +${blocks.length}`);
+    } catch (e) {
+      console.warn("wikq fail", page, e.message);
+    }
+    await sleep(200);
+  }
+
+  // Author pages: page title is a real person; bare lines OK.
+  for (const page of authorPages) {
+    if (cards.length >= QUOTE_LIMIT) break;
+    try {
+      const extract = await extractText(WIKQ, page);
+      if (!extract) continue;
+      const blocks = parseQuoteBlocks(extract, page, { requireAuthor: false });
+      for (const b of blocks) {
+        if (cards.length >= QUOTE_LIMIT) break;
+        const author = b.author && b.author !== page ? b.author : page;
+        // Skip encyclopedia intros mistaken as quotes (too essay-like / no quote marks feel)
+        if (/^.{0,20}(是|為|指|生於|卒於)/.test(b.quote) && b.quote.length > 60) continue;
+        const key = `${author}::${b.quote}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        cards.push(
+          quoteCard({
+            quote: b.quote,
+            author,
+            page,
+            sourceKind: "zh.wikiquote",
+            url: `https://zh.wikiquote.org/wiki/${encodeURIComponent(page)}`,
+            themes: [page],
+          }),
+        );
+      }
+      console.log(`wikq author ${page}: +${blocks.length}`);
     } catch (e) {
       console.warn("wikq fail", page, e.message);
     }

@@ -10,7 +10,7 @@ import {
   type NovelCreativePlan,
   type NovelPlanPhase,
 } from "@/features/novels/types";
-import { routes } from "@/routes/paths";
+import { novelChaptersPath, novelCharactersPath, novelScenesPath, routes } from "@/routes/paths";
 
 function Field({
   label,
@@ -146,6 +146,30 @@ export default function NovelEditorPage() {
         onChange={(e) => setTitle(e.target.value)}
         placeholder="書名"
       />
+
+      <nav className="flex flex-wrap gap-2" aria-label="小說工作台">
+        <span className="rounded-md border border-[var(--color-ink)] bg-[var(--color-ink)] px-3 py-1.5 text-sm text-[var(--color-paper)]">
+          創作計畫
+        </span>
+        <Link
+          to={novelCharactersPath(projectId)}
+          className="rounded-md border border-[var(--color-line)] px-3 py-1.5 text-sm text-[var(--color-ink-muted)]"
+        >
+          角色
+        </Link>
+        <Link
+          to={novelChaptersPath(projectId)}
+          className="rounded-md border border-[var(--color-line)] px-3 py-1.5 text-sm text-[var(--color-ink-muted)]"
+        >
+          章節
+        </Link>
+        <Link
+          to={novelScenesPath(projectId)}
+          className="rounded-md border border-[var(--color-line)] px-3 py-1.5 text-sm text-[var(--color-ink-muted)]"
+        >
+          場景
+        </Link>
+      </nav>
 
       <section className="space-y-3 rounded-lg border border-[var(--color-line)] p-4">
         <p className="text-xs tracking-widest text-[var(--color-ink-muted)]">創作計畫系統</p>

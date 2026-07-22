@@ -26,6 +26,7 @@ function run(cmd, env = {}) {
 
 run("npm run content:writer");
 run("npm run content:themed");
+run("npm run content:harvest", { /* local MOE dumps */ });
 run("npm run content:craft");
 run("npm run content:quotes");
 run("npm run content:prompts");
@@ -48,6 +49,6 @@ run("npm run content:merge", {
   REVISED_KEEP: "900",
   CONCISED_KEEP: "500",
   CRAWL_KEEP: "400",
+  HARVEST_KEEP: "1400",
 });
-
 console.log("\nBulk enrich complete. Import via Content sync or npm run content:import.");

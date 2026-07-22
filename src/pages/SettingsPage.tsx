@@ -4,6 +4,7 @@ import { Button } from "@/components/common/Button";
 import { PageLoading } from "@/components/common/PageState";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import { useAuth } from "@/features/auth/AuthProvider";
+import { buildDailyReminderIcs, downloadIcs } from "@/features/settings/ics";
 import {
   fetchUserSettings,
   upsertUserSettings,
@@ -31,8 +32,14 @@ export default function SettingsPage() {
   });
 
   const saveMutation = useMutation({
-    mutationFn: (patch: Partial<Pick<UserSettings, "daily_mode" | "daily_vocab_count">>) =>
-      upsertUserSettings(auth.user!.id, patch),
+    mutationFn: (
+      patch: Partial<
+        Pick<
+          UserSettings,
+          "daily_mode" | "daily_vocab_count" | "japanese_enabled" | "reminder_time"
+        >
+      >,
+    ) => upsertUserSettings(auth.user!.id, patch),
     onSuccess: (data) => {
       queryClient.setQueryData(["user-settings", auth.user?.id], data);
     },
@@ -42,13 +49,17 @@ export default function SettingsPage() {
     user_id: auth.user?.id ?? "",
     daily_mode: "standard" as const,
     daily_vocab_count: 7,
+    japanese_enabled: true,
+    reminder_time: "09:00" as string | null,
   };
+
+  const reminderDisplay = (settings.reminder_time ?? "09:00").slice(0, 5);
 
   return (
     <div className="space-y-6">
       <header>
         <h1 className="font-[family-name:var(--font-sans)] text-3xl tracking-wide">更多／設定</h1>
-        <p className="mt-2 text-sm text-[var(--color-ink-muted)]">主題、每日份量與帳號</p>
+        <p className="mt-2 text-sm text-[var(--color-ink-muted)]">主題、每日份量、日文與提醒</p>
       </header>
 
       <section className="space-y-3 rounded-lg border border-[var(--color-line)] p-4">
@@ -110,6 +121,15 @@ export default function SettingsPage() {
                 變更後，請在「今日」按「換一批」才會套用到今天的詞彙。
               </span>
             </label>
+            <label className="flex items-center gap-3 text-sm">
+              <input
+                type="checkbox"
+                checked={settings.japanese_enabled}
+                disabled={saveMutation.isPending}
+                onChange={(e) => saveMutation.mutate({ japanese_enabled: e.target.checked })}
+              />
+              <span>啟用日文初學區（側欄顯示）</span>
+            </label>
             {saveMutation.isError ? (
               <p className="text-sm text-[var(--color-danger)]">
                 {saveMutation.error instanceof Error ? saveMutation.error.message : "儲存失敗"}
@@ -122,10 +142,44 @@ export default function SettingsPage() {
         )}
       </section>
 
+      <section className="space-y-3 rounded-lg border border-[var(--color-line)] p-4">
+        <h2 className="text-sm font-medium">每日提醒（ICS）</h2>
+        <p className="text-sm text-[var(--color-ink-muted)]">
+          下載行事曆檔，匯入手機／電腦日曆即可每日提醒；不需推播權限。
+        </p>
+        <label className="block space-y-2 text-sm">
+          <span>提醒時間</span>
+          <input
+            type="time"
+            className="w-full max-w-[12rem] rounded-md border border-[var(--color-line)] bg-[var(--color-paper)] px-3 py-2"
+            value={reminderDisplay}
+            disabled={!useMock && saveMutation.isPending}
+            onChange={(e) => {
+              const v = e.target.value;
+              if (!useMock) saveMutation.mutate({ reminder_time: v || null });
+            }}
+          />
+        </label>
+        <Button
+          type="button"
+          variant="outline"
+          onClick={() => {
+            const ics = buildDailyReminderIcs({ timeHHMM: reminderDisplay });
+            downloadIcs("zi-geng-daily-reminder.ics", ics);
+            if (!useMock && auth.user) {
+              saveMutation.mutate({ reminder_time: reminderDisplay });
+            }
+          }}
+        >
+          下載 .ics
+        </Button>
+      </section>
+
       <section className="space-y-2 rounded-lg border border-[var(--color-line)] p-4 text-sm text-[var(--color-ink-muted)]">
         <p>Auth storage key：{AUTH_STORAGE_KEY}</p>
         <p>Base path：{env.appBasePath}</p>
         <p>Mock adapter：{auth.usingMock ? "開啟（僅開發）" : "關閉"}</p>
+        <p>安裝到主畫面：用瀏覽器「加到主畫面／安裝應用程式」。iOS Safari → 分享 → 加入主畫面。</p>
       </section>
 
       <ul className="space-y-2 text-sm">
@@ -134,7 +188,16 @@ export default function SettingsPage() {
             收藏
           </Link>
         </li>
-        <li className="text-[var(--color-ink-muted)]">日文、回顧：即將推出</li>
+        <li>
+          <Link className="underline-offset-4 hover:underline" to={routes.japanese}>
+            日文
+          </Link>
+        </li>
+        <li>
+          <Link className="underline-offset-4 hover:underline" to={routes.review}>
+            回顧
+          </Link>
+        </li>
         {auth.membership?.isOwner ? (
           <li>
             <Link className="underline-offset-4 hover:underline" to={routes.ownerContent}>

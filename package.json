@@ -20,6 +20,8 @@
     "content:revised": "node scripts/content/convert-moe-revised.mjs",
     "content:writer": "node scripts/content/build-writer-vocab.mjs",
     "content:themed": "node scripts/content/build-themed-vocab.mjs",
+    "content:themes": "node scripts/content/build-theme-series.mjs",
+    "content:harvest": "node scripts/content/harvest-moe-themes.mjs",
     "content:craft": "node scripts/content/build-craft-cards.mjs",
     "content:import-craft": "node scripts/content/import-craft.mjs",
     "content:prompts": "node scripts/content/build-writing-prompts.mjs",

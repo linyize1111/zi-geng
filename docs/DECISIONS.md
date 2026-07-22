@@ -113,6 +113,15 @@
 
 ---
 
+## 2026-07-23 — 開啟日文／回顧與本機工作台缺口
+
+- **發現**：日文、回顧為 Placeholder；小說角色／章節／場景路由別名到創作計畫；寫作無垃圾桶／匯出；提醒欄位未用。
+- **採用**：日文五十音＋練習＋入門詞彙／文法（本機進度）；週回顧讀 Dexie／收藏；小說實體本機 CRUD；寫作垃圾桶＋MD 匯出；ICS 下載；側欄恢復日文／回顧（可由 `japanese_enabled` 關閉日文）。
+- **未採用**：本輪不做雲端同步、Owner 完整 CMS、AI coach、日文音訊。
+- **影響**：Dexie schema v3；設定 API 讀寫 `japanese_enabled`／`reminder_time`。
+
+---
+
 ## 2026-07-22 — Lint 採用 oxlint（Vite 官方 scaffold），非 ESLint
 
 - **發現**：使用者回饋每日 3 詞偏少，並需要刷新。

@@ -19,6 +19,7 @@ export type VocabImportCard = {
 
 export type ImportResult = {
   inserted: number;
+  updated?: number;
   skipped: number;
   errors: number;
   messages: string[];
@@ -32,6 +33,7 @@ export async function importVocabularyCards(
   if (!client) throw new Error("尚未設定 Supabase");
 
   let inserted = 0;
+  let updated = 0;
   let skipped = 0;
   let errors = 0;
   const messages: string[] = [];
@@ -43,12 +45,29 @@ export async function importVocabularyCards(
     try {
       const { data: existing, error: findErr } = await client
         .from("zg_vocabulary_cards")
-        .select("id")
+        .select("id, category")
         .eq("term", card.term)
         .maybeSingle();
       if (findErr) throw findErr;
       if (existing) {
-        skipped += 1;
+        const nextCategory = card.category ?? null;
+        if (nextCategory && nextCategory !== existing.category) {
+          const { error } = await client
+            .from("zg_vocabulary_cards")
+            .update({
+              category: nextCategory,
+              tags: card.tags ?? [],
+              short_def: card.short_def || undefined,
+              long_def: card.long_def ?? undefined,
+              daily_example: card.daily_example ?? undefined,
+              literary_example: card.literary_example ?? undefined,
+            })
+            .eq("id", existing.id);
+          if (error) throw error;
+          updated += 1;
+        } else {
+          skipped += 1;
+        }
         continue;
       }
       const { error } = await client.from("zg_vocabulary_cards").insert({
@@ -77,5 +96,5 @@ export async function importVocabularyCards(
     }
   }
 
-  return { inserted, skipped, errors, messages };
+  return { inserted, updated, skipped, errors, messages };
 }

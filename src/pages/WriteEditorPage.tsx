@@ -6,6 +6,7 @@ import { Button } from "@/components/common/Button";
 import { useAuth } from "@/features/auth/AuthProvider";
 import {
   createDraft,
+  downloadDraftMarkdown,
   getDraft,
   softDeleteDraft,
   updateDraft,
@@ -102,6 +103,19 @@ function WriteEditorForm({
       <div className="flex flex-wrap gap-2">
         <Button type="button" variant="outline" onClick={() => void autosave.flush()}>
           立即儲存
+        </Button>
+        <Button
+          type="button"
+          variant="outline"
+          onClick={() =>
+            downloadDraftMarkdown({
+              ...draft,
+              title,
+              contentMd,
+            })
+          }
+        >
+          匯出 Markdown
         </Button>
         <Button type="button" variant="ghost" onClick={() => navigate(routes.write)}>
           完成

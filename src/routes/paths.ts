@@ -38,3 +38,15 @@ export function writeDetailPath(id: string): string {
 export function novelDetailPath(id: string): string {
   return `/novels/${id}`;
 }
+
+export function novelCharactersPath(id: string): string {
+  return `/novels/${id}/characters`;
+}
+
+export function novelChaptersPath(id: string): string {
+  return `/novels/${id}/chapters`;
+}
+
+export function novelScenesPath(id: string): string {
+  return `/novels/${id}/scenes`;
+}

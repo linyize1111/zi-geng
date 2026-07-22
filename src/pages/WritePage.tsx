@@ -1,9 +1,18 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { PageLoading, PageState } from "@/components/common/PageState";
 import { Button } from "@/components/common/Button";
 import { useAuth } from "@/features/auth/AuthProvider";
-import { createDraft, listDrafts, softDeleteDraft } from "@/features/writing/draft-store";
+import {
+  createDraft,
+  downloadDraftMarkdown,
+  listDeletedDrafts,
+  listDrafts,
+  purgeDraft,
+  restoreDraft,
+  softDeleteDraft,
+} from "@/features/writing/draft-store";
 import type { WritingDraft } from "@/features/writing/types";
 import { writeDetailPath, routes } from "@/routes/paths";
 
@@ -41,11 +50,18 @@ export default function WritePage() {
   const navigate = useNavigate();
   const queryClient = useQueryClient();
   const userId = auth.user?.id;
+  const [showTrash, setShowTrash] = useState(false);
 
   const listQuery = useQuery({
     queryKey: ["writing-drafts", userId],
     enabled: Boolean(userId),
     queryFn: () => listDrafts(userId!),
+  });
+
+  const trashQuery = useQuery({
+    queryKey: ["writing-trash", userId],
+    enabled: Boolean(userId) && showTrash,
+    queryFn: () => listDeletedDrafts(userId!),
   });
 
   const createMutation = useMutation({
@@ -60,6 +76,22 @@ export default function WritePage() {
     mutationFn: (id: string) => softDeleteDraft(userId!, id),
     onSuccess: () => {
       void queryClient.invalidateQueries({ queryKey: ["writing-drafts", userId] });
+      void queryClient.invalidateQueries({ queryKey: ["writing-trash", userId] });
+    },
+  });
+
+  const restoreMutation = useMutation({
+    mutationFn: (id: string) => restoreDraft(userId!, id),
+    onSuccess: () => {
+      void queryClient.invalidateQueries({ queryKey: ["writing-drafts", userId] });
+      void queryClient.invalidateQueries({ queryKey: ["writing-trash", userId] });
+    },
+  });
+
+  const purgeMutation = useMutation({
+    mutationFn: (id: string) => purgeDraft(userId!, id),
+    onSuccess: () => {
+      void queryClient.invalidateQueries({ queryKey: ["writing-trash", userId] });
     },
   });
 
@@ -94,13 +126,18 @@ export default function WritePage() {
             本機草稿自動儲存；雲端同步稍後接上。
           </p>
         </div>
-        <Button
-          type="button"
-          onClick={() => createMutation.mutate()}
-          disabled={createMutation.isPending}
-        >
-          {createMutation.isPending ? "建立中…" : "新建草稿"}
-        </Button>
+        <div className="flex flex-wrap gap-2">
+          <Button type="button" variant="outline" onClick={() => setShowTrash((v) => !v)}>
+            {showTrash ? "關閉垃圾桶" : "垃圾桶"}
+          </Button>
+          <Button
+            type="button"
+            onClick={() => createMutation.mutate()}
+            disabled={createMutation.isPending}
+          >
+            {createMutation.isPending ? "建立中…" : "新建草稿"}
+          </Button>
+        </div>
       </header>
 
       {createMutation.isError ? (
@@ -144,13 +181,16 @@ export default function WritePage() {
                   {draft.wordCount} 字 · 更新於 {formatWhen(draft.updatedAt)}
                 </p>
               </div>
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2">
                 <Button
                   type="button"
                   variant="outline"
                   onClick={() => navigate(writeDetailPath(draft.id))}
                 >
                   編輯
+                </Button>
+                <Button type="button" variant="ghost" onClick={() => downloadDraftMarkdown(draft)}>
+                  匯出 MD
                 </Button>
                 <Button
                   type="button"
@@ -168,6 +208,50 @@ export default function WritePage() {
           ))}
         </ul>
       )}
+
+      {showTrash ? (
+        <section className="space-y-3 rounded-lg border border-dashed border-[var(--color-line)] p-4">
+          <h2 className="text-sm font-medium">垃圾桶</h2>
+          {trashQuery.isLoading ? (
+            <PageLoading label="載入垃圾桶…" />
+          ) : (trashQuery.data ?? []).length === 0 ? (
+            <p className="text-sm text-[var(--color-ink-muted)]">垃圾桶是空的。</p>
+          ) : (
+            <ul className="space-y-3">
+              {(trashQuery.data ?? []).map((draft) => (
+                <li
+                  key={draft.id}
+                  className="flex flex-wrap items-center justify-between gap-2 text-sm"
+                >
+                  <span className="text-[var(--color-ink-muted)]">
+                    {draft.title} · {draft.wordCount} 字
+                  </span>
+                  <div className="flex gap-2">
+                    <Button
+                      type="button"
+                      variant="outline"
+                      onClick={() => restoreMutation.mutate(draft.id)}
+                    >
+                      還原
+                    </Button>
+                    <Button
+                      type="button"
+                      variant="ghost"
+                      onClick={() => {
+                        if (window.confirm("永久刪除？無法復原。")) {
+                          purgeMutation.mutate(draft.id);
+                        }
+                      }}
+                    >
+                      永久刪除
+                    </Button>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
+      ) : null}
 
       <p className="text-xs text-[var(--color-ink-muted)]">
         <Link to={routes.today} className="underline-offset-4 hover:underline">

@@ -1,10 +1,20 @@
 import Dexie, { type EntityTable } from "dexie";
-import type { NovelProject } from "@/features/novels/types";
+import type { JapaneseProgress } from "@/features/japanese/types";
+import type {
+  NovelChapter,
+  NovelCharacter,
+  NovelProject,
+  NovelScene,
+} from "@/features/novels/types";
 import type { WritingDraft } from "@/features/writing/types";
 
 export type ZiGengDatabase = Dexie & {
   drafts: EntityTable<WritingDraft, "id">;
   novelProjects: EntityTable<NovelProject, "id">;
+  novelCharacters: EntityTable<NovelCharacter, "id">;
+  novelChapters: EntityTable<NovelChapter, "id">;
+  novelScenes: EntityTable<NovelScene, "id">;
+  japaneseProgress: EntityTable<JapaneseProgress, "id">;
 };
 
 let db: ZiGengDatabase | null = null;
@@ -18,6 +28,14 @@ export function getZiGengDb(): ZiGengDatabase {
   db.version(2).stores({
     drafts: "id, userId, updatedAt, deletedAt, promptId",
     novelProjects: "id, userId, updatedAt, deletedAt",
+  });
+  db.version(3).stores({
+    drafts: "id, userId, updatedAt, deletedAt, promptId",
+    novelProjects: "id, userId, updatedAt, deletedAt",
+    novelCharacters: "id, userId, projectId, sortOrder, deletedAt",
+    novelChapters: "id, userId, projectId, sortOrder, deletedAt",
+    novelScenes: "id, userId, projectId, chapterId, sortOrder, deletedAt",
+    japaneseProgress: "id, userId, kanaId, lastPracticedAt",
   });
   return db;
 }

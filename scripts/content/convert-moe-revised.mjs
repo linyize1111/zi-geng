@@ -9,6 +9,7 @@ import {
   passesWritingLiteracyGate,
   writingLiteracyScore,
 } from "./vocab-quality.mjs";
+import { classifyVocab } from "./vocab-classify.mjs";
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const src = join(__dir, "dict_revised.json");
@@ -17,7 +18,7 @@ if (!existsSync(src)) {
   process.exit(1);
 }
 
-const LIMIT = Number(process.env.REVISED_LIMIT || 900);
+const LIMIT = Number(process.env.REVISED_LIMIT || 1600);
 
 const WANT = new Set(
   `
@@ -72,15 +73,19 @@ for (const { row, s } of ranked) {
   if (!short_def) continue;
 
   const difficulty = WANT.has(term) || /文言|古時|舊時|語本|典出/.test(def) ? 4 : 3;
-  const category = WANT.has(term)
-    ? /語本|典出|語出|《/.test(def)
-      ? "國學・典故"
-      : term.length === 1
-        ? "國學・單字"
-        : "文筆・精選"
-    : LITERARY_HINT_RE.test(def)
-      ? "書面語詞"
-      : "國語辭典精選";
+  const category = classifyVocab(
+    term,
+    def,
+    WANT.has(term)
+      ? /語本|典出|語出|《/.test(def)
+        ? "國學典故・精選"
+        : term.length === 1
+          ? "國學典故・單字"
+          : "文筆修辭・精選"
+      : LITERARY_HINT_RE.test(def)
+        ? "書面精選・辭書"
+        : "書面精選・精選",
+  );
 
   cards.push({
     status: "active",

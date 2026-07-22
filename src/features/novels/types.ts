@@ -1,11 +1,5 @@
 export type NovelPlanPhase =
-  | "concept"
-  | "world"
-  | "characters"
-  | "plot"
-  | "scenes"
-  | "draft"
-  | "revise";
+  "concept" | "world" | "characters" | "plot" | "scenes" | "draft" | "revise";
 
 export const NOVEL_PLAN_PHASES: { id: NovelPlanPhase; label: string; hint: string }[] = [
   { id: "concept", label: "構思", hint: "logline、主題、類型約定" },
@@ -71,4 +65,44 @@ export type UpdateNovelInput = {
   premise?: string;
   notes?: string;
   plan?: Partial<NovelCreativePlan>;
+};
+
+/** Local novel workbench entities (Phase 5 MVP — IndexedDB only). */
+export type NovelCharacter = {
+  id: string;
+  userId: string;
+  projectId: string;
+  name: string;
+  role: string;
+  notes: string;
+  sortOrder: number;
+  deletedAt: string | null;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type NovelChapter = {
+  id: string;
+  userId: string;
+  projectId: string;
+  title: string;
+  synopsis: string;
+  sortOrder: number;
+  deletedAt: string | null;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type NovelScene = {
+  id: string;
+  userId: string;
+  projectId: string;
+  chapterId: string | null;
+  title: string;
+  goal: string;
+  bodyMd: string;
+  sortOrder: number;
+  deletedAt: string | null;
+  createdAt: string;
+  updatedAt: string;
 };

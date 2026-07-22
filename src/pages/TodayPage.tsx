@@ -11,6 +11,7 @@ import {
   type DailySlot,
 } from "@/features/daily-plan/api";
 import { FavoriteToggle } from "@/features/favorites/FavoriteToggle";
+import { OwnerRemoveCardButton } from "@/features/content/OwnerRemoveCardButton";
 import { createDraft } from "@/features/writing/draft-store";
 import { getSupabaseClient } from "@/lib/supabase/client";
 import { env } from "@/lib/env";
@@ -177,6 +178,12 @@ export default function TodayPage() {
             <p className="text-xs tracking-widest text-[var(--color-ink-muted)]">名言</p>
             <div className="flex flex-wrap gap-2">
               <FavoriteToggle type="quote" contentId={data.quote.id} compact />
+              <OwnerRemoveCardButton
+                kind="quote"
+                contentId={data.quote.id}
+                compact
+                onRemoved={() => onRefresh("quote")}
+              />
               <RefreshButton
                 slot="quote"
                 label="換一則"
@@ -272,7 +279,15 @@ export default function TodayPage() {
                       <p className="text-xs text-[var(--color-ink-muted)]">{v.zhuyin}</p>
                     ) : null}
                   </div>
-                  <FavoriteToggle type="vocabulary" contentId={v.id} compact />
+                  <div className="flex flex-col items-end gap-1">
+                    <FavoriteToggle type="vocabulary" contentId={v.id} compact />
+                    <OwnerRemoveCardButton
+                      kind="vocabulary"
+                      contentId={v.id}
+                      compact
+                      onRemoved={() => onRefresh("vocabulary")}
+                    />
+                  </div>
                 </div>
                 {v.category ? (
                   <p className="mt-1 text-[10px] tracking-wide text-[var(--color-ink-muted)]">
@@ -306,6 +321,12 @@ export default function TodayPage() {
             <p className="text-xs tracking-widest text-[var(--color-ink-muted)]">寫作技巧</p>
             <div className="flex flex-wrap gap-2">
               <FavoriteToggle type="craft" contentId={data.craft.id} compact />
+              <OwnerRemoveCardButton
+                kind="craft"
+                contentId={data.craft.id}
+                compact
+                onRemoved={() => onRefresh("craft")}
+              />
               <RefreshButton
                 slot="craft"
                 label="換一個"
@@ -348,6 +369,12 @@ export default function TodayPage() {
             <p className="text-xs tracking-widest text-[var(--color-ink-muted)]">寫作題目</p>
             <div className="flex flex-wrap gap-2">
               <FavoriteToggle type="prompt" contentId={data.prompt.id} compact />
+              <OwnerRemoveCardButton
+                kind="prompt"
+                contentId={data.prompt.id}
+                compact
+                onRemoved={() => onRefresh("prompt")}
+              />
               <RefreshButton
                 slot="prompt"
                 label="換一題"
@@ -391,12 +418,20 @@ export default function TodayPage() {
         <section className="rounded-lg border border-[var(--color-line)] p-5">
           <div className="flex flex-wrap items-start justify-between gap-3">
             <p className="text-xs tracking-widest text-[var(--color-ink-muted)]">小說任務</p>
-            <RefreshButton
-              slot="novel"
-              label="換一個"
-              busy={refreshMutation.isPending}
-              onRefresh={onRefresh}
-            />
+            <div className="flex flex-wrap gap-2">
+              <OwnerRemoveCardButton
+                kind="novel_task"
+                contentId={data.novelTask.id}
+                compact
+                onRemoved={() => onRefresh("novel")}
+              />
+              <RefreshButton
+                slot="novel"
+                label="換一個"
+                busy={refreshMutation.isPending}
+                onRefresh={onRefresh}
+              />
+            </div>
           </div>
           <h2 className="mt-2 text-xl">{data.novelTask.title}</h2>
           {data.novelTask.tags?.length ? (
@@ -408,7 +443,8 @@ export default function TodayPage() {
           ) : null}
           <p className="mt-2 text-sm leading-relaxed whitespace-pre-wrap">{data.novelTask.body}</p>
           <p className="mt-2 text-xs text-[var(--color-ink-muted)]">
-            約 {data.novelTask.minutes_min}–{data.novelTask.minutes_max} 分鐘 · 完成後可記在「小說」專案的創作計畫
+            約 {data.novelTask.minutes_min}–{data.novelTask.minutes_max} 分鐘 ·
+            完成後可記在「小說」專案的創作計畫
           </p>
         </section>
       ) : null}
