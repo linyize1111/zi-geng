@@ -31,7 +31,12 @@ const ranked = raw
   .map((row) => {
     const term = String(row.title ?? "").trim();
     const def = String(row.definition ?? "");
-    return { row, term, def, s: writingLiteracyScore(term, def) + (LITERARY_HINT_RE.test(def) ? 10 : 0) };
+    return {
+      row,
+      term,
+      def,
+      s: writingLiteracyScore(term, def) + (LITERARY_HINT_RE.test(def) ? 10 : 0),
+    };
   })
   .filter((x) => x.s >= 28 && passesWritingLiteracyGate(x.term, x.def))
   .sort((a, b) => b.s - a.s);
@@ -49,14 +54,21 @@ for (const { row, term, def, s } of ranked) {
   cards.push({
     status: "active",
     term,
-    zhuyin: String(row.bopomofo || "").replace(/\s+/g, " ").trim() || null,
+    zhuyin:
+      String(row.bopomofo || "")
+        .replace(/\s+/g, " ")
+        .trim() || null,
     part_of_speech: null,
     difficulty: LITERARY_HINT_RE.test(def) ? 3 : 3,
     short_def,
     long_def: def.slice(0, 700),
     usage_context: "教育部《國語辭典簡編本》。已做文筆／國學篩選。",
     register: "literary",
-    category: classifyVocab(term, def, LITERARY_HINT_RE.test(def) ? "書面精選・簡編" : "書面精選・精選"),
+    category: classifyVocab(
+      term,
+      def,
+      LITERARY_HINT_RE.test(def) ? "書面精選・簡編" : "書面精選・精選",
+    ),
     tags: ["教育部簡編本", "文筆導向", "已篩選"],
     daily_example: `可斟酌使用「${term}」。`,
     literary_example: `語境合宜時可用「${term}」。`,

@@ -26,7 +26,7 @@ function run(cmd, env = {}) {
 
 run("npm run content:writer");
 run("npm run content:themed");
-run("npm run content:harvest", { /* local MOE dumps */ });
+run("npm run content:harvest", {/* local MOE dumps */});
 run("npm run content:craft");
 run("npm run content:quotes");
 run("npm run content:prompts");

@@ -333,7 +333,9 @@ const cards = RAW.map((r) => ({
   minutes_min: r.min,
   minutes_max: r.max,
   difficulty: r.difficulty,
-  tags: Array.from(new Set([...(r.tags ?? []), `階段:${PHASE_LABEL[r.phase] ?? r.phase}`, `phase:${r.phase}`])),
+  tags: Array.from(
+    new Set([...(r.tags ?? []), `階段:${PHASE_LABEL[r.phase] ?? r.phase}`, `phase:${r.phase}`]),
+  ),
   source: {
     kind: "zi-geng-novel-plan",
     version: 1,

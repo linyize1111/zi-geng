@@ -485,61 +485,86 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
 
       {vocabMode === "browse" || kind !== "vocabulary" ? (
         visibleRows.length === 0 ? (
-        <PageState
-          title="列表為空"
-          description={
-            kind === "vocabulary" ? "請到「內容管理」匯入文學詞庫。" : "內容尚在補齊，稍後再來看。"
-          }
-        />
-      ) : (
-        <ul className="space-y-3">
-          {visibleRows.map((row) => {
-            const href = `${listPath(kind)}/${row.id}`;
-            if (isVocab(row)) {
-              return (
-                <li
-                  key={row.id}
-                  className="flex items-stretch gap-2 rounded-lg border border-[var(--color-line)]"
-                >
-                  <Link to={href} className="min-w-0 flex-1 p-4 hover:bg-[var(--color-paper-2)]">
-                    <div className="flex flex-wrap items-baseline justify-between gap-2">
-                      <p className="text-lg">{row.term}</p>
-                      {row.category ? (
-                        <p className="text-[10px] text-[var(--color-ink-muted)]">{row.category}</p>
+          <PageState
+            title="列表為空"
+            description={
+              kind === "vocabulary"
+                ? "請到「內容管理」匯入文學詞庫。"
+                : "內容尚在補齊，稍後再來看。"
+            }
+          />
+        ) : (
+          <ul className="space-y-3">
+            {visibleRows.map((row) => {
+              const href = `${listPath(kind)}/${row.id}`;
+              if (isVocab(row)) {
+                return (
+                  <li
+                    key={row.id}
+                    className="flex items-stretch gap-2 rounded-lg border border-[var(--color-line)]"
+                  >
+                    <Link to={href} className="min-w-0 flex-1 p-4 hover:bg-[var(--color-paper-2)]">
+                      <div className="flex flex-wrap items-baseline justify-between gap-2">
+                        <p className="text-lg">{row.term}</p>
+                        {row.category ? (
+                          <p className="text-[10px] text-[var(--color-ink-muted)]">
+                            {row.category}
+                          </p>
+                        ) : null}
+                      </div>
+                      {row.zhuyin ? (
+                        <p className="mt-0.5 text-xs text-[var(--color-ink-muted)]">{row.zhuyin}</p>
                       ) : null}
+                      <p className="mt-1 text-sm text-[var(--color-ink-muted)]">{row.short_def}</p>
+                    </Link>
+                    <div className="flex items-start p-2">
+                      <OwnerRemoveCardButton
+                        kind="vocabulary"
+                        contentId={row.id}
+                        compact
+                        onRemoved={() => void listQuery.refetch()}
+                      />
                     </div>
-                    {row.zhuyin ? (
-                      <p className="mt-0.5 text-xs text-[var(--color-ink-muted)]">{row.zhuyin}</p>
-                    ) : null}
-                    <p className="mt-1 text-sm text-[var(--color-ink-muted)]">{row.short_def}</p>
-                  </Link>
-                  <div className="flex items-start p-2">
-                    <OwnerRemoveCardButton
-                      kind="vocabulary"
-                      contentId={row.id}
-                      compact
-                      onRemoved={() => void listQuery.refetch()}
-                    />
-                  </div>
-                </li>
-              );
-            }
-            if (isQuote(row)) {
+                  </li>
+                );
+              }
+              if (isQuote(row)) {
+                return (
+                  <li
+                    key={row.id}
+                    className="flex items-stretch gap-2 rounded-lg border border-[var(--color-line)]"
+                  >
+                    <Link to={href} className="min-w-0 flex-1 p-4 hover:bg-[var(--color-paper-2)]">
+                      <p className="line-clamp-2 text-lg leading-relaxed">{row.display_quote}</p>
+                      <p className="mt-2 text-sm text-[var(--color-ink-muted)]">
+                        {row.author_name}
+                        {row.themes?.length ? ` · ${row.themes.slice(0, 2).join("、")}` : ""}
+                      </p>
+                    </Link>
+                    <div className="flex items-start p-2">
+                      <OwnerRemoveCardButton
+                        kind="quote"
+                        contentId={row.id}
+                        compact
+                        onRemoved={() => void listQuery.refetch()}
+                      />
+                    </div>
+                  </li>
+                );
+              }
+              if (!isCraft(row)) return null;
               return (
                 <li
                   key={row.id}
                   className="flex items-stretch gap-2 rounded-lg border border-[var(--color-line)]"
                 >
                   <Link to={href} className="min-w-0 flex-1 p-4 hover:bg-[var(--color-paper-2)]">
-                    <p className="line-clamp-2 text-lg leading-relaxed">{row.display_quote}</p>
-                    <p className="mt-2 text-sm text-[var(--color-ink-muted)]">
-                      {row.author_name}
-                      {row.themes?.length ? ` · ${row.themes.slice(0, 2).join("、")}` : ""}
-                    </p>
+                    <p className="text-lg">{row.name}</p>
+                    <p className="mt-1 text-sm text-[var(--color-ink-muted)]">{row.one_liner}</p>
                   </Link>
                   <div className="flex items-start p-2">
                     <OwnerRemoveCardButton
-                      kind="quote"
+                      kind="craft"
                       contentId={row.id}
                       compact
                       onRemoved={() => void listQuery.refetch()}
@@ -547,30 +572,9 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
                   </div>
                 </li>
               );
-            }
-            if (!isCraft(row)) return null;
-            return (
-              <li
-                key={row.id}
-                className="flex items-stretch gap-2 rounded-lg border border-[var(--color-line)]"
-              >
-                <Link to={href} className="min-w-0 flex-1 p-4 hover:bg-[var(--color-paper-2)]">
-                  <p className="text-lg">{row.name}</p>
-                  <p className="mt-1 text-sm text-[var(--color-ink-muted)]">{row.one_liner}</p>
-                </Link>
-                <div className="flex items-start p-2">
-                  <OwnerRemoveCardButton
-                    kind="craft"
-                    contentId={row.id}
-                    compact
-                    onRemoved={() => void listQuery.refetch()}
-                  />
-                </div>
-              </li>
-            );
-          })}
-        </ul>
-      )
+            })}
+          </ul>
+        )
       ) : null}
     </div>
   );

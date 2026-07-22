@@ -11,10 +11,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { classifyVocab } from "./vocab-classify.mjs";
-import {
-  passesWritingLiteracyGate,
-  writingLiteracyScore,
-} from "./vocab-quality.mjs";
+import { passesWritingLiteracyGate, writingLiteracyScore } from "./vocab-quality.mjs";
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const perTheme = (() => {
@@ -173,7 +170,10 @@ for (const theme of THEMES) {
     cards.push({
       status: "active",
       term,
-      zhuyin: String(row.bopomofo || "").replace(/\s+/g, " ").trim() || null,
+      zhuyin:
+        String(row.bopomofo || "")
+          .replace(/\s+/g, " ")
+          .trim() || null,
       part_of_speech: null,
       difficulty: /文言|舊時|語本|典出/.test(def) ? 4 : 3,
       short_def,

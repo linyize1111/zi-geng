@@ -1,7 +1,9 @@
 import { cleanup, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { afterEach, describe, expect, it, vi } from "vitest";
+import { AuthProvider } from "@/features/auth/AuthProvider";
 import { ThemeProvider } from "@/features/settings/ThemeProvider";
 import { AppShell } from "@/components/layout/AppShell";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
@@ -23,18 +25,25 @@ afterEach(() => {
 });
 
 function renderShell(initialPath: string = routes.today) {
+  const queryClient = new QueryClient({
+    defaultOptions: { queries: { retry: false } },
+  });
   return render(
-    <ThemeProvider>
-      <MemoryRouter initialEntries={[initialPath]}>
-        <Routes>
-          <Route element={<AppShell />}>
-            <Route path={routes.today} element={<div>今日內容</div>} />
-            <Route path={routes.learn} element={<div>學習內容</div>} />
-            <Route path={routes.settings} element={<div>設定內容</div>} />
-          </Route>
-        </Routes>
-      </MemoryRouter>
-    </ThemeProvider>,
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider>
+        <MemoryRouter initialEntries={[initialPath]}>
+          <AuthProvider>
+            <Routes>
+              <Route element={<AppShell />}>
+                <Route path={routes.today} element={<div>今日內容</div>} />
+                <Route path={routes.learn} element={<div>學習內容</div>} />
+                <Route path={routes.settings} element={<div>設定內容</div>} />
+              </Route>
+            </Routes>
+          </AuthProvider>
+        </MemoryRouter>
+      </ThemeProvider>
+    </QueryClientProvider>,
   );
 }
 

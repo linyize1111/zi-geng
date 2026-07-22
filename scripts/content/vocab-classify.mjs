@@ -101,10 +101,7 @@ export function classifyVocab(term, def, existingCategory) {
   ) {
     const n = normalizeCategory(existing);
     // Curated tops — keep. Bulk「國學典故・精選/辭書」from old dumps → fall through.
-    if (
-      !n.startsWith("書面精選") &&
-      !(n.startsWith("國學典故") && /精選|辭書|單字|通用/.test(n))
-    ) {
+    if (!n.startsWith("書面精選") && !(n.startsWith("國學典故") && /精選|辭書|單字|通用/.test(n))) {
       return n;
     }
   }
@@ -114,7 +111,9 @@ export function classifyVocab(term, def, existingCategory) {
   }
   // Do NOT auto-label 國學 from MOE glosses — nearly all cite 語本《…》.
   // Curated themed/writer categories already carry 國學典故・…
-  if (/怒|憤|怨|哀|悲|懼|恐|喜|樂|羞|愧|鬱|悵|惘|悸|慌|慍|恚|惻隱|悱惻|繾綣|悻|愀|泫|悵惘/.test(text)) {
+  if (
+    /怒|憤|怨|哀|悲|懼|恐|喜|樂|羞|愧|鬱|悵|惘|悸|慌|慍|恚|惻隱|悱惻|繾綣|悻|愀|泫|悵惘/.test(text)
+  ) {
     return "情緒・辭書";
   }
   if (

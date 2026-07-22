@@ -167,9 +167,7 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
     type Row = { id: string; category?: string | null; tags?: string[] | null };
     const isIdiom = (r: Row) => {
       const tags = r.tags ?? [];
-      return (
-        r.category === "成語" || tags.includes("成語") || tags.includes("教育部成語典")
-      );
+      return r.category === "成語" || tags.includes("成語") || tags.includes("教育部成語典");
     };
     const isThemed = (r: Row) => {
       const tags = r.tags ?? [];
@@ -187,7 +185,8 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
 
     const pickFrom = (pool: typeof rows, n: number, used: Set<string>) => {
       const free = pool.map((r) => r.id as string).filter((id) => !used.has(id) && !avoid.has(id));
-      const base = free.length >= n ? free : pool.map((r) => r.id as string).filter((id) => !used.has(id));
+      const base =
+        free.length >= n ? free : pool.map((r) => r.id as string).filter((id) => !used.has(id));
       return shufflePick(base, Math.min(n, base.length));
     };
 
@@ -227,9 +226,7 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
     }
 
     if (picked.length < vocabN) {
-      const more = rows
-        .map((r) => r.id as string)
-        .filter((id) => !picked.includes(id));
+      const more = rows.map((r) => r.id as string).filter((id) => !picked.includes(id));
       picked = [...picked, ...shufflePick(more, vocabN - picked.length)];
     }
     patch.vocabulary_ids = shufflePick(picked, Math.min(vocabN, picked.length));

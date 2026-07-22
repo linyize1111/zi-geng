@@ -722,10 +722,7 @@ const cards = RAW.map((r) => ({
   suggested_minutes: r.minutes,
   constraints: "",
   hints: r.hints ?? "",
-  reflection_questions: [
-    "這題逼你練習的是哪一種寫作肌肉？",
-    "若再寫一次，你會改哪個約束？",
-  ],
+  reflection_questions: ["這題逼你練習的是哪一種寫作肌肉？", "若再寫一次，你會改哪個約束？"],
   tags: r.tags ?? [],
   source: { kind: "zi-geng-prompt-bank", version: 1 },
 }));

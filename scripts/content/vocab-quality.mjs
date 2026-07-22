@@ -10,7 +10,9 @@ export const BASIC_TERMS = new Set(
 漂亮 高興 快樂 傷心 生氣 害怕 喜歡 討厭 好看 好聽 好吃
 上課 下課 上班 下班 吃飯 睡覺 走路 跑步 說話 看書 寫字
 肥皂 教授 縣令 大將 官廳 團扇 織女 盯 挪 蹭 幾乎 竟然
-`.split(/\s+/).filter(Boolean),
+`
+    .split(/\s+/)
+    .filter(Boolean),
 );
 
 export const BASIC_TERM_RE =

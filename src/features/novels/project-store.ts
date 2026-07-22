@@ -70,9 +70,7 @@ export async function updateNovel(
 ): Promise<NovelProject> {
   const existing = await getNovel(userId, id);
   if (!existing) throw new Error("找不到小說專案");
-  const nextPlan = patch.plan
-    ? normalizePlan({ ...existing.plan, ...patch.plan })
-    : existing.plan;
+  const nextPlan = patch.plan ? normalizePlan({ ...existing.plan, ...patch.plan }) : existing.plan;
   if (patch.plan?.outlineDraft !== undefined) {
     const has = nextPlan.outlineDraft.trim().length > 0;
     if (nextPlan.outlineStatus === "reserved" && has) nextPlan.outlineStatus = "draft";

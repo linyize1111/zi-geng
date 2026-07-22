@@ -17,7 +17,11 @@ function load(name) {
 }
 
 function retag(card) {
-  const category = classifyVocab(card.term, `${card.short_def ?? ""} ${card.long_def ?? ""}`, card.category);
+  const category = classifyVocab(
+    card.term,
+    `${card.short_def ?? ""} ${card.long_def ?? ""}`,
+    card.category,
+  );
   return {
     ...card,
     category,

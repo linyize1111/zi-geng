@@ -35,7 +35,9 @@ const WANT = new Set(
 悵然 惘然 愀然 泫然 陶然 索然 釋然 駭然 肅然 盎然 沛然
 紆餘 縞 綺 紈 羅 紗 錦 紈絲 縐 紈袴
 蒹葭 窈窕 溯洄 逍遙 齊物 坐忘 浩然 蜉蝣 須臾
-`.split(/\s+/).filter(Boolean),
+`
+    .split(/\s+/)
+    .filter(Boolean),
 );
 
 const raw = JSON.parse(readFileSync(src, "utf8"));
@@ -61,7 +63,9 @@ for (const { row, s } of ranked) {
   const term = String(row.title ?? "").trim();
   if (!term || seen.has(term)) continue;
   seen.add(term);
-  const def = String(row.definition ?? "").replace(/\s+/g, " ").trim();
+  const def = String(row.definition ?? "")
+    .replace(/\s+/g, " ")
+    .trim();
   const short_def = def
     .replace(/^\[.*?\]\s*/u, "")
     .split(/\n|\\n/)
@@ -90,7 +94,10 @@ for (const { row, s } of ranked) {
   cards.push({
     status: "active",
     term,
-    zhuyin: String(row.bopomofo || "").replace(/\s+/g, " ").trim() || null,
+    zhuyin:
+      String(row.bopomofo || "")
+        .replace(/\s+/g, " ")
+        .trim() || null,
     part_of_speech: null,
     difficulty: Math.min(5, difficulty + (s >= 100 ? 1 : 0)),
     short_def,
@@ -115,7 +122,11 @@ for (const { row, s } of ranked) {
 
 writeFileSync(
   join(__dir, "seed-moe-revised.json"),
-  JSON.stringify({ version: 2, count: cards.length, filter: "writing-literacy-v2", cards }, null, 2),
+  JSON.stringify(
+    { version: 2, count: cards.length, filter: "writing-literacy-v2", cards },
+    null,
+    2,
+  ),
   "utf8",
 );
 console.log(

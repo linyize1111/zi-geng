@@ -128,10 +128,7 @@ export function VocabStudyPanel({
           <ul className="space-y-3">
             {randomCards.map((row) => (
               <li key={row.id} className="rounded-lg border border-[var(--color-line)] p-4">
-                <Link
-                  to={`${routes.learnVocabulary}/${row.id}`}
-                  className="block hover:opacity-90"
-                >
+                <Link to={`${routes.learnVocabulary}/${row.id}`} className="block hover:opacity-90">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
                     <p className="text-xl">{row.term}</p>
                     {row.category ? (
@@ -159,7 +156,9 @@ export function VocabStudyPanel({
               {seriesQuery.isLoading ? (
                 <p className="text-sm text-[var(--color-ink-muted)]">載入主題卡…</p>
               ) : seriesList.length === 0 ? (
-                <p className="text-sm text-[var(--color-ink-muted)]">尚無主題系列檔，請重新建置內容。</p>
+                <p className="text-sm text-[var(--color-ink-muted)]">
+                  尚無主題系列檔，請重新建置內容。
+                </p>
               ) : (
                 <ul className="space-y-3">
                   {seriesList.map((s) => (
@@ -196,8 +195,12 @@ export function VocabStudyPanel({
                 <p className="text-xs tracking-widest text-[var(--color-ink-muted)]">
                   {activeSeries.family}
                 </p>
-                <h2 className="font-[family-name:var(--font-sans)] text-2xl">{activeSeries.title}</h2>
-                <p className="leading-relaxed text-[var(--color-ink-muted)]">{activeSeries.blurb}</p>
+                <h2 className="font-[family-name:var(--font-sans)] text-2xl">
+                  {activeSeries.title}
+                </h2>
+                <p className="leading-relaxed text-[var(--color-ink-muted)]">
+                  {activeSeries.blurb}
+                </p>
                 <p className="text-sm">
                   本組：<span className="tracking-wide">{activeSeries.terms.join("／")}</span>
                 </p>
