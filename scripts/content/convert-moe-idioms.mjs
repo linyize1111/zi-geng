@@ -2,9 +2,10 @@
  * Convert MOE 《成語典》 JSON (CC BY-ND 3.0 TW) → seed-literary-vocab.json
  * Input: scripts/content/dict_idioms.json (gitignored; download separately)
  */
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { passesWritingLiteracyGate } from "./vocab-quality.mjs";
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const srcPath = join(__dir, "dict_idioms.json");
@@ -25,6 +26,7 @@ const cards = [];
 for (const row of raw) {
   const term = String(row.title ?? "").trim();
   if (!term || seen.has(term)) continue;
+  if (!passesWritingLiteracyGate(term, String(row.definition ?? ""))) continue;
   seen.add(term);
   const def = String(row.definition ?? "")
     .replace(/\s+/g, " ")

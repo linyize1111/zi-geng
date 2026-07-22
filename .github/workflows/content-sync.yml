@@ -2,9 +2,18 @@ name: Content sync
 
 on:
   schedule:
-    # Monday 16:00 UTC = Tuesday 00:00 Asia/Taipei
+    # Weekly incremental update — Tuesday 00:00 Asia/Taipei
     - cron: "0 16 * * 1"
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "bulk = one-shot large multi-source crawl; update = incremental"
+        required: true
+        default: bulk
+        type: choice
+        options:
+          - bulk
+          - update
   push:
     branches: [main]
     paths:
@@ -43,12 +52,22 @@ jobs:
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || secrets.SUPABASE_SECRET_KEY }}
         run: |
           if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
-            echo "::error::Missing secret. Set SUPABASE_SERVICE_ROLE_KEY (Legacy API → service_role) OR SUPABASE_SECRET_KEY (API Keys → secret / sb_secret_…)."
+            echo "::error::Missing secret. Set SUPABASE_SERVICE_ROLE_KEY or SUPABASE_SECRET_KEY."
             exit 1
           fi
 
-      # Always import committed seeds first (reliable, no network crawl dependency)
-      - name: Import bundled vocab + quotes
+      - name: Resolve crawl mode
+        id: mode
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "mode=update" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "mode=${{ github.event.inputs.mode || 'bulk' }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=update" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Import bundled seeds
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL || secrets.VITE_SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || secrets.SUPABASE_SECRET_KEY }}
@@ -62,8 +81,19 @@ jobs:
           if [ -f scripts/content/seed-themed-vocab.json ]; then
             node scripts/content/import-vocab.mjs scripts/content/seed-themed-vocab.json
           fi
+          if [ -f scripts/content/seed-multi-source-vocab.json ]; then
+            node scripts/content/import-vocab.mjs scripts/content/seed-multi-source-vocab.json
+          fi
 
-      - name: Archive self-authored maxims (字耕箴言)
+      - name: Purge low-value vocab (半日／蒙衝-class)
+        continue-on-error: true
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL || secrets.VITE_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || secrets.SUPABASE_SECRET_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: node scripts/content/purge-low-value-vocab.mjs
+
+      - name: Archive self-authored maxims
         continue-on-error: true
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL || secrets.VITE_SUPABASE_URL }}
@@ -71,12 +101,17 @@ jobs:
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
         run: node scripts/content/archive-self-quotes.mjs
 
-      - name: Crawl multi-source extras (best-effort; never overwrite merged literary seed)
+      - name: Multi-source crawl
         continue-on-error: true
         run: |
-          npm run content:crawl -- --vocab=80 --quotes=40
+          MODE="${{ steps.mode.outputs.mode }}"
+          if [ "$MODE" = "bulk" ]; then
+            npm run content:crawl -- --mode=bulk --vocab=450 --quotes=220
+          else
+            npm run content:crawl -- --mode=update --vocab=100 --quotes=50
+          fi
 
-      - name: Import crawled extras (best-effort)
+      - name: Import crawled extras
         continue-on-error: true
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL || secrets.VITE_SUPABASE_URL }}
@@ -97,7 +132,7 @@ jobs:
           PROJECT_REF: ypyiqysgfwgxcmmsylob
         run: |
           if [ -z "$SUPABASE_ACCESS_TOKEN" ]; then
-            echo "SUPABASE_ACCESS_TOKEN not set — skip RPC DDL (data import still done)"
+            echo "SUPABASE_ACCESS_TOKEN not set — skip RPC DDL"
             exit 0
           fi
           node scripts/content/apply-sql-file.mjs supabase/APPLY_REFRESH_UNLIMITED_ONLY.sql
@@ -111,29 +146,22 @@ jobs:
             scripts/content/seed-literary-vocab.json \
             scripts/content/seed-writer-vocab.json \
             scripts/content/seed-moe-revised.json \
+            scripts/content/seed-moe-concised.json \
             scripts/content/seed-idioms-raw.json \
+            scripts/content/seed-themed-vocab.json \
+            scripts/content/seed-craft-cards.json \
             scripts/content/literary-terms.txt \
             scripts/content/seed-themed-quotes.json \
             scripts/content/seed-writing-prompts.json \
             scripts/content/seed-novel-plan-tasks.json \
-            scripts/content/seed-themed-vocab.json \
-            scripts/content/seed-craft-cards.json \
             scripts/content/fetched-wiktionary.json \
             scripts/content/fetched-wikiquote.json \
             scripts/content/seed-multi-source-vocab.json \
-            public/content/seed-literary-vocab.json \
-            public/content/seed-writer-vocab.json \
-            public/content/seed-themed-quotes.json \
-            public/content/seed-writing-prompts.json \
-            public/content/seed-novel-plan-tasks.json \
-            public/content/seed-themed-vocab.json \
-            public/content/seed-craft-cards.json \
-            public/content/seed-multi-source-vocab.json \
-            public/content/seed-wikiquote.json || true
+            public/content/*.json || true
           if git diff --staged --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "chore(content): auto multi-source refresh"
+            git commit -m "chore(content): sync seeds (${{ steps.mode.outputs.mode }})"
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
@@ -159,8 +187,9 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: seed-literary-vocab
+          name: content-seeds
           path: |
             scripts/content/seed-literary-vocab.json
+            scripts/content/fetched-wiktionary.json
+            scripts/content/fetched-wikiquote.json
             public/content/seed-literary-vocab.json
-            scripts/content/seed-themed-quotes.json

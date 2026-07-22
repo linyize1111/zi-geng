@@ -1,30 +1,34 @@
-# 內容匯入（詞庫）
+# 內容匯入
 
-## 為何「換一批」以前沒用
+## 原則
 
-只是在資料庫裡重抽。以前庫裡只有開發用幾個測試詞。
+- **文筆／國學導向**：收錄前經 `vocab-quality` 篩選；排除「半日」級基礎詞與「蒙衝」級冷門專名。
+- **多來源**：教育部辭典（成語／重編／簡編）＋維基詞典／語錄／文庫／百科列表（均為開放授權）。
+- **一口氣灌庫**：`npm run content:bulk` 或 Actions「Content sync」手動選 `bulk`。
+- **持續更新**：週一排程跑 `update`（增量爬取）；可隨時再跑 `bulk`。
 
-## 現在有什麼
-
-- **500+ 筆**教育部《成語典》成語（CC BY-ND 3.0 TW；標明出處；週更可拉到 `SEED_LIMIT=800`）
-- Owner 頁「匯入內建文學詞庫」：首次灌庫用
-- **週更全自動**（GitHub Actions `Content sync`）：
-  1. 下載 kemdict 鏡像的教育部成語 JSON  
-  2. 重建 `seed-literary-vocab.json`  
-  3. 以 `SUPABASE_SERVICE_ROLE_KEY` upsert／插入（已存在詞跳過）  
-  4. 種子有變則 commit + push（觸發 Pages 部署）  
-- 腳本：`content:download-idioms` → `content:generate` → `content:import`
-
-## 本機更新種子
+## 本機 bulk
 
 ```bash
-npm run content:download-idioms
-SEED_LIMIT=800 npm run content:generate
-# 匯入需本機環境變數：
-# SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY
-npm run content:import
+npm run content:bulk
+# 或略過網路爬蟲、只重建教育部＋策展種子：
+node scripts/content/bulk-enrich.mjs --skip-crawl
 ```
 
-## 授權注意
+匯入需 `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`（或交由 Actions）。
 
-教育部辭典資料不得改作原文釋義；我們只做格式轉換與欄位對應，並在 `source` 標註出處。
+## Actions
+
+| 觸發 | 模式 |
+|------|------|
+| 週排程 | `update`（約 100 詞／50 句增量） |
+| workflow_dispatch | 可選 `bulk`（預設）或 `update` |
+| push 種子變更 | 先匯入 committed seeds，再 `update` 爬取 |
+
+下架低價值詞：`purge-low-value-vocab.mjs`（半日／蒙衝等）。
+
+## 授權
+
+- 教育部辭典：CC BY-ND 3.0 TW（只做格式轉換，標註出處）
+- 維基系：CC BY-SA（標註來源 URL）
+- 不爬商業字典、付費金句站

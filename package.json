@@ -35,7 +35,10 @@
     "content:import": "node scripts/content/import-vocab.mjs",
     "content:import-quotes": "node scripts/content/import-quotes.mjs",
     "content:sync": "npm run content:fetch && npm run content:import -- scripts/content/fetched-wiktionary.json",
-    "content:download-idioms": "node scripts/content/download-moe-idioms.mjs"
+    "content:download-idioms": "node scripts/content/download-moe-idioms.mjs",
+    "content:concised": "node scripts/content/convert-moe-concised.mjs",
+    "content:bulk": "node scripts/content/bulk-enrich.mjs",
+    "content:purge-low": "node scripts/content/purge-low-value-vocab.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",

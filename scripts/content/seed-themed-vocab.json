@@ -1,11 +1,13 @@
 {
   "version": 1,
-  "count": 98,
+  "count": 102,
   "themes": {
     "情緒": 25,
-    "動詞": 36,
-    "感官": 16,
-    "副詞": 6,
+    "動詞": 33,
+    "感官": 15,
+    "副詞": 4,
+    "國學": 7,
+    "文筆": 3,
     "性格": 6,
     "時間": 5,
     "氣氛": 4
@@ -728,32 +730,6 @@
     },
     {
       "status": "active",
-      "term": "盯",
-      "zhuyin": "ㄉㄧㄥ",
-      "part_of_speech": "動",
-      "difficulty": 1,
-      "short_def": "集中注視。",
-      "long_def": "壓力視線。可寫審問、喜歡、敵意。",
-      "usage_context": "「盯著不放」。",
-      "register": "literary",
-      "category": "動詞・視線",
-      "tags": [
-        "主題詞庫",
-        "寫作者詞庫",
-        "大學生以上",
-        "動詞",
-        "視線"
-      ],
-      "daily_example": "考官盯著他的手指。",
-      "literary_example": "盯讓時間變厚。",
-      "source": {
-        "kind": "zi-geng-themed-lexicon",
-        "version": 1,
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
       "term": "掃視",
       "zhuyin": "ㄙㄠˇ ㄕˋ",
       "part_of_speech": "動",
@@ -1431,58 +1407,6 @@
     },
     {
       "status": "active",
-      "term": "蹭",
-      "zhuyin": "ㄘㄥˋ",
-      "part_of_speech": "動",
-      "difficulty": 2,
-      "short_def": "擦過；拖延挨近。",
-      "long_def": "可寫身體擦碰或「蹭時間」。",
-      "usage_context": "「蹭到沙發邊」。",
-      "register": "literary",
-      "category": "動詞・移動",
-      "tags": [
-        "主題詞庫",
-        "寫作者詞庫",
-        "大學生以上",
-        "動詞",
-        "接觸"
-      ],
-      "daily_example": "貓蹭著小腿。",
-      "literary_example": "蹭是低風險的靠近。",
-      "source": {
-        "kind": "zi-geng-themed-lexicon",
-        "version": 1,
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
-      "term": "挪",
-      "zhuyin": "ㄋㄨㄛˊ",
-      "part_of_speech": "動",
-      "difficulty": 2,
-      "short_def": "慢慢移動。",
-      "long_def": "空間讓步、尷尬調整。",
-      "usage_context": "「挪開視線」「往旁邊挪」。",
-      "register": "literary",
-      "category": "動詞・移動",
-      "tags": [
-        "主題詞庫",
-        "寫作者詞庫",
-        "大學生以上",
-        "動詞",
-        "移動"
-      ],
-      "daily_example": "他挪了挪椅子。",
-      "literary_example": "挪常常是句對話的前言。",
-      "source": {
-        "kind": "zi-geng-themed-lexicon",
-        "version": 1,
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
       "term": "斑駁",
       "zhuyin": "ㄅㄢ ㄅㄛˊ",
       "part_of_speech": "形",
@@ -1744,32 +1668,6 @@
     },
     {
       "status": "active",
-      "term": "靜默",
-      "zhuyin": "ㄐㄧㄥˋ ㄇㄛˋ",
-      "part_of_speech": "名／形",
-      "difficulty": 2,
-      "short_def": "無聲；有意的沉默。",
-      "long_def": "比「安靜」多一層態度。",
-      "usage_context": "「陷入靜默」。",
-      "register": "literary",
-      "category": "感官・聲",
-      "tags": [
-        "主題詞庫",
-        "寫作者詞庫",
-        "大學生以上",
-        "感官",
-        "靜"
-      ],
-      "daily_example": "問題丟出後，全場靜默。",
-      "literary_example": "靜默有時比回答昂貴。",
-      "source": {
-        "kind": "zi-geng-themed-lexicon",
-        "version": 1,
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
       "term": "凜冽",
       "zhuyin": "ㄌㄧㄣˇ ㄌㄧㄝˋ",
       "part_of_speech": "形",
@@ -1900,32 +1798,6 @@
     },
     {
       "status": "active",
-      "term": "幾乎",
-      "zhuyin": "ㄐㄧ ㄏㄨ",
-      "part_of_speech": "副",
-      "difficulty": 1,
-      "short_def": "接近於。",
-      "long_def": "保留「差一點」的縫，比「完全」真。",
-      "usage_context": "寫臨界狀態好用。",
-      "register": "literary",
-      "category": "副詞・程度",
-      "tags": [
-        "主題詞庫",
-        "寫作者詞庫",
-        "大學生以上",
-        "副詞",
-        "程度"
-      ],
-      "daily_example": "他幾乎要說出口。",
-      "literary_example": "幾乎是戲劇停在懸崖邊。",
-      "source": {
-        "kind": "zi-geng-themed-lexicon",
-        "version": 1,
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
       "term": "索性",
       "zhuyin": "ㄙㄨㄛˇ ㄒㄧㄥˋ",
       "part_of_speech": "副",
@@ -1978,32 +1850,6 @@
     },
     {
       "status": "active",
-      "term": "竟然",
-      "zhuyin": "ㄐㄧㄥˋ ㄖㄢˊ",
-      "part_of_speech": "副",
-      "difficulty": 1,
-      "short_def": "出乎意料。",
-      "long_def": "易濫用。優先用細節製造意外，少宣告。",
-      "usage_context": "能刪則刪。",
-      "register": "literary",
-      "category": "副詞・語氣",
-      "tags": [
-        "主題詞庫",
-        "寫作者詞庫",
-        "大學生以上",
-        "副詞",
-        "警示"
-      ],
-      "daily_example": "門竟然開著。",
-      "literary_example": "把「竟然」換成讀者自己發現。",
-      "source": {
-        "kind": "zi-geng-themed-lexicon",
-        "version": 1,
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
       "term": "終究",
       "zhuyin": "ㄓㄨㄥ ㄐㄧㄡˋ",
       "part_of_speech": "副",
@@ -2048,6 +1894,266 @@
       ],
       "daily_example": "他權且答應，心裡另有盤算。",
       "literary_example": "權且是延期兌現的同意。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "醍醐",
+      "zhuyin": "ㄊㄧˊ ㄏㄨˊ",
+      "part_of_speech": "名",
+      "difficulty": 4,
+      "short_def": "精煉乳酪；喻最高妙的教誨。",
+      "long_def": "「醍醐灌頂」：猛然醒悟。",
+      "usage_context": "議論、覺醒場面。",
+      "register": "literary",
+      "category": "國學・典故",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "國學",
+        "典故"
+      ],
+      "daily_example": "那句話如醍醐灌頂。",
+      "literary_example": "醍醐不是甜言，是清醒的冷。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "蜉蝣",
+      "zhuyin": "ㄈㄨˊ ㄧㄡˊ",
+      "part_of_speech": "名",
+      "difficulty": 4,
+      "short_def": "朝生暮死的小蟲；喻人生短暫。",
+      "long_def": "赤壁賦名句意象。",
+      "usage_context": "「寄蜉蝣於天地」。",
+      "register": "literary",
+      "category": "國學・意象",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "國學",
+        "意象"
+      ],
+      "daily_example": "他忽覺自己不過蜉蝣。",
+      "literary_example": "蜉蝣把時間量成一次振翅。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "須臾",
+      "zhuyin": "ㄒㄩ ㄩˊ",
+      "part_of_speech": "名",
+      "difficulty": 3,
+      "short_def": "極短的時間。",
+      "long_def": "文言時間詞，比「一下子」書面。",
+      "usage_context": "「須臾之間」。",
+      "register": "literary",
+      "category": "國學・時間",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "國學",
+        "時間"
+      ],
+      "daily_example": "榮辱不過須臾。",
+      "literary_example": "須臾裡藏得下一生的決定。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "浩然",
+      "zhuyin": "ㄏㄠˋ ㄖㄢˊ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "盛大剛正的樣子。",
+      "long_def": "「浩然之氣」。可寫氣度，勿空喊。",
+      "usage_context": "接具體場面。",
+      "register": "literary",
+      "category": "國學・氣度",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "國學",
+        "氣度"
+      ],
+      "daily_example": "他辭得浩然，不留餘地。",
+      "literary_example": "浩然是肩背先直起來。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "窈窕",
+      "zhuyin": "ㄧㄠˇ ㄊㄧㄠˇ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "美好文靜；亦寫幽遠。",
+      "long_def": "詩經高頻。可人可空間。",
+      "usage_context": "「窈窕淑女」「山水窈窕」。",
+      "register": "literary",
+      "category": "國學・詩經",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "國學",
+        "詩經"
+      ],
+      "daily_example": "巷弄窈窕，燈只剩一盞。",
+      "literary_example": "窈窕是美而不張揚的曲線。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "參差",
+      "zhuyin": "ㄘㄣ ㄘ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "長短不齊。",
+      "long_def": "蒹葭名句。亦可寫參差不齊的理解。",
+      "usage_context": "注意讀音。",
+      "register": "literary",
+      "category": "國學・詩經",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "國學",
+        "詩經"
+      ],
+      "daily_example": "記憶參差，亮處刺眼。",
+      "literary_example": "參差比「不整齊」多一層詩意。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "溯洄",
+      "zhuyin": "ㄙㄨˋ ㄏㄨㄟˊ",
+      "part_of_speech": "動",
+      "difficulty": 4,
+      "short_def": "逆流而上。",
+      "long_def": "追求而不得的動作原型。",
+      "usage_context": "「溯洄從之」。",
+      "register": "literary",
+      "category": "國學・詩經",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "國學",
+        "動作"
+      ],
+      "daily_example": "他溯洄往事，愈行愈暗。",
+      "literary_example": "溯洄是拒絕順流的執念。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "白描",
+      "zhuyin": "ㄅㄞˊ ㄇㄧㄠˊ",
+      "part_of_speech": "名",
+      "difficulty": 3,
+      "short_def": "不加渲染，用敘述白畫。",
+      "long_def": "寫作技法詞。與工筆、寫意對讀。",
+      "usage_context": "「白描手法」。",
+      "register": "literary",
+      "category": "文筆・技法",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "文筆",
+        "技法"
+      ],
+      "daily_example": "這段全用白描，一個形容詞都沒有。",
+      "literary_example": "白描的力量在於信任細節。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "留白",
+      "zhuyin": "ㄌㄧㄡˊ ㄅㄞˊ",
+      "part_of_speech": "名／動",
+      "difficulty": 2,
+      "short_def": "不寫滿，留空間給讀者。",
+      "long_def": "畫面與敘事共用。",
+      "usage_context": "「結尾留白」。",
+      "register": "literary",
+      "category": "文筆・技法",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "文筆",
+        "技法"
+      ],
+      "daily_example": "他選擇留白，不解釋動機。",
+      "literary_example": "留白是信任的另一種形式。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "用典",
+      "zhuyin": "ㄩㄥˋ ㄉㄧㄢˇ",
+      "part_of_speech": "動／名",
+      "difficulty": 3,
+      "short_def": "引用典故。",
+      "long_def": "密度高但易掉書袋；要用得隱形。",
+      "usage_context": "化用優於硬貼。",
+      "register": "literary",
+      "category": "文筆・技法",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "文筆",
+        "技法"
+      ],
+      "daily_example": "他用典極淡，只留一個「魚」。",
+      "literary_example": "好的用典像影子，不擋路。",
       "source": {
         "kind": "zi-geng-themed-lexicon",
         "version": 1,

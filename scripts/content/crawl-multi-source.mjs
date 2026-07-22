@@ -1,80 +1,100 @@
 /**
- * Multi-source content crawler (licensed / API only).
- * Sources:
- *  - zh.wiktionary (CC BY-SA) — literary / rare lemmas via category + random
- *  - zh.wikiquote (CC BY-SA) — themed quote pages (imported for Owner review flags)
- *  - kemdict MOE idioms (CC BY-ND 3.0 TW) — via existing download script
+ * Multi-source crawler — licensed APIs / open dumps only.
  *
- * Does NOT scrape commercial dictionaries or paywalled quote farms.
+ * Sources:
+ *  - zh.wiktionary (CC BY-SA)
+ *  - zh.wikiquote (CC BY-SA)
+ *  - zh.wikisource (CC BY-SA / PD classical)
+ *  - zh.wikipedia (CC BY-SA) — literary lists / 典故 entry points
+ *
+ * Modes:
+ *   --mode=update  smaller incremental (weekly)
+ *   --mode=bulk    large one-shot enrichment
  *
  * Usage:
- *   node scripts/content/crawl-multi-source.mjs
- *   node scripts/content/crawl-multi-source.mjs --vocab=120 --quotes=80
+ *   node scripts/content/crawl-multi-source.mjs --mode=bulk
+ *   node scripts/content/crawl-multi-source.mjs --mode=update --vocab=80 --quotes=40
  */
-import { mkdirSync, writeFileSync, existsSync, readFileSync } from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { filterVocabCards, passesWritingLiteracyGate } from "./vocab-quality.mjs";
 
 const __dir = dirname(fileURLToPath(import.meta.url));
-const arg = (name, fallback) => {
+const argNum = (name, fallback) => {
   const hit = process.argv.find((a) => a.startsWith(`--${name}=`));
   return hit ? Number(hit.split("=")[1]) : fallback;
 };
+const argStr = (name, fallback) => {
+  const hit = process.argv.find((a) => a.startsWith(`--${name}=`));
+  return hit ? hit.split("=")[1] : fallback;
+};
 
-const VOCAB_LIMIT = arg("vocab", 120);
-const QUOTE_LIMIT = arg("quotes", 80);
+const MODE = argStr("mode", "update");
+const IS_BULK = MODE === "bulk";
+const VOCAB_LIMIT = argNum("vocab", IS_BULK ? 500 : 80);
+const QUOTE_LIMIT = argNum("quotes", IS_BULK ? 250 : 40);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const WIKT = "https://zh.wiktionary.org/w/api.php";
 const WIKQ = "https://zh.wikiquote.org/w/api.php";
+const WIKS = "https://zh.wikisource.org/w/api.php";
+const WIKP = "https://zh.wikipedia.org/w/api.php";
 
-/** Popular + obscure themed entry points */
 const WIKT_CATEGORIES = [
-  "Category:汉语成语",
   "Category:汉语文言词",
+  "Category:漢語文言詞",
   "Category:汉语书面语",
+  "Category:漢語書面語",
+  "Category:汉语成语",
+  "Category:漢語成語",
   "Category:汉语贬义词",
   "Category:汉语褒义词",
   "Category:汉语动词",
   "Category:汉语形容词",
-  "Category:漢語成語",
+  "Category:汉语副词",
+  "Category:汉语拟声词",
+  "Category:漢語四字詞語",
+  "Category:汉语典故",
+  "Category:文言文",
 ];
 
-const WIKQ_PAGES = [
-  "寫作",
-  "文學",
-  "時間",
-  "孤獨",
-  "勇氣",
-  "愛情",
-  "自由",
-  "真理",
-  "自然",
-  "死亡",
-  "希望",
-  "失敗",
-  "記憶",
-  "沉默",
-  "旅行",
-  "藝術",
-  "科學",
-  "政治",
-  "教育",
-  "友誼",
+const WIKQ_THEME_PAGES = [
+  "寫作", "文學", "時間", "孤獨", "勇氣", "愛情", "自由", "真理", "自然", "死亡",
+  "希望", "失敗", "記憶", "沉默", "旅行", "藝術", "教育", "友誼", "青春", "戰爭",
+  "正義", "命運", "夢想", "家庭", "金錢", "權力", "恐懼", "悔恨", "寬恕", "智慧",
+  "詩歌", "小說", "戲劇", "音樂", "美", "醜", "善", "惡", "信仰", "懷疑",
+];
+
+const WIKQ_AUTHOR_PAGES = [
+  "孔子", "孟子", "莊子", "老子", "荀子", "韓非子", "屈原", "司馬遷",
+  "陶淵明", "李白", "杜甫", "白居易", "蘇軾", "李清照", "辛棄疾", "曹雪芹",
+  "魯迅", "胡適", "朱自清", "徐志摩", "沈從文", "老舍", "巴金",
+];
+
+const WIKS_PAGES = [
+  "詩經/關雎", "詩經/蒹葭", "楚辭/離騷", "論語/學而", "孟子/梁惠王上",
+  "莊子/逍遙遊", "古文觀止/岳陽樓記", "古文觀止/醉翁亭記", "古文觀止/赤壁賦",
+  "唐詩三百首/靜夜思", "唐詩三百首/登鸛雀樓", "唐詩三百首/春曉",
+  "宋詞三百首/水調歌頭·明月幾時有", "宋詞三百首/聲聲慢·尋尋覓覓",
+];
+
+const WIKP_LIST_PAGES = [
+  "成語列表", "中國典故列表", "四字熟語列表", "歇後語列表",
 ];
 
 async function api(base, params, attempt = 0) {
   const url = `${base}?${new URLSearchParams({ format: "json", origin: "*", ...params })}`;
   const res = await fetch(url, {
-    headers: { "User-Agent": "ZiGengContentBot/1.0 (private study PWA; contact owner)" },
+    headers: { "User-Agent": "ZiGengContentBot/1.1 (private study PWA; multi-source ingest)" },
   });
-  if (res.status === 429 && attempt < 5) {
-    const wait = 1500 * (attempt + 1);
+  if (res.status === 429 && attempt < 8) {
+    const wait = 2500 * (attempt + 1);
     console.warn("429 backoff", wait, "ms");
     await sleep(wait);
     return api(base, params, attempt + 1);
   }
-  if (!res.ok) throw new Error(`HTTP ${res.status} ${url}`);
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
   return res.json();
 }
 
@@ -95,7 +115,25 @@ async function categoryMembers(base, category, limit) {
     }
     cont = data?.continue?.cmcontinue;
     if (!cont) break;
-    await sleep(150);
+    await sleep(400);
+  }
+  // Fallback: MediaWiki search if category empty / renamed
+  if (!titles.length) {
+    const q = category.replace(/^Category:/, "").replace(/汉语|漢語/g, "");
+    try {
+      const data = await api(base, {
+        action: "query",
+        list: "search",
+        srsearch: q || "文言",
+        srnamespace: "0",
+        srlimit: String(Math.min(50, limit)),
+      });
+      for (const hit of data?.query?.search ?? []) {
+        if (hit.title && !hit.title.includes(":")) titles.push(hit.title);
+      }
+    } catch {
+      /* ignore */
+    }
   }
   return [...new Set(titles)].slice(0, limit);
 }
@@ -103,29 +141,30 @@ async function categoryMembers(base, category, limit) {
 async function randomTitles(base, limit) {
   const titles = [];
   let guard = 0;
-  while (titles.length < limit && guard < 30) {
+  while (titles.length < limit && guard < 40) {
     guard += 1;
     const data = await api(base, {
       action: "query",
       list: "random",
       rnnamespace: "0",
-      rnlimit: "10",
+      rnlimit: "12",
     });
     for (const r of data?.query?.random ?? []) {
       const t = String(r.title ?? "");
-      // Prefer Han script lemmas for literary vocab
-      if (/[\u4e00-\u9fff]/.test(t) && t.length <= 8) titles.push(t);
+      if (/[\u4e00-\u9fff]/.test(t) && t.length <= 8 && passesWritingLiteracyGate(t)) {
+        titles.push(t);
+      }
     }
-    await sleep(400);
+    await sleep(280);
   }
   return [...new Set(titles)].slice(0, limit);
 }
 
-async function extractIntro(base, title) {
+async function extractText(base, title, { introOnly = true } = {}) {
   const data = await api(base, {
     action: "query",
     prop: "extracts",
-    exintro: "1",
+    ...(introOnly ? { exintro: "1" } : { exlimit: "1", explaintext: "1" }),
     explaintext: "1",
     redirects: "1",
     titles: title,
@@ -133,8 +172,7 @@ async function extractIntro(base, title) {
   const page = Object.values(data?.query?.pages ?? {})[0];
   if (!page || page.missing != null) return null;
   const extract = String(page.extract ?? "").trim();
-  if (!extract) return null;
-  return extract;
+  return extract || null;
 }
 
 function parseQuoteBlocks(text, pageTitle) {
@@ -144,8 +182,6 @@ function parseQuoteBlocks(text, pageTitle) {
     .filter(Boolean);
   const out = [];
   for (const line of lines) {
-    // Wikiquote plain extracts often look like: 「…」——作者
-    // or "quote" - Author
     let quote = "";
     let author = pageTitle;
     const m1 = line.match(/^[「『"“](.+?)[」』"”]\s*[—–\-——]+\s*(.+)$/u);
@@ -156,58 +192,99 @@ function parseQuoteBlocks(text, pageTitle) {
     } else if (m2 && m2[1].length >= 8 && m2[2].length <= 40) {
       quote = m2[1].replace(/^[「『"“]|[」』"”]$/gu, "").trim();
       author = m2[2].trim();
-    } else if (line.length >= 12 && line.length <= 180 && !line.startsWith("分類")) {
+    } else if (
+      line.length >= 10 &&
+      line.length <= 160 &&
+      !/^(分類|參見|外部|延伸|參考)/.test(line) &&
+      /[\u4e00-\u9fff]/.test(line)
+    ) {
       quote = line.replace(/^[「『"“]|[」』"”]$/gu, "").trim();
     }
-    if (quote.length >= 8 && quote.length <= 200) {
-      out.push({ quote, author });
-    }
+    if (quote.length >= 8 && quote.length <= 200) out.push({ quote, author });
   }
   return out;
 }
 
-async function crawlVocab() {
-  const perCat = Math.max(8, Math.floor(VOCAB_LIMIT / (WIKT_CATEGORIES.length + 1)));
+function quoteCard({ quote, author, page, sourceKind, url, themes, copyright = "cc-by-sa" }) {
+  return {
+    status: "active",
+    display_quote: quote,
+    original_quote: quote,
+    original_language: "zh",
+    author_name: author,
+    author_bio: "",
+    work_title: page,
+    section_title: themes?.[0] ?? null,
+    publication_year: null,
+    translator_name: null,
+    bibliography_url: url,
+    verification_status: "verified_secondary",
+    copyright_status: copyright,
+    difficulty: 3,
+    themes: themes ?? [],
+    short_analysis: `多來源擷取（${sourceKind}）。次級查證；可疑請下架。`,
+    deep_analysis: "機器擷取；寫作引用前請核對原典。",
+    context: page,
+    rhetorical_analysis: "",
+    counterpoint: "社群／列表來源可能誤植，勿盲目當金句。",
+    writing_insight: "化用場面，避免空喊原句。",
+    reflection_questions: ["若改寫成現代場景，哪個意象必須保留？"],
+    imitation_exercise: "用自己的物象重寫核心關係，不抄原句。",
+    tags: ["multi-source", sourceKind, ...(themes ?? [])],
+    source: {
+      kind: sourceKind,
+      page,
+      url,
+      license: copyright === "public_domain" ? "PD/CC" : "CC BY-SA",
+      fetched_at: new Date().toISOString(),
+    },
+  };
+}
+
+async function crawlWiktionaryVocab() {
+  const cats = IS_BULK ? WIKT_CATEGORIES : WIKT_CATEGORIES.slice(0, 6);
+  const perCat = Math.max(6, Math.floor(VOCAB_LIMIT / (cats.length + 1)));
   const titles = [];
-  for (const cat of WIKT_CATEGORIES) {
+  for (const cat of cats) {
     try {
       const got = await categoryMembers(WIKT, cat, perCat);
-      titles.push(...got.map((t) => ({ term: t, category: cat.replace("Category:", "") })));
+      titles.push(...got.map((t) => ({ term: t, category: cat.replace(/^Category:/, "") })));
       console.log(`wikt ${cat}: ${got.length}`);
     } catch (e) {
-      console.warn("cat fail", cat, e.message);
+      console.warn("wikt cat fail", cat, e.message);
     }
-    await sleep(200);
+    await sleep(160);
   }
   try {
     const rnd = await randomTitles(WIKT, perCat);
     titles.push(...rnd.map((t) => ({ term: t, category: "隨機冷僻" })));
     console.log(`wikt random: ${rnd.length}`);
   } catch (e) {
-    console.warn("random fail", e.message);
+    console.warn("wikt random fail", e.message);
   }
 
   const seen = new Set();
   const cards = [];
   for (const { term, category } of titles) {
     if (seen.has(term) || cards.length >= VOCAB_LIMIT) continue;
+    if (!passesWritingLiteracyGate(term)) continue;
     seen.add(term);
     try {
-      const extract = await extractIntro(WIKT, term);
-      if (!extract) continue;
+      const extract = await extractText(WIKT, term);
+      if (!extract || !passesWritingLiteracyGate(term, extract)) continue;
       const short_def = extract.split(/\n/)[0].slice(0, 120);
       cards.push({
         status: "active",
         term,
         zhuyin: null,
         part_of_speech: null,
-        difficulty: category.includes("文言") || category.includes("冷僻") ? 4 : 3,
+        difficulty: /文言|冷僻|典故/.test(category) ? 4 : 3,
         short_def,
         long_def: extract.slice(0, 800),
-        usage_context: `來源：中文維基詞典「${category}」（CC BY-SA）。`,
+        usage_context: `來源：中文維基詞典「${category}」（CC BY-SA）。文筆／國學篩選後收錄。`,
         register: "literary",
-        category: `維基／${category}`,
-        tags: ["wiktionary", "multi-source", category],
+        category: `維基詞典・${category}`,
+        tags: ["wiktionary", "multi-source", "已篩選", category],
         daily_example: "",
         literary_example: "",
         source: {
@@ -219,20 +296,70 @@ async function crawlVocab() {
         },
       });
     } catch (e) {
-      console.warn("vocab fail", term, e.message);
+      console.warn("wikt fail", term, e.message);
     }
-    await sleep(450);
+    await sleep(IS_BULK ? 550 : 450);
   }
   return cards;
 }
 
-async function crawlQuotes() {
+async function crawlWikipediaListVocab() {
+  if (!IS_BULK) return [];
   const cards = [];
   const seen = new Set();
-  for (const page of WIKQ_PAGES) {
+  for (const page of WIKP_LIST_PAGES) {
+    try {
+      const extract = await extractText(WIKP, page, { introOnly: false });
+      if (!extract) continue;
+      // Pull short Han tokens that look like idioms / lemmas
+      const tokens = extract.match(/[\u4e00-\u9fff]{2,8}/g) ?? [];
+      for (const term of tokens) {
+        if (cards.length >= Math.min(120, Math.floor(VOCAB_LIMIT / 3))) break;
+        if (seen.has(term) || !passesWritingLiteracyGate(term)) continue;
+        if (term.length < 2) continue;
+        seen.add(term);
+        cards.push({
+          status: "active",
+          term,
+          zhuyin: null,
+          part_of_speech: null,
+          difficulty: 3,
+          short_def: `見維基百科列表「${page}」相關條目（需另查辭典釋義）。`,
+          long_def: `詞條由維基百科「${page}」列表機器收錄，僅作詞彙發現；寫作使用前請對照正式辭典。`,
+          usage_context: "來源：中文維基百科列表（CC BY-SA）。屬索引卡，釋義偏薄。",
+          register: "literary",
+          category: "維基百科・詞彙發現",
+          tags: ["wikipedia", "multi-source", "索引", page],
+          daily_example: "",
+          literary_example: "",
+          source: {
+            kind: "zh.wikipedia",
+            page,
+            url: `https://zh.wikipedia.org/wiki/${encodeURIComponent(page)}`,
+            license: "CC BY-SA",
+            fetched_at: new Date().toISOString(),
+          },
+        });
+      }
+      console.log(`wiki list ${page}: tokens→${cards.length}`);
+    } catch (e) {
+      console.warn("wiki list fail", page, e.message);
+    }
+    await sleep(250);
+  }
+  return cards;
+}
+
+async function crawlWikiquote() {
+  const pages = IS_BULK
+    ? [...WIKQ_THEME_PAGES, ...WIKQ_AUTHOR_PAGES]
+    : [...WIKQ_THEME_PAGES.slice(0, 12), ...WIKQ_AUTHOR_PAGES.slice(0, 8)];
+  const cards = [];
+  const seen = new Set();
+  for (const page of pages) {
     if (cards.length >= QUOTE_LIMIT) break;
     try {
-      const extract = await extractIntro(WIKQ, page);
+      const extract = await extractText(WIKQ, page);
       if (!extract) continue;
       const blocks = parseQuoteBlocks(extract, page);
       for (const b of blocks) {
@@ -240,102 +367,107 @@ async function crawlQuotes() {
         const key = `${b.author}::${b.quote}`;
         if (seen.has(key)) continue;
         seen.add(key);
-        cards.push({
-          status: "active",
-          display_quote: b.quote,
-          original_quote: null,
-          original_language: "zh",
-          author_name: b.author,
-          author_bio: "",
-          work_title: `維基語錄 · ${page}`,
-          section_title: page,
-          publication_year: null,
-          translator_name: null,
-          bibliography_url: `https://zh.wikiquote.org/wiki/${encodeURIComponent(page)}`,
-          verification_status: "verified_secondary",
-          copyright_status: "cc-by-sa",
-          difficulty: 2,
-          themes: [page],
-          short_analysis: `主題「${page}」。來源為中文維基語錄社群編輯，屬次級查證；若出處可疑請 Owner 下架。`,
-          deep_analysis: "機器擷取條目前言中的引文句；建議人工核對作者與作品後再對外分享。",
-          context: `主題頁：${page}`,
-          rhetorical_analysis: "",
-          counterpoint: "社群語錄可能誤植作者或斷章取義，寫作引用前請另查原典。",
-          writing_insight: "可練習：把這句改寫成場面，不直接引用原文。",
-          reflection_questions: [`這句在「${page}」主題下還有哪些反例？`],
-          imitation_exercise: "用自己的語氣寫一句同主題、但完全不同意象的句子。",
-          tags: ["wikiquote", "multi-source", page],
-          source: {
-            kind: "zh.wikiquote",
-            page,
+        cards.push(
+          quoteCard({
+            quote: b.quote,
+            author: b.author,
+            page: `維基語錄 · ${page}`,
+            sourceKind: "zh.wikiquote",
             url: `https://zh.wikiquote.org/wiki/${encodeURIComponent(page)}`,
-            license: "CC BY-SA",
-            fetched_at: new Date().toISOString(),
-          },
-        });
+            themes: [page],
+          }),
+        );
       }
       console.log(`wikq ${page}: +${blocks.length}`);
     } catch (e) {
-      console.warn("quote page fail", page, e.message);
+      console.warn("wikq fail", page, e.message);
+    }
+    await sleep(200);
+  }
+  return cards;
+}
+
+async function crawlWikisourceQuotes() {
+  const pages = IS_BULK ? WIKS_PAGES : WIKS_PAGES.slice(0, 6);
+  const cards = [];
+  const seen = new Set();
+  for (const page of pages) {
+    if (cards.length >= Math.floor(QUOTE_LIMIT / 2)) break;
+    try {
+      const extract = await extractText(WIKS, page, { introOnly: false });
+      if (!extract) continue;
+      // Take first few classical sentences
+      const chunks = extract
+        .replace(/\s+/g, "")
+        .split(/[。！？]/g)
+        .map((s) => s.trim())
+        .filter((s) => s.length >= 8 && s.length <= 80);
+      const authorGuess = page.split("/")[0] ?? "古典";
+      for (const q of chunks.slice(0, 4)) {
+        if (seen.has(q)) continue;
+        seen.add(q);
+        cards.push(
+          quoteCard({
+            quote: q + "。",
+            author: authorGuess,
+            page: `維基文庫 · ${page}`,
+            sourceKind: "zh.wikisource",
+            url: `https://zh.wikisource.org/wiki/${encodeURIComponent(page)}`,
+            themes: ["古典", authorGuess],
+            copyright: "public_domain",
+          }),
+        );
+      }
+      console.log(`wikisource ${page}: +chunks`);
+    } catch (e) {
+      console.warn("wikisource fail", page, e.message);
     }
     await sleep(220);
   }
   return cards;
 }
 
-function mergeMoeIfPresent() {
-  const moePath = join(__dir, "seed-literary-vocab.json");
-  if (!existsSync(moePath)) return [];
-  try {
-    const payload = JSON.parse(readFileSync(moePath, "utf8"));
-    return (payload.cards ?? []).slice(0, 200);
-  } catch {
-    return [];
-  }
-}
+console.log(`crawl mode=${MODE} vocab≤${VOCAB_LIMIT} quotes≤${QUOTE_LIMIT}`);
 
-const vocab = await crawlVocab();
-const quotes = await crawlQuotes();
-const moe = mergeMoeIfPresent();
+const wikt = await crawlWiktionaryVocab();
+const wikiList = await crawlWikipediaListVocab();
+const vocab = filterVocabCards([...wikt, ...wikiList]).slice(0, VOCAB_LIMIT);
 
-const outDir = join(__dir);
-mkdirSync(outDir, { recursive: true });
+const wikq = await crawlWikiquote();
+const wiks = await crawlWikisourceQuotes();
+const quotes = [...wikq, ...wiks].slice(0, QUOTE_LIMIT);
 
 const vocabOut = {
-  version: 1,
+  version: 2,
+  mode: MODE,
   count: vocab.length,
   fetched_at: new Date().toISOString(),
-  sources: ["zh.wiktionary"],
+  sources: ["zh.wiktionary", "zh.wikipedia"],
   cards: vocab,
 };
 const quoteOut = {
-  version: 1,
+  version: 2,
+  mode: MODE,
   count: quotes.length,
   fetched_at: new Date().toISOString(),
-  sources: ["zh.wikiquote"],
+  sources: ["zh.wikiquote", "zh.wikisource"],
   cards: quotes,
 };
-const mergedVocab = {
-  version: 1,
-  count: moe.length + vocab.length,
-  fetched_at: new Date().toISOString(),
-  sources: ["moe-idioms", "zh.wiktionary"],
-  cards: [...moe, ...vocab],
-};
 
+mkdirSync(__dir, { recursive: true });
 writeFileSync(join(__dir, "fetched-wiktionary.json"), JSON.stringify(vocabOut, null, 2), "utf8");
 writeFileSync(join(__dir, "fetched-wikiquote.json"), JSON.stringify(quoteOut, null, 2), "utf8");
 writeFileSync(
   join(__dir, "seed-multi-source-vocab.json"),
-  JSON.stringify(mergedVocab, null, 2),
+  JSON.stringify(vocabOut, null, 2),
   "utf8",
 );
 
 const pub = join(__dir, "../../public/content");
 mkdirSync(pub, { recursive: true });
-writeFileSync(join(pub, "seed-multi-source-vocab.json"), JSON.stringify(mergedVocab), "utf8");
+writeFileSync(join(pub, "seed-multi-source-vocab.json"), JSON.stringify(vocabOut), "utf8");
 writeFileSync(join(pub, "seed-wikiquote.json"), JSON.stringify(quoteOut), "utf8");
 
 console.log(
-  `Done. vocab=${vocab.length} quotes=${quotes.length} moe_merged=${moe.length}. Files in scripts/content + public/content.`,
+  `Done. mode=${MODE} vocab=${vocab.length} quotes=${quotes.length} (wikt=${wikt.length} wikiList=${wikiList.length} wikq=${wikq.length} wiks=${wiks.length})`,
 );

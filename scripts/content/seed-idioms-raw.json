@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 400,
+  "count": 600,
   "cards": [
     {
       "status": "active",
@@ -325,31 +325,6 @@
         "license": "CC BY-ND 3.0 TW",
         "attribution": "中華民國教育部《成語典》",
         "id": "13"
-      }
-    },
-    {
-      "status": "active",
-      "term": "信口雌黃",
-      "zhuyin": "ㄒㄧㄣˋ ㄎㄡˇ ㄘ ㄏㄨㄤˊ",
-      "part_of_speech": "成語",
-      "difficulty": 3,
-      "short_def": "雌黃，橙黃色礦物，成分是三硫化二砷，可作退色劑，古代用於塗改文字。本指有如口中含著雌黃，能隨時改正不合意的語句。＃語本晉．孫盛《晉陽秋》。後用「信口雌黃」比喻不顧事實真相，隨口亂說或妄加批評。",
-      "long_def": "雌黃，橙黃色礦物，成分是三硫化二砷，可作退色劑，古代用於塗改文字。本指有如口中含著雌黃，能隨時改正不合意的語句。＃語本晉．孫盛《晉陽秋》。後用「信口雌黃」比喻不顧事實真相，隨口亂說或妄加批評。 △「妄下雌黃」、「信口開河」",
-      "usage_context": "比喻不顧事實真相，隨口亂說或妄加批評。",
-      "register": "literary",
-      "category": "成語",
-      "tags": [
-        "成語",
-        "教育部成語典",
-        "字耕詞庫"
-      ],
-      "daily_example": "一個人要是老信口雌黃，怎會受到歡迎？",
-      "literary_example": "一個人要是老信口雌黃，怎會受到歡迎？",
-      "source": {
-        "kind": "moe-idioms",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《成語典》",
-        "id": "14"
       }
     },
     {
@@ -2525,31 +2500,6 @@
         "license": "CC BY-ND 3.0 TW",
         "attribution": "中華民國教育部《成語典》",
         "id": "101"
-      }
-    },
-    {
-      "status": "active",
-      "term": "得隴望蜀",
-      "zhuyin": "ㄉㄜˊ ㄌㄨㄥˇ ㄨㄤˋ ㄕㄨˇ",
-      "part_of_speech": "成語",
-      "difficulty": 3,
-      "short_def": "隴，地名，位約當今甘肅省。蜀，地名，位約當今四川省。「得隴望蜀」指平定隴西之後，又想進軍蜀地。＃語本《東觀漢記．卷二三．隗囂傳》。後用「得隴望蜀」比喻貪得無厭，不知滿足。",
-      "long_def": "隴，地名，位約當今甘肅省。蜀，地名，位約當今四川省。「得隴望蜀」指平定隴西之後，又想進軍蜀地。＃語本《東觀漢記．卷二三．隗囂傳》。後用「得隴望蜀」比喻貪得無厭，不知滿足。 △「得寸進尺」",
-      "usage_context": "比喻貪得無厭，不知滿足。",
-      "register": "literary",
-      "category": "成語",
-      "tags": [
-        "成語",
-        "教育部成語典",
-        "字耕詞庫"
-      ],
-      "daily_example": "許多人對名利總不知足，常常得隴望蜀，貪得無厭。",
-      "literary_example": "許多人對名利總不知足，常常得隴望蜀，貪得無厭。",
-      "source": {
-        "kind": "moe-idioms",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《成語典》",
-        "id": "102"
       }
     },
     {
@@ -6379,31 +6329,6 @@
     },
     {
       "status": "active",
-      "term": "洗心革面",
-      "zhuyin": "ㄒㄧˇ ㄒㄧㄣ ㄍㄜˊ ㄇㄧㄢˋ",
-      "part_of_speech": "成語",
-      "difficulty": 3,
-      "short_def": "「洗心」，洗滌心胸，摒除惡念或雜念。語出《易經．繫辭上》。「革面」，改變面目。語出《易經．革卦》。「洗心革面」指除去邪思雜念，改變舊日面目；比喻澈底悔悟，改過遷善。",
-      "long_def": "「洗心」，洗滌心胸，摒除惡念或雜念。語出《易經．繫辭上》。「革面」，改變面目。語出《易經．革卦》。「洗心革面」指除去邪思雜念，改變舊日面目；比喻澈底悔悟，改過遷善。 △「脫胎換骨」",
-      "usage_context": "比喻澈底悔悟，改過遷善。",
-      "register": "literary",
-      "category": "成語",
-      "tags": [
-        "成語",
-        "教育部成語典",
-        "字耕詞庫"
-      ],
-      "daily_example": "出獄後，他決定洗心革面，重新做人。",
-      "literary_example": "出獄後，他決定洗心革面，重新做人。",
-      "source": {
-        "kind": "moe-idioms",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《成語典》",
-        "id": "256"
-      }
-    },
-    {
-      "status": "active",
       "term": "飛黃騰達",
       "zhuyin": "ㄈㄟ ㄏㄨㄤˊ ㄊㄥˊ ㄉㄚˊ",
       "part_of_speech": "成語",
@@ -10000,6 +9925,5081 @@
         "license": "CC BY-ND 3.0 TW",
         "attribution": "中華民國教育部《成語典》",
         "id": "400"
+      }
+    },
+    {
+      "status": "active",
+      "term": "趾高氣揚",
+      "zhuyin": "ㄓˇ ㄍㄠ ㄑㄧˋ ㄧㄤˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "走路時腳抬得很高，樣子顯得十分神氣。形容人驕傲自滿、得意忘形。＃語本《戰國策．齊策三》。",
+      "long_def": "走路時腳抬得很高，樣子顯得十分神氣。形容人驕傲自滿、得意忘形。＃語本《戰國策．齊策三》。",
+      "usage_context": "形容人驕傲自滿、得意忘形。多具貶義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他那趾高氣揚的態度，實在令人看不慣。",
+      "literary_example": "他那趾高氣揚的態度，實在令人看不慣。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "401"
+      }
+    },
+    {
+      "status": "active",
+      "term": "唾面自乾",
+      "zhuyin": "ㄊㄨㄛˋ ㄇㄧㄢˋ ㄗˋ ㄍㄢ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "當別人吐口水在臉上時，不擦拭而讓它自己乾掉的故事。比喻逆來順受，寬容忍讓。＃典出唐．劉餗《隋唐嘉話》卷下。",
+      "long_def": "當別人吐口水在臉上時，不擦拭而讓它自己乾掉的故事。比喻逆來順受，寬容忍讓。＃典出唐．劉餗《隋唐嘉話》卷下。",
+      "usage_context": "比喻逆來順受，寬容忍讓。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這種唾面自乾的作法過於懦弱，我不欣賞。",
+      "literary_example": "這種唾面自乾的作法過於懦弱，我不欣賞。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "402"
+      }
+    },
+    {
+      "status": "active",
+      "term": "推心置腹",
+      "zhuyin": "ㄊㄨㄟ ㄒㄧㄣ ㄓˋ ㄈㄨˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "把赤忱之心推到人家肚子裡。比喻以至誠待人。＃語本《東觀漢記．卷一．光武帝紀》。",
+      "long_def": "把赤忱之心推到人家肚子裡。比喻以至誠待人。＃語本《東觀漢記．卷一．光武帝紀》。",
+      "usage_context": "比喻以至誠待人。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他對朋友向來推心置腹，坦誠相待。",
+      "literary_example": "他對朋友向來推心置腹，坦誠相待。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "403"
+      }
+    },
+    {
+      "status": "active",
+      "term": "病入膏肓",
+      "zhuyin": "ㄅㄧㄥˋ ㄖㄨˋ ㄍㄠ ㄏㄨㄤ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "膏，心下脂肪；肓，心臟和橫膈膜之間。中醫之「膏肓」即指心之下，膈之上的部位。膏肓相傳是身體內藥力所不及的地方。「病入膏肓」原指病位深隱難治，病情危重，無藥可救。典出《左傳．成公十年》。後用「病入膏肓」比喻人、事已到無可挽回的程度。",
+      "long_def": "膏，心下脂肪；肓，心臟和橫膈膜之間。中醫之「膏肓」即指心之下，膈之上的部位。膏肓相傳是身體內藥力所不及的地方。「病入膏肓」原指病位深隱難治，病情危重，無藥可救。典出《左傳．成公十年》。後用「病入膏肓」比喻人、事已到無可挽回的程度。",
+      "usage_context": "指人病重，無藥可救。 ＆比喻人、事已到無可挽回的程度。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "患病就得就醫，難道要等到病入膏肓嗎？",
+      "literary_example": "患病就得就醫，難道要等到病入膏肓嗎？",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "404"
+      }
+    },
+    {
+      "status": "active",
+      "term": "蕭規曹隨",
+      "zhuyin": "ㄒㄧㄠ ㄍㄨㄟ ㄘㄠˊ ㄙㄨㄟˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "漢代曹參繼蕭何為相國，舉事皆無所變更。＃典出《史記．卷五四．曹相國世家》。後用「蕭規曹隨」比喻後人依循前人所訂的規章辦事。",
+      "long_def": "漢代曹參繼蕭何為相國，舉事皆無所變更。＃典出《史記．卷五四．曹相國世家》。後用「蕭規曹隨」比喻後人依循前人所訂的規章辦事。 △「率由舊章」",
+      "usage_context": "比喻後人依循前人所訂的規章辦事。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "自他上任以來，一切行事都依照舊章，蕭規曹隨。",
+      "literary_example": "自他上任以來，一切行事都依照舊章，蕭規曹隨。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "405"
+      }
+    },
+    {
+      "status": "active",
+      "term": "庸人自擾",
+      "zhuyin": "ㄩㄥ ㄖㄣˊ ㄗˋ ㄖㄠˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "庸碌的人無端自尋煩惱。語本《舊唐書．卷八八．陸元方列傳》。",
+      "long_def": "庸碌的人無端自尋煩惱。語本《舊唐書．卷八八．陸元方列傳》。 △「杞人憂天」。",
+      "usage_context": "比喻庸碌的人無端自尋煩惱。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "你所擔心的事，在我看來皆為庸人自擾。",
+      "literary_example": "你所擔心的事，在我看來皆為庸人自擾。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "406"
+      }
+    },
+    {
+      "status": "active",
+      "term": "緣木求魚",
+      "zhuyin": "ㄩㄢˊ ㄇㄨˋ ㄑㄧㄡˊ ㄩˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "爬到樹上去抓魚。比喻用錯方法，徒勞無功。語出《孟子．梁惠王上》。",
+      "long_def": "爬到樹上去抓魚。比喻用錯方法，徒勞無功。語出《孟子．梁惠王上》。",
+      "usage_context": "比喻用錯方法，徒勞無功。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "不努力卻想發財，無異是緣木求魚！",
+      "literary_example": "不努力卻想發財，無異是緣木求魚！",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "407"
+      }
+    },
+    {
+      "status": "active",
+      "term": "雙管齊下",
+      "zhuyin": "ㄕㄨㄤ ㄍㄨㄢˇ ㄑㄧˊ ㄒㄧㄚˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "手握雙管同時作畫。＃語本唐．朱景玄《唐朝名畫錄．神品下．張藻》。後用「雙管齊下」比喻同時採用兩種辦法來做事。",
+      "long_def": "手握雙管同時作畫。＃語本唐．朱景玄《唐朝名畫錄．神品下．張藻》。後用「雙管齊下」比喻同時採用兩種辦法來做事。",
+      "usage_context": "比喻同時採用兩種辦法來做事。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "學習語文應該聽與寫雙管齊下，收效才快。",
+      "literary_example": "學習語文應該聽與寫雙管齊下，收效才快。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "408"
+      }
+    },
+    {
+      "status": "active",
+      "term": "一言九鼎",
+      "zhuyin": "ㄧ ㄧㄢˊ ㄐㄧㄡˇ ㄉㄧㄥˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "九鼎，傳說中夏禹的傳國寶器。「一言九鼎」形容說話很有分量。語本《史記．卷七六．平原君虞卿列傳．平原君》。後亦用「一言九鼎」形容說話很有信用。",
+      "long_def": "九鼎，傳說中夏禹的傳國寶器。「一言九鼎」形容說話很有分量。語本《史記．卷七六．平原君虞卿列傳．平原君》。後亦用「一言九鼎」形容說話很有信用。 △「三寸不爛之舌」",
+      "usage_context": "形容說話很有分量。＆形容說話很有信用。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他是會中大老，向來一言九鼎。",
+      "literary_example": "他是會中大老，向來一言九鼎。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "409"
+      }
+    },
+    {
+      "status": "active",
+      "term": "自相矛盾",
+      "zhuyin": "ㄗˋ ㄒㄧㄤ ㄇㄠˊ ㄉㄨㄣˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "比喻言語或行事前後無法呼應，互相牴觸。◎典出《韓非子．難一》。",
+      "long_def": "比喻言語或行事前後無法呼應，互相牴觸。◎典出《韓非子．難一》。",
+      "usage_context": "比喻言語或行事前後無法呼應，互相牴觸。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "你的論點根本自相矛盾，如何說服他人？",
+      "literary_example": "你的論點根本自相矛盾，如何說服他人？",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "410"
+      }
+    },
+    {
+      "status": "active",
+      "term": "舉案齊眉",
+      "zhuyin": "ㄐㄩˇ ㄢˋ ㄑㄧˊ ㄇㄟˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "將放置飯菜的木盤高舉，與眉平齊，為東漢孟光對其夫梁鴻敬愛的表示。＃典出《東觀漢記．卷一八．梁鴻列傳》。後用「舉案齊眉」比喻夫妻相敬如賓。",
+      "long_def": "將放置飯菜的木盤高舉，與眉平齊，為東漢孟光對其夫梁鴻敬愛的表示。＃典出《東觀漢記．卷一八．梁鴻列傳》。後用「舉案齊眉」比喻夫妻相敬如賓。",
+      "usage_context": "比喻夫妻相敬如賓。褒義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "夫妻之間能舉案齊眉，更見一份親密。",
+      "literary_example": "夫妻之間能舉案齊眉，更見一份親密。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "411"
+      }
+    },
+    {
+      "status": "active",
+      "term": "閉門造車",
+      "zhuyin": "ㄅㄧˋ ㄇㄣˊ ㄗㄠˋ ㄐㄩ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "關起門來，按照一定的規格在家裡造車。比喻依循著一定的原則行事。＃語出《祖堂集．卷二○．五冠山瑞雲寺和尚》。後用「閉門造車」比喻凡事只憑主觀辦事，不問是否切合實際。",
+      "long_def": "關起門來，按照一定的規格在家裡造車。比喻依循著一定的原則行事。＃語出《祖堂集．卷二○．五冠山瑞雲寺和尚》。後用「閉門造車」比喻凡事只憑主觀辦事，不問是否切合實際。 △「閉門造車，出門合轍」",
+      "usage_context": "比喻凡事只憑主觀辦事，不問是否切合實際。貶義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這些閉門造車的產品，根本不符市場需要。",
+      "literary_example": "這些閉門造車的產品，根本不符市場需要。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "412"
+      }
+    },
+    {
+      "status": "active",
+      "term": "歧路亡羊",
+      "zhuyin": "ㄑㄧˊ ㄌㄨˋ ㄨㄤˊ ㄧㄤˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "岔路很多，因此而走失了一隻羊。比喻事理繁雜多變，求道者誤入迷途，而終無所成。典出《列子．說符》。",
+      "long_def": "岔路很多，因此而走失了一隻羊。比喻事理繁雜多變，求道者誤入迷途，而終無所成。典出《列子．說符》。",
+      "usage_context": "比喻事理繁雜多變，求道者誤入迷途，而終無所成。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "討論這麼複雜的問題，假如不能掌握要點，就會歧路亡羊。",
+      "literary_example": "討論這麼複雜的問題，假如不能掌握要點，就會歧路亡羊。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "413"
+      }
+    },
+    {
+      "status": "active",
+      "term": "車水馬龍",
+      "zhuyin": "ㄔㄜ ㄕㄨㄟˇ ㄇㄚˇ ㄌㄨㄥˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "門前車馬往來不絕。＃語本《東觀漢記．卷六．外戚列傳．明德馬皇后》。後用「車水馬龍」形容繁華熱鬧的景象。",
+      "long_def": "門前車馬往來不絕。＃語本《東觀漢記．卷六．外戚列傳．明德馬皇后》。後用「車水馬龍」形容繁華熱鬧的景象。",
+      "usage_context": "形容繁華熱鬧的景象。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我喜歡鄉下的寧靜，勝過於都市的車水馬龍。",
+      "literary_example": "我喜歡鄉下的寧靜，勝過於都市的車水馬龍。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "414"
+      }
+    },
+    {
+      "status": "active",
+      "term": "先發制人",
+      "zhuyin": "ㄒㄧㄢ ㄈㄚ ㄓˋ ㄖㄣˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "凡事先下手取得先機，才能制伏對方。＃語本《史記．卷七．項羽本紀》。",
+      "long_def": "凡事先下手取得先機，才能制伏對方。＃語本《史記．卷七．項羽本紀》。",
+      "usage_context": "凡事先下手取得先機，才能制伏對方。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "在戰場上對決，要先發制人，搶得先機。",
+      "literary_example": "在戰場上對決，要先發制人，搶得先機。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "415"
+      }
+    },
+    {
+      "status": "active",
+      "term": "洛陽紙貴",
+      "zhuyin": "ㄌㄨㄛˋ ㄧㄤˊ ㄓˇ ㄍㄨㄟˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "由於左思的〈三都賦〉，時人競相傳寫，因而洛陽為之紙貴。典出《晉書．卷九二．文苑列傳．左思》。後用「洛陽紙貴」形容著作風行一時，流傳甚廣。",
+      "long_def": "由於左思的〈三都賦〉，時人競相傳寫，因而洛陽為之紙貴。典出《晉書．卷九二．文苑列傳．左思》。後用「洛陽紙貴」形容著作風行一時，流傳甚廣。 △「都城紙貴」",
+      "usage_context": "形容作品風行一時，流傳甚廣。褒義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這部作品印行後，一時洛陽紙貴。",
+      "literary_example": "這部作品印行後，一時洛陽紙貴。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "416"
+      }
+    },
+    {
+      "status": "active",
+      "term": "孤陋寡聞",
+      "zhuyin": "ㄍㄨ ㄌㄡˋ ㄍㄨㄚˇ ㄨㄣˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "寡，少。形容學識淺薄，見聞不廣。語出《禮記．學記》。",
+      "long_def": "寡，少。形容學識淺薄，見聞不廣。語出《禮記．學記》。",
+      "usage_context": "形容學識淺薄，見聞不廣。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "關於電腦，我孤陋寡聞，得多向你請教。",
+      "literary_example": "關於電腦，我孤陋寡聞，得多向你請教。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "417"
+      }
+    },
+    {
+      "status": "active",
+      "term": "滿腹經綸",
+      "zhuyin": "ㄇㄢˇ ㄈㄨˋ ㄐㄧㄥ ㄌㄨㄣˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "經綸，整理絲線，引申為規劃、治理。「滿腹經綸」形容才識豐富，具有處理大事的才能。※語或本《易經．屯卦．象》。",
+      "long_def": "經綸，整理絲線，引申為規劃、治理。「滿腹經綸」形容才識豐富，具有處理大事的才能。※語或本《易經．屯卦．象》。 △「滿腹經籍」",
+      "usage_context": "形容才識豐富，具有處理大事的才能。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "歷史上不知有多少滿腹經綸的人才被埋沒了。",
+      "literary_example": "歷史上不知有多少滿腹經綸的人才被埋沒了。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "418"
+      }
+    },
+    {
+      "status": "active",
+      "term": "飲鴆止渴",
+      "zhuyin": "ㄧㄣˇ ㄓㄣˋ ㄓˇ ㄎㄜˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「飲鴆止渴」之「鴆」，典源作「酖」。「酖」通「鴆」。鴆，以鴆鳥羽毛浸製而成的毒酒。「飲鴆止渴」指飲毒酒以解渴。比喻只求解決眼前困難，而不顧將來更大的禍患。語本《後漢書．卷四八．楊李翟應霍爰徐列傳．霍諝》。",
+      "long_def": "「飲鴆止渴」之「鴆」，典源作「酖」。「酖」通「鴆」。鴆，以鴆鳥羽毛浸製而成的毒酒。「飲鴆止渴」指飲毒酒以解渴。比喻只求解決眼前困難，而不顧將來更大的禍患。語本《後漢書．卷四八．楊李翟應霍爰徐列傳．霍諝》。",
+      "usage_context": "比喻只求解決眼前困難，而不顧將來更大的禍患。貶義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "你老是靠喝酒來逃避現實，無異於飲鴆止渴。",
+      "literary_example": "你老是靠喝酒來逃避現實，無異於飲鴆止渴。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "419"
+      }
+    },
+    {
+      "status": "active",
+      "term": "退避三舍",
+      "zhuyin": "ㄊㄨㄟˋ ㄅㄧˋ ㄙㄢ ㄕㄜˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "舍，古人以三十里為一舍。「退避三舍」指作戰時，將部隊往後撤退九十里。◎語本《左傳．僖公二十三年》。後用「退避三舍」比喻主動退讓，不與人相爭。",
+      "long_def": "舍，古人以三十里為一舍。「退避三舍」指作戰時，將部隊往後撤退九十里。◎語本《左傳．僖公二十三年》。後用「退避三舍」比喻主動退讓，不與人相爭。",
+      "usage_context": "比喻主動退讓，不與人相爭。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "惹他做啥？先退避三舍吧！",
+      "literary_example": "惹他做啥？先退避三舍吧！",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "420"
+      }
+    },
+    {
+      "status": "active",
+      "term": "世外桃源",
+      "zhuyin": "ㄕˋ ㄨㄞˋ ㄊㄠˊ ㄩㄢˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "與世隔絕，開滿桃花的安樂土。典出晉．陶潛〈桃花源記〉。後用「世外桃源」比喻風景優美而人跡罕至的地方。亦用於比喻心目中理想的世界。",
+      "long_def": "與世隔絕，開滿桃花的安樂土。典出晉．陶潛〈桃花源記〉。後用「世外桃源」比喻風景優美而人跡罕至的地方。亦用於比喻心目中理想的世界。 △「豁然開朗」",
+      "usage_context": "比喻風景優美而人跡罕至的地方。＆比喻心目中理想的世界。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "香格里拉是傳說中的世外桃源。",
+      "literary_example": "香格里拉是傳說中的世外桃源。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "421"
+      }
+    },
+    {
+      "status": "active",
+      "term": "水深火熱",
+      "zhuyin": "ㄕㄨㄟˇ ㄕㄣ ㄏㄨㄛˇ ㄖㄜˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "處在深水熱火中。比喻處境非常艱困、痛苦。語本《孟子．梁惠王下》。",
+      "long_def": "處在深水熱火中。比喻處境非常艱困、痛苦。語本《孟子．梁惠王下》。 △「火熱湯沸」、「簞食壺漿」",
+      "usage_context": "比喻處境非常艱困、痛苦。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "農民生活已水深火熱了，還要對他們怎樣？",
+      "literary_example": "農民生活已水深火熱了，還要對他們怎樣？",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "422"
+      }
+    },
+    {
+      "status": "active",
+      "term": "假公濟私",
+      "zhuyin": "ㄐㄧㄚˇ ㄍㄨㄥ ㄐㄧˋ ㄙ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "假借公家的名義以謀取個人的私利。＃語本《漢書．卷六○．杜周傳》。",
+      "long_def": "假借公家的名義以謀取個人的私利。＃語本《漢書．卷六○．杜周傳》。",
+      "usage_context": "假借公家的名義以謀取個人的私利。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我們公司不能容納這種假公濟私的人。",
+      "literary_example": "我們公司不能容納這種假公濟私的人。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "423"
+      }
+    },
+    {
+      "status": "active",
+      "term": "孤掌難鳴",
+      "zhuyin": "ㄍㄨ ㄓㄤˇ ㄋㄢˊ ㄇㄧㄥˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "一個巴掌難以拍出聲響。比喻人孤立無助，不能成事。語本《韓非子．功名》。",
+      "long_def": "一個巴掌難以拍出聲響。比喻人孤立無助，不能成事。語本《韓非子．功名》。",
+      "usage_context": "比喻人孤立無助，不能成事。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "你就算再能幹，若旁邊沒人協助，也是孤掌難鳴。",
+      "literary_example": "你就算再能幹，若旁邊沒人協助，也是孤掌難鳴。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "424"
+      }
+    },
+    {
+      "status": "active",
+      "term": "偃旗息鼓",
+      "zhuyin": "ㄧㄢˇ ㄑㄧˊ ㄒㄧˊ ㄍㄨˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "軍隊放倒旌旗，停止戰鼓。形容不露行蹤。語出《雲別傳》。後亦用「偃旗息鼓」比喻事情中斷或聲勢減弱。",
+      "long_def": "軍隊放倒旌旗，停止戰鼓。形容不露行蹤。語出《雲別傳》。後亦用「偃旗息鼓」比喻事情中斷或聲勢減弱。 △「偃兵息甲」、「鳴金收兵」",
+      "usage_context": "軍隊放倒旌旗，停止戰鼓。形容不露行蹤。＆比喻事情中斷或聲勢減弱。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "此行既是偷襲，當然得偃旗息鼓，隱密行蹤。",
+      "literary_example": "此行既是偷襲，當然得偃旗息鼓，隱密行蹤。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "425"
+      }
+    },
+    {
+      "status": "active",
+      "term": "妄自尊大",
+      "zhuyin": "ㄨㄤˋ ㄗˋ ㄗㄨㄣ ㄉㄚˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "狂妄地自尊自大。語出《後漢書．卷二四．馬援列傳》。",
+      "long_def": "狂妄地自尊自大。語出《後漢書．卷二四．馬援列傳》。 △「不修邊幅」、「夜郎自大」",
+      "usage_context": "狂妄地自尊自大。貶義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "稍有成就就妄自尊大的人，難成大器。",
+      "literary_example": "稍有成就就妄自尊大的人，難成大器。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "426"
+      }
+    },
+    {
+      "status": "active",
+      "term": "得心應手",
+      "zhuyin": "ㄉㄜˊ ㄒㄧㄣ ㄧㄥˋ ㄕㄡˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "心裡怎麼想，手便能怎麼做。比喻技藝熟練，運用自如。＃語本《莊子．天道》。 後亦用「得心應手」比喻做事順利。",
+      "long_def": "心裡怎麼想，手便能怎麼做。比喻技藝熟練，運用自如。＃語本《莊子．天道》。 後亦用「得心應手」比喻做事順利。",
+      "usage_context": "比喻技藝熟練，運用自如。＆比喻做事順利。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這把菜刀雖舊，但使來得心應手。",
+      "literary_example": "這把菜刀雖舊，但使來得心應手。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "427"
+      }
+    },
+    {
+      "status": "active",
+      "term": "乘風破浪",
+      "zhuyin": "ㄔㄥˊ ㄈㄥ ㄆㄛˋ ㄌㄤˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "順著風，破浪前進。＃語本《宋書．卷七六．列傳．宗慤》。後亦用「乘風破浪」比喻人志向遠大，不畏艱難，奮勇前進。",
+      "long_def": "順著風，破浪前進。＃語本《宋書．卷七六．列傳．宗慤》。後亦用「乘風破浪」比喻人志向遠大，不畏艱難，奮勇前進。 △「披荊斬棘」",
+      "usage_context": "順著風，破浪前進。＆比喻人志向遠大，不畏艱難，奮勇前進。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我矗立船首，張開雙臂，體會一下乘風破浪的感覺。",
+      "literary_example": "我矗立船首，張開雙臂，體會一下乘風破浪的感覺。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "428"
+      }
+    },
+    {
+      "status": "active",
+      "term": "滿城風雨",
+      "zhuyin": "ㄇㄢˇ ㄔㄥˊ ㄈㄥ ㄩˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "滿城，到處都颳風下雨的景象。本指自然現象，這種現象多出現在重陽或晚春時節。※語或出宋．釋惠洪《冷齋夜話．卷四．滿城風雨近重陽》。後「滿城風雨」語義一轉，也用來指事情一經傳出，便流言四起，到處議論紛紛。",
+      "long_def": "滿城，到處都颳風下雨的景象。本指自然現象，這種現象多出現在重陽或晚春時節。※語或出宋．釋惠洪《冷齋夜話．卷四．滿城風雨近重陽》。後「滿城風雨」語義一轉，也用來指事情一經傳出，便流言四起，到處議論紛紛。",
+      "usage_context": "形容到處颳風下雨的景象。＆指事情一經傳出，便流言四起，到處議論紛紛。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "臺北現在滿城風雨，整座都市正被颱風肆虐著。",
+      "literary_example": "臺北現在滿城風雨，整座都市正被颱風肆虐著。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "429"
+      }
+    },
+    {
+      "status": "active",
+      "term": "敝帚自珍",
+      "zhuyin": "ㄅㄧˋ ㄓㄡˇ ㄗˋ ㄓㄣ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "自家的破舊掃把，卻珍愛如寶。比喻東西雖不好，卻因為是自己所擁有，故非常珍視。語本《東觀漢記．卷一．光武帝紀》。",
+      "long_def": "自家的破舊掃把，卻珍愛如寶。比喻東西雖不好，卻因為是自己所擁有，故非常珍視。語本《東觀漢記．卷一．光武帝紀》。",
+      "usage_context": "比喻東西雖不好，卻因為是自己所擁有，故非常珍視。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "文章總是自己的好，敝帚自珍，人之常情。",
+      "literary_example": "文章總是自己的好，敝帚自珍，人之常情。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "430"
+      }
+    },
+    {
+      "status": "active",
+      "term": "兔死狗烹",
+      "zhuyin": "ㄊㄨˋ ㄙˇ ㄍㄡˇ ㄆㄥ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "兔子死盡了，用來捕兔的獵狗因為失去了作用而被烹食。比喻事成之後，有功之人即遭到殺戮或見棄的命運。＃語本《淮南子．說林》。",
+      "long_def": "兔子死盡了，用來捕兔的獵狗因為失去了作用而被烹食。比喻事成之後，有功之人即遭到殺戮或見棄的命運。＃語本《淮南子．說林》。 △「鳥盡弓藏」、「鳥盡弓藏，兔死狗烹」",
+      "usage_context": "比喻事成之後，有功之人即遭到殺戮或見棄的命運。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "你要小心別跟錯人了，免得到時候兔死狗烹。",
+      "literary_example": "你要小心別跟錯人了，免得到時候兔死狗烹。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "431"
+      }
+    },
+    {
+      "status": "active",
+      "term": "拋磚引玉",
+      "zhuyin": "ㄆㄠ ㄓㄨㄢ ㄧㄣˇ ㄩˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "將磚拋出，引回玉來。※＃語或出《景德傳燈錄．卷一○．趙州觀音院從諗禪師》。後用「拋磚引玉」比喻自己先發表粗陋的詩文或不成熟的意見，以引出別人的佳作或高論，多用作自謙之詞。亦用於比喻以身作則，引發眾人響應。",
+      "long_def": "將磚拋出，引回玉來。※＃語或出《景德傳燈錄．卷一○．趙州觀音院從諗禪師》。後用「拋磚引玉」比喻自己先發表粗陋的詩文或不成熟的意見，以引出別人的佳作或高論，多用作自謙之詞。亦用於比喻以身作則，引發眾人響應。",
+      "usage_context": "比喻自己先發表粗陋的詩文或不成熟的意見，以引出別人的佳作或高論。多用作自謙之詞。＆比喻以身作則，引發眾人響應。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我藉著這段話拋磚引玉，希望各位能有許多精彩的論見。",
+      "literary_example": "我藉著這段話拋磚引玉，希望各位能有許多精彩的論見。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "432"
+      }
+    },
+    {
+      "status": "active",
+      "term": "門庭若市",
+      "zhuyin": "ㄇㄣˊ ㄊㄧㄥˊ ㄖㄨㄛˋ ㄕˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "門庭間來往的人很多，像市集一般熱鬧。比喻上門來的人很多。語出《戰國策．齊策一》。",
+      "long_def": "門庭間來往的人很多，像市集一般熱鬧。比喻上門來的人很多。語出《戰國策．齊策一》。",
+      "usage_context": "比喻上門來的人很多。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "祝你的飯店高朋滿座，門庭若市。",
+      "literary_example": "祝你的飯店高朋滿座，門庭若市。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "433"
+      }
+    },
+    {
+      "status": "active",
+      "term": "殺身成仁",
+      "zhuyin": "ㄕㄚ ㄕㄣ ㄔㄥˊ ㄖㄣˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "為了成全仁德而犧牲生命。語出《論語．衛靈公》。後用「殺身成仁」指為正義或崇高的理想而犧牲生命。",
+      "long_def": "為了成全仁德而犧牲生命。語出《論語．衛靈公》。後用「殺身成仁」指為正義或崇高的理想而犧牲生命。 △「捨生取義」",
+      "usage_context": "指為正義或崇高的理想而犧牲生命。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他殺身成仁的典範，將永留人間。",
+      "literary_example": "他殺身成仁的典範，將永留人間。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "434"
+      }
+    },
+    {
+      "status": "active",
+      "term": "一視同仁",
+      "zhuyin": "ㄧ ㄕˋ ㄊㄨㄥˊ ㄖㄣˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "同樣以博愛的仁心，對待所有的人及禽獸。語出唐．韓愈〈原人〉。後用「一視同仁」指平等待人，不分親疏厚薄。",
+      "long_def": "同樣以博愛的仁心，對待所有的人及禽獸。語出唐．韓愈〈原人〉。後用「一視同仁」指平等待人，不分親疏厚薄。",
+      "usage_context": "指平等待人，不分親疏厚薄。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "老師對待學生應該一視同仁，無所偏愛。",
+      "literary_example": "老師對待學生應該一視同仁，無所偏愛。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "435"
+      }
+    },
+    {
+      "status": "active",
+      "term": "雪中送炭",
+      "zhuyin": "ㄒㄩㄝˇ ㄓㄨㄥ ㄙㄨㄥˋ ㄊㄢˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "在下雪天送炭給人取暖。比喻在人艱困危急之時，給予適時的援助。※語或本唐．釋德行《四字經．甲乙》。",
+      "long_def": "在下雪天送炭給人取暖。比喻在人艱困危急之時，給予適時的援助。※語或本唐．釋德行《四字經．甲乙》。",
+      "usage_context": "比喻在人艱困危急之時，給予適時的援助。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "讓人最受用的是雪中送炭，而不是錦上添花。",
+      "literary_example": "讓人最受用的是雪中送炭，而不是錦上添花。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "436"
+      }
+    },
+    {
+      "status": "active",
+      "term": "甘拜下風",
+      "zhuyin": "ㄍㄢ ㄅㄞˋ ㄒㄧㄚˋ ㄈㄥ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "下風，風所吹向的那方。「甘拜下風」指待在下邊，聽候吩咐。＃語本《左傳．僖公十五年》。後用「甘拜下風」表示自認不如，由衷佩服。",
+      "long_def": "下風，風所吹向的那方。「甘拜下風」指待在下邊，聽候吩咐。＃語本《左傳．僖公十五年》。後用「甘拜下風」表示自認不如，由衷佩服。",
+      "usage_context": "表示自認不如，由衷佩服。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "既然對方已甘拜下風，比試就到此為止。",
+      "literary_example": "既然對方已甘拜下風，比試就到此為止。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "437"
+      }
+    },
+    {
+      "status": "active",
+      "term": "無地自容",
+      "zhuyin": "ㄨˊ ㄉㄧˋ ㄗˋ ㄖㄨㄥˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "沒地方可以藏身。形容羞愧至極。語本《史記．卷七七．魏公子列傳》。",
+      "long_def": "沒地方可以藏身。形容羞愧至極。語本《史記．卷七七．魏公子列傳》。 △「容身無地」",
+      "usage_context": "形容羞愧至極。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "被當面指出所犯的錯誤時，他直羞得無地自容。",
+      "literary_example": "被當面指出所犯的錯誤時，他直羞得無地自容。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "438"
+      }
+    },
+    {
+      "status": "active",
+      "term": "過河拆橋",
+      "zhuyin": "ㄍㄨㄛˋ ㄏㄜˊ ㄔㄞ ㄑㄧㄠˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "渡過了河就把橋拆掉。比喻不念舊情，忘恩負義。語出《元史．卷一四二．徹里帖木兒列傳》。",
+      "long_def": "渡過了河就把橋拆掉。比喻不念舊情，忘恩負義。語出《元史．卷一四二．徹里帖木兒列傳》。",
+      "usage_context": "比喻不念舊情，忘恩負義。貶義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這種過河拆橋、忘恩負義的人，不必理他！",
+      "literary_example": "這種過河拆橋、忘恩負義的人，不必理他！",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "439"
+      }
+    },
+    {
+      "status": "active",
+      "term": "前倨後恭",
+      "zhuyin": "ㄑㄧㄢˊ ㄐㄩˋ ㄏㄡˋ ㄍㄨㄥ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "先前傲慢無禮，後又謙卑恭敬。比喻待人勢利，態度轉變迅速。＃語出《戰國策．秦策一》。",
+      "long_def": "先前傲慢無禮，後又謙卑恭敬。比喻待人勢利，態度轉變迅速。＃語出《戰國策．秦策一》。 △「引錐刺股」、「今恭昔慢」",
+      "usage_context": "比喻待人勢利，態度轉變迅速。貶義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這種前倨後恭的勢利小人，不可深交！",
+      "literary_example": "這種前倨後恭的勢利小人，不可深交！",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "440"
+      }
+    },
+    {
+      "status": "active",
+      "term": "弄巧成拙",
+      "zhuyin": "ㄋㄨㄥˋ ㄑㄧㄠˇ ㄔㄥˊ ㄓㄨㄛˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "本想賣弄才能、聰明，卻反而做了蠢事。比喻枉費心機。※語或出《五燈會元．卷三．江西馬祖道一禪師》。",
+      "long_def": "本想賣弄才能、聰明，卻反而做了蠢事。比喻枉費心機。※語或出《五燈會元．卷三．江西馬祖道一禪師》。",
+      "usage_context": "比喻枉費心機。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "讀書沒有捷徑，投機取巧，必然弄巧成拙。",
+      "literary_example": "讀書沒有捷徑，投機取巧，必然弄巧成拙。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "441"
+      }
+    },
+    {
+      "status": "active",
+      "term": "噤若寒蟬",
+      "zhuyin": "ㄐㄧㄣˋ ㄖㄨㄛˋ ㄏㄢˊ ㄔㄢˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "噤，閉口不作聲。「噤若寒蟬」指像寒冷季節時的蟬，一聲不響。比喻不敢說話。語本《後漢書．卷六七．黨錮列傳．杜密》。",
+      "long_def": "噤，閉口不作聲。「噤若寒蟬」指像寒冷季節時的蟬，一聲不響。比喻不敢說話。語本《後漢書．卷六七．黨錮列傳．杜密》。",
+      "usage_context": "比喻不敢說話。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "道不行則隱，莫怪我噤若寒蟬，不談國事。",
+      "literary_example": "道不行則隱，莫怪我噤若寒蟬，不談國事。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "442"
+      }
+    },
+    {
+      "status": "active",
+      "term": "瓜田李下",
+      "zhuyin": "ㄍㄨㄚ ㄊㄧㄢˊ ㄌㄧˇ ㄒㄧㄚˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "在瓜田裡不彎身穿鞋，在李樹下不舉手整理帽子。語本無名氏〈君子行〉。後用「瓜田李下」比喻容易引起懷疑的場合。",
+      "long_def": "在瓜田裡不彎身穿鞋，在李樹下不舉手整理帽子。語本無名氏〈君子行〉。後用「瓜田李下」比喻容易引起懷疑的場合。",
+      "usage_context": "比喻容易引起懷疑的場合。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "考試時東張西望，就難免有瓜田李下的作弊嫌疑。",
+      "literary_example": "考試時東張西望，就難免有瓜田李下的作弊嫌疑。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "443"
+      }
+    },
+    {
+      "status": "active",
+      "term": "望塵莫及",
+      "zhuyin": "ㄨㄤˋ ㄔㄣˊ ㄇㄛˋ ㄐㄧˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "只能遠望前面車馬揚起的塵土，而無法趕得上。比喻遠遠落在他人之後。＃語本《莊子．田子方》。",
+      "long_def": "只能遠望前面車馬揚起的塵土，而無法趕得上。比喻遠遠落在他人之後。＃語本《莊子．田子方》。 △「失之交臂」、「亦步亦趨」、「奔逸絕塵」、「瞠乎其後」",
+      "usage_context": "比喻遠遠落在他人之後。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他能力太強了，讓我們望塵莫及。",
+      "literary_example": "他能力太強了，讓我們望塵莫及。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "444"
+      }
+    },
+    {
+      "status": "active",
+      "term": "半途而廢",
+      "zhuyin": "ㄅㄢˋ ㄊㄨˊ ㄦˊ ㄈㄟˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「半途而廢」之「途」，典源作「塗」。事情沒做成功就停止。比喻做事情有始無終。語本《禮記．中庸》。",
+      "long_def": "「半途而廢」之「途」，典源作「塗」。事情沒做成功就停止。比喻做事情有始無終。語本《禮記．中庸》。 △「中道而廢」",
+      "usage_context": "比喻做事情有始無終。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "一個人做事情老是半途而廢，怎能有成？",
+      "literary_example": "一個人做事情老是半途而廢，怎能有成？",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "445"
+      }
+    },
+    {
+      "status": "active",
+      "term": "一籌莫展",
+      "zhuyin": "ㄧ ㄔㄡˊ ㄇㄛˋ ㄓㄢˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "籌，計策、計謀。「一籌莫展」指一點計策也施展不出來。比喻毫無辦法。語本《宋史．卷四三四．儒林列傳．蔡幼學》。",
+      "long_def": "籌，計策、計謀。「一籌莫展」指一點計策也施展不出來。比喻毫無辦法。語本《宋史．卷四三四．儒林列傳．蔡幼學》。",
+      "usage_context": "比喻毫無辦法。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他聳聳肩，攤攤手，表示一籌莫展。",
+      "literary_example": "他聳聳肩，攤攤手，表示一籌莫展。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "446"
+      }
+    },
+    {
+      "status": "active",
+      "term": "抱薪救火",
+      "zhuyin": "ㄅㄠˋ ㄒㄧㄣ ㄐㄧㄡˋ ㄏㄨㄛˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "抱著木柴去救火，比喻處理事情的方法錯誤，既無法達成目的，反而情勢更為惡劣。比喻用錯方法，而致禍害加深。＃語出《戰國策．魏策三》。",
+      "long_def": "抱著木柴去救火，比喻處理事情的方法錯誤，既無法達成目的，反而情勢更為惡劣。比喻用錯方法，而致禍害加深。＃語出《戰國策．魏策三》。 △「潑油救火」",
+      "usage_context": "比喻用錯方法，而致禍害加深。貶義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "對方需索無度，如果一味應了他，那我們豈不是在抱薪救火？",
+      "literary_example": "對方需索無度，如果一味應了他，那我們豈不是在抱薪救火？",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "447"
+      }
+    },
+    {
+      "status": "active",
+      "term": "大器晚成",
+      "zhuyin": "ㄉㄚˋ ㄑㄧˋ ㄨㄢˇ ㄔㄥˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "貴重的器物需要長時間才能完成。＃語出《老子》第四一章。後用「大器晚成」比喻卓越的人才往往成就較晚。",
+      "long_def": "貴重的器物需要長時間才能完成。＃語出《老子》第四一章。後用「大器晚成」比喻卓越的人才往往成就較晚。",
+      "usage_context": "比喻卓越的人才往往成就較晚。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這位畫家大器晚成，年輕時毫無名氣。",
+      "literary_example": "這位畫家大器晚成，年輕時毫無名氣。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "448"
+      }
+    },
+    {
+      "status": "active",
+      "term": "莫逆之交",
+      "zhuyin": "ㄇㄛˋ ㄋㄧˋ ㄓ ㄐㄧㄠ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "莫逆，相契而無所違逆。「莫逆之友」指心意相投的朋友。語本《莊子．大宗師》。",
+      "long_def": "莫逆，相契而無所違逆。「莫逆之友」指心意相投的朋友。語本《莊子．大宗師》。",
+      "usage_context": "心意相投的朋友。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我看他們倆都不夠真誠，算不上是莫逆之交。",
+      "literary_example": "我看他們倆都不夠真誠，算不上是莫逆之交。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "449"
+      }
+    },
+    {
+      "status": "active",
+      "term": "按圖索驥",
+      "zhuyin": "ㄢˋ ㄊㄨˊ ㄙㄨㄛˇ ㄐㄧˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "按照前人所畫的圖象，去尋求當代的良馬。比喻做事拘泥成規，呆板不知變通。語本《漢書．卷六七．楊胡米梅云傳．梅福》。後亦用「按圖索驥」比喻按照所掌握的線索辦事。",
+      "long_def": "按照前人所畫的圖象，去尋求當代的良馬。比喻做事拘泥成規，呆板不知變通。語本《漢書．卷六七．楊胡米梅云傳．梅福》。後亦用「按圖索驥」比喻按照所掌握的線索辦事。",
+      "usage_context": "比喻做事拘泥成法，呆板不知變通。 ＆比喻按照所掌握的線索辦事。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "古書知識要活用，假如只會死守經典，按圖索驥而不知變通是不行的。",
+      "literary_example": "古書知識要活用，假如只會死守經典，按圖索驥而不知變通是不行的。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "450"
+      }
+    },
+    {
+      "status": "active",
+      "term": "強弩之末",
+      "zhuyin": "ㄑㄧㄤˊ ㄋㄨˇ ㄓ ㄇㄛˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「強弩之末」之「強」，典源作「彊」。「彊」同「強」。強勁弓弩所射出的箭，到射程盡頭，已經沒有力道。比喻原本強大的力量已經衰竭，不能再發揮效用。＃語本《史記．卷一○八．韓長孺列傳》。",
+      "long_def": "「強弩之末」之「強」，典源作「彊」。「彊」同「強」。強勁弓弩所射出的箭，到射程盡頭，已經沒有力道。比喻原本強大的力量已經衰竭，不能再發揮效用。＃語本《史記．卷一○八．韓長孺列傳》。",
+      "usage_context": "比喻原本強大的力量已經衰竭，不能再發揮效用。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "敵人氣勢衰竭，看來已是強弩之末，我軍勝利在望。",
+      "literary_example": "敵人氣勢衰竭，看來已是強弩之末，我軍勝利在望。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "451"
+      }
+    },
+    {
+      "status": "active",
+      "term": "一網打盡",
+      "zhuyin": "ㄧ ㄨㄤˇ ㄉㄚˇ ㄐㄧㄣˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "用網子全部抓住。典出《呂氏春秋．孟冬紀．異用》。後用「一網打盡」比喻排斥異己，不留孑遺。",
+      "long_def": "用網子全部抓住。典出《呂氏春秋．孟冬紀．異用》。後用「一網打盡」比喻排斥異己，不留孑遺。 △「網開一面」",
+      "usage_context": "用網子全部抓住。＆比喻排斥異己，不留孑遺。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "為預防病媒蚊肆虐，一定要設法將牠們一網打盡。",
+      "literary_example": "為預防病媒蚊肆虐，一定要設法將牠們一網打盡。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "452"
+      }
+    },
+    {
+      "status": "active",
+      "term": "蜀犬吠日",
+      "zhuyin": "ㄕㄨˇ ㄑㄩㄢˇ ㄈㄟˋ ㄖˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "蜀地的狗看見了日出，便對著太陽狂叫。＃語本唐．岑參〈招北客文〉。後用「蜀犬吠日」形容人少見多怪。",
+      "long_def": "蜀地的狗看見了日出，便對著太陽狂叫。＃語本唐．岑參〈招北客文〉。後用「蜀犬吠日」形容人少見多怪。 △「蜀日越雪」、「粵犬吠雪」",
+      "usage_context": "形容人少見多怪。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "對不起！是我們少見多怪，您老就當我們是蜀犬吠日好了。",
+      "literary_example": "對不起！是我們少見多怪，您老就當我們是蜀犬吠日好了。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "453"
+      }
+    },
+    {
+      "status": "active",
+      "term": "曲突徙薪",
+      "zhuyin": "ㄑㄩ ㄊㄨˊ ㄒㄧˇ ㄒㄧㄣ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "將煙囪改彎，把柴薪移走。＃典出漢．劉向《說苑．卷一三．權謀》。後用「曲突徙薪」比喻事先採取措施，以防止危險發生。",
+      "long_def": "將煙囪改彎，把柴薪移走。＃典出漢．劉向《說苑．卷一三．權謀》。後用「曲突徙薪」比喻事先採取措施，以防止危險發生。 △「有備無患」",
+      "usage_context": "比喻事先採取措施，以防止危險發生。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "不要將易燃物置於火源之旁，曲突徙薪，以策安全。",
+      "literary_example": "不要將易燃物置於火源之旁，曲突徙薪，以策安全。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "454"
+      }
+    },
+    {
+      "status": "active",
+      "term": "矯枉過正",
+      "zhuyin": "ㄐㄧㄠˇ ㄨㄤˇ ㄍㄨㄛˋ ㄓㄥˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "糾正偏差超過適切程度，反而不符合中庸之道。＃語本《越絕書．卷一五．越絕篇敘外傳記十九》。",
+      "long_def": "糾正偏差超過適切程度，反而不符合中庸之道。＃語本《越絕書．卷一五．越絕篇敘外傳記十九》。",
+      "usage_context": "糾正偏差超過適切程度，反而不符合中庸之道。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "醫生要她減肥，結果她連水都不敢喝，真是矯枉過正。",
+      "literary_example": "醫生要她減肥，結果她連水都不敢喝，真是矯枉過正。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "455"
+      }
+    },
+    {
+      "status": "active",
+      "term": "吳牛喘月",
+      "zhuyin": "ㄨˊ ㄋㄧㄡˊ ㄔㄨㄢˇ ㄩㄝˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "吳地的水牛見到月亮以為是太陽，因此便自以為熱，氣喘不已。＃語本漢．應劭《風俗通義．佚文》。後來也用「吳牛喘月」轉而比喻人見到曾受其害的類似事物，而過分驚懼害怕。也用來形容天氣酷熱。",
+      "long_def": "吳地的水牛見到月亮以為是太陽，因此便自以為熱，氣喘不已。＃語本漢．應劭《風俗通義．佚文》。後來也用「吳牛喘月」轉而比喻人見到曾受其害的類似事物，而過分驚懼害怕。也用來形容天氣酷熱。",
+      "usage_context": "比喻人見到曾受其害的類似事物而過分驚懼害怕。＆形容天氣酷熱。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "地震一來，大家臉色都變了。你也別笑別人是吳牛喘月，其實你也差不多！",
+      "literary_example": "地震一來，大家臉色都變了。你也別笑別人是吳牛喘月，其實你也差不多！",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "456"
+      }
+    },
+    {
+      "status": "active",
+      "term": "居安思危",
+      "zhuyin": "ㄐㄩ ㄢ ㄙ ㄨㄟˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "處於安樂的時候，要想到危險可能會隨時出現。語出《左傳．襄公十一年》所引之《書》。",
+      "long_def": "處於安樂的時候，要想到危險可能會隨時出現。語出《左傳．襄公十一年》所引之《書》。",
+      "usage_context": "處於安樂的時候，要想到危險可能隨時出現。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "在安樂時居安思危，才能防患於未然。",
+      "literary_example": "在安樂時居安思危，才能防患於未然。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "457"
+      }
+    },
+    {
+      "status": "active",
+      "term": "賓至如歸",
+      "zhuyin": "ㄅㄧㄣ ㄓˋ ㄖㄨˊ ㄍㄨㄟ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "客人來到這裡就好像回到自己的家裡。語出《左傳．襄公三十一年》。後用「賓至如歸」形容主人招待周到親切，使客人感到滿意。",
+      "long_def": "客人來到這裡就好像回到自己的家裡。語出《左傳．襄公三十一年》。後用「賓至如歸」形容主人招待周到親切，使客人感到滿意。",
+      "usage_context": "形容主人招待周到親切，使客人感到滿意。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這家旅館標榜賓至如歸，果然名不虛傳。",
+      "literary_example": "這家旅館標榜賓至如歸，果然名不虛傳。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "458"
+      }
+    },
+    {
+      "status": "active",
+      "term": "不恥下問",
+      "zhuyin": "ㄅㄨˋ ㄔˇ ㄒㄧㄚˋ ㄨㄣˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "不以向身分較低微或是學問較自己淺陋的人求教為羞恥。語出《論語．公冶長》。",
+      "long_def": "不以向身分較低微或是學問較自己淺陋的人求教為羞恥。語出《論語．公冶長》。 △「不媿下學」、「無惡下問」",
+      "usage_context": "不以向身分較低微或是學問較自己淺陋的人求教為羞恥。褒義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他的成功就在於他能不恥下問，虛心受教。",
+      "literary_example": "他的成功就在於他能不恥下問，虛心受教。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "459"
+      }
+    },
+    {
+      "status": "active",
+      "term": "不可救藥",
+      "zhuyin": "ㄅㄨˋ ㄎㄜˇ ㄐㄧㄡˋ ㄧㄠˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "病重無藥可醫治。比喻到了無法挽救的地步。語出《詩經．大雅．板》。",
+      "long_def": "病重無藥可醫治。比喻到了無法挽救的地步。語出《詩經．大雅．板》。",
+      "usage_context": "病重無藥可醫治。＆比喻到了無法挽救的地步。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他這病來得好猛，一下子就被宣布不可救藥了。",
+      "literary_example": "他這病來得好猛，一下子就被宣布不可救藥了。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "460"
+      }
+    },
+    {
+      "status": "active",
+      "term": "河東獅吼",
+      "zhuyin": "ㄏㄜˊ ㄉㄨㄥ ㄕ ㄏㄡˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "比喻妻子凶悍發威。＃語出宋．蘇軾〈寄吳德仁兼簡陳季常〉詩。",
+      "long_def": "比喻妻子凶悍發威。＃語出宋．蘇軾〈寄吳德仁兼簡陳季常〉詩。 △「季常之癖」",
+      "usage_context": "比喻妻子凶悍發威。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他居然妄想金屋藏嬌，怎麼能怪河東獅吼呢？",
+      "literary_example": "他居然妄想金屋藏嬌，怎麼能怪河東獅吼呢？",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "461"
+      }
+    },
+    {
+      "status": "active",
+      "term": "手舞足蹈",
+      "zhuyin": "ㄕㄡˇ ㄨˇ ㄗㄨˊ ㄉㄠˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "揮手舉足，舞動跳躍。＃語本《詩經．大序》。後亦用「手舞足蹈」形容高興到了極點。",
+      "long_def": "揮手舉足，舞動跳躍。＃語本《詩經．大序》。後亦用「手舞足蹈」形容高興到了極點。",
+      "usage_context": "揮手舉足，舞動跳躍。＆形容高興到了極點。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "小孩子往往會邊看著電視，邊學著歌星手舞足蹈。",
+      "literary_example": "小孩子往往會邊看著電視，邊學著歌星手舞足蹈。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "462"
+      }
+    },
+    {
+      "status": "active",
+      "term": "愛屋及烏",
+      "zhuyin": "ㄞˋ ㄨ ㄐㄧˊ ㄨ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "因愛一個人，連帶地也愛護停留在他屋上的烏鴉。比喻愛一個人也連帶地關愛與他有關的一切。＃語本《尚書大傳．卷三．大戰篇》。",
+      "long_def": "因愛一個人，連帶地也愛護停留在他屋上的烏鴉。比喻愛一個人也連帶地關愛與他有關的一切。＃語本《尚書大傳．卷三．大戰篇》。",
+      "usage_context": "比喻愛一個人也連帶地關愛與他有關的一切。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "因為哥哥是傑出校友，老師愛屋及烏，對我也特別好。",
+      "literary_example": "因為哥哥是傑出校友，老師愛屋及烏，對我也特別好。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "463"
+      }
+    },
+    {
+      "status": "active",
+      "term": "不脛而走",
+      "zhuyin": "ㄅㄨˋ ㄐㄧㄥˋ ㄦˊ ㄗㄡˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「不脛而走」之「脛」，典源作「足」。脛，小腿。「不脛而走」指沒有腿也能去。＃語本《韓詩外傳》卷六。後用「不脛而走」比喻事物不用推廣，也能迅速傳播。",
+      "long_def": "「不脛而走」之「脛」，典源作「足」。脛，小腿。「不脛而走」指沒有腿也能去。＃語本《韓詩外傳》卷六。後用「不脛而走」比喻事物不用推廣，也能迅速傳播。 △「不翼而飛」",
+      "usage_context": "比喻事物不用推廣，也能迅速傳播。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "公司財務危機的消息不脛而走，弄得人心惶惶。",
+      "literary_example": "公司財務危機的消息不脛而走，弄得人心惶惶。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "464"
+      }
+    },
+    {
+      "status": "active",
+      "term": "大義滅親",
+      "zhuyin": "ㄉㄚˋ ㄧˋ ㄇㄧㄝˋ ㄑㄧㄣ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "指為了維護公理正義，不徇私情，滅了犯罪的親人，或讓他們接受法律制裁。語出《左傳．隱公四年》",
+      "long_def": "指為了維護公理正義，不徇私情，滅了犯罪的親人，或讓他們接受法律制裁。語出《左傳．隱公四年》",
+      "usage_context": "比喻為了維護公理正義，不徇私情，滅了犯罪的親人，或讓他們接受法律制裁。褒義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "歷史上那些能大義滅親的人物，都是令人敬佩的。",
+      "literary_example": "歷史上那些能大義滅親的人物，都是令人敬佩的。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "465"
+      }
+    },
+    {
+      "status": "active",
+      "term": "越俎代庖",
+      "zhuyin": "ㄩㄝˋ ㄗㄨˇ ㄉㄞˋ ㄆㄠˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "俎，禮器。「越俎代庖」本指擔任主祭的人，超越職責，代替廚師下廚。用來比喻踰越職分代人辦事。語本《莊子．逍遙遊》。",
+      "long_def": "俎，禮器。「越俎代庖」本指擔任主祭的人，超越職責，代替廚師下廚。用來比喻踰越職分代人辦事。語本《莊子．逍遙遊》。",
+      "usage_context": "比喻踰越職分代人辦事。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "管理金庫非我職責，我怎能越俎代庖呢？",
+      "literary_example": "管理金庫非我職責，我怎能越俎代庖呢？",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "466"
+      }
+    },
+    {
+      "status": "active",
+      "term": "水滴石穿",
+      "zhuyin": "ㄕㄨㄟˇ ㄉㄧ ㄕˊ ㄔㄨㄢ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "滴水久了可使石穿。比喻持之以恆，事必有成。語本《尸子》。後亦用「水滴石穿」比喻小問題日積月累也會成為大問題。",
+      "long_def": "滴水久了可使石穿。比喻持之以恆，事必有成。語本《尸子》。後亦用「水滴石穿」比喻小問題日積月累也會成為大問題。 △「繩鋸木斷」",
+      "usage_context": "滴水久了可使石穿。＆比喻持之以恆，事必有成。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "各位看簷下這塊石板都被雨水滴出洞來了，真是水滴石穿的最佳印證。",
+      "literary_example": "各位看簷下這塊石板都被雨水滴出洞來了，真是水滴石穿的最佳印證。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "467"
+      }
+    },
+    {
+      "status": "active",
+      "term": "炙手可熱",
+      "zhuyin": "ㄓˋ ㄕㄡˇ ㄎㄜˇ ㄖㄜˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "手一靠近就覺得很熱。比喻地位尊貴，勢燄熾盛。＃語出唐．裴庭裕《東觀奏記》卷中。後亦用「炙手可熱」比喻廣受歡迎，名聲極盛。",
+      "long_def": "手一靠近就覺得很熱。比喻地位尊貴，勢燄熾盛。＃語出唐．裴庭裕《東觀奏記》卷中。後亦用「炙手可熱」比喻廣受歡迎，名聲極盛。",
+      "usage_context": "比喻地位尊貴，勢燄熾盛。＆比喻廣受歡迎，名聲極盛。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "當年他在老總跟前真是紅到炙手可熱，誰敢得罪他？",
+      "literary_example": "當年他在老總跟前真是紅到炙手可熱，誰敢得罪他？",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "468"
+      }
+    },
+    {
+      "status": "active",
+      "term": "因噎廢食",
+      "zhuyin": "ㄧㄣ ㄧㄝ ㄈㄟˋ ㄕˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「因噎廢食」之「噎」，典源作「饐」。「饐」同「噎」。因為怕噎死，而不再吃東西。比喻曾經出過差錯，唯恐再錯而不去做該做的事。語本《呂氏春秋．孟秋紀．蕩兵》。",
+      "long_def": "「因噎廢食」之「噎」，典源作「饐」。「饐」同「噎」。因為怕噎死，而不再吃東西。比喻曾經出過差錯，唯恐再錯而不去做該做的事。語本《呂氏春秋．孟秋紀．蕩兵》。",
+      "usage_context": "比喻曾經出過差錯，唯恐再錯而不去做該做的事。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "因害怕摔飛機而不敢出國，簡直是因噎廢食。",
+      "literary_example": "因害怕摔飛機而不敢出國，簡直是因噎廢食。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "469"
+      }
+    },
+    {
+      "status": "active",
+      "term": "草菅人命",
+      "zhuyin": "ㄘㄠˇ ㄐㄧㄢ ㄖㄣˊ ㄇㄧㄥˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "菅，一種多年生的野草。「草菅人命」比喻輕視人命，任意加以殘害。＃語本《大戴禮記．保傅》。",
+      "long_def": "菅，一種多年生的野草。「草菅人命」比喻輕視人命，任意加以殘害。＃語本《大戴禮記．保傅》。",
+      "usage_context": "比喻輕視人命，任意加以殘害。貶義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "民主時代一切依法行事，豈可草菅人命？",
+      "literary_example": "民主時代一切依法行事，豈可草菅人命？",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "470"
+      }
+    },
+    {
+      "status": "active",
+      "term": "排難解紛",
+      "zhuyin": "ㄆㄞˊ ㄋㄢˋ ㄐㄧㄝˇ ㄈㄣ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "排除危難，解決紛爭。語本《戰國策．趙策三》。",
+      "long_def": "排除危難，解決紛爭。語本《戰國策．趙策三》。",
+      "usage_context": "指排除危難，解決紛爭。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "為人排難解紛必須客觀公正，才能使當事人折服。",
+      "literary_example": "為人排難解紛必須客觀公正，才能使當事人折服。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "471"
+      }
+    },
+    {
+      "status": "active",
+      "term": "如魚得水",
+      "zhuyin": "ㄖㄨˊ ㄩˊ ㄉㄜˊ ㄕㄨㄟˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "（一）像魚得游於水。如魚游水之姿，比喻筆法的靈活。語本秦．李斯〈用筆法〉。 （二）像魚得游於水。如魚得水之樂，比喻得到志同道合的人或適合於自己發展的環境。語本《三國志．卷三五．蜀書．諸葛亮傳》。 （三）像魚得游於水。如魚和水之親密，比喻兩人",
+      "long_def": "（一）像魚得游於水。如魚游水之姿，比喻筆法的靈活。語本秦．李斯〈用筆法〉。 （二）像魚得游於水。如魚得水之樂，比喻得到志同道合的人或適合於自己發展的環境。語本《三國志．卷三五．蜀書．諸葛亮傳》。 （三）像魚得游於水。如魚和水之親密，比喻兩人間情愛親密。※語或出《喻世明言．卷三．新橋市韓五賣春情》。",
+      "usage_context": "比喻得到與自己志同道合的人或適合於自己發展的環境。＆比喻兩人間情愛親密。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "把他安排到研發部門，真是讓他如魚得水，一展長才。",
+      "literary_example": "把他安排到研發部門，真是讓他如魚得水，一展長才。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "472"
+      }
+    },
+    {
+      "status": "active",
+      "term": "流芳百世",
+      "zhuyin": "ㄌㄧㄡˊ ㄈㄤ ㄅㄞˇ ㄕˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "美名流傳後世、為人所稱頌。※＃語或本《三國志．卷五．魏書．后妃傳．文德郭皇后傳》。",
+      "long_def": "美名流傳後世、為人所稱頌。※＃語或本《三國志．卷五．魏書．后妃傳．文德郭皇后傳》。 △「千載流芳」、「垂芳千載」、「萬古流芳」",
+      "usage_context": "美名流傳後世為人所稱頌。褒義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "連橫以他的歷史巨著《臺灣通史》流芳百世。",
+      "literary_example": "連橫以他的歷史巨著《臺灣通史》流芳百世。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "473"
+      }
+    },
+    {
+      "status": "active",
+      "term": "眾志成城",
+      "zhuyin": "ㄓㄨㄥˋ ㄓˋ ㄔㄥˊ ㄔㄥˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "眾人同心，力量堅固如城。比喻團結一致，同心協力。語本《國語．周語下》。",
+      "long_def": "眾人同心，力量堅固如城。比喻團結一致，同心協力。語本《國語．周語下》。 △「眾口鑠金」",
+      "usage_context": "比喻團結一致，同心協力。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "軍民團結，眾志成城，是國家安全的最佳保障。",
+      "literary_example": "軍民團結，眾志成城，是國家安全的最佳保障。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "474"
+      }
+    },
+    {
+      "status": "active",
+      "term": "管中窺豹",
+      "zhuyin": "ㄍㄨㄢˇ ㄓㄨㄥ ㄎㄨㄟ ㄅㄠˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "從管中只看見豹的一小部分。比喻所見甚小，未得全貌。※＃語或本南朝宋．劉義慶《世說新語．方正》。",
+      "long_def": "從管中只看見豹的一小部分。比喻所見甚小，未得全貌。※＃語或本南朝宋．劉義慶《世說新語．方正》。 △「以管窺天」、「管窺蠡測」",
+      "usage_context": "比喻所見甚小，未得全貌。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他這是管中窺豹之見，不足為憑。",
+      "literary_example": "他這是管中窺豹之見，不足為憑。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "475"
+      }
+    },
+    {
+      "status": "active",
+      "term": "南柯一夢",
+      "zhuyin": "ㄋㄢˊ ㄎㄜ ㄧ ㄇㄥˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "淳于棼夢中出任南柯太守，歷盡人生窮通榮辱，醒來才知道是一場夢。典出唐．李公佐《南柯太守傳》。後用「南柯一夢」比喻人生如夢，富貴得失無常。",
+      "long_def": "淳于棼夢中出任南柯太守，歷盡人生窮通榮辱，醒來才知道是一場夢。典出唐．李公佐《南柯太守傳》。後用「南柯一夢」比喻人生如夢，富貴得失無常。",
+      "usage_context": "比喻人生如夢，富貴得失無常。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "人生得又何嘆，失又何怨，恰似南柯一夢罷了。",
+      "literary_example": "人生得又何嘆，失又何怨，恰似南柯一夢罷了。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "476"
+      }
+    },
+    {
+      "status": "active",
+      "term": "束之高閣",
+      "zhuyin": "ㄕㄨˋ ㄓ ㄍㄠ ㄍㄜˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "把東西捆起來，放置於閣樓上。比喻棄置不用。＃語出晉．習鑿齒《漢晉春秋》。",
+      "long_def": "把東西捆起來，放置於閣樓上。比喻棄置不用。＃語出晉．習鑿齒《漢晉春秋》。",
+      "usage_context": "比喻棄置不用。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "書買回來後，就是要看，而不是把它們束之高閣。",
+      "literary_example": "書買回來後，就是要看，而不是把它們束之高閣。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "477"
+      }
+    },
+    {
+      "status": "active",
+      "term": "忍辱負重",
+      "zhuyin": "ㄖㄣˇ ㄖㄨˋ ㄈㄨˋ ㄓㄨㄥˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "忍受屈辱怨謗而承擔重任。語出《三國志．卷五八．吳書．陸遜傳》。",
+      "long_def": "忍受屈辱怨謗而承擔重任。語出《三國志．卷五八．吳書．陸遜傳》。",
+      "usage_context": "忍受屈辱怨謗而承擔重任。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "當年句踐為了復國，忍辱負重，歷盡艱辛。",
+      "literary_example": "當年句踐為了復國，忍辱負重，歷盡艱辛。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "478"
+      }
+    },
+    {
+      "status": "active",
+      "term": "臥薪嘗膽",
+      "zhuyin": "ㄨㄛˋ ㄒㄧㄣ ㄔㄤˊ ㄉㄢˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "越王句踐躺臥在柴薪上，不時舔嘗苦膽，以警惕自己不忘所受的屈辱。比喻刻苦自勵，發奮圖強。典出《史記．卷四一．越王句踐世家》。",
+      "long_def": "越王句踐躺臥在柴薪上，不時舔嘗苦膽，以警惕自己不忘所受的屈辱。比喻刻苦自勵，發奮圖強。典出《史記．卷四一．越王句踐世家》。",
+      "usage_context": "比喻刻苦自勵，發奮圖強。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "在報仇雪恥前，我決定先過臥薪嘗膽的生活。",
+      "literary_example": "在報仇雪恥前，我決定先過臥薪嘗膽的生活。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "479"
+      }
+    },
+    {
+      "status": "active",
+      "term": "買櫝還珠",
+      "zhuyin": "ㄇㄞˇ ㄉㄨˊ ㄏㄨㄢˊ ㄓㄨ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "買了裝珍珠的盒子，而把珍珠退還。典出《韓非子．外儲說左上》。後用「買櫝還珠」比喻捨本逐末，取捨失當。",
+      "long_def": "買了裝珍珠的盒子，而把珍珠退還。典出《韓非子．外儲說左上》。後用「買櫝還珠」比喻捨本逐末，取捨失當。",
+      "usage_context": "比喻捨本逐末，取捨失當。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "先把採購資訊和標的掌握好，免得受買櫝還珠的譏諷。",
+      "literary_example": "先把採購資訊和標的掌握好，免得受買櫝還珠的譏諷。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "480"
+      }
+    },
+    {
+      "status": "active",
+      "term": "不求甚解",
+      "zhuyin": "ㄅㄨˋ ㄑㄧㄡˊ ㄕㄣˋ ㄐㄧㄝˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "讀書著重理解義理，而不過度鑽研字句上的解釋。＃語出晉．陶潛〈五柳先生傳〉。後亦用「不求甚解」形容學習或工作的態度不認真，只求略懂皮毛而不深入理解。",
+      "long_def": "讀書著重理解義理，而不過度鑽研字句上的解釋。＃語出晉．陶潛〈五柳先生傳〉。後亦用「不求甚解」形容學習或工作的態度不認真，只求略懂皮毛而不深入理解。",
+      "usage_context": "讀書著重理解義理，而不過度鑽研字句上的解釋。＆形容學習或工作的態度不認真，只求略懂皮毛而不深入理解。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "讀書要先分類，有些書須精讀，有些因屬參考性質，不求甚解亦無妨。",
+      "literary_example": "讀書要先分類，有些書須精讀，有些因屬參考性質，不求甚解亦無妨。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "481"
+      }
+    },
+    {
+      "status": "active",
+      "term": "青黃不接",
+      "zhuyin": "ㄑㄧㄥ ㄏㄨㄤˊ ㄅㄨˋ ㄐㄧㄝ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "青，指還沒成熟的綠色禾苗；黃，指舊有的黃熟穀物。「青黃不接」指新穀還沒成熟，存糧又已吃完。※語或本宋．歐陽修〈言青苗錢第二劄子〉。後用「青黃不接」比喻有所匱乏，一時難以為繼。",
+      "long_def": "青，指還沒成熟的綠色禾苗；黃，指舊有的黃熟穀物。「青黃不接」指新穀還沒成熟，存糧又已吃完。※語或本宋．歐陽修〈言青苗錢第二劄子〉。後用「青黃不接」比喻有所匱乏，一時難以為繼。",
+      "usage_context": "指新穀還沒成熟，存糧又已吃完。＆比喻有所匱乏，一時難以為繼。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "當地農民每到青黃不接的時期，都要靠借高利貸維生，景況讓人同情。",
+      "literary_example": "當地農民每到青黃不接的時期，都要靠借高利貸維生，景況讓人同情。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "482"
+      }
+    },
+    {
+      "status": "active",
+      "term": "自慚形穢",
+      "zhuyin": "ㄗˋ ㄘㄢˊ ㄒㄧㄥˊ ㄏㄨㄟˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "因容貌儀態不如別人而感覺羞愧。語本南朝宋．劉義慶《世說新語．容止》。後用「自慚形穢」泛指與人相比自愧不如。",
+      "long_def": "因容貌儀態不如別人而感覺羞愧。語本南朝宋．劉義慶《世說新語．容止》。後用「自慚形穢」泛指與人相比自愧不如。",
+      "usage_context": "泛指與人相比自愧不如。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "是我覺得自慚形穢，不敢邀你到我家來。",
+      "literary_example": "是我覺得自慚形穢，不敢邀你到我家來。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "483"
+      }
+    },
+    {
+      "status": "active",
+      "term": "急如星火",
+      "zhuyin": "ㄐㄧˊ ㄖㄨˊ ㄒㄧㄥ ㄏㄨㄛˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "如流星的光那樣急速，形容情勢急迫。＃語本晉．李密〈陳情表〉。",
+      "long_def": "如流星的光那樣急速，形容情勢急迫。＃語本晉．李密〈陳情表〉。",
+      "usage_context": "形容情勢急迫。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這件公事急如星火，你得快點辦！",
+      "literary_example": "這件公事急如星火，你得快點辦！",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "484"
+      }
+    },
+    {
+      "status": "active",
+      "term": "背道而馳",
+      "zhuyin": "ㄅㄟˋ ㄉㄠˋ ㄦˊ ㄔˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "行為不合情理，做事違反正道。※＃語或本唐．白居易〈為人上宰相書〉。後用「背道而馳」比喻彼此的目標或理想完全相反。",
+      "long_def": "行為不合情理，做事違反正道。※＃語或本唐．白居易〈為人上宰相書〉。後用「背道而馳」比喻彼此的目標或理想完全相反。 △「南轅北轍」",
+      "usage_context": "比喻彼此的目標或理想完全相反。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這種老是和規定背道而馳的人，令我很頭痛。",
+      "literary_example": "這種老是和規定背道而馳的人，令我很頭痛。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "485"
+      }
+    },
+    {
+      "status": "active",
+      "term": "同舟共濟",
+      "zhuyin": "ㄊㄨㄥˊ ㄓㄡ ㄍㄨㄥˋ ㄐㄧˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "同乘一條船渡河，比喻同心協力，戰勝困難。語本《孫子．九地》。",
+      "long_def": "同乘一條船渡河，比喻同心協力，戰勝困難。語本《孫子．九地》。 △「風雨同舟」",
+      "usage_context": "比喻同心協力，戰勝困難。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "如今國難當前，全國人民要同舟共濟，奮發圖強。",
+      "literary_example": "如今國難當前，全國人民要同舟共濟，奮發圖強。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "486"
+      }
+    },
+    {
+      "status": "active",
+      "term": "披星戴月",
+      "zhuyin": "ㄆㄧ ㄒㄧㄥ ㄉㄞˋ ㄩㄝˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「披星戴月」之「戴」，典源作「帶」。頂著星月而走，形容早出晚歸、連夜趕路或工作備極勞累。語本唐．呂巖〈七言〉詩其四四。",
+      "long_def": "「披星戴月」之「戴」，典源作「帶」。頂著星月而走，形容早出晚歸、連夜趕路或工作備極勞累。語本唐．呂巖〈七言〉詩其四四。",
+      "usage_context": "形容早出晚歸、連夜趕路或工作備極勞累。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "為了完成任務，他披星戴月，兼程趕往前線。",
+      "literary_example": "為了完成任務，他披星戴月，兼程趕往前線。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "487"
+      }
+    },
+    {
+      "status": "active",
+      "term": "相敬如賓",
+      "zhuyin": "ㄒㄧㄤ ㄐㄧㄥˋ ㄖㄨˊ ㄅㄧㄣ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "形容夫妻間相處融洽，互相敬愛。＃語本《左傳．僖公三十三年》。",
+      "long_def": "形容夫妻間相處融洽，互相敬愛。＃語本《左傳．僖公三十三年》。",
+      "usage_context": "形容夫妻間相處融洽，互相敬愛。褒義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "賢伉儷相敬如賓，真是令人羨慕。",
+      "literary_example": "賢伉儷相敬如賓，真是令人羨慕。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "488"
+      }
+    },
+    {
+      "status": "active",
+      "term": "鶴立雞群",
+      "zhuyin": "ㄏㄜˋ ㄌㄧˋ ㄐㄧ ㄑㄩㄣˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "鶴站在雞群之中，非常突出。比喻人的儀表才能超群脫凡。＃語本晉．戴逵〈竹林七賢論〉。後亦用「鶴立雞群」比喻事物的不平凡。",
+      "long_def": "鶴站在雞群之中，非常突出。比喻人的儀表才能超群脫凡。＃語本晉．戴逵〈竹林七賢論〉。後亦用「鶴立雞群」比喻事物的不平凡。",
+      "usage_context": "比喻人的儀表才能超群脫凡。褒義。＆比喻事物的不平凡。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他的數學能力一直在班上鶴立雞群，獨占鰲頭。",
+      "literary_example": "他的數學能力一直在班上鶴立雞群，獨占鰲頭。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "489"
+      }
+    },
+    {
+      "status": "active",
+      "term": "格格不入",
+      "zhuyin": "ㄍㄜˊ ㄍㄜˊ ㄅㄨˋ ㄖㄨˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "格格，阻礙，隔閡。比喻抵觸阻隔而不相合。語本宋．陸九淵〈與徐子宜書〉其二。",
+      "long_def": "格格，阻礙，隔閡。比喻抵觸阻隔而不相合。語本宋．陸九淵〈與徐子宜書〉其二。 △「方枘圓鑿」",
+      "usage_context": "比喻抵觸阻隔而不相合。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他倆就像方枘圓鑿，自是格格不入。",
+      "literary_example": "他倆就像方枘圓鑿，自是格格不入。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "490"
+      }
+    },
+    {
+      "status": "active",
+      "term": "山窮水盡",
+      "zhuyin": "ㄕㄢ ㄑㄩㄥˊ ㄕㄨㄟˇ ㄐㄧㄣˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "指水陸交通阻斷，無法通行。※語或本北周．庾信〈周兗州刺史廣饒公宇文公神道碑〉。後用「山窮水盡」比喻走投無路，陷入絕境。",
+      "long_def": "指水陸交通阻斷，無法通行。※語或本北周．庾信〈周兗州刺史廣饒公宇文公神道碑〉。後用「山窮水盡」比喻走投無路，陷入絕境。",
+      "usage_context": "水陸交通阻斷，無法通行。＆比喻走投無路，陷入絕境。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "想不到在這山窮水盡之地，有這麼一座世外桃源。",
+      "literary_example": "想不到在這山窮水盡之地，有這麼一座世外桃源。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "491"
+      }
+    },
+    {
+      "status": "active",
+      "term": "功敗垂成",
+      "zhuyin": "ㄍㄨㄥ ㄅㄞˋ ㄔㄨㄟˊ ㄔㄥˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "指事情在即將成功時卻失敗了。原語如加「於」和「之時」三字，成為「功敗（於）垂成（之時）」，意義就很容易理解。垂，「將近」之意。語出《晉書．卷七九．謝安列傳》。",
+      "long_def": "指事情在即將成功時卻失敗了。原語如加「於」和「之時」三字，成為「功敗（於）垂成（之時）」，意義就很容易理解。垂，「將近」之意。語出《晉書．卷七九．謝安列傳》。",
+      "usage_context": "指事情在即將成功時卻失敗了。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這座橋梁本就要完工了，一場大地震卻讓它功敗垂成。",
+      "literary_example": "這座橋梁本就要完工了，一場大地震卻讓它功敗垂成。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "492"
+      }
+    },
+    {
+      "status": "active",
+      "term": "旁若無人",
+      "zhuyin": "ㄆㄤˊ ㄖㄨㄛˋ ㄨˊ ㄖㄣˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "對身旁的人視若無睹，形容說話舉動毫無顧忌。語出《史記．卷八六．刺客列傳．荊軻》。後亦用「旁若無人」形容態度高傲。",
+      "long_def": "對身旁的人視若無睹，形容說話舉動毫無顧忌。語出《史記．卷八六．刺客列傳．荊軻》。後亦用「旁若無人」形容態度高傲。 △「目中無人」、「目空一切」",
+      "usage_context": "形容說話舉動毫無顧忌。＆形容態度高傲。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "門一打開就看他走了進來，昂首闊步，旁若無人。",
+      "literary_example": "門一打開就看他走了進來，昂首闊步，旁若無人。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "493"
+      }
+    },
+    {
+      "status": "active",
+      "term": "青梅竹馬",
+      "zhuyin": "ㄑㄧㄥ ㄇㄟˊ ㄓㄨˊ ㄇㄚˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "竹馬，小孩夾在胯下當成馬騎的竹竿，有時會加上一個馬頭模型。「青梅竹馬」形容小兒女天真無邪的結伴嬉戲。語本唐．李白〈長干行〉二首之一。後用「青梅竹馬」比喻從小就相識的同伴。",
+      "long_def": "竹馬，小孩夾在胯下當成馬騎的竹竿，有時會加上一個馬頭模型。「青梅竹馬」形容小兒女天真無邪的結伴嬉戲。語本唐．李白〈長干行〉二首之一。後用「青梅竹馬」比喻從小就相識的同伴。 △「兩小無猜」",
+      "usage_context": "指從小就相識的同伴。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他們以前是青梅竹馬，現在是終身的伴侶。",
+      "literary_example": "他們以前是青梅竹馬，現在是終身的伴侶。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "494"
+      }
+    },
+    {
+      "status": "active",
+      "term": "五體投地",
+      "zhuyin": "ㄨˇ ㄊㄧˇ ㄊㄡˊ ㄉㄧˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "本為古印度最恭敬的致敬儀式，指雙膝雙肘及頭五處著地，佛教徒沿用以禮敬三寶（佛、法、僧）。※語出《大佛頂首楞嚴經》卷一。後用「五體投地」比喻非常欽佩對方。",
+      "long_def": "本為古印度最恭敬的致敬儀式，指雙膝雙肘及頭五處著地，佛教徒沿用以禮敬三寶（佛、法、僧）。※語出《大佛頂首楞嚴經》卷一。後用「五體投地」比喻非常欽佩對方。",
+      "usage_context": "致敬儀式，指雙膝雙肘及頭五處著地，佛教徒沿用以禮敬三寶。＆比喻非常欽佩。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "一進佛堂，就看到師姑五體投地跪拜在佛像前。",
+      "literary_example": "一進佛堂，就看到師姑五體投地跪拜在佛像前。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "495"
+      }
+    },
+    {
+      "status": "active",
+      "term": "強詞奪理",
+      "zhuyin": "ㄑㄧㄤˇ ㄘˊ ㄉㄨㄛˊ ㄌㄧˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「強詞奪理」之「奪」，典源作「昧」。形容沒有道理卻強為狡辯，硬說成有理。語本唐．神清《北山錄．卷三．合霸王》。",
+      "long_def": "「強詞奪理」之「奪」，典源作「昧」。形容沒有道理卻強為狡辯，硬說成有理。語本唐．神清《北山錄．卷三．合霸王》。",
+      "usage_context": "比喻人沒有道理卻強自狡辯。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "誠實為上策，我不願強詞奪理，掩過飾非。",
+      "literary_example": "誠實為上策，我不願強詞奪理，掩過飾非。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "496"
+      }
+    },
+    {
+      "status": "active",
+      "term": "投鞭斷流",
+      "zhuyin": "ㄊㄡˊ ㄅㄧㄢ ㄉㄨㄢˋ ㄌㄧㄡˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "把兵士的馬鞭都投到江裡，就能截斷水流。比喻軍旅眾多，兵力強大。＃語本北魏．崔鴻《前秦錄》。",
+      "long_def": "把兵士的馬鞭都投到江裡，就能截斷水流。比喻軍旅眾多，兵力強大。＃語本北魏．崔鴻《前秦錄》。",
+      "usage_context": "比喻軍旅眾多，兵力強大。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我今揮軍出征，兵多將廣，具有投鞭斷流的氣概，何敵不摧！",
+      "literary_example": "我今揮軍出征，兵多將廣，具有投鞭斷流的氣概，何敵不摧！",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "497"
+      }
+    },
+    {
+      "status": "active",
+      "term": "天花亂墜",
+      "zhuyin": "ㄊㄧㄢ ㄏㄨㄚ ㄌㄨㄢˋ ㄓㄨㄟˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「天花亂墜」之「花」，典源作「華」。「華」同「花」。傳說佛祖講經說法，感動了天神，把各色香花從空中紛紛撒下。＃典出《心地觀經．卷一．序品偈》。後亦用「天花亂墜」形容說話動聽，但多浮誇不切實際。",
+      "long_def": "「天花亂墜」之「花」，典源作「華」。「華」同「花」。傳說佛祖講經說法，感動了天神，把各色香花從空中紛紛撒下。＃典出《心地觀經．卷一．序品偈》。後亦用「天花亂墜」形容說話動聽，但多浮誇不切實際。",
+      "usage_context": "形容說話動聽，或浮誇不切實際。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他這番高論，真可使頑石點頭，天花亂墜。",
+      "literary_example": "他這番高論，真可使頑石點頭，天花亂墜。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "498"
+      }
+    },
+    {
+      "status": "active",
+      "term": "不速之客",
+      "zhuyin": "ㄅㄨˋ ㄙㄨˋ ㄓ ㄎㄜˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "速，邀請。「不速之客」指沒有邀請就自己來的客人。語出《易經．需卦》",
+      "long_def": "速，邀請。「不速之客」指沒有邀請就自己來的客人。語出《易經．需卦》",
+      "usage_context": "沒有邀請就自己來的客人。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "拜訪他人應該事先撥個電話，不宜當不速之客。",
+      "literary_example": "拜訪他人應該事先撥個電話，不宜當不速之客。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "499"
+      }
+    },
+    {
+      "status": "active",
+      "term": "勢不兩立",
+      "zhuyin": "ㄕˋ ㄅㄨˋ ㄌㄧㄤˇ ㄌㄧˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "依形勢是不能並存的。比喻敵對的雙方不能同時並存。＃◎語出《戰國策．楚策一》。",
+      "long_def": "依形勢是不能並存的。比喻敵對的雙方不能同時並存。＃◎語出《戰國策．楚策一》。 △「不共戴天」",
+      "usage_context": "比喻敵對的雙方不能同時並存。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我與他有不共戴天之仇，勢不兩立。",
+      "literary_example": "我與他有不共戴天之仇，勢不兩立。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "500"
+      }
+    },
+    {
+      "status": "active",
+      "term": "開誠布公",
+      "zhuyin": "ㄎㄞ ㄔㄥˊ ㄅㄨˋ ㄍㄨㄥ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "敞開胸懷，提出公正客觀的見解。比喻誠意待人，坦白無私。語本《三國志．卷三五．蜀書．諸葛亮傳》。",
+      "long_def": "敞開胸懷，提出公正客觀的見解。比喻誠意待人，坦白無私。語本《三國志．卷三五．蜀書．諸葛亮傳》。 △「開心見誠」",
+      "usage_context": "比喻誠意待人，坦白無私。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "她這一番開誠布公的話，證實了她對他的心意。",
+      "literary_example": "她這一番開誠布公的話，證實了她對他的心意。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "501"
+      }
+    },
+    {
+      "status": "active",
+      "term": "一絲不苟",
+      "zhuyin": "ㄧ ㄙ ㄅㄨˋ ㄍㄡˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "一絲，一點點。苟，隨便、草率。「一絲不苟」形容做事認真，一點也不馬虎。※語或本《周禮．地官．大司徒》。",
+      "long_def": "一絲，一點點。苟，隨便、草率。「一絲不苟」形容做事認真，一點也不馬虎。※語或本《周禮．地官．大司徒》。",
+      "usage_context": "形容做事認真，一點也不馬虎。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "由於他一絲不苟地要求，才讓品管部門屢次得獎。",
+      "literary_example": "由於他一絲不苟地要求，才讓品管部門屢次得獎。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "502"
+      }
+    },
+    {
+      "status": "active",
+      "term": "力不從心",
+      "zhuyin": "ㄌㄧˋ ㄅㄨˋ ㄘㄨㄥˊ ㄒㄧㄣ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "心裡想做某事，力量卻無法達到。※◎語或本漢．班昭〈為兄超求代疏〉。",
+      "long_def": "心裡想做某事，力量卻無法達到。※◎語或本漢．班昭〈為兄超求代疏〉。",
+      "usage_context": "心裡想做某事，力量卻無法達到。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "真抱歉！不是不肯幫忙，實在力不從心。",
+      "literary_example": "真抱歉！不是不肯幫忙，實在力不從心。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "503"
+      }
+    },
+    {
+      "status": "active",
+      "term": "撲朔迷離",
+      "zhuyin": "ㄆㄨ ㄕㄨㄛˋ ㄇㄧˊ ㄌㄧˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "指兔子雌雄的特性。語本古辭〈木蘭詩〉二首之一。但因雌雄兩兔在一起奔跑時，難以分辨，因此後用「撲朔迷離」形容事物錯綜複雜，難以驟然明瞭真相。亦用於形容景色迷濛。",
+      "long_def": "指兔子雌雄的特性。語本古辭〈木蘭詩〉二首之一。但因雌雄兩兔在一起奔跑時，難以分辨，因此後用「撲朔迷離」形容事物錯綜複雜，難以驟然明瞭真相。亦用於形容景色迷濛。",
+      "usage_context": "形容事物錯綜複雜，難以驟然明瞭真相。＆形容景色迷濛。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這件撲朔迷離的謀殺案，警方正全力偵辦中。",
+      "literary_example": "這件撲朔迷離的謀殺案，警方正全力偵辦中。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "504"
+      }
+    },
+    {
+      "status": "active",
+      "term": "舉足輕重",
+      "zhuyin": "ㄐㄩˇ ㄗㄨˊ ㄑㄧㄥ ㄓㄨㄥˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "一舉腳就會影響兩邊的輕重。形容所居地位極為重要，一舉一動皆足以影響全局。語本《後漢書．卷二三．竇融列傳》。",
+      "long_def": "一舉腳就會影響兩邊的輕重。形容所居地位極為重要，一舉一動皆足以影響全局。語本《後漢書．卷二三．竇融列傳》。",
+      "usage_context": "形容所居地位極為重要，一舉一動皆足以影響全局。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他是政壇的大老，一言九鼎，舉足輕重。",
+      "literary_example": "他是政壇的大老，一言九鼎，舉足輕重。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "505"
+      }
+    },
+    {
+      "status": "active",
+      "term": "再接再厲",
+      "zhuyin": "ㄗㄞˋ ㄐㄧㄝ ㄗㄞˋ ㄌㄧˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「再接再厲」之「厲」，典源作「礪」，音義同。本謂公雞相鬥，再次交戰前都要先把嘴磨利。比喻勇往直前，不因挫折而懈怠。語本唐．韓愈等〈鬥雞聯句〉。",
+      "long_def": "「再接再厲」之「厲」，典源作「礪」，音義同。本謂公雞相鬥，再次交戰前都要先把嘴磨利。比喻勇往直前，不因挫折而懈怠。語本唐．韓愈等〈鬥雞聯句〉。 △「再接再捷」",
+      "usage_context": "比喻勇往直前，不因挫折而懈怠。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我們絕不怕失敗，再接再厲，越挫越勇。",
+      "literary_example": "我們絕不怕失敗，再接再厲，越挫越勇。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "506"
+      }
+    },
+    {
+      "status": "active",
+      "term": "姍姍來遲",
+      "zhuyin": "ㄕㄢ ㄕㄢ ㄌㄞˊ ㄔˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "形容女子遲步緩來的樣子。語本《漢書．卷九七．外戚傳上．孝武李夫人》。後亦用「姍姍來遲」形容人或事物不依時出現，害人苦等。",
+      "long_def": "形容女子遲步緩來的樣子。語本《漢書．卷九七．外戚傳上．孝武李夫人》。後亦用「姍姍來遲」形容人或事物不依時出現，害人苦等。",
+      "usage_context": "形容女子遲步緩來的樣子。＆形容人或事物不依時出現，害人苦等。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "在眾人翹首企盼中，女主角終於姍姍來遲，巧笑倩兮地向大家揮手致意。",
+      "literary_example": "在眾人翹首企盼中，女主角終於姍姍來遲，巧笑倩兮地向大家揮手致意。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "507"
+      }
+    },
+    {
+      "status": "active",
+      "term": "明日黃花",
+      "zhuyin": "ㄇㄧㄥˊ ㄖˋ ㄏㄨㄤˊ ㄏㄨㄚ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「明日黃花」的「明日」，泛指九月九日重陽節過後；「黃花」，即菊花。「明日黃花」指錯過重陽節時令賞菊就將毫無興味。◎語出宋．蘇軾〈九日次韻王鞏〉詩。後用「明日黃花」比喻過時的事物。",
+      "long_def": "「明日黃花」的「明日」，泛指九月九日重陽節過後；「黃花」，即菊花。「明日黃花」指錯過重陽節時令賞菊就將毫無興味。◎語出宋．蘇軾〈九日次韻王鞏〉詩。後用「明日黃花」比喻過時的事物。",
+      "usage_context": "比喻過時的事物。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這份感情已是明日黃花，何必再提呢？",
+      "literary_example": "這份感情已是明日黃花，何必再提呢？",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "508"
+      }
+    },
+    {
+      "status": "active",
+      "term": "迎刃而解",
+      "zhuyin": "ㄧㄥˊ ㄖㄣˋ ㄦˊ ㄐㄧㄝˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "迎著刀刃的竹子，會順著刀勢裂開。比喻戰事進展順利。語出《晉書．卷三四．杜預列傳》。後用「迎刃而解」形容相連的事物很容易分解，亦用來比喻事情很容易處理。",
+      "long_def": "迎著刀刃的竹子，會順著刀勢裂開。比喻戰事進展順利。語出《晉書．卷三四．杜預列傳》。後用「迎刃而解」形容相連的事物很容易分解，亦用來比喻事情很容易處理。 △「勢如破竹」",
+      "usage_context": "比喻相連的事物很容易分開。＆比喻事情很容易解決。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我看師傅拿起尖刀一劃，魚皮迎刃而解，就和魚身分開了。",
+      "literary_example": "我看師傅拿起尖刀一劃，魚皮迎刃而解，就和魚身分開了。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "509"
+      }
+    },
+    {
+      "status": "active",
+      "term": "非驢非馬",
+      "zhuyin": "ㄈㄟ ㄌㄩˊ ㄈㄟ ㄇㄚˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "既不像驢，也不像馬。比喻事物不倫不類。語本《漢書．卷九六．西域傳下》。",
+      "long_def": "既不像驢，也不像馬。比喻事物不倫不類。語本《漢書．卷九六．西域傳下》。",
+      "usage_context": "比喻事物不倫不類。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這副對聯對得非驢非馬，叫人看了莫名其妙。",
+      "literary_example": "這副對聯對得非驢非馬，叫人看了莫名其妙。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "510"
+      }
+    },
+    {
+      "status": "active",
+      "term": "百發百中",
+      "zhuyin": "ㄅㄞˇ ㄈㄚ ㄅㄞˇ ㄓㄨㄥˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "每發一箭，都能射中。形容射擊技術高超，絕無虛發。＃語出《戰國策．西周策》。後亦用「百發百中」形容技術高妙，能命中目標。或形容料事、用計、施藥等相當準確。",
+      "long_def": "每發一箭，都能射中。形容射擊技術高超，絕無虛發。＃語出《戰國策．西周策》。後亦用「百發百中」形容技術高妙，能命中目標。或形容料事、用計、施藥等相當準確。 △「百步穿楊」、「前功盡棄」",
+      "usage_context": "形容技術高妙，能命中目標。＆形容料事、用計、施藥等相當準確。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "只見他反身跳投，又進了，真是百發百中！",
+      "literary_example": "只見他反身跳投，又進了，真是百發百中！",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "511"
+      }
+    },
+    {
+      "status": "active",
+      "term": "罄竹難書",
+      "zhuyin": "ㄑㄧㄥˋ ㄓㄨˊ ㄋㄢˊ ㄕㄨ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "罄，音ㄑㄧㄥˋ，用盡。「罄竹難書」指即使把所有竹子做成竹簡拿來書寫，也難以寫盡。形容災亂異象極多，無法一一記載。＃語本《呂氏春秋．季夏紀．明理》。後用「罄竹難書」形容罪狀極多。",
+      "long_def": "罄，音ㄑㄧㄥˋ，用盡。「罄竹難書」指即使把所有竹子做成竹簡拿來書寫，也難以寫盡。形容災亂異象極多，無法一一記載。＃語本《呂氏春秋．季夏紀．明理》。後用「罄竹難書」形容罪狀極多。",
+      "usage_context": "形容罪狀極多。貶義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他長期在鄉里間作威作福，罪行罄竹難書。",
+      "literary_example": "他長期在鄉里間作威作福，罪行罄竹難書。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "512"
+      }
+    },
+    {
+      "status": "active",
+      "term": "自作自受",
+      "zhuyin": "ㄗˋ ㄗㄨㄛˋ ㄗˋ ㄕㄡˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "自己做錯事，由自己承擔不良後果。※＃語或出敦煌變文《目連緣起》。",
+      "long_def": "自己做錯事，由自己承擔不良後果。※＃語或出敦煌變文《目連緣起》。 △「自作自當」",
+      "usage_context": "自己做了錯事，由自己承擔不良後果。貶義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "害人必害己，終究得自作自受。",
+      "literary_example": "害人必害己，終究得自作自受。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "513"
+      }
+    },
+    {
+      "status": "active",
+      "term": "自暴自棄",
+      "zhuyin": "ㄗˋ ㄅㄠˋ ㄗˋ ㄑㄧˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "自我蹧蹋和自我放棄，本指言行違背仁義。語本《孟子．離婁上》。後用「自暴自棄」指自甘墮落，不求上進。",
+      "long_def": "自我蹧蹋和自我放棄，本指言行違背仁義。語本《孟子．離婁上》。後用「自暴自棄」指自甘墮落，不求上進。 △「妄自菲薄」",
+      "usage_context": "指自甘墮落，不求上進。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "怕的是你自暴自棄，否則誰能奈何得了你？",
+      "literary_example": "怕的是你自暴自棄，否則誰能奈何得了你？",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "514"
+      }
+    },
+    {
+      "status": "active",
+      "term": "高枕無憂",
+      "zhuyin": "ㄍㄠ ㄓㄣˇ ㄨˊ ㄧㄡ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "墊高枕頭，無憂無慮地睡覺。形容身心安適，無憂無慮。◎語本《戰國策．齊策四》。",
+      "long_def": "墊高枕頭，無憂無慮地睡覺。形容身心安適，無憂無慮。◎語本《戰國策．齊策四》。 △「四分五裂」、「狡兔三窟」",
+      "usage_context": "形容身心安適，無憂無慮。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "年輕時的努力，是為了老年時可以高枕無憂。",
+      "literary_example": "年輕時的努力，是為了老年時可以高枕無憂。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "515"
+      }
+    },
+    {
+      "status": "active",
+      "term": "家喻戶曉",
+      "zhuyin": "ㄐㄧㄚ ㄩˋ ㄏㄨˋ ㄒㄧㄠˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「家喻戶曉」典源作「戶告人曉」，意為告訴家家戶戶知曉。＃語本漢．劉向《列女傳．卷五．梁節姑姊》。後來引申為家家戶戶都知曉，形容事情、名聲傳播極廣。",
+      "long_def": "「家喻戶曉」典源作「戶告人曉」，意為告訴家家戶戶知曉。＃語本漢．劉向《列女傳．卷五．梁節姑姊》。後來引申為家家戶戶都知曉，形容事情、名聲傳播極廣。",
+      "usage_context": "形容事情、名聲傳播極廣。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "西遊記的故事家喻戶曉。",
+      "literary_example": "西遊記的故事家喻戶曉。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "516"
+      }
+    },
+    {
+      "status": "active",
+      "term": "安步當車",
+      "zhuyin": "ㄢ ㄅㄨˋ ㄉㄤ ㄐㄩ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "悠閒安穩地走路，當作是乘車。比喻安貧樂賤。語出《戰國策．齊策四》。後用「安步當車」形容態度悠閒從容。",
+      "long_def": "悠閒安穩地走路，當作是乘車。比喻安貧樂賤。語出《戰國策．齊策四》。後用「安步當車」形容態度悠閒從容。",
+      "usage_context": "比喻安貧樂賤。＆形容態度悠閒從容。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我收入雖然不多，但晚食當肉，安步當車，也不需要什麼花費。",
+      "literary_example": "我收入雖然不多，但晚食當肉，安步當車，也不需要什麼花費。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "517"
+      }
+    },
+    {
+      "status": "active",
+      "term": "一見如故",
+      "zhuyin": "ㄧ ㄐㄧㄢˋ ㄖㄨˊ ㄍㄨˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "初次見面就相處融洽，如同老朋友一般。※＃語或本《左傳．襄公二十九年》。",
+      "long_def": "初次見面就相處融洽，如同老朋友一般。※＃語或本《左傳．襄公二十九年》。",
+      "usage_context": "初次見面就相處融洽，如同老朋友一般。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我倆雖是初次見面，卻是一見如故。",
+      "literary_example": "我倆雖是初次見面，卻是一見如故。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "518"
+      }
+    },
+    {
+      "status": "active",
+      "term": "小巫見大巫",
+      "zhuyin": "ㄒㄧㄠˇ ㄨ ㄐㄧㄢˋ ㄉㄚˋ ㄨ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "小巫師見到大巫師，相形見絀，法術無法施展。＃語出《莊子》逸文。後用「小巫見大巫」比喻能力相差甚遠，無法相提並論。",
+      "long_def": "小巫師見到大巫師，相形見絀，法術無法施展。＃語出《莊子》逸文。後用「小巫見大巫」比喻能力相差甚遠，無法相提並論。",
+      "usage_context": "比喻相形見絀，無法相提並論。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "臺北市的高樓很多，但和紐約市相比，就像是小巫見大巫了！",
+      "literary_example": "臺北市的高樓很多，但和紐約市相比，就像是小巫見大巫了！",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "519"
+      }
+    },
+    {
+      "status": "active",
+      "term": "怒髮衝冠",
+      "zhuyin": "ㄋㄨˋ ㄈㄚˇ ㄔㄨㄥ ㄍㄨㄢ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "憤怒得頭髮直豎頂起帽子。形容盛怒的樣子。◎＃語本《史記．卷八一．廉頗藺相如列傳》。",
+      "long_def": "憤怒得頭髮直豎頂起帽子。形容盛怒的樣子。◎＃語本《史記．卷八一．廉頗藺相如列傳》。 △「完璧歸趙」",
+      "usage_context": "形容盛怒的樣子。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "聽到兒子犯下如此罪行，氣得他怒髮衝冠。",
+      "literary_example": "聽到兒子犯下如此罪行，氣得他怒髮衝冠。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "520"
+      }
+    },
+    {
+      "status": "active",
+      "term": "一塵不染",
+      "zhuyin": "ㄧ ㄔㄣˊ ㄅㄨˋ ㄖㄢˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "本指佛家修道的人，不被六塵（色、聲、香、味、觸、法）所玷汙。語出《景德傳燈錄．卷三．弘忍大師》。後用「一塵不染」泛指人品純潔，絲毫不沾染壞習氣。也用於形容非常乾淨，一點灰塵都沒有。",
+      "long_def": "本指佛家修道的人，不被六塵（色、聲、香、味、觸、法）所玷汙。語出《景德傳燈錄．卷三．弘忍大師》。後用「一塵不染」泛指人品純潔，絲毫不沾染壞習氣。也用於形容非常乾淨，一點灰塵都沒有。",
+      "usage_context": "佛家修道的人，不被六塵（色、聲、香、味、觸、法）所玷汙。＆比喻人品純潔，絲毫不沾染壞習氣。＆形容非常乾淨，一點灰塵都沒有。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他是出家人，一塵不染，怎會管你這些閒事？",
+      "literary_example": "他是出家人，一塵不染，怎會管你這些閒事？",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "521"
+      }
+    },
+    {
+      "status": "active",
+      "term": "愚公移山",
+      "zhuyin": "ㄩˊ ㄍㄨㄥ ㄧˊ ㄕㄢ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "傳說北山愚公苦於家門前有太形、王屋二山阻攔出路，因而率領子孫挖掘土石，決心鏟平二山。典出《列子．湯問》。後用「愚公移山」比喻努力不懈，終能達成目標。或比喻效率不佳。",
+      "long_def": "傳說北山愚公苦於家門前有太形、王屋二山阻攔出路，因而率領子孫挖掘土石，決心鏟平二山。典出《列子．湯問》。後用「愚公移山」比喻努力不懈，終能達成目標。或比喻效率不佳。",
+      "usage_context": "比喻努力不懈，終能達成目標。＆比喻效率不佳。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "當年橫貫公路的開挖，正是現代版的愚公移山。",
+      "literary_example": "當年橫貫公路的開挖，正是現代版的愚公移山。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "522"
+      }
+    },
+    {
+      "status": "active",
+      "term": "口蜜腹劍",
+      "zhuyin": "ㄎㄡˇ ㄇㄧˋ ㄈㄨˋ ㄐㄧㄢˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "口中有蜜，肚子裡卻藏著劍。比喻一個人嘴上說得好聽，事實上卻內心險惡，處處想陷害別人。語本五代周．王仁裕《開元天寶遺事．肉腰刀》。",
+      "long_def": "口中有蜜，肚子裡卻藏著劍。比喻一個人嘴上說得好聽，事實上卻內心險惡，處處想陷害別人。語本五代周．王仁裕《開元天寶遺事．肉腰刀》。 △「笑裡藏刀」",
+      "usage_context": "比喻一個人嘴上說得好聽，事實上卻內心險惡，處處想陷害別人。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他是個口蜜腹劍的偽君子，不能深交。",
+      "literary_example": "他是個口蜜腹劍的偽君子，不能深交。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "523"
+      }
+    },
+    {
+      "status": "active",
+      "term": "不寒而慄",
+      "zhuyin": "ㄅㄨˋ ㄏㄢˊ ㄦˊ ㄌㄧˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「不寒而慄」之「慄」，典源作「栗」。「栗」通「慄」。雖不寒冷仍發抖。形容內心恐懼極至。語本《史記．卷一二二．酷吏列傳．義縱》。",
+      "long_def": "「不寒而慄」之「慄」，典源作「栗」。「栗」通「慄」。雖不寒冷仍發抖。形容內心恐懼極至。語本《史記．卷一二二．酷吏列傳．義縱》。",
+      "usage_context": "形容內心恐懼極至。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "聽說這是一間會讓人不寒而慄的鬼屋。",
+      "literary_example": "聽說這是一間會讓人不寒而慄的鬼屋。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "524"
+      }
+    },
+    {
+      "status": "active",
+      "term": "別開生面",
+      "zhuyin": "ㄅㄧㄝˊ ㄎㄞ ㄕㄥ ㄇㄧㄢˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "原指重新描繪舊畫像，而使原已褪色的面貌變得鮮明、生動。語本唐．杜甫〈丹青引贈曹將軍霸〉詩。後用「別開生面」比喻另外開創新的局面、風格、形式。",
+      "long_def": "原指重新描繪舊畫像，而使原已褪色的面貌變得鮮明、生動。語本唐．杜甫〈丹青引贈曹將軍霸〉詩。後用「別開生面」比喻另外開創新的局面、風格、形式。",
+      "usage_context": "比喻另外開創新的局面、風格、形式。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這幅畫真是別開生面，另有一番新意。",
+      "literary_example": "這幅畫真是別開生面，另有一番新意。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "525"
+      }
+    },
+    {
+      "status": "active",
+      "term": "枕戈待旦",
+      "zhuyin": "ㄓㄣˋ ㄍㄜ ㄉㄞˋ ㄉㄢˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "枕著武器等待天明。形容殺敵報國之心急切，隨時準備作戰。＃語出晉．孫盛《晉陽秋》。後用「枕戈待旦」形容人全神戒備，絲毫不敢鬆懈。",
+      "long_def": "枕著武器等待天明。形容殺敵報國之心急切，隨時準備作戰。＃語出晉．孫盛《晉陽秋》。後用「枕戈待旦」形容人全神戒備，絲毫不敢鬆懈。",
+      "usage_context": "形容殺敵報國之心急切，隨時準備作戰。＆形容人全神戒備，絲毫不敢鬆懈。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "前線將士們枕戈待旦，隨時準備為保家衛國而戰。",
+      "literary_example": "前線將士們枕戈待旦，隨時準備為保家衛國而戰。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "526"
+      }
+    },
+    {
+      "status": "active",
+      "term": "事半功倍",
+      "zhuyin": "ㄕˋ ㄅㄢˋ ㄍㄨㄥ ㄅㄟˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "事情只用古人一半的心力，而功效加倍。形容費力少而收效大。語本《孟子．公孫丑上》。後用「事半功倍」比喻工作效率高。",
+      "long_def": "事情只用古人一半的心力，而功效加倍。形容費力少而收效大。語本《孟子．公孫丑上》。後用「事半功倍」比喻工作效率高。 △「以解倒懸」、「事倍功半」、「飢不擇食」、「渴不擇飲」",
+      "usage_context": "形容費力少而收效大。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "等你技術純熟後，做起來就事半功倍了。",
+      "literary_example": "等你技術純熟後，做起來就事半功倍了。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "527"
+      }
+    },
+    {
+      "status": "active",
+      "term": "數典忘祖",
+      "zhuyin": "ㄕㄨˇ ㄉㄧㄢˇ ㄨㄤˋ ㄗㄨˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "典，典故。「數典忘祖」指列舉典故來論說事情，卻反而將自己祖先掌管典籍這件事給忘了。語出《左傳．昭公十五年》。後用「數典忘祖」比喻人忘本。",
+      "long_def": "典，典故。「數典忘祖」指列舉典故來論說事情，卻反而將自己祖先掌管典籍這件事給忘了。語出《左傳．昭公十五年》。後用「數典忘祖」比喻人忘本。",
+      "usage_context": "比喻人忘本。貶義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他總是數典忘祖，真是不肖子孫。",
+      "literary_example": "他總是數典忘祖，真是不肖子孫。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "528"
+      }
+    },
+    {
+      "status": "active",
+      "term": "中流砥柱",
+      "zhuyin": "ㄓㄨㄥ ㄌㄧㄡˊ ㄉㄧˇ ㄓㄨˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "如砥柱般屹立在湍急的水流中。＃語本《晏子春秋．內篇．諫下》。比喻獨立不撓、能擔當重任支撐大局的人。",
+      "long_def": "如砥柱般屹立在湍急的水流中。＃語本《晏子春秋．內篇．諫下》。比喻獨立不撓、能擔當重任支撐大局的人。 △「二桃殺三士」",
+      "usage_context": "比喻獨立不撓、能擔當重任支撐大局的人。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "時代青年要做國家的中流砥柱，要扛起振興國家的責任。",
+      "literary_example": "時代青年要做國家的中流砥柱，要扛起振興國家的責任。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "529"
+      }
+    },
+    {
+      "status": "active",
+      "term": "欲蓋彌彰",
+      "zhuyin": "ㄩˋ ㄍㄞˋ ㄇㄧˊ ㄓㄤ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "形容想要掩飾過失，反而使過失更加明顯。語本《左傳．昭公三十一年》。",
+      "long_def": "形容想要掩飾過失，反而使過失更加明顯。語本《左傳．昭公三十一年》。",
+      "usage_context": "形容想要掩飾過失，反而使過失更加顯明。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他忙於辯解的樣子，簡直就是欲蓋彌彰，不打自招。",
+      "literary_example": "他忙於辯解的樣子，簡直就是欲蓋彌彰，不打自招。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "530"
+      }
+    },
+    {
+      "status": "active",
+      "term": "對症下藥",
+      "zhuyin": "ㄉㄨㄟˋ ㄓㄥˋ ㄒㄧㄚˋ ㄧㄠˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "指針對病症開方用藥。比喻針對癥結所在，做有效的處理。※語或本《朱子語類．卷四一．論語．顏淵篇上》。",
+      "long_def": "指針對病症開方用藥。比喻針對癥結所在，做有效的處理。※語或本《朱子語類．卷四一．論語．顏淵篇上》。",
+      "usage_context": "針對病症開方用藥。＆比喻針對癥結所在，做有效的處理。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "經過醫生對症下藥，病人高燒已退。",
+      "literary_example": "經過醫生對症下藥，病人高燒已退。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "531"
+      }
+    },
+    {
+      "status": "active",
+      "term": "尾大不掉",
+      "zhuyin": "ㄨㄟˇ ㄉㄚˋ ㄅㄨˋ ㄉㄧㄠˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "掉，轉動。「尾大不掉」指尾巴過大就不易擺動。比喻下屬的勢力強大，在上者難以駕馭。語出《左傳．昭公十一年》。後亦用「尾大不掉」比喻事物因輕重關係倒置，形成難以控制的局面。",
+      "long_def": "掉，轉動。「尾大不掉」指尾巴過大就不易擺動。比喻下屬的勢力強大，在上者難以駕馭。語出《左傳．昭公十一年》。後亦用「尾大不掉」比喻事物因輕重關係倒置，形成難以控制的局面。",
+      "usage_context": "比喻下屬的勢力強大，在上者難以駕馭。＆比喻事物因輕重關係倒置，形成難以控制的局面。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "想不到他一路坐大，現在對總經理而言，他已是個尾大不掉的人物了。",
+      "literary_example": "想不到他一路坐大，現在對總經理而言，他已是個尾大不掉的人物了。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "532"
+      }
+    },
+    {
+      "status": "active",
+      "term": "抱殘守缺",
+      "zhuyin": "ㄅㄠˋ ㄘㄢˊ ㄕㄡˇ ㄑㄩㄝ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "固守舊有殘缺的經文不放。語本漢．劉歆〈移書讓太常博士〉。後用「抱殘守缺」比喻固守舊有事物或思想，而不知改進變通。",
+      "long_def": "固守舊有殘缺的經文不放。語本漢．劉歆〈移書讓太常博士〉。後用「抱殘守缺」比喻固守舊有事物或思想，而不知改進變通。",
+      "usage_context": "比喻固守舊有事物或思想，而不知改進變通。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "如果每個人都像他這樣抱殘守缺，那社會永遠不會進步。",
+      "literary_example": "如果每個人都像他這樣抱殘守缺，那社會永遠不會進步。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "533"
+      }
+    },
+    {
+      "status": "active",
+      "term": "熟能生巧",
+      "zhuyin": "ㄕㄡˊ ㄋㄥˊ ㄕㄥ ㄑㄧㄠˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "做事熟練了自然能領悟出其中巧妙旳竅門。※＃典或出宋．歐陽修《歸田錄》卷一。",
+      "long_def": "做事熟練了自然能領悟出其中巧妙旳竅門。※＃典或出宋．歐陽修《歸田錄》卷一。",
+      "usage_context": "做事熟練了自然能領悟出其中巧妙的竅門。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "打字一事，只要勤練，自然熟能生巧。",
+      "literary_example": "打字一事，只要勤練，自然熟能生巧。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "534"
+      }
+    },
+    {
+      "status": "active",
+      "term": "鞭長莫及",
+      "zhuyin": "ㄅㄧㄢ ㄔㄤˊ ㄇㄛˋ ㄐㄧˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "馬鞭雖長，但距離太遠，打不到馬腹。比喻力量有所不及。語本《左傳．宣公十五年》。",
+      "long_def": "馬鞭雖長，但距離太遠，打不到馬腹。比喻力量有所不及。語本《左傳．宣公十五年》。",
+      "usage_context": "比喻力量有所不及。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "對偏遠地區居民的照顧，政府常有鞭長莫及之感。",
+      "literary_example": "對偏遠地區居民的照顧，政府常有鞭長莫及之感。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "535"
+      }
+    },
+    {
+      "status": "active",
+      "term": "開卷有益",
+      "zhuyin": "ㄎㄞ ㄐㄩㄢˋ ㄧㄡˇ ㄧˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「開卷有益」之「益」，典源作「得」。打開書冊閱讀，必有所領悟獲得。＃語本《宋書．卷九三．隱逸列傳．陶潛》。後用「開卷有益」指打開書本閱讀，即能得到好處。",
+      "long_def": "「開卷有益」之「益」，典源作「得」。打開書冊閱讀，必有所領悟獲得。＃語本《宋書．卷九三．隱逸列傳．陶潛》。後用「開卷有益」指打開書本閱讀，即能得到好處。",
+      "usage_context": "打開書本閱讀，即能得到好處。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "趁年輕多讀些書，開卷有益！",
+      "literary_example": "趁年輕多讀些書，開卷有益！",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "536"
+      }
+    },
+    {
+      "status": "active",
+      "term": "虎口餘生",
+      "zhuyin": "ㄏㄨˇ ㄎㄡˇ ㄩˊ ㄕㄥ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "僥倖的從老虎口中逃出來，保全了性命。比喻冒大險而不死。語本《莊子．盜跖》。",
+      "long_def": "僥倖的從老虎口中逃出來，保全了性命。比喻冒大險而不死。語本《莊子．盜跖》。 △「九死一生」、「劫後餘生」",
+      "usage_context": "比喻冒大險而不死。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "談起這次虎口餘生的經歷，他仍心有餘悸。",
+      "literary_example": "談起這次虎口餘生的經歷，他仍心有餘悸。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "537"
+      }
+    },
+    {
+      "status": "active",
+      "term": "風馬牛不相及",
+      "zhuyin": "ㄈㄥ ㄇㄚˇ ㄋㄧㄡˊ ㄅㄨˋ ㄒㄧㄤ ㄐㄧˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "比喻事物之間彼此毫不相干。語出《左傳．僖公四年》。",
+      "long_def": "比喻事物之間彼此毫不相干。語出《左傳．僖公四年》。 △「馬牛其風」",
+      "usage_context": "比喻事物之間彼此毫不相干。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他和這件事根本風馬牛不相及，別去煩他了。",
+      "literary_example": "他和這件事根本風馬牛不相及，別去煩他了。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "538"
+      }
+    },
+    {
+      "status": "active",
+      "term": "海市蜃樓",
+      "zhuyin": "ㄏㄞˇ ㄕˋ ㄕㄣˋ ㄌㄡˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "蜃，大蛤蜊。傳說蜃能吐氣而形成樓臺城市等景觀，其實這是由於光線折射造成的自然現象。語本《史記．卷二七．天官書》。後用「海市蜃樓」比喻虛幻的事物。",
+      "long_def": "蜃，大蛤蜊。傳說蜃能吐氣而形成樓臺城市等景觀，其實這是由於光線折射造成的自然現象。語本《史記．卷二七．天官書》。後用「海市蜃樓」比喻虛幻的事物。 △「空中樓閣」",
+      "usage_context": "由於光線折射造成的自然現象或虛幻的影象。＆比喻虛幻的事物。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "此地海面，到了夏天偶而會出現海市蜃樓的現象。",
+      "literary_example": "此地海面，到了夏天偶而會出現海市蜃樓的現象。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "539"
+      }
+    },
+    {
+      "status": "active",
+      "term": "口是心非",
+      "zhuyin": "ㄎㄡˇ ㄕˋ ㄒㄧㄣ ㄈㄟ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "口中如此說，心中不作如此想。指心裡想的和嘴上說的不一致。◎語出《抱朴子．內篇．黃白》。",
+      "long_def": "口中如此說，心中不作如此想。指心裡想的和嘴上說的不一致。◎語出《抱朴子．內篇．黃白》。 △「言不由衷」、「陽奉陰違」",
+      "usage_context": "指心裡想的和嘴上說的不一致。貶義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他這個人不誠懇，口是心非。",
+      "literary_example": "他這個人不誠懇，口是心非。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "540"
+      }
+    },
+    {
+      "status": "active",
+      "term": "不毛之地",
+      "zhuyin": "ㄅㄨˋ ㄇㄠˊ ㄓ ㄉㄧˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "毛，種植五穀。「不毛之地」指堅硬瘠薄、不適種植五穀的土地。語出《公羊傳．宣公十二年》。後用「不毛之地」形容荒涼貧瘠的土地。",
+      "long_def": "毛，種植五穀。「不毛之地」指堅硬瘠薄、不適種植五穀的土地。語出《公羊傳．宣公十二年》。後用「不毛之地」形容荒涼貧瘠的土地。 △「不食之地」",
+      "usage_context": "形容荒涼貧瘠的土地。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "一旦受到核子輻射汙染，再好的良田也會變成不毛之地。",
+      "literary_example": "一旦受到核子輻射汙染，再好的良田也會變成不毛之地。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "541"
+      }
+    },
+    {
+      "status": "active",
+      "term": "大發雷霆",
+      "zhuyin": "ㄉㄚˋ ㄈㄚ ㄌㄟˊ ㄊㄧㄥˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "盛怒時大聲斥責，聲如雷霆，令人驚恐。形容大發脾氣，大聲責罵。語本《三國志．卷五八．吳書．陸遜傳》。",
+      "long_def": "盛怒時大聲斥責，聲如雷霆，令人驚恐。形容大發脾氣，大聲責罵。語本《三國志．卷五八．吳書．陸遜傳》。 △「暴跳如雷」",
+      "usage_context": "形容大發脾氣，大聲責罵。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我看老總在辦公室裡大發雷霆，我就沒敢走進去。",
+      "literary_example": "我看老總在辦公室裡大發雷霆，我就沒敢走進去。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "542"
+      }
+    },
+    {
+      "status": "active",
+      "term": "聲東擊西",
+      "zhuyin": "ㄕㄥ ㄉㄨㄥ ㄐㄧˊ ㄒㄧ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "表面做出要攻打東邊的聲勢，實際上卻集中主力攻擊對方不備的西邊的戰略。＃語本《淮南子．兵略》。後亦用「聲東擊西」比喻以虛張聲勢，來轉移對方的注意力。",
+      "long_def": "表面做出要攻打東邊的聲勢，實際上卻集中主力攻擊對方不備的西邊的戰略。＃語本《淮南子．兵略》。後亦用「聲東擊西」比喻以虛張聲勢，來轉移對方的注意力。",
+      "usage_context": "以虛張聲勢，來轉移對方的注意力。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他們以聲東擊西的方法轉移敵人的注意，成功地攻占了山頭。",
+      "literary_example": "他們以聲東擊西的方法轉移敵人的注意，成功地攻占了山頭。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "543"
+      }
+    },
+    {
+      "status": "active",
+      "term": "平步青雲",
+      "zhuyin": "ㄆㄧㄥˊ ㄅㄨˋ ㄑㄧㄥ ㄩㄣˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「平步」，像平常一樣地舉步，比喻平坦順利。語出唐．白居易〈潯陽歲晚寄元八郎中庾三十二員外〉詩。「青雲」，天上的雲，比喻很高的地位。語出《史記．卷七九．范雎蔡澤列傳．范雎》。「平步青雲」言像平常一樣地舉步，就可以輕易走上青雲，比喻順利晉升到顯",
+      "long_def": "「平步」，像平常一樣地舉步，比喻平坦順利。語出唐．白居易〈潯陽歲晚寄元八郎中庾三十二員外〉詩。「青雲」，天上的雲，比喻很高的地位。語出《史記．卷七九．范雎蔡澤列傳．范雎》。「平步青雲」言像平常一樣地舉步，就可以輕易走上青雲，比喻順利晉升到顯要的地位。",
+      "usage_context": "比喻順利晉升到很高的地位。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他為求平步青雲，竟然認賊作父，十分可恥。",
+      "literary_example": "他為求平步青雲，竟然認賊作父，十分可恥。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "544"
+      }
+    },
+    {
+      "status": "active",
+      "term": "一知半解",
+      "zhuyin": "ㄧ ㄓ ㄅㄢˋ ㄐㄧㄝˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "形容一個人所知不全，了解不深。※＃語或出宋．張栻〈寄周子充尚書〉。",
+      "long_def": "形容一個人所知不全，了解不深。※＃語或出宋．張栻〈寄周子充尚書〉。",
+      "usage_context": "形容人所知不全，了解不深。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這事我一知半解，恕我無法向你說明。",
+      "literary_example": "這事我一知半解，恕我無法向你說明。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "545"
+      }
+    },
+    {
+      "status": "active",
+      "term": "自怨自艾",
+      "zhuyin": "ㄗˋ ㄩㄢˋ ㄗˋ ㄧˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "悔恨自己犯下的錯誤而加以改正。語出《孟子．萬章上》。後用「自怨自艾」形容消極地埋怨自責。",
+      "long_def": "悔恨自己犯下的錯誤而加以改正。語出《孟子．萬章上》。後用「自怨自艾」形容消極地埋怨自責。",
+      "usage_context": "形容人消極的埋怨自責。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "知錯能改就好，用不著老是自怨自艾。",
+      "literary_example": "知錯能改就好，用不著老是自怨自艾。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "546"
+      }
+    },
+    {
+      "status": "active",
+      "term": "曲高和寡",
+      "zhuyin": "ㄑㄩˇ ㄍㄠ ㄏㄜˋ ㄍㄨㄚˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "曲調愈高雅，跟著唱和的人就愈少。比喻無法引起大眾的共鳴。語本戰國楚．宋玉〈對楚王問〉。",
+      "long_def": "曲調愈高雅，跟著唱和的人就愈少。比喻無法引起大眾的共鳴。語本戰國楚．宋玉〈對楚王問〉。 △「下里巴人」、「陽春白雪」",
+      "usage_context": "比喻無法引起大眾的共鳴。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這種無伴奏的清唱音樂，由於曲高和寡，根本沒有市場。",
+      "literary_example": "這種無伴奏的清唱音樂，由於曲高和寡，根本沒有市場。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "547"
+      }
+    },
+    {
+      "status": "active",
+      "term": "怨聲載道",
+      "zhuyin": "ㄩㄢˋ ㄕㄥ ㄗㄞˋ ㄉㄠˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "道路上到處充滿了埋怨的聲音。形容群眾普遍的怨恨和不滿。語本《後漢書．卷六三．李杜列傳．李固》。",
+      "long_def": "道路上到處充滿了埋怨的聲音。形容群眾普遍的怨恨和不滿。語本《後漢書．卷六三．李杜列傳．李固》。",
+      "usage_context": "形容群眾普遍的怨恨和不滿。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "股票指數一直跌，投資人怨聲載道。",
+      "literary_example": "股票指數一直跌，投資人怨聲載道。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "548"
+      }
+    },
+    {
+      "status": "active",
+      "term": "指桑罵槐",
+      "zhuyin": "ㄓˇ ㄙㄤ ㄇㄚˋ ㄏㄨㄞˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "指著桑樹罵槐樹，比喻拐彎抹角地罵人。※語或本《金瓶梅詞話》第六二回。",
+      "long_def": "指著桑樹罵槐樹，比喻拐彎抹角地罵人。※語或本《金瓶梅詞話》第六二回。",
+      "usage_context": "比喻拐彎抹角地罵人。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "你說她在指桑罵槐，我怎麼都聽不出來？",
+      "literary_example": "你說她在指桑罵槐，我怎麼都聽不出來？",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "549"
+      }
+    },
+    {
+      "status": "active",
+      "term": "忍氣吞聲",
+      "zhuyin": "ㄖㄣˇ ㄑㄧˋ ㄊㄨㄣ ㄕㄥ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "忍住氣，不敢出聲。「忍氣吞聲」形容受了氣也強自忍耐，不敢作聲抗爭。語本南朝梁．任孝恭〈為汝南王檄魏〉。",
+      "long_def": "忍住氣，不敢出聲。「忍氣吞聲」形容受了氣也強自忍耐，不敢作聲抗爭。語本南朝梁．任孝恭〈為汝南王檄魏〉。 △「飲恨吞聲」",
+      "usage_context": "形容受了氣也強自忍耐，不敢作聲抗爭。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我如今寄人籬下，凡事都得忍氣吞聲。",
+      "literary_example": "我如今寄人籬下，凡事都得忍氣吞聲。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "550"
+      }
+    },
+    {
+      "status": "active",
+      "term": "投桃報李",
+      "zhuyin": "ㄊㄡˊ ㄊㄠˊ ㄅㄠˋ ㄌㄧˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "你送給我桃子，我回贈李子。語本《詩經．大雅．抑》。後用「投桃報李」比喻朋友間友好往來或相互贈答。",
+      "long_def": "你送給我桃子，我回贈李子。語本《詩經．大雅．抑》。後用「投桃報李」比喻朋友間友好往來或相互贈答。 △「禮尚往來」",
+      "usage_context": "比喻朋友間友好往來或相互贈答。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "自古禮尚往來，所以投桃報李本是應該。",
+      "literary_example": "自古禮尚往來，所以投桃報李本是應該。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "551"
+      }
+    },
+    {
+      "status": "active",
+      "term": "空前絕後",
+      "zhuyin": "ㄎㄨㄥ ㄑㄧㄢˊ ㄐㄩㄝˊ ㄏㄡˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "比喻超越古今，無與倫比。語本《晉起居注》。",
+      "long_def": "比喻超越古今，無與倫比。語本《晉起居注》。",
+      "usage_context": "比喻超越古今，無與倫比。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "九一一大地震造成的損失，可謂空前絕後。",
+      "literary_example": "九一一大地震造成的損失，可謂空前絕後。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "552"
+      }
+    },
+    {
+      "status": "active",
+      "term": "否極泰來",
+      "zhuyin": "ㄆㄧˇ ㄐㄧˊ ㄊㄞˋ ㄌㄞˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "情況由壞逐漸好轉。語本漢．趙曄《吳越春秋．句踐入臣外傳》。",
+      "long_def": "情況由壞逐漸好轉。語本漢．趙曄《吳越春秋．句踐入臣外傳》。",
+      "usage_context": "情況由壞逐漸好轉。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他辛苦了幾年，終於否極泰來，事業漸有起色。",
+      "literary_example": "他辛苦了幾年，終於否極泰來，事業漸有起色。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "553"
+      }
+    },
+    {
+      "status": "active",
+      "term": "飲水思源",
+      "zhuyin": "ㄧㄣˇ ㄕㄨㄟˇ ㄙ ㄩㄢˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "喝水時就想起水的源頭。比喻人不忘本。語本北周．庾信〈徵調曲〉。",
+      "long_def": "喝水時就想起水的源頭。比喻人不忘本。語本北周．庾信〈徵調曲〉。",
+      "usage_context": "比喻人不忘本。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "做人要飲水思源，感恩圖報。",
+      "literary_example": "做人要飲水思源，感恩圖報。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "554"
+      }
+    },
+    {
+      "status": "active",
+      "term": "克紹箕裘",
+      "zhuyin": "ㄎㄜˋ ㄕㄠˋ ㄐㄧ ㄑㄧㄡˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "紹，繼承。「克紹箕裘」比喻能繼承父業。語本《禮記．學記》。後亦用「克紹箕裘」比喻能繼承師業。",
+      "long_def": "紹，繼承。「克紹箕裘」比喻能繼承父業。語本《禮記．學記》。後亦用「克紹箕裘」比喻能繼承師業。 △「箕裘廢墜」",
+      "usage_context": "比喻能繼承父業。＆比喻能繼承師業。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我看令公子聰明伶俐，將來必能克紹箕裘。",
+      "literary_example": "我看令公子聰明伶俐，將來必能克紹箕裘。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "555"
+      }
+    },
+    {
+      "status": "active",
+      "term": "兩敗俱傷",
+      "zhuyin": "ㄌㄧㄤˇ ㄅㄞˋ ㄐㄩˋ ㄕㄤ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "兩者相爭，俱受損傷。語本《新五代史．卷三八．宦者傳．論》。",
+      "long_def": "兩者相爭，俱受損傷。語本《新五代史．卷三八．宦者傳．論》。",
+      "usage_context": "比喻兩者相爭，俱受損傷。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我勸你們說和吧！免得兩敗俱傷。",
+      "literary_example": "我勸你們說和吧！免得兩敗俱傷。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "556"
+      }
+    },
+    {
+      "status": "active",
+      "term": "兩全其美",
+      "zhuyin": "ㄌㄧㄤˇ ㄑㄩㄢˊ ㄑㄧˊ ㄇㄟˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "做事顧全雙方，使兩方面都獲益。※＃語或出元．陳天祥〈論盧世榮姦邪狀〉。",
+      "long_def": "做事顧全雙方，使兩方面都獲益。※＃語或出元．陳天祥〈論盧世榮姦邪狀〉。 △「兩全之美」、「兩全其適」",
+      "usage_context": "做事顧全雙方，使兩方面都有獲益。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這件缺錢缺人的事要辦得兩全其美，談何容易。",
+      "literary_example": "這件缺錢缺人的事要辦得兩全其美，談何容易。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "557"
+      }
+    },
+    {
+      "status": "active",
+      "term": "才高八斗",
+      "zhuyin": "ㄘㄞˊ ㄍㄠ ㄅㄚ ㄉㄡˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "比喻才學極高。語本宋．無名氏《釋常談．卷中．八斗之才》",
+      "long_def": "比喻才學極高。語本宋．無名氏《釋常談．卷中．八斗之才》",
+      "usage_context": "比喻人才學極高。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "聽君一席話，始知才高八斗語非假。",
+      "literary_example": "聽君一席話，始知才高八斗語非假。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "558"
+      }
+    },
+    {
+      "status": "active",
+      "term": "盲人摸象",
+      "zhuyin": "ㄇㄤˊ ㄖㄣˊ ㄇㄛ ㄒㄧㄤˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "佛經故事中，以盲者各自所摸大象身體的不同部位來形容象，比喻以偏概全，未能洞明真相。典出《大般涅槃經》卷三○。",
+      "long_def": "佛經故事中，以盲者各自所摸大象身體的不同部位來形容象，比喻以偏概全，未能洞明真相。典出《大般涅槃經》卷三○。 △「眾盲模象」",
+      "usage_context": "比喻以偏概全，未能洞明真相。貶義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "對事情只片面了解就下判斷，不等於盲人摸象嗎？",
+      "literary_example": "對事情只片面了解就下判斷，不等於盲人摸象嗎？",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "559"
+      }
+    },
+    {
+      "status": "active",
+      "term": "因陋就簡",
+      "zhuyin": "ㄧㄣ ㄌㄡˋ ㄐㄧㄡˋ ㄐㄧㄢˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "比喻做事馬虎，不力求完善美備。語本漢．劉歆〈移書讓太常博士〉。後亦用「因陋就簡」比喻因循或遷就簡陋的現實環境去做事。",
+      "long_def": "比喻做事馬虎，不力求完善美備。語本漢．劉歆〈移書讓太常博士〉。後亦用「因陋就簡」比喻因循或遷就簡陋的現實環境去做事。",
+      "usage_context": "比喻做事馬虎，不力求完善美備。＆比喻因循或遷就簡陋的現實環境去做事。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "像這樣一味因陋就簡，而不設法改善，教育怎能辦得好？",
+      "literary_example": "像這樣一味因陋就簡，而不設法改善，教育怎能辦得好？",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "560"
+      }
+    },
+    {
+      "status": "active",
+      "term": "見獵心喜",
+      "zhuyin": "ㄐㄧㄢˋ ㄌㄧㄝˋ ㄒㄧㄣ ㄒㄧˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "看到有人打獵，激起舊日的愛好而心喜。＃語本宋．周敦頤〈周子遺事〉。後用「見獵心喜」比喻舊習難忘，看見有人在做自己所愛好的事情，便心情愉悅而躍躍欲試。也單指見到喜愛事物而心中欣喜。",
+      "long_def": "看到有人打獵，激起舊日的愛好而心喜。＃語本宋．周敦頤〈周子遺事〉。後用「見獵心喜」比喻舊習難忘，看見有人在做自己所愛好的事情，便心情愉悅而躍躍欲試。也單指見到喜愛事物而心中欣喜。",
+      "usage_context": "比喻舊習難忘，看見有人在做自己所愛好的事情，便心情愉悅而躍躍欲試。＆見到喜愛事物而心中欣喜。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "請原諒我觀棋多嘴了，實在是見獵心喜，熬不住啊！",
+      "literary_example": "請原諒我觀棋多嘴了，實在是見獵心喜，熬不住啊！",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "561"
+      }
+    },
+    {
+      "status": "active",
+      "term": "信口開河",
+      "zhuyin": "ㄒㄧㄣˋ ㄎㄡˇ ㄎㄞ ㄏㄜˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「信口開河」之「河」，典源作「合」。任由嘴巴隨意開合，指不加思索地隨口說出。※＃語或本元．關漢卿《魯齋郎》第四折。後用「信口開河」比喻隨口亂說。",
+      "long_def": "「信口開河」之「河」，典源作「合」。任由嘴巴隨意開合，指不加思索地隨口說出。※＃語或本元．關漢卿《魯齋郎》第四折。後用「信口開河」比喻隨口亂說。 △「信口雌黃」",
+      "usage_context": "比喻隨口亂說。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他是信口開河胡謅的，可別輕信。",
+      "literary_example": "他是信口開河胡謅的，可別輕信。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "562"
+      }
+    },
+    {
+      "status": "active",
+      "term": "欣欣向榮",
+      "zhuyin": "ㄒㄧㄣ ㄒㄧㄣ ㄒㄧㄤˋ ㄖㄨㄥˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "草木生長繁盛的樣子。語出晉．陶潛〈歸去來兮辭〉。後用「欣欣向榮」比喻事物蓬勃發展、繁榮興盛。",
+      "long_def": "草木生長繁盛的樣子。語出晉．陶潛〈歸去來兮辭〉。後用「欣欣向榮」比喻事物蓬勃發展、繁榮興盛。",
+      "usage_context": "形容草木繁盛的樣子。＆比喻事物蓬勃發展、繁榮興盛。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "幾株黑松欣欣向榮地挺立在山頭，更見蒼勁。",
+      "literary_example": "幾株黑松欣欣向榮地挺立在山頭，更見蒼勁。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "563"
+      }
+    },
+    {
+      "status": "active",
+      "term": "巧取豪奪",
+      "zhuyin": "ㄑㄧㄠˇ ㄑㄩˇ ㄏㄠˊ ㄉㄨㄛˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "用巧詐的手段騙取，或倚仗權勢強行奪取。※語或本宋．蘇軾〈次韻米黻二王書跋尾〉詩二首之一。後用「巧取豪奪」形容不擇手段地取得權利、財物。",
+      "long_def": "用巧詐的手段騙取，或倚仗權勢強行奪取。※語或本宋．蘇軾〈次韻米黻二王書跋尾〉詩二首之一。後用「巧取豪奪」形容不擇手段地取得權利、財物。",
+      "usage_context": "形容不擇手段的取得權利、財物。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這些貪官對當地民眾巧取豪奪，無所不至！",
+      "literary_example": "這些貪官對當地民眾巧取豪奪，無所不至！",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "564"
+      }
+    },
+    {
+      "status": "active",
+      "term": "虎視眈眈",
+      "zhuyin": "ㄏㄨˇ ㄕˋ ㄉㄢ ㄉㄢ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "如老虎般威嚴地注視著。語出《易經．頤卦》。後多用「虎視眈眈」比喻心懷不軌，如老虎般貪狠地注視著，伺機掠奪。",
+      "long_def": "如老虎般威嚴地注視著。語出《易經．頤卦》。後多用「虎視眈眈」比喻心懷不軌，如老虎般貪狠地注視著，伺機掠奪。",
+      "usage_context": "比喻心懷不軌，伺機掠奪。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這個職位不知有多少人虎視眈眈，你得戒慎任之。",
+      "literary_example": "這個職位不知有多少人虎視眈眈，你得戒慎任之。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "565"
+      }
+    },
+    {
+      "status": "active",
+      "term": "怨天尤人",
+      "zhuyin": "ㄩㄢˋ ㄊㄧㄢ ㄧㄡˊ ㄖㄣˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "抱怨上天，責怪他人。比喻面對不如意時，一味地歸咎客觀環境，而不能自我檢討。語本《論語．憲問》。",
+      "long_def": "抱怨上天，責怪他人。比喻面對不如意時，一味地歸咎客觀環境，而不能自我檢討。語本《論語．憲問》。",
+      "usage_context": "比喻面對不如意時，一味地歸咎客觀環境，而不能自我檢討。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "聽完他怨天尤人地訴苦後，我勸他凡事要看開點。",
+      "literary_example": "聽完他怨天尤人地訴苦後，我勸他凡事要看開點。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "566"
+      }
+    },
+    {
+      "status": "active",
+      "term": "水泄不通",
+      "zhuyin": "ㄕㄨㄟˇ ㄒㄧㄝˋ ㄅㄨˋ ㄊㄨㄥ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "一點水也無法泄漏，形容包圍得極為嚴密。※語或本《敦煌變文集新書．卷五．伍子胥變文》。後亦用「水泄不通」形容擁擠不堪。",
+      "long_def": "一點水也無法泄漏，形容包圍得極為嚴密。※語或本《敦煌變文集新書．卷五．伍子胥變文》。後亦用「水泄不通」形容擁擠不堪。",
+      "usage_context": "形容包圍得極為嚴密。＆形容擁擠不堪。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "軍營四周，佈滿崗哨，防備之周密，幾乎水泄不通。",
+      "literary_example": "軍營四周，佈滿崗哨，防備之周密，幾乎水泄不通。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "567"
+      }
+    },
+    {
+      "status": "active",
+      "term": "一氣呵成",
+      "zhuyin": "ㄧ ㄑㄧˋ ㄏㄜ ㄔㄥˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "一口氣完成。比喻文章的氣勢流暢，首尾貫通。語出明．胡應麟《詩藪．內編．近體中．七言》。後亦用「一氣呵成」比喻事情進行得順暢緊湊而不間斷。",
+      "long_def": "一口氣完成。比喻文章的氣勢流暢，首尾貫通。語出明．胡應麟《詩藪．內編．近體中．七言》。後亦用「一氣呵成」比喻事情進行得順暢緊湊而不間斷。 △「一揮而就」、「下筆成章」、「援筆立成」",
+      "usage_context": "比喻文章的氣勢流暢，首尾貫通。 ＆比喻事情進行得順暢緊湊而不間斷。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這篇文章結構謹嚴，一氣呵成，令人激賞。",
+      "literary_example": "這篇文章結構謹嚴，一氣呵成，令人激賞。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "568"
+      }
+    },
+    {
+      "status": "active",
+      "term": "觸類旁通",
+      "zhuyin": "ㄔㄨˋ ㄌㄟˋ ㄆㄤˊ ㄊㄨㄥ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「觸類」，謂接觸與已知事物相類似的事物。語出《易經．繫辭上》。「旁通」，向旁伸展而通達。語出《易經．乾卦》。後用「觸類旁通」謂據對已知事物的認識與理解，進而通達對其他類似事物的認知。",
+      "long_def": "「觸類」，謂接觸與已知事物相類似的事物。語出《易經．繫辭上》。「旁通」，向旁伸展而通達。語出《易經．乾卦》。後用「觸類旁通」謂據對已知事物的認識與理解，進而通達對其他類似事物的認知。",
+      "usage_context": "謂據已知事物的認識與理解，進而通達對其他類似事物的認知。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "你能觸類旁通，才想得出這樣的答案。",
+      "literary_example": "你能觸類旁通，才想得出這樣的答案。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "569"
+      }
+    },
+    {
+      "status": "active",
+      "term": "殺雞取卵",
+      "zhuyin": "ㄕㄚ ㄐㄧ ㄑㄩˇ ㄌㄨㄢˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "把雞殺了，取出腹中的蛋。比喻為貪圖眼前的好處而斷絕了長遠的利益。典出《伊索寓言．生金蛋的雞》。",
+      "long_def": "把雞殺了，取出腹中的蛋。比喻為貪圖眼前的好處而斷絕了長遠的利益。典出《伊索寓言．生金蛋的雞》。 △「竭澤而漁」",
+      "usage_context": "比喻為貪圖眼前的好處而斷絕了長遠的利益。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "老闆一再要求員工延長工時的行徑，無異於殺雞取卵。",
+      "literary_example": "老闆一再要求員工延長工時的行徑，無異於殺雞取卵。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "570"
+      }
+    },
+    {
+      "status": "active",
+      "term": "面面相覷",
+      "zhuyin": "ㄇㄧㄢˋ ㄇㄧㄢˋ ㄒㄧㄤ ㄑㄩˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "你看我，我看你，相視無言。※語或出《續傳燈錄．卷六．懷安軍雲頂海鵬禪師》。後用「面面相覷」形容驚懼、詫異而不知所措的樣子。",
+      "long_def": "你看我，我看你，相視無言。※語或出《續傳燈錄．卷六．懷安軍雲頂海鵬禪師》。後用「面面相覷」形容驚懼、詫異而不知所措的樣子。",
+      "usage_context": "形容驚懼、詫異而不知所措的樣子。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這些孩子發現自己惹了禍，面面相覷，手足無措。",
+      "literary_example": "這些孩子發現自己惹了禍，面面相覷，手足無措。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "571"
+      }
+    },
+    {
+      "status": "active",
+      "term": "老生常談",
+      "zhuyin": "ㄌㄠˇ ㄕㄥ ㄔㄤˊ ㄊㄢˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "「老生常談」之「談」，典源作「譚」。 「譚」同「談」。老書生的尋常言論。比喻時常聽到，了無新意的老話。語本《三國志．卷二九．魏書．方技傳．管輅》。",
+      "long_def": "「老生常談」之「談」，典源作「譚」。 「譚」同「談」。老書生的尋常言論。比喻時常聽到，了無新意的老話。語本《三國志．卷二九．魏書．方技傳．管輅》。",
+      "usage_context": "比喻時常聽到，了無新意的老話。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "「有志者事竟成」雖是老生常談，卻是顛撲不破的。",
+      "literary_example": "「有志者事竟成」雖是老生常談，卻是顛撲不破的。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "572"
+      }
+    },
+    {
+      "status": "active",
+      "term": "初出茅廬",
+      "zhuyin": "ㄔㄨ ㄔㄨ ㄇㄠˊ ㄌㄨˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "初次離開隱居的茅屋。語本《三國演義》第三九回。後用「初出茅廬」比喻初入社會，缺乏歷練。",
+      "long_def": "初次離開隱居的茅屋。語本《三國演義》第三九回。後用「初出茅廬」比喻初入社會，缺乏歷練。 △「三顧茅廬」",
+      "usage_context": "比喻初入社會，缺乏歷練。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我初出茅廬，一切不懂，請大家多指教。",
+      "literary_example": "我初出茅廬，一切不懂，請大家多指教。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "573"
+      }
+    },
+    {
+      "status": "active",
+      "term": "當頭棒喝",
+      "zhuyin": "ㄉㄤ ㄊㄡˊ ㄅㄤˋ ㄏㄜˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "佛教禪宗接引弟子時，常用棒一擊或大聲一喝，促其領悟。典出《五燈會元．卷一一．臨濟義玄禪師》。比喻使人立即醒悟的警示。",
+      "long_def": "佛教禪宗接引弟子時，常用棒一擊或大聲一喝，促其領悟。典出《五燈會元．卷一一．臨濟義玄禪師》。比喻使人立即醒悟的警示。",
+      "usage_context": "比喻使人立即醒悟的警示。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "給你一個當頭棒喝，看你還醒不醒？",
+      "literary_example": "給你一個當頭棒喝，看你還醒不醒？",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "574"
+      }
+    },
+    {
+      "status": "active",
+      "term": "完璧歸趙",
+      "zhuyin": "ㄨㄢˊ ㄅㄧˋ ㄍㄨㄟ ㄓㄠˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "藺相如奉使秦國，交涉以和氏璧換取秦國十五城時，識破秦國的詭詐，用計使璧安然回到趙國。語本《史記．卷八一．廉頗藺相如列傳》。後用「完璧歸趙」比喻物歸原主。",
+      "long_def": "藺相如奉使秦國，交涉以和氏璧換取秦國十五城時，識破秦國的詭詐，用計使璧安然回到趙國。語本《史記．卷八一．廉頗藺相如列傳》。後用「完璧歸趙」比喻物歸原主。 △「怒髮衝冠」、「價值連城」",
+      "usage_context": "比喻物歸原主。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "你撿到的棒球手套，既知失主，理當完璧歸趙。",
+      "literary_example": "你撿到的棒球手套，既知失主，理當完璧歸趙。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "575"
+      }
+    },
+    {
+      "status": "active",
+      "term": "三緘其口",
+      "zhuyin": "ㄙㄢ ㄐㄧㄢ ㄑㄧˊ ㄎㄡˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "嘴巴加了三道封條。形容說話謹慎或不說話。＃語出漢．劉向《說苑．卷一○．敬慎》。",
+      "long_def": "嘴巴加了三道封條。形容說話謹慎或不說話。＃語出漢．劉向《說苑．卷一○．敬慎》。",
+      "usage_context": "說話謹慎或不說話。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "無論怎麼問，他就是三緘其口，不願透露任何訊息。",
+      "literary_example": "無論怎麼問，他就是三緘其口，不願透露任何訊息。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "576"
+      }
+    },
+    {
+      "status": "active",
+      "term": "從容不迫",
+      "zhuyin": "ㄘㄨㄥ ㄖㄨㄥˊ ㄅㄨˋ ㄆㄛˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "沉著鎮定不慌張。語本《莊子．秋水》。",
+      "long_def": "沉著鎮定不慌張。語本《莊子．秋水》。",
+      "usage_context": "形容沉著鎮定不慌張。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "你待會兒回答主考官問題時，態度要從容不迫。",
+      "literary_example": "你待會兒回答主考官問題時，態度要從容不迫。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "577"
+      }
+    },
+    {
+      "status": "active",
+      "term": "九牛一毛",
+      "zhuyin": "ㄐㄧㄡˇ ㄋㄧㄡˊ ㄧ ㄇㄠˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "九頭牛身上的一根毫毛。比喻極大數量中的一小部分。語本《漢書．卷六二．司馬遷傳》。",
+      "long_def": "九頭牛身上的一根毫毛。比喻極大數量中的一小部分。語本《漢書．卷六二．司馬遷傳》。 △「滄海一粟」",
+      "usage_context": "比喻極大數量中的一小部分。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "花這點錢對他來說有如九牛一毛，他不會在乎的。",
+      "literary_example": "花這點錢對他來說有如九牛一毛，他不會在乎的。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "578"
+      }
+    },
+    {
+      "status": "active",
+      "term": "滄海遺珠",
+      "zhuyin": "ㄘㄤ ㄏㄞˇ ㄧˊ ㄓㄨ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "被採珠人遺漏在大海的珍珠。比喻被埋沒的人才或被人忽視的珍貴事物。＃語出《新唐書．卷一一五．狄仁傑列傳》。",
+      "long_def": "被採珠人遺漏在大海的珍珠。比喻被埋沒的人才或被人忽視的珍貴事物。＃語出《新唐書．卷一一五．狄仁傑列傳》。",
+      "usage_context": "比喻被埋沒的人才或珍貴事物。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "有考試必有所淘汰，滄海遺珠之憾難免。",
+      "literary_example": "有考試必有所淘汰，滄海遺珠之憾難免。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "579"
+      }
+    },
+    {
+      "status": "active",
+      "term": "鐵面無私",
+      "zhuyin": "ㄊㄧㄝˇ ㄇㄧㄢˋ ㄨˊ ㄙ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "公正嚴明而不偏私。※語或出《說呼全傳》第三七回。",
+      "long_def": "公正嚴明而不偏私。※語或出《說呼全傳》第三七回。 △「大公無私」、「鐵面御史」",
+      "usage_context": "公正嚴明而不偏私。褒義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "你個性剛直不阿，將來為官必是鐵面無私。",
+      "literary_example": "你個性剛直不阿，將來為官必是鐵面無私。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "580"
+      }
+    },
+    {
+      "status": "active",
+      "term": "望眼欲穿",
+      "zhuyin": "ㄨㄤˋ ㄧㄢˇ ㄩˋ ㄔㄨㄢ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "眼睛都快望穿了，形容盼望極其深切。※＃語或本唐．杜甫〈寄岳州賈司馬六丈巴州嚴八使君兩閣老五十韻〉詩。",
+      "long_def": "眼睛都快望穿了，形容盼望極其深切。※＃語或本唐．杜甫〈寄岳州賈司馬六丈巴州嚴八使君兩閣老五十韻〉詩。 △「望穿秋水」",
+      "usage_context": "形容盼望極其深切。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "公車久候不來，真是讓人望眼欲穿，好生無奈。",
+      "literary_example": "公車久候不來，真是讓人望眼欲穿，好生無奈。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "581"
+      }
+    },
+    {
+      "status": "active",
+      "term": "爐火純青",
+      "zhuyin": "ㄌㄨˊ ㄏㄨㄛˇ ㄔㄨㄣˊ ㄑㄧㄥ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "原指道家煉丹，爐火出現純青的火焰時，就煉成功了。※語或本唐．孫思邈〈四言〉詩。後用「爐火純青」比喻學問、技術、功夫等到達精純完美的境地。",
+      "long_def": "原指道家煉丹，爐火出現純青的火焰時，就煉成功了。※語或本唐．孫思邈〈四言〉詩。後用「爐火純青」比喻學問、技術、功夫等到達精純完美的境地。",
+      "usage_context": "比喻學問、技術、功夫等到達精純完美的境地。褒義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "她爐火純青的演技，令人叫絕。",
+      "literary_example": "她爐火純青的演技，令人叫絕。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "582"
+      }
+    },
+    {
+      "status": "active",
+      "term": "魚目混珠",
+      "zhuyin": "ㄩˊ ㄇㄨˋ ㄏㄨㄣˋ ㄓㄨ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "以魚的眼珠混充珍珠。比喻以假亂真。＃語本《韓詩外傳》。",
+      "long_def": "以魚的眼珠混充珍珠。比喻以假亂真。＃語本《韓詩外傳》。 △「濫竽充數」",
+      "usage_context": "比喻以假亂真。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這裡賣的魚翅真偽充斥，魚目混珠的贗品不少。",
+      "literary_example": "這裡賣的魚翅真偽充斥，魚目混珠的贗品不少。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "583"
+      }
+    },
+    {
+      "status": "active",
+      "term": "駕輕就熟",
+      "zhuyin": "ㄐㄧㄚˋ ㄑㄧㄥ ㄐㄧㄡˋ ㄕㄡˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "駕著輕便的車走熟悉的路。比喻對事情很熟悉，做起來很輕鬆。語本唐．韓愈〈送石處士序〉。",
+      "long_def": "駕著輕便的車走熟悉的路。比喻對事情很熟悉，做起來很輕鬆。語本唐．韓愈〈送石處士序〉。",
+      "usage_context": "比喻對事情很熟悉，做起來很輕鬆。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "祕書工作對你來說駕輕就熟，你就別推辭了。",
+      "literary_example": "祕書工作對你來說駕輕就熟，你就別推辭了。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "584"
+      }
+    },
+    {
+      "status": "active",
+      "term": "鴉雀無聲",
+      "zhuyin": "ㄧㄚ ㄑㄩㄝˋ ㄨˊ ㄕㄥ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "形容非常寂靜。※＃語或本宋．蘇軾〈絕句〉詩三首之三。",
+      "long_def": "形容非常寂靜。※＃語或本宋．蘇軾〈絕句〉詩三首之三。 △「萬籟俱寂」",
+      "usage_context": "形容非常寂靜。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "大師琴聲一起，全場立即鴉雀無聲。",
+      "literary_example": "大師琴聲一起，全場立即鴉雀無聲。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "585"
+      }
+    },
+    {
+      "status": "active",
+      "term": "舉棋不定",
+      "zhuyin": "ㄐㄩˇ ㄑㄧˊ ㄅㄨˋ ㄉㄧㄥˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "本指拿著棋子，不能決定下一步怎樣下。比喻做事猶豫不決，拿不定主意。語出《左傳．襄公二十五年》。",
+      "long_def": "本指拿著棋子，不能決定下一步怎樣下。比喻做事猶豫不決，拿不定主意。語出《左傳．襄公二十五年》。",
+      "usage_context": "拿著棋子，不能決定下一步怎樣下。＆比喻做事猶豫不決，拿不定主意。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "正式棋賽，對弈者舉棋不定，也是要扣時間的。",
+      "literary_example": "正式棋賽，對弈者舉棋不定，也是要扣時間的。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "586"
+      }
+    },
+    {
+      "status": "active",
+      "term": "痛定思痛",
+      "zhuyin": "ㄊㄨㄥˋ ㄉㄧㄥˋ ㄙ ㄊㄨㄥˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "事後追思當時所遭的痛苦，也不知如何處理，而更加傷心。語本唐．韓愈〈與李翱書〉。後也用「痛定思痛」比喻吸取慘痛教訓，警惕未來。",
+      "long_def": "事後追思當時所遭的痛苦，也不知如何處理，而更加傷心。語本唐．韓愈〈與李翱書〉。後也用「痛定思痛」比喻吸取慘痛教訓，警惕未來。",
+      "usage_context": "事後追思當時所遭之痛苦，也不知如何處理，而更加傷心。＆比喻吸取慘痛教訓，警惕未來。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "父母之喪，如何能忘？痛定思痛，痛何如哉！",
+      "literary_example": "父母之喪，如何能忘？痛定思痛，痛何如哉！",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "587"
+      }
+    },
+    {
+      "status": "active",
+      "term": "黔驢技窮",
+      "zhuyin": "ㄑㄧㄢˊ ㄌㄩˊ ㄐㄧˋ ㄑㄩㄥˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "老虎了解驢子再無其他技能後，立刻撲上去吃了牠。比喻人拙劣的技能已經用完，再也無計可施了。典出唐．柳宗元〈三戒．黔之驢〉。",
+      "long_def": "老虎了解驢子再無其他技能後，立刻撲上去吃了牠。比喻人拙劣的技能已經用完，再也無計可施了。典出唐．柳宗元〈三戒．黔之驢〉。 △「龐然大物」",
+      "usage_context": "比喻人拙劣的技能已經用完，再也無計可施了。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我看他如今是黔驢技窮，變不出花樣了。",
+      "literary_example": "我看他如今是黔驢技窮，變不出花樣了。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "588"
+      }
+    },
+    {
+      "status": "active",
+      "term": "孜孜不倦",
+      "zhuyin": "ㄗ ㄗ ㄅㄨˋ ㄐㄩㄢˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "孜孜，勤勉不懈。「孜孜不倦」指勤勉而不知疲倦。◎語本《書經．益稷》。",
+      "long_def": "孜孜，勤勉不懈。「孜孜不倦」指勤勉而不知疲倦。◎語本《書經．益稷》。 △「亹亹不倦」",
+      "usage_context": "指勤勉而不知疲倦。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他夙夜匪懈，孜孜不倦的研究精神使人欽佩。",
+      "literary_example": "他夙夜匪懈，孜孜不倦的研究精神使人欽佩。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "589"
+      }
+    },
+    {
+      "status": "active",
+      "term": "生吞活剝",
+      "zhuyin": "ㄕㄥ ㄊㄨㄣ ㄏㄨㄛˊ ㄅㄛ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "喜歡剽竊名士詩文，而遭人譏諷。語本唐．劉肅《大唐新語．卷一三．諧謔》。後用「生吞活剝」比喻做學問或學習某事，只一味襲用他人的經驗或成果，而不求甚解。亦用於不加烹煮而食。",
+      "long_def": "喜歡剽竊名士詩文，而遭人譏諷。語本唐．劉肅《大唐新語．卷一三．諧謔》。後用「生吞活剝」比喻做學問或學習某事，只一味襲用他人的經驗或成果，而不求甚解。亦用於不加烹煮而食。 △「囫圇吞棗」",
+      "usage_context": "比喻做學問或學習某事，只一味襲用他人的經驗或成果，而不求甚解。貶義。＆不加烹煮而生食。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "學習外國長處要考慮國情，生吞活剝地套用是不行的。",
+      "literary_example": "學習外國長處要考慮國情，生吞活剝地套用是不行的。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "590"
+      }
+    },
+    {
+      "status": "active",
+      "term": "暴虎馮河",
+      "zhuyin": "ㄅㄠˋ ㄏㄨˇ ㄆㄧㄥˊ ㄏㄜˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "暴，徒手搏鬥。馮，徒步渡河。「暴虎馮河」指不用武器，空手與虎搏鬥；不靠舟船，徒步渡河。＃語本《詩經．小雅．小旻》。後用「暴虎馮河」比喻人做事有勇而無謀。",
+      "long_def": "暴，徒手搏鬥。馮，徒步渡河。「暴虎馮河」指不用武器，空手與虎搏鬥；不靠舟船，徒步渡河。＃語本《詩經．小雅．小旻》。後用「暴虎馮河」比喻人做事有勇而無謀。 △「如履薄冰」、「如臨深淵」、「戰戰兢兢」、「臨深履薄」",
+      "usage_context": "比喻人有勇而無謀。貶義。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "憑一時的衝動做事，無異是暴虎馮河！",
+      "literary_example": "憑一時的衝動做事，無異是暴虎馮河！",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "591"
+      }
+    },
+    {
+      "status": "active",
+      "term": "喋喋不休",
+      "zhuyin": "ㄉㄧㄝˊ ㄉㄧㄝˊ ㄅㄨˋ ㄒㄧㄡ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "喋喋，話多。「喋喋不休」形容話多，沒完沒了。◎語本《史記．卷一○二．張釋之馮唐列傳．張釋之》。",
+      "long_def": "喋喋，話多。「喋喋不休」形容話多，沒完沒了。◎語本《史記．卷一○二．張釋之馮唐列傳．張釋之》。",
+      "usage_context": "形容話多，沒完沒了。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "言多必失，像他這樣喋不休，也不怕說錯話。",
+      "literary_example": "言多必失，像他這樣喋不休，也不怕說錯話。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "592"
+      }
+    },
+    {
+      "status": "active",
+      "term": "四海為家",
+      "zhuyin": "ㄙˋ ㄏㄞˇ ㄨㄟˊ ㄐㄧㄚ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "四海，古代認為中國四周環海，以四海比喻四方，泛指全國各處。「四海為家」形容帝業宏大，富有四海，天下一家。＃語出《史記．卷八．高祖本紀》。後轉用「四海為家」形容志向遠大或比喻人漂泊不定，居無定所。",
+      "long_def": "四海，古代認為中國四周環海，以四海比喻四方，泛指全國各處。「四海為家」形容帝業宏大，富有四海，天下一家。＃語出《史記．卷八．高祖本紀》。後轉用「四海為家」形容志向遠大或比喻人漂泊不定，居無定所。 △「四海一家」",
+      "usage_context": "形容富有四海，天下一家。＆比喻人漂泊不定，居無定所。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "帝王之業，四海為家，普天下莫非王土。",
+      "literary_example": "帝王之業，四海為家，普天下莫非王土。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "593"
+      }
+    },
+    {
+      "status": "active",
+      "term": "請君入甕",
+      "zhuyin": "ㄑㄧㄥˇ ㄐㄩㄣ ㄖㄨˋ ㄨㄥˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "指唐代酷吏來俊臣用周興自己想的方法刑求他，要周興進到以火燒熱的大甕裡。＃典出唐．張鷟《朝野僉載》。後用「請君入甕」比喻以其人之法，還治其人之身。亦用於比喻使人陷入已設計好的圈套。",
+      "long_def": "指唐代酷吏來俊臣用周興自己想的方法刑求他，要周興進到以火燒熱的大甕裡。＃典出唐．張鷟《朝野僉載》。後用「請君入甕」比喻以其人之法，還治其人之身。亦用於比喻使人陷入已設計好的圈套。",
+      "usage_context": "比喻以其人之法，還治其人之身。＆比喻使人陷入已設計好的圈套。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "我看我們就以其人之道還治其身，來個請君入甕之計了。",
+      "literary_example": "我看我們就以其人之道還治其身，來個請君入甕之計了。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "594"
+      }
+    },
+    {
+      "status": "active",
+      "term": "聞雞起舞",
+      "zhuyin": "ㄨㄣˊ ㄐㄧ ㄑㄧˇ ㄨˇ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "一聽到雞啼聲，立即起床操練武藝。典出《晉書．卷六二．祖逖列傳》。後用「聞雞起舞」比喻把握時機，及時奮起行動。",
+      "long_def": "一聽到雞啼聲，立即起床操練武藝。典出《晉書．卷六二．祖逖列傳》。後用「聞雞起舞」比喻把握時機，及時奮起行動。",
+      "usage_context": "比喻把握時機，及時奮起行動。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "古人是聞雞起舞，他們是日上三竿，仍在床上。",
+      "literary_example": "古人是聞雞起舞，他們是日上三竿，仍在床上。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "595"
+      }
+    },
+    {
+      "status": "active",
+      "term": "倒行逆施",
+      "zhuyin": "ㄉㄠˋ ㄒㄧㄥˊ ㄋㄧˋ ㄕ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "不按照情理行事。＃語本《史記．卷六六．伍子胥列傳》。後用「倒行逆施」比喻胡作非為的罪惡行徑。",
+      "long_def": "不按照情理行事。＃語本《史記．卷六六．伍子胥列傳》。後用「倒行逆施」比喻胡作非為的罪惡行徑。",
+      "usage_context": "比喻不按照情理行事。＆比喻胡作非為的罪惡行為。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他受到長官的器重，前途看好，卻倒行逆施，避俗隱居起來。",
+      "literary_example": "他受到長官的器重，前途看好，卻倒行逆施，避俗隱居起來。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "596"
+      }
+    },
+    {
+      "status": "active",
+      "term": "差強人意",
+      "zhuyin": "ㄔㄚ ㄑㄧㄤˊ ㄖㄣˊ ㄧˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "本義是還真是能夠振奮人心。＃語出《東觀漢記．卷八．列傳．吳漢》。後用「差強人意」比喻雖然不夠好，但大體上還能讓人滿意。",
+      "long_def": "本義是還真是能夠振奮人心。＃語出《東觀漢記．卷八．列傳．吳漢》。後用「差強人意」比喻雖然不夠好，但大體上還能讓人滿意。",
+      "usage_context": "比喻雖然不夠好，但大體上還能讓人滿意。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "近年來經濟景氣不佳，我們公司的生意還算差強人意。",
+      "literary_example": "近年來經濟景氣不佳，我們公司的生意還算差強人意。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "597"
+      }
+    },
+    {
+      "status": "active",
+      "term": "談虎色變",
+      "zhuyin": "ㄊㄢˊ ㄏㄨˇ ㄙㄜˋ ㄅㄧㄢˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "曾被虎傷過的人，一談到老虎就嚇得變了臉色。典出《二程集．河南程氏遺書．卷二上》。後用「談虎色變」比喻一提及某事就非常害怕。",
+      "long_def": "曾被虎傷過的人，一談到老虎就嚇得變了臉色。典出《二程集．河南程氏遺書．卷二上》。後用「談虎色變」比喻一提及某事就非常害怕。",
+      "usage_context": "比喻一提及某事就非常害怕。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "一提起癌症，大家就談虎色變。",
+      "literary_example": "一提起癌症，大家就談虎色變。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "598"
+      }
+    },
+    {
+      "status": "active",
+      "term": "禮尚往來",
+      "zhuyin": "ㄌㄧˇ ㄕㄤˋ ㄨㄤˇ ㄌㄞˊ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "禮節上注重有來有往。指別人以禮相待，也要以禮回報。語出《禮記．曲禮上》。後亦用「禮尚往來」形容別人如何對待你，你亦如何對待別人。",
+      "long_def": "禮節上注重有來有往。指別人以禮相待，也要以禮回報。語出《禮記．曲禮上》。後亦用「禮尚往來」形容別人如何對待你，你亦如何對待別人。 △「投桃報李」",
+      "usage_context": "比喻別人以禮相待，也要以禮回報。＆指你對我怎麼樣，我也對你怎麼樣。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "禮尚往來是建立友誼的最基本道理。",
+      "literary_example": "禮尚往來是建立友誼的最基本道理。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "599"
+      }
+    },
+    {
+      "status": "active",
+      "term": "節外生枝",
+      "zhuyin": "ㄐㄧㄝˊ ㄨㄞˋ ㄕㄥ ㄓ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "枝節上又生出分枝。比喻事外復生事端。＃語出《圓悟佛果禪師語錄》卷一。",
+      "long_def": "枝節上又生出分枝。比喻事外復生事端。＃語出《圓悟佛果禪師語錄》卷一。",
+      "usage_context": "比喻事外復生事端。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這消息越多人知道，越會節外生枝。",
+      "literary_example": "這消息越多人知道，越會節外生枝。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "600"
+      }
+    },
+    {
+      "status": "active",
+      "term": "高朋滿座",
+      "zhuyin": "ㄍㄠ ㄆㄥˊ ㄇㄢˇ ㄗㄨㄛˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "高貴的賓客坐滿了席位。形容賓客眾多。＃語出唐．王勃〈秋日登洪府滕王閣餞別序〉。",
+      "long_def": "高貴的賓客坐滿了席位。形容賓客眾多。＃語出唐．王勃〈秋日登洪府滕王閣餞別序〉。",
+      "usage_context": "形容賓客眾多。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "今天寒舍真是蓬蓽生輝，高朋滿座。",
+      "literary_example": "今天寒舍真是蓬蓽生輝，高朋滿座。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "601"
+      }
+    },
+    {
+      "status": "active",
+      "term": "腳踏實地",
+      "zhuyin": "ㄐㄧㄠˇ ㄊㄚˋ ㄕˊ ㄉㄧˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "比喻做事切實穩健。語出宋．邵伯溫《邵氏聞見錄》卷一八。",
+      "long_def": "比喻做事切實穩健。語出宋．邵伯溫《邵氏聞見錄》卷一八。",
+      "usage_context": "比喻做事切實穩健。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "他就這樣腳踏實地，創立了他的超市王國。",
+      "literary_example": "他就這樣腳踏實地，創立了他的超市王國。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "602"
+      }
+    },
+    {
+      "status": "active",
+      "term": "前功盡棄",
+      "zhuyin": "ㄑㄧㄢˊ ㄍㄨㄥ ㄐㄧㄣˋ ㄑㄧˋ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "指以前辛苦獲得的成果，全部廢棄。◎語本《戰國策．西周策》。",
+      "long_def": "指以前辛苦獲得的成果，全部廢棄。◎語本《戰國策．西周策》。 △「功虧一簣」、「百步穿楊」、「百發百中」",
+      "usage_context": "指以前辛苦獲得的成果，全部廢棄。",
+      "register": "literary",
+      "category": "成語",
+      "tags": [
+        "成語",
+        "教育部成語典",
+        "字耕詞庫"
+      ],
+      "daily_example": "這件事現在不能停，一停下來，就會前功盡棄。",
+      "literary_example": "這件事現在不能停，一停下來，就會前功盡棄。",
+      "source": {
+        "kind": "moe-idioms",
+        "license": "CC BY-ND 3.0 TW",
+        "attribution": "中華民國教育部《成語典》",
+        "id": "603"
       }
     }
   ]
