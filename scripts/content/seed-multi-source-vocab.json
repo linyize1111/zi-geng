@@ -1,12 +1,2574 @@
 {
   "version": 1,
   "count": 200,
-  "fetched_at": "2026-07-22T16:46:25.374Z",
+  "fetched_at": "2026-07-22T17:11:07.835Z",
   "sources": [
     "moe-idioms",
     "zh.wiktionary"
   ],
   "cards": [
+    {
+      "status": "active",
+      "term": "憤懣",
+      "zhuyin": "ㄈㄣˋ ㄇㄣˋ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "氣憤鬱積，難以排解。",
+      "long_def": "比「生氣」多一層堵：怒在胸腔裡走不掉。適合長期不公後的情緒。",
+      "usage_context": "「憤懣難平」；勿與短暫發火混用。",
+      "register": "literary",
+      "category": "情緒・怒怨",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "怒",
+        "形容詞"
+      ],
+      "daily_example": "他聽完裁決，只剩一口憤懣。",
+      "literary_example": "憤懣像潮汐，退了還會再來。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "悻悻然",
+      "zhuyin": "ㄒㄧㄥˋ ㄒㄧㄥˋ ㄖㄢˊ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "怒氣未消、不服氣的樣子。",
+      "long_def": "帶一點賭氣與離場感。比「生氣」更可見姿態。",
+      "usage_context": "「悻悻然離去」。",
+      "register": "literary",
+      "category": "情緒・怒怨",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "怒",
+        "形容詞"
+      ],
+      "daily_example": "他悻悻然甩上門。",
+      "literary_example": "悻悻然是還沒找到下一個出口的怒。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "勃然",
+      "zhuyin": "ㄅㄛˊ ㄖㄢˊ",
+      "part_of_speech": "副／形",
+      "difficulty": 3,
+      "short_def": "突然變臉、怒氣驟起。",
+      "long_def": "強調「瞬間變色」，適合會議、對質。",
+      "usage_context": "「勃然大怒」「勃然變色」。",
+      "register": "literary",
+      "category": "情緒・怒怨",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "怒",
+        "副詞"
+      ],
+      "daily_example": "一句話，他勃然變色。",
+      "literary_example": "勃然是情緒的陡坡，不是長坡。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "怫然",
+      "zhuyin": "ㄈㄨˊ ㄖㄢˊ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "不高興、慍怒的樣子。",
+      "long_def": "文言氣味重，怒意比勃然含蓄。",
+      "usage_context": "「怫然不悅」。書面。",
+      "register": "literary",
+      "category": "情緒・怒怨",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "怒",
+        "文言"
+      ],
+      "daily_example": "她怫然把杯子放下。",
+      "literary_example": "怫然常常停在嘴角，還沒到吼。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "睚眦",
+      "zhuyin": "ㄧㄚˊ ㄗˋ",
+      "part_of_speech": "名",
+      "difficulty": 5,
+      "short_def": "瞪眼；引申為極小的怨忿。",
+      "long_def": "「睚眦必報」把微小怨恨放大成性格。寫小人或執念者好用。",
+      "usage_context": "多用於成語語境；單用需解釋或對照。",
+      "register": "literary",
+      "category": "情緒・怒怨",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "恨",
+        "冷僻"
+      ],
+      "daily_example": "他連睚眦都記得。",
+      "literary_example": "睚眦是仇恨的最小單位。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "睚眦必報",
+      "zhuyin": "ㄧㄚˊ ㄗˋ ㄅㄧˋ ㄅㄠˋ",
+      "part_of_speech": "成語",
+      "difficulty": 4,
+      "short_def": "連瞪一眼的小怨都要報復。",
+      "long_def": "性格標籤。用於寫執念、狹隘，勿濫用在普通爭執。",
+      "usage_context": "貶義為主。",
+      "register": "literary",
+      "category": "情緒・怒怨",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "性格"
+      ],
+      "daily_example": "他睚眦必報，同事都繞著走。",
+      "literary_example": "睚眦必報的人，把世界縮成一張仇人名單。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "悵惘",
+      "zhuyin": "ㄔㄤˋ ㄨㄤˇ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "失意、若有所失。",
+      "long_def": "比「難過」空、淡、遠。適合告別後的空白。",
+      "usage_context": "「悵惘不已」。",
+      "register": "literary",
+      "category": "情緒・哀鬱",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "哀",
+        "形容詞"
+      ],
+      "daily_example": "送走列車，他悵惘站了很久。",
+      "literary_example": "悵惘不是哭，是手放在空無一物的位置。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "愀然",
+      "zhuyin": "ㄑㄧㄠˇ ㄖㄢˊ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "神色變得嚴肅或不悅。",
+      "long_def": "臉部微變。從笑轉收的瞬間。",
+      "usage_context": "「愀然不樂」「愀然變色」。",
+      "register": "literary",
+      "category": "情緒・哀鬱",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "微變",
+        "文言"
+      ],
+      "daily_example": "聽完名字，她愀然收了笑。",
+      "literary_example": "愀然是情緒轉身時帶起的風。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "悒鬱",
+      "zhuyin": "ㄧˋ ㄩˋ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "愁悶、鬱結。",
+      "long_def": "書面抑鬱。比臨床「憂鬱」更文學、更氣氛。",
+      "usage_context": "「神色悒鬱」。",
+      "register": "literary",
+      "category": "情緒・哀鬱",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "鬱",
+        "形容詞"
+      ],
+      "daily_example": "整季雨讓城悒鬱起來。",
+      "literary_example": "悒鬱是濕的，不是尖的。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "泫然",
+      "zhuyin": "ㄒㄩㄢˋ ㄖㄢˊ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "淚水將滴未滴。",
+      "long_def": "克制的哭。寫「差一點掉淚」比「哭了」更有張力。",
+      "usage_context": "「泫然欲泣」。",
+      "register": "literary",
+      "category": "情緒・哀鬱",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "淚",
+        "文言"
+      ],
+      "daily_example": "他泫然，卻把話吞回去。",
+      "literary_example": "泫然是淚的邊境。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "酸楚",
+      "zhuyin": "ㄙㄨㄢ ㄔㄨˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "心酸而苦。",
+      "long_def": "味覺轉情緒。身體化的難受。",
+      "usage_context": "「一陣酸楚」。",
+      "register": "literary",
+      "category": "情緒・哀鬱",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "身體",
+        "形容詞"
+      ],
+      "daily_example": "舊照翻出酸楚。",
+      "literary_example": "酸楚從牙根走到心口。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "惘然",
+      "zhuyin": "ㄨㄤˇ ㄖㄢˊ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "失意、迷茫。",
+      "long_def": "與悵惘近；惘然更「空」、更失焦。",
+      "usage_context": "「惘然若失」。",
+      "register": "literary",
+      "category": "情緒・哀鬱",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "迷茫"
+      ],
+      "daily_example": "他惘然看著熄掉的螢幕。",
+      "literary_example": "惘然是焦距壞掉的情緒。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "索然",
+      "zhuyin": "ㄙㄨㄛˇ ㄖㄢˊ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "沒興致、無味。",
+      "long_def": "興趣退潮。適合寫關係冷卻後的對話。",
+      "usage_context": "「興致索然」「索然無味」。",
+      "register": "literary",
+      "category": "情緒・淡",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "淡"
+      ],
+      "daily_example": "玩笑說完，場子索然。",
+      "literary_example": "索然比爭吵更接近結束。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "惴惴",
+      "zhuyin": "ㄓㄨㄟˋ ㄓㄨㄟˋ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "憂懼不安。",
+      "long_def": "持續低頻怕，不是尖叫。",
+      "usage_context": "「惴惴不安」。",
+      "register": "literary",
+      "category": "情緒・恐懼",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "懼"
+      ],
+      "daily_example": "等結果的那週，他惴惴睡不著。",
+      "literary_example": "惴惴是心口一直輕敲的鼓。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "觳觫",
+      "zhuyin": "ㄏㄨˊ ㄙㄨˋ",
+      "part_of_speech": "形",
+      "difficulty": 5,
+      "short_def": "因恐懼發抖。",
+      "long_def": "身體先投降的怕。典故氣重。",
+      "usage_context": "「觳觫戰慄」。",
+      "register": "literary",
+      "category": "情緒・恐懼",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "懼",
+        "身體"
+      ],
+      "daily_example": "簽字時他觳觫得筆尖點洞。",
+      "literary_example": "觳觫不是表演給你看的怕。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "凜然",
+      "zhuyin": "ㄌㄧㄣˇ ㄖㄢˊ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "嚴肅可敬；也可寫氣勢逼人。",
+      "long_def": "溫度被抽走的莊重。可褒可壓。",
+      "usage_context": "「大義凜然」「目光凜然」。",
+      "register": "literary",
+      "category": "情緒・嚴正",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "態度"
+      ],
+      "daily_example": "她凜然拒絕贊助條件。",
+      "literary_example": "凜然常常不靠吼，靠距離。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "駭然",
+      "zhuyin": "ㄏㄞˋ ㄖㄢˊ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "驚駭的樣子。",
+      "long_def": "資訊衝擊的瞬間臉。",
+      "usage_context": "「駭然失色」。",
+      "register": "literary",
+      "category": "情緒・驚",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "驚"
+      ],
+      "daily_example": "打開報告，眾人駭然。",
+      "literary_example": "駭然是認知被撞開一道縫。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "釋然",
+      "zhuyin": "ㄕˋ ㄖㄢˊ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "疑慮、鬱結消除。",
+      "long_def": "心結鬆開。適合收束段。",
+      "usage_context": "「終於釋然」。",
+      "register": "literary",
+      "category": "情緒・安",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "安"
+      ],
+      "daily_example": "聽完解釋，她釋然一笑。",
+      "literary_example": "釋然不是快樂，是肩上的東西放下。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "靦腆",
+      "zhuyin": "ㄇㄧㄢˇ ㄊㄧㄢˇ",
+      "part_of_speech": "形",
+      "difficulty": 2,
+      "short_def": "害羞、不自然。",
+      "long_def": "社交退縮的輕量詞。",
+      "usage_context": "「靦腆一笑」。",
+      "register": "literary",
+      "category": "情緒・羞",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "羞"
+      ],
+      "daily_example": "被點名，他靦腆地站起。",
+      "literary_example": "靦腆把溫度藏在耳根。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "矜持",
+      "zhuyin": "ㄐㄧㄣ ㄔˊ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "拘謹、保持端莊或距離。",
+      "long_def": "可寫教養，也可寫防衛。",
+      "usage_context": "「故作矜持」。",
+      "register": "literary",
+      "category": "情緒・態",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "態"
+      ],
+      "daily_example": "鏡頭前她過於矜持。",
+      "literary_example": "矜持是不被輕易進入的邊界。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "陶然",
+      "zhuyin": "ㄊㄠˊ ㄖㄢˊ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "自得其樂、沉醉。",
+      "long_def": "安靜的歡喜，非狂歡。",
+      "usage_context": "「陶然忘機」。文言氣味。",
+      "register": "literary",
+      "category": "情緒・喜",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "喜",
+        "文言"
+      ],
+      "daily_example": "午後陽光裡，他陶然翻書。",
+      "literary_example": "陶然是快樂不向外求證。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "莞爾",
+      "zhuyin": "ㄨㄢˇ ㄦˇ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "微笑。",
+      "long_def": "克制、短暫的笑。比「微笑」古典。",
+      "usage_context": "「莞爾一笑」。",
+      "register": "literary",
+      "category": "情緒・喜",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "笑"
+      ],
+      "daily_example": "她莞爾，沒有接話。",
+      "literary_example": "莞爾常常是拒絕的溫柔版本。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "五味雜陳",
+      "zhuyin": "ㄨˇ ㄨㄟˋ ㄗㄚˊ ㄔㄣˊ",
+      "part_of_speech": "成語",
+      "difficulty": 2,
+      "short_def": "多種滋味交雜；引申心情複雜。",
+      "long_def": "可用，但易套語。若用，最好落到一種「主味」。",
+      "usage_context": "寫完後問：主味是酸還是苦？",
+      "register": "literary",
+      "category": "情緒・複雜",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "提醒"
+      ],
+      "daily_example": "重逢讓他五味雜陳，最先浮上來的是愧。",
+      "literary_example": "五味雜陳要有主菜。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "啼笑皆非",
+      "zhuyin": "ㄊㄧˊ ㄒㄧㄠˋ ㄐㄧㄝ ㄈㄟ",
+      "part_of_speech": "成語",
+      "difficulty": 3,
+      "short_def": "哭笑不得。",
+      "long_def": "荒謬感。適合制度、人情錯位。",
+      "usage_context": "勿用於單純悲傷。",
+      "register": "literary",
+      "category": "情緒・複雜",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "荒謬"
+      ],
+      "daily_example": "這封官方道歉讓人啼笑皆非。",
+      "literary_example": "啼笑皆非是笑裡卡住一根刺。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "受寵若驚",
+      "zhuyin": "ㄕㄡˋ ㄔㄨㄥˇ ㄖㄨㄛˋ ㄐㄧㄥ",
+      "part_of_speech": "成語",
+      "difficulty": 2,
+      "short_def": "得到過度關注而不安。",
+      "long_def": "喜與懼同時在。",
+      "usage_context": "可寫權力不對稱。",
+      "register": "literary",
+      "category": "情緒・複雜",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "懼喜"
+      ],
+      "daily_example": "被點名上台，他受寵若驚。",
+      "literary_example": "受寵若驚的人，在量自己配不配。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "瞥",
+      "zhuyin": "ㄆㄧㄝ",
+      "part_of_speech": "動",
+      "difficulty": 2,
+      "short_def": "很快地看一眼。",
+      "long_def": "時間短、資訊量卻可能很大。",
+      "usage_context": "「瞥見」「冷冷瞥他」。",
+      "register": "literary",
+      "category": "動詞・視線",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "視線"
+      ],
+      "daily_example": "他瞥了眼錶，沒說話。",
+      "literary_example": "瞥是拒絕停留的看。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "睨",
+      "zhuyin": "ㄋㄧˋ",
+      "part_of_speech": "動",
+      "difficulty": 4,
+      "short_def": "斜視。",
+      "long_def": "帶評價或輕蔑。比「看」有角度。",
+      "usage_context": "「睨視」「睨笑」。",
+      "register": "literary",
+      "category": "動詞・視線",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "視線",
+        "文言"
+      ],
+      "daily_example": "她睨了他一眼。",
+      "literary_example": "睨把權力放在眼角。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "盯",
+      "zhuyin": "ㄉㄧㄥ",
+      "part_of_speech": "動",
+      "difficulty": 1,
+      "short_def": "集中注視。",
+      "long_def": "壓力視線。可寫審問、喜歡、敵意。",
+      "usage_context": "「盯著不放」。",
+      "register": "literary",
+      "category": "動詞・視線",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "視線"
+      ],
+      "daily_example": "考官盯著他的手指。",
+      "literary_example": "盯讓時間變厚。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "掃視",
+      "zhuyin": "ㄙㄠˇ ㄕˋ",
+      "part_of_speech": "動",
+      "difficulty": 2,
+      "short_def": "迅速環顧。",
+      "long_def": "蒐集場面資訊。適合進門、警覺。",
+      "usage_context": "「掃視全場」。",
+      "register": "literary",
+      "category": "動詞・視線",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "視線"
+      ],
+      "daily_example": "他一進門先掃視出口。",
+      "literary_example": "掃視是身體先畫地圖。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "打量",
+      "zhuyin": "ㄉㄚˇ ㄌㄧㄤˊ",
+      "part_of_speech": "動",
+      "difficulty": 2,
+      "short_def": "上下觀察、估量。",
+      "long_def": "帶判斷。人際初次見面常用。",
+      "usage_context": "「上下打量」。",
+      "register": "literary",
+      "category": "動詞・視線",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "視線"
+      ],
+      "daily_example": "她默默打量對方的鞋。",
+      "literary_example": "打量是無聲的面試。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "乜斜",
+      "zhuyin": "ㄋㄧㄝˋ ㄒㄧㄝˊ",
+      "part_of_speech": "動／形",
+      "difficulty": 4,
+      "short_def": "眼睛略眯而斜視。",
+      "long_def": "疲倦、輕慢或酒意。小說口語書面皆可見。",
+      "usage_context": "「乜斜著眼」。",
+      "register": "literary",
+      "category": "動詞・視線",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "視線"
+      ],
+      "daily_example": "他乜斜看人，像隨時要反駁。",
+      "literary_example": "乜斜把清醒裝成漫不經心。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "囁嚅",
+      "zhuyin": "ㄋㄧㄝˋ ㄖㄨˊ",
+      "part_of_speech": "動",
+      "difficulty": 4,
+      "short_def": "想說又止、含糊低語。",
+      "long_def": "猶豫的嘴。比「小聲說」更抖。",
+      "usage_context": "「囁嚅半晌」。",
+      "register": "literary",
+      "category": "動詞・發聲",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "對話"
+      ],
+      "daily_example": "他囁嚅了兩次才說出名字。",
+      "literary_example": "囁嚅是句子在齒間卡住。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "嘟噥",
+      "zhuyin": "ㄉㄨ ㄋㄨㄥˊ",
+      "part_of_speech": "動",
+      "difficulty": 2,
+      "short_def": "含混自語、抱怨。",
+      "long_def": "給旁人聽又像不給旁人聽。",
+      "usage_context": "「嘟噥兩句」。",
+      "register": "literary",
+      "category": "動詞・發聲",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "對話"
+      ],
+      "daily_example": "她邊洗碗邊嘟噥。",
+      "literary_example": "嘟噥是不敢正式提出的抗議。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "沉吟",
+      "zhuyin": "ㄔㄣˊ ㄧㄣˊ",
+      "part_of_speech": "動",
+      "difficulty": 3,
+      "short_def": "低聲吟味；沉思躊躇。",
+      "long_def": "思考可見化。可無聲也可有聲。",
+      "usage_context": "「沉吟片刻」。",
+      "register": "literary",
+      "category": "動詞・發聲",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "思考"
+      ],
+      "daily_example": "他沉吟，沒有立刻答應。",
+      "literary_example": "沉吟是決定前的回音室。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "喟嘆",
+      "zhuyin": "ㄎㄨㄟˋ ㄊㄢˋ",
+      "part_of_speech": "動",
+      "difficulty": 3,
+      "short_def": "感慨而長嘆。",
+      "long_def": "評價＋時間感。",
+      "usage_context": "「不禁喟嘆」。",
+      "register": "literary",
+      "category": "動詞・發聲",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "感慨"
+      ],
+      "daily_example": "讀完舊信，他喟嘆一聲。",
+      "literary_example": "喟嘆落在空屋比落在人群誠實。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "反詰",
+      "zhuyin": "ㄈㄢˇ ㄐㄧㄝˊ",
+      "part_of_speech": "動",
+      "difficulty": 4,
+      "short_def": "反問、追問以駁。",
+      "long_def": "對話裡的攻勢。",
+      "usage_context": "「反詰對方」。",
+      "register": "literary",
+      "category": "動詞・對話",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "對話"
+      ],
+      "daily_example": "「那你呢？」她反詰。",
+      "literary_example": "反詰把球拍回壓力來源。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "附和",
+      "zhuyin": "ㄈㄨˋ ㄏㄜˋ",
+      "part_of_speech": "動",
+      "difficulty": 2,
+      "short_def": "應聲同意。",
+      "long_def": "可寫真誠，也可寫怯懦／逢迎。",
+      "usage_context": "注意讀音ㄏㄜˋ。",
+      "register": "literary",
+      "category": "動詞・對話",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "對話"
+      ],
+      "daily_example": "眾人附和，空氣卻更冷。",
+      "literary_example": "附和有時是逃生口。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "頂撞",
+      "zhuyin": "ㄉㄧㄥˇ ㄓㄨㄤˋ",
+      "part_of_speech": "動",
+      "difficulty": 2,
+      "short_def": "用言語衝撞長輩或上位者。",
+      "long_def": "權力結構裡的對抗。",
+      "usage_context": "「當眾頂撞」。",
+      "register": "literary",
+      "category": "動詞・對話",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "衝突"
+      ],
+      "daily_example": "他第一次頂撞父親。",
+      "literary_example": "頂撞是關係重新談判的聲響。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "厲聲",
+      "zhuyin": "ㄌㄧˋ ㄕㄥ",
+      "part_of_speech": "副",
+      "difficulty": 2,
+      "short_def": "聲音嚴厲地。",
+      "long_def": "口吻標記，常接動詞。",
+      "usage_context": "「厲聲質問」。",
+      "register": "literary",
+      "category": "動詞・口吻",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "口吻",
+        "副詞"
+      ],
+      "daily_example": "她厲聲叫停會議。",
+      "literary_example": "厲聲把空間切成兩半。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "低語",
+      "zhuyin": "ㄉㄧ ㄩˇ",
+      "part_of_speech": "動",
+      "difficulty": 2,
+      "short_def": "小聲說。",
+      "long_def": "親密或陰謀共用。",
+      "usage_context": "「附耳低語」。",
+      "register": "literary",
+      "category": "動詞・發聲",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "對話"
+      ],
+      "daily_example": "兩人低語，第三人讀空氣。",
+      "literary_example": "低語製造圈內人。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "斷言",
+      "zhuyin": "ㄉㄨㄢˋ ㄧㄢˊ",
+      "part_of_speech": "動",
+      "difficulty": 3,
+      "short_def": "堅決地說、判定。",
+      "long_def": "自信或武斷。看語境。",
+      "usage_context": "「斷言此事必成」。",
+      "register": "literary",
+      "category": "動詞・對話",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "語氣"
+      ],
+      "daily_example": "他斷言對方在說謊。",
+      "literary_example": "斷言省略了論證的樓梯。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "摩挲",
+      "zhuyin": "ㄇㄛˊ ㄙㄨㄛ",
+      "part_of_speech": "動",
+      "difficulty": 3,
+      "short_def": "用手輕撫、來回摸。",
+      "long_def": "愛惜、不安、回憶都可用。",
+      "usage_context": "「摩挲書脊」。",
+      "register": "literary",
+      "category": "動詞・觸",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "觸覺"
+      ],
+      "daily_example": "她摩挲著舊戒指。",
+      "literary_example": "摩挲是時間留在指腹的動作。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "攥",
+      "zhuyin": "ㄗㄨㄢˋ",
+      "part_of_speech": "動",
+      "difficulty": 2,
+      "short_def": "緊握。",
+      "long_def": "緊張、決意、怒的身體化。",
+      "usage_context": "「攥緊拳頭」。",
+      "register": "literary",
+      "category": "動詞・手",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "手"
+      ],
+      "daily_example": "他攥著通知單，指節發白。",
+      "literary_example": "攥把情緒收到骨節發白。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "抿",
+      "zhuyin": "ㄇㄧㄣˇ",
+      "part_of_speech": "動",
+      "difficulty": 2,
+      "short_def": "略微閉攏嘴唇；小口喝。",
+      "long_def": "克制、試探、掩笑。",
+      "usage_context": "「抿嘴」「抿一口茶」。",
+      "register": "literary",
+      "category": "動詞・口",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "表情"
+      ],
+      "daily_example": "她抿嘴不語。",
+      "literary_example": "抿是把話按回去的小閘門。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "踱",
+      "zhuyin": "ㄉㄨㄛˋ",
+      "part_of_speech": "動",
+      "difficulty": 3,
+      "short_def": "慢步來回走。",
+      "long_def": "思考的腳步。",
+      "usage_context": "「踱步」「踱來踱去」。",
+      "register": "literary",
+      "category": "動詞・步",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "步態"
+      ],
+      "daily_example": "他在走廊踱到地板發亮。",
+      "literary_example": "踱是還沒準備好坐下的思考。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "佇",
+      "zhuyin": "ㄓㄨˋ",
+      "part_of_speech": "動",
+      "difficulty": 3,
+      "short_def": "久立。",
+      "long_def": "等待、凝視、不願離開。",
+      "usage_context": "「佇立」「佇望」。",
+      "register": "literary",
+      "category": "動詞・姿",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "姿態",
+        "文言"
+      ],
+      "daily_example": "她在窗前佇了很久。",
+      "literary_example": "佇把時間豎起來。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "撂",
+      "zhuyin": "ㄌㄧㄠˋ",
+      "part_of_speech": "動",
+      "difficulty": 3,
+      "short_def": "放下、拋下；撂下一句話。",
+      "long_def": "決絕、不負責的放下感。",
+      "usage_context": "「撂下飯碗」「撂下一句重話」。",
+      "register": "literary",
+      "category": "動詞・手",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "決絕"
+      ],
+      "daily_example": "他撂下鑰匙就走。",
+      "literary_example": "撂是拒絕善後的動詞。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "拂",
+      "zhuyin": "ㄈㄨˊ",
+      "part_of_speech": "動",
+      "difficulty": 3,
+      "short_def": "輕輕擦過；拂袖。",
+      "long_def": "拒絕、離開、風的動作。",
+      "usage_context": "「拂袖而去」「夜風拂面」。",
+      "register": "literary",
+      "category": "動詞・觸",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "觸"
+      ],
+      "daily_example": "她拂開伸來的手。",
+      "literary_example": "拂的力道小，意思可以很大。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "顫",
+      "zhuyin": "ㄔㄢˋ",
+      "part_of_speech": "動",
+      "difficulty": 2,
+      "short_def": "抖動。",
+      "long_def": "懼、冷、激動共用。寫部位更準。",
+      "usage_context": "「手指顫著」。",
+      "register": "literary",
+      "category": "動詞・身",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "身體"
+      ],
+      "daily_example": "他聲線發顫。",
+      "literary_example": "顫是情緒漏出體表。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "僵",
+      "zhuyin": "ㄐㄧㄤ",
+      "part_of_speech": "動／形",
+      "difficulty": 2,
+      "short_def": "僵住、不靈活。",
+      "long_def": "驚嚇或尷尬的身體暫停。",
+      "usage_context": "「笑容僵在臉上」。",
+      "register": "literary",
+      "category": "動詞・身",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "身體"
+      ],
+      "daily_example": "空氣一緊，他整個人僵住。",
+      "literary_example": "僵是時間局部結冰。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "掠過",
+      "zhuyin": "ㄌㄩㄝˋ ㄍㄨㄛˋ",
+      "part_of_speech": "動",
+      "difficulty": 2,
+      "short_def": "迅速擦過。",
+      "long_def": "視線、念頭、風、人影皆可。",
+      "usage_context": "「一個念頭掠過」。",
+      "register": "literary",
+      "category": "動詞・移動",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "移動"
+      ],
+      "daily_example": "車燈掠過她的臉。",
+      "literary_example": "掠過留下痕跡卻不停留。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "逡巡",
+      "zhuyin": "ㄑㄩㄣ ㄒㄩㄣˊ",
+      "part_of_speech": "動",
+      "difficulty": 4,
+      "short_def": "有所顧忌而徘徊。",
+      "long_def": "猶豫寫成空間。",
+      "usage_context": "「逡巡不前」。",
+      "register": "literary",
+      "category": "動詞・移動",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "猶豫"
+      ],
+      "daily_example": "他在門前逡巡。",
+      "literary_example": "筆在紙上逡巡，像找不痛的入口。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "踟躕",
+      "zhuyin": "ㄔˊ ㄔㄨˊ",
+      "part_of_speech": "動",
+      "difficulty": 4,
+      "short_def": "心裡猶豫，要走不走。",
+      "long_def": "比逡巡更「心」。",
+      "usage_context": "「踟躕不前」。",
+      "register": "literary",
+      "category": "動詞・移動",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "猶豫"
+      ],
+      "daily_example": "信封已封，他仍踟躕。",
+      "literary_example": "踟躕在兩種誠實之間。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "踅",
+      "zhuyin": "ㄒㄩㄝˊ",
+      "part_of_speech": "動",
+      "difficulty": 4,
+      "short_def": "折回、盤旋走。",
+      "long_def": "小說常見。尋人或猶豫的路徑。",
+      "usage_context": "「踅回原處」。",
+      "register": "literary",
+      "category": "動詞・移動",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "移動"
+      ],
+      "daily_example": "他在巷口踅了兩圈。",
+      "literary_example": "踅是還沒允許自己離開。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "蹭",
+      "zhuyin": "ㄘㄥˋ",
+      "part_of_speech": "動",
+      "difficulty": 2,
+      "short_def": "擦過；拖延挨近。",
+      "long_def": "可寫身體擦碰或「蹭時間」。",
+      "usage_context": "「蹭到沙發邊」。",
+      "register": "literary",
+      "category": "動詞・移動",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "接觸"
+      ],
+      "daily_example": "貓蹭著小腿。",
+      "literary_example": "蹭是低風險的靠近。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "挪",
+      "zhuyin": "ㄋㄨㄛˊ",
+      "part_of_speech": "動",
+      "difficulty": 2,
+      "short_def": "慢慢移動。",
+      "long_def": "空間讓步、尷尬調整。",
+      "usage_context": "「挪開視線」「往旁邊挪」。",
+      "register": "literary",
+      "category": "動詞・移動",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "移動"
+      ],
+      "daily_example": "他挪了挪椅子。",
+      "literary_example": "挪常常是句對話的前言。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "斑駁",
+      "zhuyin": "ㄅㄢ ㄅㄛˊ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "顏色深淺不一、痕跡錯落。",
+      "long_def": "時間痕跡的視覺詞。",
+      "usage_context": "「光影斑駁」。",
+      "register": "literary",
+      "category": "感官・光影",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "感官",
+        "光"
+      ],
+      "daily_example": "牆皮斑駁，露出舊綠。",
+      "literary_example": "記憶斑駁，亮處刺眼。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "熹微",
+      "zhuyin": "ㄒㄧ ㄨㄟˊ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "日光微明。",
+      "long_def": "黎明專用氣質。",
+      "usage_context": "「晨光熹微」。",
+      "register": "literary",
+      "category": "感官・光影",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "感官",
+        "光",
+        "文言"
+      ],
+      "daily_example": "熹微裡，城市還沒完全醒來。",
+      "literary_example": "熹微是夜與日的交涉。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "闇啞",
+      "zhuyin": "ㄢˋ ㄧㄚˇ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "（寫作引申）光線或聲音低悶不清。",
+      "long_def": "可寫燈色悶、嗓音啞。注意與「暗啞」近。",
+      "usage_context": "優先寫具體：燈管頻閃、喉嚨沙。",
+      "register": "literary",
+      "category": "感官・聲色",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "感官",
+        "聲"
+      ],
+      "daily_example": "樓道燈闇啞地響了一下。",
+      "literary_example": "闇啞把世界的對比度關掉一格。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "澄澈",
+      "zhuyin": "ㄔㄥˊ ㄔㄜˋ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "清澈透明；心境清明。",
+      "long_def": "水與心共用。",
+      "usage_context": "「湖水澄澈」。",
+      "register": "literary",
+      "category": "感官・清明",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "感官",
+        "心境"
+      ],
+      "daily_example": "雨後空氣澄澈。",
+      "literary_example": "怒意沉澱後，語氣澄澈起來。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "炫目",
+      "zhuyin": "ㄒㄩㄢˋ ㄇㄨˋ",
+      "part_of_speech": "形",
+      "difficulty": 2,
+      "short_def": "光強刺眼；引申華麗奪目。",
+      "long_def": "可褒可刺。",
+      "usage_context": "「炫目的燈光」。",
+      "register": "literary",
+      "category": "感官・光影",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "感官",
+        "光"
+      ],
+      "daily_example": "舞台燈炫目，他卻只看地面。",
+      "literary_example": "炫目有時是為了讓人看不清。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "昏黃",
+      "zhuyin": "ㄏㄨㄣ ㄏㄨㄤˊ",
+      "part_of_speech": "形",
+      "difficulty": 2,
+      "short_def": "暗而帶黃的光色。",
+      "long_def": "懷舊、疲倦、室內夜。",
+      "usage_context": "「昏黃燈光」。",
+      "register": "literary",
+      "category": "感官・光影",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "感官",
+        "光"
+      ],
+      "daily_example": "廚房昏黃，油煙還在。",
+      "literary_example": "昏黃降低世界的銳利度。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "窸窣",
+      "zhuyin": "ㄒㄧ ㄙㄨˋ",
+      "part_of_speech": "形／擬",
+      "difficulty": 4,
+      "short_def": "細碎輕微的聲音。",
+      "long_def": "布料、紙頁、鼠類、夜動。",
+      "usage_context": "「窸窣作響」。",
+      "register": "literary",
+      "category": "感官・聲",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "感官",
+        "聲"
+      ],
+      "daily_example": "帳後有窸窣。",
+      "literary_example": "窸窣讓黑暗變得有身體。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "鏗然",
+      "zhuyin": "ㄎㄥ ㄖㄢˊ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "金屬撞擊般清亮。",
+      "long_def": "也可寫語氣堅決。",
+      "usage_context": "「鏗然有聲」。",
+      "register": "literary",
+      "category": "感官・聲",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "感官",
+        "聲"
+      ],
+      "daily_example": "門扣鏗然鎖上。",
+      "literary_example": "鏗然是拒絕含糊的聲線。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "嗡鳴",
+      "zhuyin": "ㄨㄥ ㄇㄧㄥˊ",
+      "part_of_speech": "名／動",
+      "difficulty": 2,
+      "short_def": "持續低頻響。",
+      "long_def": "燈管、耳鳴、焦慮的聲景。",
+      "usage_context": "「耳中嗡鳴」。",
+      "register": "literary",
+      "category": "感官・聲",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "感官",
+        "聲"
+      ],
+      "daily_example": "會議室燈管嗡鳴。",
+      "literary_example": "嗡鳴把沉默變得不空。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "嘎吱",
+      "zhuyin": "ㄍㄚ ㄓ",
+      "part_of_speech": "擬",
+      "difficulty": 2,
+      "short_def": "摩擦、受壓的短響。",
+      "long_def": "門、椅、雪、關係緊繃。",
+      "usage_context": "「地板嘎吱」。",
+      "register": "literary",
+      "category": "感官・聲",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "感官",
+        "聲"
+      ],
+      "daily_example": "他一踩，地板嘎吱。",
+      "literary_example": "嘎吱是空間在警告重量。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "靜默",
+      "zhuyin": "ㄐㄧㄥˋ ㄇㄛˋ",
+      "part_of_speech": "名／形",
+      "difficulty": 2,
+      "short_def": "無聲；有意的沉默。",
+      "long_def": "比「安靜」多一層態度。",
+      "usage_context": "「陷入靜默」。",
+      "register": "literary",
+      "category": "感官・聲",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "感官",
+        "靜"
+      ],
+      "daily_example": "問題丟出後，全場靜默。",
+      "literary_example": "靜默有時比回答昂貴。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "凜冽",
+      "zhuyin": "ㄌㄧㄣˇ ㄌㄧㄝˋ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "寒冷刺骨；神色嚴峻。",
+      "long_def": "氣溫與態度共用。",
+      "usage_context": "「北風凜冽」。",
+      "register": "literary",
+      "category": "感官・觸",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "感官",
+        "觸"
+      ],
+      "daily_example": "拒絕簡短而凜冽。",
+      "literary_example": "凜冽是溫度被抽走。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "潮悶",
+      "zhuyin": "ㄔㄠˊ ㄇㄣˋ",
+      "part_of_speech": "形",
+      "difficulty": 2,
+      "short_def": "潮濕而悶。",
+      "long_def": "天氣轉情緒。",
+      "usage_context": "「潮悶的午後」。",
+      "register": "literary",
+      "category": "感官・氣",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "感官",
+        "氣"
+      ],
+      "daily_example": "窗外潮悶，衣服貼背。",
+      "literary_example": "潮悶讓脾氣提前發芽。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "腥甜",
+      "zhuyin": "ㄒㄧㄥ ㄊㄧㄢˊ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "腥裡帶甜；常寫血氣。",
+      "long_def": "暴力場面克制寫法。",
+      "usage_context": "慎用，勿獵奇堆疊。",
+      "register": "literary",
+      "category": "感官・味",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "感官",
+        "味"
+      ],
+      "daily_example": "空氣裡有一絲腥甜。",
+      "literary_example": "腥甜讓恐懼有味道。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "焦苦",
+      "zhuyin": "ㄐㄧㄠ ㄎㄨˇ",
+      "part_of_speech": "形",
+      "difficulty": 2,
+      "short_def": "燒焦的苦味。",
+      "long_def": "失敗、熬夜、關係燒過頭。",
+      "usage_context": "「焦苦的舌根」。",
+      "register": "literary",
+      "category": "感官・味",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "感官",
+        "味"
+      ],
+      "daily_example": "鍋巴焦苦，他沒關火。",
+      "literary_example": "焦苦是過頭之後的味道。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "刺鼻",
+      "zhuyin": "ㄘˋ ㄅㄧˊ",
+      "part_of_speech": "形",
+      "difficulty": 2,
+      "short_def": "氣味衝鼻。",
+      "long_def": "消毒水、油漆、恐懼的醫院。",
+      "usage_context": "接具體來源更佳。",
+      "register": "literary",
+      "category": "感官・氣",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "感官",
+        "氣"
+      ],
+      "daily_example": "走廊消毒水刺鼻。",
+      "literary_example": "刺鼻先於解釋到達。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "幾乎",
+      "zhuyin": "ㄐㄧ ㄏㄨ",
+      "part_of_speech": "副",
+      "difficulty": 1,
+      "short_def": "接近於。",
+      "long_def": "保留「差一點」的縫，比「完全」真。",
+      "usage_context": "寫臨界狀態好用。",
+      "register": "literary",
+      "category": "副詞・程度",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "副詞",
+        "程度"
+      ],
+      "daily_example": "他幾乎要說出口。",
+      "literary_example": "幾乎是戲劇停在懸崖邊。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "索性",
+      "zhuyin": "ㄙㄨㄛˇ ㄒㄧㄥˋ",
+      "part_of_speech": "副",
+      "difficulty": 2,
+      "short_def": "乾脆、直截。",
+      "long_def": "決定轉向的語氣。",
+      "usage_context": "「索性不回了」。",
+      "register": "literary",
+      "category": "副詞・語氣",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "副詞",
+        "語氣"
+      ],
+      "daily_example": "她索性把訊息刪了。",
+      "literary_example": "索性是猶豫的反跳。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "未嘗",
+      "zhuyin": "ㄨㄟˋ ㄔㄤˊ",
+      "part_of_speech": "副",
+      "difficulty": 3,
+      "short_def": "不是沒有（雙重否定）。",
+      "long_def": "委婉承認。書面。",
+      "usage_context": "「未嘗不可」。",
+      "register": "literary",
+      "category": "副詞・文言",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "副詞",
+        "文言"
+      ],
+      "daily_example": "這樣安排未嘗不好。",
+      "literary_example": "未嘗把同意藏在否定裡。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "竟然",
+      "zhuyin": "ㄐㄧㄥˋ ㄖㄢˊ",
+      "part_of_speech": "副",
+      "difficulty": 1,
+      "short_def": "出乎意料。",
+      "long_def": "易濫用。優先用細節製造意外，少宣告。",
+      "usage_context": "能刪則刪。",
+      "register": "literary",
+      "category": "副詞・語氣",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "副詞",
+        "警示"
+      ],
+      "daily_example": "門竟然開著。",
+      "literary_example": "把「竟然」換成讀者自己發現。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "終究",
+      "zhuyin": "ㄓㄨㄥ ㄐㄧㄡˋ",
+      "part_of_speech": "副",
+      "difficulty": 2,
+      "short_def": "最終還是。",
+      "long_def": "帶宿命或不得不。",
+      "usage_context": "「終究要分開」。",
+      "register": "literary",
+      "category": "副詞・時間",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "副詞",
+        "時間"
+      ],
+      "daily_example": "紙終究包不住火。",
+      "literary_example": "終究把時間的重力寫出來。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "權且",
+      "zhuyin": "ㄑㄩㄢˊ ㄑㄧㄝˇ",
+      "part_of_speech": "副",
+      "difficulty": 3,
+      "short_def": "暫且、勉強先。",
+      "long_def": "妥協的時間限定。",
+      "usage_context": "「權且如此」。",
+      "register": "literary",
+      "category": "副詞・語氣",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "副詞",
+        "文言"
+      ],
+      "daily_example": "他權且答應，心裡另有盤算。",
+      "literary_example": "權且是延期兌現的同意。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "刻薄",
+      "zhuyin": "ㄎㄜˋ ㄅㄛˊ",
+      "part_of_speech": "形",
+      "difficulty": 2,
+      "short_def": "待人說話冷酷尖酸。",
+      "long_def": "語言的刀。",
+      "usage_context": "「刻薄話」。",
+      "register": "literary",
+      "category": "性格・人際",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "性格",
+        "語言"
+      ],
+      "daily_example": "她刻薄得精確。",
+      "literary_example": "刻薄常偽裝成誠實。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "圓滑",
+      "zhuyin": "ㄩㄢˊ ㄏㄨㄚˊ",
+      "part_of_speech": "形",
+      "difficulty": 2,
+      "short_def": "世故、不得罪人。",
+      "long_def": "可生存策略，也可虛偽。",
+      "usage_context": "看敘事立場。",
+      "register": "literary",
+      "category": "性格・人際",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "性格",
+        "社交"
+      ],
+      "daily_example": "他圓滑地避開關鍵問題。",
+      "literary_example": "圓滑把棱角收進口袋。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "狷介",
+      "zhuyin": "ㄐㄩㄢˋ ㄐㄧㄝˋ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "性情正直、不肯同流。",
+      "long_def": "孤傲帶原則。文言。",
+      "usage_context": "「性情狷介」。",
+      "register": "literary",
+      "category": "性格・人際",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "性格",
+        "文言"
+      ],
+      "daily_example": "他狷介，不赴那場局。",
+      "literary_example": "狷介是拒絕被磨圓。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "跋扈",
+      "zhuyin": "ㄅㄚˊ ㄏㄨˋ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "蠻橫、氣焰盛。",
+      "long_def": "權力外溢。",
+      "usage_context": "「飛揚跋扈」。",
+      "register": "literary",
+      "category": "性格・人際",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "性格",
+        "權力"
+      ],
+      "daily_example": "新主管跋扈得會議室變小。",
+      "literary_example": "跋扈需要觀眾才完整。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "怯場",
+      "zhuyin": "ㄑㄧㄝˋ ㄔㄤˇ",
+      "part_of_speech": "動／形",
+      "difficulty": 2,
+      "short_def": "在人多或重要場合緊張失常。",
+      "long_def": "能力與場面不匹配的瞬間。",
+      "usage_context": "「一上台就怯場」。",
+      "register": "literary",
+      "category": "性格・情境",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "性格",
+        "懼"
+      ],
+      "daily_example": "他平時伶俐，一對鏡頭就怯場。",
+      "literary_example": "怯場是自我被場面壓住。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "妥帖",
+      "zhuyin": "ㄊㄨㄛˇ ㄊㄧㄝ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "恰當穩妥。",
+      "long_def": "說話、安排、用字皆可。",
+      "usage_context": "「措辭妥帖」。",
+      "register": "literary",
+      "category": "性格・表達",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "性格",
+        "語言"
+      ],
+      "daily_example": "她回覆妥帖，滴水不漏。",
+      "literary_example": "妥帖有時是拒絕冒險。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "倏忽",
+      "zhuyin": "ㄕㄨˋ ㄏㄨ",
+      "part_of_speech": "副",
+      "difficulty": 4,
+      "short_def": "極快、忽然。",
+      "long_def": "文言速度詞。",
+      "usage_context": "「倏忽一生」。",
+      "register": "literary",
+      "category": "時間・節奏",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "時間",
+        "文言"
+      ],
+      "daily_example": "童年倏忽過去。",
+      "literary_example": "倏忽讓回望來不及對焦。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "良久",
+      "zhuyin": "ㄌㄧㄤˊ ㄐㄧㄡˇ",
+      "part_of_speech": "名／副",
+      "difficulty": 3,
+      "short_def": "很久。",
+      "long_def": "書面停頓。",
+      "usage_context": "「沉默良久」。",
+      "register": "literary",
+      "category": "時間・節奏",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "時間",
+        "文言"
+      ],
+      "daily_example": "他盯著信良久。",
+      "literary_example": "良久把決定的重量秤給讀者。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "頃刻",
+      "zhuyin": "ㄑㄧㄥˇ ㄎㄜˋ",
+      "part_of_speech": "名",
+      "difficulty": 3,
+      "short_def": "極短時間。",
+      "long_def": "突變用。",
+      "usage_context": "「頃刻之間」。",
+      "register": "literary",
+      "category": "時間・節奏",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "時間"
+      ],
+      "daily_example": "笑容頃刻收盡。",
+      "literary_example": "頃刻是情緒的斷層。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "遲疑",
+      "zhuyin": "ㄔˊ ㄧˊ",
+      "part_of_speech": "動／形",
+      "difficulty": 2,
+      "short_def": "猶豫不決。",
+      "long_def": "通用。與逡巡對讀：遲疑偏心，逡巡偏步。",
+      "usage_context": "「遲疑片刻」。",
+      "register": "literary",
+      "category": "時間・猶豫",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "時間",
+        "猶豫"
+      ],
+      "daily_example": "游標遲疑在傳送鍵上。",
+      "literary_example": "遲疑是兩種未來在打架。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "頓挫",
+      "zhuyin": "ㄉㄨㄣˋ ㄘㄨㄛˋ",
+      "part_of_speech": "名",
+      "difficulty": 4,
+      "short_def": "停頓轉折；聲音或文勢的起伏。",
+      "long_def": "音樂／文氣術語入敘事。",
+      "usage_context": "「節奏頓挫」。",
+      "register": "literary",
+      "category": "時間・節奏",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "節奏",
+        "語言"
+      ],
+      "daily_example": "他說話頓挫有致。",
+      "literary_example": "頓挫讓句子有地形。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "岑寂",
+      "zhuyin": "ㄘㄣˊ ㄐㄧˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 4,
+      "short_def": "高而靜；寂寞。",
+      "long_def": "寂靜帶高度。",
+      "usage_context": "「萬籟岑寂」。",
+      "register": "literary",
+      "category": "氣氛・靜",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "氣氛",
+        "靜"
+      ],
+      "daily_example": "午夜圖書館岑寂。",
+      "literary_example": "岑寂是聲音被按住。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "窒悶",
+      "zhuyin": "ㄓˋ ㄇㄣˋ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "氣悶、壓抑。",
+      "long_def": "空間情緒。",
+      "usage_context": "「氣氛窒悶」。",
+      "register": "literary",
+      "category": "氣氛・壓",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "氣氛",
+        "壓"
+      ],
+      "daily_example": "飯局窒悶得刀叉都大聲。",
+      "literary_example": "窒悶讓人想找窗。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "空曠",
+      "zhuyin": "ㄎㄨㄥ ㄎㄨㄤˋ",
+      "part_of_speech": "形",
+      "difficulty": 2,
+      "short_def": "空間大而空。",
+      "long_def": "可寫自由或孤獨。",
+      "usage_context": "「空曠的廣場」。",
+      "register": "literary",
+      "category": "氣氛・空間",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "氣氛",
+        "空間"
+      ],
+      "daily_example": "散場後禮堂空曠。",
+      "literary_example": "空曠把回音還給人。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "逼仄",
+      "zhuyin": "ㄅㄧ ㄗㄜˋ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "狹窄。",
+      "long_def": "物理與心理壓迫。文言氣味。",
+      "usage_context": "「逼仄的巷弄」。",
+      "register": "literary",
+      "category": "氣氛・空間",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "氣氛",
+        "空間"
+      ],
+      "daily_example": "公寓逼仄，秘密無處放。",
+      "literary_example": "逼仄讓衝突沒有走廊。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "忖度",
+      "zhuyin": "ㄘㄨㄣˇ ㄉㄨㄛˋ",
+      "part_of_speech": "動",
+      "difficulty": 4,
+      "short_def": "推測、揣度。",
+      "long_def": "猜測他人心思。",
+      "usage_context": "「忖度上意」。",
+      "register": "literary",
+      "category": "動詞・認知",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "認知"
+      ],
+      "daily_example": "她忖度他為何突然客氣。",
+      "literary_example": "忖度是沒被允許的進入。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "覺察",
+      "zhuyin": "ㄐㄩㄝˊ ㄔㄚˊ",
+      "part_of_speech": "動",
+      "difficulty": 2,
+      "short_def": "發覺、注意到。",
+      "long_def": "比「發現」內、細。",
+      "usage_context": "「覺察異樣」。",
+      "register": "literary",
+      "category": "動詞・認知",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "認知"
+      ],
+      "daily_example": "他覺察到空氣變了。",
+      "literary_example": "覺察往往早於理解。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "恍悟",
+      "zhuyin": "ㄏㄨㄤˇ ㄨˋ",
+      "part_of_speech": "動",
+      "difficulty": 3,
+      "short_def": "忽然明白。",
+      "long_def": "認知轉折的動詞。",
+      "usage_context": "「恍悟過來」。",
+      "register": "literary",
+      "category": "動詞・認知",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "轉折"
+      ],
+      "daily_example": "她恍悟那句話的另一層。",
+      "literary_example": "恍悟是燈在腦內啪地打開。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "臆斷",
+      "zhuyin": "ㄧˋ ㄉㄨㄢˋ",
+      "part_of_speech": "動",
+      "difficulty": 3,
+      "short_def": "憑主觀推測而下結論。",
+      "long_def": "常帶批評色彩。",
+      "usage_context": "「不可臆斷」。",
+      "register": "literary",
+      "category": "動詞・認知",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "認知"
+      ],
+      "daily_example": "他臆斷對方出軌。",
+      "literary_example": "臆斷用故事填補證據的洞。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "甄別",
+      "zhuyin": "ㄓㄣ ㄅㄧㄝˊ",
+      "part_of_speech": "動",
+      "difficulty": 4,
+      "short_def": "鑑別、區分。",
+      "long_def": "選材、識人、史料。",
+      "usage_context": "「甄別真偽」。",
+      "register": "literary",
+      "category": "動詞・認知",
+      "tags": [
+        "主題詞庫",
+        "寫作者詞庫",
+        "大學生以上",
+        "動詞",
+        "判斷"
+      ],
+      "daily_example": "編輯在甄別可用的細節。",
+      "literary_example": "甄別是寫作的倫理動作。",
+      "source": {
+        "kind": "zi-geng-themed-lexicon",
+        "version": 1,
+        "level": "college-to-pro"
+      }
+    },
     {
       "status": "active",
       "term": "紗",
@@ -183,30 +2745,6 @@
     },
     {
       "status": "active",
-      "term": "逡巡",
-      "zhuyin": "ㄑㄩㄣ ㄒㄩㄣˊ",
-      "part_of_speech": "動",
-      "difficulty": 4,
-      "short_def": "有所顧忌而徘徊不前。",
-      "long_def": "把猶豫寫成空間位移。比「猶豫」可見：腳步、門檻、筆尖都可逡巡。",
-      "usage_context": "「逡巡片刻」「逡巡不前」。",
-      "register": "literary",
-      "category": "動作描寫",
-      "tags": [
-        "寫作者詞庫",
-        "大學生以上",
-        "動作",
-        "猶豫"
-      ],
-      "daily_example": "他在門口逡巡，終於還是按下門鈴。",
-      "literary_example": "筆在紙上逡巡，像在找一個不被刺痛的入口。",
-      "source": {
-        "kind": "zi-geng-writer-lexicon",
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
       "term": "氤氳",
       "zhuyin": "ㄧㄣ ㄩㄣ",
       "part_of_speech": "形／名",
@@ -249,31 +2787,6 @@
       ],
       "daily_example": "他侘傺了整個秋天，誰勸都像隔著水。",
       "literary_example": "侘傺之色寫在眉間，比哭更叫人不敢靠近。",
-      "source": {
-        "kind": "zi-geng-writer-lexicon",
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
-      "term": "囁嚅",
-      "zhuyin": "ㄋㄧㄝˋ ㄖㄨˊ",
-      "part_of_speech": "動",
-      "difficulty": 4,
-      "short_def": "想說又不敢大聲說；口動而不成句。",
-      "long_def": "對話失敗的身體證據。比「小聲說」更強調未完成。",
-      "usage_context": "「囁嚅半晌」「囁嚅著說」。",
-      "register": "literary",
-      "category": "動作描寫",
-      "tags": [
-        "寫作者詞庫",
-        "大學生以上",
-        "動作",
-        "對話",
-        "膽怯"
-      ],
-      "daily_example": "她囁嚅了兩次，終於把名字叫出來。",
-      "literary_example": "囁嚅在齒間碎掉，誰也沒聽清那句道歉。",
       "source": {
         "kind": "zi-geng-writer-lexicon",
         "level": "college-to-pro"
@@ -599,56 +3112,6 @@
     },
     {
       "status": "active",
-      "term": "怫然",
-      "zhuyin": "ㄈㄨˊ ㄖㄢˊ",
-      "part_of_speech": "副／形",
-      "difficulty": 4,
-      "short_def": "憤怒的樣子；忽然變臉。",
-      "long_def": "強調「變」的瞬間。 visable anger onset。",
-      "usage_context": "「怫然不悅」「怫然作色」。",
-      "register": "literary",
-      "category": "情緒・生氣",
-      "tags": [
-        "寫作者詞庫",
-        "大學生以上",
-        "情緒",
-        "生氣",
-        "瞬間"
-      ],
-      "daily_example": "他聽完條件，怫然推開椅子。",
-      "literary_example": "怫然只在眼底閃過，宴會的笑又接回去了。",
-      "source": {
-        "kind": "zi-geng-writer-lexicon",
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
-      "term": "睚眦",
-      "zhuyin": "ㄧㄚˊ ㄗˋ",
-      "part_of_speech": "名",
-      "difficulty": 5,
-      "short_def": "瞪眼睛；引申為極小的怨忿。",
-      "long_def": "「睚眦必報」把微小怒意寫成性格命題。單用睚眦可指小怨。",
-      "usage_context": "多與「必報」連用；亦可「略有睚眦」。",
-      "register": "literary",
-      "category": "情緒・生氣",
-      "tags": [
-        "寫作者詞庫",
-        "大學生以上",
-        "情緒",
-        "記恨",
-        "冷僻"
-      ],
-      "daily_example": "他不是大氣的人，睚眦都記在簿子上。",
-      "literary_example": "那場決裂，起於一次幾乎看不見的睚眦。",
-      "source": {
-        "kind": "zi-geng-writer-lexicon",
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
       "term": "戟指",
       "zhuyin": "ㄐㄧˇ ㄓˇ",
       "part_of_speech": "動",
@@ -716,102 +3179,6 @@
       ],
       "daily_example": "病後他瘦骨嶙峋，衣服都空了一圈。",
       "literary_example": "嶙峋的肩線像被歲月削過。",
-      "source": {
-        "kind": "zi-geng-writer-lexicon",
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
-      "term": "踟躕",
-      "zhuyin": "ㄔˊ ㄔㄨˊ",
-      "part_of_speech": "動",
-      "difficulty": 4,
-      "short_def": "心裡猶豫，要走不走。",
-      "long_def": "與逡巡近：踟躕更「心」，逡巡更「步」。",
-      "usage_context": "「踟躕不前」「踟躕片刻」。",
-      "register": "literary",
-      "category": "動作描寫",
-      "tags": [
-        "寫作者詞庫",
-        "大學生以上",
-        "猶豫",
-        "動作"
-      ],
-      "daily_example": "信封已封，他仍踟躕要不要投。",
-      "literary_example": "踟躕在兩種誠實之間，她選了沉默。",
-      "source": {
-        "kind": "zi-geng-writer-lexicon",
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
-      "term": "斑駁",
-      "zhuyin": "ㄅㄢ ㄅㄛˊ",
-      "part_of_speech": "形",
-      "difficulty": 3,
-      "short_def": "顏色深淺不一、痕跡錯落。",
-      "long_def": "時間痕跡的視覺詞。牆、光影、記憶皆可斑駁。",
-      "usage_context": "「斑駁的牆」「光影斑駁」。",
-      "register": "literary",
-      "category": "景物描寫",
-      "tags": [
-        "寫作者詞庫",
-        "大學生以上",
-        "景物",
-        "時間"
-      ],
-      "daily_example": "老公寓的牆皮斑駁，露出從前的綠。",
-      "literary_example": "記憶斑駁，亮處刺眼，暗處才是真的。",
-      "source": {
-        "kind": "zi-geng-writer-lexicon",
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
-      "term": "凜冽",
-      "zhuyin": "ㄌㄧㄣˇ ㄌㄧㄝˋ",
-      "part_of_speech": "形",
-      "difficulty": 3,
-      "short_def": "寒冷刺骨；也可形容神色、語氣嚴峻。",
-      "long_def": "氣溫與態度共用。眼神凜冽＝不給溫度。",
-      "usage_context": "「北風凜冽」「目光凜冽」。",
-      "register": "literary",
-      "category": "感覺描寫",
-      "tags": [
-        "寫作者詞庫",
-        "大學生以上",
-        "感覺",
-        "態度"
-      ],
-      "daily_example": "她的拒絕簡短而凜冽。",
-      "literary_example": "凜冽不是吼，是所有溫度被抽走。",
-      "source": {
-        "kind": "zi-geng-writer-lexicon",
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
-      "term": "澄澈",
-      "zhuyin": "ㄔㄥˊ ㄔㄜˋ",
-      "part_of_speech": "形",
-      "difficulty": 3,
-      "short_def": "清澈透明；心境清明。",
-      "long_def": "水與心共用。比「清楚」多一層無雜質。",
-      "usage_context": "「湖水澄澈」「神思澄澈」。",
-      "register": "literary",
-      "category": "感覺・景物",
-      "tags": [
-        "寫作者詞庫",
-        "大學生以上",
-        "景物",
-        "心境"
-      ],
-      "daily_example": "雨後空氣澄澈，連遠山都銳利。",
-      "literary_example": "她把怒意沉澱後，語氣忽然澄澈起來。",
       "source": {
         "kind": "zi-geng-writer-lexicon",
         "level": "college-to-pro"
@@ -943,31 +3310,6 @@
     },
     {
       "status": "active",
-      "term": "觳觫",
-      "zhuyin": "ㄏㄨˊ ㄙㄨˋ",
-      "part_of_speech": "形",
-      "difficulty": 5,
-      "short_def": "因恐懼而發抖。",
-      "long_def": "經典出自《孟子》。恐懼的身體化，比「害怕」可見。",
-      "usage_context": "「觳觫戰慄」；典故意味重。",
-      "register": "literary",
-      "category": "情緒・恐懼",
-      "tags": [
-        "寫作者詞庫",
-        "大學生以上",
-        "恐懼",
-        "文言",
-        "身體"
-      ],
-      "daily_example": "他觳觫著簽字，筆尖在紙上點出一串洞。",
-      "literary_example": "觳觫不是表演給你看的怕，是身體先投降。",
-      "source": {
-        "kind": "zi-geng-writer-lexicon",
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
       "term": "踟",
       "zhuyin": "ㄔˊ",
       "part_of_speech": "動",
@@ -992,30 +3334,6 @@
     },
     {
       "status": "active",
-      "term": "喟嘆",
-      "zhuyin": "ㄎㄨㄟˋ ㄊㄢˋ",
-      "part_of_speech": "動",
-      "difficulty": 3,
-      "short_def": "因感慨而長嘆。",
-      "long_def": "嘆的書面升級。帶評價與時間感。",
-      "usage_context": "「不禁喟嘆」「喟嘆世事」。",
-      "register": "literary",
-      "category": "動作描寫",
-      "tags": [
-        "寫作者詞庫",
-        "大學生以上",
-        "動作",
-        "感慨"
-      ],
-      "daily_example": "他看著舊照片，喟嘆一聲。",
-      "literary_example": "喟嘆落在空屋，回音比人誠實。",
-      "source": {
-        "kind": "zi-geng-writer-lexicon",
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
       "term": "睥",
       "zhuyin": "ㄅㄧˋ",
       "part_of_speech": "動",
@@ -1033,30 +3351,6 @@
       ],
       "daily_example": "（析字）睥，邪視也。",
       "literary_example": "視線的坡度，有時就是權力的坡度。",
-      "source": {
-        "kind": "zi-geng-writer-lexicon",
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
-      "term": "岑寂",
-      "zhuyin": "ㄘㄣˊ ㄐㄧˊ",
-      "part_of_speech": "形／名",
-      "difficulty": 4,
-      "short_def": "高而靜；寂寞、寂靜。",
-      "long_def": "寂靜的文學說法，帶空間高度感。",
-      "usage_context": "「萬籟岑寂」「岑寂的夜」。",
-      "register": "literary",
-      "category": "氣氛描寫",
-      "tags": [
-        "寫作者詞庫",
-        "大學生以上",
-        "氣氛",
-        "靜"
-      ],
-      "daily_example": "午夜的圖書館岑寂得可怕。",
-      "literary_example": "岑寂不是空，是聲音被什麼按住了。",
       "source": {
         "kind": "zi-geng-writer-lexicon",
         "level": "college-to-pro"
@@ -1297,30 +3591,6 @@
       ],
       "daily_example": "寫作中可斟酌使用「忿忿」，注意語域。",
       "literary_example": "語境合宜時，「忿忿」能提高書面密度。",
-      "source": {
-        "kind": "zi-geng-writer-lexicon",
-        "level": "college-to-pro"
-      }
-    },
-    {
-      "status": "active",
-      "term": "勃然",
-      "zhuyin": "ㄅㄛˊ ㄖㄢˊ",
-      "part_of_speech": "副",
-      "difficulty": 3,
-      "short_def": "突然（變色、大怒）。",
-      "long_def": "「勃然大怒」強調突變。",
-      "usage_context": "「勃然大怒」強調突變。",
-      "register": "literary",
-      "category": "情緒・生氣",
-      "tags": [
-        "寫作者詞庫",
-        "大學生以上",
-        "情緒",
-        "生氣"
-      ],
-      "daily_example": "寫作中可斟酌使用「勃然」，注意語域。",
-      "literary_example": "語境合宜時，「勃然」能提高書面密度。",
       "source": {
         "kind": "zi-geng-writer-lexicon",
         "level": "college-to-pro"
@@ -1911,58 +4181,6 @@
     },
     {
       "status": "active",
-      "term": "狷介",
-      "zhuyin": "ㄐㄩㄢˋ ㄐㄧㄝˋ",
-      "part_of_speech": null,
-      "difficulty": 5,
-      "short_def": "廉潔耿直。《晉書．卷四九．向秀傳》：「以為巢許狷介之士，未達堯心，豈足多慕。」",
-      "long_def": "廉潔耿直。《晉書．卷四九．向秀傳》：「以為巢許狷介之士，未達堯心，豈足多慕。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "國語辭典精選",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "國語辭典精選"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「狷介」。",
-      "literary_example": "語境合宜時，「狷介」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "061470003",
-        "score": 108
-      }
-    },
-    {
-      "status": "active",
-      "term": "倏忽",
-      "zhuyin": "ㄕㄨˋ ㄏㄨ",
-      "part_of_speech": null,
-      "difficulty": 5,
-      "short_def": "疾速。漢．蔡琰〈胡笳十八拍〉：「生倏忽兮如白駒之過隙，然不得歡樂兮當我之盛年。」《三國演義》第六八回：「小童急欲問時，左慈已拂袖而去；其行如飛，倏忽不見。」",
-      "long_def": "疾速。漢．蔡琰〈胡笳十八拍〉：「生倏忽兮如白駒之過隙，然不得歡樂兮當我之盛年。」《三國演義》第六八回：「小童急欲問時，左慈已拂袖而去；其行如飛，倏忽不見。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "國語辭典精選",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "國語辭典精選"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「倏忽」。",
-      "literary_example": "語境合宜時，「倏忽」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "090960003",
-        "score": 108
-      }
-    },
-    {
-      "status": "active",
       "term": "惻隱",
       "zhuyin": "ㄘㄜˋ ㄧㄣˇ",
       "part_of_speech": null,
@@ -2015,32 +4233,6 @@
     },
     {
       "status": "active",
-      "term": "莞爾",
-      "zhuyin": "ㄨㄢˇ ㄦˇ",
-      "part_of_speech": null,
-      "difficulty": 5,
-      "short_def": "微笑的樣子。《論語．陽貨》：「夫子莞爾而笑曰：『割雞焉用牛刀。』」《楚辭．屈原．漁父》：「漁父莞爾而笑，鼓枻而去。」",
-      "long_def": "微笑的樣子。《論語．陽貨》：「夫子莞爾而笑曰：『割雞焉用牛刀。』」《楚辭．屈原．漁父》：「漁父莞爾而笑，鼓枻而去。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "國語辭典精選",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "國語辭典精選"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「莞爾」。",
-      "literary_example": "語境合宜時，「莞爾」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "114730001",
-        "score": 108
-      }
-    },
-    {
-      "status": "active",
       "term": "藍縷",
       "zhuyin": "ㄌㄢˊ ㄌㄩˇ",
       "part_of_speech": null,
@@ -2088,32 +4280,6 @@
         "license": "CC BY-ND 3.0 TW",
         "attribution": "中華民國教育部《重編國語辭典修訂本》",
         "id": "033320001",
-        "score": 107
-      }
-    },
-    {
-      "status": "active",
-      "term": "凜然",
-      "zhuyin": "ㄌㄧㄣˇ ㄖㄢˊ",
-      "part_of_speech": null,
-      "difficulty": 5,
-      "short_def": "態度正直，人格嚴正。漢．楊惲〈報孫會宗書〉：「夫西河魏土，文侯所興，有段干木、田子方之遺風，凜然皆有節概，知去就之分。」唐．劉禹錫〈蜀先主廟〉詩：「天地英雄氣，千秋尚凜然。」也作「凜如」。",
-      "long_def": "態度正直，人格嚴正。漢．楊惲〈報孫會宗書〉：「夫西河魏土，文侯所興，有段干木、田子方之遺風，凜然皆有節概，知去就之分。」唐．劉禹錫〈蜀先主廟〉詩：「天地英雄氣，千秋尚凜然。」也作「凜如」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "國語辭典精選",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "國語辭典精選"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「凜然」。",
-      "literary_example": "語境合宜時，「凜然」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "036460006",
         "score": 107
       }
     },
@@ -2847,32 +5013,6 @@
     },
     {
       "status": "active",
-      "term": "悒鬱",
-      "zhuyin": "ㄧˋ ㄩˋ",
-      "part_of_speech": null,
-      "difficulty": 5,
-      "short_def": "鬱悶惆悵。如：「他面試失敗，悒鬱而歸。」《舊唐書．卷一七○．列傳．裴度》：「昭既在散位，心微悒鬱，而有怨逢吉之言。」",
-      "long_def": "鬱悶惆悵。如：「他面試失敗，悒鬱而歸。」《舊唐書．卷一七○．列傳．裴度》：「昭既在散位，心微悒鬱，而有怨逢吉之言。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "國語辭典精選",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "國語辭典精選"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「悒鬱」。",
-      "literary_example": "語境合宜時，「悒鬱」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "106050007",
-        "score": 105
-      }
-    },
-    {
-      "status": "active",
       "term": "奄忽",
       "zhuyin": "ㄧㄢˇ ㄏㄨ",
       "part_of_speech": null,
@@ -2998,2112 +5138,6 @@
         "license": "CC BY-ND 3.0 TW",
         "attribution": "中華民國教育部《重編國語辭典修訂本》",
         "id": "000140016",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "拔虎鬚",
-      "zhuyin": "ㄅㄚˊ ㄏㄨˇ ㄒㄩ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "老虎嘴上拔鬍鬚。比喻做冒險的事。《水滸傳》第一一回：「潑賊！殺不盡的強徒！將俺行李那裡去？洒家正要捉你，這廝們倒來拔虎鬚！」也作「捋虎鬚」、「撩虎鬚」。 2.一種古老詐賭術。民間把這種詐賭集團叫做虎鬚黨，稱其手法為「拔虎鬚」。後為詐欺、詐賭",
-      "long_def": "1.老虎嘴上拔鬍鬚。比喻做冒險的事。《水滸傳》第一一回：「潑賊！殺不盡的強徒！將俺行李那裡去？洒家正要捉你，這廝們倒來拔虎鬚！」也作「捋虎鬚」、「撩虎鬚」。 2.一種古老詐賭術。民間把這種詐賭集團叫做虎鬚黨，稱其手法為「拔虎鬚」。後為詐欺、詐賭的代名詞。清．劉家謀〈海音〉詩：「虎鬚手捋自棻迷，那更圍魚一網提。」自注云：「手握三籤，藏其根，露其梢，一根繫紅繩，垂於外，若可辨，若不可辨。猜者置錢其梢，以得紅繩為勝，勝者三倍償之。然隨手抽換，罕能中者。輒罄資以歸，謂之『虎鬚』。」 3.從事先做好記號的紙捲或紙團中，拈取其中一個，以取決事情。也稱為「拈鬮」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「拔虎鬚」。",
-      "literary_example": "語境合宜時，「拔虎鬚」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "000140030",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "跋胡疐尾",
-      "zhuyin": "ㄅㄚˊ ㄏㄨˊ ㄓˋ ㄨㄟˇ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "胡，項下的垂肉。跋胡疐尾指前進就踏著垂肉，後退又被尾巴絆倒。語本《詩經．豳風．狼跋》：「狼跋其胡，載疐其尾。」比喻陷入困境，進退兩難。明．朱之瑜〈答完翁書〉：「一時倉卒，事事不審，又一身作仆，兄翁行後，更覺周折，弟又才短，所以跋胡疐尾。」也",
-      "long_def": "胡，項下的垂肉。跋胡疐尾指前進就踏著垂肉，後退又被尾巴絆倒。語本《詩經．豳風．狼跋》：「狼跋其胡，載疐其尾。」比喻陷入困境，進退兩難。明．朱之瑜〈答完翁書〉：「一時倉卒，事事不審，又一身作仆，兄翁行後，更覺周折，弟又才短，所以跋胡疐尾。」也作「跋前疐後」、「跋前躓後」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「跋胡疐尾」。",
-      "literary_example": "語境合宜時，「跋胡疐尾」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "000190003",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "把飯叫饑",
-      "zhuyin": "ㄅㄚˇ ㄈㄢˋ ㄐㄧㄠˋ ㄐㄧ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "手上端著飯不吃，卻還喊餓。比喻多此一舉。如：「他的行徑猶如把飯叫饑，大家心知肚明，何須再裝模作樣。」宋．蘇軾〈答程&22471_.gif;仲推官書〉：「所示自是一篇高文，大似把飯叫饑，聊發千里一笑。」",
-      "long_def": "手上端著飯不吃，卻還喊餓。比喻多此一舉。如：「他的行徑猶如把飯叫饑，大家心知肚明，何須再裝模作樣。」宋．蘇軾〈答程&22471_.gif;仲推官書〉：「所示自是一篇高文，大似把飯叫饑，聊發千里一笑。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「把飯叫饑」。",
-      "literary_example": "語境合宜時，「把飯叫饑」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "0002300121",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "把戲",
-      "zhuyin": "ㄅㄚˇ ㄒㄧˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "戲法、武藝等雜技。《元史．卷七七．祭祀志六》：「祥和署掌雜把戲男女一百五十人。」《四遊記．南遊記．第一八回》：「眾弟子唯唯領命，辭別了世尊，變作凡人，去做砍手變龍，砍腳變獅，作把戲，眾人挨摣而看。」 2.比喻花樣、花招或手段。《董西廂》卷四",
-      "long_def": "1.戲法、武藝等雜技。《元史．卷七七．祭祀志六》：「祥和署掌雜把戲男女一百五十人。」《四遊記．南遊記．第一八回》：「眾弟子唯唯領命，辭別了世尊，變作凡人，去做砍手變龍，砍腳變獅，作把戲，眾人挨摣而看。」 2.比喻花樣、花招或手段。《董西廂》卷四：「十個指頭兒，自來不孤你，這一回看你把戲。」《紅樓夢》第一六回：「你別興頭，纔學著辦事，倒先學會了這把戲。」 3.為求達到某種目的，而刻意做作的表演。《二刻拍案驚奇》卷二七：「那裡是甚麼新陞游擊？只為不捨得愛妾，做出這一場把戲。」 4.事故。《醒世恆言．卷三六．黃秀才徼靈玉馬墜》：「他既不肯接客，留之何益！倘若三不知，做出把戲，倒是老大利害，不如轉貨與人，另尋一個罷！」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「把戲」。",
-      "literary_example": "語境合宜時，「把戲」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "000230033",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "撥雲睹日",
-      "zhuyin": "ㄅㄛ ㄩㄣˊ ㄉㄨˇ ㄖˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "撥開雲霧見太陽。語本《晉書．卷四三．樂廣傳》：「尚書衛瓘……見廣而奇之，曰：『自昔諸賢既沒，常恐微言將絕，而今復聞斯言於君矣。』命諸子造焉，曰：『此人之水鏡，見之瑩然，若披雲霧而睹青天也。』」後以此語形容受到啟發，豁然開通的心情。或比喻一掃",
-      "long_def": "撥開雲霧見太陽。語本《晉書．卷四三．樂廣傳》：「尚書衛瓘……見廣而奇之，曰：『自昔諸賢既沒，常恐微言將絕，而今復聞斯言於君矣。』命諸子造焉，曰：『此人之水鏡，見之瑩然，若披雲霧而睹青天也。』」後以此語形容受到啟發，豁然開通的心情。或比喻一掃陰霾，見到光明、希望無窮的境遇。元．王實甫《西廂記．第二本．楔子》：「自別兄長臺顏，一向有失聽教；今得一見，如撥雲睹日。」《隋唐演義》第四九回：「憶昔相從，多蒙教誨，至今感德。此刻相逢，何異撥雲睹日？」也作「撥雲見日」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「撥雲睹日」。",
-      "literary_example": "語境合宜時，「撥雲睹日」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "0004100432",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "波瀾",
-      "zhuyin": "ㄅㄛ ㄌㄢˊ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "波浪、波濤。《文選．劉楨．雜詩》：「安得肅肅羽，從爾浮波瀾。」宋．范仲淹〈岳陽樓記〉：「至若春和景明，波瀾不驚，上下天光，一碧萬頃。」 2.比喻世事或人心的起伏變化。《晉．陸機．君子行》：「休咎相乘躡，翻覆若波瀾。」唐．李白〈古風詩〉五九首",
-      "long_def": "1.波浪、波濤。《文選．劉楨．雜詩》：「安得肅肅羽，從爾浮波瀾。」宋．范仲淹〈岳陽樓記〉：「至若春和景明，波瀾不驚，上下天光，一碧萬頃。」 2.比喻世事或人心的起伏變化。《晉．陸機．君子行》：「休咎相乘躡，翻覆若波瀾。」唐．李白〈古風詩〉五九首之二三：「人心若波瀾，世路有屈曲。」 3.比喻文章氣勢壯闊。唐．杜甫〈追酬故高蜀州人日見寄〉詩：「文章曹植波瀾闊，服食劉安德業尊。」唐．方干〈越中逢孫百篇〉詩：「上才乘酒到山陰，日日成篇字字金；鏡水周迴千萬頃，波瀾倒瀉入君心。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「波瀾」。",
-      "literary_example": "語境合宜時，「波瀾」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "000440040",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "剝極必復",
-      "zhuyin": "ㄅㄛ ㄐㄧˊ ㄅㄧˋ ㄈㄨˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "剝，《易經》卦名。六十四卦之一，為剝落之象。復，《易經》卦名。六十四卦之一，有來復之意。剝極必復比喻惡劣的情況到達極點後，必定轉好。如：「不要灰心，苦難總會過去，所謂剝極必復，未來一定會漸入佳境。」",
-      "long_def": "剝，《易經》卦名。六十四卦之一，為剝落之象。復，《易經》卦名。六十四卦之一，有來復之意。剝極必復比喻惡劣的情況到達極點後，必定轉好。如：「不要灰心，苦難總會過去，所謂剝極必復，未來一定會漸入佳境。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「剝極必復」。",
-      "literary_example": "語境合宜時，「剝極必復」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "0005300131",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "薄倖",
-      "zhuyin": "ㄅㄛˊ ㄒㄧㄥˋ",
-      "part_of_speech": null,
-      "difficulty": 4,
-      "short_def": "薄情、無情。唐．杜牧〈遣懷〉詩：「十年一覺揚州夢，贏得青樓薄倖名。」明．劉兌《金童玉女嬌紅記》：「把海誓山盟設下，薄倖的神靈監察！」 2.古時女子對情人的一種暱稱。宋．周紫芝〈謁金門．春雨細〉詞：「薄倖更無書一紙，畫樓愁獨倚。」",
-      "long_def": "1.薄情、無情。唐．杜牧〈遣懷〉詩：「十年一覺揚州夢，贏得青樓薄倖名。」明．劉兌《金童玉女嬌紅記》：「把海誓山盟設下，薄倖的神靈監察！」 2.古時女子對情人的一種暱稱。宋．周紫芝〈謁金門．春雨細〉詞：「薄倖更無書一紙，畫樓愁獨倚。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「薄倖」。",
-      "literary_example": "語境合宜時，「薄倖」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "000940057",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "白璧微瑕",
-      "zhuyin": "ㄅㄞˊ ㄅㄧˋ ㄨㄟˊ ㄒㄧㄚˊ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "潔白的璧玉上有小斑點。比喻很好的人或事還有小缺點，帶有惋惜的意味。南朝梁．蕭統《昭明太子文集．卷四．陶淵明集序》：「白璧微瑕者，惟在閒情一賦。」也作「白璧之瑕」、「白玉微瑕」、「白玉微疵」。",
-      "long_def": "潔白的璧玉上有小斑點。比喻很好的人或事還有小缺點，帶有惋惜的意味。南朝梁．蕭統《昭明太子文集．卷四．陶淵明集序》：「白璧微瑕者，惟在閒情一賦。」也作「白璧之瑕」、「白玉微瑕」、「白玉微疵」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「白璧微瑕」。",
-      "literary_example": "語境合宜時，「白璧微瑕」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "001320016",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "白圭之玷",
-      "zhuyin": "ㄅㄞˊ ㄍㄨㄟ ㄓ ㄉㄧㄢˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "白玉上面的瑕疵。語出《詩經．大雅．抑》：「白圭之玷，尚可磨也。斯言之玷，不可為也。」後比喻完美的人、事、物上的一點小缺失。唐．劉知幾《史通．卷八．書事》：「范曄博採眾書，裁成漢典，觀其所取，頗有奇工。至於方術篇……言唯迂誕，事多詭越。可謂美",
-      "long_def": "白玉上面的瑕疵。語出《詩經．大雅．抑》：「白圭之玷，尚可磨也。斯言之玷，不可為也。」後比喻完美的人、事、物上的一點小缺失。唐．劉知幾《史通．卷八．書事》：「范曄博採眾書，裁成漢典，觀其所取，頗有奇工。至於方術篇……言唯迂誕，事多詭越。可謂美玉之瑕，白圭之玷，惜哉！」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「白圭之玷」。",
-      "literary_example": "語境合宜時，「白圭之玷」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "001320232",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "白話文",
-      "zhuyin": "ㄅㄞˊ ㄏㄨㄚˋ ㄨㄣˊ",
-      "part_of_speech": null,
-      "difficulty": 4,
-      "short_def": "以口語為基礎的書面語言，相對於文言文而言。在五四運動被大力提倡之前所留下的主要文獻，包括東漢佛經、唐宋語錄、宋代話本、明清小說等。迄今已成為最普遍使用的文體。也稱為「語體文」。",
-      "long_def": "以口語為基礎的書面語言，相對於文言文而言。在五四運動被大力提倡之前所留下的主要文獻，包括東漢佛經、唐宋語錄、宋代話本、明清小說等。迄今已成為最普遍使用的文體。也稱為「語體文」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「白話文」。",
-      "literary_example": "語境合宜時，「白話文」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "001320298",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "白日昇天",
-      "zhuyin": "ㄅㄞˊ ㄖˋ ㄕㄥ ㄊㄧㄢ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "古人以為服食仙丹，或積累善行，便可以在白日昇天成仙。《魏書．卷一一四．釋老志》：「其為教也，咸蠲去邪累，澡雪心神，積行樹功，累德增善，乃至白日昇天，長生世上。」也作「白日飛昇」。 2.比喻向來貧寒的人突然間富貴起來。如：「自從他得到那份獎金",
-      "long_def": "1.古人以為服食仙丹，或積累善行，便可以在白日昇天成仙。《魏書．卷一一四．釋老志》：「其為教也，咸蠲去邪累，澡雪心神，積行樹功，累德增善，乃至白日昇天，長生世上。」也作「白日飛昇」。 2.比喻向來貧寒的人突然間富貴起來。如：「自從他得到那份獎金後，便有如白日昇天似的，完全變了一個樣。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「白日昇天」。",
-      "literary_example": "語境合宜時，「白日昇天」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "001320488",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "白雲蒼狗",
-      "zhuyin": "ㄅㄞˊ ㄩㄣˊ ㄘㄤ ㄍㄡˇ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "像白色的浮雲轉眼間變成青灰色的狗。比喻世事變幻無常。參見「白衣蒼狗」條。清．姚鼐〈慧居寺〉詩：「白雲蒼狗塵寰感，也到空林釋子家。」清．錢朝彥〈西谿梵隱志序〉：「白雲蒼狗，幻定無常，以理揆之，亦何足歎！」",
-      "long_def": "像白色的浮雲轉眼間變成青灰色的狗。比喻世事變幻無常。參見「白衣蒼狗」條。清．姚鼐〈慧居寺〉詩：「白雲蒼狗塵寰感，也到空林釋子家。」清．錢朝彥〈西谿梵隱志序〉：「白雲蒼狗，幻定無常，以理揆之，亦何足歎！」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「白雲蒼狗」。",
-      "literary_example": "語境合宜時，「白雲蒼狗」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "001320604",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "百步穿楊",
-      "zhuyin": "ㄅㄞˇ ㄅㄨˋ ㄔㄨㄢ ㄧㄤˊ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "本指春秋時楚國的養由基能在百步內射中柳葉。見《戰國策．西周策》。後比喻射箭技術高超或技藝高強。如：「神射手百步穿楊的技藝，令人看得目瞪口呆。」《三國演義》第五三回：「雲長吃了一驚，帶箭回寨，方知黃忠有百步穿楊之能。」",
-      "long_def": "本指春秋時楚國的養由基能在百步內射中柳葉。見《戰國策．西周策》。後比喻射箭技術高超或技藝高強。如：「神射手百步穿楊的技藝，令人看得目瞪口呆。」《三國演義》第五三回：「雲長吃了一驚，帶箭回寨，方知黃忠有百步穿楊之能。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「百步穿楊」。",
-      "literary_example": "語境合宜時，「百步穿楊」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "001330016",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "百發百中",
-      "zhuyin": "ㄅㄞˇ ㄈㄚ ㄅㄞˇ ㄓㄨㄥˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "比喻射擊技藝高妙，絕無虛發。《戰國策．西周策》：「楚有養由基者，善射，去柳葉者百步而射之，百發百中。」《三國演義》第五三回：「原來黃忠能開二石力之弓，百發百中。」也作「百中百發」。 2.比喻料事如神，所謀皆中。《紅樓夢》第九七回：「那身子頓",
-      "long_def": "1.比喻射擊技藝高妙，絕無虛發。《戰國策．西周策》：「楚有養由基者，善射，去柳葉者百步而射之，百發百中。」《三國演義》第五三回：「原來黃忠能開二石力之弓，百發百中。」也作「百中百發」。 2.比喻料事如神，所謀皆中。《紅樓夢》第九七回：「那身子頓覺健旺起來，祇不過不似從前那般靈透，所以鳳姐的妙計百發百中。」《老殘遊記》第一回：「若要此病永遠不發，也沒有什麼難處，只須依著古人方法，那是百發百中的。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「百發百中」。",
-      "literary_example": "語境合宜時，「百發百中」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "001330031",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "百年不遇",
-      "zhuyin": "ㄅㄞˇ ㄋㄧㄢˊ ㄅㄨˋ ㄩˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "百年也碰不到，比喻甚為罕見、難得。如：「這種怪事百年不遇，今天倒開了眼界。」《彭公案》第五二回：「此乃百年不遇之機會，寨主不為，還要將金牌送給於他，這不是聰明反被聰明誤嗎？」",
-      "long_def": "百年也碰不到，比喻甚為罕見、難得。如：「這種怪事百年不遇，今天倒開了眼界。」《彭公案》第五二回：「此乃百年不遇之機會，寨主不為，還要將金牌送給於他，這不是聰明反被聰明誤嗎？」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「百年不遇」。",
-      "literary_example": "語境合宜時，「百年不遇」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "0013300630",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "百口",
-      "zhuyin": "ㄅㄞˇ ㄎㄡˇ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "一百人，泛指多人。《北史．卷四一．楊敷傳》：「仁壽初，代高熲為尚書左僕射，賜良馬十匹、牝馬二百匹、奴婢百口。」 2.全家族。《列子．說符》：「操舟鬻渡，利供百口。」《後漢書．卷六四．趙岐傳》：「我北海孫賓石，闔門百口，埶能相濟。」 3.眾口",
-      "long_def": "1.一百人，泛指多人。《北史．卷四一．楊敷傳》：「仁壽初，代高熲為尚書左僕射，賜良馬十匹、牝馬二百匹、奴婢百口。」 2.全家族。《列子．說符》：「操舟鬻渡，利供百口。」《後漢書．卷六四．趙岐傳》：「我北海孫賓石，闔門百口，埶能相濟。」 3.眾口。比喻人多而聲音嘈雜。《紅樓夢》第五回：「汝今獨得此二字，在閨閣中固可為良友，然於世道中未免迂闊怪詭，百口嘲謗，萬目睚眦。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「百口」。",
-      "literary_example": "語境合宜時，「百口」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "001330111",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "百花齊放",
-      "zhuyin": "ㄅㄞˇ ㄏㄨㄚ ㄑㄧˊ ㄈㄤˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "形容各種花朵一起開放，繁華茂盛。如：「春天一到，百花齊放。」《鏡花緣》第八回：「只因太后有個宮娥，名喚上官婉兒，那年百花齊放，曾與群臣作詩，滿朝臣子都作他不過，因此文名大振。」 2.比喻各種形式風格的藝術或思想蓬勃發展。如：「這一季的藝術表",
-      "long_def": "1.形容各種花朵一起開放，繁華茂盛。如：「春天一到，百花齊放。」《鏡花緣》第八回：「只因太后有個宮娥，名喚上官婉兒，那年百花齊放，曾與群臣作詩，滿朝臣子都作他不過，因此文名大振。」 2.比喻各種形式風格的藝術或思想蓬勃發展。如：「這一季的藝術表演，真是百花齊放。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「百花齊放」。",
-      "literary_example": "語境合宜時，「百花齊放」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "0013301261",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "百戰百勝",
-      "zhuyin": "ㄅㄞˇ ㄓㄢˋ ㄅㄞˇ ㄕㄥˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "每戰必勝。比喻善戰。《史記．卷四四．魏世家》：「外黃徐子謂太子曰：『臣有百戰百勝之術。』」《三國演義》第八五回：「吾與汝等，共據高城，南臨大江，北背山險，以逸待勞，以主制客：此乃百戰百勝之勢。」",
-      "long_def": "每戰必勝。比喻善戰。《史記．卷四四．魏世家》：「外黃徐子謂太子曰：『臣有百戰百勝之術。』」《三國演義》第八五回：「吾與汝等，共據高城，南臨大江，北背山險，以逸待勞，以主制客：此乃百戰百勝之勢。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「百戰百勝」。",
-      "literary_example": "語境合宜時，「百戰百勝」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "001330177",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "百丈竿頭",
-      "zhuyin": "ㄅㄞˇ ㄓㄤˋ ㄍㄢ ㄊㄡˊ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "比喻道行修養達到極高境界。《景德傳燈錄．卷一○．湖南長沙景岑禪師》：「百丈竿頭不動人，雖然得入未為真。百丈竿頭須進步，十方世界是全身。」也作「百尺竿頭」、「萬丈竿頭」。",
-      "long_def": "比喻道行修養達到極高境界。《景德傳燈錄．卷一○．湖南長沙景岑禪師》：「百丈竿頭不動人，雖然得入未為真。百丈竿頭須進步，十方世界是全身。」也作「百尺竿頭」、「萬丈竿頭」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「百丈竿頭」。",
-      "literary_example": "語境合宜時，「百丈竿頭」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "0013301801",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "百城之富",
-      "zhuyin": "ㄅㄞˇ ㄔㄥˊ ㄓ ㄈㄨˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "形容藏書豐富，有如坐擁百座城市一般。明．倪元璐〈朱龍巖翁像贊〉：「百城之富禪其賢，二酉之藏世其澤。」清．黃宗羲〈天一閣藏書記〉：「強解事者，以數百金捆載坊書，便稱百城之富。」",
-      "long_def": "形容藏書豐富，有如坐擁百座城市一般。明．倪元璐〈朱龍巖翁像贊〉：「百城之富禪其賢，二酉之藏世其澤。」清．黃宗羲〈天一閣藏書記〉：「強解事者，以數百金捆載坊書，便稱百城之富。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「百城之富」。",
-      "literary_example": "語境合宜時，「百城之富」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "0013301901",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "拜望",
-      "zhuyin": "ㄅㄞˋ ㄨㄤˋ",
-      "part_of_speech": null,
-      "difficulty": 4,
-      "short_def": "拜訪問候。元．李致遠《還牢末》第一折：「小哥！煩你去報，有一朋友來拜望。」《儒林外史》第三五回：「自此以後，九卿六部的官，無一個不來拜望請教。」 2.舊時月食時祭祀叩拜的習俗。《逸周書．卷三．小開》：「正月丙子拜望，食無時。」",
-      "long_def": "1.拜訪問候。元．李致遠《還牢末》第一折：「小哥！煩你去報，有一朋友來拜望。」《儒林外史》第三五回：「自此以後，九卿六部的官，無一個不來拜望請教。」 2.舊時月食時祭祀叩拜的習俗。《逸周書．卷三．小開》：「正月丙子拜望，食無時。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「拜望」。",
-      "literary_example": "語境合宜時，「拜望」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "001410095",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "杯弓蛇影",
-      "zhuyin": "ㄅㄟ ㄍㄨㄥ ㄕㄜˊ ㄧㄥˇ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "相傳杜宣夏至日赴宴，見酒杯中似有蛇，不敢不飲。酒後胸腹極痛，醫治不癒，後得知是壁上赤弩照在杯中，形影如蛇，於是病痛立刻痊癒。見漢．應劭《風俗通義．卷九．世間多有見怪驚怖以自傷者》。後比喻為不存在的事情枉自驚惶。也作「杯底逢蛇」、「杯中蛇影」",
-      "long_def": "相傳杜宣夏至日赴宴，見酒杯中似有蛇，不敢不飲。酒後胸腹極痛，醫治不癒，後得知是壁上赤弩照在杯中，形影如蛇，於是病痛立刻痊癒。見漢．應劭《風俗通義．卷九．世間多有見怪驚怖以自傷者》。後比喻為不存在的事情枉自驚惶。也作「杯底逢蛇」、「杯中蛇影」、「弓影杯蛇」、「弓影浮杯」、「影中蛇」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「杯弓蛇影」。",
-      "literary_example": "語境合宜時，「杯弓蛇影」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "001460011",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "碑帖",
-      "zhuyin": "ㄅㄟ ㄊㄧㄝˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "泛指書法作品的墨拓本或墨跡本。 2.古代書法家留傳後代的書法，刻於石碑者稱之為「碑」，寫於紙絹者稱之為「帖」。後世用版刻或石刻翻刻前人墨跡的拓本，也稱為「帖」。如「淳化閣帖」等。",
-      "long_def": "1.泛指書法作品的墨拓本或墨跡本。 2.古代書法家留傳後代的書法，刻於石碑者稱之為「碑」，寫於紙絹者稱之為「帖」。後世用版刻或石刻翻刻前人墨跡的拓本，也稱為「帖」。如「淳化閣帖」等。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「碑帖」。",
-      "literary_example": "語境合宜時，「碑帖」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "001550006",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "碑誌",
-      "zhuyin": "ㄅㄟ ㄓˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "碑文和墓誌，多為紀念功德而作。《南史．卷七二．文學傳．劉勰傳》：「勰為文長於佛理，都下寺塔及名僧碑誌，必請勰製文。」《新唐書．卷一二五．張說傳》：「長於碑誌，世所不逮。」也作「碑志」。",
-      "long_def": "碑文和墓誌，多為紀念功德而作。《南史．卷七二．文學傳．劉勰傳》：「勰為文長於佛理，都下寺塔及名僧碑誌，必請勰製文。」《新唐書．卷一二五．張說傳》：「長於碑誌，世所不逮。」也作「碑志」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「碑誌」。",
-      "literary_example": "語境合宜時，「碑誌」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "001550015",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "背道而馳",
-      "zhuyin": "ㄅㄟˋ ㄉㄠˋ ㄦˊ ㄔˊ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "朝著相反方向奔馳。常比喻所要到達的目標和實際進行的方向完全相反。如：「從臺中到臺北，車子應朝北開，你卻上了往南車道，這不是背道而馳嗎？」「想考上大學就該勤奮讀書，而你現在卻整天到處晃蕩，這不是背道而馳嗎？」",
-      "long_def": "朝著相反方向奔馳。常比喻所要到達的目標和實際進行的方向完全相反。如：「從臺中到臺北，車子應朝北開，你卻上了往南車道，這不是背道而馳嗎？」「想考上大學就該勤奮讀書，而你現在卻整天到處晃蕩，這不是背道而馳嗎？」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「背道而馳」。",
-      "literary_example": "語境合宜時，「背道而馳」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "001680015",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "背景",
-      "zhuyin": "ㄅㄟˋ ㄐㄧㄥˇ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "圖畫、攝影中襯托主體的景物。如：「背景太亮，照片容易曝光過度。」 2.戲劇舞臺上的布景。如：「這齣短劇只換了兩次背景就演完了。」 3.比喻可作倚靠的人物或勢力。如：「人事背景」。 4.對事物起作用的歷史情況或現實環境。如：「歷史背景」、「時",
-      "long_def": "1.圖畫、攝影中襯托主體的景物。如：「背景太亮，照片容易曝光過度。」 2.戲劇舞臺上的布景。如：「這齣短劇只換了兩次背景就演完了。」 3.比喻可作倚靠的人物或勢力。如：「人事背景」。 4.對事物起作用的歷史情況或現實環境。如：「歷史背景」、「時代背景」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「背景」。",
-      "literary_example": "語境合宜時，「背景」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "001680048",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "背暗投明",
-      "zhuyin": "ㄅㄟˋ ㄢˋ ㄊㄡˊ ㄇㄧㄥˊ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "拋棄黑暗，投向光明。比喻認清是非曲直，走向正道。元．尚仲賢《單鞭奪槊．楔子》：「高鳥相良木而棲，賢臣擇明主而佐，背暗投明，古之常理。」明．沈采《千金記》第一三齣：「我欲背暗投明，奈無明王。」也作「棄暗投明」。",
-      "long_def": "拋棄黑暗，投向光明。比喻認清是非曲直，走向正道。元．尚仲賢《單鞭奪槊．楔子》：「高鳥相良木而棲，賢臣擇明主而佐，背暗投明，古之常理。」明．沈采《千金記》第一三齣：「我欲背暗投明，奈無明王。」也作「棄暗投明」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「背暗投明」。",
-      "literary_example": "語境合宜時，「背暗投明」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "0016800941",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "包袱",
-      "zhuyin": "ㄅㄠ ㄈㄨˊ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "用布包成，便於攜帶的行李。《紅樓夢》第四二回：「這包袱裡是兩疋紬子，年下做件衣裳穿。」《老殘遊記》第四回：「在兩間堆破爛農器的一間屋子裡，搜出了一個包袱，裡頭有七八件衣裳。」 2.比喻累贅或負擔。如：「精神上的包袱。」 3.相聲或快書等曲藝",
-      "long_def": "1.用布包成，便於攜帶的行李。《紅樓夢》第四二回：「這包袱裡是兩疋紬子，年下做件衣裳穿。」《老殘遊記》第四回：「在兩間堆破爛農器的一間屋子裡，搜出了一個包袱，裡頭有七八件衣裳。」 2.比喻累贅或負擔。如：「精神上的包袱。」 3.相聲或快書等曲藝中所製造的笑料。 4.一種特製的紙包，內裝紙錢等物，在佛前或墳前焚化。《紅樓夢》第五八回：「外頭去叫小廝們打了包袱，寫上名姓去燒。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「包袱」。",
-      "literary_example": "語境合宜時，「包袱」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "002020016",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "保舉",
-      "zhuyin": "ㄅㄠˇ ㄐㄩˇ",
-      "part_of_speech": null,
-      "difficulty": 4,
-      "short_def": "古時由大臣奏請提升有特別技能、學識或功績的人才，供朝廷任用，並為其作保，稱為「保舉」。《儒林外史》第五○回：「今歲在京，因書法端楷，保舉中書職銜的。」《老殘遊記》第一八回：「替他捐官，保舉他，他不要，半夜裡逃走了的。」",
-      "long_def": "古時由大臣奏請提升有特別技能、學識或功績的人才，供朝廷任用，並為其作保，稱為「保舉」。《儒林外史》第五○回：「今歲在京，因書法端楷，保舉中書職銜的。」《老殘遊記》第一八回：「替他捐官，保舉他，他不要，半夜裡逃走了的。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「保舉」。",
-      "literary_example": "語境合宜時，「保舉」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "002150091",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "保藏",
-      "zhuyin": "ㄅㄠˇ ㄘㄤˊ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "保管收藏。如：「地下出土的古代文獻非常珍貴，也極為脆弱，應有妥善的保藏方式。」《陳書．卷二．高祖本紀下》：「庚辰，詔出佛牙於杜姥宅，集四部設無遮大會，高祖親出闕前禮拜。初，齊故僧統法獻於烏纏國得之，常在定林上寺，梁天監末，為攝山慶雲寺沙門慧",
-      "long_def": "保管收藏。如：「地下出土的古代文獻非常珍貴，也極為脆弱，應有妥善的保藏方式。」《陳書．卷二．高祖本紀下》：「庚辰，詔出佛牙於杜姥宅，集四部設無遮大會，高祖親出闕前禮拜。初，齊故僧統法獻於烏纏國得之，常在定林上寺，梁天監末，為攝山慶雲寺沙門慧興保藏，慧興將終，以屬弟慧志。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「保藏」。",
-      "literary_example": "語境合宜時，「保藏」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "002150159",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "堡壘",
-      "zhuyin": "ㄅㄠˇ ㄌㄟˇ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "在重要地點為軍事防禦而設的堅固建築物。唐．柳宗元〈唐故安州刺史兼侍御史貶柳州司馬孟公墓誌銘〉：「伐趙之役，堅立堡壘，誓死麾下。」 2.比喻難以攻破的事物或思想頑固的人。如：「精神堡壘」、「那個封建堡壘，思想頑固，難予溝通。」",
-      "long_def": "1.在重要地點為軍事防禦而設的堅固建築物。唐．柳宗元〈唐故安州刺史兼侍御史貶柳州司馬孟公墓誌銘〉：「伐趙之役，堅立堡壘，誓死麾下。」 2.比喻難以攻破的事物或思想頑固的人。如：「精神堡壘」、「那個封建堡壘，思想頑固，難予溝通。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「堡壘」。",
-      "literary_example": "語境合宜時，「堡壘」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "002160001",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "抱薪救火",
-      "zhuyin": "ㄅㄠˋ ㄒㄧㄣ ㄐㄧㄡˋ ㄏㄨㄛˇ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "抱著木柴去救火。比喻處理事情的方法錯誤，以致雖有心消弭禍害，卻反使禍害擴大。《淮南子．說山》：「止言以言，止事以事，譬猶揚堁而弭塵，抱薪而救火。」《史記．卷四四．魏世家》：「且夫以地事秦譬猶抱薪救火，薪不盡，火不滅。」也作「抱薪救焚」、「負",
-      "long_def": "抱著木柴去救火。比喻處理事情的方法錯誤，以致雖有心消弭禍害，卻反使禍害擴大。《淮南子．說山》：「止言以言，止事以事，譬猶揚堁而弭塵，抱薪而救火。」《史記．卷四四．魏世家》：「且夫以地事秦譬猶抱薪救火，薪不盡，火不滅。」也作「抱薪救焚」、「負薪救火」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「抱薪救火」。",
-      "literary_example": "語境合宜時，「抱薪救火」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "002240047",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "爆竹",
-      "zhuyin": "ㄅㄠˋ ㄓㄨˊ",
-      "part_of_speech": null,
-      "difficulty": 4,
-      "short_def": "古時以火燃竹，劈啪作響，用以驅鬼。今則用紙捲裹火藥做成，點燃引線就會炸裂，發出巨大聲響，常在喜慶時燃放。南朝梁．宗懍《荊楚歲時記．正月》：「雞鳴而起，先於庭前爆竹，以辟山臊惡鬼。」《紅樓夢》第五三回：「一夜人聲嘈雜，語笑喧闐，爆竹起火，絡繹",
-      "long_def": "古時以火燃竹，劈啪作響，用以驅鬼。今則用紙捲裹火藥做成，點燃引線就會炸裂，發出巨大聲響，常在喜慶時燃放。南朝梁．宗懍《荊楚歲時記．正月》：「雞鳴而起，先於庭前爆竹，以辟山臊惡鬼。」《紅樓夢》第五三回：「一夜人聲嘈雜，語笑喧闐，爆竹起火，絡繹不絕。」也作「爆竿」、「爆仗」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「爆竹」。",
-      "literary_example": "語境合宜時，「爆竹」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "002350021",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "半途而廢",
-      "zhuyin": "ㄅㄢˋ ㄊㄨˊ ㄦˊ ㄈㄟˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "事情沒做成功就停止。比喻做事情有始無終。《三國演義》第一一四回：「臣已得祁山之寨，正欲收功，不期半途而廢。」《西遊記》第五七回：「沙僧只叫：『怎麼好！怎麼好！』這誠所謂半途而廢，中道而止也！」",
-      "long_def": "事情沒做成功就停止。比喻做事情有始無終。《三國演義》第一一四回：「臣已得祁山之寨，正欲收功，不期半途而廢。」《西遊記》第五七回：「沙僧只叫：『怎麼好！怎麼好！』這誠所謂半途而廢，中道而止也！」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「半途而廢」。",
-      "literary_example": "語境合宜時，「半途而廢」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "002580060",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "半日",
-      "zhuyin": "ㄅㄢˋ ㄖˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "一天的二分之一，半天。如：「陽明山半日遊」、「組長今天上午出差，請半日公假。」 2.比喻一段不太短的時間。《紅樓夢》第八回：「請了安，又問好，嘮叨半日，方纔走開。」",
-      "long_def": "1.一天的二分之一，半天。如：「陽明山半日遊」、「組長今天上午出差，請半日公假。」 2.比喻一段不太短的時間。《紅樓夢》第八回：「請了安，又問好，嘮叨半日，方纔走開。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「半日」。",
-      "literary_example": "語境合宜時，「半日」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "002580197",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "本末倒置",
-      "zhuyin": "ㄅㄣˇ ㄇㄛˋ ㄉㄠˋ ㄓˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "事物的主次顛倒。比喻不知事情的輕重緩急。清．王昶《金石萃編．卷一五八．金五．綏德州新學記》：「然非知治之審，則亦未嘗不本末倒置。」也作「本末顛倒」、「本末舛逆」。",
-      "long_def": "事物的主次顛倒。比喻不知事情的輕重緩急。清．王昶《金石萃編．卷一五八．金五．綏德州新學記》：「然非知治之審，則亦未嘗不本末倒置。」也作「本末顛倒」、「本末舛逆」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「本末倒置」。",
-      "literary_example": "語境合宜時，「本末倒置」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "002690010",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "本錢",
-      "zhuyin": "ㄅㄣˇ ㄑㄧㄢˊ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "用來生利息的母金。《舊唐書．卷九．玄宗本紀下》：「己酉，河南、洛陽兩縣亦借本錢一千貫，收利充人吏課役。」《董西廂》卷六：「不敢問利息輕重，這本錢幾年得用！」 2.經營事業所用的資本。《喻世明言．卷二八．李秀卿義結黃貞女》：「今父親年老，受不",
-      "long_def": "1.用來生利息的母金。《舊唐書．卷九．玄宗本紀下》：「己酉，河南、洛陽兩縣亦借本錢一千貫，收利充人吏課役。」《董西廂》卷六：「不敢問利息輕重，這本錢幾年得用！」 2.經營事業所用的資本。《喻世明言．卷二八．李秀卿義結黃貞女》：「今父親年老，受不得風霜辛苦，因此把本錢與小生在此行販。」《紅樓夢》第四八回：「不如也打點幾個本錢，和張德輝逛一年來。」 3.貨物的成本。如：「價格太便宜，就不夠本錢。」 4.比喻可以憑藉的資歷、能力等條件。如：「年輕就是本錢。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「本錢」。",
-      "literary_example": "語境合宜時，「本錢」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "002690085",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "本色",
-      "zhuyin": "ㄅㄣˇ ㄙㄜˋ",
-      "part_of_speech": null,
-      "difficulty": 4,
-      "short_def": "古以青、黃、赤、白、黑五色為正色，稱為「本色」。 2.未加塗染的原色。唐．崔令欽《教坊記》：「聖壽樂，舞衣襟，皆各繡一大窠，皆隨其本色。」 3.原來的面貌、特色。宋．陳師道《後山詩話》：「退之以文為詩，子瞻以詩為詞，如教坊雷大使之舞，雖極天",
-      "long_def": "1.古以青、黃、赤、白、黑五色為正色，稱為「本色」。 2.未加塗染的原色。唐．崔令欽《教坊記》：「聖壽樂，舞衣襟，皆各繡一大窠，皆隨其本色。」 3.原來的面貌、特色。宋．陳師道《後山詩話》：「退之以文為詩，子瞻以詩為詞，如教坊雷大使之舞，雖極天下之工，要非本色。」《紅樓夢》第四○回：「我們莊家人，不過是現成的本色，眾位別笑。」 4.本行。《新唐書．卷一六三．柳公綽傳》：「仲郢以為醫有本色官，若委錢穀，名分不正。」 5.舊時納稅的名目。指原定徵收的實物田賦。《明史．卷七八．食貨志二》：「十七年，雲南以金、銀、貝、布、漆、丹砂、水銀代秋租。於是謂米麥為本色，而諸折納稅糧者，謂之折色。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「本色」。",
-      "literary_example": "語境合宜時，「本色」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "002690144",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "比目連枝",
-      "zhuyin": "ㄅㄧˇ ㄇㄨˋ ㄌㄧㄢˊ ㄓ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "比目，指比目魚。連枝，指連理枝。「比目連枝」比喻情侶難以分捨。如：「證婚人致詞，祝新人比目連枝，白頭偕老。」元．賈固〈醉高歌過紅繡鞋．樂心兒〉曲：「樂心兒比目連枝，肯意兒新婚燕爾。」",
-      "long_def": "比目，指比目魚。連枝，指連理枝。「比目連枝」比喻情侶難以分捨。如：「證婚人致詞，祝新人比目連枝，白頭偕老。」元．賈固〈醉高歌過紅繡鞋．樂心兒〉曲：「樂心兒比目連枝，肯意兒新婚燕爾。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「比目連枝」。",
-      "literary_example": "語境合宜時，「比目連枝」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "0032000121",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "比擬",
-      "zhuyin": "ㄅㄧˇ ㄋㄧˇ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "比較。如：「難以比擬」、「無可比擬」。 2.本來打算。唐．無名氏〈鵲踏枝．叵耐靈鵲〉詞：「比擬好心來報喜，誰知鎖我在金籠裡。」 3.以類似的事物相比附，修辭學上稱為「轉化」。參見「轉化」條。",
-      "long_def": "1.比較。如：「難以比擬」、「無可比擬」。 2.本來打算。唐．無名氏〈鵲踏枝．叵耐靈鵲〉詞：「比擬好心來報喜，誰知鎖我在金籠裡。」 3.以類似的事物相比附，修辭學上稱為「轉化」。參見「轉化」條。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「比擬」。",
-      "literary_example": "語境合宜時，「比擬」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "003200022",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "比較",
-      "zhuyin": "ㄅㄧˇ ㄐㄧㄠˋ",
-      "part_of_speech": null,
-      "difficulty": 4,
-      "short_def": "古時官府對差役未能於限期內完成差事，加以杖責。參見「比卯」條。元．無名氏《貨郎旦》第四折：「稟爺，這兩個名下，欺侵窩脫銀一百多兩，帶累小的們比較，不知替他打了多少。」《醒世恆言．卷十六．陸五漢硬留合色鞋》：「三日一比較，強得利無可奈何，只得",
-      "long_def": "1.古時官府對差役未能於限期內完成差事，加以杖責。參見「比卯」條。元．無名氏《貨郎旦》第四折：「稟爺，這兩個名下，欺侵窩脫銀一百多兩，帶累小的們比較，不知替他打了多少。」《醒世恆言．卷十六．陸五漢硬留合色鞋》：「三日一比較，強得利無可奈何，只得將田產變價上庫。」 2.較量高下、輕重、長短、距離、好壞、快慢等。北齊．顏之推《顏氏家訓．省事》：「比較材能，斟量功伐。」《西遊記》第三十三回：「若不是我大王敬重你這行人，就和比較起來。」也作「比校」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「比較」。",
-      "literary_example": "語境合宜時，「比較」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "003200061",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "比翼鳥",
-      "zhuyin": "ㄅㄧˇ ㄧˋ ㄋㄧㄠˇ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "相傳經常一雄一雌並翅雙飛的鳥。《爾雅．釋地》：「南方有比翼鳥焉，不比不飛，其名謂之鶼鶼。」晉．郭璞．注：「似鳧，青赤色，一目一翼，相得乃飛。」《逸周書．卷七．王會解》：「巴人以比翼鳥。」晉．孔晁．注：「不比不飛，其名曰鶼鶼。」也稱為「蠻蠻」",
-      "long_def": "1.相傳經常一雄一雌並翅雙飛的鳥。《爾雅．釋地》：「南方有比翼鳥焉，不比不飛，其名謂之鶼鶼。」晉．郭璞．注：「似鳧，青赤色，一目一翼，相得乃飛。」《逸周書．卷七．王會解》：「巴人以比翼鳥。」晉．孔晁．注：「不比不飛，其名曰鶼鶼。」也稱為「蠻蠻」、「鶼鶼」。 2.比喻恩愛的夫婦。唐．白居易〈長恨歌〉：「在天願作比翼鳥，在地願為連理枝。」 3.比喻知心的好友。《文選．曹植．送應氏詩二首之一》：「願為比翼鳥，施翮起高翔。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「比翼鳥」。",
-      "literary_example": "語境合宜時，「比翼鳥」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "003200132",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "比翼雙飛",
-      "zhuyin": "ㄅㄧˇ ㄧˋ ㄕㄨㄤ ㄈㄟ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "雌雄比翼鳥翅膀挨著翅膀，成雙並翅齊飛。用來比喻夫妻恩愛，形影不離。晉．陸機〈擬西北有高樓〉詩：「不怨佇立久，但願歌者歡。思駕歸鴻羽，比翼雙飛翰。」明．朱權《卓文君》第四折：「不是妾身多薄幸，只因司馬太風騷。傚神鳳，下丹霄，比翼雙飛上泬寥。」",
-      "long_def": "雌雄比翼鳥翅膀挨著翅膀，成雙並翅齊飛。用來比喻夫妻恩愛，形影不離。晉．陸機〈擬西北有高樓〉詩：「不怨佇立久，但願歌者歡。思駕歸鴻羽，比翼雙飛翰。」明．朱權《卓文君》第四折：「不是妾身多薄幸，只因司馬太風騷。傚神鳳，下丹霄，比翼雙飛上泬寥。」《花月痕》第四四回：「比翼雙飛，頻伽並命。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「比翼雙飛」。",
-      "literary_example": "語境合宜時，「比翼雙飛」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "003200133",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "筆墨",
-      "zhuyin": "ㄅㄧˇ ㄇㄛˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "寫字用的筆和墨。《漢書．卷八七．揚雄傳下》：「聊因筆墨之成文章，故藉翰林以為主人，子墨為客卿以風。」 2.比喻文章。漢．王充《論衡．亂龍》：「子駿漢朝智囊，筆墨淵海。」《儒林外史》第二三回：「但只是筆墨相與，他家銀錢大事，還不肯相託。」 3",
-      "long_def": "1.寫字用的筆和墨。《漢書．卷八七．揚雄傳下》：「聊因筆墨之成文章，故藉翰林以為主人，子墨為客卿以風。」 2.比喻文章。漢．王充《論衡．亂龍》：「子駿漢朝智囊，筆墨淵海。」《儒林外史》第二三回：「但只是筆墨相與，他家銀錢大事，還不肯相託。」 3.親手寫的筆跡墨畫。南朝梁．庾肩吾〈書品論〉：「魏帝筆墨雄贍，吳主體裁綿密。」《老殘遊記》第三回：「兩邊字畫多半是時下名人的筆墨。只有中間掛著一幅中堂，只畫了一個人。」 4.中國畫技法和理論上的術語，有時亦作中國畫技法的總稱。技法上，筆指鉤、勒、皴、點等筆法，墨指烘、染、破、積等墨法。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「筆墨」。",
-      "literary_example": "語境合宜時，「筆墨」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "003270002",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "筆走龍蛇",
-      "zhuyin": "ㄅㄧˇ ㄗㄡˇ ㄌㄨㄥˊ ㄕㄜˊ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "比喻文筆揮灑自如或書法優美熟練。宋．石孝友〈滿庭芳．上張紫微〉詞：「筆走龍蛇，詞傾河漢，妙年德藝雙成。」《初刻拍案驚奇》卷二○：「吳江有個秀才蕭王賓，胸藏錦繡，筆走龍蛇。」",
-      "long_def": "比喻文筆揮灑自如或書法優美熟練。宋．石孝友〈滿庭芳．上張紫微〉詞：「筆走龍蛇，詞傾河漢，妙年德藝雙成。」《初刻拍案驚奇》卷二○：「吳江有個秀才蕭王賓，胸藏錦繡，筆走龍蛇。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「筆走龍蛇」。",
-      "literary_example": "語境合宜時，「筆走龍蛇」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "003270096",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "篳路藍縷",
-      "zhuyin": "ㄅㄧˋ ㄌㄨˋ ㄌㄢˊ ㄌㄩˇ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "篳路，以荊竹編製的柴車。篳路藍縷指駕柴車，穿破衣，以開闢山林。語出《左傳．宣公十二年》：「訓之以若敖、蚡冒篳路藍縷，以啟山林。」唐．孔穎達．正義：「以荊竹織門謂之篳門，則篳路亦以荊竹編車，故謂篳路為柴車。方言云：『楚謂凡人貧，衣破醜敝為藍縷",
-      "long_def": "篳路，以荊竹編製的柴車。篳路藍縷指駕柴車，穿破衣，以開闢山林。語出《左傳．宣公十二年》：「訓之以若敖、蚡冒篳路藍縷，以啟山林。」唐．孔穎達．正義：「以荊竹織門謂之篳門，則篳路亦以荊竹編車，故謂篳路為柴車。方言云：『楚謂凡人貧，衣破醜敝為藍縷。』藍縷謂敝衣也。」後比喻創造事業的艱苦。連橫〈臺灣通史序〉：「夫臺灣固海上之荒島爾！篳路藍縷，以啟山林，至於今是賴。」也作「蓽路藍縷」、「蓽露藍蔞」、「篳路襤褸」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「篳路藍縷」。",
-      "literary_example": "語境合宜時，「篳路藍縷」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "003870006",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "避諱",
-      "zhuyin": "ㄅㄧˋ ㄏㄨㄟˋ",
-      "part_of_speech": null,
-      "difficulty": 4,
-      "short_def": "舊時為了表示尊敬，在言語或書寫時，不說君主或尊長的名號，稱為「避諱」。避諱的方法有缺筆、缺字、換字、改音等各種方式。 2.避免觸犯忌諱。《淮南子．要略》：「言終始而不明天地四時，則不知所避諱。」《紅樓夢》第三四回：「那起小人的嘴有什麼避諱，",
-      "long_def": "1.舊時為了表示尊敬，在言語或書寫時，不說君主或尊長的名號，稱為「避諱」。避諱的方法有缺筆、缺字、換字、改音等各種方式。 2.避免觸犯忌諱。《淮南子．要略》：「言終始而不明天地四時，則不知所避諱。」《紅樓夢》第三四回：「那起小人的嘴有什麼避諱，心順了，說的比菩薩還好；心不順，就貶的連畜生不如。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「避諱」。",
-      "literary_example": "語境合宜時，「避諱」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "004120028",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "避秦",
-      "zhuyin": "ㄅㄧˋ ㄑㄧㄣˊ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "秦時苛政擾民，人民紛紛逃避而隱居。語出晉．陶淵明〈桃花源記〉：「先世避秦時亂，率妻子邑人，來此絕境，不復出焉。」後比喻逃離暴政的迫害。元．無名氏〈梧葉兒．玄圃山前道〉曲：「夕有猿敲戶，朝無客扣門。見幾個捕魚人，猶自向山中避秦。」",
-      "long_def": "秦時苛政擾民，人民紛紛逃避而隱居。語出晉．陶淵明〈桃花源記〉：「先世避秦時亂，率妻子邑人，來此絕境，不復出焉。」後比喻逃離暴政的迫害。元．無名氏〈梧葉兒．玄圃山前道〉曲：「夕有猿敲戶，朝無客扣門。見幾個捕魚人，猶自向山中避秦。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「避秦」。",
-      "literary_example": "語境合宜時，「避秦」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "004120034",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "避實擊虛",
-      "zhuyin": "ㄅㄧˋ ㄕˊ ㄐㄧˊ ㄒㄩ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "避開堅強的而攻擊虛弱的。語本《孫子．虛實》：「水之行，避高而趨下；兵之形，避實而擊虛。」比喻攻敵須乘虛而入。明．劉基〈贈交棋相子先序〉：「避實擊虛，投間抵隙，兼弱取亂之道，無所不備。」也作「避實就虛」、「就虛避實」。",
-      "long_def": "避開堅強的而攻擊虛弱的。語本《孫子．虛實》：「水之行，避高而趨下；兵之形，避實而擊虛。」比喻攻敵須乘虛而入。明．劉基〈贈交棋相子先序〉：「避實擊虛，投間抵隙，兼弱取亂之道，無所不備。」也作「避實就虛」、「就虛避實」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「避實擊虛」。",
-      "literary_example": "語境合宜時，「避實擊虛」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "004120047",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "碧眼兒",
-      "zhuyin": "ㄅㄧˋ ㄧㄢˇㄦ",
-      "part_of_speech": null,
-      "difficulty": 4,
-      "short_def": "相傳三國時代孫權碧眼紫髯，故以「碧眼兒」稱之。《三國演義》第二九回：「小霸王怒斬于吉，碧眼兒坐領江東。」 2.有碧綠眼睛的人。舊時對西洋人的稱呼。清．徐珂《清稗類鈔．盜賊類．竊玉搬指》：「越數日，德公使館開茶會，柬邀我國大員，載亦往。座有虯",
-      "long_def": "1.相傳三國時代孫權碧眼紫髯，故以「碧眼兒」稱之。《三國演義》第二九回：「小霸王怒斬于吉，碧眼兒坐領江東。」 2.有碧綠眼睛的人。舊時對西洋人的稱呼。清．徐珂《清稗類鈔．盜賊類．竊玉搬指》：「越數日，德公使館開茶會，柬邀我國大員，載亦往。座有虯髯碧眼兒，頎面碩身，被軍服，趨前握其手曰：『柏林一別，今已三年。』」也稱為「碧眼胡」、「碧眼胡兒」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「碧眼兒」。",
-      "literary_example": "語境合宜時，「碧眼兒」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "004180045",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "別闢門戶",
-      "zhuyin": "ㄅㄧㄝˊ ㄆㄧˋ ㄇㄣˊ ㄏㄨˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "比喻事情不能繼續進行，而另想其他方法去做。如：「這個方法既然行不通，還是趕快別闢門戶吧！」 2.脫離原先的團體而獨立自組另一團體。如：「既然你和大家個性不合，還不如離開這家公司，別闢門戶！」",
-      "long_def": "1.比喻事情不能繼續進行，而另想其他方法去做。如：「這個方法既然行不通，還是趕快別闢門戶吧！」 2.脫離原先的團體而獨立自組另一團體。如：「既然你和大家個性不合，還不如離開這家公司，別闢門戶！」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「別闢門戶」。",
-      "literary_example": "語境合宜時，「別闢門戶」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "004250005",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "別開生面",
-      "zhuyin": "ㄅㄧㄝˊ ㄎㄞ ㄕㄥ ㄇㄧㄢˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "重新描繪舊畫像，而使原已褪色的面貌變得鮮明、生動。語本唐．杜甫〈丹青引贈曹將軍霸〉詩：「凌煙功臣少顏色，將軍下筆開生面。」後比喻開創新的風格、形式。《紅樓夢》第六四回：「今日林妹妹這五首詩，亦可謂命意新奇，別開生面。」清．趙翼《甌北詩話．卷",
-      "long_def": "重新描繪舊畫像，而使原已褪色的面貌變得鮮明、生動。語本唐．杜甫〈丹青引贈曹將軍霸〉詩：「凌煙功臣少顏色，將軍下筆開生面。」後比喻開創新的風格、形式。《紅樓夢》第六四回：「今日林妹妹這五首詩，亦可謂命意新奇，別開生面。」清．趙翼《甌北詩話．卷五．蘇東坡詩》：「以文為詩，自昌黎始；至東坡益大放厥詞，別開生面，成一代之大觀。」也作「另開生面」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「別開生面」。",
-      "literary_example": "語境合宜時，「別開生面」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "004250034",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "標兵",
-      "zhuyin": "ㄅㄧㄠ ㄅㄧㄥ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "閱兵時，正立於閱兵臺兩側，用以標示界線，規整隊伍行進速度及方向的士兵。也稱為「基準兵」。 2.比喻可以作為榜樣的人。如：「老師期勉全班以他為標兵，努力用功，爭取更好的成績。」",
-      "long_def": "1.閱兵時，正立於閱兵臺兩側，用以標示界線，規整隊伍行進速度及方向的士兵。也稱為「基準兵」。 2.比喻可以作為榜樣的人。如：「老師期勉全班以他為標兵，努力用功，爭取更好的成績。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「標兵」。",
-      "literary_example": "語境合宜時，「標兵」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "004420010",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "鞭不及腹",
-      "zhuyin": "ㄅㄧㄢ ㄅㄨˋ ㄐㄧˊ ㄈㄨˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "比喻力量有所不及。參見「鞭長莫及」條。《宋史．卷四○五．李宗勉傳》：「荊、襄殘破，淮西正當南北之交，嵩之當置司淮西，則脈絡相連，可以應援；邈在鄂渚，豈無鞭不及腹之慮？」",
-      "long_def": "比喻力量有所不及。參見「鞭長莫及」條。《宋史．卷四○五．李宗勉傳》：「荊、襄殘破，淮西正當南北之交，嵩之當置司淮西，則脈絡相連，可以應援；邈在鄂渚，豈無鞭不及腹之慮？」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「鞭不及腹」。",
-      "literary_example": "語境合宜時，「鞭不及腹」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "0047100041",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "弁冕",
-      "zhuyin": "ㄅㄧㄢˋ ㄇㄧㄢˇ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "古代男子所戴的禮帽。《禮記．雜記下》：「孔子曰：『尸弁冕而出，卿、大夫、士皆下之，尸必式，必有前驅。』」唐．元稹〈和樂天贈吳丹〉詩：「弁冕徒挂身，身外非所寶。」 2.比喻魁首。如：「弁冕群英」《清史稿．卷四○七．列傳．羅澤南》：「此大將風規",
-      "long_def": "1.古代男子所戴的禮帽。《禮記．雜記下》：「孔子曰：『尸弁冕而出，卿、大夫、士皆下之，尸必式，必有前驅。』」唐．元稹〈和樂天贈吳丹〉詩：「弁冕徒挂身，身外非所寶。」 2.比喻魁首。如：「弁冕群英」《清史稿．卷四○七．列傳．羅澤南》：「此大將風規，不第為楚材之弁冕已。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「弁冕」。",
-      "literary_example": "語境合宜時，「弁冕」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "004890002",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "變生肘腋",
-      "zhuyin": "ㄅㄧㄢˋ ㄕㄥ ㄓㄡˇ ㄧㄝˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "語本《三國志．卷三七．蜀書．法正傳》：「主公之在公安也，北畏曹公之彊，東憚孫權之逼，近則懼孫夫人生變於肘腋之下，當斯之時，進退狼跋。」比喻禍亂發生在身邊。宋．辛棄疾〈美芹十論〉：「臣嘗鳩眾二千，隸耿京，為掌書記，與圖恢復。……不幸變生肘腋，",
-      "long_def": "語本《三國志．卷三七．蜀書．法正傳》：「主公之在公安也，北畏曹公之彊，東憚孫權之逼，近則懼孫夫人生變於肘腋之下，當斯之時，進退狼跋。」比喻禍亂發生在身邊。宋．辛棄疾〈美芹十論〉：「臣嘗鳩眾二千，隸耿京，為掌書記，與圖恢復。……不幸變生肘腋，事乃大謬。」也作「禍生肘腋」、「事生肘腋」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「變生肘腋」。",
-      "literary_example": "語境合宜時，「變生肘腋」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "0050100871",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "賓客",
-      "zhuyin": "ㄅㄧㄣ ㄎㄜˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "泛稱客人。《三國演義》第三八回：「承父兄基業，廣納賢士，開賓館於吳會，命顧雍、張紘延接四方賓客。」《初刻拍案驚奇》卷五：「賓客裡面有願聘的，便赴今夕佳期，有眾親在此作證盟，都可做大媒。」 2.別國來的使者。《論語．公冶長》：「赤也，束帶立於",
-      "long_def": "1.泛稱客人。《三國演義》第三八回：「承父兄基業，廣納賢士，開賓館於吳會，命顧雍、張紘延接四方賓客。」《初刻拍案驚奇》卷五：「賓客裡面有願聘的，便赴今夕佳期，有眾親在此作證盟，都可做大媒。」 2.別國來的使者。《論語．公冶長》：「赤也，束帶立於朝可使與賓客言也。」宋．邢昺．疏：「可使與鄰國之大賓小客言語應對也。」《史記．卷三一．吳太伯世家》：「令其子為吳行人。」南朝宋．裴駰．集解：「服虔曰：『行人，掌國賓客之禮籍，以待四方之使，賓大客，受小客之幣辭。』」 3.古代豪門所養的食客。《史記．卷七五．孟嘗君列傳》：「孟嘗君在薛，招致諸侯賓客及亡人有罪者，皆歸孟嘗君。」《三國演義》第一○六回：「爽命弟曹羲為中領軍，曹訓為武衛將軍，曹彥為散騎常侍，各引三千御林軍，……於是曹爽門下賓客日盛。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「賓客」。",
-      "literary_example": "語境合宜時，「賓客」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005090020",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "冰前颳雪",
-      "zhuyin": "ㄅㄧㄥ ㄑㄧㄢˊ ㄍㄨㄚ ㄒㄩㄝˇ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "冷上加冷。比喻使原已不大好的情形變得更糟。《三寶太監西洋記通俗演義》第三一回：「正叫做個冰前颳雪，火上澆油，把個張天師沒奈何，只得撇了青鬃馬，跨上草龍，騰空而起。」",
-      "long_def": "冷上加冷。比喻使原已不大好的情形變得更糟。《三寶太監西洋記通俗演義》第三一回：「正叫做個冰前颳雪，火上澆油，把個張天師沒奈何，只得撇了青鬃馬，跨上草龍，騰空而起。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「冰前颳雪」。",
-      "literary_example": "語境合宜時，「冰前颳雪」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005290079",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "冰清玉潔",
-      "zhuyin": "ㄅㄧㄥ ㄑㄧㄥ ㄩˋ ㄐㄧㄝˊ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "比喻品行高潔。《晉書．卷六八．賀循傳》：「循冰清玉潔，行為俗表。」《警世通言．卷二一．趙太祖千里送京娘》：「趙公玩其詩意，方知女兒冰清玉潔，把兒子痛罵一頓。」也作「玉潔冰清」。",
-      "long_def": "比喻品行高潔。《晉書．卷六八．賀循傳》：「循冰清玉潔，行為俗表。」《警世通言．卷二一．趙太祖千里送京娘》：「趙公玩其詩意，方知女兒冰清玉潔，把兒子痛罵一頓。」也作「玉潔冰清」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「冰清玉潔」。",
-      "literary_example": "語境合宜時，「冰清玉潔」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005290083",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "冰消瓦解",
-      "zhuyin": "ㄅㄧㄥ ㄒㄧㄠ ㄨㄚˇ ㄐㄧㄝˇ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "比喻崩潰、分裂或失敗、離散。隋．煬帝〈手詔勞楊素〉：「公以深謀，出其不意；霧廓雲除，冰消瓦解；長驅北道，直趣巢窟。」《老殘遊記二編》第九回：「陰間案件，不比陽世，先生一到，案情早已冰消瓦解，故無庸詢。」也作「瓦解冰泮」。",
-      "long_def": "比喻崩潰、分裂或失敗、離散。隋．煬帝〈手詔勞楊素〉：「公以深謀，出其不意；霧廓雲除，冰消瓦解；長驅北道，直趣巢窟。」《老殘遊記二編》第九回：「陰間案件，不比陽世，先生一到，案情早已冰消瓦解，故無庸詢。」也作「瓦解冰泮」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「冰消瓦解」。",
-      "literary_example": "語境合宜時，「冰消瓦解」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005290090",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "冰人",
-      "zhuyin": "ㄅㄧㄥ ㄖㄣˊ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "晉代索紞為令狐策解夢，告知其當為人作媒，而待冰融之期，則婚成。典出《晉書．卷九五．藝術傳．索紞傳》。後比喻媒人。《警世通言．卷三四．王嬌鸞百年長悵》：「多情果有相憐意，好倩冰人片語傳。」《醒世恆言．卷七．錢秀才錯占鳳凰儔》：「這做媒乃是冰人",
-      "long_def": "晉代索紞為令狐策解夢，告知其當為人作媒，而待冰融之期，則婚成。典出《晉書．卷九五．藝術傳．索紞傳》。後比喻媒人。《警世通言．卷三四．王嬌鸞百年長悵》：「多情果有相憐意，好倩冰人片語傳。」《醒世恆言．卷七．錢秀才錯占鳳凰儔》：「這做媒乃是冰人撮合，一天好事，除非他女兒不要嫁人便罷休，不然，少不得男媒女妁。」也稱為「冰下人」、「冰翁」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「冰人」。",
-      "literary_example": "語境合宜時，「冰人」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005290124",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "兵書",
-      "zhuyin": "ㄅㄧㄥ ㄕㄨ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "古代軍事著作的統稱。如《孫子》、《吳子》、《司馬法》、《六韜》、《尉繚子》等均屬之。《漢書．卷三○．藝文志》：「至于孝成，命任宏論次兵書為四種。」《三國演義》第六一回：「操心中鬱悶，閒看兵書。」",
-      "long_def": "古代軍事著作的統稱。如《孫子》、《吳子》、《司馬法》、《六韜》、《尉繚子》等均屬之。《漢書．卷三○．藝文志》：「至于孝成，命任宏論次兵書為四種。」《三國演義》第六一回：「操心中鬱悶，閒看兵書。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「兵書」。",
-      "literary_example": "語境合宜時，「兵書」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005300097",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "並駕齊驅",
-      "zhuyin": "ㄅㄧㄥˋ ㄐㄧㄚˋ ㄑㄧˊ ㄑㄩ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "比喻雙方實力相當，不分軒輊。南朝梁．劉勰《文心雕龍．附會》：「是以駟牡異力，而六轡如琴，並駕齊驅，而一轂統輻。」也作「方駕齊驅」、「齊趨並駕」、「齊驅並駕」、「齊驅並驟」。",
-      "long_def": "比喻雙方實力相當，不分軒輊。南朝梁．劉勰《文心雕龍．附會》：「是以駟牡異力，而六轡如琴，並駕齊驅，而一轂統輻。」也作「方駕齊驅」、「齊趨並駕」、「齊驅並駕」、「齊驅並驟」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「並駕齊驅」。",
-      "literary_example": "語境合宜時，「並駕齊驅」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005500023",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "並肩",
-      "zhuyin": "ㄅㄧㄥˋ ㄐㄧㄢ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "肩挨著肩，並排。《初刻拍案驚奇》卷一七：「內中有兩個女子，雙鬟高髻，並肩而立。」《儒林外史》第五三回：「沖了水，遞與四老爺，和他並肩而坐。」 2.比喻地位、階級、才能或勢力相等。《紅樓夢》第四六回：「過了一年半載，生下個一男半女，你就和我並",
-      "long_def": "1.肩挨著肩，並排。《初刻拍案驚奇》卷一七：「內中有兩個女子，雙鬟高髻，並肩而立。」《儒林外史》第五三回：「沖了水，遞與四老爺，和他並肩而坐。」 2.比喻地位、階級、才能或勢力相等。《紅樓夢》第四六回：「過了一年半載，生下個一男半女，你就和我並肩了。」 3.比喻行動一致，共同努力。如：「並肩作戰」、「並肩奮鬥」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「並肩」。",
-      "literary_example": "語境合宜時，「並肩」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005500024",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "病根",
-      "zhuyin": "ㄅㄧㄥˋ ㄍㄣ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "疾病的根原。如：「治病若不把病根去掉，怎能算痊癒？」《後漢書．卷八二．方術列傳下．華佗》：「君病根深，應當剖破腹。」《三國演義》第七八回：「大王頭腦疼痛，因患風而起。病根在腦袋中，風涎不能出。」 2.比喻為引起災禍或失敗的根本原因。《朱子語",
-      "long_def": "1.疾病的根原。如：「治病若不把病根去掉，怎能算痊癒？」《後漢書．卷八二．方術列傳下．華佗》：「君病根深，應當剖破腹。」《三國演義》第七八回：「大王頭腦疼痛，因患風而起。病根在腦袋中，風涎不能出。」 2.比喻為引起災禍或失敗的根本原因。《朱子語類．卷一一○．朱子七．論兵》：「古今禍亂，必有病根。漢宦官后戚，唐藩鎮，皆病根也。」《兒女英雄傳》第一九回：「你這病根，卻又只吃虧在一個聰明好勝。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「病根」。",
-      "literary_example": "語境合宜時，「病根」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005520033",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "病入膏肓",
-      "zhuyin": "ㄅㄧㄥˋ ㄖㄨˋ ㄍㄠ ㄏㄨㄤ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "膏，中醫上指心下脂肪。肓，膈上薄膜。膏肓相傳是身體內藥力所不及的地方。病入膏肓指人病重，無藥可救。語本《左傳．成公十年》：「醫至，曰：『疾不可為也，在肓之上，膏之下，攻之不可，達之不及，藥不至焉。』」《鏡花緣》第一三回：「賤妾之恙，雖得女兒",
-      "long_def": "膏，中醫上指心下脂肪。肓，膈上薄膜。膏肓相傳是身體內藥力所不及的地方。病入膏肓指人病重，無藥可救。語本《左傳．成公十年》：「醫至，曰：『疾不可為也，在肓之上，膏之下，攻之不可，達之不及，藥不至焉。』」《鏡花緣》第一三回：「賤妾之恙，雖得女兒取參略延殘喘，奈病入膏肓，不啻風中之燭。」後比喻事情已到無可挽回的程度。《歧路燈》第二○回：「熱腸動處真難默，冷眼覷時便欲暗；病入膏肓嗟已矣，願奉宣聖失言箴。」也作「病染膏肓」、「病在膏肓」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「病入膏肓」。",
-      "literary_example": "語境合宜時，「病入膏肓」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005520077",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "捕風繫影",
-      "zhuyin": "ㄅㄨˇ ㄈㄥ ㄒㄧˋ ㄧㄥˇ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "比喻追逐虛幻，憑空想像。宋．朱熹〈答廖子晦〉：「蓋性命之理雖微，然就博文約禮實事上看，亦甚明白。正不須向無形象處東撈西摸，如捕風繫影，用意愈深而去道愈遠也。」也作「係風捕景」。",
-      "long_def": "比喻追逐虛幻，憑空想像。宋．朱熹〈答廖子晦〉：「蓋性命之理雖微，然就博文約禮實事上看，亦甚明白。正不須向無形象處東撈西摸，如捕風繫影，用意愈深而去道愈遠也。」也作「係風捕景」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「捕風繫影」。",
-      "literary_example": "語境合宜時，「捕風繫影」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "0056200022",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "捕魚",
-      "zhuyin": "ㄅㄨˇ ㄩˊ",
-      "part_of_speech": null,
-      "difficulty": 4,
-      "short_def": "捕捉魚類。《大宋宣和遺事．元集》：「在路上撞著杜千、張岑兩個，是舊時知識，在河次捕魚為生。」《西遊記》第一回：「持篙試水，偶得淺水，棄了筏子，跳上岸來，只見海邊有人捕魚、打鴈、穵蛤、淘鹽。」",
-      "long_def": "捕捉魚類。《大宋宣和遺事．元集》：「在路上撞著杜千、張岑兩個，是舊時知識，在河次捕魚為生。」《西遊記》第一回：「持篙試水，偶得淺水，棄了筏子，跳上岸來，只見海邊有人捕魚、打鴈、穵蛤、淘鹽。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「捕魚」。",
-      "literary_example": "語境合宜時，「捕魚」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005620032",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "不露圭角",
-      "zhuyin": "ㄅㄨˋ ㄌㄨˋ ㄍㄨㄟ ㄐㄧㄠˇ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "圭角，圭玉的稜角，比喻鋒芒。不露圭角指才華內斂，不露鋒芒。《朱子語類．卷二九．論語．公冶長下》：「如甯武子雖冒昧向前，不露圭角，只猝猝做將去，然少間事又都做得了，此其愚不可及也。」也作「不見圭角」。",
-      "long_def": "圭角，圭玉的稜角，比喻鋒芒。不露圭角指才華內斂，不露鋒芒。《朱子語類．卷二九．論語．公冶長下》：「如甯武子雖冒昧向前，不露圭角，只猝猝做將去，然少間事又都做得了，此其愚不可及也。」也作「不見圭角」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「不露圭角」。",
-      "literary_example": "語境合宜時，「不露圭角」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "0056504552",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "不共戴天",
-      "zhuyin": "ㄅㄨˋ ㄍㄨㄥˋ ㄉㄞˋ ㄊㄧㄢ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "不願與仇人共生世間。語本《禮記．曲禮上》：「父之讎，弗與共戴天。」比喻仇恨極深。《三國演義》第三九回：「凌統叩頭大哭曰：『不共戴天之讎豈容不報！』」《儒林外史》第四一回：「我父親和他涉了訟，他買囑知縣，將我父親斷輸了，這是我不共戴天之仇。」",
-      "long_def": "不願與仇人共生世間。語本《禮記．曲禮上》：「父之讎，弗與共戴天。」比喻仇恨極深。《三國演義》第三九回：「凌統叩頭大哭曰：『不共戴天之讎豈容不報！』」《儒林外史》第四一回：「我父親和他涉了訟，他買囑知縣，將我父親斷輸了，這是我不共戴天之仇。」也作「不同日月」、「不共天地」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「不共戴天」。",
-      "literary_example": "語境合宜時，「不共戴天」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005650559",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "不可救藥",
-      "zhuyin": "ㄅㄨˋ ㄎㄜˇ ㄐㄧㄡˋ ㄧㄠˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "病重無藥可醫治。比喻到了無法挽救的地步。《詩經．大雅．板》：「多將熇熇，不可救藥。」《宋史．卷二三．欽宗本紀．贊曰》：「惜其亂勢已成，不可救藥，君臣相視，又不能同力協謀，以濟斯難。」也作「無可救藥」、「無藥可救」。",
-      "long_def": "病重無藥可醫治。比喻到了無法挽救的地步。《詩經．大雅．板》：「多將熇熇，不可救藥。」《宋史．卷二三．欽宗本紀．贊曰》：「惜其亂勢已成，不可救藥，君臣相視，又不能同力協謀，以濟斯難。」也作「無可救藥」、「無藥可救」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「不可救藥」。",
-      "literary_example": "語境合宜時，「不可救藥」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005650579",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "不愧屋漏",
-      "zhuyin": "ㄅㄨˋ ㄎㄨㄟˋ ㄨ ㄌㄡˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "屋漏，原指天窗，古代通於宮室中的陰暗處開設天窗，使日光射入屋內，故稱為「屋漏」。比喻隱蔽無人之處。不愧屋漏語本《詩經．大雅．抑》：「相在爾室，尚不愧于屋漏，無曰不顯，莫予云覯。」比喻處世光明正大，即使在無人之處，亦持心端正，無愧於神明。《宋",
-      "long_def": "屋漏，原指天窗，古代通於宮室中的陰暗處開設天窗，使日光射入屋內，故稱為「屋漏」。比喻隱蔽無人之處。不愧屋漏語本《詩經．大雅．抑》：「相在爾室，尚不愧于屋漏，無曰不顯，莫予云覯。」比喻處世光明正大，即使在無人之處，亦持心端正，無愧於神明。《宋史．卷四二七．道學傳一．張載傳》：「知化則善述其事，窮神則善繼其志，不愧屋漏為無忝，存心養性為匪懈。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「不愧屋漏」。",
-      "literary_example": "語境合宜時，「不愧屋漏」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005650628",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "不即不離",
-      "zhuyin": "ㄅㄨˋ ㄐㄧˊ ㄅㄨˋ ㄌㄧˊ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "佛教用語。中國佛教如來藏系的思想。謂清淨的本心與輪迴世界的關係，既不是等同，也不是兩種各別的個體。《大方廣圓覺修多羅了義經》：「不即不離，無縛無脫。」後多比喻對人的態度，既不親近，也不疏遠。如：「她不即不離的態度，讓他苦惱萬分。」",
-      "long_def": "佛教用語。中國佛教如來藏系的思想。謂清淨的本心與輪迴世界的關係，既不是等同，也不是兩種各別的個體。《大方廣圓覺修多羅了義經》：「不即不離，無縛無脫。」後多比喻對人的態度，既不親近，也不疏遠。如：「她不即不離的態度，讓他苦惱萬分。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「不即不離」。",
-      "literary_example": "語境合宜時，「不即不離」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005650682",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "不一而足",
-      "zhuyin": "ㄅㄨˋ ㄧ ㄦˊ ㄗㄨˊ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "不是一事、一物或一次就可以滿足的。語出《公羊傳．文公九年》：「許夷狄者，不一而足也。」後比喻同類事物或現象很多，不只一個或不只出現一次。《警世通言．卷二五．桂員外途窮懺悔》：「當初桂富五受你家恩惠不一而足，別的不算，只替他償債一主，就是三百",
-      "long_def": "不是一事、一物或一次就可以滿足的。語出《公羊傳．文公九年》：「許夷狄者，不一而足也。」後比喻同類事物或現象很多，不只一個或不只出現一次。《警世通言．卷二五．桂員外途窮懺悔》：「當初桂富五受你家恩惠不一而足，別的不算，只替他償債一主，就是三百兩。」《紅樓夢》第一一七回：「賈環賈薔等愈鬧的不像事了，甚至偷典偷賣，不一而足。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「不一而足」。",
-      "literary_example": "語境合宜時，「不一而足」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005651498",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "布衣之交",
-      "zhuyin": "ㄅㄨˋ ㄧ ㄓ ㄐㄧㄠ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "貧賤時所交往的朋友。或比喻患難知己的朋友。《三國志．卷一六．魏書．任蘇杜鄭倉傳．杜畿》：「且布衣之交，猶有務信誓而蹈水火，感知己而披肝膽，徇聲名而立節義者。」《隋唐演義》第八二回：「臣有一布衣之交，西蜀人士，姓李名白，博學多才。」 2.平民",
-      "long_def": "1.貧賤時所交往的朋友。或比喻患難知己的朋友。《三國志．卷一六．魏書．任蘇杜鄭倉傳．杜畿》：「且布衣之交，猶有務信誓而蹈水火，感知己而披肝膽，徇聲名而立節義者。」《隋唐演義》第八二回：「臣有一布衣之交，西蜀人士，姓李名白，博學多才。」 2.平民之間相互的交往。《史記．卷八一．廉頗藺相如列傳》：「臣以為布衣之交尚不相欺，況大國乎！」 3.有官位者與平民的交往。《梁書．卷五．元帝本紀》：「世祖性不好聲色，頗有高名，與裴子野、劉顯、蕭子雲、張纘及當時才秀為布衣之交。」《東周列國志》第九八回：「寡人聞君之高義，願與君為布衣之交。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「布衣之交」。",
-      "literary_example": "語境合宜時，「布衣之交」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005660165",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "部署",
-      "zhuyin": "ㄅㄨˋ ㄕㄨˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "布置、安排。《漢書．卷一．高帝紀上》：「漢王大說，遂聽信策，部署諸將。」唐．薛調《無雙記》：「我以妻女為念，略歸部署。」也作「布署」。 2.古代武官。《資治通鑑．卷二七三．後唐紀二．莊宗同光二年》：「詔以天平節度使李嗣源為招討使，武寧節度使",
-      "long_def": "1.布置、安排。《漢書．卷一．高帝紀上》：「漢王大說，遂聽信策，部署諸將。」唐．薛調《無雙記》：「我以妻女為念，略歸部署。」也作「布署」。 2.古代武官。《資治通鑑．卷二七三．後唐紀二．莊宗同光二年》：「詔以天平節度使李嗣源為招討使，武寧節度使李紹榮為部署。」元．胡三省．注：「部署之官始見于通鑑，本在招討使之下；其後有都部署，遂為專任主帥之任。」《喻世明言．卷一五．史弘肇龍虎君臣會》：「依舊收了書，空手徑來衙門前招人牌下，等著部署李霸遇來投見他。」 3.本指擂臺比武的主持人，後亦指拳棒教師。元．無名氏《射柳捶丸》第四折：「看了這部署每打拳耍棍，真個高強。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「部署」。",
-      "literary_example": "語境合宜時，「部署」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "005750034",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "破鏡重圓",
-      "zhuyin": "ㄆㄛˋ ㄐㄧㄥˋ ㄔㄨㄥˊ ㄩㄢˊ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "南朝陳徐德言與妻樂昌公主於戰亂分散時各執半鏡，作為他日相見的信物，後果因此得以相聚歸合。典出唐．孟棨〈本事詩．情感〉。後比喻夫妻失散或決裂後重新團圓和好。《隋唐演義》第六六回：「如晦道：『就是徐德言，他的妻子就是我表姊樂昌公主。』無忌道：『",
-      "long_def": "南朝陳徐德言與妻樂昌公主於戰亂分散時各執半鏡，作為他日相見的信物，後果因此得以相聚歸合。典出唐．孟棨〈本事詩．情感〉。後比喻夫妻失散或決裂後重新團圓和好。《隋唐演義》第六六回：「如晦道：『就是徐德言，他的妻子就是我表姊樂昌公主。』無忌道：『哦，原來就是破鏡重圓的。』」《初刻拍案驚奇》卷二七：「破鏡重圓，離而復合，固是好事。」也作「破鏡重合」、「覽鏡歸妻」、「金鏡重圓」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「破鏡重圓」。",
-      "literary_example": "語境合宜時，「破鏡重圓」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "006250092",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "破綻",
-      "zhuyin": "ㄆㄛˋ ㄓㄢˋ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "裂縫。元．方回〈登屋東山作〉詩：「壞屋如敝衣，隨意補破綻。」 2.比喻事情或言語露出毛病或漏洞。《朱子語類．卷一○四．自論為學工夫》：「讀來讀去，一日復一日，覺得聖賢言語漸漸有味。卻回頭看釋氏之說，漸漸破綻，罅漏百出。」元．王實甫《西廂記．",
-      "long_def": "1.裂縫。元．方回〈登屋東山作〉詩：「壞屋如敝衣，隨意補破綻。」 2.比喻事情或言語露出毛病或漏洞。《朱子語類．卷一○四．自論為學工夫》：「讀來讀去，一日復一日，覺得聖賢言語漸漸有味。卻回頭看釋氏之說，漸漸破綻，罅漏百出。」元．王實甫《西廂記．第三本．第二折》：「早共晚夫人見些破綻，你我何安？」也作「破賺」。",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「破綻」。",
-      "literary_example": "語境合宜時，「破綻」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "006250107",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "排場",
-      "zhuyin": "ㄆㄞˊ ˙ㄔㄤ",
-      "part_of_speech": null,
-      "difficulty": 4,
-      "short_def": "鋪張奢侈的形式和場面。《儒林外史》第二四回：「錢兄弟，你看老爹這個體統，豈止像知府告老回家，就是尚書、侍郎回來，也不過像老爹這個排場罷了！」《紅樓夢》第二回：「如今生齒日繁，事務日盛，主僕上下安富尊榮者儘多，運籌謀畫者無一；其日用排場，又不",
-      "long_def": "1.鋪張奢侈的形式和場面。《儒林外史》第二四回：「錢兄弟，你看老爹這個體統，豈止像知府告老回家，就是尚書、侍郎回來，也不過像老爹這個排場罷了！」《紅樓夢》第二回：「如今生齒日繁，事務日盛，主僕上下安富尊榮者儘多，運籌謀畫者無一；其日用排場，又不能將就省儉。」 2.數落、責備。《紅樓夢》第五八回：「『一日叫娘，終身是母。』他排場我，我就打得。」 3.舊時不上戲的演員坐在戲臺的兩旁亮相，以廣招徠，稱為「排場」。元．馬致遠《青衫淚》第四折：「見良人終身有託，要脫離風月排場。」元．睢玄明《耍孩兒．官行徑套．二煞》：「排場上表子偷晴望，恨不得街上行人將手拖。」 4.戲劇表演的場面。《紅樓夢》第二二回：「你白聽了這幾年戲，那裡知道這齣戲的好處，排場又好，詞藻更妙。」 5.身分。元．關漢卿《謝天香》第二折：「量妾身則是個妓女排場，相公是當代名儒。」 6.面子。《紅樓夢》第二四回：「賈芸深知鳳姐是喜奉承尚排場的，忙把手逼著，恭恭敬敬，搶上來請安。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「排場」。",
-      "literary_example": "語境合宜時，「排場」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "006340083",
-        "score": 30
-      }
-    },
-    {
-      "status": "active",
-      "term": "排山倒海",
-      "zhuyin": "ㄆㄞˊ ㄕㄢ ㄉㄠˇ ㄏㄞˇ",
-      "part_of_speech": null,
-      "difficulty": 3,
-      "short_def": "比喻力量、氣勢巨大。如：「大眾對於改革的呼聲如排山倒海而來，政府不得不重新檢視現有的政策。」《孽海花》第二五回：「耳中祇聽得排山倒海的風聲，園中樹木的摧折聲，門窗砰硼的開關聲。」",
-      "long_def": "比喻力量、氣勢巨大。如：「大眾對於改革的呼聲如排山倒海而來，政府不得不重新檢視現有的政策。」《孽海花》第二五回：「耳中祇聽得排山倒海的風聲，園中樹木的摧折聲，門窗砰硼的開關聲。」",
-      "usage_context": "教育部《重編國語辭典修訂本》釋義；寫作時依語域選用。",
-      "register": "literary",
-      "category": "書面語詞",
-      "tags": [
-        "教育部重編國語",
-        "寫作者詞庫",
-        "書面語詞"
-      ],
-      "daily_example": "敘事或議論中可斟酌使用「排山倒海」。",
-      "literary_example": "語境合宜時，「排山倒海」可提高書面表達精度。",
-      "source": {
-        "kind": "moe-revised",
-        "license": "CC BY-ND 3.0 TW",
-        "attribution": "中華民國教育部《重編國語辭典修訂本》",
-        "id": "006340090",
         "score": 30
       }
     }
