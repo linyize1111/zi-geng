@@ -33,6 +33,7 @@ service-role*
 
 # Large source dumps (regenerate seed from convert script)
 scripts/content/dict_idioms.json
+scripts/content/dict_revised.json
 scripts/content/fetched-wiktionary.json
 scripts/content/build-raw.mjs
 scripts/content/_build-literary-raw.mjs

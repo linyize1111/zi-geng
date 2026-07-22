@@ -154,15 +154,40 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
   if (slot === "vocabulary") {
     const { data, error } = await client
       .from("zg_vocabulary_cards")
-      .select("id")
+      .select("id, category, tags")
       .eq("status", "active");
     if (error) throw error;
-    const ids = (data ?? []).map((r) => r.id as string);
-    if (!ids.length) throw new Error("詞庫是空的，請先匯入詞彙");
+    const rows = data ?? [];
+    if (!rows.length) throw new Error("詞庫是空的，請先匯入詞彙");
     const avoid = new Set(plan.vocabulary_ids ?? []);
-    let pool = ids.filter((id) => !avoid.has(id));
-    if (pool.length < vocabN) pool = ids;
-    patch.vocabulary_ids = shufflePick(pool, Math.min(vocabN, pool.length));
+    const isIdiom = (r: { category?: string | null; tags?: string[] | null }) => {
+      const tags = r.tags ?? [];
+      return (
+        r.category === "成語" ||
+        tags.includes("成語") ||
+        tags.includes("教育部成語典")
+      );
+    };
+    // Prefer 單字／詞彙／文言 (~75%) over junior-level 成語 flood
+    const literary = rows.filter((r) => !isIdiom(r)).map((r) => r.id as string);
+    const idioms = rows.filter((r) => isIdiom(r)).map((r) => r.id as string);
+    const freeLit = literary.filter((id) => !avoid.has(id));
+    const freeIdi = idioms.filter((id) => !avoid.has(id));
+    const nLit = Math.min(
+      freeLit.length || literary.length,
+      Math.max(1, Math.ceil(vocabN * 0.75)),
+    );
+    const litPool = freeLit.length >= nLit ? freeLit : literary;
+    const pickedLit = shufflePick(litPool, Math.min(nLit, litPool.length));
+    const need = vocabN - pickedLit.length;
+    const idiPool = (freeIdi.length ? freeIdi : idioms).filter((id) => !pickedLit.includes(id));
+    const pickedIdi = need > 0 ? shufflePick(idiPool, Math.min(need, idiPool.length)) : [];
+    let picked = [...pickedLit, ...pickedIdi];
+    if (picked.length < vocabN) {
+      const rest = rows.map((r) => r.id as string).filter((id) => !picked.includes(id));
+      picked = [...picked, ...shufflePick(rest, vocabN - picked.length)];
+    }
+    patch.vocabulary_ids = picked;
   } else if (slot === "quote") {
     const { data, error } = await client
       .from("zg_quotes")
@@ -170,23 +195,15 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
       .eq("status", "active")
       .in("verification_status", ["verified_primary", "verified_secondary"]);
     if (error) throw error;
-    const ids = (data ?? [])
-      .filter(
-        (q) =>
-          q.copyright_status !== "internal_test" &&
-          q.author_name !== "開發測試內容" &&
-          !String(q.display_quote).includes("開發測試") &&
-          q.id !== plan.quote_id,
-      )
-      .map((q) => q.id as string);
-    const fallback = (data ?? [])
-      .filter(
-        (q) =>
-          q.copyright_status !== "internal_test" &&
-          q.author_name !== "開發測試內容" &&
-          !String(q.display_quote).includes("開發測試"),
-      )
-      .map((q) => q.id as string);
+    const usable = (data ?? []).filter(
+      (q) =>
+        q.copyright_status !== "internal_test" &&
+        q.author_name !== "開發測試內容" &&
+        q.author_name !== "字耕" &&
+        !String(q.display_quote).includes("開發測試"),
+    );
+    const ids = usable.filter((q) => q.id !== plan.quote_id).map((q) => q.id as string);
+    const fallback = usable.map((q) => q.id as string);
     const pick = shufflePick(ids.length ? ids : fallback, 1)[0];
     if (!pick) throw new Error("尚無名言可換，請先匯入多主題名言");
     patch.quote_id = pick;

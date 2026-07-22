@@ -47,7 +47,7 @@ export default function OwnerContentPage() {
       const data = (await res.json()) as VocabSeed;
       if (!data.cards?.length) throw new Error("詞庫檔是空的");
       return importVocabularyCards(data.cards, (done, total) => {
-        setProgress(`成語匯入 ${done}/${total}`);
+        setProgress(`文學詞庫 ${done}/${total}`);
       });
     });
   }
@@ -88,18 +88,18 @@ export default function OwnerContentPage() {
       <header className="space-y-2">
         <h1 className="font-[family-name:var(--font-sans)] text-3xl tracking-wide">內容管理</h1>
         <p className="text-sm text-[var(--color-ink-muted)]">
-          Owner 專用。可匯入教育部成語、維基詞典冷僻詞，以及維基語錄多主題名言（標明來源與授權）。
+          Owner 專用。詞庫以大學生～職業作家程度為主：寫作者對照詞、教育部《重編國語辭典》文學詞、少量成語輔助；名言以公有領域經典與標明來源的語錄為主（非自創箴言）。
         </p>
       </header>
 
       <section className="space-y-4 rounded-lg border border-[var(--color-line)] p-5">
         <h2 className="text-lg">匯入內容</h2>
         <p className="text-sm text-[var(--color-ink-muted)]">
-          可重跑；已存在的會跳過。匯入後到「今日」無限換卡，或用「收藏」留下複習。
+          可重跑；已存在的會跳過。平常由 GitHub Actions「Content sync」自動灌庫；此頁供手動補灌。
         </p>
         <div className="flex flex-wrap gap-3">
           <Button type="button" disabled={busy} onClick={() => void importMoeVocab()}>
-            {busy ? progress || "匯入中…" : "匯入教育部成語"}
+            {busy ? progress || "匯入中…" : "匯入文學詞庫"}
           </Button>
           <Button
             type="button"

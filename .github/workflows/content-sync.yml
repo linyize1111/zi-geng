@@ -57,12 +57,17 @@ jobs:
           node scripts/content/import-vocab.mjs scripts/content/seed-literary-vocab.json
           node scripts/content/import-quotes.mjs scripts/content/seed-themed-quotes.json
 
-      - name: Crawl multi-source (best-effort)
+      - name: Archive self-authored maxims (字耕箴言)
+        continue-on-error: true
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL || secrets.VITE_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || secrets.SUPABASE_SECRET_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: node scripts/content/archive-self-quotes.mjs
+
+      - name: Crawl multi-source extras (best-effort; never overwrite merged literary seed)
         continue-on-error: true
         run: |
-          npm run content:download-idioms
-          SEED_LIMIT=800 npm run content:generate
-          npm run content:quotes
           npm run content:crawl -- --vocab=80 --quotes=40
 
       - name: Import crawled extras (best-effort)
@@ -77,9 +82,6 @@ jobs:
           fi
           if [ -f scripts/content/fetched-wikiquote.json ]; then
             node scripts/content/import-quotes.mjs scripts/content/fetched-wikiquote.json
-          fi
-          if [ -f scripts/content/seed-literary-vocab.json ]; then
-            node scripts/content/import-vocab.mjs scripts/content/seed-literary-vocab.json
           fi
 
       - name: Apply unlimited-refresh RPC via Management SQL API
@@ -101,12 +103,16 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add \
             scripts/content/seed-literary-vocab.json \
+            scripts/content/seed-writer-vocab.json \
+            scripts/content/seed-moe-revised.json \
+            scripts/content/seed-idioms-raw.json \
             scripts/content/literary-terms.txt \
             scripts/content/seed-themed-quotes.json \
             scripts/content/fetched-wiktionary.json \
             scripts/content/fetched-wikiquote.json \
             scripts/content/seed-multi-source-vocab.json \
             public/content/seed-literary-vocab.json \
+            public/content/seed-writer-vocab.json \
             public/content/seed-themed-quotes.json \
             public/content/seed-multi-source-vocab.json \
             public/content/seed-wikiquote.json || true

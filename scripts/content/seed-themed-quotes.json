@@ -1,9 +1,8 @@
 {
-  "version": 1,
-  "count": 27,
+  "version": 2,
+  "count": 112,
   "sources": [
-    "classical-public-domain",
-    "zi-geng-original"
+    "classical-public-domain"
   ],
   "cards": [
     {
@@ -22,24 +21,22 @@
       "copyright_status": "public_domain",
       "difficulty": 3,
       "themes": [
-        "學習",
-        "教育"
+        "學習"
       ],
-      "short_analysis": "把學習與複習連在一起，快樂來自反覆確認自己真的懂了。",
-      "deep_analysis": "「時習」強調節奏：不是一次背完，而是依時溫習。寫作也可同理——草稿要留時間回看。",
-      "context": "儒家入門語，談學習態度。",
+      "short_analysis": "複習與喜悅的連結：節奏比一次背完更重要。",
+      "deep_analysis": "公有領域文本。寫作角度：複習與喜悅的連結：節奏比一次背完更重要。",
+      "context": "孔子《論語·學而》",
       "rhetorical_analysis": "",
-      "counterpoint": "若只重複而不思考，時習會變成空轉。",
-      "writing_insight": "把「複習」寫成場面：燈下重讀舊稿、刪掉昨夜自以為巧妙的句子。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "複習與喜悅的連結：節奏比一次背完更重要。",
       "reflection_questions": [
-        "你最近哪一次複習，真的改變了理解？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用現代場景寫一句「學而時習」的對應。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "古典",
         "公有領域",
-        "學習",
-        "教育"
+        "古典",
+        "學習"
       ],
       "source": {
         "kind": "curated-classical",
@@ -54,6 +51,82 @@
       "author_name": "孔子",
       "author_bio": "",
       "work_title": "論語·雍也",
+      "section_title": "動機",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "動機"
+      ],
+      "short_analysis": "動機三層：知／好／樂——寫角色動力可對照。",
+      "deep_analysis": "公有領域文本。寫作角度：動機三層：知／好／樂——寫角色動力可對照。",
+      "context": "孔子《論語·雍也》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "動機三層：知／好／樂——寫角色動力可對照。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "動機"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "歲寒，然後知松柏之後彫也。",
+      "original_quote": "歲寒，然後知松柏之後彫也。",
+      "original_language": "zh-classical",
+      "author_name": "孔子",
+      "author_bio": "",
+      "work_title": "論語·子罕",
+      "section_title": "品格",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "品格"
+      ],
+      "short_analysis": "壓力場面才顯出材質；人物弧線可用。",
+      "deep_analysis": "公有領域文本。寫作角度：壓力場面才顯出材質；人物弧線可用。",
+      "context": "孔子《論語·子罕》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "壓力場面才顯出材質；人物弧線可用。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "品格"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "三人行，必有我師焉。",
+      "original_quote": "三人行，必有我師焉。",
+      "original_language": "zh-classical",
+      "author_name": "孔子",
+      "author_bio": "",
+      "work_title": "論語·述而",
       "section_title": "學習",
       "publication_year": null,
       "translator_name": null,
@@ -62,24 +135,22 @@
       "copyright_status": "public_domain",
       "difficulty": 3,
       "themes": [
-        "學習",
-        "動機"
+        "學習"
       ],
-      "short_analysis": "程度由「知道」上升到「喜歡」再到「樂在其中」。",
-      "deep_analysis": "三層動機對寫作者極有用：為交稿而寫、為喜歡而寫、為寫本身而寫，產出與語氣都不同。",
-      "context": "論求學境界。",
+      "short_analysis": "避免寫成雞湯：重點在擇其善者。",
+      "deep_analysis": "公有領域文本。寫作角度：避免寫成雞湯：重點在擇其善者。",
+      "context": "孔子《論語·述而》",
       "rhetorical_analysis": "",
-      "counterpoint": "「樂之」也可能變成自我耽溺，需要外在標準校正。",
-      "writing_insight": "檢查角色動機落在哪一層，對話自然會變。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "避免寫成雞湯：重點在擇其善者。",
       "reflection_questions": [
-        "你寫作時比較常停在哪一層？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "寫三句獨白，分別對應知／好／樂。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "古典",
         "公有領域",
-        "學習",
-        "動機"
+        "古典",
+        "學習"
       ],
       "source": {
         "kind": "curated-classical",
@@ -94,7 +165,7 @@
       "author_name": "屈原",
       "author_bio": "",
       "work_title": "離騷",
-      "section_title": "堅持",
+      "section_title": "理想",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
@@ -102,26 +173,98 @@
       "copyright_status": "public_domain",
       "difficulty": 3,
       "themes": [
-        "堅持",
-        "孤獨",
         "理想"
       ],
-      "short_analysis": "路途漫長，仍要上下求索——把堅持寫成空間動作。",
-      "deep_analysis": "「上下」不是抽象努力，而是可感的攀爬與俯就。長篇小說的中段最需要這種意象。",
-      "context": "楚辭抒情傳統。",
+      "short_analysis": "堅持寫成空間動作：上與下。",
+      "deep_analysis": "公有領域文本。寫作角度：堅持寫成空間動作：上與下。",
+      "context": "屈原《離騷》",
       "rhetorical_analysis": "",
-      "counterpoint": "求索也可能迷失；可對照「知其不可而為之」。",
-      "writing_insight": "用路程意象取代「我很努力」的宣告。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "堅持寫成空間動作：上與下。",
       "reflection_questions": [
-        "你故事裡的「路」具體是什麼？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "寫一段主角在長路上求索，但不出現「努力」二字。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "古典",
         "公有領域",
-        "堅持",
-        "孤獨",
+        "古典",
         "理想"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "亦余心之所善兮，雖九死其猶未悔。",
+      "original_quote": "亦余心之所善兮，雖九死其猶未悔。",
+      "original_language": "zh-classical",
+      "author_name": "屈原",
+      "author_bio": "",
+      "work_title": "離騷",
+      "section_title": "理想",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "理想"
+      ],
+      "short_analysis": "價值選擇的極端句式；慎用於現代對白。",
+      "deep_analysis": "公有領域文本。寫作角度：價值選擇的極端句式；慎用於現代對白。",
+      "context": "屈原《離騷》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "價值選擇的極端句式；慎用於現代對白。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "理想"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "惟草木之零落兮，恐美人之遲暮。",
+      "original_quote": "惟草木之零落兮，恐美人之遲暮。",
+      "original_language": "zh-classical",
+      "author_name": "屈原",
+      "author_bio": "",
+      "work_title": "離騷",
+      "section_title": "時間",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "時間"
+      ],
+      "short_analysis": "物候＝焦慮；時間壓力的古典原型。",
+      "deep_analysis": "公有領域文本。寫作角度：物候＝焦慮；時間壓力的古典原型。",
+      "context": "屈原《離騷》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "物候＝焦慮；時間壓力的古典原型。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "時間"
       ],
       "source": {
         "kind": "curated-classical",
@@ -144,26 +287,98 @@
       "copyright_status": "public_domain",
       "difficulty": 3,
       "themes": [
-        "時間",
-        "自然",
-        "死亡"
+        "時間"
       ],
-      "short_analysis": "時間像白馬掠過縫隙，強調短暫與倏忽。",
-      "deep_analysis": "莊子用動物與縫隙把抽象時間變成視覺。短篇收束常用這種「忽然」。",
-      "context": "道家時間觀。",
+      "short_analysis": "尺度對比：快、窄、忽。",
+      "deep_analysis": "公有領域文本。寫作角度：尺度對比：快、窄、忽。",
+      "context": "莊子《莊子·知北遊》",
       "rhetorical_analysis": "",
-      "counterpoint": "強調倏忽也可能取消責任與計畫的重量。",
-      "writing_insight": "找一個具體快速動作，承載時間流逝。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "尺度對比：快、窄、忽。",
       "reflection_questions": [
-        "你作品裡哪一場戲最需要「忽然」？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "不用「時光飛逝」，改寫一個白駒過隙式比喻。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "古典",
         "公有領域",
-        "時間",
-        "自然",
-        "死亡"
+        "古典",
+        "時間"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "子非魚，安知魚之樂？",
+      "original_quote": "子非魚，安知魚之樂？",
+      "original_language": "zh-classical",
+      "author_name": "莊子",
+      "author_bio": "",
+      "work_title": "莊子·秋水",
+      "section_title": "認識",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "認識"
+      ],
+      "short_analysis": "視角與不可知：對話衝突的哲學引擎。",
+      "deep_analysis": "公有領域文本。寫作角度：視角與不可知：對話衝突的哲學引擎。",
+      "context": "莊子《莊子·秋水》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "視角與不可知：對話衝突的哲學引擎。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "認識"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "相忘於江湖。",
+      "original_quote": "相忘於江湖。",
+      "original_language": "zh-classical",
+      "author_name": "莊子",
+      "author_bio": "",
+      "work_title": "莊子·大宗師",
+      "section_title": "自由",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "自由"
+      ],
+      "short_analysis": "關係的疏離美學：大空間裡的互不羈絆。",
+      "deep_analysis": "公有領域文本。寫作角度：關係的疏離美學：大空間裡的互不羈絆。",
+      "context": "莊子《莊子·大宗師》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "關係的疏離美學：大空間裡的互不羈絆。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "自由"
       ],
       "source": {
         "kind": "curated-classical",
@@ -186,26 +401,98 @@
       "copyright_status": "public_domain",
       "difficulty": 3,
       "themes": [
-        "政治",
-        "道德",
-        "自我"
+        "政治"
       ],
-      "short_analysis": "處境不同，責任尺度不同。",
-      "deep_analysis": "角色倫理可以隨權力變化：無權時守身，有權時擴張善意——也可寫其虛偽版本。",
-      "context": "儒家出處進退。",
+      "short_analysis": "權力改變倫理語言——角色雙重標準素材。",
+      "deep_analysis": "公有領域文本。寫作角度：權力改變倫理語言——角色雙重標準素材。",
+      "context": "孟子《孟子·盡心上》",
       "rhetorical_analysis": "",
-      "counterpoint": "誰定義「窮／達」？常被權力挪用。",
-      "writing_insight": "給對手一個「達」時的合理自辯。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "權力改變倫理語言——角色雙重標準素材。",
       "reflection_questions": [
-        "你故事中的權力如何改寫道德語言？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "寫同一人在窮與達兩種處境的不同選擇。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "古典",
         "公有領域",
-        "政治",
-        "道德",
-        "自我"
+        "古典",
+        "政治"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "生於憂患，死於安樂。",
+      "original_quote": "生於憂患，死於安樂。",
+      "original_language": "zh-classical",
+      "author_name": "孟子",
+      "author_bio": "",
+      "work_title": "孟子·告子下",
+      "section_title": "危機",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "危機"
+      ],
+      "short_analysis": "結構命題：安樂如何殺死意志。",
+      "deep_analysis": "公有領域文本。寫作角度：結構命題：安樂如何殺死意志。",
+      "context": "孟子《孟子·告子下》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "結構命題：安樂如何殺死意志。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "危機"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "雖千萬人，吾往矣。",
+      "original_quote": "雖千萬人，吾往矣。",
+      "original_language": "zh-classical",
+      "author_name": "孟子",
+      "author_bio": "",
+      "work_title": "孟子·公孫丑上",
+      "section_title": "勇氣",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "勇氣"
+      ],
+      "short_analysis": "孤獨行動的宣言句；適合高潮前。",
+      "deep_analysis": "公有領域文本。寫作角度：孤獨行動的宣言句；適合高潮前。",
+      "context": "孟子《孟子·公孫丑上》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "孤獨行動的宣言句；適合高潮前。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "勇氣"
       ],
       "source": {
         "kind": "curated-classical",
@@ -228,24 +515,60 @@
       "copyright_status": "public_domain",
       "difficulty": 3,
       "themes": [
-        "學習",
-        "堅持"
+        "學習"
       ],
-      "short_analysis": "大成來自微小累積。",
-      "deep_analysis": "適合寫長篇進度與日常練習：不是爆肝一夜，而是跬步。",
-      "context": "勸學名句。",
+      "short_analysis": "長篇進度與日常練習的隱喻。",
+      "deep_analysis": "公有領域文本。寫作角度：長篇進度與日常練習的隱喻。",
+      "context": "荀子《荀子·勸學》",
       "rhetorical_analysis": "",
-      "counterpoint": "只積累方向錯誤，會走得更遠地錯。",
-      "writing_insight": "用「小流」細節寫出角色的長期改變。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "長篇進度與日常練習的隱喻。",
       "reflection_questions": [
-        "你現在的跬步是什麼？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "寫一週的跬步清單，再寫成一段敘事。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "古典",
         "公有領域",
-        "學習",
-        "堅持"
+        "古典",
+        "學習"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "青，取之於藍，而青於藍。",
+      "original_quote": "青，取之於藍，而青於藍。",
+      "original_language": "zh-classical",
+      "author_name": "荀子",
+      "author_bio": "",
+      "work_title": "荀子·勸學",
+      "section_title": "傳承",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "傳承"
+      ],
+      "short_analysis": "師承與超越；避免寫成廉價勵志。",
+      "deep_analysis": "公有領域文本。寫作角度：師承與超越；避免寫成廉價勵志。",
+      "context": "荀子《荀子·勸學》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "師承與超越；避免寫成廉價勵志。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "傳承"
       ],
       "source": {
         "kind": "curated-classical",
@@ -268,24 +591,782 @@
       "copyright_status": "public_domain",
       "difficulty": 3,
       "themes": [
-        "品格",
-        "沉默"
+        "品格"
       ],
-      "short_analysis": "不必自誇，實質會吸引路徑。",
-      "deep_analysis": "用結果（蹊徑）證明品格，而不是自我介紹。寫人物時極好用。",
-      "context": "贊李廣。",
+      "short_analysis": "用結果證明品格，刪自誇。",
+      "deep_analysis": "公有領域文本。寫作角度：用結果證明品格，刪自誇。",
+      "context": "司馬遷《史記·李將軍列傳》",
       "rhetorical_analysis": "",
-      "counterpoint": "沉默也可能被時代淹沒，需要見證者。",
-      "writing_insight": "刪掉角色自誇，改寫別人如何走近他。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "用結果證明品格，刪自誇。",
       "reflection_questions": [
-        "你主角最有說服力的「不言」是什麼？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "寫一個「不言」卻被眾人靠近的場面。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "古典",
         "公有領域",
-        "品格",
+        "古典",
+        "品格"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "燕雀安知鴻鵠之志哉！",
+      "original_quote": "燕雀安知鴻鵠之志哉！",
+      "original_language": "zh-classical",
+      "author_name": "司馬遷",
+      "author_bio": "",
+      "work_title": "史記·陳涉世家",
+      "section_title": "志向",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "志向"
+      ],
+      "short_analysis": "階級目光的衝突；可反寫其傲慢。",
+      "deep_analysis": "公有領域文本。寫作角度：階級目光的衝突；可反寫其傲慢。",
+      "context": "司馬遷《史記·陳涉世家》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "階級目光的衝突；可反寫其傲慢。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "志向"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "大行不顧細謹，大禮不辭小讓。",
+      "original_quote": "大行不顧細謹，大禮不辭小讓。",
+      "original_language": "zh-classical",
+      "author_name": "司馬遷",
+      "author_bio": "",
+      "work_title": "史記·項羽本紀",
+      "section_title": "決斷",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "決斷"
+      ],
+      "short_analysis": "危機修辭：正當化決絕。",
+      "deep_analysis": "公有領域文本。寫作角度：危機修辭：正當化決絕。",
+      "context": "司馬遷《史記·項羽本紀》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "危機修辭：正當化決絕。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "決斷"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "力拔山兮氣蓋世，時不利兮騅不逝。",
+      "original_quote": "力拔山兮氣蓋世，時不利兮騅不逝。",
+      "original_language": "zh-classical",
+      "author_name": "項羽",
+      "author_bio": "",
+      "work_title": "史記·項羽本紀",
+      "section_title": "失敗",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "失敗"
+      ],
+      "short_analysis": "英雄末路：力與時的對折。",
+      "deep_analysis": "公有領域文本。寫作角度：英雄末路：力與時的對折。",
+      "context": "項羽《史記·項羽本紀》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "英雄末路：力與時的對折。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "失敗"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "采菊東籬下，悠然見南山。",
+      "original_quote": "采菊東籬下，悠然見南山。",
+      "original_language": "zh-classical",
+      "author_name": "陶淵明",
+      "author_bio": "",
+      "work_title": "飲酒·其五",
+      "section_title": "自然",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "自然"
+      ],
+      "short_analysis": "偶然遇見的悠然；『見』的視點。",
+      "deep_analysis": "公有領域文本。寫作角度：偶然遇見的悠然；『見』的視點。",
+      "context": "陶淵明《飲酒·其五》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "偶然遇見的悠然；『見』的視點。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "自然"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "此中有真意，欲辨已忘言。",
+      "original_quote": "此中有真意，欲辨已忘言。",
+      "original_language": "zh-classical",
+      "author_name": "陶淵明",
+      "author_bio": "",
+      "work_title": "飲酒·其五",
+      "section_title": "沉默",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
         "沉默"
+      ],
+      "short_analysis": "不可說之美；結尾留白教材。",
+      "deep_analysis": "公有領域文本。寫作角度：不可說之美；結尾留白教材。",
+      "context": "陶淵明《飲酒·其五》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "不可說之美；結尾留白教材。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "沉默"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "歸去來兮，田園將蕪胡不歸？",
+      "original_quote": "歸去來兮，田園將蕪胡不歸？",
+      "original_language": "zh-classical",
+      "author_name": "陶淵明",
+      "author_bio": "",
+      "work_title": "歸去來兮辭",
+      "section_title": "歸返",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "歸返"
+      ],
+      "short_analysis": "召喚句式：自我質問推進情節。",
+      "deep_analysis": "公有領域文本。寫作角度：召喚句式：自我質問推進情節。",
+      "context": "陶淵明《歸去來兮辭》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "召喚句式：自我質問推進情節。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "歸返"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "願君多采擷，此物最相思。",
+      "original_quote": "願君多采擷，此物最相思。",
+      "original_language": "zh-classical",
+      "author_name": "王維",
+      "author_bio": "",
+      "work_title": "相思",
+      "section_title": "愛情",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "愛情"
+      ],
+      "short_analysis": "物象寄情；紅豆的轉喻。",
+      "deep_analysis": "公有領域文本。寫作角度：物象寄情；紅豆的轉喻。",
+      "context": "王維《相思》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "物象寄情；紅豆的轉喻。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "愛情"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "行到水窮處，坐看雲起時。",
+      "original_quote": "行到水窮處，坐看雲起時。",
+      "original_language": "zh-classical",
+      "author_name": "王維",
+      "author_bio": "",
+      "work_title": "終南別業",
+      "section_title": "自然",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "自然"
+      ],
+      "short_analysis": "絕境轉為觀看；節奏由行到坐。",
+      "deep_analysis": "公有領域文本。寫作角度：絕境轉為觀看；節奏由行到坐。",
+      "context": "王維《終南別業》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "絕境轉為觀看；節奏由行到坐。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "自然"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "空山新雨後，天氣晚來秋。",
+      "original_quote": "空山新雨後，天氣晚來秋。",
+      "original_language": "zh-classical",
+      "author_name": "王維",
+      "author_bio": "",
+      "work_title": "山居秋暝",
+      "section_title": "自然",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "自然"
+      ],
+      "short_analysis": "感官定錨：濕、涼、季節。",
+      "deep_analysis": "公有領域文本。寫作角度：感官定錨：濕、涼、季節。",
+      "context": "王維《山居秋暝》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "感官定錨：濕、涼、季節。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "自然"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "勸君更盡一杯酒，西出陽關無故人。",
+      "original_quote": "勸君更盡一杯酒，西出陽關無故人。",
+      "original_language": "zh-classical",
+      "author_name": "王維",
+      "author_bio": "",
+      "work_title": "送元二使安西",
+      "section_title": "離別",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "離別"
+      ],
+      "short_analysis": "餞別的最後一杯＝關係期限。",
+      "deep_analysis": "公有領域文本。寫作角度：餞別的最後一杯＝關係期限。",
+      "context": "王維《送元二使安西》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "餞別的最後一杯＝關係期限。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "離別"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "床前明月光，疑是地上霜。",
+      "original_quote": "床前明月光，疑是地上霜。",
+      "original_language": "zh-classical",
+      "author_name": "李白",
+      "author_bio": "",
+      "work_title": "靜夜思",
+      "section_title": "鄉愁",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "鄉愁"
+      ],
+      "short_analysis": "錯覺啟動情緒；極簡場面。",
+      "deep_analysis": "公有領域文本。寫作角度：錯覺啟動情緒；極簡場面。",
+      "context": "李白《靜夜思》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "錯覺啟動情緒；極簡場面。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "鄉愁"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "抽刀斷水水更流，舉杯銷愁愁更愁。",
+      "original_quote": "抽刀斷水水更流，舉杯銷愁愁更愁。",
+      "original_language": "zh-classical",
+      "author_name": "李白",
+      "author_bio": "",
+      "work_title": "宣州謝脁樓餞別校書叔雲",
+      "section_title": "失敗",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "失敗"
+      ],
+      "short_analysis": "行動無效的對稱句；情緒結構。",
+      "deep_analysis": "公有領域文本。寫作角度：行動無效的對稱句；情緒結構。",
+      "context": "李白《宣州謝脁樓餞別校書叔雲》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "行動無效的對稱句；情緒結構。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "失敗"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "天生我材必有用，千金散盡還復來。",
+      "original_quote": "天生我材必有用，千金散盡還復來。",
+      "original_language": "zh-classical",
+      "author_name": "李白",
+      "author_bio": "",
+      "work_title": "將進酒",
+      "section_title": "自信",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "自信"
+      ],
+      "short_analysis": "豪語背後的 prioritisation：材 vs 金。",
+      "deep_analysis": "公有領域文本。寫作角度：豪語背後的 prioritisation：材 vs 金。",
+      "context": "李白《將進酒》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "豪語背後的 prioritisation：材 vs 金。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "自信"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "長風破浪會有時，直掛雲帆濟滄海。",
+      "original_quote": "長風破浪會有時，直掛雲帆濟滄海。",
+      "original_language": "zh-classical",
+      "author_name": "李白",
+      "author_bio": "",
+      "work_title": "行路難",
+      "section_title": "希望",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "希望"
+      ],
+      "short_analysis": "未來完成式的自我預言。",
+      "deep_analysis": "公有領域文本。寫作角度：未來完成式的自我預言。",
+      "context": "李白《行路難》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "未來完成式的自我預言。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "希望"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "舉杯邀明月，對影成三人。",
+      "original_quote": "舉杯邀明月，對影成三人。",
+      "original_language": "zh-classical",
+      "author_name": "李白",
+      "author_bio": "",
+      "work_title": "月下獨酌",
+      "section_title": "孤獨",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "孤獨"
+      ],
+      "short_analysis": "想像補足伴侶；孤獨的戲劇化。",
+      "deep_analysis": "公有領域文本。寫作角度：想像補足伴侶；孤獨的戲劇化。",
+      "context": "李白《月下獨酌》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "想像補足伴侶；孤獨的戲劇化。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "孤獨"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "國破山河在，城春草木深。",
+      "original_quote": "國破山河在，城春草木深。",
+      "original_language": "zh-classical",
+      "author_name": "杜甫",
+      "author_bio": "",
+      "work_title": "春望",
+      "section_title": "戰亂",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "戰亂"
+      ],
+      "short_analysis": "對比：國破／山河在；深＝無人。",
+      "deep_analysis": "公有領域文本。寫作角度：對比：國破／山河在；深＝無人。",
+      "context": "杜甫《春望》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "對比：國破／山河在；深＝無人。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "戰亂"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "感時花濺淚，恨別鳥驚心。",
+      "original_quote": "感時花濺淚，恨別鳥驚心。",
+      "original_language": "zh-classical",
+      "author_name": "杜甫",
+      "author_bio": "",
+      "work_title": "春望",
+      "section_title": "悲傷",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "悲傷"
+      ],
+      "short_analysis": "移情：花鳥承擔人的淚與驚。",
+      "deep_analysis": "公有領域文本。寫作角度：移情：花鳥承擔人的淚與驚。",
+      "context": "杜甫《春望》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "移情：花鳥承擔人的淚與驚。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "悲傷"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "烽火連三月，家書抵萬金。",
+      "original_quote": "烽火連三月，家書抵萬金。",
+      "original_language": "zh-classical",
+      "author_name": "杜甫",
+      "author_bio": "",
+      "work_title": "春望",
+      "section_title": "戰爭",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "戰爭"
+      ],
+      "short_analysis": "信息稀缺的價值；現代可轉寫斷訊。",
+      "deep_analysis": "公有領域文本。寫作角度：信息稀缺的價值；現代可轉寫斷訊。",
+      "context": "杜甫《春望》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "信息稀缺的價值；現代可轉寫斷訊。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "戰爭"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "會當凌絕頂，一覽眾山小。",
+      "original_quote": "會當凌絕頂，一覽眾山小。",
+      "original_language": "zh-classical",
+      "author_name": "杜甫",
+      "author_bio": "",
+      "work_title": "望岳",
+      "section_title": "志向",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "志向"
+      ],
+      "short_analysis": "視點升高改變世界尺度。",
+      "deep_analysis": "公有領域文本。寫作角度：視點升高改變世界尺度。",
+      "context": "杜甫《望岳》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "視點升高改變世界尺度。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "志向"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "安得廣廈千萬間，大庇天下寒士俱歡顏。",
+      "original_quote": "安得廣廈千萬間，大庇天下寒士俱歡顏。",
+      "original_language": "zh-classical",
+      "author_name": "杜甫",
+      "author_bio": "",
+      "work_title": "茅屋為秋風所破歌",
+      "section_title": "政治",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "政治"
+      ],
+      "short_analysis": "個人苦難推向公共願望。",
+      "deep_analysis": "公有領域文本。寫作角度：個人苦難推向公共願望。",
+      "context": "杜甫《茅屋為秋風所破歌》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "個人苦難推向公共願望。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "政治"
       ],
       "source": {
         "kind": "curated-classical",
@@ -300,7 +1381,7 @@
       "author_name": "李商隱",
       "author_bio": "",
       "work_title": "登樂遊原",
-      "section_title": "時間",
+      "section_title": "遺憾",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
@@ -308,26 +1389,136 @@
       "copyright_status": "public_domain",
       "difficulty": 3,
       "themes": [
-        "時間",
-        "美",
         "遺憾"
       ],
-      "short_analysis": "美與將逝並置，產生張力。",
-      "deep_analysis": "上句讚美，下句轉折；對比製造餘味。短詩與短篇結尾常用。",
-      "context": "晚唐七絕。",
+      "short_analysis": "美與時限並置。",
+      "deep_analysis": "公有領域文本。寫作角度：美與時限並置。",
+      "context": "李商隱《登樂遊原》",
       "rhetorical_analysis": "",
-      "counterpoint": "過度感傷會變成套語。",
-      "writing_insight": "先給極美，再輕輕揭示代價或時限。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "美與時限並置。",
       "reflection_questions": [
-        "你最近看見的「近黃昏」是什麼？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "寫一個「極好／將逝」的現代場景。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "古典",
         "公有領域",
-        "時間",
-        "美",
+        "古典",
         "遺憾"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "此情可待成追憶，只是當時已惘然。",
+      "original_quote": "此情可待成追憶，只是當時已惘然。",
+      "original_language": "zh-classical",
+      "author_name": "李商隱",
+      "author_bio": "",
+      "work_title": "錦瑟",
+      "section_title": "記憶",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "記憶"
+      ],
+      "short_analysis": "回憶的悖論：當時已惘。",
+      "deep_analysis": "公有領域文本。寫作角度：回憶的悖論：當時已惘。",
+      "context": "李商隱《錦瑟》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "回憶的悖論：當時已惘。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "記憶"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "何當共剪西窗燭，卻話巴山夜雨時。",
+      "original_quote": "何當共剪西窗燭，卻話巴山夜雨時。",
+      "original_language": "zh-classical",
+      "author_name": "李商隱",
+      "author_bio": "",
+      "work_title": "夜雨寄北",
+      "section_title": "愛情",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "愛情"
+      ],
+      "short_analysis": "未來完成的共處想像。",
+      "deep_analysis": "公有領域文本。寫作角度：未來完成的共處想像。",
+      "context": "李商隱《夜雨寄北》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "未來完成的共處想像。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "愛情"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "春蠶到死絲方盡，蠟炬成灰淚始乾。",
+      "original_quote": "春蠶到死絲方盡，蠟炬成灰淚始乾。",
+      "original_language": "zh-classical",
+      "author_name": "李商隱",
+      "author_bio": "",
+      "work_title": "無題",
+      "section_title": "愛情",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "愛情"
+      ],
+      "short_analysis": "耗盡型奉獻；意象對位。",
+      "deep_analysis": "公有領域文本。寫作角度：耗盡型奉獻；意象對位。",
+      "context": "李商隱《無題》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "耗盡型奉獻；意象對位。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "愛情"
       ],
       "source": {
         "kind": "curated-classical",
@@ -342,7 +1533,7 @@
       "author_name": "陸遊",
       "author_bio": "",
       "work_title": "遊山西村",
-      "section_title": "希望",
+      "section_title": "轉折",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
@@ -350,25 +1541,21 @@
       "copyright_status": "public_domain",
       "difficulty": 3,
       "themes": [
-        "希望",
-        "旅行",
         "轉折"
       ],
-      "short_analysis": "絕境後忽見開朗——情節轉折的經典句式。",
-      "deep_analysis": "先把路堵死（疑無路），再給意外出口。讀者需要前面的「重／複」才吃到「又一村」。",
-      "context": "南宋紀遊詩。",
+      "short_analysis": "困局寫足再開口；避免無因開掛。",
+      "deep_analysis": "公有領域文本。寫作角度：困局寫足再開口；避免無因開掛。",
+      "context": "陸遊《遊山西村》",
       "rhetorical_analysis": "",
-      "counterpoint": "若每次都柳暗花明，張力會疲乏。",
-      "writing_insight": "轉折前務必寫足困局，不要突然開掛。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "困局寫足再開口；避免無因開掛。",
       "reflection_questions": [
-        "你小說中段的「無路」夠不夠真？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "寫一段山重水複，再寫一個不落俗套的出口。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "古典",
         "公有領域",
-        "希望",
-        "旅行",
+        "古典",
         "轉折"
       ],
       "source": {
@@ -384,7 +1571,7 @@
       "author_name": "陸遊",
       "author_bio": "",
       "work_title": "冬夜讀書示子聿",
-      "section_title": "學習",
+      "section_title": "實踐",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
@@ -392,23 +1579,21 @@
       "copyright_status": "public_domain",
       "difficulty": 3,
       "themes": [
-        "學習",
         "實踐"
       ],
-      "short_analysis": "書本知識淺，真懂靠親身去做。",
-      "deep_analysis": "對寫作者：只讀寫作書不夠，要寫；只讀人生書不夠，要經驗與觀察。",
-      "context": "教子讀書。",
+      "short_analysis": "知識 vs 經驗；寫作者自況。",
+      "deep_analysis": "公有領域文本。寫作角度：知識 vs 經驗；寫作者自況。",
+      "context": "陸遊《冬夜讀書示子聿》",
       "rhetorical_analysis": "",
-      "counterpoint": "躬行而無反思，也可能重複錯誤。",
-      "writing_insight": "讓角色「躬行」一次，再回頭改他的理論口吻。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "知識 vs 經驗；寫作者自況。",
       "reflection_questions": [
-        "你哪句寫作教條還沒躬行過？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "寫角色把書上句子用到現實後碰壁。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "古典",
         "公有領域",
-        "學習",
+        "古典",
         "實踐"
       ],
       "source": {
@@ -418,13 +1603,13 @@
     },
     {
       "status": "active",
-      "display_quote": "寄蜉蝣於天地，渺滄海之一粟。",
-      "original_quote": "寄蜉蝣於天地，渺滄海之一粟。",
+      "display_quote": "零落成泥碾作塵，只有香如故。",
+      "original_quote": "零落成泥碾作塵，只有香如故。",
       "original_language": "zh-classical",
-      "author_name": "蘇軾",
+      "author_name": "陸遊",
       "author_bio": "",
-      "work_title": "赤壁賦",
-      "section_title": "自然",
+      "work_title": "卜算子·詠梅",
+      "section_title": "品格",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
@@ -432,25 +1617,97 @@
       "copyright_status": "public_domain",
       "difficulty": 3,
       "themes": [
-        "自然",
-        "自我",
+        "品格"
+      ],
+      "short_analysis": "毀滅後的本質殘留。",
+      "deep_analysis": "公有領域文本。寫作角度：毀滅後的本質殘留。",
+      "context": "陸遊《卜算子·詠梅》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "毀滅後的本質殘留。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "品格"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "王師北定中原日，家祭無忘告乃翁。",
+      "original_quote": "王師北定中原日，家祭無忘告乃翁。",
+      "original_language": "zh-classical",
+      "author_name": "陸遊",
+      "author_bio": "",
+      "work_title": "示兒",
+      "section_title": "家國",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "家國"
+      ],
+      "short_analysis": "遺言結構：未完成的歷史。",
+      "deep_analysis": "公有領域文本。寫作角度：遺言結構：未完成的歷史。",
+      "context": "陸遊《示兒》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "遺言結構：未完成的歷史。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "家國"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "大江東去，浪淘盡，千古風流人物。",
+      "original_quote": "大江東去，浪淘盡，千古風流人物。",
+      "original_language": "zh-classical",
+      "author_name": "蘇軾",
+      "author_bio": "",
+      "work_title": "念奴嬌·赤壁懷古",
+      "section_title": "時間",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
         "時間"
       ],
-      "short_analysis": "以蜉蝣、滄海對照人的渺小。",
-      "deep_analysis": "賦體善用對偶與尺度對比。寫風景時可借尺度變化產生哲學感。",
-      "context": "前後赤壁賦之一。",
+      "short_analysis": "江＝時間機器；淘盡＝敘事引擎。",
+      "deep_analysis": "公有領域文本。寫作角度：江＝時間機器；淘盡＝敘事引擎。",
+      "context": "蘇軾《念奴嬌·赤壁懷古》",
       "rhetorical_analysis": "",
-      "counterpoint": "過度渺小化可能取消行動意義。",
-      "writing_insight": "先寫極大，再寫極小，讓情緒自己出現。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "江＝時間機器；淘盡＝敘事引擎。",
       "reflection_questions": [
-        "你的敘事聲音站在蜉蝣還是滄海？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用一組大小對比寫夜景，不出現「渺小」。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "古典",
         "公有領域",
-        "自然",
-        "自我",
+        "古典",
         "時間"
       ],
       "source": {
@@ -474,25 +1731,1579 @@
       "copyright_status": "public_domain",
       "difficulty": 3,
       "themes": [
-        "旅行",
-        "友情",
+        "旅行"
+      ],
+      "short_analysis": "過客意識；送別不黏膩。",
+      "deep_analysis": "公有領域文本。寫作角度：過客意識；送別不黏膩。",
+      "context": "蘇軾《臨江仙·送錢穆父》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "過客意識；送別不黏膩。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "旅行"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "寄蜉蝣於天地，渺滄海之一粟。",
+      "original_quote": "寄蜉蝣於天地，渺滄海之一粟。",
+      "original_language": "zh-classical",
+      "author_name": "蘇軾",
+      "author_bio": "",
+      "work_title": "赤壁賦",
+      "section_title": "自然",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "自然"
+      ],
+      "short_analysis": "尺度對折：極小／極大。",
+      "deep_analysis": "公有領域文本。寫作角度：尺度對折：極小／極大。",
+      "context": "蘇軾《赤壁賦》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "尺度對折：極小／極大。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "自然"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "竹杖芒鞋輕勝馬，誰怕？一蓑煙雨任平生。",
+      "original_quote": "竹杖芒鞋輕勝馬，誰怕？一蓑煙雨任平生。",
+      "original_language": "zh-classical",
+      "author_name": "蘇軾",
+      "author_bio": "",
+      "work_title": "定風波",
+      "section_title": "勇氣",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "勇氣"
+      ],
+      "short_analysis": "裝備簡陋作為自由宣言。",
+      "deep_analysis": "公有領域文本。寫作角度：裝備簡陋作為自由宣言。",
+      "context": "蘇軾《定風波》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "裝備簡陋作為自由宣言。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "勇氣"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "枝上柳綿吹又少，天涯何處無芳草。",
+      "original_quote": "枝上柳綿吹又少，天涯何處無芳草。",
+      "original_language": "zh-classical",
+      "author_name": "蘇軾",
+      "author_bio": "",
+      "work_title": "蝶戀花",
+      "section_title": "希望",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "希望"
+      ],
+      "short_analysis": "失落與替代可能的並置。",
+      "deep_analysis": "公有領域文本。寫作角度：失落與替代可能的並置。",
+      "context": "蘇軾《蝶戀花》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "失落與替代可能的並置。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "希望"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "尋尋覓覓，冷冷清清，悽悽慘慘戚戚。",
+      "original_quote": "尋尋覓覓，冷冷清清，悽悽慘慘戚戚。",
+      "original_language": "zh-classical",
+      "author_name": "李清照",
+      "author_bio": "",
+      "work_title": "聲聲慢",
+      "section_title": "悲傷",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "悲傷"
+      ],
+      "short_analysis": "疊字節奏＝情緒密度。",
+      "deep_analysis": "公有領域文本。寫作角度：疊字節奏＝情緒密度。",
+      "context": "李清照《聲聲慢》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "疊字節奏＝情緒密度。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "悲傷"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "此情無計可消除，才下眉頭，卻上心頭。",
+      "original_quote": "此情無計可消除，才下眉頭，卻上心頭。",
+      "original_language": "zh-classical",
+      "author_name": "李清照",
+      "author_bio": "",
+      "work_title": "一剪梅",
+      "section_title": "愛情",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "愛情"
+      ],
+      "short_analysis": "身體位移寫執念。",
+      "deep_analysis": "公有領域文本。寫作角度：身體位移寫執念。",
+      "context": "李清照《一剪梅》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "身體位移寫執念。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "愛情"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "生當作人傑，死亦為鬼雄。",
+      "original_quote": "生當作人傑，死亦為鬼雄。",
+      "original_language": "zh-classical",
+      "author_name": "李清照",
+      "author_bio": "",
+      "work_title": "夏日絕句",
+      "section_title": "勇氣",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "勇氣"
+      ],
+      "short_analysis": "生死評價的對偶。",
+      "deep_analysis": "公有領域文本。寫作角度：生死評價的對偶。",
+      "context": "李清照《夏日絕句》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "生死評價的對偶。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "勇氣"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "莫道不銷魂，簾捲西風，人比黃花瘦。",
+      "original_quote": "莫道不銷魂，簾捲西風，人比黃花瘦。",
+      "original_language": "zh-classical",
+      "author_name": "李清照",
+      "author_bio": "",
+      "work_title": "醉花陰",
+      "section_title": "孤獨",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "孤獨"
+      ],
+      "short_analysis": "物人較量：瘦的修辭競賽。",
+      "deep_analysis": "公有領域文本。寫作角度：物人較量：瘦的修辭競賽。",
+      "context": "李清照《醉花陰》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "物人較量：瘦的修辭競賽。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "孤獨"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "醉裏挑燈看劍，夢回吹角連營。",
+      "original_quote": "醉裏挑燈看劍，夢回吹角連營。",
+      "original_language": "zh-classical",
+      "author_name": "辛棄疾",
+      "author_bio": "",
+      "work_title": "破陣子",
+      "section_title": "記憶",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "記憶"
+      ],
+      "short_analysis": "醉／夢切換時空；武的殘影。",
+      "deep_analysis": "公有領域文本。寫作角度：醉／夢切換時空；武的殘影。",
+      "context": "辛棄疾《破陣子》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "醉／夢切換時空；武的殘影。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "記憶"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "眾裏尋他千百度，驀然回首，那人卻在，燈火闌珊處。",
+      "original_quote": "眾裏尋他千百度，驀然回首，那人卻在，燈火闌珊處。",
+      "original_language": "zh-classical",
+      "author_name": "辛棄疾",
+      "author_bio": "",
+      "work_title": "青玉案·元夕",
+      "section_title": "遇見",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "遇見"
+      ],
+      "short_analysis": "尋找結構的古典原型。",
+      "deep_analysis": "公有領域文本。寫作角度：尋找結構的古典原型。",
+      "context": "辛棄疾《青玉案·元夕》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "尋找結構的古典原型。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "遇見"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "了卻君王天下事，贏得生前身後名。可憐白發生！",
+      "original_quote": "了卻君王天下事，贏得生前身後名。可憐白發生！",
+      "original_language": "zh-classical",
+      "author_name": "辛棄疾",
+      "author_bio": "",
+      "work_title": "破陣子",
+      "section_title": "失敗",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "失敗"
+      ],
+      "short_analysis": "功名句被白髮切斷。",
+      "deep_analysis": "公有領域文本。寫作角度：功名句被白髮切斷。",
+      "context": "辛棄疾《破陣子》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "功名句被白髮切斷。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "失敗"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "陌上花開，可緩緩歸矣。",
+      "original_quote": "陌上花開，可緩緩歸矣。",
+      "original_language": "zh-classical",
+      "author_name": "錢鏐",
+      "author_bio": "",
+      "work_title": "吳越王遺妃書（傳）",
+      "section_title": "愛情",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "愛情"
+      ],
+      "short_analysis": "緩慢的召喚；節奏即體貼。",
+      "deep_analysis": "公有領域文本。寫作角度：緩慢的召喚；節奏即體貼。",
+      "context": "錢鏐《吳越王遺妃書（傳）》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "緩慢的召喚；節奏即體貼。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "愛情"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "山河破碎風飄絮，身世浮沉雨打萍。",
+      "original_quote": "山河破碎風飄絮，身世浮沉雨打萍。",
+      "original_language": "zh-classical",
+      "author_name": "文天祥",
+      "author_bio": "",
+      "work_title": "過零丁洋",
+      "section_title": "家國",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "家國"
+      ],
+      "short_analysis": "國／身雙線比喻。",
+      "deep_analysis": "公有領域文本。寫作角度：國／身雙線比喻。",
+      "context": "文天祥《過零丁洋》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "國／身雙線比喻。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "家國"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "人生自古誰無死？留取丹心照汗青。",
+      "original_quote": "人生自古誰無死？留取丹心照汗青。",
+      "original_language": "zh-classical",
+      "author_name": "文天祥",
+      "author_bio": "",
+      "work_title": "過零丁洋",
+      "section_title": "死亡",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "死亡"
+      ],
+      "short_analysis": "死亡意義化；史冊作為觀眾。",
+      "deep_analysis": "公有領域文本。寫作角度：死亡意義化；史冊作為觀眾。",
+      "context": "文天祥《過零丁洋》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "死亡意義化；史冊作為觀眾。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "死亡"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "滿紙荒唐言，一把辛酸淚。",
+      "original_quote": "滿紙荒唐言，一把辛酸淚。",
+      "original_language": "zh-classical",
+      "author_name": "曹雪芹",
+      "author_bio": "",
+      "work_title": "紅樓夢",
+      "section_title": "寫作",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "寫作"
+      ],
+      "short_analysis": "敘事者自陳：荒唐與辛酸的對讀。",
+      "deep_analysis": "公有領域文本。寫作角度：敘事者自陳：荒唐與辛酸的對讀。",
+      "context": "曹雪芹《紅樓夢》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "敘事者自陳：荒唐與辛酸的對讀。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "寫作"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "都云作者癡，誰解其中味？",
+      "original_quote": "都云作者癡，誰解其中味？",
+      "original_language": "zh-classical",
+      "author_name": "曹雪芹",
+      "author_bio": "",
+      "work_title": "紅樓夢",
+      "section_title": "寫作",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "寫作"
+      ],
+      "short_analysis": "作者與讀者的認識落差。",
+      "deep_analysis": "公有領域文本。寫作角度：作者與讀者的認識落差。",
+      "context": "曹雪芹《紅樓夢》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "作者與讀者的認識落差。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "寫作"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "花謝花飛花滿天，紅消香斷有誰憐？",
+      "original_quote": "花謝花飛花滿天，紅消香斷有誰憐？",
+      "original_language": "zh-classical",
+      "author_name": "曹雪芹",
+      "author_bio": "",
+      "work_title": "紅樓夢·葬花吟",
+      "section_title": "死亡",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "死亡"
+      ],
+      "short_analysis": "物哀與無人見證。",
+      "deep_analysis": "公有領域文本。寫作角度：物哀與無人見證。",
+      "context": "曹雪芹《紅樓夢·葬花吟》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "物哀與無人見證。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "死亡"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "一年三百六十日，風刀霜劍嚴相逼。",
+      "original_quote": "一年三百六十日，風刀霜劍嚴相逼。",
+      "original_language": "zh-classical",
+      "author_name": "曹雪芹",
+      "author_bio": "",
+      "work_title": "紅樓夢·葬花吟",
+      "section_title": "壓迫",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "壓迫"
+      ],
+      "short_analysis": "時間武器化。",
+      "deep_analysis": "公有領域文本。寫作角度：時間武器化。",
+      "context": "曹雪芹《紅樓夢·葬花吟》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "時間武器化。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "壓迫"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "落紅不是無情物，化作春泥更護花。",
+      "original_quote": "落紅不是無情物，化作春泥更護花。",
+      "original_language": "zh-classical",
+      "author_name": "龔自珍",
+      "author_bio": "",
+      "work_title": "己亥雜詩",
+      "section_title": "傳承",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "傳承"
+      ],
+      "short_analysis": "消亡轉化為滋養。",
+      "deep_analysis": "公有領域文本。寫作角度：消亡轉化為滋養。",
+      "context": "龔自珍《己亥雜詩》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "消亡轉化為滋養。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "傳承"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "我勸天公重抖擻，不拘一格降人材。",
+      "original_quote": "我勸天公重抖擻，不拘一格降人材。",
+      "original_language": "zh-classical",
+      "author_name": "龔自珍",
+      "author_bio": "",
+      "work_title": "己亥雜詩",
+      "section_title": "政治",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "政治"
+      ],
+      "short_analysis": "制度與人材的呼喚。",
+      "deep_analysis": "公有領域文本。寫作角度：制度與人材的呼喚。",
+      "context": "龔自珍《己亥雜詩》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "制度與人材的呼喚。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "政治"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "夜來風雨聲，花落知多少。",
+      "original_quote": "夜來風雨聲，花落知多少。",
+      "original_language": "zh-classical",
+      "author_name": "孟浩然",
+      "author_bio": "",
+      "work_title": "春曉",
+      "section_title": "自然",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "自然"
+      ],
+      "short_analysis": "聽覺推斷視覺損失。",
+      "deep_analysis": "公有領域文本。寫作角度：聽覺推斷視覺損失。",
+      "context": "孟浩然《春曉》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "聽覺推斷視覺損失。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "自然"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "春眠不覺曉，處處聞啼鳥。",
+      "original_quote": "春眠不覺曉，處處聞啼鳥。",
+      "original_language": "zh-classical",
+      "author_name": "孟浩然",
+      "author_bio": "",
+      "work_title": "春曉",
+      "section_title": "自然",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "自然"
+      ],
+      "short_analysis": "身體先於意識醒來。",
+      "deep_analysis": "公有領域文本。寫作角度：身體先於意識醒來。",
+      "context": "孟浩然《春曉》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "身體先於意識醒來。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "自然"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "海內存知己，天涯若比鄰。",
+      "original_quote": "海內存知己，天涯若比鄰。",
+      "original_language": "zh-classical",
+      "author_name": "王勃",
+      "author_bio": "",
+      "work_title": "送杜少府之任蜀州",
+      "section_title": "友情",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "友情"
+      ],
+      "short_analysis": "空間壓縮：知己改變地理。",
+      "deep_analysis": "公有領域文本。寫作角度：空間壓縮：知己改變地理。",
+      "context": "王勃《送杜少府之任蜀州》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "空間壓縮：知己改變地理。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "友情"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "落霞與孤鶩齊飛，秋水共長天一色。",
+      "original_quote": "落霞與孤鶩齊飛，秋水共長天一色。",
+      "original_language": "zh-classical",
+      "author_name": "王勃",
+      "author_bio": "",
+      "work_title": "滕王閣序",
+      "section_title": "自然",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "自然"
+      ],
+      "short_analysis": "對偶極致；色彩與動態。",
+      "deep_analysis": "公有領域文本。寫作角度：對偶極致；色彩與動態。",
+      "context": "王勃《滕王閣序》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "對偶極致；色彩與動態。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "自然"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "同是天涯淪落人，相逢何必曾相識。",
+      "original_quote": "同是天涯淪落人，相逢何必曾相識。",
+      "original_language": "zh-classical",
+      "author_name": "白居易",
+      "author_bio": "",
+      "work_title": "琵琶行",
+      "section_title": "孤獨",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "孤獨"
+      ],
+      "short_analysis": "身份共振取消介紹。",
+      "deep_analysis": "公有領域文本。寫作角度：身份共振取消介紹。",
+      "context": "白居易《琵琶行》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "身份共振取消介紹。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "孤獨"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "此時無聲勝有聲。",
+      "original_quote": "此時無聲勝有聲。",
+      "original_language": "zh-classical",
+      "author_name": "白居易",
+      "author_bio": "",
+      "work_title": "琵琶行",
+      "section_title": "沉默",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "沉默"
+      ],
+      "short_analysis": "留白的聲學；對話可借用。",
+      "deep_analysis": "公有領域文本。寫作角度：留白的聲學；對話可借用。",
+      "context": "白居易《琵琶行》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "留白的聲學；對話可借用。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "沉默"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "在天願作比翼鳥，在地願為連理枝。",
+      "original_quote": "在天願作比翼鳥，在地願為連理枝。",
+      "original_language": "zh-classical",
+      "author_name": "白居易",
+      "author_bio": "",
+      "work_title": "長恨歌",
+      "section_title": "愛情",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "愛情"
+      ],
+      "short_analysis": "誓詞的空間雙軌。",
+      "deep_analysis": "公有領域文本。寫作角度：誓詞的空間雙軌。",
+      "context": "白居易《長恨歌》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "誓詞的空間雙軌。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "愛情"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "天長地久有時盡，此恨綿綿無絕期。",
+      "original_quote": "天長地久有時盡，此恨綿綿無絕期。",
+      "original_language": "zh-classical",
+      "author_name": "白居易",
+      "author_bio": "",
+      "work_title": "長恨歌",
+      "section_title": "遺憾",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "遺憾"
+      ],
+      "short_analysis": "永恆被恨拉開。",
+      "deep_analysis": "公有領域文本。寫作角度：永恆被恨拉開。",
+      "context": "白居易《長恨歌》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "永恆被恨拉開。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "遺憾"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "忽如一夜春風來，千樹萬樹梨花開。",
+      "original_quote": "忽如一夜春風來，千樹萬樹梨花開。",
+      "original_language": "zh-classical",
+      "author_name": "岑參",
+      "author_bio": "",
+      "work_title": "白雪歌送武判官歸京",
+      "section_title": "自然",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "自然"
+      ],
+      "short_analysis": "比喻翻轉：雪＝花。",
+      "deep_analysis": "公有領域文本。寫作角度：比喻翻轉：雪＝花。",
+      "context": "岑參《白雪歌送武判官歸京》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "比喻翻轉：雪＝花。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "自然"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "山回路轉不見君，雪上空留馬行處。",
+      "original_quote": "山回路轉不見君，雪上空留馬行處。",
+      "original_language": "zh-classical",
+      "author_name": "岑參",
+      "author_bio": "",
+      "work_title": "白雪歌送武判官歸京",
+      "section_title": "離別",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "離別"
+      ],
+      "short_analysis": "缺席的痕跡敘事。",
+      "deep_analysis": "公有領域文本。寫作角度：缺席的痕跡敘事。",
+      "context": "岑參《白雪歌送武判官歸京》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "缺席的痕跡敘事。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "離別"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "羌笛何須怨楊柳，春風不度玉門關。",
+      "original_quote": "羌笛何須怨楊柳，春風不度玉門關。",
+      "original_language": "zh-classical",
+      "author_name": "王之渙",
+      "author_bio": "",
+      "work_title": "涼州詞",
+      "section_title": "邊塞",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "邊塞"
+      ],
+      "short_analysis": "制度／地理拒絕溫柔。",
+      "deep_analysis": "公有領域文本。寫作角度：制度／地理拒絕溫柔。",
+      "context": "王之渙《涼州詞》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "制度／地理拒絕溫柔。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "邊塞"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "欲窮千里目，更上一層樓。",
+      "original_quote": "欲窮千里目，更上一層樓。",
+      "original_language": "zh-classical",
+      "author_name": "王之渙",
+      "author_bio": "",
+      "work_title": "登鸛雀樓",
+      "section_title": "視角",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "視角"
+      ],
+      "short_analysis": "升高＝認知擴張。",
+      "deep_analysis": "公有領域文本。寫作角度：升高＝認知擴張。",
+      "context": "王之渙《登鸛雀樓》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "升高＝認知擴張。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "視角"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "白日依山盡，黃河入海流。",
+      "original_quote": "白日依山盡，黃河入海流。",
+      "original_language": "zh-classical",
+      "author_name": "王之渙",
+      "author_bio": "",
+      "work_title": "登鸛雀樓",
+      "section_title": "自然",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "自然"
+      ],
+      "short_analysis": "兩種『盡』：沉落與奔赴。",
+      "deep_analysis": "公有領域文本。寫作角度：兩種『盡』：沉落與奔赴。",
+      "context": "王之渙《登鸛雀樓》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "兩種『盡』：沉落與奔赴。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "自然"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "前不見古人，後不見來者。",
+      "original_quote": "前不見古人，後不見來者。",
+      "original_language": "zh-classical",
+      "author_name": "陳子昂",
+      "author_bio": "",
+      "work_title": "登幽州臺歌",
+      "section_title": "孤獨",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "孤獨"
+      ],
+      "short_analysis": "時間座標清空；蒼茫起點。",
+      "deep_analysis": "公有領域文本。寫作角度：時間座標清空；蒼茫起點。",
+      "context": "陳子昂《登幽州臺歌》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "時間座標清空；蒼茫起點。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "孤獨"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "念天地之悠悠，獨愴然而涕下。",
+      "original_quote": "念天地之悠悠，獨愴然而涕下。",
+      "original_language": "zh-classical",
+      "author_name": "陳子昂",
+      "author_bio": "",
+      "work_title": "登幽州臺歌",
+      "section_title": "孤獨",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "孤獨"
+      ],
+      "short_analysis": "尺度壓垮個體。",
+      "deep_analysis": "公有領域文本。寫作角度：尺度壓垮個體。",
+      "context": "陳子昂《登幽州臺歌》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "尺度壓垮個體。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "孤獨"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "商女不知亡國恨，隔江猶唱後庭花。",
+      "original_quote": "商女不知亡國恨，隔江猶唱後庭花。",
+      "original_language": "zh-classical",
+      "author_name": "杜牧",
+      "author_bio": "",
+      "work_title": "泊秦淮",
+      "section_title": "政治",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "政治"
+      ],
+      "short_analysis": "娛樂忽略歷史；聲音的諷刺。",
+      "deep_analysis": "公有領域文本。寫作角度：娛樂忽略歷史；聲音的諷刺。",
+      "context": "杜牧《泊秦淮》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "娛樂忽略歷史；聲音的諷刺。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "政治"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "停車坐愛楓林晚，霜葉紅於二月花。",
+      "original_quote": "停車坐愛楓林晚，霜葉紅於二月花。",
+      "original_language": "zh-classical",
+      "author_name": "杜牧",
+      "author_bio": "",
+      "work_title": "山行",
+      "section_title": "自然",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "自然"
+      ],
+      "short_analysis": "比較級製造驚豔。",
+      "deep_analysis": "公有領域文本。寫作角度：比較級製造驚豔。",
+      "context": "杜牧《山行》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "比較級製造驚豔。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "自然"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "東風不與周郎便，銅雀春深鎖二喬。",
+      "original_quote": "東風不與周郎便，銅雀春深鎖二喬。",
+      "original_language": "zh-classical",
+      "author_name": "杜牧",
+      "author_bio": "",
+      "work_title": "赤壁",
+      "section_title": "歷史",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "歷史"
+      ],
+      "short_analysis": "反事實敘事：若風轉向。",
+      "deep_analysis": "公有領域文本。寫作角度：反事實敘事：若風轉向。",
+      "context": "杜牧《赤壁》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "反事實敘事：若風轉向。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "歷史"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "十年一覺揚州夢，贏得青樓薄倖名。",
+      "original_quote": "十年一覺揚州夢，贏得青樓薄倖名。",
+      "original_language": "zh-classical",
+      "author_name": "杜牧",
+      "author_bio": "",
+      "work_title": "遣懷",
+      "section_title": "記憶",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "記憶"
+      ],
+      "short_analysis": "夢醒結算聲名。",
+      "deep_analysis": "公有領域文本。寫作角度：夢醒結算聲名。",
+      "context": "杜牧《遣懷》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "夢醒結算聲名。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "記憶"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "剪不斷，理還亂，是離愁。",
+      "original_quote": "剪不斷，理還亂，是離愁。",
+      "original_language": "zh-classical",
+      "author_name": "李煜",
+      "author_bio": "",
+      "work_title": "相見歡",
+      "section_title": "悲傷",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "悲傷"
+      ],
+      "short_analysis": "物質隱喻處理抽象愁。",
+      "deep_analysis": "公有領域文本。寫作角度：物質隱喻處理抽象愁。",
+      "context": "李煜《相見歡》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "物質隱喻處理抽象愁。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "悲傷"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "問君能有幾多愁？恰似一江春水向東流。",
+      "original_quote": "問君能有幾多愁？恰似一江春水向東流。",
+      "original_language": "zh-classical",
+      "author_name": "李煜",
+      "author_bio": "",
+      "work_title": "虞美人",
+      "section_title": "悲傷",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "悲傷"
+      ],
+      "short_analysis": "量愁的經典答法。",
+      "deep_analysis": "公有領域文本。寫作角度：量愁的經典答法。",
+      "context": "李煜《虞美人》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "量愁的經典答法。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "悲傷"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "流水落花春去也，天上人間。",
+      "original_quote": "流水落花春去也，天上人間。",
+      "original_language": "zh-classical",
+      "author_name": "李煜",
+      "author_bio": "",
+      "work_title": "浪淘沙",
+      "section_title": "時間",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
         "時間"
       ],
-      "short_analysis": "人生是旅舍，自己也是過客。",
-      "deep_analysis": "把存在寫成短暫投宿，送別詩因此不黏膩。",
-      "context": "送別。",
+      "short_analysis": "季節結束＝身份斷裂。",
+      "deep_analysis": "公有領域文本。寫作角度：季節結束＝身份斷裂。",
+      "context": "李煜《浪淘沙》",
       "rhetorical_analysis": "",
-      "counterpoint": "過客意識也可能變成不負責任。",
-      "writing_insight": "寫離別時，讓雙方都承認自己是行人。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "季節結束＝身份斷裂。",
       "reflection_questions": [
-        "故事裡誰把人生當家，誰當逆旅？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "寫車站送别，核心意象是逆旅。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "古典",
         "公有領域",
-        "旅行",
-        "友情",
+        "古典",
         "時間"
       ],
       "source": {
@@ -502,572 +3313,952 @@
     },
     {
       "status": "active",
-      "display_quote": "把句子寫短，把意思寫深。",
-      "original_quote": null,
-      "original_language": "zh",
-      "author_name": "字耕",
-      "author_bio": "字耕寫作課原創提示。",
-      "work_title": "寫作箴言",
-      "section_title": "密度",
+      "display_quote": "獨自莫憑欄，無限江山，別時容易見時難。",
+      "original_quote": "獨自莫憑欄，無限江山，別時容易見時難。",
+      "original_language": "zh-classical",
+      "author_name": "李煜",
+      "author_bio": "",
+      "work_title": "浪淘沙",
+      "section_title": "遺憾",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
       "verification_status": "verified_secondary",
-      "copyright_status": "original",
-      "difficulty": 2,
+      "copyright_status": "public_domain",
+      "difficulty": 3,
       "themes": [
-        "寫作",
-        "密度"
+        "遺憾"
       ],
-      "short_analysis": "寫作主題「密度」的實用提示。",
-      "deep_analysis": "字耕原創，非名人語錄。",
-      "context": "寫作練習用。",
+      "short_analysis": "禁止動作＝禁止回憶。",
+      "deep_analysis": "公有領域文本。寫作角度：禁止動作＝禁止回憶。",
+      "context": "李煜《浪淘沙》",
       "rhetorical_analysis": "",
-      "counterpoint": "任何技法都有適用邊界。",
-      "writing_insight": "把句子寫短，把意思寫深。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "禁止動作＝禁止回憶。",
       "reflection_questions": [
-        "如何把「密度」練成一篇三百字練習？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用「密度」寫一段 120 字練習。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "字耕",
-        "寫作箴言",
-        "密度"
+        "公有領域",
+        "古典",
+        "遺憾"
       ],
       "source": {
-        "kind": "zi-geng-original"
+        "kind": "curated-classical",
+        "license": "public domain"
       }
     },
     {
       "status": "active",
-      "display_quote": "細節比形容詞更靠近真實。",
-      "original_quote": null,
-      "original_language": "zh",
-      "author_name": "字耕",
-      "author_bio": "字耕寫作課原創提示。",
-      "work_title": "寫作箴言",
-      "section_title": "細節",
+      "display_quote": "衣帶漸寬終不悔，為伊消得人憔悴。",
+      "original_quote": "衣帶漸寬終不悔，為伊消得人憔悴。",
+      "original_language": "zh-classical",
+      "author_name": "柳永",
+      "author_bio": "",
+      "work_title": "蝶戀花（又作王國維引）",
+      "section_title": "愛情",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
       "verification_status": "verified_secondary",
-      "copyright_status": "original",
-      "difficulty": 2,
+      "copyright_status": "public_domain",
+      "difficulty": 3,
       "themes": [
-        "寫作",
-        "細節"
+        "愛情"
       ],
-      "short_analysis": "寫作主題「細節」的實用提示。",
-      "deep_analysis": "字耕原創，非名人語錄。",
-      "context": "寫作練習用。",
+      "short_analysis": "身體損耗作為忠貞證據。",
+      "deep_analysis": "公有領域文本。寫作角度：身體損耗作為忠貞證據。",
+      "context": "柳永《蝶戀花（又作王國維引）》",
       "rhetorical_analysis": "",
-      "counterpoint": "任何技法都有適用邊界。",
-      "writing_insight": "細節比形容詞更靠近真實。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "身體損耗作為忠貞證據。",
       "reflection_questions": [
-        "如何把「細節」練成一篇三百字練習？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用「細節」寫一段 120 字練習。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "字耕",
-        "寫作箴言",
-        "細節"
+        "公有領域",
+        "古典",
+        "愛情"
       ],
       "source": {
-        "kind": "zi-geng-original"
+        "kind": "curated-classical",
+        "license": "public domain"
       }
     },
     {
       "status": "active",
-      "display_quote": "先寫清楚，再寫漂亮。",
-      "original_quote": null,
-      "original_language": "zh",
-      "author_name": "字耕",
-      "author_bio": "字耕寫作課原創提示。",
-      "work_title": "寫作箴言",
-      "section_title": "清楚",
+      "display_quote": "今宵酒醒何處？楊柳岸，曉風殘月。",
+      "original_quote": "今宵酒醒何處？楊柳岸，曉風殘月。",
+      "original_language": "zh-classical",
+      "author_name": "柳永",
+      "author_bio": "",
+      "work_title": "雨霖鈴",
+      "section_title": "離別",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
       "verification_status": "verified_secondary",
-      "copyright_status": "original",
-      "difficulty": 2,
+      "copyright_status": "public_domain",
+      "difficulty": 3,
       "themes": [
-        "寫作",
-        "清楚"
+        "離別"
       ],
-      "short_analysis": "寫作主題「清楚」的實用提示。",
-      "deep_analysis": "字耕原創，非名人語錄。",
-      "context": "寫作練習用。",
+      "short_analysis": "醒後場面三件套定調。",
+      "deep_analysis": "公有領域文本。寫作角度：醒後場面三件套定調。",
+      "context": "柳永《雨霖鈴》",
       "rhetorical_analysis": "",
-      "counterpoint": "任何技法都有適用邊界。",
-      "writing_insight": "先寫清楚，再寫漂亮。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "醒後場面三件套定調。",
       "reflection_questions": [
-        "如何把「清楚」練成一篇三百字練習？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用「清楚」寫一段 120 字練習。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "字耕",
-        "寫作箴言",
-        "清楚"
+        "公有領域",
+        "古典",
+        "離別"
       ],
       "source": {
-        "kind": "zi-geng-original"
+        "kind": "curated-classical",
+        "license": "public domain"
       }
     },
     {
       "status": "active",
-      "display_quote": "信任讀者，少把潛台詞講破。",
-      "original_quote": null,
-      "original_language": "zh",
-      "author_name": "字耕",
-      "author_bio": "字耕寫作課原創提示。",
-      "work_title": "寫作箴言",
-      "section_title": "潛台詞",
+      "display_quote": "多情自古傷離別，更那堪，冷落清秋節！",
+      "original_quote": "多情自古傷離別，更那堪，冷落清秋節！",
+      "original_language": "zh-classical",
+      "author_name": "柳永",
+      "author_bio": "",
+      "work_title": "雨霖鈴",
+      "section_title": "離別",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
       "verification_status": "verified_secondary",
-      "copyright_status": "original",
-      "difficulty": 2,
+      "copyright_status": "public_domain",
+      "difficulty": 3,
       "themes": [
-        "寫作",
-        "潛台詞"
+        "離別"
       ],
-      "short_analysis": "寫作主題「潛台詞」的實用提示。",
-      "deep_analysis": "字耕原創，非名人語錄。",
-      "context": "寫作練習用。",
+      "short_analysis": "層遞：多情→離別→清秋。",
+      "deep_analysis": "公有領域文本。寫作角度：層遞：多情→離別→清秋。",
+      "context": "柳永《雨霖鈴》",
       "rhetorical_analysis": "",
-      "counterpoint": "任何技法都有適用邊界。",
-      "writing_insight": "信任讀者，少把潛台詞講破。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "層遞：多情→離別→清秋。",
       "reflection_questions": [
-        "如何把「潛台詞」練成一篇三百字練習？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用「潛台詞」寫一段 120 字練習。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "字耕",
-        "寫作箴言",
-        "潛台詞"
+        "公有領域",
+        "古典",
+        "離別"
       ],
       "source": {
-        "kind": "zi-geng-original"
+        "kind": "curated-classical",
+        "license": "public domain"
       }
     },
     {
       "status": "active",
-      "display_quote": "場面比說明更有力量。",
-      "original_quote": null,
-      "original_language": "zh",
-      "author_name": "字耕",
-      "author_bio": "字耕寫作課原創提示。",
-      "work_title": "寫作箴言",
-      "section_title": "場面",
+      "display_quote": "霧失樓臺，月迷津渡，桃源望斷無尋處。",
+      "original_quote": "霧失樓臺，月迷津渡，桃源望斷無尋處。",
+      "original_language": "zh-classical",
+      "author_name": "秦觀",
+      "author_bio": "",
+      "work_title": "踏莎行",
+      "section_title": "迷失",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
       "verification_status": "verified_secondary",
-      "copyright_status": "original",
-      "difficulty": 2,
+      "copyright_status": "public_domain",
+      "difficulty": 3,
       "themes": [
-        "寫作",
-        "場面"
+        "迷失"
       ],
-      "short_analysis": "寫作主題「場面」的實用提示。",
-      "deep_analysis": "字耕原創，非名人語錄。",
-      "context": "寫作練習用。",
+      "short_analysis": "視覺失效＝出路消失。",
+      "deep_analysis": "公有領域文本。寫作角度：視覺失效＝出路消失。",
+      "context": "秦觀《踏莎行》",
       "rhetorical_analysis": "",
-      "counterpoint": "任何技法都有適用邊界。",
-      "writing_insight": "場面比說明更有力量。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "視覺失效＝出路消失。",
       "reflection_questions": [
-        "如何把「場面」練成一篇三百字練習？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用「場面」寫一段 120 字練習。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "字耕",
-        "寫作箴言",
-        "場面"
+        "公有領域",
+        "古典",
+        "迷失"
       ],
       "source": {
-        "kind": "zi-geng-original"
+        "kind": "curated-classical",
+        "license": "public domain"
       }
     },
     {
       "status": "active",
-      "display_quote": "一個好結尾，常是最後一個未說出口的字。",
-      "original_quote": null,
-      "original_language": "zh",
-      "author_name": "字耕",
-      "author_bio": "字耕寫作課原創提示。",
-      "work_title": "寫作箴言",
-      "section_title": "結尾",
+      "display_quote": "郴江幸自繞郴山，為誰流下瀟湘去？",
+      "original_quote": "郴江幸自繞郴山，為誰流下瀟湘去？",
+      "original_language": "zh-classical",
+      "author_name": "秦觀",
+      "author_bio": "",
+      "work_title": "踏莎行",
+      "section_title": "質問",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
       "verification_status": "verified_secondary",
-      "copyright_status": "original",
-      "difficulty": 2,
+      "copyright_status": "public_domain",
+      "difficulty": 3,
       "themes": [
-        "寫作",
-        "結尾"
+        "質問"
       ],
-      "short_analysis": "寫作主題「結尾」的實用提示。",
-      "deep_analysis": "字耕原創，非名人語錄。",
-      "context": "寫作練習用。",
+      "short_analysis": "江水擬人：責問流動。",
+      "deep_analysis": "公有領域文本。寫作角度：江水擬人：責問流動。",
+      "context": "秦觀《踏莎行》",
       "rhetorical_analysis": "",
-      "counterpoint": "任何技法都有適用邊界。",
-      "writing_insight": "一個好結尾，常是最後一個未說出口的字。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "江水擬人：責問流動。",
       "reflection_questions": [
-        "如何把「結尾」練成一篇三百字練習？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用「結尾」寫一段 120 字練習。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "字耕",
-        "寫作箴言",
-        "結尾"
+        "公有領域",
+        "古典",
+        "質問"
       ],
       "source": {
-        "kind": "zi-geng-original"
+        "kind": "curated-classical",
+        "license": "public domain"
       }
     },
     {
       "status": "active",
-      "display_quote": "對白要推進關係，不要只寒暄。",
-      "original_quote": null,
-      "original_language": "zh",
-      "author_name": "字耕",
-      "author_bio": "字耕寫作課原創提示。",
-      "work_title": "寫作箴言",
-      "section_title": "對話",
+      "display_quote": "兩情若是久長時，又豈在朝朝暮暮。",
+      "original_quote": "兩情若是久長時，又豈在朝朝暮暮。",
+      "original_language": "zh-classical",
+      "author_name": "秦觀",
+      "author_bio": "",
+      "work_title": "鵲橋仙",
+      "section_title": "愛情",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
       "verification_status": "verified_secondary",
-      "copyright_status": "original",
-      "difficulty": 2,
+      "copyright_status": "public_domain",
+      "difficulty": 3,
       "themes": [
-        "寫作",
-        "對話"
+        "愛情"
       ],
-      "short_analysis": "寫作主題「對話」的實用提示。",
-      "deep_analysis": "字耕原創，非名人語錄。",
-      "context": "寫作練習用。",
+      "short_analysis": "反日常陪伴的長久定義。",
+      "deep_analysis": "公有領域文本。寫作角度：反日常陪伴的長久定義。",
+      "context": "秦觀《鵲橋仙》",
       "rhetorical_analysis": "",
-      "counterpoint": "任何技法都有適用邊界。",
-      "writing_insight": "對白要推進關係，不要只寒暄。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "反日常陪伴的長久定義。",
       "reflection_questions": [
-        "如何把「對話」練成一篇三百字練習？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用「對話」寫一段 120 字練習。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "字耕",
-        "寫作箴言",
-        "對話"
+        "公有領域",
+        "古典",
+        "愛情"
       ],
       "source": {
-        "kind": "zi-geng-original"
+        "kind": "curated-classical",
+        "license": "public domain"
       }
     },
     {
       "status": "active",
-      "display_quote": "緊張處寫慢，過渡處寫快。",
-      "original_quote": null,
-      "original_language": "zh",
-      "author_name": "字耕",
-      "author_bio": "字耕寫作課原創提示。",
-      "work_title": "寫作箴言",
-      "section_title": "節奏",
+      "display_quote": "金風玉露一相逢，便勝卻人間無數。",
+      "original_quote": "金風玉露一相逢，便勝卻人間無數。",
+      "original_language": "zh-classical",
+      "author_name": "秦觀",
+      "author_bio": "",
+      "work_title": "鵲橋仙",
+      "section_title": "遇見",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
       "verification_status": "verified_secondary",
-      "copyright_status": "original",
-      "difficulty": 2,
+      "copyright_status": "public_domain",
+      "difficulty": 3,
       "themes": [
-        "寫作",
-        "節奏"
+        "遇見"
       ],
-      "short_analysis": "寫作主題「節奏」的實用提示。",
-      "deep_analysis": "字耕原創，非名人語錄。",
-      "context": "寫作練習用。",
+      "short_analysis": "稀少提高強度。",
+      "deep_analysis": "公有領域文本。寫作角度：稀少提高強度。",
+      "context": "秦觀《鵲橋仙》",
       "rhetorical_analysis": "",
-      "counterpoint": "任何技法都有適用邊界。",
-      "writing_insight": "緊張處寫慢，過渡處寫快。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "稀少提高強度。",
       "reflection_questions": [
-        "如何把「節奏」練成一篇三百字練習？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用「節奏」寫一段 120 字練習。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "字耕",
-        "寫作箴言",
-        "節奏"
+        "公有領域",
+        "古典",
+        "遇見"
       ],
       "source": {
-        "kind": "zi-geng-original"
+        "kind": "curated-classical",
+        "license": "public domain"
       }
     },
     {
       "status": "active",
-      "display_quote": "先給感官錨點，再開敘事。",
-      "original_quote": null,
-      "original_language": "zh",
-      "author_name": "字耕",
-      "author_bio": "字耕寫作課原創提示。",
-      "work_title": "寫作箴言",
-      "section_title": "場景",
+      "display_quote": "枕上詩書閒處好，門前風景雨來佳。",
+      "original_quote": "枕上詩書閒處好，門前風景雨來佳。",
+      "original_language": "zh-classical",
+      "author_name": "李清照",
+      "author_bio": "",
+      "work_title": "攤破浣溪沙",
+      "section_title": "日常",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
       "verification_status": "verified_secondary",
-      "copyright_status": "original",
-      "difficulty": 2,
+      "copyright_status": "public_domain",
+      "difficulty": 3,
       "themes": [
-        "寫作",
-        "場景"
+        "日常"
       ],
-      "short_analysis": "寫作主題「場景」的實用提示。",
-      "deep_analysis": "字耕原創，非名人語錄。",
-      "context": "寫作練習用。",
+      "short_analysis": "閒與雨重新定義『好』。",
+      "deep_analysis": "公有領域文本。寫作角度：閒與雨重新定義『好』。",
+      "context": "李清照《攤破浣溪沙》",
       "rhetorical_analysis": "",
-      "counterpoint": "任何技法都有適用邊界。",
-      "writing_insight": "先給感官錨點，再開敘事。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "閒與雨重新定義『好』。",
       "reflection_questions": [
-        "如何把「場景」練成一篇三百字練習？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用「場景」寫一段 120 字練習。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "字耕",
-        "寫作箴言",
-        "場景"
+        "公有領域",
+        "古典",
+        "日常"
       ],
       "source": {
-        "kind": "zi-geng-original"
+        "kind": "curated-classical",
+        "license": "public domain"
       }
     },
     {
       "status": "active",
-      "display_quote": "刪掉解釋句，留下行為。",
-      "original_quote": null,
-      "original_language": "zh",
-      "author_name": "字耕",
-      "author_bio": "字耕寫作課原創提示。",
-      "work_title": "寫作箴言",
-      "section_title": "節制",
+      "display_quote": "物是人非事事休，欲語淚先流。",
+      "original_quote": "物是人非事事休，欲語淚先流。",
+      "original_language": "zh-classical",
+      "author_name": "李清照",
+      "author_bio": "",
+      "work_title": "武陵春",
+      "section_title": "悲傷",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
       "verification_status": "verified_secondary",
-      "copyright_status": "original",
-      "difficulty": 2,
+      "copyright_status": "public_domain",
+      "difficulty": 3,
       "themes": [
-        "寫作",
-        "節制"
+        "悲傷"
       ],
-      "short_analysis": "寫作主題「節制」的實用提示。",
-      "deep_analysis": "字耕原創，非名人語錄。",
-      "context": "寫作練習用。",
+      "short_analysis": "物在人亡；語言被淚攔截。",
+      "deep_analysis": "公有領域文本。寫作角度：物在人亡；語言被淚攔截。",
+      "context": "李清照《武陵春》",
       "rhetorical_analysis": "",
-      "counterpoint": "任何技法都有適用邊界。",
-      "writing_insight": "刪掉解釋句，留下行為。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "物在人亡；語言被淚攔截。",
       "reflection_questions": [
-        "如何把「節制」練成一篇三百字練習？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用「節制」寫一段 120 字練習。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "字耕",
-        "寫作箴言",
-        "節制"
+        "公有領域",
+        "古典",
+        "悲傷"
       ],
       "source": {
-        "kind": "zi-geng-original"
+        "kind": "curated-classical",
+        "license": "public domain"
       }
     },
     {
       "status": "active",
-      "display_quote": "反差比直接說明更有畫面。",
-      "original_quote": null,
-      "original_language": "zh",
-      "author_name": "字耕",
-      "author_bio": "字耕寫作課原創提示。",
-      "work_title": "寫作箴言",
-      "section_title": "張力",
+      "display_quote": "知否，知否？應是綠肥紅瘦。",
+      "original_quote": "知否，知否？應是綠肥紅瘦。",
+      "original_language": "zh-classical",
+      "author_name": "李清照",
+      "author_bio": "",
+      "work_title": "如夢令",
+      "section_title": "自然",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
       "verification_status": "verified_secondary",
-      "copyright_status": "original",
-      "difficulty": 2,
+      "copyright_status": "public_domain",
+      "difficulty": 3,
       "themes": [
-        "寫作",
-        "張力"
+        "自然"
       ],
-      "short_analysis": "寫作主題「張力」的實用提示。",
-      "deep_analysis": "字耕原創，非名人語錄。",
-      "context": "寫作練習用。",
+      "short_analysis": "校正感官：雨後的正確形容。",
+      "deep_analysis": "公有領域文本。寫作角度：校正感官：雨後的正確形容。",
+      "context": "李清照《如夢令》",
       "rhetorical_analysis": "",
-      "counterpoint": "任何技法都有適用邊界。",
-      "writing_insight": "反差比直接說明更有畫面。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "校正感官：雨後的正確形容。",
       "reflection_questions": [
-        "如何把「張力」練成一篇三百字練習？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用「張力」寫一段 120 字練習。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "字耕",
-        "寫作箴言",
-        "張力"
+        "公有領域",
+        "古典",
+        "自然"
       ],
       "source": {
-        "kind": "zi-geng-original"
+        "kind": "curated-classical",
+        "license": "public domain"
       }
     },
     {
       "status": "active",
-      "display_quote": "讓對手擁有合理的理由。",
-      "original_quote": null,
-      "original_language": "zh",
-      "author_name": "字耕",
-      "author_bio": "字耕寫作課原創提示。",
-      "work_title": "寫作箴言",
-      "section_title": "衝突",
+      "display_quote": "興，百姓苦；亡，百姓苦。",
+      "original_quote": "興，百姓苦；亡，百姓苦。",
+      "original_language": "zh-classical",
+      "author_name": "張養浩",
+      "author_bio": "",
+      "work_title": "山坡羊·潼關懷古",
+      "section_title": "政治",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
       "verification_status": "verified_secondary",
-      "copyright_status": "original",
-      "difficulty": 2,
+      "copyright_status": "public_domain",
+      "difficulty": 3,
       "themes": [
-        "寫作",
-        "衝突"
+        "政治"
       ],
-      "short_analysis": "寫作主題「衝突」的實用提示。",
-      "deep_analysis": "字耕原創，非名人語錄。",
-      "context": "寫作練習用。",
+      "short_analysis": "對稱控訴；權力敘事的底層。",
+      "deep_analysis": "公有領域文本。寫作角度：對稱控訴；權力敘事的底層。",
+      "context": "張養浩《山坡羊·潼關懷古》",
       "rhetorical_analysis": "",
-      "counterpoint": "任何技法都有適用邊界。",
-      "writing_insight": "讓對手擁有合理的理由。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "對稱控訴；權力敘事的底層。",
       "reflection_questions": [
-        "如何把「衝突」練成一篇三百字練習？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用「衝突」寫一段 120 字練習。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "字耕",
-        "寫作箴言",
-        "衝突"
+        "公有領域",
+        "古典",
+        "政治"
       ],
       "source": {
-        "kind": "zi-geng-original"
+        "kind": "curated-classical",
+        "license": "public domain"
       }
     },
     {
       "status": "active",
-      "display_quote": "秘密要有保管者與代價。",
-      "original_quote": null,
-      "original_language": "zh",
-      "author_name": "字耕",
-      "author_bio": "字耕寫作課原創提示。",
-      "work_title": "寫作箴言",
-      "section_title": "情節",
+      "display_quote": "枯藤老樹昏鴉，小橋流水人家。",
+      "original_quote": "枯藤老樹昏鴉，小橋流水人家。",
+      "original_language": "zh-classical",
+      "author_name": "馬致遠",
+      "author_bio": "",
+      "work_title": "天淨沙·秋思",
+      "section_title": "孤獨",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
       "verification_status": "verified_secondary",
-      "copyright_status": "original",
-      "difficulty": 2,
+      "copyright_status": "public_domain",
+      "difficulty": 3,
       "themes": [
-        "寫作",
-        "情節"
+        "孤獨"
       ],
-      "short_analysis": "寫作主題「情節」的實用提示。",
-      "deep_analysis": "字耕原創，非名人語錄。",
-      "context": "寫作練習用。",
+      "short_analysis": "意象蒙太奇；最後一句點題。",
+      "deep_analysis": "公有領域文本。寫作角度：意象蒙太奇；最後一句點題。",
+      "context": "馬致遠《天淨沙·秋思》",
       "rhetorical_analysis": "",
-      "counterpoint": "任何技法都有適用邊界。",
-      "writing_insight": "秘密要有保管者與代價。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "意象蒙太奇；最後一句點題。",
       "reflection_questions": [
-        "如何把「情節」練成一篇三百字練習？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用「情節」寫一段 120 字練習。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "字耕",
-        "寫作箴言",
-        "情節"
+        "公有領域",
+        "古典",
+        "孤獨"
       ],
       "source": {
-        "kind": "zi-geng-original"
+        "kind": "curated-classical",
+        "license": "public domain"
       }
     },
     {
       "status": "active",
-      "display_quote": "成功必須付出不可挽回的代價。",
-      "original_quote": null,
-      "original_language": "zh",
-      "author_name": "字耕",
-      "author_bio": "字耕寫作課原創提示。",
-      "work_title": "寫作箴言",
-      "section_title": "結局",
+      "display_quote": "夕陽西下，斷腸人在天涯。",
+      "original_quote": "夕陽西下，斷腸人在天涯。",
+      "original_language": "zh-classical",
+      "author_name": "馬致遠",
+      "author_bio": "",
+      "work_title": "天淨沙·秋思",
+      "section_title": "孤獨",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
       "verification_status": "verified_secondary",
-      "copyright_status": "original",
-      "difficulty": 2,
+      "copyright_status": "public_domain",
+      "difficulty": 3,
       "themes": [
-        "寫作",
-        "結局"
+        "孤獨"
       ],
-      "short_analysis": "寫作主題「結局」的實用提示。",
-      "deep_analysis": "字耕原創，非名人語錄。",
-      "context": "寫作練習用。",
+      "short_analysis": "空間極端化的鄉愁。",
+      "deep_analysis": "公有領域文本。寫作角度：空間極端化的鄉愁。",
+      "context": "馬致遠《天淨沙·秋思》",
       "rhetorical_analysis": "",
-      "counterpoint": "任何技法都有適用邊界。",
-      "writing_insight": "成功必須付出不可挽回的代價。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "空間極端化的鄉愁。",
       "reflection_questions": [
-        "如何把「結局」練成一篇三百字練習？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用「結局」寫一段 120 字練習。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "字耕",
-        "寫作箴言",
-        "結局"
+        "公有領域",
+        "古典",
+        "孤獨"
       ],
       "source": {
-        "kind": "zi-geng-original"
+        "kind": "curated-classical",
+        "license": "public domain"
       }
     },
     {
       "status": "active",
-      "display_quote": "少寫情緒名，多寫身體。",
-      "original_quote": null,
-      "original_language": "zh",
-      "author_name": "字耕",
-      "author_bio": "字耕寫作課原創提示。",
-      "work_title": "寫作箴言",
-      "section_title": "情緒",
+      "display_quote": "原來姹紫嫣紅開遍，似這般都付與斷井頹垣。",
+      "original_quote": "原來姹紫嫣紅開遍，似這般都付與斷井頹垣。",
+      "original_language": "zh-classical",
+      "author_name": "湯顯祖",
+      "author_bio": "",
+      "work_title": "牡丹亭",
+      "section_title": "遺憾",
       "publication_year": null,
       "translator_name": null,
       "bibliography_url": null,
       "verification_status": "verified_secondary",
-      "copyright_status": "original",
-      "difficulty": 2,
+      "copyright_status": "public_domain",
+      "difficulty": 3,
       "themes": [
-        "寫作",
-        "情緒"
+        "遺憾"
       ],
-      "short_analysis": "寫作主題「情緒」的實用提示。",
-      "deep_analysis": "字耕原創，非名人語錄。",
-      "context": "寫作練習用。",
+      "short_analysis": "盛開 vs 廢墟；美的錯置。",
+      "deep_analysis": "公有領域文本。寫作角度：盛開 vs 廢墟；美的錯置。",
+      "context": "湯顯祖《牡丹亭》",
       "rhetorical_analysis": "",
-      "counterpoint": "任何技法都有適用邊界。",
-      "writing_insight": "少寫情緒名，多寫身體。",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "盛開 vs 廢墟；美的錯置。",
       "reflection_questions": [
-        "如何把「情緒」練成一篇三百字練習？"
+        "若改寫成現代場景，哪個意象必須保留？"
       ],
-      "imitation_exercise": "用「情緒」寫一段 120 字練習。",
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
       "tags": [
-        "字耕",
-        "寫作箴言",
-        "情緒"
+        "公有領域",
+        "古典",
+        "遺憾"
       ],
       "source": {
-        "kind": "zi-geng-original"
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "情不知所起，一往而深。",
+      "original_quote": "情不知所起，一往而深。",
+      "original_language": "zh-classical",
+      "author_name": "湯顯祖",
+      "author_bio": "",
+      "work_title": "牡丹亭",
+      "section_title": "愛情",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "愛情"
+      ],
+      "short_analysis": "起源不可知的深情。",
+      "deep_analysis": "公有領域文本。寫作角度：起源不可知的深情。",
+      "context": "湯顯祖《牡丹亭》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "起源不可知的深情。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "愛情"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "良辰美景奈何天，賞心樂事誰家院。",
+      "original_quote": "良辰美景奈何天，賞心樂事誰家院。",
+      "original_language": "zh-classical",
+      "author_name": "湯顯祖",
+      "author_bio": "",
+      "work_title": "牡丹亭",
+      "section_title": "遺憾",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "遺憾"
+      ],
+      "short_analysis": "美景無權享用的質問。",
+      "deep_analysis": "公有領域文本。寫作角度：美景無權享用的質問。",
+      "context": "湯顯祖《牡丹亭》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "美景無權享用的質問。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "遺憾"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "假作真時真亦假，無為有處有還無。",
+      "original_quote": "假作真時真亦假，無為有處有還無。",
+      "original_language": "zh-classical",
+      "author_name": "曹雪芹",
+      "author_bio": "",
+      "work_title": "紅樓夢",
+      "section_title": "認識",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "認識"
+      ],
+      "short_analysis": "真假互噬；敘事不可靠的題詞。",
+      "deep_analysis": "公有領域文本。寫作角度：真假互噬；敘事不可靠的題詞。",
+      "context": "曹雪芹《紅樓夢》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "真假互噬；敘事不可靠的題詞。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "認識"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "機關算盡太聰明，反算了卿卿性命。",
+      "original_quote": "機關算盡太聰明，反算了卿卿性命。",
+      "original_language": "zh-classical",
+      "author_name": "曹雪芹",
+      "author_bio": "",
+      "work_title": "紅樓夢",
+      "section_title": "失敗",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "失敗"
+      ],
+      "short_analysis": "聰明反被聰明誤的判詞口吻。",
+      "deep_analysis": "公有領域文本。寫作角度：聰明反被聰明誤的判詞口吻。",
+      "context": "曹雪芹《紅樓夢》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "聰明反被聰明誤的判詞口吻。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "失敗"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "世事洞明皆學問，人情練達即文章。",
+      "original_quote": "世事洞明皆學問，人情練達即文章。",
+      "original_language": "zh-classical",
+      "author_name": "曹雪芹",
+      "author_bio": "",
+      "work_title": "紅樓夢",
+      "section_title": "寫作",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "寫作"
+      ],
+      "short_analysis": "把世故寫成修辭能力——可批判引用。",
+      "deep_analysis": "公有領域文本。寫作角度：把世故寫成修辭能力——可批判引用。",
+      "context": "曹雪芹《紅樓夢》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "把世故寫成修辭能力——可批判引用。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "寫作"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "一年好景君須記，最是橙黃橘綠時。",
+      "original_quote": "一年好景君須記，最是橙黃橘綠時。",
+      "original_language": "zh-classical",
+      "author_name": "蘇軾",
+      "author_bio": "",
+      "work_title": "贈劉景文",
+      "section_title": "自然",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "自然"
+      ],
+      "short_analysis": "指定『最好』的時刻。",
+      "deep_analysis": "公有領域文本。寫作角度：指定『最好』的時刻。",
+      "context": "蘇軾《贈劉景文》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "指定『最好』的時刻。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "自然"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "欲把西湖比西子，淡妝濃抹總相宜。",
+      "original_quote": "欲把西湖比西子，淡妝濃抹總相宜。",
+      "original_language": "zh-classical",
+      "author_name": "蘇軾",
+      "author_bio": "",
+      "work_title": "飲湖上初晴後雨",
+      "section_title": "自然",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "自然"
+      ],
+      "short_analysis": "比喻的彈性：濃淡皆可。",
+      "deep_analysis": "公有領域文本。寫作角度：比喻的彈性：濃淡皆可。",
+      "context": "蘇軾《飲湖上初晴後雨》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "比喻的彈性：濃淡皆可。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "自然"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "不識廬山真面目，只緣身在此山中。",
+      "original_quote": "不識廬山真面目，只緣身在此山中。",
+      "original_language": "zh-classical",
+      "author_name": "蘇軾",
+      "author_bio": "",
+      "work_title": "題西林壁",
+      "section_title": "認識",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "認識"
+      ],
+      "short_analysis": "視點限制認知；結構啟示。",
+      "deep_analysis": "公有領域文本。寫作角度：視點限制認知；結構啟示。",
+      "context": "蘇軾《題西林壁》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "視點限制認知；結構啟示。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "認識"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "人生到處知何似，應似飛鴻踏雪泥。",
+      "original_quote": "人生到處知何似，應似飛鴻踏雪泥。",
+      "original_language": "zh-classical",
+      "author_name": "蘇軾",
+      "author_bio": "",
+      "work_title": "和子由澠池懷舊",
+      "section_title": "記憶",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "記憶"
+      ],
+      "short_analysis": "痕跡隨機且易融。",
+      "deep_analysis": "公有領域文本。寫作角度：痕跡隨機且易融。",
+      "context": "蘇軾《和子由澠池懷舊》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "痕跡隨機且易融。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "記憶"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
+      }
+    },
+    {
+      "status": "active",
+      "display_quote": "泥上偶然留指爪，鴻飛那復計東西。",
+      "original_quote": "泥上偶然留指爪，鴻飛那復計東西。",
+      "original_language": "zh-classical",
+      "author_name": "蘇軾",
+      "author_bio": "",
+      "work_title": "和子由澠池懷舊",
+      "section_title": "記憶",
+      "publication_year": null,
+      "translator_name": null,
+      "bibliography_url": null,
+      "verification_status": "verified_secondary",
+      "copyright_status": "public_domain",
+      "difficulty": 3,
+      "themes": [
+        "記憶"
+      ],
+      "short_analysis": "偶然痕跡 vs 飛翔方向。",
+      "deep_analysis": "公有領域文本。寫作角度：偶然痕跡 vs 飛翔方向。",
+      "context": "蘇軾《和子由澠池懷舊》",
+      "rhetorical_analysis": "",
+      "counterpoint": "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
+      "writing_insight": "偶然痕跡 vs 飛翔方向。",
+      "reflection_questions": [
+        "若改寫成現代場景，哪個意象必須保留？"
+      ],
+      "imitation_exercise": "用自己的物象重寫此句的核心關係，不抄原句。",
+      "tags": [
+        "公有領域",
+        "古典",
+        "記憶"
+      ],
+      "source": {
+        "kind": "curated-classical",
+        "license": "public domain"
       }
     }
   ]

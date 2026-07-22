@@ -69,14 +69,7 @@ for (const row of raw) {
   if (cards.length >= LIMIT) break;
 }
 
+// Write idioms-only raw seed; merge-vocab-seeds.mjs builds the real literary mix.
 const payload = { version: 1, count: cards.length, cards };
-writeFileSync(join(__dir, "seed-literary-vocab.json"), JSON.stringify(payload, null, 2), "utf8");
-writeFileSync(
-  join(__dir, "literary-terms.txt"),
-  cards.map((c) => c.term).join("\n") + "\n",
-  "utf8",
-);
-const pub = join(__dir, "../../public/content");
-mkdirSync(pub, { recursive: true });
-writeFileSync(join(pub, "seed-literary-vocab.json"), JSON.stringify(payload), "utf8");
-console.log("Wrote", cards.length, "cards from MOE idioms");
+writeFileSync(join(__dir, "seed-idioms-raw.json"), JSON.stringify(payload, null, 2), "utf8");
+console.log("Wrote", cards.length, "cards from MOE idioms → seed-idioms-raw.json");

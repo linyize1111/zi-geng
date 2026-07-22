@@ -1,0 +1,1466 @@
+{
+  "version": 1,
+  "count": 60,
+  "cards": [
+    {
+      "status": "active",
+      "term": "紗",
+      "zhuyin": "ㄕㄚ",
+      "part_of_speech": "名",
+      "difficulty": 3,
+      "short_def": "輕薄、透光的絲織物；也可指稀疏如網的質地。",
+      "long_def": "相對於「錦」的厚密華麗，「紗」強調通透、輕、可透影。寫衣裝時，紗常帶夏夜、簾後、曖昧視線。",
+      "usage_context": "對照組：紗／羅／絹／錦。寫「若隱若現」優先用紗，不要空寫「很薄」。",
+      "register": "literary",
+      "category": "質感・衣料",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "衣料",
+        "對照",
+        "質感"
+      ],
+      "daily_example": "她把窗紗掀起一角，巷口的燈就漏進來。",
+      "literary_example": "紗帷半捲，燈影投在牆上，像一句沒說完的話。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "錦",
+      "zhuyin": "ㄐㄧㄣˇ",
+      "part_of_speech": "名",
+      "difficulty": 3,
+      "short_def": "有彩色花紋的絲織物；引申為華美、貴重。",
+      "long_def": "「錦」密、重、亮，適合儀式、排場、壓迫感的華麗。與「紗」對讀：一透一密，一輕一沉。",
+      "usage_context": "可作名詞（錦衣）或修飾（錦緞般）。避免與「華麗」同句重複宣告。",
+      "register": "literary",
+      "category": "質感・衣料",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "衣料",
+        "對照",
+        "質感"
+      ],
+      "daily_example": "典禮上人人錦衣，只有他穿了一件舊麻。",
+      "literary_example": "錦繡堆裡，她反而顯得過分安靜。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "羅",
+      "zhuyin": "ㄌㄨㄛˊ",
+      "part_of_speech": "名",
+      "difficulty": 4,
+      "short_def": "質地疏薄、紋路呈網孔的絲織品；文語常用於衣袖、帷幕。",
+      "long_def": "羅比紗更「文」、更古。羅袖、羅帷常出現在古典敘事；現代文用羅，會把時間感往文言推。",
+      "usage_context": "與紗近義但語域更高；勿與「羅列」之羅混淆語感。",
+      "register": "literary",
+      "category": "質感・衣料",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "衣料",
+        "文言",
+        "質感"
+      ],
+      "daily_example": "羅袖掃過桌沿，帶起一陣極淡的香。",
+      "literary_example": "夜風入羅帷，像有人在帳外徘徊。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "緙絲",
+      "zhuyin": "ㄎㄜˋ ㄙ",
+      "part_of_speech": "名",
+      "difficulty": 5,
+      "short_def": "以通經斷緯織成的絲織工藝，紋樣立體，極費工。",
+      "long_def": "寫作時可用來暗示「慢、貴、不可量產」的時間與階級，不必解釋工藝細節。",
+      "usage_context": "適合宮廷、收藏、匠人題材；一般現代對白少用。",
+      "register": "literary",
+      "category": "質感・衣料",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "衣料",
+        "工藝",
+        "冷僻"
+      ],
+      "daily_example": "那幅緙絲掛了兩百年，顏色卻仍舊不退。",
+      "literary_example": "她摸著緙絲的邊緣，像摸一截別人的一生。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "縐",
+      "zhuyin": "ㄓㄡˋ",
+      "part_of_speech": "名／形",
+      "difficulty": 4,
+      "short_def": "表面呈皺紋的絲織物；也可形容起皺的質地。",
+      "long_def": "縐把「不平整」變成材料屬性。寫皮膚、布料、水面時，可比「皺」更有物件感。",
+      "usage_context": "與「皺」近：皺偏動作／狀態，縐偏織物品名與質感。",
+      "register": "literary",
+      "category": "質感・衣料",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "衣料",
+        "質感"
+      ],
+      "daily_example": "她把縐紗裙子攤平，折痕還是不肯走。",
+      "literary_example": "燈下，縐紋像一層層壓不住的心事。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "濫觴",
+      "zhuyin": "ㄌㄢˋ ㄕㄤ",
+      "part_of_speech": "名／動",
+      "difficulty": 4,
+      "short_def": "事物的起源、開端。",
+      "long_def": "原指江河發源處水淺僅可浮起酒杯。論述文常用；小說裡可作冷靜的史觀口吻。",
+      "usage_context": "「……之濫觴」；勿與「氾濫」混用。程度：比「開始」書面得多。",
+      "register": "literary",
+      "category": "文言詞彙",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "文言",
+        "起源",
+        "議論"
+      ],
+      "daily_example": "這場運動的濫觴，其實只是一封沒寄出的信。",
+      "literary_example": "一切風格的濫觴，往往是一次不被允許的模仿。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "齟齬",
+      "zhuyin": "ㄐㄩˇ ㄩˇ",
+      "part_of_speech": "名",
+      "difficulty": 4,
+      "short_def": "意見不合、彼此抵牾。",
+      "long_def": "牙齒參差引申為人際齟齬。比「吵架」含蓄，適合寫長期不合而非爆發。",
+      "usage_context": "「產生齟齬」「心有齟齬」；不宜用於兒語對白。",
+      "register": "literary",
+      "category": "文言詞彙",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "文言",
+        "衝突",
+        "關係"
+      ],
+      "daily_example": "兩人對時程的齟齬，拖了整個夏天。",
+      "literary_example": "那不是爭吵，是積年的齟齬在桌面下輕輕咬合。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "逡巡",
+      "zhuyin": "ㄑㄩㄣ ㄒㄩㄣˊ",
+      "part_of_speech": "動",
+      "difficulty": 4,
+      "short_def": "有所顧忌而徘徊不前。",
+      "long_def": "把猶豫寫成空間位移。比「猶豫」可見：腳步、門檻、筆尖都可逡巡。",
+      "usage_context": "「逡巡片刻」「逡巡不前」。",
+      "register": "literary",
+      "category": "動作描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "動作",
+        "猶豫"
+      ],
+      "daily_example": "他在門口逡巡，終於還是按下門鈴。",
+      "literary_example": "筆在紙上逡巡，像在找一個不被刺痛的入口。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "氤氳",
+      "zhuyin": "ㄧㄣ ㄩㄣ",
+      "part_of_speech": "形／名",
+      "difficulty": 4,
+      "short_def": "煙氣、水氣瀰漫的樣子。",
+      "long_def": "氣氛詞：濕、暖、不明朗。適用晨霧、浴室、戰場硝煙的「美化版」。",
+      "usage_context": "「煙氣氤氳」「茶香氤氳」。",
+      "register": "literary",
+      "category": "景物描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "景物",
+        "氣氛"
+      ],
+      "daily_example": "浴室裡氤氳未散，鏡子什麼也照不清。",
+      "literary_example": "江上氤氳，遠帆像一句含糊的預言。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "侘傺",
+      "zhuyin": "ㄔㄚˋ ㄔˋ",
+      "part_of_speech": "形",
+      "difficulty": 5,
+      "short_def": "失意、潦倒而精神恍惚。",
+      "long_def": "楚辭系統用詞，情緒濃度高。現代文偶一用之，可立刻拉高古典互文。",
+      "usage_context": "極書面；對白慎用。可與「失意」對讀：侘傺更「形神俱失」。",
+      "register": "literary",
+      "category": "文言詞彙",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "文言",
+        "情緒",
+        "冷僻"
+      ],
+      "daily_example": "他侘傺了整個秋天，誰勸都像隔著水。",
+      "literary_example": "侘傺之色寫在眉間，比哭更叫人不敢靠近。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "囁嚅",
+      "zhuyin": "ㄋㄧㄝˋ ㄖㄨˊ",
+      "part_of_speech": "動",
+      "difficulty": 4,
+      "short_def": "想說又不敢大聲說；口動而不成句。",
+      "long_def": "對話失敗的身體證據。比「小聲說」更強調未完成。",
+      "usage_context": "「囁嚅半晌」「囁嚅著說」。",
+      "register": "literary",
+      "category": "動作描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "動作",
+        "對話",
+        "膽怯"
+      ],
+      "daily_example": "她囁嚅了兩次，終於把名字叫出來。",
+      "literary_example": "囁嚅在齒間碎掉，誰也沒聽清那句道歉。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "拊膺",
+      "zhuyin": "ㄈㄨˇ ㄧㄥ",
+      "part_of_speech": "動",
+      "difficulty": 5,
+      "short_def": "用手拍胸口，表示悲憤或痛惜。",
+      "long_def": "古典身體修辭。現代文可用於極克制的悲憤場面，避免喜劇化。",
+      "usage_context": "「拊膺長嘆」「拊膺而泣」。",
+      "register": "literary",
+      "category": "動作描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "文言",
+        "悲憤",
+        "身體"
+      ],
+      "daily_example": "他拊膺不語，只把窗戶推開。",
+      "literary_example": "夜深拊膺，聲在胸腔裡，卻傳不到任何人耳裡。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "睥睨",
+      "zhuyin": "ㄅㄧˋ ㄋㄧˋ",
+      "part_of_speech": "動",
+      "difficulty": 4,
+      "short_def": "斜視，有傲慢或不屑之意。",
+      "long_def": "視線即權力。寫上層人物、敵對審視時比「看一眼」有態度。",
+      "usage_context": "「睥睨一切」「睥睨左右」。",
+      "register": "literary",
+      "category": "動作描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "動作",
+        "傲慢",
+        "視線"
+      ],
+      "daily_example": "他睥睨著會議室，像在點名誰不該坐在這裡。",
+      "literary_example": "睥睨落在她袖口的補丁上，比辱罵更乾淨。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "顢頇",
+      "zhuyin": "ㄇㄢ ㄏㄢ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "糊塗、不明事理；也可指漫不經心。",
+      "long_def": "帶貶義的智力／態度評價。比「笨」更指向處事含糊。",
+      "usage_context": "「顢頇了事」「為人顢頇」。",
+      "register": "literary",
+      "category": "人物描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "人物",
+        "貶義"
+      ],
+      "daily_example": "這麼顢頇的回覆，像根本沒讀過信。",
+      "literary_example": "顢頇不是無辜，是拒絕承擔細節的一種懶。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "倥傯",
+      "zhuyin": "ㄎㄨㄥˇ ㄗㄨㄥˇ",
+      "part_of_speech": "形",
+      "difficulty": 5,
+      "short_def": "事務急迫、繁忙。",
+      "long_def": "時間被事務擠壓的書面說法。適合回憶錄、時代敘事。",
+      "usage_context": "「戎馬倥傯」「世事倥傯」。",
+      "register": "literary",
+      "category": "文言詞彙",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "文言",
+        "時間",
+        "忙碌"
+      ],
+      "daily_example": "那年倥傯，連告別都像被行程刪掉。",
+      "literary_example": "倥傯歲月裡，她只記得一個沒來得及收的窗。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "蕭索",
+      "zhuyin": "ㄒㄧㄠ ㄙㄨㄛˇ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "冷落、淒清、缺乏生氣。",
+      "long_def": "景物情緒化。比「冷清」更文學，帶秋冬與衰敗聯想。",
+      "usage_context": "「景象蕭索」「蕭索的街」。",
+      "register": "literary",
+      "category": "景物描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "景物",
+        "氣氛"
+      ],
+      "daily_example": "下班後的辦公區特別蕭索。",
+      "literary_example": "蕭索不是沒有人，是有過的人都走了。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "熨帖",
+      "zhuyin": "ㄩˋ ㄊㄧㄝ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "妥貼、舒服；心思或話語恰到好處。",
+      "long_def": "可指身體舒適，也可指語言／安排令人安心。作家常用其「恰如其分」義。",
+      "usage_context": "「話說得熨帖」「睡得熨帖」。",
+      "register": "literary",
+      "category": "感覺描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "感覺",
+        "語言"
+      ],
+      "daily_example": "這句安慰意外熨帖，她反而不知怎麼接。",
+      "literary_example": "熨帖的沉默，有時比解釋更靠近理解。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "跌宕",
+      "zhuyin": "ㄉㄧㄝˊ ㄉㄤˋ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "性格或文筆豪放不羈；情節起伏大。",
+      "long_def": "評文氣、評人生皆可用。寫結構時：跌宕＝節奏有落差。",
+      "usage_context": "「文筆跌宕」「命運跌宕」。",
+      "register": "literary",
+      "category": "節奏・文氣",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "節奏",
+        "風格"
+      ],
+      "daily_example": "故事後半開始跌宕，讀者才真正坐下。",
+      "literary_example": "她把一生寫得跌宕，卻把結局留白。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "隱晦",
+      "zhuyin": "ㄧㄣˇ ㄏㄨㄟˋ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "意思不明說、不易懂。",
+      "long_def": "與「含蓄」近：含蓄常是美感選擇，隱晦可帶刻意遮掩或難解。",
+      "usage_context": "「措辭隱晦」「含義隱晦」。",
+      "register": "literary",
+      "category": "修辭・表達",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "修辭",
+        "表達"
+      ],
+      "daily_example": "他的拒絕寫得很隱晦，像仍給你台階。",
+      "literary_example": "結局隱晦，比說破更有餘味——也更危險。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "綿密",
+      "zhuyin": "ㄇㄧㄢˊ ㄇㄧˋ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "細緻緊密（針腳、觀察、文筆）。",
+      "long_def": "風格詞。誇細節密度時用；過度綿密也可能令讀者窒息，可作雙刃。",
+      "usage_context": "「筆法綿密」「布局綿密」。",
+      "register": "literary",
+      "category": "風格評價",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "風格",
+        "細節"
+      ],
+      "daily_example": "這段心理描寫非常綿密。",
+      "literary_example": "她把日常寫得綿密，小事也有重量。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "疏離",
+      "zhuyin": "ㄕㄨ ㄌㄧˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "有距離、不親密；現代文學高頻心理詞。",
+      "long_def": "人與人、人與自我、人與城市皆可疏離。比「冷淡」更結構、更時代。",
+      "usage_context": "「感到疏離」「疏離感」。",
+      "register": "literary",
+      "category": "關係・心理",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "心理",
+        "關係",
+        "現代"
+      ],
+      "daily_example": "同桌三年，彼此仍舊疏離。",
+      "literary_example": "城市越大，人越容易被安放在疏離裡。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "凝滯",
+      "zhuyin": "ㄋㄧㄥˊ ㄓˋ",
+      "part_of_speech": "形／動",
+      "difficulty": 4,
+      "short_def": "停住不動；時間或情緒卡住。",
+      "long_def": "反動態。對話、雨勢、時間感皆可凝滯。",
+      "usage_context": "「空氣凝滯」「目光凝滯」。",
+      "register": "literary",
+      "category": "節奏・心理",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "節奏",
+        "心理"
+      ],
+      "daily_example": "對話凝滯了幾秒，誰也不願先讓。",
+      "literary_example": "雨絲讓整條巷子顯得凝滯。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "慍",
+      "zhuyin": "ㄩㄣˋ",
+      "part_of_speech": "動／名",
+      "difficulty": 4,
+      "short_def": "怒，含怒；多指壓抑而未爆發的怒。",
+      "long_def": "生氣光譜：慍＜怒＜憤＜恚。慍適合「臉上有了，話還沒有」。",
+      "usage_context": "「面有慍色」「慍怒」。勿濫用成咆哮。",
+      "register": "literary",
+      "category": "情緒・生氣",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "生氣",
+        "對照"
+      ],
+      "daily_example": "他慍在眉間，會議卻繼續進行。",
+      "literary_example": "慍是一種不肯給你高潮的怒。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "恚",
+      "zhuyin": "ㄏㄨㄟˋ",
+      "part_of_speech": "動／形",
+      "difficulty": 5,
+      "short_def": "憤恨、怒恨。",
+      "long_def": "比「怒」更深、更恨。文言氣味濃，適合心理獨白或史傳語氣。",
+      "usage_context": "「恚恨」「忿恚」。現代對白少見。",
+      "register": "literary",
+      "category": "情緒・生氣",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "生氣",
+        "文言"
+      ],
+      "daily_example": "她把恚壓進牙關，只回了一個「好」。",
+      "literary_example": "恚不像火，像一根釘，慢慢釘進日常。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "怫然",
+      "zhuyin": "ㄈㄨˊ ㄖㄢˊ",
+      "part_of_speech": "副／形",
+      "difficulty": 4,
+      "short_def": "憤怒的樣子；忽然變臉。",
+      "long_def": "強調「變」的瞬間。 visable anger onset。",
+      "usage_context": "「怫然不悅」「怫然作色」。",
+      "register": "literary",
+      "category": "情緒・生氣",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "生氣",
+        "瞬間"
+      ],
+      "daily_example": "他聽完條件，怫然推開椅子。",
+      "literary_example": "怫然只在眼底閃過，宴會的笑又接回去了。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "睚眦",
+      "zhuyin": "ㄧㄚˊ ㄗˋ",
+      "part_of_speech": "名",
+      "difficulty": 5,
+      "short_def": "瞪眼睛；引申為極小的怨忿。",
+      "long_def": "「睚眦必報」把微小怒意寫成性格命題。單用睚眦可指小怨。",
+      "usage_context": "多與「必報」連用；亦可「略有睚眦」。",
+      "register": "literary",
+      "category": "情緒・生氣",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "記恨",
+        "冷僻"
+      ],
+      "daily_example": "他不是大氣的人，睚眦都記在簿子上。",
+      "literary_example": "那場決裂，起於一次幾乎看不見的睚眦。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "戟指",
+      "zhuyin": "ㄐㄧˇ ㄓˇ",
+      "part_of_speech": "動",
+      "difficulty": 4,
+      "short_def": "用手指指著對方，狀極憤怒。",
+      "long_def": "把怒寫成手指的兵器感。比「指著罵」更有畫面與冒犯等級。",
+      "usage_context": "「戟指怒罵」「戟指咆哮」。",
+      "register": "literary",
+      "category": "情緒・生氣",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "動作",
+        "衝突"
+      ],
+      "daily_example": "他戟指著合約，聲音卻意外地低。",
+      "literary_example": "戟指落在空中，像一句還未出鞘的咒。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "怫鬱",
+      "zhuyin": "ㄈㄨˊ ㄩˋ",
+      "part_of_speech": "形",
+      "difficulty": 5,
+      "short_def": "心情鬱結不舒、含怒難解。",
+      "long_def": "怒＋鬱。適合長時間無法發洩的性格。",
+      "usage_context": "「胸中怫鬱」。",
+      "register": "literary",
+      "category": "情緒・生氣",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "鬱",
+        "生氣"
+      ],
+      "daily_example": "怫鬱了一週，他終於把訊息刪掉重寫。",
+      "literary_example": "怫鬱像濕季，處處發霉，卻下不出一場乾淨的雨。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "嶙峋",
+      "zhuyin": "ㄌㄧㄣˊ ㄒㄩㄣˊ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "山石重疊不平；也形容人瘦骨突出。",
+      "long_def": "身體與山石互喻。寫老人、病體、貧瘠地景皆可用。",
+      "usage_context": "「瘦骨嶙峋」「山石嶙峋」。",
+      "register": "literary",
+      "category": "形貌描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "形貌",
+        "身體"
+      ],
+      "daily_example": "病後他瘦骨嶙峋，衣服都空了一圈。",
+      "literary_example": "嶙峋的肩線像被歲月削過。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "踟躕",
+      "zhuyin": "ㄔˊ ㄔㄨˊ",
+      "part_of_speech": "動",
+      "difficulty": 4,
+      "short_def": "心裡猶豫，要走不走。",
+      "long_def": "與逡巡近：踟躕更「心」，逡巡更「步」。",
+      "usage_context": "「踟躕不前」「踟躕片刻」。",
+      "register": "literary",
+      "category": "動作描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "猶豫",
+        "動作"
+      ],
+      "daily_example": "信封已封，他仍踟躕要不要投。",
+      "literary_example": "踟躕在兩種誠實之間，她選了沉默。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "斑駁",
+      "zhuyin": "ㄅㄢ ㄅㄛˊ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "顏色深淺不一、痕跡錯落。",
+      "long_def": "時間痕跡的視覺詞。牆、光影、記憶皆可斑駁。",
+      "usage_context": "「斑駁的牆」「光影斑駁」。",
+      "register": "literary",
+      "category": "景物描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "景物",
+        "時間"
+      ],
+      "daily_example": "老公寓的牆皮斑駁，露出從前的綠。",
+      "literary_example": "記憶斑駁，亮處刺眼，暗處才是真的。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "凜冽",
+      "zhuyin": "ㄌㄧㄣˇ ㄌㄧㄝˋ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "寒冷刺骨；也可形容神色、語氣嚴峻。",
+      "long_def": "氣溫與態度共用。眼神凜冽＝不給溫度。",
+      "usage_context": "「北風凜冽」「目光凜冽」。",
+      "register": "literary",
+      "category": "感覺描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "感覺",
+        "態度"
+      ],
+      "daily_example": "她的拒絕簡短而凜冽。",
+      "literary_example": "凜冽不是吼，是所有溫度被抽走。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "澄澈",
+      "zhuyin": "ㄔㄥˊ ㄔㄜˋ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "清澈透明；心境清明。",
+      "long_def": "水與心共用。比「清楚」多一層無雜質。",
+      "usage_context": "「湖水澄澈」「神思澄澈」。",
+      "register": "literary",
+      "category": "感覺・景物",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "景物",
+        "心境"
+      ],
+      "daily_example": "雨後空氣澄澈，連遠山都銳利。",
+      "literary_example": "她把怒意沉澱後，語氣忽然澄澈起來。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "齟",
+      "zhuyin": "ㄐㄩˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 5,
+      "short_def": "牙齒參差；多見於「齟齬」一詞。",
+      "long_def": "單字教學：認識構詞理據，有助記得齟齬本義。",
+      "usage_context": "現代多不單用；寫作教學可析字。",
+      "register": "literary",
+      "category": "文言單字",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "單字",
+        "文言",
+        "構詞"
+      ],
+      "daily_example": "（析字）齟，齒不平也。",
+      "literary_example": "字的參差，往往先於人的參差。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "綺",
+      "zhuyin": "ㄑㄧˇ",
+      "part_of_speech": "名／形",
+      "difficulty": 4,
+      "short_def": "有花紋的絲織品；華麗。",
+      "long_def": "衣料譜：紗（透）—羅（網）—綺（花）—錦（密麗）。",
+      "usage_context": "「綺窗」「綺羅」。",
+      "register": "literary",
+      "category": "質感・文言",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "衣料",
+        "單字",
+        "對照"
+      ],
+      "daily_example": "綺窗後有人影一晃。",
+      "literary_example": "綺羅堆裡的貧困，是另一種刑。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "縞",
+      "zhuyin": "ㄍㄠˇ",
+      "part_of_speech": "名",
+      "difficulty": 5,
+      "short_def": "白色精細絲織物；古喪服、素衣常用。",
+      "long_def": "顏色＋禮制。寫喪儀、素淨、克制的白。",
+      "usage_context": "「縞衣」「素縞」。",
+      "register": "literary",
+      "category": "質感・衣料",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "衣料",
+        "禮制",
+        "冷僻"
+      ],
+      "daily_example": "她只著縞衣來，沒有多餘的飾。",
+      "literary_example": "縞是拒絕華麗的一種華麗。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "繾綣",
+      "zhuyin": "ㄑㄧㄢˇ ㄑㄩㄢˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 4,
+      "short_def": "纏綿、難分難捨。",
+      "long_def": "親密關係的書面高階詞。比「依戀」更古典、更身體。",
+      "usage_context": "「情意繾綣」「繾綣難分」。",
+      "register": "literary",
+      "category": "情感詞彙",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "情感",
+        "文言"
+      ],
+      "daily_example": "臨別繾綣，話反而變少。",
+      "literary_example": "繾綣是夜的長度，不是誓言的長度。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "忉怛",
+      "zhuyin": "ㄉㄠ ㄉㄚˊ",
+      "part_of_speech": "形",
+      "difficulty": 5,
+      "short_def": "憂傷、悲痛。",
+      "long_def": "冷僻書面哀傷。偶爾一用，避免滿篇哀調。",
+      "usage_context": "極書面。",
+      "register": "literary",
+      "category": "情緒詞彙",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "冷僻",
+        "哀"
+      ],
+      "daily_example": "訊息顯示已讀，他忉怛得說不出話。",
+      "literary_example": "忉怛無聲，像雪落在已經很厚的雪上。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "觳觫",
+      "zhuyin": "ㄏㄨˊ ㄙㄨˋ",
+      "part_of_speech": "形",
+      "difficulty": 5,
+      "short_def": "因恐懼而發抖。",
+      "long_def": "經典出自《孟子》。恐懼的身體化，比「害怕」可見。",
+      "usage_context": "「觳觫戰慄」；典故意味重。",
+      "register": "literary",
+      "category": "情緒・恐懼",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "恐懼",
+        "文言",
+        "身體"
+      ],
+      "daily_example": "他觳觫著簽字，筆尖在紙上點出一串洞。",
+      "literary_example": "觳觫不是表演給你看的怕，是身體先投降。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "踟",
+      "zhuyin": "ㄔˊ",
+      "part_of_speech": "動",
+      "difficulty": 5,
+      "short_def": "徘徊；見「踟躕」。",
+      "long_def": "單字與複詞教學：幫助讀者進入文言構詞。",
+      "usage_context": "現代罕單用。",
+      "register": "literary",
+      "category": "文言單字",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "單字",
+        "文言"
+      ],
+      "daily_example": "（析字）踟，住足也。",
+      "literary_example": "足的猶豫，常早於口的猶豫。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "喟嘆",
+      "zhuyin": "ㄎㄨㄟˋ ㄊㄢˋ",
+      "part_of_speech": "動",
+      "difficulty": 3,
+      "short_def": "因感慨而長嘆。",
+      "long_def": "嘆的書面升級。帶評價與時間感。",
+      "usage_context": "「不禁喟嘆」「喟嘆世事」。",
+      "register": "literary",
+      "category": "動作描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "動作",
+        "感慨"
+      ],
+      "daily_example": "他看著舊照片，喟嘆一聲。",
+      "literary_example": "喟嘆落在空屋，回音比人誠實。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "睥",
+      "zhuyin": "ㄅㄧˋ",
+      "part_of_speech": "動",
+      "difficulty": 5,
+      "short_def": "斜視；見「睥睨」。",
+      "long_def": "認識偏旁與構詞，有助準確使用睥睨。",
+      "usage_context": "罕單用。",
+      "register": "literary",
+      "category": "文言單字",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "單字",
+        "文言"
+      ],
+      "daily_example": "（析字）睥，邪視也。",
+      "literary_example": "視線的坡度，有時就是權力的坡度。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "岑寂",
+      "zhuyin": "ㄘㄣˊ ㄐㄧˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 4,
+      "short_def": "高而靜；寂寞、寂靜。",
+      "long_def": "寂靜的文學說法，帶空間高度感。",
+      "usage_context": "「萬籟岑寂」「岑寂的夜」。",
+      "register": "literary",
+      "category": "氣氛描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "氣氛",
+        "靜"
+      ],
+      "daily_example": "午夜的圖書館岑寂得可怕。",
+      "literary_example": "岑寂不是空，是聲音被什麼按住了。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "倥",
+      "zhuyin": "ㄎㄨㄥˇ",
+      "part_of_speech": "形",
+      "difficulty": 5,
+      "short_def": "見「倥傯」，急迫義。",
+      "long_def": "構詞提示用。",
+      "usage_context": "罕單用。",
+      "register": "literary",
+      "category": "文言單字",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "單字",
+        "文言"
+      ],
+      "daily_example": "（析字）倥傯之倥，急也。",
+      "literary_example": "急，有時是時代的語法。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "兀自",
+      "zhuyin": "ㄨˋ ㄗˋ",
+      "part_of_speech": "副",
+      "difficulty": 4,
+      "short_def": "仍然、還；只管自顧。",
+      "long_def": "白話小說語氣（水滸等）。寫「旁若無人地持續」很有用。",
+      "usage_context": "「兀自飲酒」「兀自不應」。",
+      "register": "literary",
+      "category": "文言詞彙",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "白話小說",
+        "副詞"
+      ],
+      "daily_example": "眾人已散，他兀自坐在階上。",
+      "literary_example": "雨停了，檐水兀自滴著，像不肯結束的一幕。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "驀然",
+      "zhuyin": "ㄇㄛˋ ㄖㄢˊ",
+      "part_of_speech": "副",
+      "difficulty": 3,
+      "short_def": "突然、猛然。",
+      "long_def": "古典詞牌語感（驀然回首）。突然的詩意版。",
+      "usage_context": "「驀然驚覺」「驀然回首」。",
+      "register": "literary",
+      "category": "節奏・時間",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "時間",
+        "突然"
+      ],
+      "daily_example": "驀然聽見自己的名字，他愣住。",
+      "literary_example": "驀然，所有解釋都變得太輕。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "倜儻",
+      "zhuyin": "ㄊㄧˋ ㄊㄤˇ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "豪爽、不拘束；風流灑脫。",
+      "long_def": "人物評價詞。可褒可帶舊式性別想像，使用時注意語境。",
+      "usage_context": "「風流倜儻」。",
+      "register": "literary",
+      "category": "人物描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "人物",
+        "評價"
+      ],
+      "daily_example": "他外表倜儻，做事卻極謹慎。",
+      "literary_example": "倜儻是一種被允許的鬆，不是真的無邊。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "孑然",
+      "zhuyin": "ㄐㄧㄝˊ ㄖㄢˊ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "孤獨一人。",
+      "long_def": "「孑然一身」。孤獨的書面姿態。",
+      "usage_context": "「孑然離去」。",
+      "register": "literary",
+      "category": "人物・狀態",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "孤獨",
+        "狀態"
+      ],
+      "daily_example": "散場後他孑然走入雨裡。",
+      "literary_example": "孑然不是寂寞的原因，是寂寞的形狀。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "侘",
+      "zhuyin": "ㄔㄚˋ",
+      "part_of_speech": "形",
+      "difficulty": 5,
+      "short_def": "見「侘傺」。",
+      "long_def": "構詞教學。",
+      "usage_context": "罕單用。",
+      "register": "literary",
+      "category": "文言單字",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "單字",
+        "文言"
+      ],
+      "daily_example": "（析字）侘傺之侘，失意也。",
+      "literary_example": "失意有形，叫侘傺。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "悻然",
+      "zhuyin": "ㄒㄧㄥˋ ㄖㄢˊ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "怨怒、忿怒的樣子。",
+      "long_def": "「悻然離去」。怒意外露但未必爆發。",
+      "usage_context": "「悻然離去」。怒意外露但未必爆發。",
+      "register": "literary",
+      "category": "情緒・生氣",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "生氣"
+      ],
+      "daily_example": "寫作中可斟酌使用「悻然」，注意語域。",
+      "literary_example": "語境合宜時，「悻然」能提高書面密度。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "悻悻",
+      "zhuyin": "ㄒㄧㄥˋ ㄒㄧㄥˋ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "怒氣未消、不服氣。",
+      "long_def": "「悻悻然」；帶一點賭氣。",
+      "usage_context": "「悻悻然」；帶一點賭氣。",
+      "register": "literary",
+      "category": "情緒・生氣",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "生氣"
+      ],
+      "daily_example": "寫作中可斟酌使用「悻悻」，注意語域。",
+      "literary_example": "語境合宜時，「悻悻」能提高書面密度。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "瞋目",
+      "zhuyin": "ㄔㄣ ㄇㄨˋ",
+      "part_of_speech": "動",
+      "difficulty": 4,
+      "short_def": "發怒而瞪大眼睛。",
+      "long_def": "身體化的怒，常見於文言敘事。",
+      "usage_context": "身體化的怒，常見於文言敘事。",
+      "register": "literary",
+      "category": "情緒・生氣",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "生氣"
+      ],
+      "daily_example": "寫作中可斟酌使用「瞋目」，注意語域。",
+      "literary_example": "語境合宜時，「瞋目」能提高書面密度。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "忿忿",
+      "zhuyin": "ㄈㄣˋ ㄈㄣˋ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "很生氣。",
+      "long_def": "比「很氣」書面；可「忿忿不平」。",
+      "usage_context": "比「很氣」書面；可「忿忿不平」。",
+      "register": "literary",
+      "category": "情緒・生氣",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "生氣"
+      ],
+      "daily_example": "寫作中可斟酌使用「忿忿」，注意語域。",
+      "literary_example": "語境合宜時，「忿忿」能提高書面密度。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "勃然",
+      "zhuyin": "ㄅㄛˊ ㄖㄢˊ",
+      "part_of_speech": "副",
+      "difficulty": 3,
+      "short_def": "突然（變色、大怒）。",
+      "long_def": "「勃然大怒」強調突變。",
+      "usage_context": "「勃然大怒」強調突變。",
+      "register": "literary",
+      "category": "情緒・生氣",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "情緒",
+        "生氣"
+      ],
+      "daily_example": "寫作中可斟酌使用「勃然」，注意語域。",
+      "literary_example": "語境合宜時，「勃然」能提高書面密度。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "綈",
+      "zhuyin": "ㄊㄧˊ",
+      "part_of_speech": "名",
+      "difficulty": 5,
+      "short_def": "厚實光滑的絲織品。",
+      "long_def": "衣料譜再加一檔：厚滑之絲。",
+      "usage_context": "衣料譜再加一檔：厚滑之絲。",
+      "register": "literary",
+      "category": "質感・衣料",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "質感",
+        "衣料"
+      ],
+      "daily_example": "寫作中可斟酌使用「綈」，注意語域。",
+      "literary_example": "語境合宜時，「綈」能提高書面密度。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "紈",
+      "zhuyin": "ㄨㄢˊ",
+      "part_of_speech": "名",
+      "difficulty": 4,
+      "short_def": "潔白細絹；「紈袴」引申富家子弟。",
+      "long_def": "物→人的語義滑移教材。",
+      "usage_context": "物→人的語義滑移教材。",
+      "register": "literary",
+      "category": "質感・衣料",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "質感",
+        "衣料"
+      ],
+      "daily_example": "寫作中可斟酌使用「紈」，注意語域。",
+      "literary_example": "語境合宜時，「紈」能提高書面密度。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "縞素",
+      "zhuyin": "ㄍㄠˇ ㄙㄨˋ",
+      "part_of_speech": "名",
+      "difficulty": 4,
+      "short_def": "白色喪服；也泛指素白。",
+      "long_def": "喪儀與克制的白。",
+      "usage_context": "喪儀與克制的白。",
+      "register": "literary",
+      "category": "質感・禮制",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "質感",
+        "禮制"
+      ],
+      "daily_example": "寫作中可斟酌使用「縞素」，注意語域。",
+      "literary_example": "語境合宜時，「縞素」能提高書面密度。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "縹緲",
+      "zhuyin": "ㄆㄧㄠˇ ㄇㄧㄠˇ",
+      "part_of_speech": "形",
+      "difficulty": 3,
+      "short_def": "高遠隱約、若有若無。",
+      "long_def": "山、樂、煙雲、記憶皆可用。",
+      "usage_context": "山、樂、煙雲、記憶皆可用。",
+      "register": "literary",
+      "category": "景物描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "景物描寫"
+      ],
+      "daily_example": "寫作中可斟酌使用「縹緲」，注意語域。",
+      "literary_example": "語境合宜時，「縹緲」能提高書面密度。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "旖旎",
+      "zhuyin": "ㄧˇ ㄋㄧˇ",
+      "part_of_speech": "形",
+      "difficulty": 4,
+      "short_def": "柔和美好。",
+      "long_def": "「風光旖旎」；偏柔美，勿用於剛烈場面。",
+      "usage_context": "「風光旖旎」；偏柔美，勿用於剛烈場面。",
+      "register": "literary",
+      "category": "景物描寫",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "景物描寫"
+      ],
+      "daily_example": "寫作中可斟酌使用「旖旎」，注意語域。",
+      "literary_example": "語境合宜時，「旖旎」能提高書面密度。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "邂逅",
+      "zhuyin": "ㄒㄧㄝˋ ㄏㄡˋ",
+      "part_of_speech": "動",
+      "difficulty": 3,
+      "short_def": "偶然相遇。",
+      "long_def": "比「碰到」有緣定與文學性。",
+      "usage_context": "比「碰到」有緣定與文學性。",
+      "register": "literary",
+      "category": "敘事動詞",
+      "tags": [
+        "寫作者詞庫",
+        "大學生以上",
+        "敘事動詞"
+      ],
+      "daily_example": "寫作中可斟酌使用「邂逅」，注意語域。",
+      "literary_example": "語境合宜時，「邂逅」能提高書面密度。",
+      "source": {
+        "kind": "zi-geng-writer-lexicon",
+        "level": "college-to-pro"
+      }
+    }
+  ]
+}
