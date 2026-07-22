@@ -12,6 +12,7 @@ import {
 } from "@/features/daily-plan/api";
 import { FavoriteToggle } from "@/features/favorites/FavoriteToggle";
 import { createDraft } from "@/features/writing/draft-store";
+import { getSupabaseClient } from "@/lib/supabase/client";
 import { env } from "@/lib/env";
 import { routes, writeDetailPath } from "@/routes/paths";
 
@@ -57,6 +58,26 @@ export default function TodayPage() {
     queryFn: async () => {
       if (useMock) return createMockDailyPlanBundle();
       return fetchOrCreateDailyPlan(timezone);
+    },
+  });
+
+  const poolQuery = useQuery({
+    queryKey: ["content-pool-counts", auth.user?.id],
+    enabled: auth.status === "authenticated" && !useMock,
+    queryFn: async () => {
+      const client = getSupabaseClient();
+      if (!client) return { vocab: 0, quotes: 0 };
+      const [v, q] = await Promise.all([
+        client
+          .from("zg_vocabulary_cards")
+          .select("id", { count: "exact", head: true })
+          .eq("status", "active"),
+        client
+          .from("zg_quotes")
+          .select("id", { count: "exact", head: true })
+          .eq("status", "active"),
+      ]);
+      return { vocab: v.count ?? 0, quotes: q.count ?? 0 };
     },
   });
 
@@ -121,6 +142,32 @@ export default function TodayPage() {
         <p className="text-sm text-[var(--color-ink-muted)]">
           依你的時間隨意換卡；想留著複習就按「收藏」。完整庫存在詞彙／名言頁，不限今日這幾張。
         </p>
+        {poolQuery.data ? (
+          <p className="text-sm text-[var(--color-ink-muted)]">
+            詞庫目前 <strong className="text-[var(--color-ink)]">{poolQuery.data.vocab}</strong>{" "}
+            詞、名言 <strong className="text-[var(--color-ink)]">{poolQuery.data.quotes}</strong>{" "}
+            則。
+            {poolQuery.data.vocab < 50 ? (
+              <>
+                {" "}
+                太少了——請到{" "}
+                <Link to={routes.ownerContent} className="underline-offset-4 hover:underline">
+                  內容管理
+                </Link>{" "}
+                匯入，或在 Supabase 跑灌庫 SQL。
+              </>
+            ) : (
+              <>
+                {" "}
+                完整列表見{" "}
+                <Link to={routes.learnVocabulary} className="underline-offset-4 hover:underline">
+                  詞彙
+                </Link>
+                。
+              </>
+            )}
+          </p>
+        ) : null}
         {refreshError ? <p className="text-sm text-[var(--color-danger)]">{refreshError}</p> : null}
       </header>
 

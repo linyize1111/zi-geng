@@ -8,3 +8,5 @@ docs/**/*.md
 scripts/content/**/*.json
 public/content/**/*.json
 scripts/content/dict_idioms.json
+
+supabase/APPLY_BULK_VOCAB_AND_QUOTES.sql
