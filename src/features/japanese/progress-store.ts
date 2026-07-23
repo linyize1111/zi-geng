@@ -44,10 +44,14 @@ export async function recordAnswer(
     correct,
     practicedAt,
   };
-  await getZiGengDb().transaction("rw", ["japaneseProgress", "japanesePracticeEvents"], async () => {
-    await getZiGengDb().japaneseProgress.put(next);
-    await getZiGengDb().japanesePracticeEvents.put(event);
-  });
+  await getZiGengDb().transaction(
+    "rw",
+    ["japaneseProgress", "japanesePracticeEvents"],
+    async () => {
+      await getZiGengDb().japaneseProgress.put(next);
+      await getZiGengDb().japanesePracticeEvents.put(event);
+    },
+  );
   return next;
 }
 
