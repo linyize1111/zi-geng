@@ -7,3 +7,12 @@ export type JapaneseProgress = {
   streak: number;
   lastPracticedAt: string;
 };
+
+/** One practice answer; used for accurate weekly review counts. */
+export type JapanesePracticeEvent = {
+  id: string;
+  userId: string;
+  kanaId: string;
+  correct: boolean;
+  practicedAt: string;
+};

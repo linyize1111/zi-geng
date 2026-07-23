@@ -1,5 +1,10 @@
 import { getZiGengDb } from "@/lib/offline/db";
-import type { CreateDraftInput, UpdateDraftInput, WritingDraft } from "@/features/writing/types";
+import type {
+  CreateDraftInput,
+  UpdateDraftInput,
+  WritingDraft,
+  WritingWordEvent,
+} from "@/features/writing/types";
 import { countWords, toPlainText } from "@/features/writing/word-count";
 
 function nowIso(): string {
@@ -8,6 +13,23 @@ function nowIso(): string {
 
 function newId(): string {
   return crypto.randomUUID();
+}
+
+async function recordWordDelta(
+  userId: string,
+  draftId: string,
+  deltaWords: number,
+  at: string,
+): Promise<void> {
+  if (deltaWords <= 0) return;
+  const event: WritingWordEvent = {
+    id: newId(),
+    userId,
+    draftId,
+    deltaWords,
+    at,
+  };
+  await getZiGengDb().writingWordEvents.put(event);
 }
 
 export async function listDrafts(userId: string): Promise<WritingDraft[]> {
@@ -49,6 +71,9 @@ export async function createDraft(input: CreateDraftInput): Promise<WritingDraft
     updatedAt: createdAt,
   };
   await getZiGengDb().drafts.put(draft);
+  if (draft.wordCount > 0) {
+    await recordWordDelta(input.userId, draft.id, draft.wordCount, createdAt);
+  }
   return draft;
 }
 
@@ -62,6 +87,8 @@ export async function updateDraft(
 
   const contentMd = patch.contentMd ?? existing.contentMd;
   const contentPlain = toPlainText(contentMd);
+  const wordCount = countWords(contentPlain);
+  const updatedAt = nowIso();
   const next: WritingDraft = {
     ...existing,
     title: patch.title !== undefined ? patch.title.trim() || "無標題" : existing.title,
@@ -70,12 +97,13 @@ export async function updateDraft(
     category: patch.category ?? existing.category,
     tags: patch.tags ?? existing.tags,
     visibility: patch.visibility ?? existing.visibility,
-    wordCount: countWords(contentPlain),
+    wordCount,
     revision: existing.revision + 1,
     syncStatus: "local-only",
-    updatedAt: nowIso(),
+    updatedAt,
   };
   await getZiGengDb().drafts.put(next);
+  await recordWordDelta(userId, id, wordCount - existing.wordCount, updatedAt);
   return next;
 }
 
@@ -134,7 +162,24 @@ export function downloadDraftMarkdown(draft: WritingDraft): void {
   URL.revokeObjectURL(url);
 }
 
+/**
+ * Words added in saves on/after `sinceIso` (positive deltas only).
+ * Limitation: only events recorded after Dexie v4; pre-existing draft totals are not backfilled.
+ */
+export async function weekWordsWritten(userId: string, sinceIso: string): Promise<number> {
+  const events = await getZiGengDb()
+    .writingWordEvents.where("[userId+at]")
+    .between([userId, sinceIso], [userId, "\uffff"], true, true)
+    .toArray();
+  return events.reduce((sum, e) => sum + e.deltaWords, 0);
+}
+
 /** Remove all private drafts for a user (logout cleanup). */
 export async function clearUserDrafts(userId: string): Promise<number> {
-  return getZiGengDb().drafts.where("userId").equals(userId).delete();
+  const db = getZiGengDb();
+  const [removed] = await Promise.all([
+    db.drafts.where("userId").equals(userId).delete(),
+    db.writingWordEvents.where("userId").equals(userId).delete(),
+  ]);
+  return removed;
 }

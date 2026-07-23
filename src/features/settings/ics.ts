@@ -15,15 +15,48 @@ export function buildDailyReminderIcs(opts: {
   const tz = opts.timezone ?? "Asia/Taipei";
 
   const now = new Date();
-  const y = now.getFullYear();
-  const mo = String(now.getMonth() + 1).padStart(2, "0");
-  const da = String(now.getDate()).padStart(2, "0");
-  const stamp = `${y}${mo}${da}T${String(now.getHours()).padStart(2, "0")}${String(now.getMinutes()).padStart(2, "0")}00`;
+  const stamp =
+    now.getUTCFullYear().toString() +
+    String(now.getUTCMonth() + 1).padStart(2, "0") +
+    String(now.getUTCDate()).padStart(2, "0") +
+    "T" +
+    String(now.getUTCHours()).padStart(2, "0") +
+    String(now.getUTCMinutes()).padStart(2, "0") +
+    String(now.getUTCSeconds()).padStart(2, "0") +
+    "Z";
+
+  // Local calendar date in the reminder timezone (Taipei = UTC+8, no DST).
+  const localParts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: tz,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(now);
+  const y = localParts.find((p) => p.type === "year")?.value ?? String(now.getFullYear());
+  const mo = localParts.find((p) => p.type === "month")?.value ?? "01";
+  const da = localParts.find((p) => p.type === "day")?.value ?? "01";
   const dtStart = `${y}${mo}${da}T${hh}${mm}00`;
   const uid = `zi-geng-daily-${hh}${mm}@zi-geng`;
 
   const escape = (s: string) =>
     s.replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
+
+  // Asia/Taipei has observed UTC+8 year-round since 1979 (no DST).
+  const vtimezone =
+    tz === "Asia/Taipei"
+      ? [
+          "BEGIN:VTIMEZONE",
+          "TZID:Asia/Taipei",
+          "X-LIC-LOCATION:Asia/Taipei",
+          "BEGIN:STANDARD",
+          "TZOFFSETFROM:+0800",
+          "TZOFFSETTO:+0800",
+          "TZNAME:CST",
+          "DTSTART:19700101T000000",
+          "END:STANDARD",
+          "END:VTIMEZONE",
+        ]
+      : [];
 
   return [
     "BEGIN:VCALENDAR",
@@ -31,6 +64,7 @@ export function buildDailyReminderIcs(opts: {
     "PRODID:-//字耕//Daily Reminder//ZH",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
+    ...vtimezone,
     "BEGIN:VEVENT",
     `UID:${uid}`,
     `DTSTAMP:${stamp}`,

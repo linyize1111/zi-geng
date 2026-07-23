@@ -40,3 +40,12 @@ export type UpdateDraftInput = {
   tags?: string[];
   visibility?: WritingVisibility;
 };
+
+/** Positive word-count delta from a save; powers weekly「草稿字數」. */
+export type WritingWordEvent = {
+  id: string;
+  userId: string;
+  draftId: string;
+  deltaWords: number;
+  at: string;
+};

@@ -32,6 +32,7 @@ export function SideNav() {
 
   const items = primary.filter((item) => {
     if ("flag" in item && item.flag === "japanese") return japaneseOn;
+    if (item.to === routes.ownerContent) return Boolean(auth.membership?.isOwner);
     return true;
   });
 

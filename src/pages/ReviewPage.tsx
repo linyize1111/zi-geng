@@ -5,7 +5,7 @@ import { useAuth } from "@/features/auth/AuthProvider";
 import { listFavorites } from "@/features/favorites/api";
 import { weekPracticeCount } from "@/features/japanese/progress-store";
 import { listNovels } from "@/features/novels/project-store";
-import { listDrafts } from "@/features/writing/draft-store";
+import { listDrafts, weekWordsWritten } from "@/features/writing/draft-store";
 import { env } from "@/lib/env";
 import { routes } from "@/routes/paths";
 
@@ -49,10 +49,13 @@ async function loadWeekStats(userId: string, useMock: boolean): Promise<WeekStat
       favorites = null;
     }
   }
-  const japaneseAnswers = await weekPracticeCount(userId, since);
+  const [japaneseAnswers, wordsWritten] = await Promise.all([
+    weekPracticeCount(userId, since),
+    weekWordsWritten(userId, since),
+  ]);
   return {
     draftTouched: weekDrafts.length,
-    wordsWritten: weekDrafts.reduce((s, d) => s + d.wordCount, 0),
+    wordsWritten,
     novelTouched: weekNovels.length,
     favorites,
     japaneseAnswers,
@@ -138,14 +141,14 @@ export default function ReviewPage() {
         <StatRow
           label="動過的寫作草稿"
           value={String(stats.draftTouched)}
-          hint={`本週草稿字數合計約 ${stats.wordsWritten}`}
+          hint={`本週新增字數 ${stats.wordsWritten}（存檔時正增量；升級前記錄無法回推）`}
           to={routes.write}
         />
         <StatRow label="動過的小說專案" value={String(stats.novelTouched)} to={routes.novels} />
         <StatRow
           label="日文練習作答"
           value={String(stats.japaneseAnswers)}
-          hint="五十音辨音累計次數"
+          hint="本週實際作答次數"
           to={routes.japanese}
         />
         <StatRow

@@ -1,12 +1,12 @@
 import Dexie, { type EntityTable } from "dexie";
-import type { JapaneseProgress } from "@/features/japanese/types";
+import type { JapanesePracticeEvent, JapaneseProgress } from "@/features/japanese/types";
 import type {
   NovelChapter,
   NovelCharacter,
   NovelProject,
   NovelScene,
 } from "@/features/novels/types";
-import type { WritingDraft } from "@/features/writing/types";
+import type { WritingDraft, WritingWordEvent } from "@/features/writing/types";
 
 export type ZiGengDatabase = Dexie & {
   drafts: EntityTable<WritingDraft, "id">;
@@ -15,6 +15,8 @@ export type ZiGengDatabase = Dexie & {
   novelChapters: EntityTable<NovelChapter, "id">;
   novelScenes: EntityTable<NovelScene, "id">;
   japaneseProgress: EntityTable<JapaneseProgress, "id">;
+  japanesePracticeEvents: EntityTable<JapanesePracticeEvent, "id">;
+  writingWordEvents: EntityTable<WritingWordEvent, "id">;
 };
 
 let db: ZiGengDatabase | null = null;
@@ -36,6 +38,16 @@ export function getZiGengDb(): ZiGengDatabase {
     novelChapters: "id, userId, projectId, sortOrder, deletedAt",
     novelScenes: "id, userId, projectId, chapterId, sortOrder, deletedAt",
     japaneseProgress: "id, userId, kanaId, lastPracticedAt",
+  });
+  db.version(4).stores({
+    drafts: "id, userId, updatedAt, deletedAt, promptId",
+    novelProjects: "id, userId, updatedAt, deletedAt",
+    novelCharacters: "id, userId, projectId, sortOrder, deletedAt",
+    novelChapters: "id, userId, projectId, sortOrder, deletedAt",
+    novelScenes: "id, userId, projectId, chapterId, sortOrder, deletedAt",
+    japaneseProgress: "id, userId, kanaId, lastPracticedAt",
+    japanesePracticeEvents: "id, userId, practicedAt, [userId+practicedAt]",
+    writingWordEvents: "id, userId, at, [userId+at]",
   });
   return db;
 }

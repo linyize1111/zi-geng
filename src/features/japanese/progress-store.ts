@@ -1,5 +1,5 @@
 import { getZiGengDb } from "@/lib/offline/db";
-import type { JapaneseProgress } from "@/features/japanese/types";
+import type { JapanesePracticeEvent, JapaneseProgress } from "@/features/japanese/types";
 
 function nowIso(): string {
   return new Date().toISOString();
@@ -26,6 +26,7 @@ export async function recordAnswer(
   correct: boolean,
 ): Promise<JapaneseProgress> {
   const id = progressId(userId, kanaId);
+  const practicedAt = nowIso();
   const existing = await getZiGengDb().japaneseProgress.get(id);
   const next: JapaneseProgress = {
     id,
@@ -34,13 +35,26 @@ export async function recordAnswer(
     seen: (existing?.seen ?? 0) + 1,
     correct: (existing?.correct ?? 0) + (correct ? 1 : 0),
     streak: correct ? (existing?.streak ?? 0) + 1 : 0,
-    lastPracticedAt: nowIso(),
+    lastPracticedAt: practicedAt,
   };
-  await getZiGengDb().japaneseProgress.put(next);
+  const event: JapanesePracticeEvent = {
+    id: crypto.randomUUID(),
+    userId,
+    kanaId,
+    correct,
+    practicedAt,
+  };
+  await getZiGengDb().transaction("rw", ["japaneseProgress", "japanesePracticeEvents"], async () => {
+    await getZiGengDb().japaneseProgress.put(next);
+    await getZiGengDb().japanesePracticeEvents.put(event);
+  });
   return next;
 }
 
+/** Count practice answers that actually occurred on/after `sinceIso` (not lifetime seen). */
 export async function weekPracticeCount(userId: string, sinceIso: string): Promise<number> {
-  const rows = await listProgress(userId);
-  return rows.filter((r) => r.lastPracticedAt >= sinceIso).reduce((sum, r) => sum + r.seen, 0);
+  return getZiGengDb()
+    .japanesePracticeEvents.where("[userId+practicedAt]")
+    .between([userId, sinceIso], [userId, "\uffff"], true, true)
+    .count();
 }

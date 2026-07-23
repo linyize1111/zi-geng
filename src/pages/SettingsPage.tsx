@@ -1,10 +1,15 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/common/Button";
 import { PageLoading } from "@/components/common/PageState";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import { useAuth } from "@/features/auth/AuthProvider";
 import { buildDailyReminderIcs, downloadIcs } from "@/features/settings/ics";
+import {
+  readLocalReminderTime,
+  writeLocalReminderTime,
+} from "@/features/settings/local-reminder";
 import {
   fetchUserSettings,
   upsertUserSettings,
@@ -24,6 +29,7 @@ export default function SettingsPage() {
   const auth = useAuth();
   const queryClient = useQueryClient();
   const useMock = env.useMockAdapter || auth.usingMock;
+  const [localReminder, setLocalReminder] = useState(readLocalReminderTime);
 
   const settingsQuery = useQuery({
     queryKey: ["user-settings", auth.user?.id],
@@ -53,7 +59,9 @@ export default function SettingsPage() {
     reminder_time: "09:00" as string | null,
   };
 
-  const reminderDisplay = (settings.reminder_time ?? "09:00").slice(0, 5);
+  const reminderDisplay = useMock
+    ? localReminder
+    : (settings.reminder_time ?? "09:00").slice(0, 5);
 
   return (
     <div className="space-y-6">
@@ -146,6 +154,7 @@ export default function SettingsPage() {
         <h2 className="text-sm font-medium">每日提醒（ICS）</h2>
         <p className="text-sm text-[var(--color-ink-muted)]">
           下載行事曆檔，匯入手機／電腦日曆即可每日提醒；不需推播權限。
+          {useMock ? " Mock 模式會把時間存在本機。" : ""}
         </p>
         <label className="block space-y-2 text-sm">
           <span>提醒時間</span>
@@ -156,7 +165,13 @@ export default function SettingsPage() {
             disabled={!useMock && saveMutation.isPending}
             onChange={(e) => {
               const v = e.target.value;
-              if (!useMock) saveMutation.mutate({ reminder_time: v || null });
+              if (useMock) {
+                const next = (v || "09:00").slice(0, 5);
+                setLocalReminder(next);
+                writeLocalReminderTime(next);
+                return;
+              }
+              saveMutation.mutate({ reminder_time: v || null });
             }}
           />
         </label>
@@ -166,7 +181,9 @@ export default function SettingsPage() {
           onClick={() => {
             const ics = buildDailyReminderIcs({ timeHHMM: reminderDisplay });
             downloadIcs("zi-geng-daily-reminder.ics", ics);
-            if (!useMock && auth.user) {
+            if (useMock) {
+              writeLocalReminderTime(reminderDisplay);
+            } else if (auth.user) {
               saveMutation.mutate({ reminder_time: reminderDisplay });
             }
           }}
