@@ -5,6 +5,11 @@ const sections = [
   { to: routes.learnVocabulary, label: "詞彙", desc: "主題對照・隨機刷卡・情緒／織品／面貌" },
   { to: routes.learnQuotes, label: "名言", desc: "經典與查證解析" },
   { to: routes.learnCraft, label: "寫作技巧", desc: "強弱例與練習" },
+  {
+    to: routes.assessment,
+    label: "人文／文筆評量",
+    desc: "約五十題定位詞彙・古典・評論・場面",
+  },
 ] as const;
 
 export default function LearnPage() {
@@ -14,7 +19,7 @@ export default function LearnPage() {
         <h1 className="font-[family-name:var(--font-sans)] text-3xl tracking-wide">學習</h1>
         <p className="mt-2 text-sm text-[var(--color-ink-muted)]">選擇要深入的內容類型</p>
       </header>
-      <ul className="grid gap-3 sm:grid-cols-3">
+      <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         {sections.map((section) => (
           <li key={section.to}>
             <Link

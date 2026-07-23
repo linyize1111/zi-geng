@@ -196,6 +196,11 @@ export default function SettingsPage() {
 
       <ul className="space-y-2 text-sm">
         <li>
+          <Link className="underline-offset-4 hover:underline" to={routes.assessment}>
+            人文／文筆評量
+          </Link>
+        </li>
+        <li>
           <Link className="underline-offset-4 hover:underline" to={routes.favorites}>
             收藏
           </Link>

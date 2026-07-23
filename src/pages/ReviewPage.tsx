@@ -164,9 +164,13 @@ export default function ReviewPage() {
         <Link className="mx-1 underline-offset-4 hover:underline" to={routes.today}>
           今日
         </Link>
-        或
+        、
         <Link className="mx-1 underline-offset-4 hover:underline" to={routes.write}>
           寫作
+        </Link>
+        或
+        <Link className="mx-1 underline-offset-4 hover:underline" to={routes.assessment}>
+          評量
         </Link>
         接著做即可。
       </p>

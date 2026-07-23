@@ -11,6 +11,7 @@ const primary = [
   { to: routes.learnVocabulary, label: "詞彙" },
   { to: routes.learnQuotes, label: "名言" },
   { to: routes.learnCraft, label: "寫作技巧" },
+  { to: routes.assessment, label: "評量" },
   { to: routes.write, label: "寫作" },
   { to: routes.novels, label: "小說" },
   { to: routes.japanese, label: "日文", flag: "japanese" as const },

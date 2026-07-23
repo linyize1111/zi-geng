@@ -24,6 +24,7 @@ export const routes = {
   japaneseVocabulary: "/japanese/vocabulary",
   japaneseGrammar: "/japanese/grammar",
   review: "/review",
+  assessment: "/learn/assessment",
   favorites: "/favorites",
   settings: "/settings",
   ownerContent: "/owner/content",

@@ -1,11 +1,32 @@
 /**
- * Public-domain classical / literary quotes for writers (no zi-geng originals).
+ * Public-domain classical / literary / philosophical quotes for writers.
+ * Poetry + prose / PD maxims / critical aphorisms (no invented attributions).
  */
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { EXTRA_Q } from "./extra-classical-quotes.mjs";
+import { PHILOSOPHY_Q } from "./extra-philosophy-quotes.mjs";
 import { filterQuoteCards } from "./quote-quality.mjs";
+
+/** Themes that mark non-poetry / philosophical-critical mix */
+const PHILO_THEMES = new Set([
+  "哲學",
+  "認識",
+  "存在",
+  "批判",
+  "創作",
+  "語言",
+  "倫理",
+  "實踐",
+  "戰略",
+  "規範",
+  "美",
+  "場面",
+  "信仰",
+  "教育",
+  "工具",
+]);
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 
@@ -235,6 +256,10 @@ const Q = [
 
 function card(row) {
   const [display_quote, author_name, work_title, theme, short_analysis] = row;
+  const isPhilo = PHILO_THEMES.has(String(theme));
+  const themeTags = isPhilo
+    ? Array.from(new Set(["哲學", theme, ...(theme === "哲學" ? ["認識"] : [])]))
+    : [theme];
   return {
     status: "active",
     display_quote,
@@ -249,34 +274,50 @@ function card(row) {
     bibliography_url: null,
     verification_status: "verified_secondary",
     copyright_status: "public_domain",
-    difficulty: 3,
-    themes: [theme],
+    difficulty: isPhilo ? 4 : 3,
+    themes: themeTags,
     short_analysis,
-    deep_analysis: `公有領域文本。寫作角度：${short_analysis}`,
+    deep_analysis: `查證／通行文本。寫作角度：${short_analysis}`,
     context: `${author_name}《${work_title}》`,
     rhetorical_analysis: "",
     counterpoint: "經典句易成套語；引用或化用時請給出具體場面，避免空喊。",
     writing_insight: short_analysis,
-    reflection_questions: [`若改寫成現代場景，哪個意象必須保留？`],
-    imitation_exercise: `用自己的物象重寫此句的核心關係，不抄原句。`,
-    tags: ["公有領域", "古典", theme],
-    source: { kind: "curated-classical", license: "public domain" },
+    reflection_questions: [`若改寫成現代場景，哪個意象或命題必須保留？`],
+    imitation_exercise: `用自己的物象或論點重寫此句的核心關係，不抄原句。`,
+    tags: [
+      "公有領域",
+      isPhilo ? "哲學箴言" : "古典",
+      ...themeTags,
+      ...(isPhilo ? ["散文／議論"] : ["詩歌"]),
+    ],
+    source: {
+      kind: isPhilo ? "curated-philosophy" : "curated-classical",
+      license: "public domain / short attributed fair-use",
+    },
   };
 }
 
 const seenQ = new Set();
 const mergedRows = [];
-for (const row of [...Q, ...EXTRA_Q]) {
+for (const row of [...Q, ...EXTRA_Q, ...PHILOSOPHY_Q]) {
   const q = String(row[0] ?? "").trim();
   if (!q || seenQ.has(q)) continue;
   seenQ.add(q);
   mergedRows.push(row);
 }
 const cards = filterQuoteCards(mergedRows.map(card));
+const philoCount = cards.filter(
+  (c) => (c.tags ?? []).includes("哲學箴言") || (c.themes ?? []).some((t) => PHILO_THEMES.has(t)),
+).length;
 const payload = {
-  version: 3,
+  version: 4,
   count: cards.length,
-  sources: ["classical-public-domain"],
+  mix: {
+    total: cards.length,
+    philosophyOrProse: philoCount,
+    poetryOrVerse: cards.length - philoCount,
+  },
+  sources: ["classical-public-domain", "philosophy-prose-aphorisms"],
   gate: "quote-quality-v1",
   cards,
 };
@@ -286,4 +327,4 @@ const pub = join(__dir, "../../public/content");
 mkdirSync(pub, { recursive: true });
 writeFileSync(join(pub, "seed-themed-quotes.json"), JSON.stringify(payload), "utf8");
 writeFileSync(join(pub, "seed-wikiquote.json"), JSON.stringify(payload), "utf8");
-console.log("quotes", cards.length);
+console.log("quotes", cards.length, "mix", payload.mix);

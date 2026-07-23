@@ -1,4 +1,5 @@
 import Dexie, { type EntityTable } from "dexie";
+import type { AssessmentAttempt } from "@/features/assessment/types";
 import type { JapanesePracticeEvent, JapaneseProgress } from "@/features/japanese/types";
 import type {
   NovelChapter,
@@ -17,6 +18,7 @@ export type ZiGengDatabase = Dexie & {
   japaneseProgress: EntityTable<JapaneseProgress, "id">;
   japanesePracticeEvents: EntityTable<JapanesePracticeEvent, "id">;
   writingWordEvents: EntityTable<WritingWordEvent, "id">;
+  assessmentAttempts: EntityTable<AssessmentAttempt, "id">;
 };
 
 let db: ZiGengDatabase | null = null;
@@ -48,6 +50,17 @@ export function getZiGengDb(): ZiGengDatabase {
     japaneseProgress: "id, userId, kanaId, lastPracticedAt",
     japanesePracticeEvents: "id, userId, practicedAt, [userId+practicedAt]",
     writingWordEvents: "id, userId, at, [userId+at]",
+  });
+  db.version(5).stores({
+    drafts: "id, userId, updatedAt, deletedAt, promptId",
+    novelProjects: "id, userId, updatedAt, deletedAt",
+    novelCharacters: "id, userId, projectId, sortOrder, deletedAt",
+    novelChapters: "id, userId, projectId, sortOrder, deletedAt",
+    novelScenes: "id, userId, projectId, chapterId, sortOrder, deletedAt",
+    japaneseProgress: "id, userId, kanaId, lastPracticedAt",
+    japanesePracticeEvents: "id, userId, practicedAt, [userId+practicedAt]",
+    writingWordEvents: "id, userId, at, [userId+at]",
+    assessmentAttempts: "id, userId, completedAt, [userId+completedAt]",
   });
   return db;
 }
