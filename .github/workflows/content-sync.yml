@@ -168,8 +168,11 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "chore(content): sync seeds (${{ steps.mode.outputs.mode }})"
+            # Crawl caches / untracked noise can block pull --rebase.
+            git stash push --include-untracked -m "content-sync-pre-rebase" || true
             # Main may move (CI/prettier/docs) while this long job runs.
             git pull --rebase origin main
+            git stash pop || true
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
