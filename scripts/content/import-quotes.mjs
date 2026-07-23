@@ -7,9 +7,10 @@ import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createClient } from "@supabase/supabase-js";
+import { filterQuoteCards } from "./quote-quality.mjs";
 
 const __dir = dirname(fileURLToPath(import.meta.url));
-const jsonPath = process.argv[2] || join(__dir, "fetched-wikiquote.json");
+const jsonPath = process.argv[2] || join(__dir, "seed-themed-quotes.json");
 const url = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL || "";
 const key = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SECRET_KEY || "";
 
@@ -21,9 +22,16 @@ if (!url.startsWith("http") || key.length < 20) {
 }
 
 const payload = JSON.parse(readFileSync(jsonPath, "utf8"));
-const cards = payload.cards ?? payload;
-if (!Array.isArray(cards) || !cards.length) {
+const raw = payload.cards ?? payload;
+if (!Array.isArray(raw) || !raw.length) {
   console.error("No cards in", jsonPath);
+  process.exit(1);
+}
+const cards = filterQuoteCards(raw);
+const rejected = raw.length - cards.length;
+if (rejected > 0) console.warn(`quote-quality rejected ${rejected} bio/topic rows`);
+if (!cards.length) {
+  console.error("No cards passed quote gate in", jsonPath);
   process.exit(1);
 }
 

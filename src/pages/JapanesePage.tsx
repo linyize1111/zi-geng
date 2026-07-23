@@ -46,7 +46,12 @@ function KanaGrid({ script }: { script: KanaScript }) {
       {rows.map(([row, items]) => (
         <div key={row}>
           <p className="mb-2 text-xs tracking-widest text-[var(--color-ink-muted)]">{row}</p>
-          <ul className="grid grid-cols-5 gap-2 sm:grid-cols-5">
+          <ul
+            className={cn(
+              "grid gap-2",
+              items.length <= 3 ? "grid-cols-3 sm:grid-cols-3" : "grid-cols-5 sm:grid-cols-5",
+            )}
+          >
             {items.map((k) => (
               <li
                 key={k.id}
@@ -289,7 +294,7 @@ export default function JapanesePage() {
       ) : null}
 
       <p className="text-xs text-[var(--color-ink-muted)]">
-        音訊與濁音／拗音表稍後再補。回今日？
+        含濁音・半濁音・拗音；音訊稍後再補。回今日？
         <Link className="ml-1 underline-offset-4 hover:underline" to={routes.today}>
           今日
         </Link>

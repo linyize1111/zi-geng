@@ -18,7 +18,7 @@ if (!existsSync(src)) {
   process.exit(1);
 }
 
-const LIMIT = Number(process.env.REVISED_LIMIT || 1600);
+const LIMIT = Number(process.env.REVISED_LIMIT || 3500);
 
 const WANT = new Set(
   `

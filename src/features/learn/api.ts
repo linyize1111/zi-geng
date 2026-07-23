@@ -51,18 +51,76 @@ const VOCAB_SELECT =
 const CRAFT_SELECT =
   "id, name, one_liner, purpose, bad_example, good_example, breakdown, exercise, difficulty, tags";
 
+const PAGE_SIZE = 1000;
+
+/** Supabase/PostgREST defaults to max 1000 rows — page until exhausted. */
+async function fetchAllRows<T>(
+  queryFactory: (
+    from: number,
+    to: number,
+  ) => PromiseLike<{ data: T[] | null; error: { message: string } | null }>,
+): Promise<T[]> {
+  const out: T[] = [];
+  let from = 0;
+  for (;;) {
+    const { data, error } = await queryFactory(from, from + PAGE_SIZE - 1);
+    if (error) throw error;
+    const chunk = data ?? [];
+    out.push(...chunk);
+    if (chunk.length < PAGE_SIZE) break;
+    from += PAGE_SIZE;
+  }
+  return out;
+}
+
+const BIO_YEARS_RE =
+  /^[\u4e00-\u9fffA-Za-z·．.\s]{1,20}[（(][^）)]{4,40}[）)].{0,8}(?:名|字|人|思想家|教育家|作家|詩人|小說家)/;
+const BIO_HEAD_RE =
+  /^(?:[\u4e00-\u9fffA-Za-z·．.\s]{1,24}(?:（[^）]+）|\([^)]+\))?\s*[，,]?\s*)?(?:是一位|是一个|是一個|是一名|為一[位名個个]|乃一[位名]|指的是|生於\d|卒於\d|出生於|本名|原名|字[曰為]|號曰|又名|亦名)/u;
+const BIO_BODY_RE =
+  /小說家|散文家|詩人|作家|文學家|劇作家|思想家|哲學家|出生於|逝世於|代表作|主要作品|英语：|英語：|维基百科|維基百科|是指|是一位|是一个|是一個/;
+
+function looksLikeBioQuote(q: QuoteListItem): boolean {
+  const text = q.display_quote?.trim() ?? "";
+  if (!text || text.includes("開發測試")) return true;
+  if (BIO_YEARS_RE.test(text) || BIO_HEAD_RE.test(text)) return true;
+  if (
+    q.author_name &&
+    text.startsWith(q.author_name) &&
+    BIO_BODY_RE.test(text) &&
+    text.length >= 16 &&
+    !/[「『""]/.test(text)
+  ) {
+    return true;
+  }
+  if (
+    /^[\u4e00-\u9fffA-Za-z·．.]{1,16}是[\u4e00-\u9fff]{0,12}(?:著名)?(?:現代|当代)?(?:中國|中国)?(?:現代)?(?:著名)?(?:作家|詩人|小說家|散文家|文學家)/.test(
+      text,
+    )
+  ) {
+    return true;
+  }
+  if (text.length >= 60 && BIO_BODY_RE.test(text) && !/[「『""]/.test(text)) {
+    const hits = text.match(BIO_BODY_RE)?.length ?? 0;
+    if (hits >= 2 || /生於|卒於|出生於|逝世於|英语：|英語：/.test(text)) return true;
+  }
+  return false;
+}
+
 export async function listQuotes(): Promise<QuoteListItem[]> {
   const client = getSupabaseClient();
   if (!client) throw new Error("尚未設定 Supabase");
-  const { data, error } = await client
-    .from("zg_quotes")
-    .select(QUOTE_SELECT)
-    .eq("status", "active")
-    .neq("copyright_status", "internal_test")
-    .neq("author_name", "開發測試內容")
-    .order("created_at", { ascending: false });
-  if (error) throw error;
-  return ((data ?? []) as QuoteListItem[]).filter((q) => !q.display_quote.includes("開發測試"));
+  const rows = await fetchAllRows<QuoteListItem>((from, to) =>
+    client
+      .from("zg_quotes")
+      .select(QUOTE_SELECT)
+      .eq("status", "active")
+      .neq("copyright_status", "internal_test")
+      .neq("author_name", "開發測試內容")
+      .order("created_at", { ascending: false })
+      .range(from, to),
+  );
+  return rows.filter((q) => !looksLikeBioQuote(q));
 }
 
 export async function getQuote(id: string): Promise<QuoteListItem | null> {
@@ -74,7 +132,9 @@ export async function getQuote(id: string): Promise<QuoteListItem | null> {
     .eq("id", id)
     .maybeSingle();
   if (error) throw error;
-  return data as QuoteListItem | null;
+  const row = data as QuoteListItem | null;
+  if (!row || looksLikeBioQuote(row)) return null;
+  return row;
 }
 
 export type CraftListItem = {
@@ -93,13 +153,14 @@ export type CraftListItem = {
 export async function listVocabulary(): Promise<VocabListItem[]> {
   const client = getSupabaseClient();
   if (!client) throw new Error("尚未設定 Supabase");
-  const { data, error } = await client
-    .from("zg_vocabulary_cards")
-    .select(VOCAB_SELECT)
-    .eq("status", "active")
-    .order("term");
-  if (error) throw error;
-  return (data ?? []) as VocabListItem[];
+  return fetchAllRows<VocabListItem>((from, to) =>
+    client
+      .from("zg_vocabulary_cards")
+      .select(VOCAB_SELECT)
+      .eq("status", "active")
+      .order("term")
+      .range(from, to),
+  );
 }
 
 export async function getVocabulary(id: string): Promise<VocabListItem | null> {
@@ -117,13 +178,14 @@ export async function getVocabulary(id: string): Promise<VocabListItem | null> {
 export async function listCraft(): Promise<CraftListItem[]> {
   const client = getSupabaseClient();
   if (!client) throw new Error("尚未設定 Supabase");
-  const { data, error } = await client
-    .from("zg_craft_cards")
-    .select(CRAFT_SELECT)
-    .eq("status", "active")
-    .order("name");
-  if (error) throw error;
-  return (data ?? []) as CraftListItem[];
+  return fetchAllRows<CraftListItem>((from, to) =>
+    client
+      .from("zg_craft_cards")
+      .select(CRAFT_SELECT)
+      .eq("status", "active")
+      .order("name")
+      .range(from, to),
+  );
 }
 
 export async function getCraft(id: string): Promise<CraftListItem | null> {

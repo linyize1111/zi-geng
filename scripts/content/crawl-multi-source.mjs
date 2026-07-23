@@ -546,9 +546,16 @@ const wikt = await crawlWiktionaryVocab();
 const wikiList = await crawlWikipediaListVocab();
 const vocab = filterVocabCards([...wikt, ...wikiList]).slice(0, VOCAB_LIMIT);
 
-const wikq = await crawlWikiquote();
-const wiks = await crawlWikisourceQuotes();
-const quotes = [...wikq, ...wiks].slice(0, QUOTE_LIMIT);
+let wikq = [];
+let wiks = [];
+if (QUOTE_LIMIT > 0) {
+  const { filterQuoteCards } = await import("./quote-quality.mjs");
+  wikq = filterQuoteCards(await crawlWikiquote());
+  wiks = filterQuoteCards(await crawlWikisourceQuotes());
+} else {
+  console.log("quotes=0 — skip wikiquote/wikisource crawl (curated seeds only)");
+}
+const quotes = [...wikq, ...wiks].slice(0, Math.max(0, QUOTE_LIMIT));
 
 const vocabOut = {
   version: 2,
@@ -559,11 +566,12 @@ const vocabOut = {
   cards: vocab,
 };
 const quoteOut = {
-  version: 2,
+  version: 3,
   mode: MODE,
   count: quotes.length,
   fetched_at: new Date().toISOString(),
   sources: ["zh.wikiquote", "zh.wikisource"],
+  gate: "quote-quality-v1",
   cards: quotes,
 };
 
@@ -579,7 +587,7 @@ writeFileSync(
 const pub = join(__dir, "../../public/content");
 mkdirSync(pub, { recursive: true });
 writeFileSync(join(pub, "seed-multi-source-vocab.json"), JSON.stringify(vocabOut), "utf8");
-writeFileSync(join(pub, "seed-wikiquote.json"), JSON.stringify(quoteOut), "utf8");
+// Never overwrite public seed-wikiquote.json — that file is owned by build-themed-quotes.mjs
 
 console.log(
   `Done. mode=${MODE} vocab=${vocab.length} quotes=${quotes.length} (wikt=${wikt.length} wikiList=${wikiList.length} wikq=${wikq.length} wiks=${wiks.length})`,

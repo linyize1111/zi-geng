@@ -9,6 +9,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { EXTRA_SERIES } from "./extra-theme-series.mjs";
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 
@@ -1216,7 +1217,7 @@ const cards = [];
 const seen = new Set();
 const seriesMeta = [];
 
-for (const s of SERIES) {
+for (const s of [...SERIES, ...EXTRA_SERIES]) {
   const termList = [];
   for (const t of s.terms) {
     if (seen.has(t.term)) continue;

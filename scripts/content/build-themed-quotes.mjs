@@ -4,6 +4,8 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { EXTRA_Q } from "./extra-classical-quotes.mjs";
+import { filterQuoteCards } from "./quote-quality.mjs";
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 
@@ -262,11 +264,20 @@ function card(row) {
   };
 }
 
-const cards = Q.map(card);
+const seenQ = new Set();
+const mergedRows = [];
+for (const row of [...Q, ...EXTRA_Q]) {
+  const q = String(row[0] ?? "").trim();
+  if (!q || seenQ.has(q)) continue;
+  seenQ.add(q);
+  mergedRows.push(row);
+}
+const cards = filterQuoteCards(mergedRows.map(card));
 const payload = {
-  version: 2,
+  version: 3,
   count: cards.length,
   sources: ["classical-public-domain"],
+  gate: "quote-quality-v1",
   cards,
 };
 

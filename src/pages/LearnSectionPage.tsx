@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { PageLoading, PageState } from "@/components/common/PageState";
@@ -169,6 +169,7 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
   const [catFilter, setCatFilter] = useState<string>("全部");
   const [subFilter, setSubFilter] = useState<string>("全部");
   const [vocabMode, setVocabMode] = useState<"browse" | "random" | "themes">("browse");
+  const [listLimit, setListLimit] = useState(80);
 
   const listQuery = useQuery({
     queryKey: ["learn-list", kind, auth.user?.id, useMock],
@@ -248,6 +249,15 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
       return true;
     });
   }, [rows, kind, catFilter, subFilter]);
+
+  const pagedRows = useMemo(() => {
+    if (kind === "vocabulary" && vocabMode !== "browse") return [] as typeof visibleRows;
+    return visibleRows.slice(0, listLimit);
+  }, [visibleRows, listLimit, kind, vocabMode]);
+
+  useEffect(() => {
+    setListLimit(80);
+  }, [catFilter, subFilter, vocabMode, kind]);
 
   if (auth.status === "loading" || listQuery.isLoading || detailQuery.isLoading) {
     return <PageLoading label={`載入${titles[kind]}…`} />;
@@ -400,7 +410,11 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
           {titles[kind]}
         </h1>
         <p className="text-sm text-[var(--color-ink-muted)]">
-          {visibleRows.length ? `共 ${visibleRows.length} 筆` : "尚無資料"}
+          {visibleRows.length
+            ? pagedRows.length < visibleRows.length
+              ? `共 ${visibleRows.length} 筆（已載入 ${pagedRows.length}）`
+              : `共 ${visibleRows.length} 筆`
+            : "尚無資料"}
           {useMock ? " · 離線示範" : ""}
         </p>
       </header>
@@ -494,56 +508,88 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
             }
           />
         ) : (
-          <ul className="space-y-3">
-            {visibleRows.map((row) => {
-              const href = `${listPath(kind)}/${row.id}`;
-              if (isVocab(row)) {
-                return (
-                  <li
-                    key={row.id}
-                    className="flex items-stretch gap-2 rounded-lg border border-[var(--color-line)]"
-                  >
-                    <Link to={href} className="min-w-0 flex-1 p-4 hover:bg-[var(--color-paper-2)]">
-                      <div className="flex flex-wrap items-baseline justify-between gap-2">
-                        <p className="text-lg">{row.term}</p>
-                        {row.category ? (
-                          <p className="text-[10px] text-[var(--color-ink-muted)]">
-                            {row.category}
+          <div className="space-y-3">
+            <ul className="space-y-3">
+              {pagedRows.map((row) => {
+                const href = `${listPath(kind)}/${row.id}`;
+                if (isVocab(row)) {
+                  return (
+                    <li
+                      key={row.id}
+                      className="flex items-stretch gap-2 rounded-lg border border-[var(--color-line)]"
+                    >
+                      <Link
+                        to={href}
+                        className="min-w-0 flex-1 p-4 hover:bg-[var(--color-paper-2)]"
+                      >
+                        <div className="flex flex-wrap items-baseline justify-between gap-2">
+                          <p className="text-lg">{row.term}</p>
+                          {row.category ? (
+                            <p className="text-[10px] text-[var(--color-ink-muted)]">
+                              {row.category}
+                            </p>
+                          ) : null}
+                        </div>
+                        {row.zhuyin ? (
+                          <p className="mt-0.5 text-xs text-[var(--color-ink-muted)]">
+                            {row.zhuyin}
                           </p>
                         ) : null}
+                        <p className="mt-1 text-sm text-[var(--color-ink-muted)]">
+                          {row.short_def}
+                        </p>
+                      </Link>
+                      <div className="flex items-start p-2">
+                        <OwnerRemoveCardButton
+                          kind="vocabulary"
+                          contentId={row.id}
+                          compact
+                          onRemoved={() => void listQuery.refetch()}
+                        />
                       </div>
-                      {row.zhuyin ? (
-                        <p className="mt-0.5 text-xs text-[var(--color-ink-muted)]">{row.zhuyin}</p>
-                      ) : null}
-                      <p className="mt-1 text-sm text-[var(--color-ink-muted)]">{row.short_def}</p>
-                    </Link>
-                    <div className="flex items-start p-2">
-                      <OwnerRemoveCardButton
-                        kind="vocabulary"
-                        contentId={row.id}
-                        compact
-                        onRemoved={() => void listQuery.refetch()}
-                      />
-                    </div>
-                  </li>
-                );
-              }
-              if (isQuote(row)) {
+                    </li>
+                  );
+                }
+                if (isQuote(row)) {
+                  return (
+                    <li
+                      key={row.id}
+                      className="flex items-stretch gap-2 rounded-lg border border-[var(--color-line)]"
+                    >
+                      <Link
+                        to={href}
+                        className="min-w-0 flex-1 p-4 hover:bg-[var(--color-paper-2)]"
+                      >
+                        <p className="line-clamp-2 text-lg leading-relaxed">{row.display_quote}</p>
+                        <p className="mt-2 text-sm text-[var(--color-ink-muted)]">
+                          {row.author_name}
+                          {row.themes?.length ? ` · ${row.themes.slice(0, 2).join("、")}` : ""}
+                        </p>
+                      </Link>
+                      <div className="flex items-start p-2">
+                        <OwnerRemoveCardButton
+                          kind="quote"
+                          contentId={row.id}
+                          compact
+                          onRemoved={() => void listQuery.refetch()}
+                        />
+                      </div>
+                    </li>
+                  );
+                }
+                if (!isCraft(row)) return null;
                 return (
                   <li
                     key={row.id}
                     className="flex items-stretch gap-2 rounded-lg border border-[var(--color-line)]"
                   >
                     <Link to={href} className="min-w-0 flex-1 p-4 hover:bg-[var(--color-paper-2)]">
-                      <p className="line-clamp-2 text-lg leading-relaxed">{row.display_quote}</p>
-                      <p className="mt-2 text-sm text-[var(--color-ink-muted)]">
-                        {row.author_name}
-                        {row.themes?.length ? ` · ${row.themes.slice(0, 2).join("、")}` : ""}
-                      </p>
+                      <p className="text-lg">{row.name}</p>
+                      <p className="mt-1 text-sm text-[var(--color-ink-muted)]">{row.one_liner}</p>
                     </Link>
                     <div className="flex items-start p-2">
                       <OwnerRemoveCardButton
-                        kind="quote"
+                        kind="craft"
                         contentId={row.id}
                         compact
                         onRemoved={() => void listQuery.refetch()}
@@ -551,29 +597,18 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
                     </div>
                   </li>
                 );
-              }
-              if (!isCraft(row)) return null;
-              return (
-                <li
-                  key={row.id}
-                  className="flex items-stretch gap-2 rounded-lg border border-[var(--color-line)]"
-                >
-                  <Link to={href} className="min-w-0 flex-1 p-4 hover:bg-[var(--color-paper-2)]">
-                    <p className="text-lg">{row.name}</p>
-                    <p className="mt-1 text-sm text-[var(--color-ink-muted)]">{row.one_liner}</p>
-                  </Link>
-                  <div className="flex items-start p-2">
-                    <OwnerRemoveCardButton
-                      kind="craft"
-                      contentId={row.id}
-                      compact
-                      onRemoved={() => void listQuery.refetch()}
-                    />
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
+              })}
+            </ul>
+            {pagedRows.length < visibleRows.length ? (
+              <button
+                type="button"
+                className="w-full rounded-md border border-[var(--color-line)] py-2.5 text-sm text-[var(--color-ink-muted)] hover:bg-[var(--color-paper-2)]"
+                onClick={() => setListLimit((n) => n + 80)}
+              >
+                再載入 80 筆（尚餘 {visibleRows.length - pagedRows.length}）
+              </button>
+            ) : null}
+          </div>
         )
       ) : null}
     </div>

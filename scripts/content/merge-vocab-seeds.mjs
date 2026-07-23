@@ -38,17 +38,17 @@ const concised = filterVocabCards(load("seed-moe-concised.json")).map(retag);
 const crawled = filterVocabCards(load("fetched-wiktionary.json")).map(retag);
 const idiomsAll = filterVocabCards(load("seed-idioms-raw.json")).map(retag);
 
-const IDIOM_LIMIT = Number(process.env.IDIOM_KEEP || 200);
+const IDIOM_LIMIT = Number(process.env.IDIOM_KEEP || 500);
 const idioms = idiomsAll.slice(0, IDIOM_LIMIT).map((c) => ({
   ...c,
   difficulty: Math.max(3, c.difficulty ?? 3),
   tags: Array.from(new Set([...(c.tags ?? []), "成語", "輔助", "已篩選"])),
 }));
 
-const REVISED_KEEP = Number(process.env.REVISED_KEEP || 1400);
-const CONCISED_KEEP = Number(process.env.CONCISED_KEEP || 900);
-const CRAWL_KEEP = Number(process.env.CRAWL_KEEP || 500);
-const HARVEST_KEEP = Number(process.env.HARVEST_KEEP || 3500);
+const REVISED_KEEP = Number(process.env.REVISED_KEEP || 3500);
+const CONCISED_KEEP = Number(process.env.CONCISED_KEEP || 2500);
+const CRAWL_KEEP = Number(process.env.CRAWL_KEEP || 800);
+const HARVEST_KEEP = Number(process.env.HARVEST_KEEP || 6000);
 
 const seen = new Set();
 const cards = [];
@@ -82,7 +82,7 @@ const payload = {
   mix,
   filter: "writing-literacy-v2",
   categories: "writing-taxonomy-v1",
-  target: 5000,
+  target: 10000,
   cards,
 };
 writeFileSync(join(__dir, "seed-literary-vocab.json"), JSON.stringify(payload, null, 2), "utf8");

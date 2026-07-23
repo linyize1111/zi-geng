@@ -101,17 +101,26 @@ jobs:
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
         run: node scripts/content/archive-self-quotes.mjs
 
-      - name: Multi-source crawl
+      - name: Purge bio-as-quote rows
+        continue-on-error: true
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL || secrets.VITE_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || secrets.SUPABASE_SECRET_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: node scripts/content/purge-bio-quotes.mjs
+
+      - name: Multi-source crawl (vocab only — quotes blocked)
         continue-on-error: true
         run: |
           MODE="${{ steps.mode.outputs.mode }}"
+          # Do NOT crawl/import wikiquote: theme/author pages often yield bios as "quotes".
           if [ "$MODE" = "bulk" ]; then
-            npm run content:crawl -- --mode=bulk --vocab=450 --quotes=220
+            npm run content:crawl -- --mode=bulk --vocab=450 --quotes=0
           else
-            npm run content:crawl -- --mode=update --vocab=100 --quotes=50
+            npm run content:crawl -- --mode=update --vocab=100 --quotes=0
           fi
 
-      - name: Import crawled extras
+      - name: Import crawled vocab extras
         continue-on-error: true
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL || secrets.VITE_SUPABASE_URL }}
@@ -121,9 +130,7 @@ jobs:
           if [ -f scripts/content/fetched-wiktionary.json ]; then
             node scripts/content/import-vocab.mjs scripts/content/fetched-wiktionary.json
           fi
-          if [ -f scripts/content/fetched-wikiquote.json ]; then
-            node scripts/content/import-quotes.mjs scripts/content/fetched-wikiquote.json
-          fi
+          # Intentionally skip fetched-wikiquote.json — use curated seed-themed-quotes only.
 
       - name: Apply unlimited-refresh RPC via Management SQL API
         continue-on-error: true

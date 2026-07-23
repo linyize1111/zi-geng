@@ -16,7 +16,7 @@ import { passesWritingLiteracyGate, writingLiteracyScore } from "./vocab-quality
 const __dir = dirname(fileURLToPath(import.meta.url));
 const perTheme = (() => {
   const hit = process.argv.find((a) => a.startsWith("--per-theme="));
-  return hit ? Number(hit.split("=")[1]) : 320;
+  return hit ? Number(hit.split("=")[1]) : 480;
 })();
 
 /** @type {{ id: string; category: string; re: RegExp; boost?: RegExp }[]} */

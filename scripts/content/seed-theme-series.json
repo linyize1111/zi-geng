@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "count": 102,
+  "count": 197,
   "series": [
     {
       "id": "color-red",
@@ -253,6 +253,301 @@
         "斷言"
       ],
       "count": 8
+    },
+    {
+      "id": "atmos-rain",
+      "title": "雨的層次",
+      "family": "氛圍",
+      "blurb": "霢霂／瀟瀟／滂沱／霪雨／驟雨——雨是節奏與壓迫。",
+      "category": "主題・氛圍",
+      "terms": [
+        "霢霂",
+        "瀟瀟",
+        "滂沱",
+        "霪雨",
+        "驟雨"
+      ],
+      "count": 5
+    },
+    {
+      "id": "atmos-wind",
+      "title": "風怎麼吹",
+      "family": "氛圍",
+      "blurb": "颯然／凜冽／習習／蕭瑟／料峭——風的溫度決定場景骨頭。",
+      "category": "主題・氛圍",
+      "terms": [
+        "凜冽",
+        "習習",
+        "蕭瑟",
+        "料峭"
+      ],
+      "count": 4
+    },
+    {
+      "id": "atmos-light",
+      "title": "光的質地",
+      "family": "氛圍",
+      "blurb": "熹微／曄曄／黯淡／昏黃／曦——光能敘事。",
+      "category": "主題・氛圍",
+      "terms": [
+        "熹微",
+        "曄曄",
+        "黯淡",
+        "昏黃",
+        "曦"
+      ],
+      "count": 5
+    },
+    {
+      "id": "verb-hand",
+      "title": "手怎麼動",
+      "family": "動詞",
+      "blurb": "撫／攥／捻／撥／拭——手部動詞決定親密與暴力距離。",
+      "category": "主題・動詞",
+      "terms": [
+        "撫",
+        "攥",
+        "捻",
+        "撥",
+        "拭"
+      ],
+      "count": 5
+    },
+    {
+      "id": "verb-mouth",
+      "title": "嘴與喉",
+      "family": "動詞",
+      "blurb": "啐／嚥／哽／叱／吭——口腔動作寫潛台詞。",
+      "category": "主題・動詞",
+      "terms": [
+        "啐",
+        "嚥",
+        "哽",
+        "叱",
+        "吭"
+      ],
+      "count": 5
+    },
+    {
+      "id": "emotion-subtle",
+      "title": "細微情緒",
+      "family": "情緒",
+      "blurb": "悻悻／惴惴／怏怏／愀然／悵惘——比難過生氣更可演。",
+      "category": "主題・情緒",
+      "terms": [
+        "悻悻",
+        "惴惴",
+        "怏怏",
+        "悵惘"
+      ],
+      "count": 4
+    },
+    {
+      "id": "emotion-intensity",
+      "title": "情緒爆點",
+      "family": "情緒",
+      "blurb": "震怒／悲慟／狂喜／錯愕／羞憤——高強度詞要省著用。",
+      "category": "主題・情緒",
+      "terms": [
+        "震怒",
+        "悲慟",
+        "狂喜",
+        "錯愕",
+        "羞憤"
+      ],
+      "count": 5
+    },
+    {
+      "id": "space-distance",
+      "title": "遠近與隔",
+      "family": "空間",
+      "blurb": "咫尺／天涯／方寸／毗鄰／遼闊——替換很近很遠。",
+      "category": "主題・空間",
+      "terms": [
+        "咫尺",
+        "天涯",
+        "方寸",
+        "毗鄰",
+        "遼闊"
+      ],
+      "count": 5
+    },
+    {
+      "id": "sensory-smell",
+      "title": "氣味詞",
+      "family": "感官",
+      "blurb": "馥郁／腥膻／腐臭／清芬／嗆——氣味比好聞難聞更能定場。",
+      "category": "主題・感官",
+      "terms": [
+        "馥郁",
+        "腥膻",
+        "腐臭",
+        "清芬",
+        "嗆"
+      ],
+      "count": 5
+    },
+    {
+      "id": "sensory-touch",
+      "title": "觸感詞",
+      "family": "感官",
+      "blurb": "粗糙／滑膩／冰涼／灼熱／酥麻——皮膚比形容詞誠實。",
+      "category": "主題・感官",
+      "terms": [
+        "粗糙",
+        "滑膩",
+        "冰涼",
+        "灼熱",
+        "酥麻"
+      ],
+      "count": 5
+    },
+    {
+      "id": "critique-tone",
+      "title": "評論語氣",
+      "family": "評論",
+      "blurb": "犀利／中肯／尖酸／溢美／刻薄——評論者的刀有不同刀口。",
+      "category": "主題・評論",
+      "terms": [
+        "犀利",
+        "中肯",
+        "尖酸",
+        "溢美",
+        "刻薄"
+      ],
+      "count": 5
+    },
+    {
+      "id": "character-traits",
+      "title": "性格棱角",
+      "family": "人物",
+      "blurb": "剛愎／優柔／溫潤／狷介／圓滑——人物卡用棱角。",
+      "category": "主題・人物",
+      "terms": [
+        "剛愎",
+        "優柔",
+        "溫潤",
+        "狷介",
+        "圓滑"
+      ],
+      "count": 5
+    },
+    {
+      "id": "imagery-plant",
+      "title": "植物意象",
+      "family": "意象",
+      "blurb": "枯榮／新綠／殘荷／苔蘚／荊棘——植物狀態＝時間縮寫。",
+      "category": "主題・意象",
+      "terms": [
+        "枯榮",
+        "新綠",
+        "殘荷",
+        "苔蘚",
+        "荊棘"
+      ],
+      "count": 5
+    },
+    {
+      "id": "time-aspect",
+      "title": "時間質感",
+      "family": "時間",
+      "blurb": "須臾／經年／轉瞬／曠日／良久——時間長度要有肌肉感。",
+      "category": "主題・時間",
+      "terms": [
+        "須臾",
+        "經年",
+        "轉瞬",
+        "曠日",
+        "良久"
+      ],
+      "count": 5
+    },
+    {
+      "id": "guoxue-virtue",
+      "title": "國學德目",
+      "family": "國學",
+      "blurb": "仁／義／禮／智／信——人物行為的古典座標。",
+      "category": "主題・國學",
+      "terms": [
+        "仁",
+        "義",
+        "禮",
+        "智",
+        "信"
+      ],
+      "count": 5
+    },
+    {
+      "id": "guoxue-empty",
+      "title": "虛靜與有無",
+      "family": "國學",
+      "blurb": "虛／靜／無／有／淡——道家語彙寫節奏與留白。",
+      "category": "主題・國學",
+      "terms": [
+        "虛",
+        "靜",
+        "無",
+        "有",
+        "淡"
+      ],
+      "count": 5
+    },
+    {
+      "id": "verb-eye",
+      "title": "眼的動作",
+      "family": "動詞",
+      "blurb": "睨／瞥／盯／瞟／瞬——視線長度決定權力與欲望。",
+      "category": "主題・動詞",
+      "terms": [
+        "瞟",
+        "瞬"
+      ],
+      "count": 2
+    },
+    {
+      "id": "atmos-night",
+      "title": "夜的層次",
+      "family": "氛圍",
+      "blurb": "夤夜／子夜／破曉／午夜／深夜——夜不是一塊黑。",
+      "category": "主題・氛圍",
+      "terms": [
+        "夤夜",
+        "子夜",
+        "破曉",
+        "午夜",
+        "深夜"
+      ],
+      "count": 5
+    },
+    {
+      "id": "imagery-water",
+      "title": "水的動態",
+      "family": "意象",
+      "blurb": "涓涓／滔滔／潺潺／洶湧／涟漪——水的速度＝情緒速度。",
+      "category": "主題・意象",
+      "terms": [
+        "涓涓",
+        "滔滔",
+        "潺潺",
+        "洶湧",
+        "涟漪"
+      ],
+      "count": 5
+    },
+    {
+      "id": "critique-structure",
+      "title": "結構評語",
+      "family": "評論",
+      "blurb": "鬆散／綿密／跳脫／堆砌／節制——談結構比談寫得好有用。",
+      "category": "主題・評論",
+      "terms": [
+        "鬆散",
+        "綿密",
+        "跳脫",
+        "堆砌",
+        "節制"
+      ],
+      "count": 5
     }
   ],
   "cards": [
@@ -3043,6 +3338,2502 @@
         "kind": "zi-geng-theme-series",
         "seriesId": "speech-tone",
         "seriesTitle": "說話的溫度",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "霢霂",
+      "zhuyin": "ㄇㄞˋ ㄇㄨˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "小雨連綿。",
+      "long_def": "比細雨更文言、更黏。對照滂沱：一滲一灌。",
+      "usage_context": "「細雨霢霂」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-rain",
+        "對照"
+      ],
+      "daily_example": "整下午霢霂，衣服乾不了。",
+      "literary_example": "霢霂把日子潮進縫裡。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-rain",
+        "seriesTitle": "雨的層次",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "瀟瀟",
+      "zhuyin": "ㄒㄧㄠ ㄒㄧㄠ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "風雨急疾。",
+      "long_def": "聲與勢並寫。比霢霂更有打擊感。",
+      "usage_context": "「風雨瀟瀟」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-rain"
+      ],
+      "daily_example": "窗外瀟瀟一陣，談話停了。",
+      "literary_example": "瀟瀟是打斷句號的雨。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-rain",
+        "seriesTitle": "雨的層次",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "滂沱",
+      "zhuyin": "ㄆㄤ ㄊㄨㄛˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "大雨傾注。",
+      "long_def": "量與力。場面需要洗掉什麼時用。",
+      "usage_context": "「大雨滂沱」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-rain",
+        "對照"
+      ],
+      "daily_example": "滂沱把街燈洗白。",
+      "literary_example": "滂沱拒絕細節。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-rain",
+        "seriesTitle": "雨的層次",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "霪雨",
+      "zhuyin": "ㄧㄣˊ ㄩˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "久雨不停。",
+      "long_def": "時間維度的雨。陰鬱、拖延。",
+      "usage_context": "「霪雨霏霏」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-rain"
+      ],
+      "daily_example": "霪雨一週，心情發青。",
+      "literary_example": "霪雨是拖長的低氣壓。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-rain",
+        "seriesTitle": "雨的層次",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "驟雨",
+      "zhuyin": "ㄓㄡˋ ㄩˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "突來急雨。",
+      "long_def": "節奏突變。情節轉折的天氣版。",
+      "usage_context": "「夏日驟雨」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-rain"
+      ],
+      "daily_example": "驟雨把攤販趕進騎樓。",
+      "literary_example": "驟雨像一句插話。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-rain",
+        "seriesTitle": "雨的層次",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "凜冽",
+      "zhuyin": "ㄌㄧㄣˇ ㄌㄧㄝˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "刺骨寒。",
+      "long_def": "比冷有攻擊性。",
+      "usage_context": "「北風凜冽」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-wind"
+      ],
+      "daily_example": "凜冽得說話哈白煙。",
+      "literary_example": "凜冽審判皮膚。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-wind",
+        "seriesTitle": "風怎麼吹",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "習習",
+      "zhuyin": "ㄒㄧˊ ㄒㄧˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "微風和舒。",
+      "long_def": "溫柔反復。",
+      "usage_context": "「微風習習」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-wind",
+        "對照"
+      ],
+      "daily_example": "湖邊習習，適合不說話。",
+      "literary_example": "習習是被允許的輕。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-wind",
+        "seriesTitle": "風怎麼吹",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "蕭瑟",
+      "zhuyin": "ㄒㄧㄠ ㄙㄜˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "淒清。",
+      "long_def": "風＋心情綁定。",
+      "usage_context": "「秋風蕭瑟」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-wind"
+      ],
+      "daily_example": "公園蕭瑟，只剩掃落葉的人。",
+      "literary_example": "蕭瑟給風景加灰。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-wind",
+        "seriesTitle": "風怎麼吹",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "料峭",
+      "zhuyin": "ㄌㄧㄠˋ ㄑㄧㄠˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "微寒。",
+      "long_def": "春寒常見。比凜冽輕。",
+      "usage_context": "「春寒料峭」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-wind"
+      ],
+      "daily_example": "料峭得還得披一件。",
+      "literary_example": "料峭提醒季節未穩。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-wind",
+        "seriesTitle": "風怎麼吹",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "熹微",
+      "zhuyin": "ㄒㄧ ㄨㄟˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "晨光微明。",
+      "long_def": "一天開始的薄光。",
+      "usage_context": "「晨光熹微」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-light",
+        "光"
+      ],
+      "daily_example": "熹微裡她還在回訊息。",
+      "literary_example": "熹微還沒決定白天顏色。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-light",
+        "seriesTitle": "光的質地",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "曄曄",
+      "zhuyin": "ㄧㄝˋ ㄧㄝˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "光明盛大。",
+      "long_def": "盛、耀；可諷刺輝煌。",
+      "usage_context": "「光華曄曄」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-light"
+      ],
+      "daily_example": "商場燈曄曄，人卻匆匆。",
+      "literary_example": "曄曄有時是噪音。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-light",
+        "seriesTitle": "光的質地",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "黯淡",
+      "zhuyin": "ㄢˋ ㄉㄢˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "不明亮。",
+      "long_def": "可寫燈，也可寫命運。",
+      "usage_context": "「前景黯淡」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-light"
+      ],
+      "daily_example": "走廊燈黯淡，只照得見鞋。",
+      "literary_example": "黯淡讓細節撤退。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-light",
+        "seriesTitle": "光的質地",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "昏黃",
+      "zhuyin": "ㄏㄨㄣ ㄏㄨㄤˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "暗黃的光。",
+      "long_def": "黃昏、老燈泡、回憶濾鏡。",
+      "usage_context": "「燈光昏黃」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-light"
+      ],
+      "daily_example": "食堂昏黃，飯菜都顯舊。",
+      "literary_example": "昏黃把時間調慢。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-light",
+        "seriesTitle": "光的質地",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "曦",
+      "zhuyin": "ㄒㄧ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "晨光。",
+      "long_def": "單字文言。與暮對。",
+      "usage_context": "「晨曦」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-light",
+        "光"
+      ],
+      "daily_example": "窗縫一道曦。",
+      "literary_example": "曦是夜的讓步。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-light",
+        "seriesTitle": "光的質地",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "撫",
+      "zhuyin": "ㄈㄨˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "輕摸、安慰。",
+      "long_def": "溫度低。對照攥。",
+      "usage_context": "「撫過髮頂」。",
+      "register": "literary",
+      "category": "主題・動詞",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "動詞",
+        "系列:verb-hand",
+        "對照"
+      ],
+      "daily_example": "他撫了撫孩子的背。",
+      "literary_example": "撫是允許停留的觸。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "verb-hand",
+        "seriesTitle": "手怎麼動",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "攥",
+      "zhuyin": "ㄗㄨㄢˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "用力握緊。",
+      "long_def": "怒、怕、藏。",
+      "usage_context": "「攥緊拳頭」。",
+      "register": "literary",
+      "category": "主題・動詞",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "動詞",
+        "系列:verb-hand",
+        "對照"
+      ],
+      "daily_example": "她攥著鑰匙走到門口。",
+      "literary_example": "攥把情緒收成硬塊。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "verb-hand",
+        "seriesTitle": "手怎麼動",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "捻",
+      "zhuyin": "ㄋㄧㄢˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "用指搓轉。",
+      "long_def": "小、反復。",
+      "usage_context": "「捻滅煙頭」。",
+      "register": "literary",
+      "category": "主題・動詞",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "動詞",
+        "系列:verb-hand"
+      ],
+      "daily_example": "他捻著衣角不說話。",
+      "literary_example": "捻是思考的手指版。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "verb-hand",
+        "seriesTitle": "手怎麼動",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "撥",
+      "zhuyin": "ㄅㄛ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "推開、調動。",
+      "long_def": "帶方向。",
+      "usage_context": "「撥開霧」。",
+      "register": "literary",
+      "category": "主題・動詞",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "動詞",
+        "系列:verb-hand"
+      ],
+      "daily_example": "她撥開擋路的椅子。",
+      "literary_example": "撥製造通路。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "verb-hand",
+        "seriesTitle": "手怎麼動",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "拭",
+      "zhuyin": "ㄕˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "擦去。",
+      "long_def": "比擦更文言。",
+      "usage_context": "「拭去淚痕」。",
+      "register": "literary",
+      "category": "主題・動詞",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "動詞",
+        "系列:verb-hand"
+      ],
+      "daily_example": "他匆匆拭了下眼角。",
+      "literary_example": "拭想刪掉證據。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "verb-hand",
+        "seriesTitle": "手怎麼動",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "啐",
+      "zhuyin": "ㄘㄨㄟˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "吐；斥。",
+      "long_def": "輕蔑的生理化。",
+      "usage_context": "「啐了一口」。",
+      "register": "literary",
+      "category": "主題・動詞",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "動詞",
+        "系列:verb-mouth"
+      ],
+      "daily_example": "他啐地，轉身就走。",
+      "literary_example": "啐把話變成污。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "verb-mouth",
+        "seriesTitle": "嘴與喉",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "嚥",
+      "zhuyin": "ㄧㄢˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "吞下去。",
+      "long_def": "嚥下話語＝壓抑。",
+      "usage_context": "「把話嚥回去」。",
+      "register": "literary",
+      "category": "主題・動詞",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "動詞",
+        "系列:verb-mouth",
+        "對照"
+      ],
+      "daily_example": "她嚥了嚥，改口說沒事。",
+      "literary_example": "嚥是未出口的刪除鍵。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "verb-mouth",
+        "seriesTitle": "嘴與喉",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "哽",
+      "zhuyin": "ㄍㄥˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "聲氣堵住。",
+      "long_def": "情緒卡喉。",
+      "usage_context": "「聲音一哽」。",
+      "register": "literary",
+      "category": "主題・動詞",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "動詞",
+        "系列:verb-mouth"
+      ],
+      "daily_example": "說到一半他哽住了。",
+      "literary_example": "哽讓句子骨折。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "verb-mouth",
+        "seriesTitle": "嘴與喉",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "叱",
+      "zhuyin": "ㄔˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "大聲呵斥。",
+      "long_def": "權威、怒。",
+      "usage_context": "「怒叱」。",
+      "register": "literary",
+      "category": "主題・動詞",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "動詞",
+        "系列:verb-mouth"
+      ],
+      "daily_example": "隊長叱退圍觀的人。",
+      "literary_example": "叱是音量裡的階級。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "verb-mouth",
+        "seriesTitle": "嘴與喉",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "吭",
+      "zhuyin": "ㄎㄥ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "出聲。",
+      "long_def": "不吭聲＝選擇沉默。",
+      "usage_context": "「一聲不吭」。",
+      "register": "literary",
+      "category": "主題・動詞",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "動詞",
+        "系列:verb-mouth"
+      ],
+      "daily_example": "問三次他都不吭聲。",
+      "literary_example": "不吭是一種答。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "verb-mouth",
+        "seriesTitle": "嘴與喉",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "悻悻",
+      "zhuyin": "ㄒㄧㄥˋ ㄒㄧㄥˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "怨怒不平。",
+      "long_def": "氣未消的步伐。",
+      "usage_context": "「悻悻離去」。",
+      "register": "literary",
+      "category": "主題・情緒",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "情緒",
+        "系列:emotion-subtle"
+      ],
+      "daily_example": "他悻悻摔上門。",
+      "literary_example": "悻悻把怒帶出房間。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "emotion-subtle",
+        "seriesTitle": "細微情緒",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "惴惴",
+      "zhuyin": "ㄓㄨㄟˋ ㄓㄨㄟˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "恐懼不安。",
+      "long_def": "持續低燒的怕。",
+      "usage_context": "「惴惴不安」。",
+      "register": "literary",
+      "category": "主題・情緒",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "情緒",
+        "系列:emotion-subtle"
+      ],
+      "daily_example": "等成績時她惴惴的。",
+      "literary_example": "惴惴是還沒爆炸的怕。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "emotion-subtle",
+        "seriesTitle": "細微情緒",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "怏怏",
+      "zhuyin": "ㄧㄤˋ ㄧㄤˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "不服氣。",
+      "long_def": "輸後的餘味。",
+      "usage_context": "「怏怏不樂」。",
+      "register": "literary",
+      "category": "主題・情緒",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "情緒",
+        "系列:emotion-subtle"
+      ],
+      "daily_example": "輸了球他怏怏坐著。",
+      "literary_example": "怏怏拒絕祝賀。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "emotion-subtle",
+        "seriesTitle": "細微情緒",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "悵惘",
+      "zhuyin": "ㄔㄤˋ ㄨㄤˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "失意迷茫。",
+      "long_def": "比傷心空。",
+      "usage_context": "「悵惘良久」。",
+      "register": "literary",
+      "category": "主題・情緒",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "情緒",
+        "系列:emotion-subtle"
+      ],
+      "daily_example": "畢業後他有點悵惘。",
+      "literary_example": "悵惘找不到掛鉤。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "emotion-subtle",
+        "seriesTitle": "細微情緒",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "震怒",
+      "zhuyin": "ㄓㄣˋ ㄋㄨˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "大怒。",
+      "long_def": "權力級。勿寫碎事。",
+      "usage_context": "「為之震怒」。",
+      "register": "literary",
+      "category": "主題・情緒",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "情緒",
+        "系列:emotion-intensity"
+      ],
+      "daily_example": "董事會震怒，股價先跌。",
+      "literary_example": "震怒需要觀眾。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "emotion-intensity",
+        "seriesTitle": "情緒爆點",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "悲慟",
+      "zhuyin": "ㄅㄟ ㄊㄨㄥˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "極度悲哀。",
+      "long_def": "喪、永別。",
+      "usage_context": "「悲慟欲絕」。",
+      "register": "literary",
+      "category": "主題・情緒",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "情緒",
+        "系列:emotion-intensity"
+      ],
+      "daily_example": "告別式上她悲慟失聲。",
+      "literary_example": "悲慟佔滿胸腔。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "emotion-intensity",
+        "seriesTitle": "情緒爆點",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "狂喜",
+      "zhuyin": "ㄎㄨㄤˊ ㄒㄧˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "極度歡喜。",
+      "long_def": "幾乎失態。",
+      "usage_context": "「狂喜不已」。",
+      "register": "literary",
+      "category": "主題・情緒",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "情緒",
+        "系列:emotion-intensity"
+      ],
+      "daily_example": "中獎瞬間他近乎狂喜。",
+      "literary_example": "狂喜忘記後果。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "emotion-intensity",
+        "seriesTitle": "情緒爆點",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "錯愕",
+      "zhuyin": "ㄘㄨㄛˋ ㄜˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "突驚愣住。",
+      "long_def": "時間暫停一秒。",
+      "usage_context": "「一時錯愕」。",
+      "register": "literary",
+      "category": "主題・情緒",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "情緒",
+        "系列:emotion-intensity"
+      ],
+      "daily_example": "門開見他，她錯愕。",
+      "literary_example": "錯愕還沒選好表情。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "emotion-intensity",
+        "seriesTitle": "情緒爆點",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "羞憤",
+      "zhuyin": "ㄒㄧㄡ ㄈㄣˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "羞愧而憤。",
+      "long_def": "被看穿後的複合火。",
+      "usage_context": "「又羞又憤」。",
+      "register": "literary",
+      "category": "主題・情緒",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "情緒",
+        "系列:emotion-intensity"
+      ],
+      "daily_example": "當眾被揭穿，他羞憤低頭。",
+      "literary_example": "羞憤兩種熱疊加。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "emotion-intensity",
+        "seriesTitle": "情緒爆點",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "咫尺",
+      "zhuyin": "ㄓˇ ㄔˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "極近。",
+      "long_def": "也可寫近在咫尺卻心遠。",
+      "usage_context": "「近在咫尺」。",
+      "register": "literary",
+      "category": "主題・空間",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "空間",
+        "系列:space-distance",
+        "對照"
+      ],
+      "daily_example": "對桌咫尺，一句話過不去。",
+      "literary_example": "咫尺諷刺心遠。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "space-distance",
+        "seriesTitle": "遠近與隔",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "天涯",
+      "zhuyin": "ㄊㄧㄢ ㄧㄚˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "極遠。",
+      "long_def": "情感化的遠。",
+      "usage_context": "「天涯海角」。",
+      "register": "literary",
+      "category": "主題・空間",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "空間",
+        "系列:space-distance",
+        "對照"
+      ],
+      "daily_example": "他說去天涯，其實只是離職。",
+      "literary_example": "天涯是心的地圖外。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "space-distance",
+        "seriesTitle": "遠近與隔",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "方寸",
+      "zhuyin": "ㄈㄤ ㄘㄨㄣˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "極小空間；亦指心。",
+      "long_def": "方寸大亂＝心亂。",
+      "usage_context": "「方寸之地」。",
+      "register": "literary",
+      "category": "主題・空間",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "空間",
+        "系列:space-distance"
+      ],
+      "daily_example": "電梯方寸，兩人無話。",
+      "literary_example": "方寸把世界縮進胸口。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "space-distance",
+        "seriesTitle": "遠近與隔",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "毗鄰",
+      "zhuyin": "ㄆㄧˊ ㄌㄧㄣˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "相鄰接壤。",
+      "long_def": "地理或關係的貼近。",
+      "usage_context": "「毗鄰而居」。",
+      "register": "literary",
+      "category": "主題・空間",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "空間",
+        "系列:space-distance"
+      ],
+      "daily_example": "兩家毗鄰，聲響互聞。",
+      "literary_example": "毗鄰讓秘密難藏。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "space-distance",
+        "seriesTitle": "遠近與隔",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "遼闊",
+      "zhuyin": "ㄌㄧㄠˊ ㄎㄨㄛˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "廣遠空闊。",
+      "long_def": "對照方寸。",
+      "usage_context": "「遼闊平原」。",
+      "register": "literary",
+      "category": "主題・空間",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "空間",
+        "系列:space-distance",
+        "對照"
+      ],
+      "daily_example": "出海後視界遼闊。",
+      "literary_example": "遼闊允許呼吸。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "space-distance",
+        "seriesTitle": "遠近與隔",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "馥郁",
+      "zhuyin": "ㄈㄨˋ ㄩˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "香氣濃郁。",
+      "long_def": "偏花、酒、茶。",
+      "usage_context": "「馥郁芬芳」。",
+      "register": "literary",
+      "category": "主題・感官",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "感官",
+        "系列:sensory-smell"
+      ],
+      "daily_example": "夜來香馥郁得頭暈。",
+      "literary_example": "馥郁佔領鼻腔。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "sensory-smell",
+        "seriesTitle": "氣味詞",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "腥膻",
+      "zhuyin": "ㄒㄧㄥ ㄕㄢ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "腥與膻。",
+      "long_def": "肉、血、羊。",
+      "usage_context": "「腥膻撲鼻」。",
+      "register": "literary",
+      "category": "主題・感官",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "感官",
+        "系列:sensory-smell"
+      ],
+      "daily_example": "市場腥膻，她屏息走過。",
+      "literary_example": "腥膻提醒身體。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "sensory-smell",
+        "seriesTitle": "氣味詞",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "腐臭",
+      "zhuyin": "ㄈㄨˇ ㄔㄡˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "腐爛臭味。",
+      "long_def": "死亡、廢墟。",
+      "usage_context": "「一股腐臭」。",
+      "register": "literary",
+      "category": "主題・感官",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "感官",
+        "系列:sensory-smell"
+      ],
+      "daily_example": "下水道腐臭湧上。",
+      "literary_example": "腐臭是時間的罪證。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "sensory-smell",
+        "seriesTitle": "氣味詞",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "清芬",
+      "zhuyin": "ㄑㄧㄥ ㄈㄣ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "清淡的香。",
+      "long_def": "比馥郁淡、潔。",
+      "usage_context": "「清芬怡人」。",
+      "register": "literary",
+      "category": "主題・感官",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "感官",
+        "系列:sensory-smell",
+        "對照"
+      ],
+      "daily_example": "新茶清芬，不必加糖。",
+      "literary_example": "清芬不搶戲。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "sensory-smell",
+        "seriesTitle": "氣味詞",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "嗆",
+      "zhuyin": "ㄑㄧㄤˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "刺激呼吸道。",
+      "long_def": "煙、辣、化學。",
+      "usage_context": "「嗆鼻」。",
+      "register": "literary",
+      "category": "主題・感官",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "感官",
+        "系列:sensory-smell"
+      ],
+      "daily_example": "油煙嗆得睜不開眼。",
+      "literary_example": "嗆強迫退場。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "sensory-smell",
+        "seriesTitle": "氣味詞",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "粗糙",
+      "zhuyin": "ㄘㄨ ㄘㄠ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "不細膩。",
+      "long_def": "物面或手法。",
+      "usage_context": "「皮膚粗糙」。",
+      "register": "literary",
+      "category": "主題・感官",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "感官",
+        "系列:sensory-touch",
+        "對照"
+      ],
+      "daily_example": "砂紙般粗糙的牆。",
+      "literary_example": "粗糙拒絕溫柔幻想。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "sensory-touch",
+        "seriesTitle": "觸感詞",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "滑膩",
+      "zhuyin": "ㄏㄨㄚˊ ㄋㄧˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "又滑又膩。",
+      "long_def": "可美可厭。",
+      "usage_context": "「滑膩不堪」。",
+      "register": "literary",
+      "category": "主題・感官",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "感官",
+        "系列:sensory-touch"
+      ],
+      "daily_example": "洗碗精洗不掉那層滑膩。",
+      "literary_example": "滑膩讓手指無可靠點。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "sensory-touch",
+        "seriesTitle": "觸感詞",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "冰涼",
+      "zhuyin": "ㄅㄧㄥ ㄌㄧㄤˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "冷觸。",
+      "long_def": "比冷具體到接觸瞬間。",
+      "usage_context": "「手心冰涼」。",
+      "register": "literary",
+      "category": "主題・感官",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "感官",
+        "系列:sensory-touch"
+      ],
+      "daily_example": "門把冰涼，像沒人住。",
+      "literary_example": "冰涼揭穿謊言的體溫。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "sensory-touch",
+        "seriesTitle": "觸感詞",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "灼熱",
+      "zhuyin": "ㄓㄨㄛˊ ㄖㄜˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "燙、燒灼感。",
+      "long_def": "溫度與痛的邊界。",
+      "usage_context": "「灼熱難當」。",
+      "register": "literary",
+      "category": "主題・感官",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "感官",
+        "系列:sensory-touch",
+        "對照"
+      ],
+      "daily_example": "發燒的額灼熱。",
+      "literary_example": "灼熱是警告。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "sensory-touch",
+        "seriesTitle": "觸感詞",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "酥麻",
+      "zhuyin": "ㄙㄨ ㄇㄚˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "發麻微顫。",
+      "long_def": "電流、緊張。",
+      "usage_context": "「一陣酥麻」。",
+      "register": "literary",
+      "category": "主題・感官",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "感官",
+        "系列:sensory-touch"
+      ],
+      "daily_example": "冷風吹來頭皮酥麻。",
+      "literary_example": "酥麻在意識之下。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "sensory-touch",
+        "seriesTitle": "觸感詞",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "犀利",
+      "zhuyin": "ㄒㄧ ㄌㄧˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "銳利深刻。",
+      "long_def": "可褒可懼。",
+      "usage_context": "「文筆犀利」。",
+      "register": "literary",
+      "category": "主題・評論",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "評論",
+        "系列:critique-tone"
+      ],
+      "daily_example": "她的提問犀利，沒人敢敷衍。",
+      "literary_example": "犀利切開修辭。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "critique-tone",
+        "seriesTitle": "評論語氣",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "中肯",
+      "zhuyin": "ㄓㄨㄥˋ ㄎㄣˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "恰中要害且公允。",
+      "long_def": "准＋公。",
+      "usage_context": "「評語中肯」。",
+      "register": "literary",
+      "category": "主題・評論",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "評論",
+        "系列:critique-tone",
+        "對照"
+      ],
+      "daily_example": "老師一句中肯，比罵有用。",
+      "literary_example": "中肯像量過的刀。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "critique-tone",
+        "seriesTitle": "評論語氣",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "尖酸",
+      "zhuyin": "ㄐㄧㄢ ㄙㄨㄢ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "尖刻刺人。",
+      "long_def": "傷人優先於說理。",
+      "usage_context": "「尖酸刻薄」。",
+      "register": "literary",
+      "category": "主題・評論",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "評論",
+        "系列:critique-tone"
+      ],
+      "daily_example": "親戚尖酸一句，飯局冷場。",
+      "literary_example": "尖酸要觀眾笑。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "critique-tone",
+        "seriesTitle": "評論語氣",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "溢美",
+      "zhuyin": "ㄧˋ ㄇㄟˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "過分讚美。",
+      "long_def": "不真誠或過量。",
+      "usage_context": "「溢美之詞」。",
+      "register": "literary",
+      "category": "主題・評論",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "評論",
+        "系列:critique-tone"
+      ],
+      "daily_example": "推薦信溢美到失真。",
+      "literary_example": "溢美是糖衣泡沫。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "critique-tone",
+        "seriesTitle": "評論語氣",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "刻薄",
+      "zhuyin": "ㄎㄜˋ ㄅㄛˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "冷酷不留情。",
+      "long_def": "對人／對己皆可。",
+      "usage_context": "「待人刻薄」。",
+      "register": "literary",
+      "category": "主題・評論",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "評論",
+        "系列:critique-tone",
+        "對照"
+      ],
+      "daily_example": "他對自己也很刻薄。",
+      "literary_example": "刻薄刪掉餘地。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "critique-tone",
+        "seriesTitle": "評論語氣",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "剛愎",
+      "zhuyin": "ㄍㄤ ㄅㄧˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "固執拒諫。",
+      "long_def": "剛愎自用。",
+      "usage_context": "「剛愎自用」。",
+      "register": "literary",
+      "category": "主題・人物",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "人物",
+        "系列:character-traits"
+      ],
+      "daily_example": "計畫錯了他仍剛愎推進。",
+      "literary_example": "剛愎把門反鎖。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "character-traits",
+        "seriesTitle": "性格棱角",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "優柔",
+      "zhuyin": "ㄧㄡ ㄖㄡˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "決斷遲疑。",
+      "long_def": "對照剛愎。",
+      "usage_context": "「優柔寡斷」。",
+      "register": "literary",
+      "category": "主題・人物",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "人物",
+        "系列:character-traits",
+        "對照"
+      ],
+      "daily_example": "選餐廳他優柔半小時。",
+      "literary_example": "優柔消耗所有人的時間。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "character-traits",
+        "seriesTitle": "性格棱角",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "溫潤",
+      "zhuyin": "ㄨㄣ ㄖㄨㄣˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "溫和如玉。",
+      "long_def": "可真可偽。",
+      "usage_context": "「性情溫潤」。",
+      "register": "literary",
+      "category": "主題・人物",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "人物",
+        "系列:character-traits"
+      ],
+      "daily_example": "他溫潤地拒絕，仍叫人舒服。",
+      "literary_example": "溫潤是打磨過的鋒。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "character-traits",
+        "seriesTitle": "性格棱角",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "狷介",
+      "zhuyin": "ㄐㄩㄢˋ ㄐㄧㄝˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "潔身不肯同流。",
+      "long_def": "孤傲近清高。",
+      "usage_context": "「性情狷介」。",
+      "register": "literary",
+      "category": "主題・人物",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "人物",
+        "系列:character-traits"
+      ],
+      "daily_example": "他狷介得不參加任何派對。",
+      "literary_example": "狷介是自我劃線。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "character-traits",
+        "seriesTitle": "性格棱角",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "圓滑",
+      "zhuyin": "ㄩㄢˊ ㄏㄨㄚˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "處事靈活世故。",
+      "long_def": "可褒可貶。",
+      "usage_context": "「為人圓滑」。",
+      "register": "literary",
+      "category": "主題・人物",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "人物",
+        "系列:character-traits",
+        "對照"
+      ],
+      "daily_example": "圓滑的助理誰都不得罪。",
+      "literary_example": "圓滑沒有稜可抓。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "character-traits",
+        "seriesTitle": "性格棱角",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "枯榮",
+      "zhuyin": "ㄎㄨ ㄖㄨㄥˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "枯萎與繁茂。",
+      "long_def": "循環、對比。",
+      "usage_context": "「草木枯榮」。",
+      "register": "literary",
+      "category": "主題・意象",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "意象",
+        "系列:imagery-plant"
+      ],
+      "daily_example": "陽台盆栽一年看盡枯榮。",
+      "literary_example": "枯榮是季的呼吸。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "imagery-plant",
+        "seriesTitle": "植物意象",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "新綠",
+      "zhuyin": "ㄒㄧㄣ ㄌㄩˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "初生的綠。",
+      "long_def": "希望、稚。",
+      "usage_context": "「滿眼新綠」。",
+      "register": "literary",
+      "category": "主題・意象",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "意象",
+        "系列:imagery-plant"
+      ],
+      "daily_example": "雨後山坡一片新綠。",
+      "literary_example": "新綠還沒學會疲倦。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "imagery-plant",
+        "seriesTitle": "植物意象",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "殘荷",
+      "zhuyin": "ㄘㄢˊ ㄏㄜˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "敗後的荷。",
+      "long_def": "秋冬、殘美。",
+      "usage_context": "「殘荷聽雨」。",
+      "register": "literary",
+      "category": "主題・意象",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "意象",
+        "系列:imagery-plant"
+      ],
+      "daily_example": "池裡只剩殘荷梗。",
+      "literary_example": "殘荷仍佔著水面的記憶。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "imagery-plant",
+        "seriesTitle": "植物意象",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "苔蘚",
+      "zhuyin": "ㄊㄞˊ ㄒㄧㄢˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "苔與蘚。",
+      "long_def": "潮、靜、被遺忘處。",
+      "usage_context": "「石上苔蘚」。",
+      "register": "literary",
+      "category": "主題・意象",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "意象",
+        "系列:imagery-plant"
+      ],
+      "daily_example": "北牆苔蘚一年厚一層。",
+      "literary_example": "苔蘚證明時間停過。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "imagery-plant",
+        "seriesTitle": "植物意象",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "荊棘",
+      "zhuyin": "ㄐㄧㄥ ㄐㄧˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "帶刺灌木；喻艱險。",
+      "long_def": "路難、關係扎人。",
+      "usage_context": "「荊棘滿途」。",
+      "register": "literary",
+      "category": "主題・意象",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "意象",
+        "系列:imagery-plant"
+      ],
+      "daily_example": "改革一路荊棘。",
+      "literary_example": "荊棘獎勵赤腳的人。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "imagery-plant",
+        "seriesTitle": "植物意象",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "須臾",
+      "zhuyin": "ㄒㄩ ㄩˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "片刻。",
+      "long_def": "極短。文言。",
+      "usage_context": "「須臾之間」。",
+      "register": "literary",
+      "category": "主題・時間",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "時間",
+        "系列:time-aspect",
+        "對照"
+      ],
+      "daily_example": "須臾猶豫，機會沒了。",
+      "literary_example": "須臾裡能改寫結局。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "time-aspect",
+        "seriesTitle": "時間質感",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "經年",
+      "zhuyin": "ㄐㄧㄥ ㄋㄧㄢˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "經過一年或多年。",
+      "long_def": "長時積累。",
+      "usage_context": "「經年累月」。",
+      "register": "literary",
+      "category": "主題・時間",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "時間",
+        "系列:time-aspect",
+        "對照"
+      ],
+      "daily_example": "經年不見，他口音變了。",
+      "literary_example": "經年把人磨成另一版。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "time-aspect",
+        "seriesTitle": "時間質感",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "轉瞬",
+      "zhuyin": "ㄓㄨㄢˇ ㄕㄨㄣˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "一眨眼。",
+      "long_def": "強調快。",
+      "usage_context": "「轉瞬即逝」。",
+      "register": "literary",
+      "category": "主題・時間",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "時間",
+        "系列:time-aspect"
+      ],
+      "daily_example": "童年轉瞬，相簿發黃。",
+      "literary_example": "轉瞬嘲笑計畫。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "time-aspect",
+        "seriesTitle": "時間質感",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "曠日",
+      "zhuyin": "ㄎㄨㄤˋ ㄖˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "荒廢時日。",
+      "long_def": "曠日持久＝拖。",
+      "usage_context": "「曠日持久」。",
+      "register": "literary",
+      "category": "主題・時間",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "時間",
+        "系列:time-aspect"
+      ],
+      "daily_example": "談判曠日，雙方都倦。",
+      "literary_example": "曠日是無聲的消耗戰。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "time-aspect",
+        "seriesTitle": "時間質感",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "良久",
+      "zhuyin": "ㄌㄧㄤˊ ㄐㄧㄡˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "很久。",
+      "long_def": "敘事停頓常用。",
+      "usage_context": "「沉吟良久」。",
+      "register": "literary",
+      "category": "主題・時間",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "時間",
+        "系列:time-aspect"
+      ],
+      "daily_example": "他盯著螢幕良久。",
+      "literary_example": "良久讓讀者聽見思考。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "time-aspect",
+        "seriesTitle": "時間質感",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "仁",
+      "zhuyin": "ㄖㄣˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "愛人、惻隱。",
+      "long_def": "落到具體憐憫動作。",
+      "usage_context": "「仁心」。",
+      "register": "literary",
+      "category": "主題・國學",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "國學",
+        "系列:guoxue-virtue"
+      ],
+      "daily_example": "他講仁，卻趕盡員工。",
+      "literary_example": "仁要經得起利害。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "guoxue-virtue",
+        "seriesTitle": "國學德目",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "義",
+      "zhuyin": "ㄧˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "宜、正當。",
+      "long_def": "可衝突於利。",
+      "usage_context": "「見義勇為」。",
+      "register": "literary",
+      "category": "主題・國學",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "國學",
+        "系列:guoxue-virtue"
+      ],
+      "daily_example": "為義他丟了合約。",
+      "literary_example": "義是貴的選擇。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "guoxue-virtue",
+        "seriesTitle": "國學德目",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "禮",
+      "zhuyin": "ㄌㄧˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "規範與儀式。",
+      "long_def": "秩序，也可壓人。",
+      "usage_context": "「非禮勿視」。",
+      "register": "literary",
+      "category": "主題・國學",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "國學",
+        "系列:guoxue-virtue"
+      ],
+      "daily_example": "禮多人不怪，他偏省略。",
+      "literary_example": "禮是關係的骨架。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "guoxue-virtue",
+        "seriesTitle": "國學德目",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "智",
+      "zhuyin": "ㄓˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "明辨。",
+      "long_def": "智與詐需場面界定。",
+      "usage_context": "「大智若愚」。",
+      "register": "literary",
+      "category": "主題・國學",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "國學",
+        "系列:guoxue-virtue"
+      ],
+      "daily_example": "智在於知道何時閉嘴。",
+      "literary_example": "智照見結構。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "guoxue-virtue",
+        "seriesTitle": "國學德目",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "信",
+      "zhuyin": "ㄒㄧㄣˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "誠、可信。",
+      "long_def": "承諾的重量。",
+      "usage_context": "「言而有信」。",
+      "register": "literary",
+      "category": "主題・國學",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "國學",
+        "系列:guoxue-virtue"
+      ],
+      "daily_example": "他一諾，全組信了。",
+      "literary_example": "信是可兌現的未來。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "guoxue-virtue",
+        "seriesTitle": "國學德目",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "虛",
+      "zhuyin": "ㄒㄩ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "空、不盈。",
+      "long_def": "亦可虛偽。語境決定。",
+      "usage_context": "「虛懷」。",
+      "register": "literary",
+      "category": "主題・國學",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "國學",
+        "系列:guoxue-empty"
+      ],
+      "daily_example": "會議室虛得只剩投影。",
+      "literary_example": "虛讓回聲出現。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "guoxue-empty",
+        "seriesTitle": "虛靜與有無",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "靜",
+      "zhuyin": "ㄐㄧㄥˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "不動、沉靜。",
+      "long_def": "動作的零。",
+      "usage_context": "「靜下心」。",
+      "register": "literary",
+      "category": "主題・國學",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "國學",
+        "系列:guoxue-empty"
+      ],
+      "daily_example": "圖書館靜，筆尖都響。",
+      "literary_example": "靜是聽的前提。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "guoxue-empty",
+        "seriesTitle": "虛靜與有無",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "無",
+      "zhuyin": "ㄨˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "沒有；道家本根。",
+      "long_def": "有無相生。",
+      "usage_context": "「視而無見」。",
+      "register": "literary",
+      "category": "主題・國學",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "國學",
+        "系列:guoxue-empty",
+        "對照"
+      ],
+      "daily_example": "他回應一個無。",
+      "literary_example": "無其實在場。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "guoxue-empty",
+        "seriesTitle": "虛靜與有無",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "有",
+      "zhuyin": "ㄧㄡˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "存在、具備。",
+      "long_def": "與無對讀才有力。",
+      "usage_context": "「若有所失」。",
+      "register": "literary",
+      "category": "主題・國學",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "國學",
+        "系列:guoxue-empty",
+        "對照"
+      ],
+      "daily_example": "桌上空無一物，他卻說有。",
+      "literary_example": "有需要邊界。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "guoxue-empty",
+        "seriesTitle": "虛靜與有無",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "淡",
+      "zhuyin": "ㄉㄢˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "不濃；恬淡。",
+      "long_def": "力量在減。",
+      "usage_context": "「淡然處之」。",
+      "register": "literary",
+      "category": "主題・國學",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "國學",
+        "系列:guoxue-empty"
+      ],
+      "daily_example": "她淡淡一句，比罵重。",
+      "literary_example": "淡是收過力的濃。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "guoxue-empty",
+        "seriesTitle": "虛靜與有無",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "瞟",
+      "zhuyin": "ㄆㄧㄠˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "斜著看。",
+      "long_def": "帶情緒的斜視。",
+      "usage_context": "「瞟了一眼」。",
+      "register": "literary",
+      "category": "主題・動詞",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "動詞",
+        "系列:verb-eye"
+      ],
+      "daily_example": "她瞟向門口的人。",
+      "literary_example": "瞟洩漏興趣。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "verb-eye",
+        "seriesTitle": "眼的動作",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "瞬",
+      "zhuyin": "ㄕㄨㄣˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "眨眼；極短。",
+      "long_def": "轉瞬、一瞬。",
+      "usage_context": "「一瞬」。",
+      "register": "literary",
+      "category": "主題・動詞",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "動詞",
+        "系列:verb-eye"
+      ],
+      "daily_example": "燈滅一瞬又亮。",
+      "literary_example": "瞬裡藏決定。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "verb-eye",
+        "seriesTitle": "眼的動作",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "夤夜",
+      "zhuyin": "ㄧㄣˊ ㄧㄝˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "深夜。",
+      "long_def": "文言。秘密行動時段。",
+      "usage_context": "「夤夜叩門」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-night"
+      ],
+      "daily_example": "夤夜還亮著的只有便利店。",
+      "literary_example": "夤夜降低羞恥閾值。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-night",
+        "seriesTitle": "夜的層次",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "子夜",
+      "zhuyin": "ㄗˇ ㄧㄝˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "午夜前後。",
+      "long_def": "日界。轉折鐘點。",
+      "usage_context": "「子夜時分」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-night"
+      ],
+      "daily_example": "子夜鐘響，城安靜一點。",
+      "literary_example": "子夜是日期的縫。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-night",
+        "seriesTitle": "夜的層次",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "破曉",
+      "zhuyin": "ㄆㄛˋ ㄒㄧㄠˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "天剛亮。",
+      "long_def": "結束與開始疊加。",
+      "usage_context": "「破曉時分」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-night"
+      ],
+      "daily_example": "破曉他才睡着。",
+      "literary_example": "破曉不保證希望。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-night",
+        "seriesTitle": "夜的層次",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "午夜",
+      "zhuyin": "ㄨˇ ㄧㄝˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "夜里十二點前後。",
+      "long_def": "較口語。",
+      "usage_context": "「午夜場」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-night"
+      ],
+      "daily_example": "午夜電台只剩呼吸聲。",
+      "literary_example": "午夜放大獨白。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-night",
+        "seriesTitle": "夜的層次",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "深夜",
+      "zhuyin": "ㄕㄣ ㄧㄝˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "很晚的夜。",
+      "long_def": "寫具體鐘點更準。",
+      "usage_context": "「深夜食堂」。",
+      "register": "literary",
+      "category": "主題・氛圍",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "氛圍",
+        "系列:atmos-night"
+      ],
+      "daily_example": "深夜訊息總更誠實。",
+      "literary_example": "深夜卸下白天的臉。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "atmos-night",
+        "seriesTitle": "夜的層次",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "涓涓",
+      "zhuyin": "ㄐㄩㄢ ㄐㄩㄢ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "細流不斷。",
+      "long_def": "小而持續。",
+      "usage_context": "「涓涓細流」。",
+      "register": "literary",
+      "category": "主題・意象",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "意象",
+        "系列:imagery-water",
+        "對照"
+      ],
+      "daily_example": "簷水涓涓，一夜未停。",
+      "literary_example": "涓涓靠耐心取勝。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "imagery-water",
+        "seriesTitle": "水的動態",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "滔滔",
+      "zhuyin": "ㄊㄠ ㄊㄠ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "大水湧流；話多。",
+      "long_def": "雙義：水／言。",
+      "usage_context": "「滔滔不絕」。",
+      "register": "literary",
+      "category": "主題・意象",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "意象",
+        "系列:imagery-water"
+      ],
+      "daily_example": "他一開口滔滔半小時。",
+      "literary_example": "滔滔淹沒聽者。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "imagery-water",
+        "seriesTitle": "水的動態",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "潺潺",
+      "zhuyin": "ㄔㄢˊ ㄔㄢˊ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "流水聲。",
+      "long_def": "聽覺優先。",
+      "usage_context": "「流水潺潺」。",
+      "register": "literary",
+      "category": "主題・意象",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "意象",
+        "系列:imagery-water"
+      ],
+      "daily_example": "後山潺潺，適合睡。",
+      "literary_example": "潺潺是持續的安慰。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "imagery-water",
+        "seriesTitle": "水的動態",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "洶湧",
+      "zhuyin": "ㄒㄩㄥ ㄩㄥˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "猛烈翻騰。",
+      "long_def": "潮、情緒、人潮。",
+      "usage_context": "「波濤洶湧」。",
+      "register": "literary",
+      "category": "主題・意象",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "意象",
+        "系列:imagery-water",
+        "對照"
+      ],
+      "daily_example": "情緒洶湧，他出門吹風。",
+      "literary_example": "洶湧找不到岸。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "imagery-water",
+        "seriesTitle": "水的動態",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "涟漪",
+      "zhuyin": "ㄌㄧㄢˊ ㄧ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "細小波紋。",
+      "long_def": "小事引起的擴散。",
+      "usage_context": "「激起涟漪」。",
+      "register": "literary",
+      "category": "主題・意象",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "意象",
+        "系列:imagery-water"
+      ],
+      "daily_example": "一句話激起同事間涟漪。",
+      "literary_example": "涟漪證明石頭存在過。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "imagery-water",
+        "seriesTitle": "水的動態",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "鬆散",
+      "zhuyin": "ㄙㄨㄥ ㄙㄢˇ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "不緊密。",
+      "long_def": "段落、邏輯皆可。",
+      "usage_context": "「結構鬆散」。",
+      "register": "literary",
+      "category": "主題・評論",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "評論",
+        "系列:critique-structure",
+        "對照"
+      ],
+      "daily_example": "劇本中段鬆散，觀眾滑手機。",
+      "literary_example": "鬆散讓力道漏掉。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "critique-structure",
+        "seriesTitle": "結構評語",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "綿密",
+      "zhuyin": "ㄇㄧㄢˊ ㄇㄧˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "細密不斷。",
+      "long_def": "敘事織得緊。",
+      "usage_context": "「筆觸綿密」。",
+      "register": "literary",
+      "category": "主題・評論",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "評論",
+        "系列:critique-structure",
+        "對照"
+      ],
+      "daily_example": "推理鋪陳綿密，無廢棋。",
+      "literary_example": "綿密不給喘息。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "critique-structure",
+        "seriesTitle": "結構評語",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "跳脫",
+      "zhuyin": "ㄊㄧㄠˋ ㄊㄨㄛ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "不按常理。",
+      "long_def": "可褒可貶。",
+      "usage_context": "「想像跳脫」。",
+      "register": "literary",
+      "category": "主題・評論",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "評論",
+        "系列:critique-structure"
+      ],
+      "daily_example": "結尾跳脫，有人愛有人罵。",
+      "literary_example": "跳脫要接得住。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "critique-structure",
+        "seriesTitle": "結構評語",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "堆砌",
+      "zhuyin": "ㄉㄨㄟ ㄑㄧˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "堆積辭藻。",
+      "long_def": "華麗而無建築。",
+      "usage_context": "「堆砌辭藻」。",
+      "register": "literary",
+      "category": "主題・評論",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "評論",
+        "系列:critique-structure"
+      ],
+      "daily_example": "作文堆砌成語，反而假。",
+      "literary_example": "堆砌是害怕空白。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "critique-structure",
+        "seriesTitle": "結構評語",
+        "level": "college-to-pro"
+      }
+    },
+    {
+      "status": "active",
+      "term": "節制",
+      "zhuyin": "ㄐㄧㄝˊ ㄓˋ",
+      "part_of_speech": "形／名",
+      "difficulty": 3,
+      "short_def": "克制不過量。",
+      "long_def": "美學與倫理皆需。",
+      "usage_context": "「情感節制」。",
+      "register": "literary",
+      "category": "主題・評論",
+      "tags": [
+        "主題卡",
+        "對照學習",
+        "評論",
+        "系列:critique-structure"
+      ],
+      "daily_example": "他寫痛很節制，更痛。",
+      "literary_example": "節制讓餘味延長。",
+      "source": {
+        "kind": "zi-geng-theme-series",
+        "seriesId": "critique-structure",
+        "seriesTitle": "結構評語",
         "level": "college-to-pro"
       }
     }

@@ -2,10 +2,7 @@ import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import "fake-indexeddb/auto";
 import { recordAnswer, weekPracticeCount } from "@/features/japanese/progress-store";
 import { buildDailyReminderIcs } from "@/features/settings/ics";
-import {
-  readLocalReminderTime,
-  writeLocalReminderTime,
-} from "@/features/settings/local-reminder";
+import { readLocalReminderTime, writeLocalReminderTime } from "@/features/settings/local-reminder";
 import { createDraft, updateDraft, weekWordsWritten } from "@/features/writing/draft-store";
 import { resetZiGengDb } from "@/lib/offline/db";
 

@@ -6,10 +6,7 @@ import { PageLoading } from "@/components/common/PageState";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import { useAuth } from "@/features/auth/AuthProvider";
 import { buildDailyReminderIcs, downloadIcs } from "@/features/settings/ics";
-import {
-  readLocalReminderTime,
-  writeLocalReminderTime,
-} from "@/features/settings/local-reminder";
+import { readLocalReminderTime, writeLocalReminderTime } from "@/features/settings/local-reminder";
 import {
   fetchUserSettings,
   upsertUserSettings,
@@ -59,9 +56,7 @@ export default function SettingsPage() {
     reminder_time: "09:00" as string | null,
   };
 
-  const reminderDisplay = useMock
-    ? localReminder
-    : (settings.reminder_time ?? "09:00").slice(0, 5);
+  const reminderDisplay = useMock ? localReminder : (settings.reminder_time ?? "09:00").slice(0, 5);
 
   return (
     <div className="space-y-6">

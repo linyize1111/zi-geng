@@ -23,7 +23,7 @@ if (!existsSync(path)) {
   writeFileSync(path, Buffer.from(await res.arrayBuffer()));
 }
 
-const LIMIT = Number(process.env.CONCISED_LIMIT || 1000);
+const LIMIT = Number(process.env.CONCISED_LIMIT || 2500);
 const raw = JSON.parse(readFileSync(path, "utf8"));
 if (!Array.isArray(raw)) throw new Error("Unexpected concised format");
 
