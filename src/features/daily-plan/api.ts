@@ -8,6 +8,8 @@ import type {
   VocabCard,
   WritingPrompt,
 } from "@/features/daily-plan/types";
+import { recordStudyEvents, pickIdsWithCooldown } from "@/features/study/events-api";
+import { normalizeCraftName, normalizeTerm, quoteNormalizedKey } from "@/features/study/normalize";
 
 export type DailySlot = "vocabulary" | "quote" | "craft" | "prompt" | "novel";
 
@@ -112,7 +114,60 @@ export async function fetchOrCreateDailyPlan(timezone = "Asia/Taipei"): Promise<
     .single();
 
   if (error) throw error;
-  return hydratePlan(plan as DailyPlan);
+  const bundle = await hydratePlan(plan as DailyPlan);
+  await recordDailyShownEvents(bundle);
+  return bundle;
+}
+
+/** Record `shown` for everything on today's plan (idempotent enough — multiple shown OK). */
+export async function recordDailyShownEvents(bundle: DailyPlanBundle): Promise<void> {
+  const events = [];
+  if (bundle.quote) {
+    events.push({
+      contentType: "quote" as const,
+      contentId: bundle.quote.id,
+      normalizedKey: quoteNormalizedKey(bundle.quote.display_quote),
+      eventType: "shown" as const,
+      localDate: bundle.plan.local_date,
+    });
+  }
+  for (const v of bundle.vocabulary) {
+    events.push({
+      contentType: "vocabulary" as const,
+      contentId: v.id,
+      normalizedKey: normalizeTerm(v.term),
+      eventType: "shown" as const,
+      localDate: bundle.plan.local_date,
+    });
+  }
+  if (bundle.craft) {
+    events.push({
+      contentType: "craft" as const,
+      contentId: bundle.craft.id,
+      normalizedKey: normalizeCraftName(bundle.craft.name),
+      eventType: "shown" as const,
+      localDate: bundle.plan.local_date,
+    });
+  }
+  if (bundle.prompt) {
+    events.push({
+      contentType: "prompt" as const,
+      contentId: bundle.prompt.id,
+      normalizedKey: normalizeTerm(bundle.prompt.title),
+      eventType: "shown" as const,
+      localDate: bundle.plan.local_date,
+    });
+  }
+  if (bundle.novelTask) {
+    events.push({
+      contentType: "novel" as const,
+      contentId: bundle.novelTask.id,
+      normalizedKey: normalizeTerm(bundle.novelTask.title),
+      eventType: "shown" as const,
+      localDate: bundle.plan.local_date,
+    });
+  }
+  await recordStudyEvents(events);
 }
 
 function shufflePick<T>(items: T[], n: number): T[] {
@@ -176,58 +231,54 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
         tags.includes("寫作者詞庫") ||
         String(r.category ?? "").includes("情緒") ||
         String(r.category ?? "").includes("動詞") ||
-        String(r.category ?? "").includes("感官")
+        String(r.category ?? "").includes("感官") ||
+        String(r.category ?? "").includes("主題")
       );
     };
     const themed = rows.filter((r) => isThemed(r as Row) && !isIdiom(r as Row));
     const literary = rows.filter((r) => !isIdiom(r as Row) && !isThemed(r as Row));
     const idioms = rows.filter((r) => isIdiom(r as Row));
 
-    const pickFrom = (pool: typeof rows, n: number, used: Set<string>) => {
-      const free = pool.map((r) => r.id as string).filter((id) => !used.has(id) && !avoid.has(id));
-      const base =
-        free.length >= n ? free : pool.map((r) => r.id as string).filter((id) => !used.has(id));
-      return shufflePick(base, Math.min(n, base.length));
-    };
-
-    // Mix: ~45% themed writer banks, ~40% other literary, ~15% idioms; diversify categories
     const nTheme = Math.min(themed.length, Math.max(1, Math.round(vocabN * 0.45)));
     const nIdiom = Math.min(idioms.length, Math.max(0, Math.round(vocabN * 0.15)));
     const nLit = Math.max(0, vocabN - nTheme - nIdiom);
 
-    const used = new Set<string>();
-    const pickedTheme = pickFrom(themed, nTheme, used);
+    const used = new Set<string>(avoid);
+    const pickedTheme = await pickIdsWithCooldown({
+      contentType: "vocabulary",
+      poolIds: themed.map((r) => r.id as string),
+      count: nTheme,
+      hardAvoid: used,
+      timezone,
+    });
     pickedTheme.forEach((id) => used.add(id));
-    const pickedLit = pickFrom(literary.length ? literary : rows, nLit, used);
+    const pickedLit = await pickIdsWithCooldown({
+      contentType: "vocabulary",
+      poolIds: (literary.length ? literary : rows).map((r) => r.id as string),
+      count: nLit,
+      hardAvoid: used,
+      timezone,
+    });
     pickedLit.forEach((id) => used.add(id));
-    const pickedIdi = pickFrom(idioms, nIdiom, used);
+    const pickedIdi = await pickIdsWithCooldown({
+      contentType: "vocabulary",
+      poolIds: idioms.map((r) => r.id as string),
+      count: nIdiom,
+      hardAvoid: used,
+      timezone,
+    });
     pickedIdi.forEach((id) => used.add(id));
 
     let picked = [...pickedTheme, ...pickedLit, ...pickedIdi];
-
-    // Category diversity: if too many share same category prefix, reshuffle extras from unused
-    const catKey = (id: string) => {
-      const row = rows.find((r) => r.id === id);
-      return String(row?.category ?? "其他").split("・")[0] ?? "其他";
-    };
-    const counts = new Map<string, number>();
-    for (const id of picked) counts.set(catKey(id), (counts.get(catKey(id)) ?? 0) + 1);
-    const overloaded = [...counts.entries()].filter(([, n]) => n >= 3).map(([k]) => k);
-    if (overloaded.length && picked.length >= 3) {
-      const rest = rows
-        .map((r) => r.id as string)
-        .filter((id) => !used.has(id) && !overloaded.includes(catKey(id)));
-      if (rest.length) {
-        const swapOut = picked.filter((id) => overloaded.includes(catKey(id))).slice(1);
-        const swapIn = shufflePick(rest, Math.min(swapOut.length, rest.length));
-        picked = picked.filter((id) => !swapOut.slice(0, swapIn.length).includes(id));
-        picked = [...picked, ...swapIn];
-      }
-    }
-
     if (picked.length < vocabN) {
-      const more = rows.map((r) => r.id as string).filter((id) => !picked.includes(id));
-      picked = [...picked, ...shufflePick(more, vocabN - picked.length)];
+      const more = await pickIdsWithCooldown({
+        contentType: "vocabulary",
+        poolIds: rows.map((r) => r.id as string),
+        count: vocabN - picked.length,
+        hardAvoid: new Set(picked),
+        timezone,
+      });
+      picked = [...picked, ...more];
     }
     patch.vocabulary_ids = shufflePick(picked, Math.min(vocabN, picked.length));
   } else if (slot === "quote") {
@@ -244,17 +295,29 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
         q.author_name !== "字耕" &&
         !String(q.display_quote).includes("開發測試"),
     );
-    const ids = usable.filter((q) => q.id !== plan.quote_id).map((q) => q.id as string);
-    const fallback = usable.map((q) => q.id as string);
-    const pick = shufflePick(ids.length ? ids : fallback, 1)[0];
+    const hardAvoid = new Set(plan.quote_id ? [plan.quote_id] : []);
+    const picked = await pickIdsWithCooldown({
+      contentType: "quote",
+      poolIds: usable.map((q) => q.id as string),
+      count: 1,
+      hardAvoid,
+      timezone,
+    });
+    const pick = picked[0];
     if (!pick) throw new Error("尚無名言可換，請先匯入多主題名言");
     patch.quote_id = pick;
   } else if (slot === "craft") {
     const { data, error } = await client.from("zg_craft_cards").select("id").eq("status", "active");
     if (error) throw error;
-    const ids = (data ?? []).map((r) => r.id as string).filter((id) => id !== plan.craft_id);
-    const pool = ids.length ? ids : (data ?? []).map((r) => r.id as string);
-    const pick = shufflePick(pool, 1)[0];
+    const pool = (data ?? []).map((r) => r.id as string);
+    const picked = await pickIdsWithCooldown({
+      contentType: "craft",
+      poolIds: pool,
+      count: 1,
+      hardAvoid: new Set(plan.craft_id ? [plan.craft_id] : []),
+      timezone,
+    });
+    const pick = picked[0];
     if (!pick) throw new Error("尚無寫作技巧可換");
     patch.craft_id = pick;
   } else if (slot === "prompt") {
@@ -263,11 +326,15 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
       .select("id")
       .eq("status", "active");
     if (error) throw error;
-    const ids = (data ?? [])
-      .map((r) => r.id as string)
-      .filter((id) => id !== plan.writing_prompt_id);
-    const pool = ids.length ? ids : (data ?? []).map((r) => r.id as string);
-    const pick = shufflePick(pool, 1)[0];
+    const pool = (data ?? []).map((r) => r.id as string);
+    const picked = await pickIdsWithCooldown({
+      contentType: "prompt",
+      poolIds: pool,
+      count: 1,
+      hardAvoid: new Set(plan.writing_prompt_id ? [plan.writing_prompt_id] : []),
+      timezone,
+    });
+    const pick = picked[0];
     if (!pick) throw new Error("尚無寫作題目可換");
     patch.writing_prompt_id = pick;
   } else {
@@ -276,11 +343,15 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
       .select("id")
       .eq("status", "active");
     if (error) throw error;
-    const ids = (data ?? [])
-      .map((r) => r.id as string)
-      .filter((id) => id !== plan.novel_task_template_id);
-    const pool = ids.length ? ids : (data ?? []).map((r) => r.id as string);
-    const pick = shufflePick(pool, 1)[0];
+    const pool = (data ?? []).map((r) => r.id as string);
+    const picked = await pickIdsWithCooldown({
+      contentType: "novel",
+      poolIds: pool,
+      count: 1,
+      hardAvoid: new Set(plan.novel_task_template_id ? [plan.novel_task_template_id] : []),
+      timezone,
+    });
+    const pick = picked[0];
     if (!pick) throw new Error("尚無小說任務可換");
     patch.novel_task_template_id = pick;
   }
@@ -292,7 +363,9 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
     .select("*")
     .single();
   if (upErr) throw upErr;
-  return hydratePlan(updated as DailyPlan);
+  const next = await hydratePlan(updated as DailyPlan);
+  await recordDailyShownEvents(next);
+  return next;
 }
 
 export async function replaceDailySlot(

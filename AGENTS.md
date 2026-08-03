@@ -1,16 +1,16 @@
 # AGENTS.md — 字耕 PWA
 
-你是字耕專案代理人。產品規格與總控 Prompt 在 workspace 根目錄：
+你是字耕專案代理人。產品規格與總控 Prompt：
 
-- `../01_字耕PWA_完整產品與技術計畫書.md`
-- `../02_字耕PWA_Cursor總控Prompt.md`
+- **現行總控：** `../../推薦系統/字耕_v2.4_Cursor總控Prompt_動態內容管線版.md`（動態內容管線）
+- 舊版參考：`../02_字耕PWA_Cursor總控Prompt.md`、`../01_字耕PWA_完整產品與技術計畫書.md`
 
 ## 每次開工
 
-1. 讀規格（若有變更）與 `docs/PROGRESS.md`
-2. 檢查本 repo 與（若可及）主站 `../linyize1111.github.io` 的 git status
-3. 只做下一個未完成 Phase／小里程碑
-4. 以實際環境為準；衝突記入 `docs/DECISIONS.md` 或 ADR
+1. 讀 v2.4 總控與 `docs/PROGRESS.md`
+2. **嚴格按 v2.4 §17 Phase 順序**，不要一次大爆改
+3. 暫緩「死刑小說創作工作台」；不大改 Novels 專項
+4. 自動內容先進 `candidate`，禁止 Wikiquote 自動當名言池
 5. 能自查的不要問使用者；無法代勞的寫入 `USER_ACTIONS_REQUIRED.md`
 
 ## 硬性約束
@@ -24,8 +24,8 @@
 
 ## 技術基線（可被 ADR 覆寫）
 
-Vite + React + TS strict + HashRouter + Tailwind + shadcn + TanStack Query + Zod + Supabase JS v2 + Dexie + vite-plugin-pwa + Vitest + Playwright；npm。
+Vite + React + TS strict + HashRouter + Tailwind + TanStack Query + Zod + Supabase JS v2 + Dexie + vite-plugin-pwa + Vitest + Playwright；npm。
 
 ## 回報格式
 
-見總控 Prompt §18。
+見 v2.4 §18–§19。

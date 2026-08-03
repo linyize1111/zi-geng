@@ -1,3 +1,16 @@
+# 待你手動完成
+
+## v2.4 Phase 1（必要）
+
+在 Supabase SQL Editor 執行：
+
+`zi-geng/supabase/APPLY_V24_PHASE1_STUDY_EVENTS.sql`
+
+會建立 `zg_study_events`、冷卻 RPC，並更新今日抽卡邏輯。  
+未執行前：今日頁回饋／shown 事件會靜默略過，不影響基本使用。
+
+---
+
 # 自動化內容（只需設一次密鑰）
 
 ## 金鑰在哪（Supabase 改版後）

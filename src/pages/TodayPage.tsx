@@ -10,6 +10,8 @@ import {
   replaceMockDailySlot,
   type DailySlot,
 } from "@/features/daily-plan/api";
+import { CardFeedback } from "@/features/study/CardFeedback";
+import { normalizeCraftName, normalizeTerm, quoteNormalizedKey } from "@/features/study/normalize";
 import { FavoriteToggle } from "@/features/favorites/FavoriteToggle";
 import { OwnerRemoveCardButton } from "@/features/content/OwnerRemoveCardButton";
 import { createDraft } from "@/features/writing/draft-store";
@@ -240,6 +242,12 @@ export default function TodayPage() {
               看完整解析
             </Link>
           </div>
+          <CardFeedback
+            contentType="quote"
+            contentId={data.quote.id}
+            normalizedKey={quoteNormalizedKey(data.quote.display_quote)}
+            localDate={data.plan.local_date}
+          />
         </section>
       ) : (
         <PageState
@@ -301,6 +309,12 @@ export default function TodayPage() {
                     例：{v.daily_example}
                   </p>
                 ) : null}
+                <CardFeedback
+                  contentType="vocabulary"
+                  contentId={v.id}
+                  normalizedKey={normalizeTerm(v.term)}
+                  localDate={data.plan.local_date}
+                />
                 <Link
                   to={`${routes.learnVocabulary}/${v.id}`}
                   className="mt-2 inline-block text-xs underline-offset-4 hover:underline"
@@ -360,6 +374,12 @@ export default function TodayPage() {
               {data.craft.exercise}
             </p>
           ) : null}
+          <CardFeedback
+            contentType="craft"
+            contentId={data.craft.id}
+            normalizedKey={normalizeCraftName(data.craft.name)}
+            localDate={data.plan.local_date}
+          />
         </section>
       ) : null}
 
@@ -411,6 +431,12 @@ export default function TodayPage() {
               </span>
             ) : null}
           </div>
+          <CardFeedback
+            contentType="prompt"
+            contentId={data.prompt.id}
+            normalizedKey={normalizeTerm(data.prompt.title)}
+            localDate={data.plan.local_date}
+          />
         </section>
       ) : null}
 

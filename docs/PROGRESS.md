@@ -1,25 +1,24 @@
-﻿Current phase: Architecture fill (Phase 5–7 MVP)
-Current milestone: 日文／回顧／小說實體／寫作垃圾桶／ICS
+﻿Current phase: **v2.4 Phase 1** — 狀態與事件系統
+Current milestone: content status lifecycle + zg_study_events + Today cooldown/feedback
 Status: in_progress
 
-Completed:
-- 日文初學區：五十音圖、辨音練習、入門詞彙／文法；本機進度
-- 每週回顧：寫作／小說／日文／收藏摘要
-- 小說角色／章節／場景本機 CRUD
-- 寫作垃圾桶＋Markdown 匯出
-- 設定：japanese_enabled、ICS 每日提醒下載；側欄顯示日文／回顧
-- 今日刷新不限次數；內容爬蟲與品質閘門（先前）
-
-Deferred (not in this pass):
-- 寫作／小說雲端同步與主站 publish
-- Owner 完整 CRUD CMS
-- AI coach（Phase 8）
-- 日文音訊／濁音拗音表
+Completed this pass:
+- SQL: `supabase/migrations/202608040001_v24_phase1_study_events.sql`（及 APPLY 副本）
+  - 內容 status 擴充 seed/candidate/active/quarantine/rejected/archived（保留 inactive/draft）
+  - `zg_study_events` + RLS
+  - `zg_cooldown_content_ids` / `zg_blocked_too_easy_ids`
+  - `zg_get_or_create_daily_plan` 改為階梯冷卻抽卡
+- Client: `normalizeTerm`／cooldown pick、今日 `shown` 記錄、回饋按鈕（太簡單／不實用／想多看／很好）
+- AGENTS.md 指向 v2.4 總控
 
 User actions required now:
-- （可選）設定頁下載 ICS 匯入行事曆
-- （可選）Supabase 確認 `japanese_enabled` 欄位可寫入
+- 在 Supabase SQL Editor 執行 `supabase/APPLY_V24_PHASE1_STUDY_EVENTS.sql`
+  （未執行前：前端會軟失敗略過事件寫入；抽卡仍可用舊 RPC／client fallback）
 
-Next:
-- 驗證 Pages 部署後日文／回顧可用
-- Content sync bulk 完成後確認詞庫池
+Next (v2.4 Phase 2):
+- quality_score fields + quality-score.mjs
+- Today 依品質權重抽卡
+
+Deferred:
+- 死刑小說工作台
+- Phase 3+ 國學 topic graph／Content sync 升級

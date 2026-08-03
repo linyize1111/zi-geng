@@ -4,6 +4,16 @@
 
 ---
 
+## 2026-08-04 — 改採 v2.4 動態內容管線總控；Phase 1 先做事件與冷卻
+
+- **發現**：使用者提供 `字耕_v2.4_Cursor總控Prompt_動態內容管線版.md`；現況缺 content lifecycle／study events。
+- **採用**：AGENTS 改指向 v2.4；Phase 1 實作 status 擴充、`zg_study_events`、階梯冷卻、Today 回饋四鍵；`inactive` 保留給軟下架。
+- **未採用**：一次做完國學 topic graph／AI enrich；恢復 Wikiquote 自動匯入。
+- **影響**：Owner 需在 Supabase 執行 `APPLY_V24_PHASE1_STUDY_EVENTS.sql`。
+- **回復**：可還原 migration；前端對缺表採軟失敗。
+
+---
+
 ## 2026-07-21 — 工作區從 acg-portal 遷至 LYZ-workspace
 
 - **發現（初判有誤，已更正）**：規格出現在「推薦系統」時，誤以為主站不在本機。實際上兩站都在此工作站開發：
