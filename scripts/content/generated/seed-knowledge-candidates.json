@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-03T17:11:53.948Z",
+  "generated_at": "2026-08-03T17:48:57.455Z",
   "count": 20,
   "mix": {
     "active": 8,
@@ -10,45 +10,1026 @@
   "cards": [
     {
       "status": "active",
-      "series": "fabric_materials",
-      "topic_key": "紗",
-      "title": "紗",
-      "hook": "紗不是只是『薄布』，它常暗示視線可以被穿過。",
-      "story_md": "寫衣裝時，紗多半帶來透、輕、曖昧。窗紗、紗帷、夏夜的衣料，重點常是「看得見又看不全」。若你要華麗壓場，紗通常不是首選；若要若隱若現、簾後對話、熱氣中的輕，紗比錦準。和羅相比，紗更口語、更日常；羅更文言、更古典。",
+      "series": "classical_images",
+      "topic_key": "折柳",
+      "title": "折柳",
+      "hook": "折柳＝送別，柳與『留』諧音。",
+      "story_md": "古典詩裡折柳送行極常見。重點不是植物學，而是離別儀式：折一枝，等於把『留』說不出口的話交給物象。現代寫作可化用：車站的一截綠枝、窗台上被掰斷的葉，讓送別不必直說『我會想你』。",
       "facts": [
         {
-          "label": "質地",
-          "value": "輕薄、可透光"
+          "label": "主題",
+          "value": "送別"
+        },
+        {
+          "label": "關鍵",
+          "value": "柳／留諧音"
+        },
+        {
+          "label": "用法",
+          "value": "意象寄情"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "折柳",
+          "explanation": "送別"
+        }
+      ],
+      "examples": [],
+      "quiz": [
+        {
+          "question": "「折柳」對寫作最有用的是？",
+          "answer": "古典意象是現成的情感壓縮檔。",
+          "options": [
+            "古典意象是現成的情感壓縮檔。",
+            "用來填字數",
+            "一定要出現在開頭"
+          ]
+        }
+      ],
+      "why_it_matters": "古典意象是現成的情感壓縮檔。",
+      "writing_use": "讓物件完成告別，少寫口號式不捨。",
+      "reading_time_sec": 90,
+      "difficulty": 3,
+      "source_refs": [
+        {
+          "source_key": "moe_revised_dict",
+          "note": "curated snippet"
+        },
+        {
+          "source_key": "manual_curated",
+          "note": "curated snippet"
+        },
+        {
+          "source_key": "public_domain_classics",
+          "note": "curated snippet"
+        }
+      ],
+      "tags": [
+        "古典意象",
+        "國學小專欄"
+      ],
+      "source": {
+        "kind": "knowledge-curated",
+        "topic": "折柳"
+      },
+      "quality_score": 88,
+      "quality_flags": []
+    },
+    {
+      "status": "active",
+      "series": "classical_images",
+      "topic_key": "紅豆",
+      "title": "紅豆：寫作用途與異同",
+      "hook": "紅豆 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "紅豆 出現在古典意象脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "facts": [
+        {
+          "label": "系列",
+          "value": "古典意象"
+        },
+        {
+          "label": "關鍵",
+          "value": "紅豆"
+        },
+        {
+          "label": "狀態",
+          "value": "模板草稿"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "紅豆",
+          "explanation": "見辭典；本卡僅作寫作入口。"
+        }
+      ],
+      "examples": [],
+      "quiz": [
+        {
+          "question": "使用「紅豆」時，最該先想什麼？",
+          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
+          "options": [
+            "拼音怎麼念",
+            "它多提供了哪一層意思（語氣／制度／質地）",
+            "要不要加粗體"
+          ]
+        }
+      ],
+      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
+      "writing_use": "寫作時把「紅豆」當選擇，不當裝飾。",
+      "reading_time_sec": 75,
+      "difficulty": 3,
+      "source_refs": [
+        {
+          "source_key": "manual_curated",
+          "note": "template draft"
+        },
+        {
+          "source_key": "moe_revised_dict",
+          "note": "請核對釋義"
+        }
+      ],
+      "tags": [
+        "古典意象",
+        "國學小專欄",
+        "candidate"
+      ],
+      "source": {
+        "kind": "knowledge-template",
+        "topic": "紅豆"
+      },
+      "quality_score": 88,
+      "quality_flags": []
+    },
+    {
+      "status": "active",
+      "series": "classical_images",
+      "topic_key": "杜鵑",
+      "title": "杜鵑：寫作用途與異同",
+      "hook": "杜鵑 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "杜鵑 出現在古典意象脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "facts": [
+        {
+          "label": "系列",
+          "value": "古典意象"
+        },
+        {
+          "label": "關鍵",
+          "value": "杜鵑"
+        },
+        {
+          "label": "狀態",
+          "value": "模板草稿"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "杜鵑",
+          "explanation": "見辭典；本卡僅作寫作入口。"
+        }
+      ],
+      "examples": [],
+      "quiz": [
+        {
+          "question": "使用「杜鵑」時，最該先想什麼？",
+          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
+          "options": [
+            "拼音怎麼念",
+            "它多提供了哪一層意思（語氣／制度／質地）",
+            "要不要加粗體"
+          ]
+        }
+      ],
+      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
+      "writing_use": "寫作時把「杜鵑」當選擇，不當裝飾。",
+      "reading_time_sec": 75,
+      "difficulty": 3,
+      "source_refs": [
+        {
+          "source_key": "manual_curated",
+          "note": "template draft"
+        },
+        {
+          "source_key": "moe_revised_dict",
+          "note": "請核對釋義"
+        }
+      ],
+      "tags": [
+        "古典意象",
+        "國學小專欄",
+        "candidate"
+      ],
+      "source": {
+        "kind": "knowledge-template",
+        "topic": "杜鵑"
+      },
+      "quality_score": 88,
+      "quality_flags": []
+    },
+    {
+      "status": "active",
+      "series": "classical_images",
+      "topic_key": "明月",
+      "title": "明月：寫作用途與異同",
+      "hook": "明月 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "明月 出現在古典意象脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "facts": [
+        {
+          "label": "系列",
+          "value": "古典意象"
+        },
+        {
+          "label": "關鍵",
+          "value": "明月"
+        },
+        {
+          "label": "狀態",
+          "value": "模板草稿"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "明月",
+          "explanation": "見辭典；本卡僅作寫作入口。"
+        }
+      ],
+      "examples": [],
+      "quiz": [
+        {
+          "question": "使用「明月」時，最該先想什麼？",
+          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
+          "options": [
+            "拼音怎麼念",
+            "它多提供了哪一層意思（語氣／制度／質地）",
+            "要不要加粗體"
+          ]
+        }
+      ],
+      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
+      "writing_use": "寫作時把「明月」當選擇，不當裝飾。",
+      "reading_time_sec": 75,
+      "difficulty": 3,
+      "source_refs": [
+        {
+          "source_key": "manual_curated",
+          "note": "template draft"
+        },
+        {
+          "source_key": "moe_revised_dict",
+          "note": "請核對釋義"
+        }
+      ],
+      "tags": [
+        "古典意象",
+        "國學小專欄",
+        "candidate"
+      ],
+      "source": {
+        "kind": "knowledge-template",
+        "topic": "明月"
+      },
+      "quality_score": 88,
+      "quality_flags": []
+    },
+    {
+      "status": "active",
+      "series": "classical_images",
+      "topic_key": "梧桐",
+      "title": "梧桐：寫作用途與異同",
+      "hook": "梧桐 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "梧桐 出現在古典意象脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "facts": [
+        {
+          "label": "系列",
+          "value": "古典意象"
+        },
+        {
+          "label": "關鍵",
+          "value": "梧桐"
+        },
+        {
+          "label": "狀態",
+          "value": "模板草稿"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "梧桐",
+          "explanation": "見辭典；本卡僅作寫作入口。"
+        }
+      ],
+      "examples": [],
+      "quiz": [
+        {
+          "question": "使用「梧桐」時，最該先想什麼？",
+          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
+          "options": [
+            "拼音怎麼念",
+            "它多提供了哪一層意思（語氣／制度／質地）",
+            "要不要加粗體"
+          ]
+        }
+      ],
+      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
+      "writing_use": "寫作時把「梧桐」當選擇，不當裝飾。",
+      "reading_time_sec": 75,
+      "difficulty": 3,
+      "source_refs": [
+        {
+          "source_key": "manual_curated",
+          "note": "template draft"
+        },
+        {
+          "source_key": "moe_revised_dict",
+          "note": "請核對釋義"
+        }
+      ],
+      "tags": [
+        "古典意象",
+        "國學小專欄",
+        "candidate"
+      ],
+      "source": {
+        "kind": "knowledge-template",
+        "topic": "梧桐"
+      },
+      "quality_score": 88,
+      "quality_flags": []
+    },
+    {
+      "status": "active",
+      "series": "classical_images",
+      "topic_key": "芭蕉",
+      "title": "芭蕉：寫作用途與異同",
+      "hook": "芭蕉 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "芭蕉 出現在古典意象脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "facts": [
+        {
+          "label": "系列",
+          "value": "古典意象"
+        },
+        {
+          "label": "關鍵",
+          "value": "芭蕉"
+        },
+        {
+          "label": "狀態",
+          "value": "模板草稿"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "芭蕉",
+          "explanation": "見辭典；本卡僅作寫作入口。"
+        }
+      ],
+      "examples": [],
+      "quiz": [
+        {
+          "question": "使用「芭蕉」時，最該先想什麼？",
+          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
+          "options": [
+            "拼音怎麼念",
+            "它多提供了哪一層意思（語氣／制度／質地）",
+            "要不要加粗體"
+          ]
+        }
+      ],
+      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
+      "writing_use": "寫作時把「芭蕉」當選擇，不當裝飾。",
+      "reading_time_sec": 75,
+      "difficulty": 3,
+      "source_refs": [
+        {
+          "source_key": "manual_curated",
+          "note": "template draft"
+        },
+        {
+          "source_key": "moe_revised_dict",
+          "note": "請核對釋義"
+        }
+      ],
+      "tags": [
+        "古典意象",
+        "國學小專欄",
+        "candidate"
+      ],
+      "source": {
+        "kind": "knowledge-template",
+        "topic": "芭蕉"
+      },
+      "quality_score": 88,
+      "quality_flags": []
+    },
+    {
+      "status": "active",
+      "series": "classical_images",
+      "topic_key": "長亭",
+      "title": "長亭：寫作用途與異同",
+      "hook": "長亭 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "長亭 出現在古典意象脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "facts": [
+        {
+          "label": "系列",
+          "value": "古典意象"
+        },
+        {
+          "label": "關鍵",
+          "value": "長亭"
+        },
+        {
+          "label": "狀態",
+          "value": "模板草稿"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "長亭",
+          "explanation": "見辭典；本卡僅作寫作入口。"
+        }
+      ],
+      "examples": [],
+      "quiz": [
+        {
+          "question": "使用「長亭」時，最該先想什麼？",
+          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
+          "options": [
+            "拼音怎麼念",
+            "它多提供了哪一層意思（語氣／制度／質地）",
+            "要不要加粗體"
+          ]
+        }
+      ],
+      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
+      "writing_use": "寫作時把「長亭」當選擇，不當裝飾。",
+      "reading_time_sec": 75,
+      "difficulty": 3,
+      "source_refs": [
+        {
+          "source_key": "manual_curated",
+          "note": "template draft"
+        },
+        {
+          "source_key": "moe_revised_dict",
+          "note": "請核對釋義"
+        }
+      ],
+      "tags": [
+        "古典意象",
+        "國學小專欄",
+        "candidate"
+      ],
+      "source": {
+        "kind": "knowledge-template",
+        "topic": "長亭"
+      },
+      "quality_score": 88,
+      "quality_flags": []
+    },
+    {
+      "status": "active",
+      "series": "classical_images",
+      "topic_key": "陽關",
+      "title": "陽關：寫作用途與異同",
+      "hook": "陽關 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "陽關 出現在古典意象脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "facts": [
+        {
+          "label": "系列",
+          "value": "古典意象"
+        },
+        {
+          "label": "關鍵",
+          "value": "陽關"
+        },
+        {
+          "label": "狀態",
+          "value": "模板草稿"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "陽關",
+          "explanation": "見辭典；本卡僅作寫作入口。"
+        }
+      ],
+      "examples": [],
+      "quiz": [
+        {
+          "question": "使用「陽關」時，最該先想什麼？",
+          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
+          "options": [
+            "拼音怎麼念",
+            "它多提供了哪一層意思（語氣／制度／質地）",
+            "要不要加粗體"
+          ]
+        }
+      ],
+      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
+      "writing_use": "寫作時把「陽關」當選擇，不當裝飾。",
+      "reading_time_sec": 75,
+      "difficulty": 3,
+      "source_refs": [
+        {
+          "source_key": "manual_curated",
+          "note": "template draft"
+        },
+        {
+          "source_key": "moe_revised_dict",
+          "note": "請核對釋義"
+        }
+      ],
+      "tags": [
+        "古典意象",
+        "國學小專欄",
+        "candidate"
+      ],
+      "source": {
+        "kind": "knowledge-template",
+        "topic": "陽關"
+      },
+      "quality_score": 88,
+      "quality_flags": []
+    },
+    {
+      "status": "candidate",
+      "series": "literary_history",
+      "topic_key": "唐宋八大家",
+      "title": "唐宋八大家",
+      "hook": "唐宋八大家比較像古文運動的名片，不是人氣排行榜。",
+      "story_md": "韓愈、柳宗元推古文，反對過度華麗的駢儷風；宋代歐陽脩與三蘇、王安石、曾鞏延續這條路，後來被合稱唐宋八大家。你不必一次背完生平。先記：這名單談的是『文章要不要只追求漂亮形式』。寫評論或小說裡的讀書人，提到它，常常是在站隊『內容與氣骨』。",
+      "facts": [
+        {
+          "label": "唐代",
+          "value": "韓愈、柳宗元"
+        },
+        {
+          "label": "宋代",
+          "value": "歐陽脩、三蘇、王安石、曾鞏"
+        },
+        {
+          "label": "核心",
+          "value": "古文運動／反空華麗"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "唐宋八大家",
+          "explanation": "韓愈、柳宗元"
+        }
+      ],
+      "examples": [],
+      "quiz": [
+        {
+          "question": "「唐宋八大家」對寫作最有用的是？",
+          "answer": "文學史名詞要服務理解與寫作，不是炫耀。",
+          "options": [
+            "文學史名詞要服務理解與寫作，不是炫耀。",
+            "用來填字數",
+            "一定要出現在開頭"
+          ]
+        }
+      ],
+      "why_it_matters": "文學史名詞要服務理解與寫作，不是炫耀。",
+      "writing_use": "用它當文化座標，不要當百科條目背完。",
+      "reading_time_sec": 90,
+      "difficulty": 3,
+      "source_refs": [
+        {
+          "source_key": "moe_revised_dict",
+          "note": "curated snippet"
+        },
+        {
+          "source_key": "manual_curated",
+          "note": "curated snippet"
+        },
+        {
+          "source_key": "public_domain_classics",
+          "note": "curated snippet"
+        }
+      ],
+      "tags": [
+        "文學史",
+        "國學小專欄"
+      ],
+      "source": {
+        "kind": "knowledge-curated",
+        "topic": "唐宋八大家"
+      },
+      "quality_score": 88,
+      "quality_flags": []
+    },
+    {
+      "status": "candidate",
+      "series": "literary_history",
+      "topic_key": "古文運動",
+      "title": "古文運動：寫作用途與異同",
+      "hook": "古文運動 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "古文運動 出現在文學史脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "facts": [
+        {
+          "label": "系列",
+          "value": "文學史"
+        },
+        {
+          "label": "關鍵",
+          "value": "古文運動"
+        },
+        {
+          "label": "狀態",
+          "value": "模板草稿"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "古文運動",
+          "explanation": "見辭典；本卡僅作寫作入口。"
+        }
+      ],
+      "examples": [],
+      "quiz": [
+        {
+          "question": "使用「古文運動」時，最該先想什麼？",
+          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
+          "options": [
+            "拼音怎麼念",
+            "它多提供了哪一層意思（語氣／制度／質地）",
+            "要不要加粗體"
+          ]
+        }
+      ],
+      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
+      "writing_use": "寫作時把「古文運動」當選擇，不當裝飾。",
+      "reading_time_sec": 75,
+      "difficulty": 3,
+      "source_refs": [
+        {
+          "source_key": "manual_curated",
+          "note": "template draft"
+        },
+        {
+          "source_key": "moe_revised_dict",
+          "note": "請核對釋義"
+        }
+      ],
+      "tags": [
+        "文學史",
+        "國學小專欄",
+        "candidate"
+      ],
+      "source": {
+        "kind": "knowledge-template",
+        "topic": "古文運動"
+      },
+      "quality_score": 88,
+      "quality_flags": []
+    },
+    {
+      "status": "candidate",
+      "series": "literary_history",
+      "topic_key": "建安七子",
+      "title": "建安七子：寫作用途與異同",
+      "hook": "建安七子 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "建安七子 出現在文學史脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "facts": [
+        {
+          "label": "系列",
+          "value": "文學史"
+        },
+        {
+          "label": "關鍵",
+          "value": "建安七子"
+        },
+        {
+          "label": "狀態",
+          "value": "模板草稿"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "建安七子",
+          "explanation": "見辭典；本卡僅作寫作入口。"
+        }
+      ],
+      "examples": [],
+      "quiz": [
+        {
+          "question": "使用「建安七子」時，最該先想什麼？",
+          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
+          "options": [
+            "拼音怎麼念",
+            "它多提供了哪一層意思（語氣／制度／質地）",
+            "要不要加粗體"
+          ]
+        }
+      ],
+      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
+      "writing_use": "寫作時把「建安七子」當選擇，不當裝飾。",
+      "reading_time_sec": 75,
+      "difficulty": 3,
+      "source_refs": [
+        {
+          "source_key": "manual_curated",
+          "note": "template draft"
+        },
+        {
+          "source_key": "moe_revised_dict",
+          "note": "請核對釋義"
+        }
+      ],
+      "tags": [
+        "文學史",
+        "國學小專欄",
+        "candidate"
+      ],
+      "source": {
+        "kind": "knowledge-template",
+        "topic": "建安七子"
+      },
+      "quality_score": 88,
+      "quality_flags": []
+    },
+    {
+      "status": "candidate",
+      "series": "literary_history",
+      "topic_key": "竟陵派",
+      "title": "竟陵派：寫作用途與異同",
+      "hook": "竟陵派 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "竟陵派 出現在文學史脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "facts": [
+        {
+          "label": "系列",
+          "value": "文學史"
+        },
+        {
+          "label": "關鍵",
+          "value": "竟陵派"
+        },
+        {
+          "label": "狀態",
+          "value": "模板草稿"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "竟陵派",
+          "explanation": "見辭典；本卡僅作寫作入口。"
+        }
+      ],
+      "examples": [],
+      "quiz": [
+        {
+          "question": "使用「竟陵派」時，最該先想什麼？",
+          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
+          "options": [
+            "拼音怎麼念",
+            "它多提供了哪一層意思（語氣／制度／質地）",
+            "要不要加粗體"
+          ]
+        }
+      ],
+      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
+      "writing_use": "寫作時把「竟陵派」當選擇，不當裝飾。",
+      "reading_time_sec": 75,
+      "difficulty": 3,
+      "source_refs": [
+        {
+          "source_key": "manual_curated",
+          "note": "template draft"
+        },
+        {
+          "source_key": "moe_revised_dict",
+          "note": "請核對釋義"
+        }
+      ],
+      "tags": [
+        "文學史",
+        "國學小專欄",
+        "candidate"
+      ],
+      "source": {
+        "kind": "knowledge-template",
+        "topic": "竟陵派"
+      },
+      "quality_score": 88,
+      "quality_flags": []
+    },
+    {
+      "status": "candidate",
+      "series": "literary_history",
+      "topic_key": "桐城派",
+      "title": "桐城派：寫作用途與異同",
+      "hook": "桐城派 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "桐城派 出現在文學史脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "facts": [
+        {
+          "label": "系列",
+          "value": "文學史"
+        },
+        {
+          "label": "關鍵",
+          "value": "桐城派"
+        },
+        {
+          "label": "狀態",
+          "value": "模板草稿"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "桐城派",
+          "explanation": "見辭典；本卡僅作寫作入口。"
+        }
+      ],
+      "examples": [],
+      "quiz": [
+        {
+          "question": "使用「桐城派」時，最該先想什麼？",
+          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
+          "options": [
+            "拼音怎麼念",
+            "它多提供了哪一層意思（語氣／制度／質地）",
+            "要不要加粗體"
+          ]
+        }
+      ],
+      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
+      "writing_use": "寫作時把「桐城派」當選擇，不當裝飾。",
+      "reading_time_sec": 75,
+      "difficulty": 3,
+      "source_refs": [
+        {
+          "source_key": "manual_curated",
+          "note": "template draft"
+        },
+        {
+          "source_key": "moe_revised_dict",
+          "note": "請核對釋義"
+        }
+      ],
+      "tags": [
+        "文學史",
+        "國學小專欄",
+        "candidate"
+      ],
+      "source": {
+        "kind": "knowledge-template",
+        "topic": "桐城派"
+      },
+      "quality_score": 88,
+      "quality_flags": []
+    },
+    {
+      "status": "candidate",
+      "series": "literary_history",
+      "topic_key": "話本",
+      "title": "話本：寫作用途與異同",
+      "hook": "話本 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "話本 出現在文學史脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "facts": [
+        {
+          "label": "系列",
+          "value": "文學史"
+        },
+        {
+          "label": "關鍵",
+          "value": "話本"
+        },
+        {
+          "label": "狀態",
+          "value": "模板草稿"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "話本",
+          "explanation": "見辭典；本卡僅作寫作入口。"
+        }
+      ],
+      "examples": [],
+      "quiz": [
+        {
+          "question": "使用「話本」時，最該先想什麼？",
+          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
+          "options": [
+            "拼音怎麼念",
+            "它多提供了哪一層意思（語氣／制度／質地）",
+            "要不要加粗體"
+          ]
+        }
+      ],
+      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
+      "writing_use": "寫作時把「話本」當選擇，不當裝飾。",
+      "reading_time_sec": 75,
+      "difficulty": 3,
+      "source_refs": [
+        {
+          "source_key": "manual_curated",
+          "note": "template draft"
+        },
+        {
+          "source_key": "moe_revised_dict",
+          "note": "請核對釋義"
+        }
+      ],
+      "tags": [
+        "文學史",
+        "國學小專欄",
+        "candidate"
+      ],
+      "source": {
+        "kind": "knowledge-template",
+        "topic": "話本"
+      },
+      "quality_score": 88,
+      "quality_flags": []
+    },
+    {
+      "status": "candidate",
+      "series": "literary_history",
+      "topic_key": "章回小說",
+      "title": "章回小說：寫作用途與異同",
+      "hook": "章回小說 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "章回小說 出現在文學史脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "facts": [
+        {
+          "label": "系列",
+          "value": "文學史"
+        },
+        {
+          "label": "關鍵",
+          "value": "章回小說"
+        },
+        {
+          "label": "狀態",
+          "value": "模板草稿"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "章回小說",
+          "explanation": "見辭典；本卡僅作寫作入口。"
+        }
+      ],
+      "examples": [],
+      "quiz": [
+        {
+          "question": "使用「章回小說」時，最該先想什麼？",
+          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
+          "options": [
+            "拼音怎麼念",
+            "它多提供了哪一層意思（語氣／制度／質地）",
+            "要不要加粗體"
+          ]
+        }
+      ],
+      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
+      "writing_use": "寫作時把「章回小說」當選擇，不當裝飾。",
+      "reading_time_sec": 75,
+      "difficulty": 3,
+      "source_refs": [
+        {
+          "source_key": "manual_curated",
+          "note": "template draft"
+        },
+        {
+          "source_key": "moe_revised_dict",
+          "note": "請核對釋義"
+        }
+      ],
+      "tags": [
+        "文學史",
+        "國學小專欄",
+        "candidate"
+      ],
+      "source": {
+        "kind": "knowledge-template",
+        "topic": "章回小說"
+      },
+      "quality_score": 88,
+      "quality_flags": []
+    },
+    {
+      "status": "candidate",
+      "series": "time_calendar",
+      "topic_key": "子時",
+      "title": "子時",
+      "hook": "子時約夜半，是一天重新起算的縫。",
+      "story_md": "十二時辰裡，子時大約 23–1 點。古典敘事用子時，常不是精準鐘點，而是『最深的夜』。寫密謀、失眠、守歲、變盤，子時比『半夜』多一點曆法氣味。也不必每次都註解換算，語境夠就不說破。",
+      "facts": [
+        {
+          "label": "約略",
+          "value": "23 時至 1 時"
         },
         {
           "label": "語氣",
-          "value": "曖昧、夏夜、簾後"
+          "value": "深夜、轉換"
         },
         {
-          "label": "對照",
-          "value": "紗透／錦密"
+          "label": "用法",
+          "value": "氣氛錨點"
         }
       ],
       "glossary": [
         {
-          "term": "紗",
-          "explanation": "輕薄、可透光"
+          "term": "子時",
+          "explanation": "23 時至 1 時"
         }
       ],
       "examples": [],
       "quiz": [
         {
-          "question": "「紗」對寫作最有用的是？",
-          "answer": "衣料詞能同時寫階級、季節與視線。",
+          "question": "「子時」對寫作最有用的是？",
+          "answer": "時間詞也能寫氣氛。",
           "options": [
-            "衣料詞能同時寫階級、季節與視線。",
+            "時間詞也能寫氣氛。",
             "用來填字數",
             "一定要出現在開頭"
           ]
         }
       ],
-      "why_it_matters": "衣料詞能同時寫階級、季節與視線。",
-      "writing_use": "不要只寫『漂亮衣服』，用紗決定讀者能看見多少。",
+      "why_it_matters": "時間詞也能寫氣氛。",
+      "writing_use": "時辰詞用來定『夜的深度』，不必當鐘錶。",
       "reading_time_sec": 90,
       "difficulty": 3,
       "source_refs": [
@@ -66,492 +1047,31 @@
         }
       ],
       "tags": [
-        "布料器物",
+        "時間曆法",
         "國學小專欄"
       ],
       "source": {
         "kind": "knowledge-curated",
-        "topic": "紗"
-      },
-      "quality_score": 88,
-      "quality_flags": []
-    },
-    {
-      "status": "active",
-      "series": "fabric_materials",
-      "topic_key": "羅",
-      "title": "羅",
-      "hook": "羅跟紗都薄，但羅更像把時間往文言推半寸。",
-      "story_md": "羅袖、羅帷常見於古典敘事。它同樣疏薄，語感卻比紗更文、更舊。寫現代對白時硬塞『羅』會突兀；寫懷古、夢境、戲曲感場面，羅比紗更對味。重點不是考證織法，而是你要的距離：要近用紗，要遠用羅。",
-      "facts": [
-        {
-          "label": "語域",
-          "value": "偏文言"
-        },
-        {
-          "label": "常見",
-          "value": "羅袖、羅帷"
-        },
-        {
-          "label": "對照",
-          "value": "羅古／紗常"
-        }
-      ],
-      "glossary": [
-        {
-          "term": "羅",
-          "explanation": "偏文言"
-        }
-      ],
-      "examples": [],
-      "quiz": [
-        {
-          "question": "「羅」對寫作最有用的是？",
-          "answer": "同義近義的衣料詞，差在語氣距離。",
-          "options": [
-            "同義近義的衣料詞，差在語氣距離。",
-            "用來填字數",
-            "一定要出現在開頭"
-          ]
-        }
-      ],
-      "why_it_matters": "同義近義的衣料詞，差在語氣距離。",
-      "writing_use": "選羅＝選一種略遠的語感，不只是選布。",
-      "reading_time_sec": 90,
-      "difficulty": 3,
-      "source_refs": [
-        {
-          "source_key": "moe_revised_dict",
-          "note": "curated snippet"
-        },
-        {
-          "source_key": "manual_curated",
-          "note": "curated snippet"
-        },
-        {
-          "source_key": "public_domain_classics",
-          "note": "curated snippet"
-        }
-      ],
-      "tags": [
-        "布料器物",
-        "國學小專欄"
-      ],
-      "source": {
-        "kind": "knowledge-curated",
-        "topic": "羅"
-      },
-      "quality_score": 88,
-      "quality_flags": []
-    },
-    {
-      "status": "active",
-      "series": "fabric_materials",
-      "topic_key": "絹",
-      "title": "絹：寫作用途與異同",
-      "hook": "絹 值得寫作者放進工具列，而不是只放進考古題。",
-      "story_md": "絹 出現在布料器物脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
-      "facts": [
-        {
-          "label": "系列",
-          "value": "布料器物"
-        },
-        {
-          "label": "關鍵",
-          "value": "絹"
-        },
-        {
-          "label": "狀態",
-          "value": "模板草稿"
-        }
-      ],
-      "glossary": [
-        {
-          "term": "絹",
-          "explanation": "見辭典；本卡僅作寫作入口。"
-        }
-      ],
-      "examples": [],
-      "quiz": [
-        {
-          "question": "使用「絹」時，最該先想什麼？",
-          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
-          "options": [
-            "拼音怎麼念",
-            "它多提供了哪一層意思（語氣／制度／質地）",
-            "要不要加粗體"
-          ]
-        }
-      ],
-      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
-      "writing_use": "寫作時把「絹」當選擇，不當裝飾。",
-      "reading_time_sec": 75,
-      "difficulty": 3,
-      "source_refs": [
-        {
-          "source_key": "manual_curated",
-          "note": "template draft"
-        },
-        {
-          "source_key": "moe_revised_dict",
-          "note": "請核對釋義"
-        }
-      ],
-      "tags": [
-        "布料器物",
-        "國學小專欄",
-        "candidate"
-      ],
-      "source": {
-        "kind": "knowledge-template",
-        "topic": "絹"
-      },
-      "quality_score": 88,
-      "quality_flags": []
-    },
-    {
-      "status": "active",
-      "series": "fabric_materials",
-      "topic_key": "錦",
-      "title": "錦",
-      "hook": "錦是被看見的義務：密、重、亮。",
-      "story_md": "錦衣、錦緞常帶儀式與排場。它和紗對讀時最清楚：一個要透，一個要壓場。寫宴會、官場、對比『舊麻／錦衣』，錦很有用。小心別堆成廣告詞；讓錦出現在需要『不得不華麗』的壓力裡。",
-      "facts": [
-        {
-          "label": "質地",
-          "value": "密、有紋、偏重"
-        },
-        {
-          "label": "場合",
-          "value": "儀式、排場"
-        },
-        {
-          "label": "對照",
-          "value": "錦密／紗透"
-        }
-      ],
-      "glossary": [
-        {
-          "term": "錦",
-          "explanation": "密、有紋、偏重"
-        }
-      ],
-      "examples": [],
-      "quiz": [
-        {
-          "question": "「錦」對寫作最有用的是？",
-          "answer": "華麗也可以是一種社會義務。",
-          "options": [
-            "華麗也可以是一種社會義務。",
-            "用來填字數",
-            "一定要出現在開頭"
-          ]
-        }
-      ],
-      "why_it_matters": "華麗也可以是一種社會義務。",
-      "writing_use": "用錦寫壓力，不只寫美。",
-      "reading_time_sec": 90,
-      "difficulty": 3,
-      "source_refs": [
-        {
-          "source_key": "moe_revised_dict",
-          "note": "curated snippet"
-        },
-        {
-          "source_key": "manual_curated",
-          "note": "curated snippet"
-        },
-        {
-          "source_key": "public_domain_classics",
-          "note": "curated snippet"
-        }
-      ],
-      "tags": [
-        "布料器物",
-        "國學小專欄"
-      ],
-      "source": {
-        "kind": "knowledge-curated",
-        "topic": "錦"
-      },
-      "quality_score": 88,
-      "quality_flags": []
-    },
-    {
-      "status": "active",
-      "series": "fabric_materials",
-      "topic_key": "綺",
-      "title": "綺：寫作用途與異同",
-      "hook": "綺 值得寫作者放進工具列，而不是只放進考古題。",
-      "story_md": "綺 出現在布料器物脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
-      "facts": [
-        {
-          "label": "系列",
-          "value": "布料器物"
-        },
-        {
-          "label": "關鍵",
-          "value": "綺"
-        },
-        {
-          "label": "狀態",
-          "value": "模板草稿"
-        }
-      ],
-      "glossary": [
-        {
-          "term": "綺",
-          "explanation": "見辭典；本卡僅作寫作入口。"
-        }
-      ],
-      "examples": [],
-      "quiz": [
-        {
-          "question": "使用「綺」時，最該先想什麼？",
-          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
-          "options": [
-            "拼音怎麼念",
-            "它多提供了哪一層意思（語氣／制度／質地）",
-            "要不要加粗體"
-          ]
-        }
-      ],
-      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
-      "writing_use": "寫作時把「綺」當選擇，不當裝飾。",
-      "reading_time_sec": 75,
-      "difficulty": 3,
-      "source_refs": [
-        {
-          "source_key": "manual_curated",
-          "note": "template draft"
-        },
-        {
-          "source_key": "moe_revised_dict",
-          "note": "請核對釋義"
-        }
-      ],
-      "tags": [
-        "布料器物",
-        "國學小專欄",
-        "candidate"
-      ],
-      "source": {
-        "kind": "knowledge-template",
-        "topic": "綺"
-      },
-      "quality_score": 88,
-      "quality_flags": []
-    },
-    {
-      "status": "active",
-      "series": "fabric_materials",
-      "topic_key": "綾",
-      "title": "綾：寫作用途與異同",
-      "hook": "綾 值得寫作者放進工具列，而不是只放進考古題。",
-      "story_md": "綾 出現在布料器物脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
-      "facts": [
-        {
-          "label": "系列",
-          "value": "布料器物"
-        },
-        {
-          "label": "關鍵",
-          "value": "綾"
-        },
-        {
-          "label": "狀態",
-          "value": "模板草稿"
-        }
-      ],
-      "glossary": [
-        {
-          "term": "綾",
-          "explanation": "見辭典；本卡僅作寫作入口。"
-        }
-      ],
-      "examples": [],
-      "quiz": [
-        {
-          "question": "使用「綾」時，最該先想什麼？",
-          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
-          "options": [
-            "拼音怎麼念",
-            "它多提供了哪一層意思（語氣／制度／質地）",
-            "要不要加粗體"
-          ]
-        }
-      ],
-      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
-      "writing_use": "寫作時把「綾」當選擇，不當裝飾。",
-      "reading_time_sec": 75,
-      "difficulty": 3,
-      "source_refs": [
-        {
-          "source_key": "manual_curated",
-          "note": "template draft"
-        },
-        {
-          "source_key": "moe_revised_dict",
-          "note": "請核對釋義"
-        }
-      ],
-      "tags": [
-        "布料器物",
-        "國學小專欄",
-        "candidate"
-      ],
-      "source": {
-        "kind": "knowledge-template",
-        "topic": "綾"
-      },
-      "quality_score": 88,
-      "quality_flags": []
-    },
-    {
-      "status": "active",
-      "series": "fabric_materials",
-      "topic_key": "綢",
-      "title": "綢：寫作用途與異同",
-      "hook": "綢 值得寫作者放進工具列，而不是只放進考古題。",
-      "story_md": "綢 出現在布料器物脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
-      "facts": [
-        {
-          "label": "系列",
-          "value": "布料器物"
-        },
-        {
-          "label": "關鍵",
-          "value": "綢"
-        },
-        {
-          "label": "狀態",
-          "value": "模板草稿"
-        }
-      ],
-      "glossary": [
-        {
-          "term": "綢",
-          "explanation": "見辭典；本卡僅作寫作入口。"
-        }
-      ],
-      "examples": [],
-      "quiz": [
-        {
-          "question": "使用「綢」時，最該先想什麼？",
-          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
-          "options": [
-            "拼音怎麼念",
-            "它多提供了哪一層意思（語氣／制度／質地）",
-            "要不要加粗體"
-          ]
-        }
-      ],
-      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
-      "writing_use": "寫作時把「綢」當選擇，不當裝飾。",
-      "reading_time_sec": 75,
-      "difficulty": 3,
-      "source_refs": [
-        {
-          "source_key": "manual_curated",
-          "note": "template draft"
-        },
-        {
-          "source_key": "moe_revised_dict",
-          "note": "請核對釋義"
-        }
-      ],
-      "tags": [
-        "布料器物",
-        "國學小專欄",
-        "candidate"
-      ],
-      "source": {
-        "kind": "knowledge-template",
-        "topic": "綢"
-      },
-      "quality_score": 88,
-      "quality_flags": []
-    },
-    {
-      "status": "active",
-      "series": "fabric_materials",
-      "topic_key": "緞",
-      "title": "緞：寫作用途與異同",
-      "hook": "緞 值得寫作者放進工具列，而不是只放進考古題。",
-      "story_md": "緞 出現在布料器物脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
-      "facts": [
-        {
-          "label": "系列",
-          "value": "布料器物"
-        },
-        {
-          "label": "關鍵",
-          "value": "緞"
-        },
-        {
-          "label": "狀態",
-          "value": "模板草稿"
-        }
-      ],
-      "glossary": [
-        {
-          "term": "緞",
-          "explanation": "見辭典；本卡僅作寫作入口。"
-        }
-      ],
-      "examples": [],
-      "quiz": [
-        {
-          "question": "使用「緞」時，最該先想什麼？",
-          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
-          "options": [
-            "拼音怎麼念",
-            "它多提供了哪一層意思（語氣／制度／質地）",
-            "要不要加粗體"
-          ]
-        }
-      ],
-      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
-      "writing_use": "寫作時把「緞」當選擇，不當裝飾。",
-      "reading_time_sec": 75,
-      "difficulty": 3,
-      "source_refs": [
-        {
-          "source_key": "manual_curated",
-          "note": "template draft"
-        },
-        {
-          "source_key": "moe_revised_dict",
-          "note": "請核對釋義"
-        }
-      ],
-      "tags": [
-        "布料器物",
-        "國學小專欄",
-        "candidate"
-      ],
-      "source": {
-        "kind": "knowledge-template",
-        "topic": "緞"
+        "topic": "子時"
       },
       "quality_score": 88,
       "quality_flags": []
     },
     {
       "status": "candidate",
-      "series": "fabric_materials",
-      "topic_key": "縐",
-      "title": "縐：寫作用途與異同",
-      "hook": "縐 值得寫作者放進工具列，而不是只放進考古題。",
-      "story_md": "縐 出現在布料器物脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "series": "time_calendar",
+      "topic_key": "寅時",
+      "title": "寅時：寫作用途與異同",
+      "hook": "寅時 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "寅時 出現在時間曆法脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
       "facts": [
         {
           "label": "系列",
-          "value": "布料器物"
+          "value": "時間曆法"
         },
         {
           "label": "關鍵",
-          "value": "縐"
+          "value": "寅時"
         },
         {
           "label": "狀態",
@@ -560,14 +1080,14 @@
       ],
       "glossary": [
         {
-          "term": "縐",
+          "term": "寅時",
           "explanation": "見辭典；本卡僅作寫作入口。"
         }
       ],
       "examples": [],
       "quiz": [
         {
-          "question": "使用「縐」時，最該先想什麼？",
+          "question": "使用「寅時」時，最該先想什麼？",
           "answer": "它多提供了哪一層意思（語氣／制度／質地）",
           "options": [
             "拼音怎麼念",
@@ -577,7 +1097,7 @@
         }
       ],
       "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
-      "writing_use": "寫作時把「縐」當選擇，不當裝飾。",
+      "writing_use": "寫作時把「寅時」當選擇，不當裝飾。",
       "reading_time_sec": 75,
       "difficulty": 3,
       "source_refs": [
@@ -591,32 +1111,32 @@
         }
       ],
       "tags": [
-        "布料器物",
+        "時間曆法",
         "國學小專欄",
         "candidate"
       ],
       "source": {
         "kind": "knowledge-template",
-        "topic": "縐"
+        "topic": "寅時"
       },
       "quality_score": 88,
       "quality_flags": []
     },
     {
       "status": "candidate",
-      "series": "fabric_materials",
-      "topic_key": "紈",
-      "title": "紈：寫作用途與異同",
-      "hook": "紈 值得寫作者放進工具列，而不是只放進考古題。",
-      "story_md": "紈 出現在布料器物脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "series": "time_calendar",
+      "topic_key": "朔望",
+      "title": "朔望：寫作用途與異同",
+      "hook": "朔望 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "朔望 出現在時間曆法脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
       "facts": [
         {
           "label": "系列",
-          "value": "布料器物"
+          "value": "時間曆法"
         },
         {
           "label": "關鍵",
-          "value": "紈"
+          "value": "朔望"
         },
         {
           "label": "狀態",
@@ -625,14 +1145,14 @@
       ],
       "glossary": [
         {
-          "term": "紈",
+          "term": "朔望",
           "explanation": "見辭典；本卡僅作寫作入口。"
         }
       ],
       "examples": [],
       "quiz": [
         {
-          "question": "使用「紈」時，最該先想什麼？",
+          "question": "使用「朔望」時，最該先想什麼？",
           "answer": "它多提供了哪一層意思（語氣／制度／質地）",
           "options": [
             "拼音怎麼念",
@@ -642,7 +1162,7 @@
         }
       ],
       "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
-      "writing_use": "寫作時把「紈」當選擇，不當裝飾。",
+      "writing_use": "寫作時把「朔望」當選擇，不當裝飾。",
       "reading_time_sec": 75,
       "difficulty": 3,
       "source_refs": [
@@ -656,32 +1176,32 @@
         }
       ],
       "tags": [
-        "布料器物",
+        "時間曆法",
         "國學小專欄",
         "candidate"
       ],
       "source": {
         "kind": "knowledge-template",
-        "topic": "紈"
+        "topic": "朔望"
       },
       "quality_score": 88,
       "quality_flags": []
     },
     {
       "status": "candidate",
-      "series": "fabric_materials",
-      "topic_key": "緙絲",
-      "title": "緙絲：寫作用途與異同",
-      "hook": "緙絲 值得寫作者放進工具列，而不是只放進考古題。",
-      "story_md": "緙絲 出現在布料器物脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "series": "time_calendar",
+      "topic_key": "閏月",
+      "title": "閏月：寫作用途與異同",
+      "hook": "閏月 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "閏月 出現在時間曆法脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
       "facts": [
         {
           "label": "系列",
-          "value": "布料器物"
+          "value": "時間曆法"
         },
         {
           "label": "關鍵",
-          "value": "緙絲"
+          "value": "閏月"
         },
         {
           "label": "狀態",
@@ -690,14 +1210,14 @@
       ],
       "glossary": [
         {
-          "term": "緙絲",
+          "term": "閏月",
           "explanation": "見辭典；本卡僅作寫作入口。"
         }
       ],
       "examples": [],
       "quiz": [
         {
-          "question": "使用「緙絲」時，最該先想什麼？",
+          "question": "使用「閏月」時，最該先想什麼？",
           "answer": "它多提供了哪一層意思（語氣／制度／質地）",
           "options": [
             "拼音怎麼念",
@@ -707,7 +1227,7 @@
         }
       ],
       "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
-      "writing_use": "寫作時把「緙絲」當選擇，不當裝飾。",
+      "writing_use": "寫作時把「閏月」當選擇，不當裝飾。",
       "reading_time_sec": 75,
       "difficulty": 3,
       "source_refs": [
@@ -721,32 +1241,32 @@
         }
       ],
       "tags": [
-        "布料器物",
+        "時間曆法",
         "國學小專欄",
         "candidate"
       ],
       "source": {
         "kind": "knowledge-template",
-        "topic": "緙絲"
+        "topic": "閏月"
       },
       "quality_score": 88,
       "quality_flags": []
     },
     {
       "status": "candidate",
-      "series": "fabric_materials",
-      "topic_key": "麻",
-      "title": "麻：寫作用途與異同",
-      "hook": "麻 值得寫作者放進工具列，而不是只放進考古題。",
-      "story_md": "麻 出現在布料器物脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
+      "series": "time_calendar",
+      "topic_key": "干支",
+      "title": "干支：寫作用途與異同",
+      "hook": "干支 值得寫作者放進工具列，而不是只放進考古題。",
+      "story_md": "干支 出現在時間曆法脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
       "facts": [
         {
           "label": "系列",
-          "value": "布料器物"
+          "value": "時間曆法"
         },
         {
           "label": "關鍵",
-          "value": "麻"
+          "value": "干支"
         },
         {
           "label": "狀態",
@@ -755,14 +1275,14 @@
       ],
       "glossary": [
         {
-          "term": "麻",
+          "term": "干支",
           "explanation": "見辭典；本卡僅作寫作入口。"
         }
       ],
       "examples": [],
       "quiz": [
         {
-          "question": "使用「麻」時，最該先想什麼？",
+          "question": "使用「干支」時，最該先想什麼？",
           "answer": "它多提供了哪一層意思（語氣／制度／質地）",
           "options": [
             "拼音怎麼念",
@@ -772,7 +1292,7 @@
         }
       ],
       "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
-      "writing_use": "寫作時把「麻」當選擇，不當裝飾。",
+      "writing_use": "寫作時把「干支」當選擇，不當裝飾。",
       "reading_time_sec": 75,
       "difficulty": 3,
       "source_refs": [
@@ -786,542 +1306,17 @@
         }
       ],
       "tags": [
-        "布料器物",
+        "時間曆法",
         "國學小專欄",
         "candidate"
       ],
       "source": {
         "kind": "knowledge-template",
-        "topic": "麻"
-      },
-      "quality_score": 88,
-      "quality_flags": []
-    },
-    {
-      "status": "candidate",
-      "series": "genre_rhetoric",
-      "topic_key": "賦比興",
-      "title": "賦比興",
-      "hook": "賦比興是三種靠近世界的方式：直說、比喻、起興。",
-      "story_md": "賦是直接鋪陳；比是明喻／對應；興是先言他物再引出正題。寫作時你不必考試默寫定義，但可以自問：這段是在『講清楚』、在『拿另一物來照』，還是在『先晃一下旁邊的風景再拐回心事』？三種節奏不同，混用時最怕三種同時喊最大聲。",
-      "facts": [
-        {
-          "label": "賦",
-          "value": "直陳"
-        },
-        {
-          "label": "比",
-          "value": "比喻對應"
-        },
-        {
-          "label": "興",
-          "value": "他物起情"
-        }
-      ],
-      "glossary": [
-        {
-          "term": "賦比興",
-          "explanation": "直陳"
-        }
-      ],
-      "examples": [],
-      "quiz": [
-        {
-          "question": "「賦比興」對寫作最有用的是？",
-          "answer": "文體修辭詞能幫你設計段落節奏。",
-          "options": [
-            "文體修辭詞能幫你設計段落節奏。",
-            "用來填字數",
-            "一定要出現在開頭"
-          ]
-        }
-      ],
-      "why_it_matters": "文體修辭詞能幫你設計段落節奏。",
-      "writing_use": "修辭選擇＝讀者進入情緒的路徑選擇。",
-      "reading_time_sec": 90,
-      "difficulty": 3,
-      "source_refs": [
-        {
-          "source_key": "moe_revised_dict",
-          "note": "curated snippet"
-        },
-        {
-          "source_key": "manual_curated",
-          "note": "curated snippet"
-        },
-        {
-          "source_key": "public_domain_classics",
-          "note": "curated snippet"
-        }
-      ],
-      "tags": [
-        "文體修辭",
-        "國學小專欄"
-      ],
-      "source": {
-        "kind": "knowledge-curated",
-        "topic": "賦比興"
-      },
-      "quality_score": 88,
-      "quality_flags": []
-    },
-    {
-      "status": "candidate",
-      "series": "genre_rhetoric",
-      "topic_key": "對仗",
-      "title": "對仗：寫作用途與異同",
-      "hook": "對仗 值得寫作者放進工具列，而不是只放進考古題。",
-      "story_md": "對仗 出現在文體修辭脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
-      "facts": [
-        {
-          "label": "系列",
-          "value": "文體修辭"
-        },
-        {
-          "label": "關鍵",
-          "value": "對仗"
-        },
-        {
-          "label": "狀態",
-          "value": "模板草稿"
-        }
-      ],
-      "glossary": [
-        {
-          "term": "對仗",
-          "explanation": "見辭典；本卡僅作寫作入口。"
-        }
-      ],
-      "examples": [],
-      "quiz": [
-        {
-          "question": "使用「對仗」時，最該先想什麼？",
-          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
-          "options": [
-            "拼音怎麼念",
-            "它多提供了哪一層意思（語氣／制度／質地）",
-            "要不要加粗體"
-          ]
-        }
-      ],
-      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
-      "writing_use": "寫作時把「對仗」當選擇，不當裝飾。",
-      "reading_time_sec": 75,
-      "difficulty": 3,
-      "source_refs": [
-        {
-          "source_key": "manual_curated",
-          "note": "template draft"
-        },
-        {
-          "source_key": "moe_revised_dict",
-          "note": "請核對釋義"
-        }
-      ],
-      "tags": [
-        "文體修辭",
-        "國學小專欄",
-        "candidate"
-      ],
-      "source": {
-        "kind": "knowledge-template",
-        "topic": "對仗"
-      },
-      "quality_score": 88,
-      "quality_flags": []
-    },
-    {
-      "status": "candidate",
-      "series": "genre_rhetoric",
-      "topic_key": "用典",
-      "title": "用典：寫作用途與異同",
-      "hook": "用典 值得寫作者放進工具列，而不是只放進考古題。",
-      "story_md": "用典 出現在文體修辭脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
-      "facts": [
-        {
-          "label": "系列",
-          "value": "文體修辭"
-        },
-        {
-          "label": "關鍵",
-          "value": "用典"
-        },
-        {
-          "label": "狀態",
-          "value": "模板草稿"
-        }
-      ],
-      "glossary": [
-        {
-          "term": "用典",
-          "explanation": "見辭典；本卡僅作寫作入口。"
-        }
-      ],
-      "examples": [],
-      "quiz": [
-        {
-          "question": "使用「用典」時，最該先想什麼？",
-          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
-          "options": [
-            "拼音怎麼念",
-            "它多提供了哪一層意思（語氣／制度／質地）",
-            "要不要加粗體"
-          ]
-        }
-      ],
-      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
-      "writing_use": "寫作時把「用典」當選擇，不當裝飾。",
-      "reading_time_sec": 75,
-      "difficulty": 3,
-      "source_refs": [
-        {
-          "source_key": "manual_curated",
-          "note": "template draft"
-        },
-        {
-          "source_key": "moe_revised_dict",
-          "note": "請核對釋義"
-        }
-      ],
-      "tags": [
-        "文體修辭",
-        "國學小專欄",
-        "candidate"
-      ],
-      "source": {
-        "kind": "knowledge-template",
-        "topic": "用典"
-      },
-      "quality_score": 88,
-      "quality_flags": []
-    },
-    {
-      "status": "candidate",
-      "series": "genre_rhetoric",
-      "topic_key": "白描",
-      "title": "白描",
-      "hook": "白描：少形容詞，讓動作與物件自己說話。",
-      "story_md": "白描不是沒有感情，而是不急著命名感情。『他很悲傷』是解釋；『他把杯子放回原位，又拿起來』是白描。它跟工筆／渲染不同：一個減，一個加。適合對話、緊張場面、不想煽情卻想讓人難受的時刻。",
-      "facts": [
-        {
-          "label": "做法",
-          "value": "動作／物件先行"
-        },
-        {
-          "label": "避免",
-          "value": "情緒標籤堆疊"
-        },
-        {
-          "label": "對照",
-          "value": "白描減／渲染加"
-        }
-      ],
-      "glossary": [
-        {
-          "term": "白描",
-          "explanation": "動作／物件先行"
-        }
-      ],
-      "examples": [],
-      "quiz": [
-        {
-          "question": "「白描」對寫作最有用的是？",
-          "answer": "文筆課的核心往往是『少說一點』。",
-          "options": [
-            "文筆課的核心往往是『少說一點』。",
-            "用來填字數",
-            "一定要出現在開頭"
-          ]
-        }
-      ],
-      "why_it_matters": "文筆課的核心往往是『少說一點』。",
-      "writing_use": "先刪解釋句，看畫面還在不在。",
-      "reading_time_sec": 90,
-      "difficulty": 3,
-      "source_refs": [
-        {
-          "source_key": "moe_revised_dict",
-          "note": "curated snippet"
-        },
-        {
-          "source_key": "manual_curated",
-          "note": "curated snippet"
-        },
-        {
-          "source_key": "public_domain_classics",
-          "note": "curated snippet"
-        }
-      ],
-      "tags": [
-        "文體修辭",
-        "國學小專欄"
-      ],
-      "source": {
-        "kind": "knowledge-curated",
-        "topic": "白描"
-      },
-      "quality_score": 88,
-      "quality_flags": []
-    },
-    {
-      "status": "candidate",
-      "series": "genre_rhetoric",
-      "topic_key": "互文",
-      "title": "互文：寫作用途與異同",
-      "hook": "互文 值得寫作者放進工具列，而不是只放進考古題。",
-      "story_md": "互文 出現在文體修辭脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
-      "facts": [
-        {
-          "label": "系列",
-          "value": "文體修辭"
-        },
-        {
-          "label": "關鍵",
-          "value": "互文"
-        },
-        {
-          "label": "狀態",
-          "value": "模板草稿"
-        }
-      ],
-      "glossary": [
-        {
-          "term": "互文",
-          "explanation": "見辭典；本卡僅作寫作入口。"
-        }
-      ],
-      "examples": [],
-      "quiz": [
-        {
-          "question": "使用「互文」時，最該先想什麼？",
-          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
-          "options": [
-            "拼音怎麼念",
-            "它多提供了哪一層意思（語氣／制度／質地）",
-            "要不要加粗體"
-          ]
-        }
-      ],
-      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
-      "writing_use": "寫作時把「互文」當選擇，不當裝飾。",
-      "reading_time_sec": 75,
-      "difficulty": 3,
-      "source_refs": [
-        {
-          "source_key": "manual_curated",
-          "note": "template draft"
-        },
-        {
-          "source_key": "moe_revised_dict",
-          "note": "請核對釋義"
-        }
-      ],
-      "tags": [
-        "文體修辭",
-        "國學小專欄",
-        "candidate"
-      ],
-      "source": {
-        "kind": "knowledge-template",
-        "topic": "互文"
-      },
-      "quality_score": 88,
-      "quality_flags": []
-    },
-    {
-      "status": "candidate",
-      "series": "genre_rhetoric",
-      "topic_key": "頂真",
-      "title": "頂真：寫作用途與異同",
-      "hook": "頂真 值得寫作者放進工具列，而不是只放進考古題。",
-      "story_md": "頂真 出現在文體修辭脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
-      "facts": [
-        {
-          "label": "系列",
-          "value": "文體修辭"
-        },
-        {
-          "label": "關鍵",
-          "value": "頂真"
-        },
-        {
-          "label": "狀態",
-          "value": "模板草稿"
-        }
-      ],
-      "glossary": [
-        {
-          "term": "頂真",
-          "explanation": "見辭典；本卡僅作寫作入口。"
-        }
-      ],
-      "examples": [],
-      "quiz": [
-        {
-          "question": "使用「頂真」時，最該先想什麼？",
-          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
-          "options": [
-            "拼音怎麼念",
-            "它多提供了哪一層意思（語氣／制度／質地）",
-            "要不要加粗體"
-          ]
-        }
-      ],
-      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
-      "writing_use": "寫作時把「頂真」當選擇，不當裝飾。",
-      "reading_time_sec": 75,
-      "difficulty": 3,
-      "source_refs": [
-        {
-          "source_key": "manual_curated",
-          "note": "template draft"
-        },
-        {
-          "source_key": "moe_revised_dict",
-          "note": "請核對釋義"
-        }
-      ],
-      "tags": [
-        "文體修辭",
-        "國學小專欄",
-        "candidate"
-      ],
-      "source": {
-        "kind": "knowledge-template",
-        "topic": "頂真"
-      },
-      "quality_score": 88,
-      "quality_flags": []
-    },
-    {
-      "status": "candidate",
-      "series": "genre_rhetoric",
-      "topic_key": "回文",
-      "title": "回文：寫作用途與異同",
-      "hook": "回文 值得寫作者放進工具列，而不是只放進考古題。",
-      "story_md": "回文 出現在文體修辭脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
-      "facts": [
-        {
-          "label": "系列",
-          "value": "文體修辭"
-        },
-        {
-          "label": "關鍵",
-          "value": "回文"
-        },
-        {
-          "label": "狀態",
-          "value": "模板草稿"
-        }
-      ],
-      "glossary": [
-        {
-          "term": "回文",
-          "explanation": "見辭典；本卡僅作寫作入口。"
-        }
-      ],
-      "examples": [],
-      "quiz": [
-        {
-          "question": "使用「回文」時，最該先想什麼？",
-          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
-          "options": [
-            "拼音怎麼念",
-            "它多提供了哪一層意思（語氣／制度／質地）",
-            "要不要加粗體"
-          ]
-        }
-      ],
-      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
-      "writing_use": "寫作時把「回文」當選擇，不當裝飾。",
-      "reading_time_sec": 75,
-      "difficulty": 3,
-      "source_refs": [
-        {
-          "source_key": "manual_curated",
-          "note": "template draft"
-        },
-        {
-          "source_key": "moe_revised_dict",
-          "note": "請核對釋義"
-        }
-      ],
-      "tags": [
-        "文體修辭",
-        "國學小專欄",
-        "candidate"
-      ],
-      "source": {
-        "kind": "knowledge-template",
-        "topic": "回文"
-      },
-      "quality_score": 88,
-      "quality_flags": []
-    },
-    {
-      "status": "candidate",
-      "series": "genre_rhetoric",
-      "topic_key": "連珠",
-      "title": "連珠：寫作用途與異同",
-      "hook": "連珠 值得寫作者放進工具列，而不是只放進考古題。",
-      "story_md": "連珠 出現在文體修辭脈絡裡時，重點通常不是背定義，而是它能幫你完成什麼表達任務：定年紀、定質地、定儀式，或定文化站隊。先問「我若不用這個詞，會少掉哪一層意思？」再決定要不要用。本卡為模板草稿，建議對照辭典後再升 active。",
-      "facts": [
-        {
-          "label": "系列",
-          "value": "文體修辭"
-        },
-        {
-          "label": "關鍵",
-          "value": "連珠"
-        },
-        {
-          "label": "狀態",
-          "value": "模板草稿"
-        }
-      ],
-      "glossary": [
-        {
-          "term": "連珠",
-          "explanation": "見辭典；本卡僅作寫作入口。"
-        }
-      ],
-      "examples": [],
-      "quiz": [
-        {
-          "question": "使用「連珠」時，最該先想什麼？",
-          "answer": "它多提供了哪一層意思（語氣／制度／質地）",
-          "options": [
-            "拼音怎麼念",
-            "它多提供了哪一層意思（語氣／制度／質地）",
-            "要不要加粗體"
-          ]
-        }
-      ],
-      "why_it_matters": "工具詞要服務場面，不要服務炫耀。",
-      "writing_use": "寫作時把「連珠」當選擇，不當裝飾。",
-      "reading_time_sec": 75,
-      "difficulty": 3,
-      "source_refs": [
-        {
-          "source_key": "manual_curated",
-          "note": "template draft"
-        },
-        {
-          "source_key": "moe_revised_dict",
-          "note": "請核對釋義"
-        }
-      ],
-      "tags": [
-        "文體修辭",
-        "國學小專欄",
-        "candidate"
-      ],
-      "source": {
-        "kind": "knowledge-template",
-        "topic": "連珠"
+        "topic": "干支"
       },
       "quality_score": 88,
       "quality_flags": []
     }
-  ]
+  ],
+  "scored_at": "2026-08-03T17:48:57.501Z"
 }

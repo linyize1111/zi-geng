@@ -1,267 +1,7 @@
 {
-  "generated_at": "2026-08-03T17:11:53.673Z",
-  "count": 65,
+  "generated_at": "2026-08-03T17:48:57.409Z",
+  "count": 45,
   "topics": [
-    {
-      "series": "fabric_materials",
-      "seriesTitle": "布料器物",
-      "topic_key": "紗",
-      "title_hint": "紗：寫作用途與異同",
-      "reason": "fabric_materials priority 90; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 90
-    },
-    {
-      "series": "fabric_materials",
-      "seriesTitle": "布料器物",
-      "topic_key": "羅",
-      "title_hint": "羅：寫作用途與異同",
-      "reason": "fabric_materials priority 90; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 90
-    },
-    {
-      "series": "fabric_materials",
-      "seriesTitle": "布料器物",
-      "topic_key": "絹",
-      "title_hint": "絹：寫作用途與異同",
-      "reason": "fabric_materials priority 90; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 90
-    },
-    {
-      "series": "fabric_materials",
-      "seriesTitle": "布料器物",
-      "topic_key": "錦",
-      "title_hint": "錦：寫作用途與異同",
-      "reason": "fabric_materials priority 90; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 90
-    },
-    {
-      "series": "fabric_materials",
-      "seriesTitle": "布料器物",
-      "topic_key": "綺",
-      "title_hint": "綺：寫作用途與異同",
-      "reason": "fabric_materials priority 90; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 90
-    },
-    {
-      "series": "fabric_materials",
-      "seriesTitle": "布料器物",
-      "topic_key": "綾",
-      "title_hint": "綾：寫作用途與異同",
-      "reason": "fabric_materials priority 90; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 90
-    },
-    {
-      "series": "fabric_materials",
-      "seriesTitle": "布料器物",
-      "topic_key": "綢",
-      "title_hint": "綢：寫作用途與異同",
-      "reason": "fabric_materials priority 90; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 90
-    },
-    {
-      "series": "fabric_materials",
-      "seriesTitle": "布料器物",
-      "topic_key": "緞",
-      "title_hint": "緞：寫作用途與異同",
-      "reason": "fabric_materials priority 90; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 90
-    },
-    {
-      "series": "fabric_materials",
-      "seriesTitle": "布料器物",
-      "topic_key": "縐",
-      "title_hint": "縐：寫作用途與異同",
-      "reason": "fabric_materials priority 90; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 90
-    },
-    {
-      "series": "fabric_materials",
-      "seriesTitle": "布料器物",
-      "topic_key": "紈",
-      "title_hint": "紈：寫作用途與異同",
-      "reason": "fabric_materials priority 90; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 90
-    },
-    {
-      "series": "fabric_materials",
-      "seriesTitle": "布料器物",
-      "topic_key": "緙絲",
-      "title_hint": "緙絲：寫作用途與異同",
-      "reason": "fabric_materials priority 90; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 90
-    },
-    {
-      "series": "fabric_materials",
-      "seriesTitle": "布料器物",
-      "topic_key": "麻",
-      "title_hint": "麻：寫作用途與異同",
-      "reason": "fabric_materials priority 90; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 90
-    },
-    {
-      "series": "genre_rhetoric",
-      "seriesTitle": "文體修辭",
-      "topic_key": "賦比興",
-      "title_hint": "賦比興：寫作用途與異同",
-      "reason": "genre_rhetoric priority 88; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 88
-    },
-    {
-      "series": "genre_rhetoric",
-      "seriesTitle": "文體修辭",
-      "topic_key": "對仗",
-      "title_hint": "對仗：寫作用途與異同",
-      "reason": "genre_rhetoric priority 88; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 88
-    },
-    {
-      "series": "genre_rhetoric",
-      "seriesTitle": "文體修辭",
-      "topic_key": "用典",
-      "title_hint": "用典：寫作用途與異同",
-      "reason": "genre_rhetoric priority 88; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 88
-    },
-    {
-      "series": "genre_rhetoric",
-      "seriesTitle": "文體修辭",
-      "topic_key": "白描",
-      "title_hint": "白描：寫作用途與異同",
-      "reason": "genre_rhetoric priority 88; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 88
-    },
-    {
-      "series": "genre_rhetoric",
-      "seriesTitle": "文體修辭",
-      "topic_key": "互文",
-      "title_hint": "互文：寫作用途與異同",
-      "reason": "genre_rhetoric priority 88; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 88
-    },
-    {
-      "series": "genre_rhetoric",
-      "seriesTitle": "文體修辭",
-      "topic_key": "頂真",
-      "title_hint": "頂真：寫作用途與異同",
-      "reason": "genre_rhetoric priority 88; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 88
-    },
-    {
-      "series": "genre_rhetoric",
-      "seriesTitle": "文體修辭",
-      "topic_key": "回文",
-      "title_hint": "回文：寫作用途與異同",
-      "reason": "genre_rhetoric priority 88; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 88
-    },
-    {
-      "series": "genre_rhetoric",
-      "seriesTitle": "文體修辭",
-      "topic_key": "連珠",
-      "title_hint": "連珠：寫作用途與異同",
-      "reason": "genre_rhetoric priority 88; topic not yet generated",
-      "source_keys": [
-        "moe_revised_dict",
-        "manual_curated",
-        "public_domain_classics"
-      ],
-      "priority": 88
-    },
     {
       "series": "classical_images",
       "seriesTitle": "古典意象",
@@ -521,6 +261,266 @@
         "public_domain_classics"
       ],
       "priority": 75
+    },
+    {
+      "series": "time_calendar",
+      "seriesTitle": "時間曆法",
+      "topic_key": "節氣",
+      "title_hint": "節氣：寫作用途與異同",
+      "reason": "time_calendar priority 75; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 75
+    },
+    {
+      "series": "time_calendar",
+      "seriesTitle": "時間曆法",
+      "topic_key": "三伏",
+      "title_hint": "三伏：寫作用途與異同",
+      "reason": "time_calendar priority 75; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 75
+    },
+    {
+      "series": "time_calendar",
+      "seriesTitle": "時間曆法",
+      "topic_key": "九九",
+      "title_hint": "九九：寫作用途與異同",
+      "reason": "time_calendar priority 75; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 75
+    },
+    {
+      "series": "age_titles",
+      "seriesTitle": "年齡稱謂",
+      "topic_key": "弱冠",
+      "title_hint": "弱冠：寫作用途與異同",
+      "reason": "age_titles priority 70; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 70
+    },
+    {
+      "series": "age_titles",
+      "seriesTitle": "年齡稱謂",
+      "topic_key": "而立",
+      "title_hint": "而立：寫作用途與異同",
+      "reason": "age_titles priority 70; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 70
+    },
+    {
+      "series": "age_titles",
+      "seriesTitle": "年齡稱謂",
+      "topic_key": "不惑",
+      "title_hint": "不惑：寫作用途與異同",
+      "reason": "age_titles priority 70; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 70
+    },
+    {
+      "series": "age_titles",
+      "seriesTitle": "年齡稱謂",
+      "topic_key": "知命",
+      "title_hint": "知命：寫作用途與異同",
+      "reason": "age_titles priority 70; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 70
+    },
+    {
+      "series": "age_titles",
+      "seriesTitle": "年齡稱謂",
+      "topic_key": "耳順",
+      "title_hint": "耳順：寫作用途與異同",
+      "reason": "age_titles priority 70; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 70
+    },
+    {
+      "series": "age_titles",
+      "seriesTitle": "年齡稱謂",
+      "topic_key": "耄耋",
+      "title_hint": "耄耋：寫作用途與異同",
+      "reason": "age_titles priority 70; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 70
+    },
+    {
+      "series": "age_titles",
+      "seriesTitle": "年齡稱謂",
+      "topic_key": "總角",
+      "title_hint": "總角：寫作用途與異同",
+      "reason": "age_titles priority 70; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 70
+    },
+    {
+      "series": "age_titles",
+      "seriesTitle": "年齡稱謂",
+      "topic_key": "及笄",
+      "title_hint": "及笄：寫作用途與異同",
+      "reason": "age_titles priority 70; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 70
+    },
+    {
+      "series": "address_epistolary",
+      "seriesTitle": "稱謂書信",
+      "topic_key": "足下",
+      "title_hint": "足下：寫作用途與異同",
+      "reason": "address_epistolary priority 65; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 65
+    },
+    {
+      "series": "address_epistolary",
+      "seriesTitle": "稱謂書信",
+      "topic_key": "閣下",
+      "title_hint": "閣下：寫作用途與異同",
+      "reason": "address_epistolary priority 65; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 65
+    },
+    {
+      "series": "address_epistolary",
+      "seriesTitle": "稱謂書信",
+      "topic_key": "頓首",
+      "title_hint": "頓首：寫作用途與異同",
+      "reason": "address_epistolary priority 65; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 65
+    },
+    {
+      "series": "address_epistolary",
+      "seriesTitle": "稱謂書信",
+      "topic_key": "再拜",
+      "title_hint": "再拜：寫作用途與異同",
+      "reason": "address_epistolary priority 65; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 65
+    },
+    {
+      "series": "address_epistolary",
+      "seriesTitle": "稱謂書信",
+      "topic_key": "敬啟",
+      "title_hint": "敬啟：寫作用途與異同",
+      "reason": "address_epistolary priority 65; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 65
+    },
+    {
+      "series": "address_epistolary",
+      "seriesTitle": "稱謂書信",
+      "topic_key": "愚兄",
+      "title_hint": "愚兄：寫作用途與異同",
+      "reason": "address_epistolary priority 65; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 65
+    },
+    {
+      "series": "address_epistolary",
+      "seriesTitle": "稱謂書信",
+      "topic_key": "舍弟",
+      "title_hint": "舍弟：寫作用途與異同",
+      "reason": "address_epistolary priority 65; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 65
+    },
+    {
+      "series": "exams_offices",
+      "seriesTitle": "科舉官職",
+      "topic_key": "進士",
+      "title_hint": "進士：寫作用途與異同",
+      "reason": "exams_offices priority 60; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 60
+    },
+    {
+      "series": "exams_offices",
+      "seriesTitle": "科舉官職",
+      "topic_key": "舉人",
+      "title_hint": "舉人：寫作用途與異同",
+      "reason": "exams_offices priority 60; topic not yet generated",
+      "source_keys": [
+        "moe_revised_dict",
+        "manual_curated",
+        "public_domain_classics"
+      ],
+      "priority": 60
     }
   ]
 }
