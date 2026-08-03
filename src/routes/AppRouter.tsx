@@ -16,6 +16,7 @@ const NovelEntitiesPage = lazy(() => import("@/pages/NovelEntitiesPage"));
 const JapanesePage = lazy(() => import("@/pages/JapanesePage"));
 const ReviewPage = lazy(() => import("@/pages/ReviewPage"));
 const AssessmentPage = lazy(() => import("@/pages/AssessmentPage"));
+const KnowledgePage = lazy(() => import("@/pages/KnowledgePage"));
 const FavoritesPage = lazy(() => import("@/pages/FavoritesPage"));
 const SettingsPage = lazy(() => import("@/pages/SettingsPage"));
 const OwnerContentPage = lazy(() => import("@/pages/OwnerContentPage"));
@@ -125,6 +126,22 @@ export function AppRouter() {
           element={
             <L>
               <LearnSectionPage kind="craft" />
+            </L>
+          }
+        />
+        <Route
+          path={routes.learnKnowledge}
+          element={
+            <L>
+              <KnowledgePage />
+            </L>
+          }
+        />
+        <Route
+          path={routes.learnKnowledgeDetail}
+          element={
+            <L>
+              <KnowledgePage />
             </L>
           }
         />

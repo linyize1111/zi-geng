@@ -1,6 +1,7 @@
 import { getSupabaseClient } from "@/lib/supabase/client";
 import type { CooldownContentType } from "@/features/study/normalize";
 import { cooldownStepsFor } from "@/features/study/normalize";
+import { qualityWeightedPick } from "@/features/study/quality-pick";
 
 export type StudyContentType =
   "vocabulary" | "quote" | "craft" | "prompt" | "novel" | "knowledge" | "japanese";
@@ -126,31 +127,35 @@ export async function pickIdsWithCooldown(options: {
   count: number;
   hardAvoid?: Set<string>;
   timezone?: string;
+  /** Prefer higher quality_score among cooldown-eligible ids. */
+  qualityById?: Map<string, number>;
 }): Promise<string[]> {
-  const { contentType, poolIds, count, hardAvoid = new Set(), timezone = "Asia/Taipei" } = options;
+  const {
+    contentType,
+    poolIds,
+    count,
+    hardAvoid = new Set(),
+    timezone = "Asia/Taipei",
+    qualityById,
+  } = options;
   if (!poolIds.length || count <= 0) return [];
 
   const blocked = await fetchTooEasyBlockedIds(contentType, timezone);
   const steps = cooldownStepsFor(contentType);
 
-  const shuffle = <T>(arr: T[]): T[] => {
-    const a = [...arr];
-    for (let i = a.length - 1; i > 0; i -= 1) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j]!, a[i]!];
-    }
-    return a;
-  };
-
   for (const days of steps) {
     const cool =
       days === 0 ? new Set<string>() : await fetchCooldownContentIds(contentType, days, timezone);
     const free = poolIds.filter((id) => !hardAvoid.has(id) && !blocked.has(id) && !cool.has(id));
-    if (free.length >= count) return shuffle(free).slice(0, count);
+    if (free.length >= count) return qualityWeightedPick(free, count, qualityById);
   }
 
   // Last resort: ignore cooldown but still honor too_easy + hardAvoid when possible
   const soft = poolIds.filter((id) => !hardAvoid.has(id) && !blocked.has(id));
   const base = soft.length ? soft : poolIds.filter((id) => !hardAvoid.has(id));
-  return shuffle(base.length ? base : poolIds).slice(0, Math.min(count, poolIds.length));
+  return qualityWeightedPick(
+    base.length ? base : poolIds,
+    Math.min(count, poolIds.length),
+    qualityById,
+  );
 }

@@ -1,5 +1,5 @@
 /**
- * Import craft cards → zg_craft_cards
+ * Import craft cards → zg_craft_cards (upsert by name; fills lesson columns when present).
  */
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -28,10 +28,37 @@ const client = createClient(url, key, {
 });
 
 let inserted = 0;
-let skipped = 0;
+let updated = 0;
 let errors = 0;
 
 for (const card of cards) {
+  const row = {
+    status: card.status ?? "active",
+    name: card.name,
+    one_liner: card.one_liner ?? card.hook ?? "",
+    purpose: card.purpose ?? card.concept ?? "",
+    bad_example: card.bad_example ?? "",
+    good_example: card.good_example ?? "",
+    breakdown: card.breakdown ?? (card.breakdown_steps ?? []).join(" → "),
+    exercise: card.exercise ?? card.quick_drill ?? "",
+    difficulty: card.difficulty ?? 3,
+    tags: card.tags ?? [],
+    source: card.source ?? { kind: "import" },
+    module: card.module ?? null,
+    lesson_order: card.lesson_order ?? null,
+    hook: card.hook ?? card.one_liner ?? null,
+    concept: card.concept ?? card.purpose ?? null,
+    paragraph_demo: card.paragraph_demo ?? null,
+    breakdown_steps: card.breakdown_steps ?? [],
+    quick_drill: card.quick_drill ?? card.exercise ?? null,
+    deeper_drill: card.deeper_drill ?? null,
+    related_vocab_tags: card.related_vocab_tags ?? [],
+    related_knowledge_topics: card.related_knowledge_topics ?? [],
+    quality_score: card.quality_score ?? 80,
+    quality_flags: card.quality_flags ?? [],
+    updated_at: new Date().toISOString(),
+  };
+
   const { data: existing, error: findErr } = await client
     .from("zg_craft_cards")
     .select("id")
@@ -43,29 +70,52 @@ for (const card of cards) {
     continue;
   }
   if (existing) {
-    skipped += 1;
-    continue;
-  }
-  const { error } = await client.from("zg_craft_cards").insert({
-    status: card.status ?? "active",
-    name: card.name,
-    one_liner: card.one_liner ?? "",
-    purpose: card.purpose ?? "",
-    bad_example: card.bad_example ?? "",
-    good_example: card.good_example ?? "",
-    breakdown: card.breakdown ?? "",
-    exercise: card.exercise ?? "",
-    difficulty: card.difficulty ?? 3,
-    tags: card.tags ?? [],
-    source: card.source ?? { kind: "import" },
-  });
-  if (error) {
-    console.error("insert", card.name, error.message);
-    errors += 1;
+    const { error } = await client.from("zg_craft_cards").update(row).eq("id", existing.id);
+    if (error) {
+      // Columns may not exist until Phase 2–3 SQL — retry core fields
+      const { error: e2 } = await client
+        .from("zg_craft_cards")
+        .update({
+          status: row.status,
+          one_liner: row.one_liner,
+          purpose: row.purpose,
+          bad_example: row.bad_example,
+          good_example: row.good_example,
+          breakdown: row.breakdown,
+          exercise: row.exercise,
+          difficulty: row.difficulty,
+          tags: row.tags,
+          source: row.source,
+        })
+        .eq("id", existing.id);
+      if (e2) {
+        console.error("update", card.name, e2.message);
+        errors += 1;
+      } else updated += 1;
+    } else updated += 1;
   } else {
-    inserted += 1;
+    const { error } = await client.from("zg_craft_cards").insert(row);
+    if (error) {
+      const { error: e2 } = await client.from("zg_craft_cards").insert({
+        status: row.status,
+        name: row.name,
+        one_liner: row.one_liner,
+        purpose: row.purpose,
+        bad_example: row.bad_example,
+        good_example: row.good_example,
+        breakdown: row.breakdown,
+        exercise: row.exercise,
+        difficulty: row.difficulty,
+        tags: row.tags,
+        source: row.source,
+      });
+      if (e2) {
+        console.error("insert", card.name, e2.message);
+        errors += 1;
+      } else inserted += 1;
+    } else inserted += 1;
   }
 }
 
-console.log(`Done. inserted=${inserted} skipped=${skipped} errors=${errors}`);
+console.log(`Done. inserted=${inserted} updated=${updated} errors=${errors}`);
 if (errors > 0) process.exit(2);

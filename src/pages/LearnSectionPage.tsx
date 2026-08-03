@@ -357,33 +357,67 @@ export default function LearnSectionPage({ kind }: { kind: keyof typeof titles }
         ) : null}
         {isQuote(item) ? <QuoteDetail item={item} /> : null}
         {isCraft(item) ? (
-          <article className="space-y-3">
-            <h1 className="font-[family-name:var(--font-sans)] text-3xl">{item.name}</h1>
-            <p className="leading-relaxed">{item.one_liner}</p>
-            <p className="text-sm text-[var(--color-ink-muted)]">{item.purpose}</p>
-            {item.bad_example ? (
-              <p className="text-sm">
-                <span className="text-xs text-[var(--color-ink-muted)]">弱例　</span>
-                {item.bad_example}
+          <article className="space-y-4">
+            {item.module ? (
+              <p className="text-xs tracking-widest text-[var(--color-ink-muted)]">
+                {item.module}
+                {item.lesson_order ? ` · 第 ${item.lesson_order} 課` : ""}
               </p>
+            ) : null}
+            <h1 className="font-[family-name:var(--font-sans)] text-3xl">{item.name}</h1>
+            <section>
+              <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">這招在幹嘛</h2>
+              <p className="mt-1 leading-relaxed">{item.hook ?? item.one_liner}</p>
+              <p className="mt-2 text-sm text-[var(--color-ink-muted)]">
+                {item.concept ?? item.purpose}
+              </p>
+            </section>
+            {item.bad_example ? (
+              <section>
+                <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">弱例</h2>
+                <p className="mt-1 text-sm">{item.bad_example}</p>
+              </section>
             ) : null}
             {item.good_example ? (
-              <p className="text-sm">
-                <span className="text-xs text-[var(--color-ink-muted)]">強例　</span>
-                {item.good_example}
-              </p>
+              <section>
+                <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">強例</h2>
+                <p className="mt-1 text-sm">{item.good_example}</p>
+              </section>
             ) : null}
-            {item.breakdown ? (
-              <p className="text-sm">
-                <span className="text-xs text-[var(--color-ink-muted)]">拆解　</span>
-                {item.breakdown}
-              </p>
+            {item.paragraph_demo ? (
+              <section>
+                <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">段落示範</h2>
+                <p className="mt-1 text-sm whitespace-pre-wrap">{item.paragraph_demo}</p>
+              </section>
             ) : null}
-            {item.exercise ? (
-              <p className="text-sm">
-                <span className="text-xs text-[var(--color-ink-muted)]">練習　</span>
-                {item.exercise}
-              </p>
+            {(item.breakdown_steps?.length || item.breakdown) && (
+              <section>
+                <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">拆解</h2>
+                {item.breakdown_steps?.length ? (
+                  <ol className="mt-1 list-decimal space-y-1 pl-5 text-sm">
+                    {item.breakdown_steps.map((s) => (
+                      <li key={s}>{s}</li>
+                    ))}
+                  </ol>
+                ) : (
+                  <p className="mt-1 text-sm">{item.breakdown}</p>
+                )}
+              </section>
+            )}
+            {(item.quick_drill || item.exercise) && (
+              <section>
+                <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">30 秒練習</h2>
+                <p className="mt-1 text-sm">{item.quick_drill ?? item.exercise}</p>
+                <Link
+                  to={routes.writeNew}
+                  className="mt-2 inline-block text-sm underline-offset-4 hover:underline"
+                >
+                  寫完貼到 Write
+                </Link>
+              </section>
+            )}
+            {item.deeper_drill ? (
+              <p className="text-sm text-[var(--color-ink-muted)]">延伸：{item.deeper_drill}</p>
             ) : null}
           </article>
         ) : null}

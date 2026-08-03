@@ -109,6 +109,33 @@ jobs:
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
         run: node scripts/content/purge-bio-quotes.mjs
 
+      - name: Discover knowledge topics
+        continue-on-error: true
+        run: node scripts/content/discover-knowledge-topics.mjs
+
+      - name: Build knowledge candidates
+        continue-on-error: true
+        run: node scripts/content/build-knowledge-candidates.mjs
+
+      - name: Score knowledge candidates
+        continue-on-error: true
+        run: node scripts/content/quality-score.mjs scripts/content/generated/seed-knowledge-candidates.json
+
+      - name: Import knowledge candidates
+        continue-on-error: true
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL || secrets.VITE_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || secrets.SUPABASE_SECRET_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          KNOWLEDGE_WEEKLY_CAP: "20"
+          KNOWLEDGE_AUTO_ACTIVE_CAP: "8"
+        run: |
+          if [ -f scripts/content/generated/seed-knowledge-candidates.json ]; then
+            node scripts/content/import-knowledge.mjs scripts/content/generated/seed-knowledge-candidates.json --auto-activate
+          else
+            echo "No knowledge candidates — skip"
+          fi
+
       - name: Multi-source crawl (vocab only — quotes blocked)
         continue-on-error: true
         run: |
@@ -163,6 +190,9 @@ jobs:
             scripts/content/seed-writing-prompts.json \
             scripts/content/seed-novel-plan-tasks.json \
             scripts/content/seed-multi-source-vocab.json \
+            scripts/content/generated/seed-knowledge-candidates.json \
+            scripts/content/generated/knowledge-topic-candidates.json \
+            scripts/content/topic-graph/knowledge-topics.json \
             public/content/*.json || true
           if git diff --staged --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -203,4 +233,7 @@ jobs:
             scripts/content/seed-literary-vocab.json
             scripts/content/fetched-wiktionary.json
             scripts/content/fetched-wikiquote.json
+            scripts/content/generated/seed-knowledge-candidates.json
+            scripts/content/generated/knowledge-topic-candidates.json
             public/content/seed-literary-vocab.json
+            public/content/seed-knowledge-candidates.json

@@ -10,8 +10,9 @@
 1. 讀 v2.4 總控與 `docs/PROGRESS.md`
 2. **嚴格按 v2.4 §17 Phase 順序**，不要一次大爆改
 3. 暫緩「死刑小說創作工作台」；不大改 Novels 專項
-4. 自動內容先進 `candidate`，禁止 Wikiquote 自動當名言池
-5. 能自查的不要問使用者；無法代勞的寫入 `USER_ACTIONS_REQUIRED.md`
+4. 自動內容先進 `candidate`；`quality_score >= 75` 才可 auto-active；禁止 Wikiquote 自動當名言池
+5. 國學用 topic graph + 模板優先（先不接 AI）；技法小課 ≤40；日文先「今日 5 分鐘」
+6. 能自查的不要問使用者；無法代勞的寫入 `USER_ACTIONS_REQUIRED.md`
 
 ## 硬性約束
 

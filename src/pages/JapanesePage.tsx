@@ -5,18 +5,26 @@ import { Button } from "@/components/common/Button";
 import { PageLoading, PageState } from "@/components/common/PageState";
 import { useAuth } from "@/features/auth/AuthProvider";
 import { BEGINNER_GRAMMAR, BEGINNER_VOCAB } from "@/features/japanese/beginner-content";
-import { kanaByScript, type KanaEntry, type KanaScript } from "@/features/japanese/kana";
+import { buildFiveMinutePlan, pickNextKana } from "@/features/japanese/five-minute";
+import {
+  kanaByRow,
+  kanaByScript,
+  kanaRowNames,
+  type KanaEntry,
+  type KanaScript,
+} from "@/features/japanese/kana";
 import { listProgress, recordAnswer } from "@/features/japanese/progress-store";
+import { recordStudyEvent } from "@/features/study/events-api";
 import { cn } from "@/lib/utils";
 import { routes } from "@/routes/paths";
 
-type Tab = "kana" | "drill" | "vocabulary" | "grammar";
+type Tab = "today" | "kana" | "drill" | "vocabulary" | "grammar";
 
 function tabFromPath(pathname: string): Tab {
   if (pathname.includes("/vocabulary")) return "vocabulary";
   if (pathname.includes("/grammar")) return "grammar";
   if (pathname.includes("/kana")) return "kana";
-  return "kana";
+  return "today";
 }
 
 function pickChoices(correct: KanaEntry, pool: KanaEntry[]): string[] {
@@ -25,8 +33,7 @@ function pickChoices(correct: KanaEntry, pool: KanaEntry[]): string[] {
     .sort(() => Math.random() - 0.5)
     .slice(0, 3)
     .map((k) => k.romaji);
-  const opts = [...others, correct.romaji].sort(() => Math.random() - 0.5);
-  return opts;
+  return [...others, correct.romaji].sort(() => Math.random() - 0.5);
 }
 
 function KanaGrid({ script }: { script: KanaScript }) {
@@ -68,21 +75,183 @@ function KanaGrid({ script }: { script: KanaScript }) {
   );
 }
 
+function FiveMinutePanel({ userId }: { userId: string }) {
+  const queryClient = useQueryClient();
+  const dateKey = new Date().toISOString().slice(0, 10);
+  const progressQuery = useQuery({
+    queryKey: ["japanese-progress", userId],
+    queryFn: () => listProgress(userId),
+  });
+
+  const plan = useMemo(() => {
+    const progress = progressQuery.data ?? [];
+    return buildFiveMinutePlan({
+      kanaPool: kanaByScript("hiragana").filter((k) =>
+        ["あ行", "か行", "さ行", "た行", "な行"].includes(k.row),
+      ),
+      vocabPool: BEGINNER_VOCAB,
+      grammarPool: BEGINNER_GRAMMAR,
+      progress,
+      dateKey,
+    });
+  }, [progressQuery.data, dateKey]);
+
+  const [quizIdx, setQuizIdx] = useState(0);
+  const [feedback, setFeedback] = useState<"idle" | "ok" | "bad">("idle");
+  const [session, setSession] = useState({ asked: 0, correct: 0 });
+
+  const quizPool = plan.kana;
+  const current = quizPool[quizIdx % Math.max(1, quizPool.length)];
+  const choices = useMemo(
+    () => (current ? pickChoices(current, quizPool) : []),
+    [current, quizPool, quizIdx],
+  );
+
+  const answerMutation = useMutation({
+    mutationFn: async (payload: { kanaId: string; correct: boolean }) => {
+      await recordAnswer(userId, payload.kanaId, payload.correct);
+      await recordStudyEvent({
+        contentType: "japanese",
+        contentId: payload.kanaId,
+        normalizedKey: payload.kanaId,
+        eventType: payload.correct ? "completed" : "not_useful",
+        meta: { kind: "japanese_kana", correct: payload.correct },
+      });
+    },
+    onSuccess: () => {
+      void queryClient.invalidateQueries({ queryKey: ["japanese-progress", userId] });
+    },
+  });
+
+  function onPick(romaji: string) {
+    if (!current || feedback !== "idle") return;
+    const ok = romaji === current.romaji;
+    setFeedback(ok ? "ok" : "bad");
+    setSession((s) => ({ asked: s.asked + 1, correct: s.correct + (ok ? 1 : 0) }));
+    answerMutation.mutate({ kanaId: current.id, correct: ok });
+  }
+
+  function nextQuiz() {
+    setFeedback("idle");
+    setQuizIdx((i) => (i + 1) % Math.max(1, plan.quizSize));
+  }
+
+  return (
+    <div className="space-y-6">
+      <p className="text-sm text-[var(--color-ink-muted)]">
+        今日 5 分鐘：假名 5 → 詞彙 3 → 句型 1 → 小測 {plan.quizSize}。錯題會優先再出。
+      </p>
+
+      <section className="space-y-2">
+        <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">今日假名</h2>
+        <ul className="flex flex-wrap gap-2">
+          {plan.kana.map((k) => (
+            <li
+              key={k.id}
+              className="rounded-md border border-[var(--color-line)] px-3 py-2 text-center"
+            >
+              <span className="font-[family-name:var(--font-sans)] text-2xl">{k.char}</span>
+              <span className="mt-1 block text-xs text-[var(--color-ink-muted)]">{k.romaji}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="space-y-2">
+        <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">今日詞彙</h2>
+        <ul className="divide-y divide-[var(--color-line)] rounded-lg border border-[var(--color-line)]">
+          {plan.vocab.map((v) => (
+            <li key={v.id} className="px-4 py-3">
+              <div className="flex flex-wrap items-baseline gap-2">
+                <span className="font-[family-name:var(--font-sans)] text-xl">{v.word}</span>
+                <span className="text-sm text-[var(--color-ink-muted)]">{v.reading}</span>
+              </div>
+              <p className="text-sm">{v.meaningZh}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {plan.grammar ? (
+        <section className="rounded-lg border border-[var(--color-line)] p-4 space-y-2">
+          <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">今日句型</h2>
+          <p className="text-sm font-medium">{plan.grammar.title}</p>
+          <p className="font-[family-name:var(--font-sans)] text-lg">{plan.grammar.pattern}</p>
+          <p className="text-sm text-[var(--color-ink-muted)]">{plan.grammar.meaningZh}</p>
+          <p className="text-sm">
+            {plan.grammar.example}
+            {plan.grammar.exampleZh ? (
+              <span className="ml-2 text-[var(--color-ink-muted)]">
+                （{plan.grammar.exampleZh}）
+              </span>
+            ) : null}
+          </p>
+          <p className="text-xs text-[var(--color-ink-muted)]">
+            造句模板：把句型裡的空位換成今天的詞彙再說一次。
+          </p>
+        </section>
+      ) : null}
+
+      {current ? (
+        <section className="space-y-3">
+          <h2 className="text-sm tracking-widest text-[var(--color-ink-muted)]">
+            小測（錯題優先）{quizIdx + 1}/{plan.quizSize}
+          </h2>
+          <div className="rounded-lg border border-[var(--color-line)] bg-[var(--color-paper-2)] px-4 py-8 text-center">
+            <p className="font-[family-name:var(--font-sans)] text-5xl">{current.char}</p>
+            {feedback === "bad" ? (
+              <p className="mt-2 text-sm text-[var(--color-danger)]">正解：{current.romaji}</p>
+            ) : null}
+            {feedback === "ok" ? (
+              <p className="mt-2 text-sm text-[var(--color-ink-muted)]">正確</p>
+            ) : null}
+          </div>
+          <div className="grid grid-cols-2 gap-2">
+            {choices.map((c) => (
+              <button
+                key={c}
+                type="button"
+                disabled={feedback !== "idle"}
+                className="rounded-lg border border-[var(--color-line)] px-3 py-3 text-sm hover:bg-[var(--color-accent-soft)]"
+                onClick={() => onPick(c)}
+              >
+                {c}
+              </button>
+            ))}
+          </div>
+          {feedback !== "idle" ? (
+            <Button type="button" onClick={nextQuiz}>
+              下一題
+            </Button>
+          ) : null}
+          <p className="text-sm text-[var(--color-ink-muted)]">
+            本回合 {session.correct}/{session.asked}
+          </p>
+        </section>
+      ) : null}
+    </div>
+  );
+}
+
 function DrillPanel({ userId }: { userId: string }) {
   const queryClient = useQueryClient();
   const [script, setScript] = useState<KanaScript>("hiragana");
-  const pool = useMemo(() => kanaByScript(script), [script]);
-  const [current, setCurrent] = useState<KanaEntry>(
-    () => pool[Math.floor(Math.random() * pool.length)]!,
-  );
-  const [choices, setChoices] = useState<string[]>(() => pickChoices(current, pool));
-  const [feedback, setFeedback] = useState<"idle" | "ok" | "bad">("idle");
-  const [session, setSession] = useState({ asked: 0, correct: 0 });
+  const [row, setRow] = useState<string>("あ行");
+  const rows = kanaRowNames(script);
+  const pool = useMemo(() => {
+    const byRow = kanaByRow(script, row);
+    return byRow.length ? byRow : kanaByScript(script);
+  }, [script, row]);
 
   const progressQuery = useQuery({
     queryKey: ["japanese-progress", userId],
     queryFn: () => listProgress(userId),
   });
+
+  const [current, setCurrent] = useState<KanaEntry>(() => pool[0]!);
+  const [choices, setChoices] = useState<string[]>(() => pickChoices(current, pool));
+  const [feedback, setFeedback] = useState<"idle" | "ok" | "bad">("idle");
+  const [session, setSession] = useState({ asked: 0, correct: 0 });
 
   const answerMutation = useMutation({
     mutationFn: (payload: { kanaId: string; correct: boolean }) =>
@@ -92,9 +261,15 @@ function DrillPanel({ userId }: { userId: string }) {
     },
   });
 
-  function nextCard(nextScript = script) {
-    const nextPool = kanaByScript(nextScript);
-    const next = nextPool[Math.floor(Math.random() * nextPool.length)]!;
+  function nextCard(nextScript = script, nextRow = row) {
+    const nextPool = (() => {
+      const r = kanaByRow(nextScript, nextRow);
+      return r.length ? r : kanaByScript(nextScript);
+    })();
+    const next = pickNextKana(nextPool, progressQuery.data ?? [], {
+      avoidId: current.id,
+      preferWrong: true,
+    });
     setCurrent(next);
     setChoices(pickChoices(next, nextPool));
     setFeedback("idle");
@@ -126,13 +301,40 @@ function DrillPanel({ userId }: { userId: string }) {
             )}
             onClick={() => {
               setScript(s);
-              nextCard(s);
+              const first = kanaRowNames(s)[0] ?? "あ行";
+              setRow(first);
+              nextCard(s, first);
             }}
           >
             {s === "hiragana" ? "平假名" : "片假名"}
           </button>
         ))}
       </div>
+
+      <div className="flex flex-wrap gap-2">
+        {rows.map((r) => (
+          <button
+            key={r}
+            type="button"
+            className={cn(
+              "rounded-md border px-2.5 py-1 text-xs",
+              row === r
+                ? "border-[var(--color-ink)] bg-[var(--color-ink)] text-[var(--color-paper)]"
+                : "border-[var(--color-line)] text-[var(--color-ink-muted)]",
+            )}
+            onClick={() => {
+              setRow(r);
+              nextCard(script, r);
+            }}
+          >
+            {r}
+          </button>
+        ))}
+      </div>
+
+      <p className="text-xs text-[var(--color-ink-muted)]">
+        分行練；錯題優先重出。平假名熟了再混片假名。羅馬音只是輔助。
+      </p>
 
       <div className="rounded-lg border border-[var(--color-line)] bg-[var(--color-paper-2)] px-4 py-10 text-center">
         <p className="text-xs tracking-widest text-[var(--color-ink-muted)]">選出羅馬音</p>
@@ -181,8 +383,9 @@ function DrillPanel({ userId }: { userId: string }) {
 }
 
 const tabs: { id: Tab; to: string; label: string }[] = [
+  { id: "today", to: routes.japanese, label: "今日 5 分鐘" },
   { id: "kana", to: routes.japaneseKana, label: "五十音" },
-  { id: "drill", to: routes.japanese, label: "練習" },
+  { id: "drill", to: `${routes.japanese}?mode=drill`, label: "分行練習" },
   { id: "vocabulary", to: routes.japaneseVocabulary, label: "詞彙" },
   { id: "grammar", to: routes.japaneseGrammar, label: "文法" },
 ];
@@ -192,10 +395,12 @@ export default function JapanesePage() {
   const location = useLocation();
   const pathTab = tabFromPath(location.pathname);
   const [script, setScript] = useState<KanaScript>("hiragana");
-  /** `/japanese` root = drill; `/japanese/kana` = chart */
+  const search = new URLSearchParams(location.search);
   const tab: Tab =
     location.pathname === routes.japanese || location.pathname.endsWith("/japanese")
-      ? "drill"
+      ? search.get("mode") === "drill"
+        ? "drill"
+        : "today"
       : pathTab;
 
   if (auth.status === "loading") {
@@ -211,7 +416,7 @@ export default function JapanesePage() {
       <header className="space-y-2">
         <h1 className="font-[family-name:var(--font-sans)] text-3xl tracking-wide">日文</h1>
         <p className="text-sm text-[var(--color-ink-muted)]">
-          初學區：五十音圖、辨音練習，以及入門詞彙／文法。進度存在本機。
+          先做「今日 5 分鐘」；分行練五十音，錯題優先。進度存在本機。
         </p>
       </header>
 
@@ -220,11 +425,11 @@ export default function JapanesePage() {
           <NavLink
             key={t.id}
             to={t.to}
-            end={t.id === "drill"}
+            end={t.id === "today"}
             className={({ isActive }) =>
               cn(
                 "rounded-md border px-3 py-1.5 text-sm",
-                (t.id === "drill" ? tab === "drill" : isActive)
+                (t.id === "today" || t.id === "drill" ? tab === t.id : isActive)
                   ? "border-[var(--color-ink)] bg-[var(--color-ink)] text-[var(--color-paper)]"
                   : "border-[var(--color-line)] text-[var(--color-ink-muted)]",
               )
@@ -234,6 +439,8 @@ export default function JapanesePage() {
           </NavLink>
         ))}
       </nav>
+
+      {tab === "today" ? <FiveMinutePanel userId={auth.user.id} /> : null}
 
       {tab === "kana" ? (
         <div className="space-y-4">
@@ -287,6 +494,9 @@ export default function JapanesePage() {
               <p className="text-sm">
                 {g.example}
                 <span className="ml-2 text-[var(--color-ink-muted)]">（{g.exampleZh}）</span>
+              </p>
+              <p className="text-xs text-[var(--color-ink-muted)]">
+                造句模板：替換例句中的名詞／動詞再練一次。
               </p>
             </li>
           ))}

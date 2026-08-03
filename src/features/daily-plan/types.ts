@@ -8,6 +8,7 @@ export type DailyPlan = {
   craft_id: string | null;
   writing_prompt_id: string | null;
   novel_task_template_id: string | null;
+  knowledge_id?: string | null;
   japanese_payload: Record<string, unknown>;
   completion: Record<string, unknown>;
   replacements: Record<string, unknown>;
@@ -59,6 +60,14 @@ export type CraftCard = {
   breakdown?: string | null;
   exercise?: string | null;
   tags?: string[] | null;
+  module?: string | null;
+  lesson_order?: number | null;
+  hook?: string | null;
+  concept?: string | null;
+  paragraph_demo?: string | null;
+  breakdown_steps?: string[] | null;
+  quick_drill?: string | null;
+  deeper_drill?: string | null;
 };
 
 export type WritingPrompt = {
@@ -81,6 +90,18 @@ export type NovelTask = {
   difficulty?: number | null;
 };
 
+export type KnowledgeCard = {
+  id: string;
+  series: string;
+  topic_key: string;
+  title: string;
+  hook: string;
+  story_md?: string | null;
+  reading_time_sec?: number | null;
+  difficulty?: number | null;
+  writing_use?: string | null;
+};
+
 export type DailyPlanBundle = {
   plan: DailyPlan;
   quote: QuoteCard | null;
@@ -88,4 +109,5 @@ export type DailyPlanBundle = {
   craft: CraftCard | null;
   prompt: WritingPrompt | null;
   novelTask: NovelTask | null;
+  knowledge: KnowledgeCard | null;
 };

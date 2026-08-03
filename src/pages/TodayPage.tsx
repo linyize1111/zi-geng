@@ -11,7 +11,12 @@ import {
   type DailySlot,
 } from "@/features/daily-plan/api";
 import { CardFeedback } from "@/features/study/CardFeedback";
-import { normalizeCraftName, normalizeTerm, quoteNormalizedKey } from "@/features/study/normalize";
+import {
+  knowledgeNormalizedKey,
+  normalizeCraftName,
+  normalizeTerm,
+  quoteNormalizedKey,
+} from "@/features/study/normalize";
 import { FavoriteToggle } from "@/features/favorites/FavoriteToggle";
 import { OwnerRemoveCardButton } from "@/features/content/OwnerRemoveCardButton";
 import { createDraft } from "@/features/writing/draft-store";
@@ -143,7 +148,12 @@ export default function TodayPage() {
           {data.plan.local_date}（{data.plan.timezone}）{useMock ? " · 離線示範" : ""}
         </p>
         <p className="text-sm text-[var(--color-ink-muted)]">
-          依你的時間隨意換卡；想留著複習就按「收藏」。完整庫存在詞彙／名言頁，不限今日這幾張。
+          依你的時間隨意換卡；想留著複習就按「收藏」。完整庫存在詞彙／名言／國學頁。
+        </p>
+        <p className="text-xs text-[var(--color-ink-muted)]">
+          <Link to={routes.japanese} className="underline-offset-4 hover:underline">
+            日文・今日 5 分鐘
+          </Link>
         </p>
         {poolQuery.data ? (
           <p className="text-sm text-[var(--color-ink-muted)]">
@@ -332,7 +342,9 @@ export default function TodayPage() {
       {data.craft ? (
         <section className="rounded-lg border border-[var(--color-line)] p-5">
           <div className="flex flex-wrap items-start justify-between gap-3">
-            <p className="text-xs tracking-widest text-[var(--color-ink-muted)]">寫作技巧</p>
+            <p className="text-xs tracking-widest text-[var(--color-ink-muted)]">
+              寫作技巧課{data.craft.module ? ` · ${data.craft.module}` : ""}
+            </p>
             <div className="flex flex-wrap gap-2">
               <FavoriteToggle type="craft" contentId={data.craft.id} compact />
               <OwnerRemoveCardButton
@@ -350,8 +362,10 @@ export default function TodayPage() {
             </div>
           </div>
           <h2 className="mt-2 text-xl">{data.craft.name}</h2>
-          <p className="mt-2 text-sm">{data.craft.one_liner}</p>
-          <p className="mt-2 text-sm text-[var(--color-ink-muted)]">{data.craft.purpose}</p>
+          <p className="mt-2 text-sm">{data.craft.hook ?? data.craft.one_liner}</p>
+          <p className="mt-2 text-sm text-[var(--color-ink-muted)]">
+            {data.craft.concept ?? data.craft.purpose}
+          </p>
           {data.craft.bad_example || data.craft.good_example ? (
             <div className="mt-3 space-y-2 text-sm">
               {data.craft.bad_example ? (
@@ -368,16 +382,74 @@ export default function TodayPage() {
               ) : null}
             </div>
           ) : null}
-          {data.craft.exercise ? (
+          {(data.craft.breakdown_steps?.length || data.craft.breakdown) && (
+            <div className="mt-3 text-sm">
+              <p className="text-xs text-[var(--color-ink-muted)]">拆解</p>
+              {data.craft.breakdown_steps?.length ? (
+                <ol className="mt-1 list-decimal space-y-1 pl-5">
+                  {data.craft.breakdown_steps.map((s) => (
+                    <li key={s}>{s}</li>
+                  ))}
+                </ol>
+              ) : (
+                <p className="mt-1">{data.craft.breakdown}</p>
+              )}
+            </div>
+          )}
+          {(data.craft.quick_drill || data.craft.exercise) && (
             <p className="mt-3 text-sm">
-              <span className="text-xs text-[var(--color-ink-muted)]">練習　</span>
-              {data.craft.exercise}
+              <span className="text-xs text-[var(--color-ink-muted)]">30 秒練習　</span>
+              {data.craft.quick_drill ?? data.craft.exercise}
             </p>
-          ) : null}
+          )}
+          <Link
+            to={`${routes.learnCraft}/${data.craft.id}`}
+            className="mt-3 inline-block text-sm underline-offset-4 hover:underline"
+          >
+            看完整小課
+          </Link>
           <CardFeedback
             contentType="craft"
             contentId={data.craft.id}
             normalizedKey={normalizeCraftName(data.craft.name)}
+            localDate={data.plan.local_date}
+          />
+        </section>
+      ) : null}
+
+      {data.knowledge ? (
+        <section className="rounded-lg border border-[var(--color-line)] p-5">
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <p className="text-xs tracking-widest text-[var(--color-ink-muted)]">
+              國學小專欄
+              {data.knowledge.reading_time_sec ? ` · 約 ${data.knowledge.reading_time_sec} 秒` : ""}
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <RefreshButton
+                slot="knowledge"
+                label="換一篇"
+                busy={refreshMutation.isPending}
+                onRefresh={onRefresh}
+              />
+            </div>
+          </div>
+          <h2 className="mt-2 text-xl">{data.knowledge.title}</h2>
+          <p className="mt-2 text-sm leading-relaxed">{data.knowledge.hook}</p>
+          {data.knowledge.writing_use ? (
+            <p className="mt-2 text-sm text-[var(--color-ink-muted)]">
+              {data.knowledge.writing_use}
+            </p>
+          ) : null}
+          <Link
+            to={`${routes.learnKnowledge}/${data.knowledge.id}`}
+            className="mt-3 inline-block text-sm underline-offset-4 hover:underline"
+          >
+            讀完整篇
+          </Link>
+          <CardFeedback
+            contentType="knowledge"
+            contentId={data.knowledge.id}
+            normalizedKey={knowledgeNormalizedKey(data.knowledge.series, data.knowledge.topic_key)}
             localDate={data.plan.local_date}
           />
         </section>

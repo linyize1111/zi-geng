@@ -4,7 +4,8 @@ import { routes } from "@/routes/paths";
 const sections = [
   { to: routes.learnVocabulary, label: "詞彙", desc: "主題對照・隨機刷卡・情緒／織品／面貌" },
   { to: routes.learnQuotes, label: "名言", desc: "經典與查證解析" },
-  { to: routes.learnCraft, label: "寫作技巧", desc: "強弱例與練習" },
+  { to: routes.learnCraft, label: "寫作技巧", desc: "小課程：弱例／強例／30 秒練習" },
+  { to: routes.learnKnowledge, label: "國學小專欄", desc: "短讀・可寫・非背誦" },
   {
     to: routes.assessment,
     label: "人文／文筆評量",

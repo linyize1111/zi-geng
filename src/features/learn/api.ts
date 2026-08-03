@@ -48,8 +48,9 @@ const QUOTE_SELECT =
 const VOCAB_SELECT =
   "id, term, zhuyin, short_def, long_def, usage_context, part_of_speech, difficulty, category, tags, daily_example, literary_example";
 
-const CRAFT_SELECT =
+const CRAFT_SELECT_CORE =
   "id, name, one_liner, purpose, bad_example, good_example, breakdown, exercise, difficulty, tags";
+const CRAFT_SELECT = `${CRAFT_SELECT_CORE}, module, lesson_order, hook, concept, paragraph_demo, breakdown_steps, quick_drill, deeper_drill`;
 
 const PAGE_SIZE = 1000;
 
@@ -148,6 +149,14 @@ export type CraftListItem = {
   exercise?: string | null;
   difficulty?: number;
   tags?: string[] | null;
+  module?: string | null;
+  lesson_order?: number | null;
+  hook?: string | null;
+  concept?: string | null;
+  paragraph_demo?: string | null;
+  breakdown_steps?: string[] | null;
+  quick_drill?: string | null;
+  deeper_drill?: string | null;
 };
 
 export async function listVocabulary(): Promise<VocabListItem[]> {
@@ -178,22 +187,35 @@ export async function getVocabulary(id: string): Promise<VocabListItem | null> {
 export async function listCraft(): Promise<CraftListItem[]> {
   const client = getSupabaseClient();
   if (!client) throw new Error("尚未設定 Supabase");
-  return fetchAllRows<CraftListItem>((from, to) =>
-    client
-      .from("zg_craft_cards")
-      .select(CRAFT_SELECT)
-      .eq("status", "active")
-      .order("name")
-      .range(from, to),
-  );
+  try {
+    return await fetchAllRows<CraftListItem>((from, to) =>
+      client
+        .from("zg_craft_cards")
+        .select(CRAFT_SELECT)
+        .eq("status", "active")
+        .order("lesson_order", { ascending: true, nullsFirst: false })
+        .range(from, to),
+    );
+  } catch {
+    return fetchAllRows<CraftListItem>((from, to) =>
+      client
+        .from("zg_craft_cards")
+        .select(CRAFT_SELECT_CORE)
+        .eq("status", "active")
+        .order("name")
+        .range(from, to),
+    );
+  }
 }
 
 export async function getCraft(id: string): Promise<CraftListItem | null> {
   const client = getSupabaseClient();
   if (!client) throw new Error("尚未設定 Supabase");
+  const full = await client.from("zg_craft_cards").select(CRAFT_SELECT).eq("id", id).maybeSingle();
+  if (!full.error) return full.data as CraftListItem | null;
   const { data, error } = await client
     .from("zg_craft_cards")
-    .select(CRAFT_SELECT)
+    .select(CRAFT_SELECT_CORE)
     .eq("id", id)
     .maybeSingle();
   if (error) throw error;

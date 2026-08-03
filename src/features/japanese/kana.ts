@@ -254,6 +254,22 @@ export function kanaByScript(script: KanaScript): KanaEntry[] {
   return script === "hiragana" ? HIRAGANA : KATAKANA;
 }
 
+export function kanaRowNames(script: KanaScript): string[] {
+  const seen = new Set<string>();
+  const rows: string[] = [];
+  for (const k of kanaByScript(script)) {
+    if (!seen.has(k.row)) {
+      seen.add(k.row);
+      rows.push(k.row);
+    }
+  }
+  return rows;
+}
+
+export function kanaByRow(script: KanaScript, row: string): KanaEntry[] {
+  return kanaByScript(script).filter((k) => k.row === row);
+}
+
 export function findKana(id: string): KanaEntry | undefined {
   return ALL_KANA.find((k) => k.id === id);
 }

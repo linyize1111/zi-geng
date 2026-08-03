@@ -10,6 +10,8 @@ export const routes = {
   learnQuotesDetail: "/learn/quotes/:id",
   learnCraft: "/learn/craft",
   learnCraftDetail: "/learn/craft/:id",
+  learnKnowledge: "/learn/knowledge",
+  learnKnowledgeDetail: "/learn/knowledge/:id",
   write: "/write",
   writeNew: "/write/new",
   writeDetail: "/write/:id",

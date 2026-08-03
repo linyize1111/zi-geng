@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "series": [
+    {
+      "id": "literary_history",
+      "title": "文學史",
+      "priority": 80,
+      "target_cards": 12,
+      "seeds": ["唐宋八大家", "古文運動", "建安七子", "竟陵派", "桐城派", "話本", "章回小說"]
+    },
+    {
+      "id": "age_titles",
+      "title": "年齡稱謂",
+      "priority": 70,
+      "target_cards": 10,
+      "seeds": ["弱冠", "而立", "不惑", "知命", "耳順", "耄耋", "總角", "及笄"]
+    },
+    {
+      "id": "fabric_materials",
+      "title": "布料器物",
+      "priority": 90,
+      "target_cards": 14,
+      "seeds": ["紗", "羅", "絹", "錦", "綺", "綾", "綢", "緞", "縐", "紈", "緙絲", "麻"]
+    },
+    {
+      "id": "time_calendar",
+      "title": "時間曆法",
+      "priority": 75,
+      "target_cards": 10,
+      "seeds": ["子時", "寅時", "朔望", "閏月", "干支", "節氣", "三伏", "九九"]
+    },
+    {
+      "id": "classical_images",
+      "title": "古典意象",
+      "priority": 85,
+      "target_cards": 12,
+      "seeds": ["折柳", "紅豆", "杜鵑", "明月", "梧桐", "芭蕉", "長亭", "陽關"]
+    },
+    {
+      "id": "address_epistolary",
+      "title": "稱謂書信",
+      "priority": 65,
+      "target_cards": 8,
+      "seeds": ["足下", "閣下", "頓首", "再拜", "敬啟", "愚兄", "舍弟"]
+    },
+    {
+      "id": "exams_offices",
+      "title": "科舉官職",
+      "priority": 60,
+      "target_cards": 8,
+      "seeds": ["進士", "舉人", "秀才", "翰林", "尚書", "侍郎", "知府"]
+    },
+    {
+      "id": "genre_rhetoric",
+      "title": "文體修辭",
+      "priority": 88,
+      "target_cards": 12,
+      "seeds": ["賦比興", "對仗", "用典", "白描", "互文", "頂真", "回文", "連珠"]
+    }
+  ]
+}

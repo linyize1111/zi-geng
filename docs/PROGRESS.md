@@ -1,24 +1,25 @@
-﻿Current phase: **v2.4 Phase 1** — 狀態與事件系統
-Current milestone: content status lifecycle + zg_study_events + Today cooldown/feedback
-Status: in_progress
+﻿Current phase: **v2.4 Phases 2–7 shipped (code)**
+Current milestone: quality weights + knowledge pipeline + craft lessons + JP 5min + review events
+Status: awaiting user SQL apply + content import
 
 Completed this pass:
-- SQL: `supabase/migrations/202608040001_v24_phase1_study_events.sql`（及 APPLY 副本）
-  - 內容 status 擴充 seed/candidate/active/quarantine/rejected/archived（保留 inactive/draft）
-  - `zg_study_events` + RLS
-  - `zg_cooldown_content_ids` / `zg_blocked_too_easy_ids`
-  - `zg_get_or_create_daily_plan` 改為階梯冷卻抽卡
-- Client: `normalizeTerm`／cooldown pick、今日 `shown` 記錄、回饋按鈕（太簡單／不實用／想多看／很好）
-- AGENTS.md 指向 v2.4 總控
+- Phase 2: `quality_score`/`quality_flags` SQL; client quality-weighted cooldown picks; daily plan RPC quality order
+- Phase 3: topic graph, discover/build/import knowledge scripts; Learn `/learn/knowledge`; Today knowledge slot
+- Phase 4: `content-sync.yml` knowledge discover→build→score→import (+ artifact); weekly caps 20/8
+- Phase 5: ≤40 craft lessons with modules; Learn/Today lesson UX; import upserts lesson columns
+- Phase 6: Japanese「今日 5 分鐘」+ row drill + wrong-answer priority
+- Phase 7: Review study-event stats + JSON export
+- Docs: USER_ACTIONS_REQUIRED Phase 1 then Phase 2–3
 
 User actions required now:
-- 在 Supabase SQL Editor 執行 `supabase/APPLY_V24_PHASE1_STUDY_EVENTS.sql`
-  （未執行前：前端會軟失敗略過事件寫入；抽卡仍可用舊 RPC／client fallback）
+1. Supabase: `APPLY_V24_PHASE1_STUDY_EVENTS.sql`（若尚未）
+2. Supabase: `APPLY_V24_PHASE2_3_QUALITY_KNOWLEDGE.sql`
+3. （可選）跑 Content sync 或本地 `npm run content:knowledge` 後 `content:knowledge-import`
 
-Next (v2.4 Phase 2):
-- quality_score fields + quality-score.mjs
-- Today 依品質權重抽卡
+Routes:
+- `/learn/knowledge`, `/learn/knowledge/:id`
+- `/japanese` → 今日 5 分鐘；`?mode=drill` 分行練習
 
 Deferred:
-- 死刑小說工作台
-- Phase 3+ 國學 topic graph／Content sync 升級
+- 死刑小說創作工作台
+- AI enrich for knowledge (templates first)

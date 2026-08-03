@@ -1,13 +1,20 @@
 # 待你手動完成
 
-## v2.4 Phase 1（必要）
+## v2.4 SQL（依序執行）
 
-在 Supabase SQL Editor 執行：
+在 Supabase SQL Editor **依序**執行：
 
-`zi-geng/supabase/APPLY_V24_PHASE1_STUDY_EVENTS.sql`
+1. `zi-geng/supabase/APPLY_V24_PHASE1_STUDY_EVENTS.sql`  
+   → `zg_study_events`、冷卻 RPC、今日抽卡階梯冷卻
 
-會建立 `zg_study_events`、冷卻 RPC，並更新今日抽卡邏輯。  
-未執行前：今日頁回饋／shown 事件會靜默略過，不影響基本使用。
+2. `zi-geng/supabase/APPLY_V24_PHASE2_3_QUALITY_KNOWLEDGE.sql`  
+   → `quality_score`／flags、`zg_source_registry`、`zg_knowledge_cards`、每日計畫 `knowledge_id`、品質加權抽卡
+
+未執行前：
+
+- 學習事件／回饋會靜默略過
+- 國學頁可能空白（表尚未建立）
+- 技法課新欄位（module／hook 等）會自動 fallback 舊欄位
 
 ---
 

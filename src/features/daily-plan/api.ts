@@ -3,15 +3,21 @@ import type {
   CraftCard,
   DailyPlan,
   DailyPlanBundle,
+  KnowledgeCard,
   NovelTask,
   QuoteCard,
   VocabCard,
   WritingPrompt,
 } from "@/features/daily-plan/types";
 import { recordStudyEvents, pickIdsWithCooldown } from "@/features/study/events-api";
-import { normalizeCraftName, normalizeTerm, quoteNormalizedKey } from "@/features/study/normalize";
+import {
+  knowledgeNormalizedKey,
+  normalizeCraftName,
+  normalizeTerm,
+  quoteNormalizedKey,
+} from "@/features/study/normalize";
 
-export type DailySlot = "vocabulary" | "quote" | "craft" | "prompt" | "novel";
+export type DailySlot = "vocabulary" | "quote" | "craft" | "prompt" | "novel" | "knowledge";
 
 export function replacementUsed(plan: DailyPlan, slot: DailySlot): number {
   const raw = plan.replacements?.[slot];
@@ -30,7 +36,7 @@ async function hydratePlan(daily: DailyPlan): Promise<DailyPlanBundle> {
   const client = getSupabaseClient();
   if (!client) throw new Error("尚未設定 Supabase");
 
-  const [quote, vocabulary, craft, prompt, novelTask] = await Promise.all([
+  const [quote, vocabulary, craft, prompt, novelTask, knowledge] = await Promise.all([
     daily.quote_id
       ? client
           .from("zg_quotes")
@@ -62,7 +68,7 @@ async function hydratePlan(daily: DailyPlan): Promise<DailyPlanBundle> {
       ? client
           .from("zg_craft_cards")
           .select(
-            "id, name, one_liner, purpose, bad_example, good_example, breakdown, exercise, tags",
+            "id, name, one_liner, purpose, bad_example, good_example, breakdown, exercise, tags, module, lesson_order, hook, concept, paragraph_demo, breakdown_steps, quick_drill, deeper_drill",
           )
           .eq("id", daily.craft_id)
           .maybeSingle()
@@ -93,6 +99,20 @@ async function hydratePlan(daily: DailyPlan): Promise<DailyPlanBundle> {
             return r.data as NovelTask | null;
           })
       : Promise.resolve(null),
+    daily.knowledge_id
+      ? client
+          .from("zg_knowledge_cards")
+          .select(
+            "id, series, topic_key, title, hook, story_md, reading_time_sec, difficulty, writing_use",
+          )
+          .eq("id", daily.knowledge_id)
+          .maybeSingle()
+          .then((r) => {
+            // Column may not exist until Phase 2–3 SQL is applied
+            if (r.error) return null;
+            return r.data as KnowledgeCard | null;
+          })
+      : Promise.resolve(null),
   ]);
 
   return {
@@ -102,6 +122,7 @@ async function hydratePlan(daily: DailyPlan): Promise<DailyPlanBundle> {
     craft,
     prompt,
     novelTask,
+    knowledge,
   };
 }
 
@@ -167,6 +188,15 @@ export async function recordDailyShownEvents(bundle: DailyPlanBundle): Promise<v
       localDate: bundle.plan.local_date,
     });
   }
+  if (bundle.knowledge) {
+    events.push({
+      contentType: "knowledge" as const,
+      contentId: bundle.knowledge.id,
+      normalizedKey: knowledgeNormalizedKey(bundle.knowledge.series, bundle.knowledge.topic_key),
+      eventType: "shown" as const,
+      localDate: bundle.plan.local_date,
+    });
+  }
   await recordStudyEvents(events);
 }
 
@@ -213,13 +243,19 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
   if (slot === "vocabulary") {
     const { data, error } = await client
       .from("zg_vocabulary_cards")
-      .select("id, category, tags")
+      .select("id, category, tags, quality_score")
       .eq("status", "active");
     if (error) throw error;
     const rows = data ?? [];
     if (!rows.length) throw new Error("詞庫是空的，請先匯入詞彙");
     const avoid = new Set(plan.vocabulary_ids ?? []);
-    type Row = { id: string; category?: string | null; tags?: string[] | null };
+    type Row = {
+      id: string;
+      category?: string | null;
+      tags?: string[] | null;
+      quality_score?: number | null;
+    };
+    const qualityById = new Map(rows.map((r) => [r.id as string, Number(r.quality_score ?? 70)]));
     const isIdiom = (r: Row) => {
       const tags = r.tags ?? [];
       return r.category === "成語" || tags.includes("成語") || tags.includes("教育部成語典");
@@ -250,6 +286,7 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
       count: nTheme,
       hardAvoid: used,
       timezone,
+      qualityById,
     });
     pickedTheme.forEach((id) => used.add(id));
     const pickedLit = await pickIdsWithCooldown({
@@ -258,6 +295,7 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
       count: nLit,
       hardAvoid: used,
       timezone,
+      qualityById,
     });
     pickedLit.forEach((id) => used.add(id));
     const pickedIdi = await pickIdsWithCooldown({
@@ -266,6 +304,7 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
       count: nIdiom,
       hardAvoid: used,
       timezone,
+      qualityById,
     });
     pickedIdi.forEach((id) => used.add(id));
 
@@ -277,6 +316,7 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
         count: vocabN - picked.length,
         hardAvoid: new Set(picked),
         timezone,
+        qualityById,
       });
       picked = [...picked, ...more];
     }
@@ -284,7 +324,9 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
   } else if (slot === "quote") {
     const { data, error } = await client
       .from("zg_quotes")
-      .select("id, author_name, display_quote, copyright_status, verification_status")
+      .select(
+        "id, author_name, display_quote, copyright_status, verification_status, quality_score",
+      )
       .eq("status", "active")
       .in("verification_status", ["verified_primary", "verified_secondary"]);
     if (error) throw error;
@@ -295,6 +337,7 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
         q.author_name !== "字耕" &&
         !String(q.display_quote).includes("開發測試"),
     );
+    const qualityById = new Map(usable.map((q) => [q.id as string, Number(q.quality_score ?? 70)]));
     const hardAvoid = new Set(plan.quote_id ? [plan.quote_id] : []);
     const picked = await pickIdsWithCooldown({
       contentType: "quote",
@@ -302,20 +345,28 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
       count: 1,
       hardAvoid,
       timezone,
+      qualityById,
     });
     const pick = picked[0];
     if (!pick) throw new Error("尚無名言可換，請先匯入多主題名言");
     patch.quote_id = pick;
   } else if (slot === "craft") {
-    const { data, error } = await client.from("zg_craft_cards").select("id").eq("status", "active");
+    const { data, error } = await client
+      .from("zg_craft_cards")
+      .select("id, quality_score")
+      .eq("status", "active");
     if (error) throw error;
     const pool = (data ?? []).map((r) => r.id as string);
+    const qualityById = new Map(
+      (data ?? []).map((r) => [r.id as string, Number(r.quality_score ?? 70)]),
+    );
     const picked = await pickIdsWithCooldown({
       contentType: "craft",
       poolIds: pool,
       count: 1,
       hardAvoid: new Set(plan.craft_id ? [plan.craft_id] : []),
       timezone,
+      qualityById,
     });
     const pick = picked[0];
     if (!pick) throw new Error("尚無寫作技巧可換");
@@ -323,20 +374,45 @@ async function replaceDailySlotClient(slot: DailySlot, timezone: string): Promis
   } else if (slot === "prompt") {
     const { data, error } = await client
       .from("zg_writing_prompts")
-      .select("id")
+      .select("id, quality_score")
       .eq("status", "active");
     if (error) throw error;
     const pool = (data ?? []).map((r) => r.id as string);
+    const qualityById = new Map(
+      (data ?? []).map((r) => [r.id as string, Number(r.quality_score ?? 70)]),
+    );
     const picked = await pickIdsWithCooldown({
       contentType: "prompt",
       poolIds: pool,
       count: 1,
       hardAvoid: new Set(plan.writing_prompt_id ? [plan.writing_prompt_id] : []),
       timezone,
+      qualityById,
     });
     const pick = picked[0];
     if (!pick) throw new Error("尚無寫作題目可換");
     patch.writing_prompt_id = pick;
+  } else if (slot === "knowledge") {
+    const { data, error } = await client
+      .from("zg_knowledge_cards")
+      .select("id, quality_score")
+      .in("status", ["active", "seed"]);
+    if (error) throw error;
+    const pool = (data ?? []).map((r) => r.id as string);
+    const qualityById = new Map(
+      (data ?? []).map((r) => [r.id as string, Number(r.quality_score ?? 50)]),
+    );
+    const picked = await pickIdsWithCooldown({
+      contentType: "knowledge",
+      poolIds: pool,
+      count: 1,
+      hardAvoid: new Set(plan.knowledge_id ? [plan.knowledge_id] : []),
+      timezone,
+      qualityById,
+    });
+    const pick = picked[0];
+    if (!pick) throw new Error("尚無國學專欄可換（請先執行 Phase 2–3 SQL 並匯入）");
+    patch.knowledge_id = pick;
   } else {
     const { data, error } = await client
       .from("zg_novel_task_templates")
@@ -461,6 +537,7 @@ export function createMockDailyPlanBundle(): DailyPlanBundle {
         craft_id: "mock-craft",
         writing_prompt_id: "mock-prompt",
         novel_task_template_id: "mock-novel",
+        knowledge_id: "mock-knowledge",
         japanese_payload: {},
         completion: {},
         replacements: {},
@@ -495,6 +572,17 @@ export function createMockDailyPlanBundle(): DailyPlanBundle {
         minutes_min: 5,
         minutes_max: 15,
         tags: ["階段:角色", "角色", "動機"],
+      },
+      knowledge: {
+        id: "mock-knowledge",
+        series: "fabric_materials",
+        topic_key: "紗",
+        title: "紗",
+        hook: "紗常暗示視線可以被穿過。",
+        story_md: "寫衣裝時，紗多半帶來透、輕、曖昧。",
+        reading_time_sec: 90,
+        difficulty: 2,
+        writing_use: "用紗決定讀者能看見多少。",
       },
     };
   }
@@ -551,6 +639,20 @@ export function replaceMockDailySlot(slot: DailySlot): DailyPlanBundle {
         category: "動作描寫",
         suggested_words: 120,
         suggested_minutes: 12,
+      },
+    };
+  } else if (slot === "knowledge") {
+    mockBundle = {
+      ...current,
+      plan: { ...current.plan, knowledge_id: "mock-knowledge-2", replacements: nextReps },
+      knowledge: {
+        id: "mock-knowledge-2",
+        series: "age_titles",
+        topic_key: "而立",
+        title: "而立",
+        hook: "而立＝三十，常帶社會期待。",
+        reading_time_sec: 75,
+        difficulty: 2,
       },
     };
   } else {
