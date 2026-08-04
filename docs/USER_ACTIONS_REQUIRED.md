@@ -14,6 +14,7 @@
 
 - 學習事件／回饋會靜默略過
 - 國學頁可能空白（表尚未建立）
+- Content sync 的 **Import knowledge** 會因缺表而以非零結束（`continue-on-error`，但 step 會標紅）
 - 技法課新欄位（module／hook 等）會自動 fallback 舊欄位
 
 ---
@@ -46,7 +47,7 @@ https://supabase.com/dashboard/project/ypyiqysgfwgxcmmsylob/settings/api-keys
 https://github.com/linyize1111/zi-geng/settings/secrets/actions  
 → New repository secret → 名稱如上 → 貼上金鑰 → Add  
 
-設好跟我說一聲，我會立刻跑「Content sync」自動灌庫。
+密鑰設好後，`Content sync` workflow 會自動灌庫並回寫 seed；seed 推送採「覆寫到最新 main」策略，不會再因 rebase 衝突把整次同步標紅（DB 已成功時）。
 
 ---
 

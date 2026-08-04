@@ -1,6 +1,11 @@
 /**
  * Import knowledge candidates into Supabase.
  * node scripts/content/import-knowledge.mjs [path] [--auto-activate]
+ *
+ * Exit codes:
+ *   0 — success, empty candidates, or missing credentials (soft skip)
+ *   1 — missing input file
+ *   2 — hard DB failures (missing table, all inserts/updates failed, etc.)
  */
 import { readFileSync, existsSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
@@ -36,6 +41,12 @@ let inserted = 0;
 let updated = 0;
 let skipped = 0;
 let activated = 0;
+let errors = 0;
+
+if (cards.length === 0) {
+  console.log({ inserted: 0, updated: 0, skipped: 0, activated: 0, errors: 0, total: 0 });
+  process.exit(0);
+}
 
 for (const c of cards) {
   let status = c.status ?? "candidate";
@@ -66,12 +77,18 @@ for (const c of cards) {
     updated_at: new Date().toISOString(),
   };
 
-  const { data: existing } = await client
+  const { data: existing, error: findErr } = await client
     .from("zg_knowledge_cards")
     .select("id, status")
     .eq("series", c.series)
     .eq("topic_key", c.topic_key)
     .maybeSingle();
+
+  if (findErr) {
+    console.error("find", c.topic_key, findErr.message);
+    errors += 1;
+    continue;
+  }
 
   if (existing?.id) {
     // Don't overwrite human-edited active with weaker candidate
@@ -80,13 +97,22 @@ for (const c of cards) {
       continue;
     }
     const { error } = await client.from("zg_knowledge_cards").update(row).eq("id", existing.id);
-    if (error) console.warn("update fail", c.topic_key, error.message);
-    else updated += 1;
+    if (error) {
+      console.error("update fail", c.topic_key, error.message);
+      errors += 1;
+    } else {
+      updated += 1;
+    }
   } else {
     const { error } = await client.from("zg_knowledge_cards").insert(row);
-    if (error) console.warn("insert fail", c.topic_key, error.message);
-    else inserted += 1;
+    if (error) {
+      console.error("insert fail", c.topic_key, error.message);
+      errors += 1;
+    } else {
+      inserted += 1;
+    }
   }
 }
 
-console.log({ inserted, updated, skipped, activated, total: cards.length });
+console.log({ inserted, updated, skipped, activated, errors, total: cards.length });
+if (errors > 0) process.exit(2);
