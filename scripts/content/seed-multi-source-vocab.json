@@ -2,7 +2,7 @@
   "version": 2,
   "mode": "update",
   "count": 2,
-  "fetched_at": "2026-08-04T04:56:03.048Z",
+  "fetched_at": "2026-08-10T17:40:19.515Z",
   "sources": [
     "zh.wiktionary",
     "zh.wikipedia"
@@ -32,7 +32,7 @@
         "category": "汉语成语",
         "url": "https://zh.wiktionary.org/wiki/%E7%88%B6%E4%BA%8C%E6%AF%8D%E4%BB%94",
         "license": "CC BY-SA",
-        "fetched_at": "2026-08-04T04:54:13.599Z"
+        "fetched_at": "2026-08-10T17:39:01.537Z"
       }
     },
     {
@@ -59,7 +59,7 @@
         "category": "漢語成語",
         "url": "https://zh.wiktionary.org/wiki/%E9%80%9E%E5%87%B6%E6%83%A1%E9%AC%A5",
         "license": "CC BY-SA",
-        "fetched_at": "2026-08-04T04:55:07.156Z"
+        "fetched_at": "2026-08-10T17:39:05.684Z"
       }
     }
   ]
